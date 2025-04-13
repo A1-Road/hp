@@ -1,4 +1,3 @@
-import InteractiveBackground from "@/app/components/InteractiveBackground";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
@@ -8,7 +7,7 @@ import {
   getRelatedAchievements,
   type Achievement,
   type AchievementDetail,
-} from "@/data/achievements"; // Use alias path
+} from "@/data/achievements";
 
 export default async function AchievementDetailPage({
   params,
@@ -21,7 +20,6 @@ export default async function AchievementDetailPage({
   if (!achievement) {
     return (
       <div className="relative min-h-screen text-white">
-        <InteractiveBackground />
         <div className="relative z-10">
           <main className="container mx-auto px-4">
             <div className="pb-20 pt-32 text-center">
@@ -43,7 +41,6 @@ export default async function AchievementDetailPage({
 
   return (
     <div className="relative min-h-screen text-white">
-      <InteractiveBackground />
       <div className="relative z-10">
         <main className="container mx-auto px-4 py-32">
           <div className="mb-8">

@@ -15,128 +15,70 @@ export interface NewsItemDetail extends NewsItem {
 export const allNewsItems: NewsItemDetail[] = [
   {
     id: "1",
-    title: "A1Labs、次世代AIモデル「QuantumMind」を発表",
-    date: "2024年3月15日",
-    excerpt: "量子コンピューティングに着想を得た新しいAIアーキテクチャを発表。",
-    content: `<p>A1Labsは本日、量子コンピューティングの原理に着想を得た画期的なAIモデル「QuantumMind」を発表しました。...</p><p>QuantumMindは、複雑な問題解決や大規模データ分析において、これまでにない速度と精度を提供します...</p>`,
+    title: "世界的分散型メディア「Bankless Japan」の運営を拝任",
+    date: "2024年10月13日",
+    excerpt:
+      "2024年10月14日この度、A1Roadは、グローバル分散型メディアである「Bankless」の日本支部であるBankless Japanの運営を正式に拝命いたしました。Banklessは、Web3や分散型金融（DeFi）をはじめとする最...",
+    content: `<p>2024年10月14日この度、A1Roadは、グローバル分散型メディアである「Bankless」の日本支部であるBankless Japanの運営を正式に拝命いたしました。Banklessは、Web3や分散型金融（DeFi）をはじめとする最新技術やカルチャーに関する情報を発信するメディアです。今後、A1RoadはBankless Japanとして、日本のWeb3コミュニティに価値ある情報と洞察を提供してまいります。</p>`,
     image: "/placeholder.svg?height=600&width=1200",
-    category: "AI開発",
-    slug: "quantummind-release",
+    category: "運営",
+    slug: "bankless-japan-operation",
   },
   {
     id: "2",
-    title: "Web3セキュリティカンファレンス「SecureChain 2024」に登壇",
-    date: "2024年2月28日",
+    title:
+      "ビジネスとしてのDAO活用法を探るワークショップイベント「FA1RNESS 2024」を開催",
+    date: "2024年09月21日",
     excerpt:
-      "当社CEOがスマートコントラクト監査の最新動向について講演しました。",
-    content: `<p>先週開催された主要なWeb3セキュリティカンファレンス「SecureChain 2024」にて、当社CEOの [CEO名] が基調講演を行いました。...</p>`,
+      "DAO（自律分散型組織）の事業活用可能性をさぐり、一般社会へWeb3のオンボーディングを目指したミニイベントを開催いたしました。2024年8月20日、Google for Startups Campus Tokyoにて「FA1RNESS 2...",
+    content: `<p>DAO（自律分散型組織）の事業活用可能性をさぐり、一般社会へWeb3のオンボーディングを目指したミニイベントを開催いたしました。2024年8月20日、Google for Startups Campus Tokyoにて「FA1RNESS 2024」と題し、様々な分野の専門家や参加者が集い、DAOの具体的なビジネスモデルや法的課題、技術的側面について活発な議論が交わされました。イベントは大盛況のうちに終了し、参加者からは多くの肯定的なフィードバックが寄せられました。</p>`,
     image: "/placeholder.svg?height=600&width=1200",
     category: "イベント",
-    slug: "securechain-2024",
+    slug: "fairness-2024-workshop",
   },
   {
     id: "3",
-    title: "DeFiプラットフォーム「AetherSwap」との提携を発表",
-    date: "2024年1月10日",
+    title: "A1 Labs.、AI倫理に関するガイドラインを発表",
+    date: "2024年08月15日",
     excerpt:
-      "AetherSwapの流動性プールにAIベースのリスク管理ソリューションを提供します。",
-    content: `<p>A1Labsは、大手DeFiプラットフォームであるAetherSwapとの戦略的パートナーシップを発表しました。...</p>`,
+      "責任あるAI開発と社会実装を目指し、独自の倫理ガイドラインを策定・公開しました。透明性と公平性を重視...",
+    content: `<h2>AI倫理ガイドライン策定の背景</h2><p>AI技術の急速な発展に伴い、その利用における倫理的な課題が顕在化しています。A1 Labs.では、技術の恩恵を最大化しつつ、潜在的なリスクを最小限に抑えるため、独自のAI倫理ガイドラインを策定しました。</p><h2>ガイドラインの主要原則</h2><ul><li>人間中心の設計</li><li>公平性と無差別</li><li>透明性と説明責任</li><li>プライバシーとセキュリティ</li><li>社会への貢献</li></ul><p>当社は、このガイドラインに基づき、倫理的な観点からの妥当性を継続的に評価しながらAI開発を進めてまいります。</p>`,
     image: "/placeholder.svg?height=600&width=1200",
-    category: "パートナーシップ",
-    slug: "aetherswap-partnership",
+    category: "発表",
+    slug: "ai-ethics-guideline",
   },
   {
     id: "4",
-    title: "AI倫理に関するホワイトペーパー公開",
-    date: "2023年12月1日",
-    excerpt: "責任あるAI開発のためのガイドラインとベストプラクティスを公開。",
-    content: `<p>A1Labsは、AI技術の責任ある開発と利用に関する当社のコミットメントを示すホワイトペーパーを公開しました。...</p>`,
+    title: "Web3技術を活用した新たな研究者支援プラットフォームの構想を発表",
+    date: "2024年07月01日",
+    excerpt:
+      "研究資金調達の透明化と、研究成果のオープンな共有を促進するプラットフォーム「SciChain」の構想を発表...",
+    content: `<p>現在の研究資金配分システムや成果発表の仕組みには、依然として中央集権的な課題が存在します。A1 Labs.は、ブロックチェーンとスマートコントラクトを活用し、研究者自身が主体的に資金を調達し、成果をトークン化して共有・評価できる分散型プラットフォーム「SciChain」の構想を発表しました。これにより、研究活動の活性化とイノベーションの加速を目指します。</p>`,
     image: "/placeholder.svg?height=600&width=1200",
-    category: "研究",
-    slug: "ai-ethics-whitepaper",
+    category: "構想",
+    slug: "scichain-concept",
   },
   {
     id: "5",
-    title: "分散型ストレージソリューション「DataSphere」ベータ版",
-    date: "2023年11月5日",
-    excerpt: "高セキュリティ・高可用性の分散型ストレージのベータテストを開始。",
-    content: "<p>DataSphereベータ版に関する詳細なコンテンツ。</p>",
+    title: "地方創生DAOプロジェクトが経済産業省の支援プログラムに採択",
+    date: "2024年06月10日",
+    excerpt:
+      "当社が技術支援を行う地方創生DAOプロジェクトが、経済産業省の推進する「地域DX促進活動支援事業」に採択...",
+    content: `<p>A1 Labs.が技術アドバイザリーとして参画している、地域資源を活用した持続可能な観光モデルを目指すDAOプロジェクトが、経済産業省の「地域DX促進活動支援事業」に採択されました。ブロックチェーン技術を活用した資金調達（地域トークン発行）や、関係人口の創出に向けた取り組みが評価されました。当社は引き続き、技術面でのサポートを通じてプロジェクトの成功に貢献してまいります。</p>`,
     image: "/placeholder.svg?height=600&width=1200",
-    category: "製品リリース",
-    slug: "datasphere-beta",
+    category: "採択",
+    slug: "regional-dao-support",
   },
   {
     id: "6",
-    title: "AI市場予測ツールの精度向上",
-    date: "2023年10月18日",
-    excerpt: "機械学習モデル改良により、市場予測精度が15%向上。",
-    content: "<p>AI市場予測ツールのアップデートに関する詳細なコンテンツ。</p>",
-    image: "/placeholder.svg?height=600&width=1200",
-    category: "アップデート",
-    slug: "market-predictor-update",
-  },
-  {
-    id: "7",
-    title: "Web3ゲーム開発者向け助成金プログラム",
-    date: "2023年9月22日",
-    excerpt: "革新的なWeb3ゲーム開発支援のため、総額100万ドルの助成金を開始。",
-    content:
-      "<p>Web3ゲーム開発者向け助成金プログラムに関する詳細なコンテンツ。</p>",
-    image: "/placeholder.svg?height=600&width=1200",
-    category: "コミュニティ",
-    slug: "web3-gaming-grant",
-  },
-  {
-    id: "8",
-    title: "TechCrunch Disrupt 最優秀AIスタートアップ選出",
-    date: "2023年8月30日",
-    excerpt: "世界最大級テックカンファレンスで当社の技術力が評価。",
-    content: "<p>TechCrunch Disruptでの受賞に関する詳細なコンテンツ。</p>",
-    image: "/placeholder.svg?height=600&width=1200",
-    category: "受賞",
-    slug: "techcrunch-disrupt-award",
-  },
-  {
-    id: "9",
-    title: "NFTマーケットプレイス「Artify」との技術提携",
-    date: "2023年7月12日",
+    title: "AIによるコード生成アシスタント「CodeGenius」ベータ版公開",
+    date: "2024年05月20日",
     excerpt:
-      "ArtifyにAI不正検出システムを提供し、プラットフォーム安全性を強化。",
-    content: "<p>Artifyとの技術提携に関する詳細なコンテンツ。</p>",
+      "開発者の生産性向上を目的としたAIコード生成アシスタント「CodeGenius」のベータ版を社内開発者向けに公開...",
+    content: `<p>自然言語による指示から、高品質なコードスニペットを生成するAIアシスタント「CodeGenius」のベータ版を公開しました。特定のフレームワークやライブラリに特化した学習を行い、より実践的なコード生成を目指しています。今後、フィードバックを元に改良を進め、外部公開も視野に入れています。</p>`,
     image: "/placeholder.svg?height=600&width=1200",
-    category: "パートナーシップ",
-    slug: "artify-partnership",
-  },
-  {
-    id: "10",
-    title: "ゼロ知識証明に関する研究論文発表",
-    date: "2023年6月25日",
-    excerpt: "プライバシー保護技術 ZKP の新たな応用に関する研究論文を発表。",
-    content: "<p>ゼロ知識証明の研究論文に関する詳細なコンテンツ。</p>",
-    image: "/placeholder.svg?height=600&width=1200",
-    category: "研究",
-    slug: "zkp-research-paper",
-  },
-  {
-    id: "11",
-    title: "開発者向けドキュメントサイトリニューアル",
-    date: "2023年5月9日",
-    excerpt: "APIやSDKドキュメントを刷新し、より使いやすく分かりやすく。",
-    content:
-      "<p>開発者向けドキュメントサイトのリニューアルに関する詳細なコンテンツ。</p>",
-    image: "/placeholder.svg?height=600&width=1200",
-    category: "お知らせ",
-    slug: "dev-docs-renewal",
-  },
-  {
-    id: "12",
-    title: "A1Labs、シリーズAで2,000万ドル資金調達完了",
-    date: "2023年4月1日",
-    excerpt: "AIとWeb3技術の研究開発・事業拡大を加速。",
-    content: "<p>シリーズA資金調達に関する詳細なコンテンツ。</p>",
-    image: "/placeholder.svg?height=600&width=1200",
-    category: "資金調達",
-    slug: "series-a-funding",
+    category: "開発",
+    slug: "codegenius-beta",
   },
 ];
 
@@ -148,11 +90,22 @@ export async function getNewsDetailsBySlug(
 
 export async function getRelatedNewsItems(
   currentSlug: string,
+  limit: number = 3,
 ): Promise<NewsItem[]> {
-  return allNewsItems.filter((item) => item.slug !== currentSlug).slice(0, 3);
+  return allNewsItems
+    .filter((item) => item.slug !== currentSlug)
+    .slice(0, limit);
 }
 
 export async function getNewsItems(limit?: number): Promise<NewsItem[]> {
-  const items = allNewsItems;
+  const items = allNewsItems.sort(
+    (a, b) =>
+      new Date(b.date.replace(/\./g, "-")).getTime() -
+      new Date(a.date.replace(/\./g, "-")).getTime(),
+  );
   return limit ? items.slice(0, limit) : items;
+}
+
+export async function getAllNewsSlugs(): Promise<string[]> {
+  return allNewsItems.map((item) => item.slug);
 }

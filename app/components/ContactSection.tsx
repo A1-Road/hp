@@ -73,9 +73,9 @@ export default function ContactSection() {
     <section
       id="contact"
       ref={ref}
-      className="relative overflow-hidden bg-zinc-900 py-10"
+      className="relative overflow-hidden bg-gradient-to-b from-white/5 via-zinc-800 to-black py-16"
     >
-      <div className="bg-grid-white/[0.02] absolute inset-0 bg-[size:40px_40px]" />
+      <div className="bg-grid-white/[0.04] absolute inset-0 bg-[size:40px_40px]" />
       <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent" />
       <motion.div
         variants={containerVariants}
@@ -87,7 +87,7 @@ export default function ContactSection() {
           variants={itemVariants}
           className="mb-10 text-center text-5xl font-bold text-zinc-200"
         >
-          Get in Touch
+          お問い合わせ
         </motion.h2>
         <motion.div
           variants={itemVariants}
@@ -98,7 +98,7 @@ export default function ContactSection() {
               <Input
                 type="text"
                 name="name"
-                placeholder="Your Name"
+                placeholder="お名前"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -110,7 +110,7 @@ export default function ContactSection() {
               <Input
                 type="email"
                 name="email"
-                placeholder="Your Email"
+                placeholder="メールアドレス"
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -121,7 +121,7 @@ export default function ContactSection() {
             <div className="mb-4">
               <Textarea
                 name="message"
-                placeholder="Your Message"
+                placeholder="メッセージ"
                 value={formData.message}
                 onChange={handleChange}
                 required
@@ -137,17 +137,17 @@ export default function ContactSection() {
                 {isSubmitting ? (
                   <>
                     <Loader2 className="mr-2 animate-spin" size={18} />
-                    Sending...
+                    送信中...
                   </>
                 ) : isSubmitted ? (
                   <>
                     <CheckCircle className="mr-2" size={18} />
-                    Sent!
+                    送信完了
                   </>
                 ) : (
                   <>
                     <Send className="mr-2" size={18} />
-                    Send Message
+                    送信
                   </>
                 )}
               </span>

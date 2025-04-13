@@ -2,79 +2,51 @@
 
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Bot, Network, Layers, ShieldCheck, Check } from "lucide-react";
+import {
+  Calendar,
+  BookOpen,
+  Radio,
+  Layers,
+  Check,
+  ArrowRight,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
-const allServiceOptions = [
+const serviceOptions = [
   {
-    name: "AI Strategy Consulting",
-    description: "Tailored AI roadmaps to drive business value.",
-    icon: <Bot className="h-6 w-6" />,
-    features: [
-      "AI Readiness Assessment",
-      "Use Case Identification",
-      "Technology Stack Recommendation",
-      "Implementation Planning",
-      "ROI Analysis",
-    ],
+    name: "カンファレンス",
+    description: "DAO特化型のハッカソン「DAOATHON」運営",
+    icon: <Calendar className="h-6 w-6" />,
   },
   {
-    name: "Web3 dApp Development",
-    description: "Building decentralized applications on leading blockchains.",
-    icon: <Network className="h-6 w-6" />,
-    features: [
-      "Smart Contract Development",
-      "Frontend & UI/UX Design",
-      "Blockchain Integration (Ethereum, Polygon, etc.)",
-      "Wallet Integration",
-      "Testing & Deployment",
-    ],
+    name: "教育",
+    description: "機会シェアを通じたWeb3リテラシーの向上支援",
+    icon: <BookOpen className="h-6 w-6" />,
   },
   {
-    name: "Blockchain Solutions",
-    description:
-      "Custom blockchain solutions for enhanced security and transparency.",
+    name: "メディア",
+    description: "各種メディアへの貢献を通じ、独自のインサイトと視点を提供",
+    icon: <Radio className="h-6 w-6" />,
+  },
+  {
+    name: "技術導入支援",
+    description: "ブロックチェーン/AIの導入からアドバイザリー",
     icon: <Layers className="h-6 w-6" />,
-    features: [
-      "Private Blockchain Networks",
-      "Supply Chain Management",
-      "Digital Identity Solutions",
-      "Tokenization Platforms",
-      "Cross-chain Interoperability",
-    ],
-  },
-  {
-    name: "Smart Contract Audit",
-    description:
-      "Ensuring the security and reliability of your smart contracts.",
-    icon: <ShieldCheck className="h-6 w-6" />,
-    features: [
-      "Comprehensive Code Review",
-      "Vulnerability Assessment",
-      "Gas Optimization Analysis",
-      "Security Best Practices Check",
-      "Detailed Audit Report",
-    ],
   },
 ];
 
 interface ServicesSectionProps {
   limit?: number;
-  showViewAllLink?: boolean;
 }
 
-export default function ServicesSection({
-  limit,
-  showViewAllLink = false,
-}: ServicesSectionProps) {
+export default function ServicesSection({ limit }: ServicesSectionProps) {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
-  const serviceOptions = limit
-    ? allServiceOptions.slice(0, limit)
-    : allServiceOptions;
+  const displayedServices = limit
+    ? serviceOptions.slice(0, limit)
+    : serviceOptions;
 
   return (
     <section id="services" className="relative overflow-hidden py-10">
@@ -82,17 +54,11 @@ export default function ServicesSection({
 
       <div className="container relative mx-auto px-4">
         <div className="mb-16 text-center">
-          <h2 className="mb-6 text-5xl font-bold md:text-6xl">Our Services</h2>
-          <p className="mx-auto max-w-2xl text-xl text-zinc-400">
-            Leveraging cutting-edge AI and Web3 technologies to build the
-            future.
-          </p>
+          <h2 className="mb-6 text-5xl font-bold md:text-6xl">事業内容</h2>
         </div>
 
-        <div
-          className={`grid grid-cols-1 gap-8 md:grid-cols-2 ${limit === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4"}`}
-        >
-          {serviceOptions.map((option, index) => {
+        <div className={`grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4`}>
+          {displayedServices.map((option, index) => {
             const ref = useRef(null);
             const inView = useInView(ref, { amount: 0.3 });
 
@@ -125,46 +91,12 @@ export default function ServicesSection({
                         {option.description}
                       </p>
                     </div>
-
-                    <div className="flex-grow">
-                      <ul className="mb-6 space-y-3">
-                        {option.features.map((feature, i) => (
-                          <li key={i} className="flex items-start">
-                            <Check className="mr-2 mt-1 h-4 w-4 shrink-0 text-purple-400" />
-                            <span className="text-sm text-zinc-300">
-                              {feature}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <Button
-                      asChild
-                      className={`w-full bg-white text-black transition-colors hover:bg-zinc-200`}
-                    >
-                      <a href="/contact">Contact Us</a>
-                    </Button>
                   </CardContent>
                 </Card>
               </motion.div>
             );
           })}
         </div>
-
-        {showViewAllLink && (
-          <div className="mt-12 text-center">
-            <Button
-              asChild
-              variant="link"
-              className="text-purple-400 hover:text-purple-300"
-            >
-              <Link href="/services">
-                View All Services <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        )}
       </div>
     </section>
   );

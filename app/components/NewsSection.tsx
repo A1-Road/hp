@@ -62,9 +62,14 @@ function NewsCard({ item }: { item: NewsItem }) {
 
 interface NewsSectionProps extends React.HTMLAttributes<HTMLElement> {
   limit?: number;
+  showSearch?: boolean;
 }
 
-export default function NewsSection({ limit, ...props }: NewsSectionProps) {
+export default function NewsSection({
+  limit,
+  showSearch = false,
+  ...props
+}: NewsSectionProps) {
   const [news, setNews] = useState<NewsItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
@@ -72,7 +77,6 @@ export default function NewsSection({ limit, ...props }: NewsSectionProps) {
   useEffect(() => {
     const loadNews = async () => {
       setLoading(true);
-      // Use the helper function from data/news.ts
       const fetchedNews = await getNewsItems(limit);
       setNews(fetchedNews);
       setLoading(false);
@@ -83,31 +87,39 @@ export default function NewsSection({ limit, ...props }: NewsSectionProps) {
     return () => clearTimeout(timer);
   }, [limit]);
 
-  const displayNews = news.filter(
-    (item) =>
-      searchTerm === "" ||
-      item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.category.toLowerCase().includes(searchTerm.toLowerCase()),
-  );
+  const displayNews = showSearch
+    ? news.filter(
+        (item) =>
+          searchTerm === "" ||
+          item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          item.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          item.category.toLowerCase().includes(searchTerm.toLowerCase()),
+      )
+    : news;
 
   return (
     <section className="py-10" {...props}>
-      <div className="mb-10">
-        <div className="relative mx-auto max-w-md">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 transform text-zinc-400" />
-          <Input
-            type="text"
-            placeholder="ニュースを検索..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="border-zinc-700 bg-zinc-900/50 pl-10 transition-colors focus:border-purple-500"
-          />
+      {showSearch && (
+        <div className="mb-10">
+          <div className="relative mx-auto max-w-md">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 transform text-zinc-400" />
+            <Input
+              type="text"
+              placeholder="ニュースを検索..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="border-zinc-700 bg-zinc-900/50 pl-10 transition-colors focus:border-purple-500"
+            />
+          </div>
         </div>
+      )}
 
+      <div>
         {loading ? (
-          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {Array(limit || 6)
+          <div
+            className={`grid grid-cols-1 gap-6 md:grid-cols-2 ${limit ? "lg:grid-cols-3" : "lg:grid-cols-3"}`} // Adjust grid based on limit or default
+          >
+            {Array(limit || news.length || 6) // Use limit, news length, or default for skeleton
               .fill(0)
               .map((_, index) => (
                 <div key={index}>
@@ -123,22 +135,26 @@ export default function NewsSection({ limit, ...props }: NewsSectionProps) {
               ))}
           </div>
         ) : displayNews.length > 0 ? (
-          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            className={`mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 ${limit ? "lg:grid-cols-3" : "lg:grid-cols-3"}`} // Adjust grid based on limit or default
+          >
             {displayNews.map((item) => (
               <NewsCard key={item.id} item={item} />
             ))}
           </div>
         ) : (
-          <div className="mt-10 py-10 text-center">
-            <p className="text-xl text-zinc-400">検索結果がありません</p>
-            <Button
-              variant="link"
-              onClick={() => setSearchTerm("")}
-              className="mt-2 text-purple-400 hover:text-purple-300"
-            >
-              すべてのニュースを表示
-            </Button>
-          </div>
+          showSearch && (
+            <div className="mt-10 py-10 text-center">
+              <p className="text-xl text-zinc-400">検索結果がありません</p>
+              <Button
+                variant="link"
+                onClick={() => setSearchTerm("")}
+                className="mt-2 text-purple-400 hover:text-purple-300"
+              >
+                すべてのニュースを表示
+              </Button>
+            </div>
+          )
         )}
       </div>
     </section>

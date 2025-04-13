@@ -12,9 +12,12 @@ export default function Home() {
       <div className="relative z-10">
         <main className="container mx-auto px-4">
           <HeroSection />
-          <NewsSection limit={3} />
-          <ServicesSection limit={3} showViewAllLink={true} />
           <AboutSection />
+          <ServicesSection limit={3} />
+          <h2 className="mb-10 mt-20 text-center text-5xl font-bold">
+            ニュース
+          </h2>
+          <NewsSection limit={3} />
           <ContactSection />
         </main>
       </div>

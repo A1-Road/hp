@@ -24,13 +24,35 @@
   --ring: 0 0% 100%;
 }
 
-html,
+html {
+  min-height: 100%;
+  height: auto;
+}
+
 body {
-  background: black;
+  background-image: url("/cosmic.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
   min-height: 100%;
   height: auto;
   overflow-x: hidden;
+  position: relative; /* Needed for pseudo-element positioning */
+  z-index: 1; /* Ensure body content is above the pseudo-element */
+}
+
+body::before {
+  content: "";
+  position: fixed; /* Use fixed to cover the entire viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Black overlay with 60% opacity */
+  backdrop-filter: blur(8px); /* Adjust blur intensity as needed */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  z-index: -1; /* Place the overlay behind the body content */
 }
 
 @layer base {

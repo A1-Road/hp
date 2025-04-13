@@ -1,20 +1,81 @@
-import InteractiveBackground from "@/app/components/InteractiveBackground";
-import AboutSection from "@/app/components/AboutSection";
+"use client";
+
 import ServicesSection from "@/app/components/ServicesSection";
+import { motion } from "framer-motion";
 
 export default function AboutPage() {
   return (
     <div className="relative min-h-screen text-white">
-      <InteractiveBackground />
       <div className="relative z-10">
         <main className="container mx-auto px-4">
-          <div className="pb-20 pt-32">
-            <h1 className="mb-10 text-center text-5xl font-bold">
-              プロフィール
-            </h1>
-            <AboutSection />
-            <ServicesSection />
-          </div>
+          <motion.div
+            className="pb-20 pt-32"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <h1 className="mb-10 text-center text-5xl font-bold">会社概要</h1>
+            <div className="prose prose-invert mx-auto max-w-3xl text-lg">
+              <p>
+                地理的・経済的制約による機会の減少を破壊する
+                <br />
+                私たちは、ブロックチェーン技術を現実世界に活用することにより、経済的制約による機会の減少が妨げられる世界を作ります。
+                <br />
+                現実社会で発生している問題、例えば地域の人口減少や資源の不足、金融決済システムへのアクセス制約などに対し、世界のネットワークを活用することで、実現可能、持続可能なビジネスモデルやブロックチェーン技術導入を実現していきます。
+              </p>
+              <h2 className="mt-10 border-b border-zinc-700 pb-2">
+                Real World Governance (RWG) とは
+              </h2>
+              <p>
+                A1 Roadは、「Real World Governance (RWG)」を実現する企業です。
+                <br />
+                ブロックチェーン技術を活用し、現実社会の課題を地域コミュニティと共に解決する新しいガバナンスモデルを提供します。
+              </p>
+              <p>
+                私たちは、暗号技術（クリプト）が持つ「分散性」と「オープン性」を活かし、AIや量子コンピュータなどの最先端技術を誰もが使える世界を創り出すことを使命としています。投機的・怪しいというイメージの強いクリプトを、社会課題を解決するための“触媒”として再定義し、テクノロジーによるイノベーションをより広く・深く・早く人々の手元に届ける。それこそが、私たちが存在する理由です。
+              </p>
+              <h3 className="mt-8">
+                ブロックチェーンが実現する「開かれたインフラ」
+              </h3>
+              <p>
+                私たちはクリプトの根幹技術であるブロックチェーンの「分散・透明性・トラストレス」という特性を重視します。特定の権威や組織に依存せず、誰でも参加しやすい基盤が、テクノロジーと社会を真に融合させる鍵となると考えています。
+              </p>
+              <h3 className="mt-8">最先端技術への「民主的アクセス」の実現</h3>
+              <p>
+                AIや量子コンピュータなど、通常は大企業や富裕層、あるいは限られた研究機関が独占してきた先端技術を、クリプトがもたらす分散型のインフラを通じて解放し、誰もが利用・参画できる仕組みを構築します。
+                <br />
+                これにより、世界中どこにいてもネット接続さえあれば、イノベーションに貢献できる状態を作り出します。
+              </p>
+              <h3 className="mt-8">
+                「怪しい」から「社会課題を解決する」へのアップデート
+              </h3>
+              <p>
+                クリプトは投機的・詐欺的という偏見を持たれがちですが、金融包摂やデータ管理、コンテンツ流通など、多様なユースケースで既存の問題を打破できる可能性を秘めています。
+                <br />
+                私たちは、こうした具体的な事例を示すことで、クリプトを“怪しいもの”ではなく、“実用的で社会課題を解決する技術”として広めていきます。
+              </p>
+              <h3 className="mt-8">社会階層の流動性を高め、格差を是正する</h3>
+              <p>
+                先端技術は富裕層や一部企業だけが享受するものではなく、本来は社会全体の豊かさのために活用されるべきだと考えます。
+                <br />
+                クリプトやAI、量子コンピューティングなどの先端技術が、あらゆる地域や階層に届けられることで、生まれた環境は個々の可能性を解き放ち、社会階層の流動性を高める原動力になります。
+              </p>
+              <h3 className="mt-8">ゼロから世界をつなぐ日本発イノベーション</h3>
+              <p>
+                地理的・政治的な境界に縛られにくいクリプトは、ゼロからでもグローバル規模へと拡張できるポテンシャルがあります。
+                <br />
+                私たちは日本発のイノベーションを世界に広めるとともに、国際的な連携を通じて新たな価値を共創し続けます。
+                <br />
+                私たちの願いは、テクノロジーを通じて一人ひとりが可能性を最大限に発揮できる社会を創ることです。
+                <br />
+                「クリプト×先端技術」というケミストリーが、誰もが挑戦できる未来の扉を開くと信じ、私たちは行動を続けます。
+              </p>
+            </div>
+
+            <div className="mt-16">
+              <ServicesSection />
+            </div>
+          </motion.div>
         </main>
       </div>
     </div>

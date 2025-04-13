@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import "./globals.css";
+import InteractiveBackground from "./components/InteractiveBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
+          <InteractiveBackground />
           <div className="pt-16">{children}</div>
           <Footer />
         </ThemeProvider>

@@ -1,4 +1,3 @@
-import InteractiveBackground from "@/app/components/InteractiveBackground";
 import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -21,7 +20,6 @@ export default async function NewsDetailPage({
   if (!newsData) {
     return (
       <div className="relative min-h-screen text-white">
-        <InteractiveBackground />
         <div className="relative z-10">
           <main className="container mx-auto px-4">
             <div className="pb-20 pt-32 text-center">
@@ -41,7 +39,6 @@ export default async function NewsDetailPage({
 
   return (
     <div className="relative min-h-screen text-white">
-      <InteractiveBackground />
       <div className="relative z-10">
         <main className="container mx-auto px-4">
           <div className="pb-20 pt-32">

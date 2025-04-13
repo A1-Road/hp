@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 
 const navLinks = [
-  { href: "/achievements", label: "Achievements" },
-  { href: "/about", label: "About" },
-  { href: "/news", label: "News" },
-  { href: "/contact", label: "Contact" },
+  { href: "/achievements", label: "実績" },
+  { href: "/about", label: "会社概要" },
+  { href: "/news", label: "ニュース" },
+  { href: "/contact", label: "お問い合わせ" },
 ];
 
 export default function Header() {
@@ -26,11 +26,11 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed z-10 w-full transition-all duration-300 ${isScrolled ? "bg-black" : "bg-transparent"}`}
+      className={`fixed z-50 w-full bg-black/80 backdrop-blur-md transition-colors duration-300`}
     >
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <Link href="/" className="text-3xl font-bold tracking-tighter">
-          A1Labs
+          A1 Labs.
         </Link>
         <div className="md:hidden">
           <Button
