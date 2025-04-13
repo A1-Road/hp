@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 0%;
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 0%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 0 0% 10%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 10%;
+  --muted-foreground: 0 0% 60%;
+  --accent: 0 0% 10%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 10%;
+  --input: 0 0% 10%;
+  --ring: 0 0% 100%;
+}
+
+html,
+body {
+  background: black;
+  color: white;
+  min-height: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Prose styles for news content */
+.prose {
+  @apply text-zinc-300;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose ul {
+  @apply mb-4 list-disc pl-6;
+}
+
+.prose li {
+  @apply mb-2;
+}
+
+.prose h2 {
+  @apply mb-4 mt-8 text-2xl font-bold;
+}
+
+.prose h3 {
+  @apply mb-3 mt-6 text-xl font-bold;
+}
+
+.prose a {
+  @apply text-purple-400 transition-colors hover:text-purple-300;
+}
+
+.prose strong {
+  @apply font-bold text-white;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.animate-glow {
+  animation: glow 4s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 0px white;
+  }
+  to {
+    box-shadow: 0 0 20px white;
+  }
+}
