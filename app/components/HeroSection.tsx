@@ -100,11 +100,13 @@ export default function HeroSection() {
             <h1 className="relative mb-6 text-7xl font-bold tracking-tight md:text-8xl">
               <span className="bg-gradient-to-r from-white to-zinc-500 bg-clip-text text-transparent">
                 実社会のオンチェーン化を
+              </span>
+              <span className="relative z-10 bg-gradient-to-r from-white to-zinc-500 bg-clip-text text-transparent">
                 <br />
                 実現する
               </span>
               <motion.span
-                className="absolute -inset-1 rounded-full bg-white blur-3xl"
+                className="absolute -inset-1 rounded-full bg-white blur-xl" // Changed from blur-3xl
                 initial={{ opacity: 0 }}
                 animate={{ opacity: [0, 0.1, 0] }}
                 transition={{

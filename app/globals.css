@@ -49,9 +49,8 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2); /* Black overlay with 60% opacity */
-  backdrop-filter: blur(8px); /* Adjust blur intensity as needed */
-  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  backdrop-filter: blur(2px); /* Adjust blur intensity as needed */
+  -webkit-backdrop-filter: blur(2px); /* Safari support */
   z-index: -1; /* Place the overlay behind the body content */
 }
 
