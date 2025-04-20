@@ -1,0 +1,48 @@
+# LLM Optimization Metadata
+
+## Site Information
+- Title: エーワンロード株式会社 | AIとWeb3で社会の屋台骨をアップデート
+- Description: AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。
+- Keywords: AI, Web3, ブロックチェーン, デジタル変革, DAO, ウォレットレス認証
+
+## Content Structure
+- Main Topics: AI開発, ブロックチェーン技術, デジタル変革, DAOプラットフォーム, ウォレットレス認証
+- Target Audience: 企業経営者, 技術者, デジタル変革担当者, ブロックチェーン開発者
+- Content Type: 技術ブログ, 事例紹介, 技術解説, ニュースリリース
+
+## Technical Information
+- Language: ja
+- Content Format: HTML, Markdown
+- Update Frequency: 週1回
+
+## Contact Information
+- Email: info@a1road.com
+- Website: https://a1road.com 
+
+# LLMクロールルール
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# クロール間隔
+Crawl-delay: 10
+
+# サイトマップ
+Sitemap: https://a1road.com/sitemap.xml 

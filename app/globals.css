@@ -3,55 +3,48 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 0%;
-  --foreground: 0 0% 100%;
-  --card: 0 0% 0%;
-  --card-foreground: 0 0% 100%;
-  --popover: 0 0% 0%;
-  --popover-foreground: 0 0% 100%;
-  --primary: 0 0% 100%;
-  --primary-foreground: 0 0% 0%;
-  --secondary: 0 0% 10%;
-  --secondary-foreground: 0 0% 100%;
-  --muted: 0 0% 10%;
-  --muted-foreground: 0 0% 60%;
-  --accent: 0 0% 10%;
-  --accent-foreground: 0 0% 100%;
+  --background: 36 33% 97%;
+  --foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --primary: 24 9.8% 10%;
+  --primary-foreground: 60 9.1% 97.8%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --ring: 24 9.8% 10%;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: 20 14.3% 4.1%;
+  --foreground: 60 9.1% 97.8%;
+  --card: 20 14.3% 4.1%;
+  --card-foreground: 60 9.1% 97.8%;
+  --popover: 20 14.3% 4.1%;
+  --popover-foreground: 60 9.1% 97.8%;
+  --primary: 60 9.1% 97.8%;
+  --primary-foreground: 24 9.8% 10%;
+  --secondary: 12 6.5% 15.1%;
+  --secondary-foreground: 60 9.1% 97.8%;
+  --muted: 12 6.5% 15.1%;
+  --muted-foreground: 24 5.4% 63.9%;
+  --accent: 12 6.5% 15.1%;
+  --accent-foreground: 60 9.1% 97.8%;
   --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 0 0% 100%;
-  --border: 0 0% 10%;
-  --input: 0 0% 10%;
-  --ring: 0 0% 100%;
-}
-
-html {
-  min-height: 100%;
-  height: auto;
-}
-
-body {
-  background-image: url("/cosmic.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: white;
-  min-height: 100%;
-  height: auto;
-  overflow-x: hidden;
-  position: relative; /* Needed for pseudo-element positioning */
-  z-index: 1; /* Ensure body content is above the pseudo-element */
-}
-
-body::before {
-  content: "";
-  position: fixed; /* Use fixed to cover the entire viewport */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  backdrop-filter: blur(2px); /* Adjust blur intensity as needed */
-  -webkit-backdrop-filter: blur(2px); /* Safari support */
-  z-index: -1; /* Place the overlay behind the body content */
+  --destructive-foreground: 60 9.1% 97.8%;
+  --border: 12 6.5% 15.1%;
+  --input: 12 6.5% 15.1%;
+  --ring: 24 5.7% 82.9%;
 }
 
 @layer base {
@@ -64,69 +57,156 @@ body::before {
 }
 
 @layer components {
-  .container {
-    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  .container-custom {
+    @apply container mx-auto px-4 py-16 md:py-24;
   }
-}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-6 relative inline-block pb-2;
   }
-}
 
-/* Prose styles for news content */
-.prose {
-  @apply text-zinc-300;
-}
-
-.prose p {
-  @apply mb-4;
-}
-
-.prose ul {
-  @apply mb-4 list-disc pl-6;
-}
-
-.prose li {
-  @apply mb-2;
-}
-
-.prose h2 {
-  @apply mb-4 mt-8 text-2xl font-bold;
-}
-
-.prose h3 {
-  @apply mb-3 mt-6 text-xl font-bold;
-}
-
-.prose a {
-  @apply text-purple-400 transition-colors hover:text-purple-300;
-}
-
-.prose strong {
-  @apply font-bold text-white;
-}
-
-/* Optimize animations */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+  .section-title::after {
+    content: "";
+    @apply absolute bottom-0 left-1/2 w-16 h-1 bg-primary -translate-x-1/2;
   }
-}
 
-.animate-glow {
-  animation: glow 4s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    box-shadow: 0 0 0px white;
+  .floating-card {
+    @apply bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-xl relative overflow-hidden border border-beige-200/50;
   }
-  to {
-    box-shadow: 0 0 20px white;
+
+  /* モダンな背景パターン */
+  .bg-pattern {
+    background-color: #f9f7f4;
+    background-image: radial-gradient(#e2d9c8 0.5px, transparent 0.5px),
+      radial-gradient(#e2d9c8 0.5px, #f9f7f4 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+  }
+
+  /* グラデーション背景 */
+  .bg-gradient-soft {
+    background: linear-gradient(135deg, #f9f7f4 0%, #e8e0d5 100%);
+  }
+
+  /* 3Dカード効果 */
+  .card-3d {
+    @apply transition-all duration-300 ease-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  .card-3d:hover {
+    transform: translateY(-5px) rotateX(2deg) rotateY(2deg);
+  }
+
+  /* モダンなブロブ背景 */
+  .blob-bg {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .blob-bg::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background: rgba(226, 217, 200, 0.4);
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: -1;
+    animation: blob-move 20s infinite alternate ease-in-out;
+  }
+
+  .blob-bg::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: rgba(214, 199, 173, 0.3);
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: -1;
+    top: 60%;
+    left: 60%;
+    animation: blob-move-alt 15s infinite alternate ease-in-out;
+  }
+
+  @keyframes blob-move {
+    0% {
+      top: 0%;
+      left: 0%;
+    }
+    25% {
+      top: 10%;
+      left: 60%;
+    }
+    50% {
+      top: 50%;
+      left: 30%;
+    }
+    75% {
+      top: 70%;
+      left: 60%;
+    }
+    100% {
+      top: 20%;
+      left: 20%;
+    }
+  }
+
+  @keyframes blob-move-alt {
+    0% {
+      top: 60%;
+      left: 60%;
+    }
+    25% {
+      top: 20%;
+      left: 20%;
+    }
+    50% {
+      top: 30%;
+      left: 70%;
+    }
+    75% {
+      top: 70%;
+      left: 20%;
+    }
+    100% {
+      top: 40%;
+      left: 40%;
+    }
+  }
+
+  /* スクロールアニメーション */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* グラスモーフィズム効果 */
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg;
+  }
+
+  /* モダンなグリッドパターン */
+  .grid-pattern {
+    background-image: linear-gradient(rgba(226, 217, 200, 0.3) 1px, transparent 1px),
+      linear-gradient(to right, rgba(226, 217, 200, 0.3) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* テキストグラデーション */
+  .text-gradient {
+    @apply font-bold;
+    background: linear-gradient(135deg, #3a3a3a 0%, #6d6d6d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

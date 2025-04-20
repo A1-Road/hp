@@ -1,83 +1,234 @@
-"use client";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { BsBuilding } from "react-icons/bs";
+import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
+import { HiArrowRight } from "react-icons/hi";
+import { Metadata } from "next";
 
-import ServicesSection from "@/app/components/ServicesSection";
-import { motion } from "framer-motion";
+export const metadata: Metadata = {
+  title: "会社概要 | エーワンロード株式会社",
+  description: "エーワンロード株式会社の会社概要、経営理念、事業内容などをご紹介します。",
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      name: "エーワンロード株式会社",
+      description:
+        "AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
+      publisher: {
+        "@type": "Organization",
+        name: "エーワンロード株式会社",
+        url: "https://a1road.com",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://a1road.com/logo.png",
+        },
+      },
+      mainEntity: {
+        "@type": "Organization",
+        name: "エーワンロード株式会社",
+        description:
+          "AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
+        url: "https://a1road.com",
+        sameAs: ["https://twitter.com/a1road", "https://linkedin.com/company/a1road"],
+      },
+    }),
+  },
+};
 
-export default function AboutPage() {
+export default function About() {
   return (
-    <div className="relative min-h-screen text-white">
-      <div className="relative z-10">
-        <main className="container mx-auto px-4">
-          <motion.div
-            className="pb-20 pt-32"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            <h1 className="mb-10 text-center text-5xl font-bold">会社概要</h1>
-            <div className="prose prose-invert mx-auto max-w-3xl text-lg">
-              <p>
-                地理的・経済的制約による機会の減少を破壊する
-                <br />
-                私たちは、ブロックチェーン技術を現実世界に活用することにより、経済的制約による機会の減少が妨げられる世界を作ります。
-                <br />
-                現実社会で発生している問題、例えば地域の人口減少や資源の不足、金融決済システムへのアクセス制約などに対し、世界のネットワークを活用することで、実現可能、持続可能なビジネスモデルやブロックチェーン技術導入を実現していきます。
-              </p>
-              <h2 className="mt-10 border-b border-zinc-700 pb-2">
-                Real World Governance (RWG) とは
-              </h2>
-              <p>
-                A1 Roadは、「Real World Governance (RWG)」を実現する企業です。
-                <br />
-                ブロックチェーン技術を活用し、現実社会の課題を地域コミュニティと共に解決する新しいガバナンスモデルを提供します。
-              </p>
-              <p>
-                私たちは、暗号技術（クリプト）が持つ「分散性」と「オープン性」を活かし、AIや量子コンピュータなどの最先端技術を誰もが使える世界を創り出すことを使命としています。投機的・怪しいというイメージの強いクリプトを、社会課題を解決するための“触媒”として再定義し、テクノロジーによるイノベーションをより広く・深く・早く人々の手元に届ける。それこそが、私たちが存在する理由です。
-              </p>
-              <h3 className="mt-8">
-                ブロックチェーンが実現する「開かれたインフラ」
-              </h3>
-              <p>
-                私たちはクリプトの根幹技術であるブロックチェーンの「分散・透明性・トラストレス」という特性を重視します。特定の権威や組織に依存せず、誰でも参加しやすい基盤が、テクノロジーと社会を真に融合させる鍵となると考えています。
-              </p>
-              <h3 className="mt-8">最先端技術への「民主的アクセス」の実現</h3>
-              <p>
-                AIや量子コンピュータなど、通常は大企業や富裕層、あるいは限られた研究機関が独占してきた先端技術を、クリプトがもたらす分散型のインフラを通じて解放し、誰もが利用・参画できる仕組みを構築します。
-                <br />
-                これにより、世界中どこにいてもネット接続さえあれば、イノベーションに貢献できる状態を作り出します。
-              </p>
-              <h3 className="mt-8">
-                「怪しい」から「社会課題を解決する」へのアップデート
-              </h3>
-              <p>
-                クリプトは投機的・詐欺的という偏見を持たれがちですが、金融包摂やデータ管理、コンテンツ流通など、多様なユースケースで既存の問題を打破できる可能性を秘めています。
-                <br />
-                私たちは、こうした具体的な事例を示すことで、クリプトを“怪しいもの”ではなく、“実用的で社会課題を解決する技術”として広めていきます。
-              </p>
-              <h3 className="mt-8">社会階層の流動性を高め、格差を是正する</h3>
-              <p>
-                先端技術は富裕層や一部企業だけが享受するものではなく、本来は社会全体の豊かさのために活用されるべきだと考えます。
-                <br />
-                クリプトやAI、量子コンピューティングなどの先端技術が、あらゆる地域や階層に届けられることで、生まれた環境は個々の可能性を解き放ち、社会階層の流動性を高める原動力になります。
-              </p>
-              <h3 className="mt-8">ゼロから世界をつなぐ日本発イノベーション</h3>
-              <p>
-                地理的・政治的な境界に縛られにくいクリプトは、ゼロからでもグローバル規模へと拡張できるポテンシャルがあります。
-                <br />
-                私たちは日本発のイノベーションを世界に広めるとともに、国際的な連携を通じて新たな価値を共創し続けます。
-                <br />
-                私たちの願いは、テクノロジーを通じて一人ひとりが可能性を最大限に発揮できる社会を創ることです。
-                <br />
-                「クリプト×先端技術」というケミストリーが、誰もが挑戦できる未来の扉を開くと信じ、私たちは行動を続けます。
+    <div className="pt-24">
+      <section className="container-custom">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">会社概要</h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            AIとWeb3で社会の屋台骨をアップデートする、エーワンロード株式会社の概要をご紹介します
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="flex items-center justify-center">
+            <Image src="/a1road-logo.png" width={300} height={300} alt="エーワンロード株式会社" />
+          </div>
+
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">企業情報</h2>
+
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <BsBuilding className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="font-bold mb-1">会社名</h3>
+                  <p>エーワンロード株式会社（設立準備中）</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="h-5 w-5 flex-shrink-0 flex items-center justify-center">
+                  <div className="h-2 w-2 bg-primary rounded-full"></div>
+                </div>
+                <div>
+                  <h3 className="font-bold mb-1">代表者</h3>
+                  <p>Kaz Tamura（田村一馬）</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="h-5 w-5 flex-shrink-0 flex items-center justify-center">
+                  <div className="h-2 w-2 bg-primary rounded-full"></div>
+                </div>
+                <div>
+                  <h3 className="font-bold mb-1">設立日</h3>
+                  <p>2023年</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="h-5 w-5 flex-shrink-0 flex items-center justify-center">
+                  <div className="h-2 w-2 bg-primary rounded-full"></div>
+                </div>
+                <div>
+                  <h3 className="font-bold mb-1">事業内容</h3>
+                  <ul className="space-y-2 list-disc list-inside">
+                    <li>AIを活用した製造業向け予測分析システムの開発・導入支援</li>
+                    <li>Web3技術を活用した建設業向け工程管理・品質保証プラットフォームの構築</li>
+                    <li>観光業向けデジタル体験プラットフォームの開発・運営</li>
+                    <li>ウォレットレス認証技術の研究開発と実装支援</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <MdEmail className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="font-bold mb-1">メールアドレス</h3>
+                  <p>admin@a1-road.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <MdLocationOn className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="font-bold mb-1">所在地</h3>
+                  <p>
+                    〒225-0013
+                    <br />
+                    神奈川県横浜市青葉区荏田町1150-34
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ミッション・ビジョンセクション */}
+      <section className="bg-beige-100 py-16 md:py-24 my-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="section-title mx-auto">ミッション・ビジョン</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="floating-card p-8 bg-white">
+              <h3 className="text-2xl font-bold mb-4 text-center">ミッション</h3>
+              <p className="text-center text-lg mb-6">AIとWeb3で、日本の産業を革新する</p>
+              <p className="text-muted-foreground">
+                製造業、建設業、観光業といった日本の基幹産業に最先端技術を導入し、
+                グローバル市場での競争力を強化します。技術の力で業務効率を向上させ、
+                新たな価値創造を実現することで、持続可能な産業基盤の構築に貢献します。
               </p>
             </div>
 
-            <div className="mt-16">
-              <ServicesSection />
+            <div className="floating-card p-8 bg-white">
+              <h3 className="text-2xl font-bold mb-4 text-center">ビジョン</h3>
+              <p className="text-center text-lg mb-6">
+                テクノロジーと産業の融合による、持続可能な社会の実現
+              </p>
+              <p className="text-muted-foreground">
+                AIやWeb3といった先端技術を、各業界の特性に合わせて最適化し、
+                実践的なソリューションとして提供します。技術の民主化を通じて、
+                誰もがイノベーションを起こせる環境を創出し、日本の産業全体の
+                デジタル変革を推進します。
+              </p>
             </div>
-          </motion.div>
-        </main>
-      </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 主な取引先・提携実績セクション */}
+      <section className="container-custom">
+        <div className="text-center mb-12">
+          <h2 className="section-title mx-auto">主な取引先・提携実績</h2>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="floating-card p-6 flex items-center justify-center">
+            <Image
+              src="/placeholder-logo.svg"
+              width={150}
+              height={75}
+              alt="住信SBIネット銀行"
+              className="max-h-12 w-auto"
+            />
+          </div>
+
+          <div className="floating-card p-6 flex items-center justify-center">
+            <Image
+              src="/placeholder-logo.svg"
+              width={150}
+              height={75}
+              alt="100BANCH"
+              className="max-h-12 w-auto"
+            />
+          </div>
+
+          <div className="floating-card p-6 flex items-center justify-center">
+            <Image
+              src="/placeholder-logo.svg"
+              width={150}
+              height={75}
+              alt="パートナー企業"
+              className="max-h-12 w-auto"
+            />
+          </div>
+
+          <div className="floating-card p-6 flex items-center justify-center">
+            <Image
+              src="/placeholder-logo.svg"
+              width={150}
+              height={75}
+              alt="パートナー企業"
+              className="max-h-12 w-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* CTA セクション */}
+      <section className="container-custom">
+        <div className="bg-primary/10 rounded-3xl p-8 md:p-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            私たちと一緒に、未来を創りませんか？
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+            AIとWeb3の力で、あなたのビジネスを次のステージへ。 まずはお気軽にご相談ください。
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button asChild size="lg">
+              <Link href="/contact">お問い合わせ</Link>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <Link href="/members">
+                メンバーを見る
+                <HiArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
