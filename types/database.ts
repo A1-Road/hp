@@ -44,3 +44,13 @@ export interface LumaEvent {
   status: string;
   cover_image_url: string;
 }
+
+export interface Member {
+  id: number | string;
+  name: string;
+  title: string;
+  bio: string;
+  image_url: string;
+  twitter?: string;
+  linkedin?: string;
+}

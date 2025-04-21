@@ -24,7 +24,7 @@ interface News {
   updated_at: string;
 }
 
-export default function NewsPage() {
+export default function MediaAndEventsPage() {
   const [news, setNews] = useState<News[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -128,8 +128,8 @@ export default function NewsPage() {
   return (
     <div className="container-custom py-8">
       <div className="flex justify-between items-center mb-8">
-        <h1 className="text-2xl font-bold">ニュース管理</h1>
-        <Button>新規作成</Button>
+        <h1 className="text-2xl font-bold">メディア＆イベント管理</h1>
+        <Button onClick={() => router.push("/admin/media-and-events/new")}>新規作成</Button>
       </div>
 
       <div className="rounded-md border">
@@ -161,7 +161,7 @@ export default function NewsPage() {
                     <Button
                       variant="ghost"
                       size="sm"
-                      onClick={() => router.push(`/admin/news/${item.id}`)}
+                      onClick={() => router.push(`/admin/media-and-events/${item.id}`)}
                     >
                       編集
                     </Button>

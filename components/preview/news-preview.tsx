@@ -1,7 +1,6 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Markdown } from "@/components/ui/markdown";
 
 interface NewsPreviewProps {
   title: string;
@@ -15,7 +14,7 @@ export function NewsPreview({ title, content }: NewsPreviewProps) {
         <CardTitle>{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <Markdown content={content} />
+        <div className="prose prose-sm max-w-none">{content}</div>
       </CardContent>
     </Card>
   );

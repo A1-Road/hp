@@ -1,7 +1,7 @@
 "use server";
 
-import { supabaseServer } from "@/lib/supabase";
-import { createClient } from "@/lib/supabase/server";
+import { supabase as supabaseServer } from "@/lib/supabase";
+// import { createClient } from "@/lib/supabase/server"; // このファイルは存在しないようです
 import { getEvents as getLumaEvents } from "@/lib/luma";
 import type { News, Event } from "@/types/database";
 

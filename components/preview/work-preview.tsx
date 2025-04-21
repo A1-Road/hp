@@ -2,7 +2,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
-import { Markdown } from "@/components/ui/markdown";
 
 interface WorkPreviewProps {
   title: string;
@@ -23,7 +22,7 @@ export function WorkPreview({ title, description, imageUrl }: WorkPreviewProps) 
               <Image src={imageUrl} alt={title} fill className="object-cover" />
             </div>
           )}
-          <Markdown content={description} />
+          <div className="prose prose-sm max-w-none">{description}</div>
         </div>
       </CardContent>
     </Card>

@@ -1,9 +1,19 @@
 "use client";
 
+export const runtime = "edge";
+
 import { useEffect, useState } from "react";
 import { use } from "react";
 import { supabase } from "@/lib/supabase";
-import { Achievement } from "@/lib/supabase";
+
+interface Achievement {
+  id: string;
+  title: string;
+  description: string;
+  image_url: string;
+  created_at?: string;
+  updated_at?: string;
+}
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -54,7 +64,7 @@ export default function AchievementEdit({ params }: { params: Promise<{ id: stri
       return;
     }
 
-    router.push("/admin/dashboard");
+    router.push("/admin/achievements");
   };
 
   if (!achievement) {
@@ -84,7 +94,11 @@ export default function AchievementEdit({ params }: { params: Promise<{ id: stri
         </div>
         <div className="flex space-x-2">
           <Button type="submit">保存</Button>
-          <Button type="button" variant="outline" onClick={() => router.push("/admin/dashboard")}>
+          <Button
+            type="button"
+            variant="outline"
+            onClick={() => router.push("/admin/achievements")}
+          >
             キャンセル
           </Button>
         </div>

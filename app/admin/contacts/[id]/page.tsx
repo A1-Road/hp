@@ -1,6 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+export const runtime = "edge";
+
+import { useEffect, useState, use } from "react";
 import { supabase } from "@/lib/supabase";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
@@ -19,7 +21,8 @@ interface Contact {
   updated_at: string;
 }
 
-export default function ContactDetail({ params }: { params: { id: string } }) {
+export default function ContactDetail({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = use(params);
   const [contact, setContact] = useState<Contact | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -31,7 +34,7 @@ export default function ContactDetail({ params }: { params: { id: string } }) {
         const { data, error } = await supabase
           .from("contacts")
           .select("*")
-          .eq("id", params.id)
+          .eq("id", resolvedParams.id)
           .single();
 
         if (error) throw error;
@@ -48,7 +51,7 @@ export default function ContactDetail({ params }: { params: { id: string } }) {
     };
 
     fetchContact();
-  }, [params.id, router]);
+  }, [resolvedParams.id, router]);
 
   if (isLoading) {
     return <div>読み込み中...</div>;

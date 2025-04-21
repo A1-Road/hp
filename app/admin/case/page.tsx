@@ -26,7 +26,7 @@ interface Work {
   updated_at: string;
 }
 
-export default function WorksPage() {
+export default function CasePage() {
   const [works, setWorks] = useState<Work[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -130,8 +130,8 @@ export default function WorksPage() {
   return (
     <div className="container-custom py-8">
       <div className="flex justify-between items-center mb-8">
-        <h1 className="text-2xl font-bold">実績管理</h1>
-        <Button>新規作成</Button>
+        <h1 className="text-2xl font-bold">事例管理</h1>
+        <Button onClick={() => router.push("/admin/case/new")}>新規作成</Button>
       </div>
 
       <div className="rounded-md border">
@@ -168,7 +168,7 @@ export default function WorksPage() {
                     <Button
                       variant="ghost"
                       size="sm"
-                      onClick={() => router.push(`/admin/works/${work.id}`)}
+                      onClick={() => router.push(`/admin/case/${work.id}`)}
                     >
                       編集
                     </Button>

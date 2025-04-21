@@ -60,11 +60,11 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             お問い合わせ一覧
           </Link>
           <Link
-            href="/admin/news"
+            href="/admin/media-and-events"
             className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
           >
             <Newspaper className="h-4 w-4" />
-            ニュース管理
+            メディア＆イベント管理
           </Link>
           <Link
             href="/admin/members"
@@ -74,11 +74,11 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             メンバー管理
           </Link>
           <Link
-            href="/admin/works"
+            href="/admin/case"
             className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
           >
             <Trophy className="h-4 w-4" />
-            実績管理
+            事例管理
           </Link>
           <div className="mt-auto">
             <button

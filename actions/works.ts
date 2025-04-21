@@ -2,7 +2,6 @@
 
 import { supabaseServer } from "@/lib/supabase";
 import type { Work } from "@/types/database";
-import { Work as WorkType } from "@/types/work";
 
 export async function getWorks(options?: {
   limit?: number;

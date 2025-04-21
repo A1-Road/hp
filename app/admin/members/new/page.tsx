@@ -104,7 +104,7 @@ export default function MemberCreate() {
       }
 
       toast.success("メンバー情報を作成しました");
-      router.push("/admin/dashboard");
+      router.push("/admin/members");
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : "予期せぬエラーが発生しました";
       setError(errorMessage);
@@ -169,7 +169,7 @@ export default function MemberCreate() {
           <Button type="submit" disabled={isUploading}>
             {isUploading ? "作成中..." : "作成"}
           </Button>
-          <Button type="button" variant="outline" onClick={() => router.push("/admin/dashboard")}>
+          <Button type="button" variant="outline" onClick={() => router.push("/admin/members")}>
             キャンセル
           </Button>
         </div>

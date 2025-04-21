@@ -1,5 +1,7 @@
 "use client";
 
+export const runtime = "edge";
+
 import { useEffect, useState, use } from "react";
 import { supabase } from "@/lib/supabase";
 import { Work } from "@/lib/supabase";
@@ -8,8 +10,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
+import Image from "next/image";
 
-export default function WorkEdit({ params }: { params: Promise<{ id: string }> }) {
+export default function CaseEdit({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
   const [title, setTitle] = useState("");
   const [industry, setIndustry] = useState("");
@@ -43,7 +46,7 @@ export default function WorkEdit({ params }: { params: Promise<{ id: string }> }
         setCurrentImageUrl(data?.image_url || null);
       } catch (error) {
         console.error("Error fetching work:", error);
-        toast.error("実績情報の取得に失敗しました");
+        toast.error("事例情報の取得に失敗しました");
         router.push("/admin/contacts");
       }
     };
@@ -132,11 +135,11 @@ export default function WorkEdit({ params }: { params: Promise<{ id: string }> }
         .eq("id", resolvedParams.id);
 
       if (updateError) {
-        throw new Error(`実績の更新に失敗しました: ${updateError.message}`);
+        throw new Error(`事例の更新に失敗しました: ${updateError.message}`);
       }
 
-      toast.success("実績を更新しました");
-      router.push("/admin/dashboard");
+      toast.success("事例を更新しました");
+      router.push("/admin/case");
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : "予期せぬエラーが発生しました";
       setError(errorMessage);
@@ -149,7 +152,7 @@ export default function WorkEdit({ params }: { params: Promise<{ id: string }> }
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-6">実績編集</h1>
+      <h1 className="text-2xl font-bold mb-6">事例編集</h1>
       {error && <div className="mb-4 p-4 bg-red-50 text-red-600 rounded-md">{error}</div>}
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
@@ -190,10 +193,12 @@ export default function WorkEdit({ params }: { params: Promise<{ id: string }> }
           <label className="block text-sm font-medium mb-1">画像</label>
           {currentImageUrl && (
             <div className="mb-4">
-              <img
+              <Image
                 src={currentImageUrl}
                 alt="現在の画像"
-                className="max-w-xs rounded-lg shadow-md"
+                width={320}
+                height={180}
+                className="rounded-lg shadow-md"
               />
             </div>
           )}
@@ -208,7 +213,7 @@ export default function WorkEdit({ params }: { params: Promise<{ id: string }> }
           <Button type="submit" disabled={isUploading}>
             {isUploading ? "更新中..." : "更新"}
           </Button>
-          <Button type="button" variant="outline" onClick={() => router.push("/admin/contacts")}>
+          <Button type="button" variant="outline" onClick={() => router.push("/admin/case")}>
             キャンセル
           </Button>
         </div>

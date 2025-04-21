@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 
-export default function WorkCreate() {
+export default function CaseCreate() {
   const [title, setTitle] = useState("");
   const [industry, setIndustry] = useState("");
   const [challenge, setChallenge] = useState("");
@@ -99,11 +99,11 @@ export default function WorkCreate() {
       });
 
       if (insertError) {
-        throw new Error(`実績の作成に失敗しました: ${insertError.message}`);
+        throw new Error(`事例の作成に失敗しました: ${insertError.message}`);
       }
 
-      toast.success("実績を作成しました");
-      router.push("/admin/dashboard");
+      toast.success("事例を作成しました");
+      router.push("/admin/case");
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : "予期せぬエラーが発生しました";
       setError(errorMessage);
@@ -116,7 +116,7 @@ export default function WorkCreate() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-6">実績作成</h1>
+      <h1 className="text-2xl font-bold mb-6">事例作成</h1>
       {error && <div className="mb-4 p-4 bg-red-50 text-red-600 rounded-md">{error}</div>}
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
@@ -166,7 +166,7 @@ export default function WorkCreate() {
           <Button type="submit" disabled={isUploading}>
             {isUploading ? "作成中..." : "作成"}
           </Button>
-          <Button type="button" variant="outline" onClick={() => router.push("/admin/dashboard")}>
+          <Button type="button" variant="outline" onClick={() => router.push("/admin/case")}>
             キャンセル
           </Button>
         </div>

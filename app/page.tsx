@@ -2,103 +2,141 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { HiArrowRight } from "react-icons/hi";
-import { BsBuilding, BsCompass } from "react-icons/bs";
-import { FaMountain, FaCalendarAlt, FaArrowRight } from "react-icons/fa";
-import HeroSection from "@/components/home/hero-section";
-import FeatureCard from "@/components/home/feature-card";
-import IndustrySection from "@/components/home/industry-section";
-import CaseStudyCard from "@/components/home/case-study-card";
-import { useEffect, useState } from "react";
-import type { Work, Event } from "@/types/database";
 import { AnimatedSection } from "@/components/ui/animated-section";
-import { formatDate } from "@/lib/utils";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
-interface EventItemProps {
-  event: Event;
-  index: number;
+// FAQ アイテム
+const faqItems = [
+  {
+    question: "AIとWeb3の組み合わせにはどのようなメリットがありますか？",
+    answer:
+      "AIとWeb3の組み合わせにより、データの透明性と信頼性が向上し、より公平で効率的な意思決定が可能になります。また、AIの分析能力とWeb3の分散型特性を活かすことで、新しいビジネスモデルの創出が期待できます。",
+  },
+  {
+    question: "DAOプラットフォームの導入にはどのくらいの期間がかかりますか？",
+    answer:
+      "プロジェクトの規模や要件によって異なりますが、基本的なプラットフォームの構築には3-6ヶ月程度かかります。その後、組織の特性に合わせたカスタマイズや、メンバーのトレーニング期間も考慮する必要があります。",
+  },
+  {
+    question: "ウォレットレス認証はどのように安全性を確保していますか？",
+    answer:
+      "ウォレットレス認証は、生体認証やデバイス固有の識別子を活用し、従来のパスワード認証よりも高いセキュリティを実現しています。また、ブロックチェーン技術を活用することで、認証情報の改ざんを防ぎ、より安全な認証プロセスを提供しています。",
+  },
+  {
+    question: "AI導入の際のデータプライバシー対策はどのように行っていますか？",
+    answer:
+      "データの匿名化や暗号化、アクセス制御など、多層的なセキュリティ対策を実施しています。また、GDPRや個人情報保護法などの規制に準拠したデータ管理を行い、プライバシー保護に配慮しています。",
+  },
+];
+
+// 実績データ
+const achievements = [
+  {
+    id: 1,
+    title: "Road to devcon",
+    image: "/placeholder.svg?height=200&width=200",
+    description: "Ethereumの世界的カンファレンスへの道程をサポート",
+  },
+  {
+    id: 2,
+    title: "Joba",
+    image: "/placeholder.svg?height=200&width=200",
+    description: "ブロックチェーン技術を活用した就労支援プラットフォーム",
+  },
+  {
+    id: 3,
+    title: "Unyte",
+    image: "/placeholder.svg?height=200&width=200",
+    description: "分散型自律組織による新しいコミュニティ構築",
+  },
+  {
+    id: 4,
+    title: "Showtime",
+    image: "/placeholder.svg?height=200&width=200",
+    description: "Web3とエンターテイメントの融合プロジェクト",
+  },
+  {
+    id: 5,
+    title: "やいまSDGsシンポジウム",
+    image: "/placeholder.svg?height=200&width=200",
+    description: "持続可能な地域開発のための技術導入事例",
+  },
+];
+
+// 事業内容カード
+const businessCards = [
+  {
+    id: 1,
+    title: "DAOアドバイザリー",
+    description:
+      "分散型自律組織の設計・構築・運営をトータルサポート。組織の透明性と効率性を高め、新しい形の協業を実現します。",
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    id: 2,
+    title: "AIエージェント開発",
+    description:
+      "製造業、建設業、観光業向けにカスタマイズされたAIソリューションを提供。業務効率化と新たな価値創造を支援します。",
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    id: 3,
+    title: "Bankless Japan",
+    description:
+      "暗号資産とDeFiを活用した、より開かれた金融システムの構築と普及活動を推進しています。",
+    image: "/placeholder.svg?height=300&width=400",
+  },
+];
+
+// News type definition
+interface NewsItem {
+  id: string | number;
+  title: string;
+  excerpt: string;
+  image_url: string;
+  published_at: string;
 }
 
-function EventItem({ event, index }: EventItemProps) {
-  return (
-    <AnimatedSection delay={index * 100}>
-      <div className="card-3d p-4 bg-white rounded-xl border border-beige-200/50 shadow-md">
-        <h3 className="font-bold mb-2">{event.title}</h3>
-        <div className="text-sm text-muted-foreground mb-2">
-          <div className="flex items-center mb-1">
-            <FaCalendarAlt className="h-3 w-3 mr-1" />
-            {formatDate(event.date, true)}
-          </div>
-          <div>{event.location}</div>
-        </div>
-        <Button asChild size="sm" className="w-full rounded-full">
-          <Link href={event.url} target="_blank" rel="noopener noreferrer">
-            詳細・申し込み
-          </Link>
-        </Button>
-      </div>
-    </AnimatedSection>
-  );
+// Event type definition
+interface EventItem {
+  id: number;
+  title: string;
+  date: string;
+  location: string;
+  url: string;
 }
 
-interface EventsSectionProps {
-  events: Event[];
-}
-
-function EventsSection({ events }: EventsSectionProps) {
-  return (
-    <section className="container-custom">
-      <div className="text-center mb-16">
-        <h2 className="text-2xl font-bold mb-6">最新のイベント</h2>
-        <div className="space-y-4">
-          {events.length > 0 ? (
-            events
-              .slice(0, 3)
-              .map((event, index) => <EventItem key={event.id} event={event} index={index} />)
-          ) : (
-            <div className="text-center py-8">
-              <p className="text-muted-foreground">現在開催予定のイベントはありません。</p>
-            </div>
-          )}
-        </div>
-        {events.length > 0 && (
-          <div className="mt-6 text-center">
-            <Button variant="outline" asChild className="rounded-full">
-              <Link href="/news">
-                すべてのイベントを見る
-                <FaArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        )}
-      </div>
-    </section>
-  );
-}
-
-export default function Home() {
-  const [latestWorks, setLatestWorks] = useState<Work[]>([]);
+export default function HomePage() {
+  const [news, setNews] = useState<NewsItem[]>([]);
+  const [events, setEvents] = useState<EventItem[]>([]);
   const [loading, setLoading] = useState(true);
-  const [events, setEvents] = useState<Event[]>([]);
 
   useEffect(() => {
     async function fetchData() {
       try {
-        // 実績データの取得
-        const worksResponse = await fetch("/api/works?limit=3");
-        if (worksResponse.ok) {
-          const worksData = await worksResponse.json();
-          setLatestWorks(worksData);
-        }
+        const [newsResponse, eventsResponse] = await Promise.all([
+          fetch("/api/news?limit=3"),
+          fetch("/api/events"),
+        ]);
 
-        // イベントデータの取得
-        const eventsResponse = await fetch("/api/events");
-        if (eventsResponse.ok) {
-          const eventsData = await eventsResponse.json();
+        if (newsResponse.ok && eventsResponse.ok) {
+          const [newsData, eventsData] = await Promise.all([
+            newsResponse.json(),
+            eventsResponse.json(),
+          ]);
+
+          setNews(newsData);
           setEvents(eventsData);
         }
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("データ取得エラー:", error);
       } finally {
         setLoading(false);
       }
@@ -110,213 +148,331 @@ export default function Home() {
   return (
     <div className="pt-20">
       {/* ヒーローセクション */}
-      <HeroSection />
-
-      {/* 技術の強みセクション */}
-      <section className="container-custom blob-bg">
-        <div className="text-center mb-12">
-          <AnimatedSection>
-            <h2 className="section-title mx-auto">技術の強み</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              AIとWeb3の専門知識を活かし、日本の産業基盤をグローバル競争力のあるものへと変革します
-            </p>
-          </AnimatedSection>
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden blob-bg">
+        <div className="absolute inset-0 bg-gradient-to-r from-beige-500/20 to-transparent"></div>
+        <div className="absolute inset-0">
+          <Image
+            src="/placeholder.jpg"
+            alt="Hero Background"
+            fill
+            className="object-cover z-0 opacity-20"
+            priority
+          />
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <FeatureCard
-            icon={<BsBuilding className="h-10 w-10 text-primary" />}
-            title="ニッポンの屋台骨 × グローバル競争力"
-            description="日本の製造業・建設業・観光業の強みを活かしながら、最新技術で国際競争力を高めます。"
-          />
-          <FeatureCard
-            icon={<BsCompass className="h-10 w-10 text-primary" />}
-            title="AI・Web3のワンストップ開発"
-            description="AIモデル構築からブロックチェーン連携まで、一貫した開発体制で効率的なDX推進を実現します。"
-          />
-          <FeatureCard
-            icon={<FaMountain className="h-10 w-10 text-primary" />}
-            title="ウォレットレス認証技術"
-            description="Web3の利便性と安全性を両立する独自の認証技術で、導入障壁を大幅に低減します。"
-          />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <AnimatedSection>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+                <span className="text-gradient">会社のDXはAIが加速する</span>
+              </h1>
+              <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                <Button asChild size="lg" className="rounded-full">
+                  <Link href="/contact">まずはご相談</Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="rounded-full">
+                  <Link href="/request-documentation">資料請求</Link>
+                </Button>
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 
-      {/* 対象業界セクション */}
-      <IndustrySection />
-
-      {/* 実績紹介セクション */}
-      <section className="container-custom bg-gradient-soft rounded-3xl my-16 relative overflow-hidden">
-        <div className="absolute inset-0 blob-bg"></div>
-
-        <div className="relative z-10">
-          <div className="text-center mb-12">
-            <AnimatedSection>
-              <h2 className="section-title mx-auto">実績紹介</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                AIとWeb3技術を活用した具体的な課題解決事例をご紹介します
+      {/* WHAT WE DO セクション */}
+      <section className="py-20 bg-beige-50/50">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">WHAT WE DO</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                観光、建設、製造など向けに、AIエージェント開発。そしてDAOアドバイザリーをしています。
               </p>
-            </AnimatedSection>
-          </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {loading ? (
-              // ローディング状態
-              Array(3)
-                .fill(0)
-                .map((_, index) => (
-                  <AnimatedSection key={index} delay={index * 100}>
-                    <div className="h-96 animate-pulse bg-white/50 backdrop-blur-sm rounded-2xl"></div>
-                  </AnimatedSection>
-                ))
-            ) : latestWorks.length > 0 ? (
-              // データ取得成功
-              latestWorks.map((work, index) => (
-                <AnimatedSection key={work.id} delay={index * 100}>
-                  <CaseStudyCard
-                    title={work.title}
-                    problem={work.challenge}
-                    solution={work.solution}
-                    result={work.results[0]}
-                    imageSrc={work.image_url}
-                  />
-                </AnimatedSection>
-              ))
-            ) : (
-              // フォールバックデータ
-              <>
-                <AnimatedSection>
-                  <CaseStudyCard
-                    title="ウォレットレスログインツール"
-                    problem="Web3サービスの複雑なウォレット連携が利用障壁に"
-                    solution="シンプルな認証フローと安全なウォレット管理の両立"
-                    result="ログインステップを3ステップから1ステップへ削減"
-                    imageSrc="/placeholder.svg?height=200&width=400"
-                  />
-                </AnimatedSection>
-                <AnimatedSection delay={100}>
-                  <CaseStudyCard
-                    title="地域DAO × LLMチャットエンジン"
-                    problem="地域情報の分散と住民エンゲージメントの低下"
-                    solution="地域特化型LLMと参加型DAOプラットフォームの構築"
-                    result="LINE登録者250名増、地域提案10件の実現"
-                    imageSrc="/placeholder.svg?height=200&width=400"
-                  />
-                </AnimatedSection>
-                <AnimatedSection delay={200}>
-                  <CaseStudyCard
-                    title="製造業向けデジタル導入支援"
-                    problem="アナログな業務プロセスによる生産性低下"
-                    solution="DAO活用による業務可視化と意思決定の効率化"
-                    result="意思決定時間40%削減、生産効率15%向上"
-                    imageSrc="/placeholder.svg?height=200&width=400"
-                  />
-                </AnimatedSection>
-              </>
-            )}
-          </div>
+      {/* 事業内容セクション */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">事業内容</h2>
+            </div>
+          </AnimatedSection>
 
-          <div className="text-center mt-12">
-            <Button asChild size="lg" className="rounded-full">
-              <Link href="/works" className="inline-flex items-center">
-                実績をもっと見る
-                <HiArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {businessCards.map((business, index) => (
+              <AnimatedSection key={business.id} delay={index * 100}>
+                <div className="card-3d h-full overflow-hidden rounded-2xl shadow-md">
+                  <div className="relative h-48">
+                    <Image
+                      src={business.image}
+                      alt={business.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-4">{business.title}</h3>
+                    <p className="text-muted-foreground">{business.description}</p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 相談までの流れセクション */}
+      <section className="py-20 bg-beige-50/50">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">相談までの流れ</h2>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={100}>
+            <div className="max-w-4xl mx-auto">
+              <Image
+                src="/workflow.png"
+                alt="相談までの流れ"
+                width={1200}
+                height={600}
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* 実績セクション */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">実績</h2>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            {achievements.map((achievement, index) => (
+              <AnimatedSection key={achievement.id} delay={index * 100}>
+                <div className="text-center">
+                  <div className="relative h-36 w-36 mx-auto mb-4 overflow-hidden rounded-full border-2 border-beige-100">
+                    <Image
+                      src={achievement.image}
+                      alt={achievement.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h3 className="font-bold mb-2">{achievement.title}</h3>
+                  <p className="text-sm text-muted-foreground">{achievement.description}</p>
+                </div>
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </section>
 
       {/* イベントセクション */}
-      <section className="container-custom bg-gradient-soft rounded-3xl my-16 relative overflow-hidden">
-        <div className="absolute inset-0 blob-bg"></div>
-
-        <div className="relative z-10">
-          <div className="text-center mb-12">
-            <AnimatedSection>
-              <h2 className="section-title mx-auto">最新のイベント</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                最新のイベント情報をお届けします
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">今後のイベント</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                弊社主催・登壇予定のイベント情報をご紹介します
               </p>
-            </AnimatedSection>
-          </div>
+            </div>
+          </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="max-w-4xl mx-auto">
             {loading ? (
-              // ローディング状態
-              Array(3)
-                .fill(0)
-                .map((_, index) => (
-                  <AnimatedSection key={index} delay={index * 100}>
-                    <div className="h-48 animate-pulse bg-white/50 backdrop-blur-sm rounded-2xl"></div>
-                  </AnimatedSection>
-                ))
-            ) : events.length > 0 ? (
-              // データ取得成功
-              events.slice(0, 3).map((event, index) => (
-                <AnimatedSection key={event.id} delay={index * 100}>
-                  <div className="card-3d p-6 bg-white rounded-2xl border border-beige-200/50 shadow-md hover:shadow-lg transition-all duration-300">
-                    <h3 className="font-bold mb-2">{event.title}</h3>
-                    <div className="text-sm text-muted-foreground mb-4">
-                      <div className="flex items-center mb-1">
-                        <FaCalendarAlt className="h-3 w-3 mr-1" />
-                        {formatDate(event.date, true)}
+              <div className="space-y-4">
+                {Array(3)
+                  .fill(0)
+                  .map((_, index) => (
+                    <AnimatedSection key={index} delay={index * 100}>
+                      <div className="h-32 animate-pulse bg-white rounded-2xl"></div>
+                    </AnimatedSection>
+                  ))}
+              </div>
+            ) : events && events.length > 0 ? (
+              <div className="space-y-4">
+                {events
+                  .filter((event) => new Date(event.date) >= new Date())
+                  .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+                  .slice(0, 3)
+                  .map((event, index) => (
+                    <AnimatedSection key={event.id} delay={index * 100}>
+                      <div className="card-3d p-6 bg-white rounded-xl shadow-md">
+                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                          <div>
+                            <h3 className="font-bold text-lg mb-2">{event.title}</h3>
+                            <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted-foreground">
+                              <div className="flex items-center">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  className="h-4 w-4 mr-1"
+                                  viewBox="0 0 20 20"
+                                  fill="currentColor"
+                                >
+                                  <path
+                                    fillRule="evenodd"
+                                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                    clipRule="evenodd"
+                                  />
+                                </svg>
+                                {new Date(event.date).toLocaleDateString("ja-JP")}
+                              </div>
+                              <div className="flex items-center">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  className="h-4 w-4 mr-1"
+                                  viewBox="0 0 20 20"
+                                  fill="currentColor"
+                                >
+                                  <path
+                                    fillRule="evenodd"
+                                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                    clipRule="evenodd"
+                                  />
+                                </svg>
+                                {event.location}
+                              </div>
+                            </div>
+                          </div>
+                          <Button asChild size="sm" className="whitespace-nowrap rounded-full">
+                            <Link href={event.url} target="_blank" rel="noopener noreferrer">
+                              詳細・申し込み
+                            </Link>
+                          </Button>
+                        </div>
                       </div>
-                      <div>{event.location}</div>
-                    </div>
-                    <Button asChild size="sm" className="w-full rounded-full">
-                      <Link href={event.url} target="_blank" rel="noopener noreferrer">
-                        詳細・申し込み
-                      </Link>
-                    </Button>
-                  </div>
-                </AnimatedSection>
-              ))
+                    </AnimatedSection>
+                  ))}
+              </div>
             ) : (
-              // フォールバックメッセージ
-              <div className="col-span-full text-center py-12">
-                <p className="text-muted-foreground">現在開催予定のイベントはありません。</p>
+              <div className="text-center py-12">
+                <p className="text-muted-foreground">現在予定されているイベントはありません。</p>
               </div>
             )}
           </div>
 
-          {events.length > 0 && (
-            <div className="text-center mt-12">
-              <Button asChild size="lg" className="rounded-full">
-                <Link href="/news" className="inline-flex items-center">
-                  すべてのイベントを見る
-                  <HiArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </div>
-          )}
+          <div className="text-center mt-8">
+            <Button asChild variant="outline" className="rounded-full">
+              <Link href="/media-and-events?tab=events">すべてのイベントを見る</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
-      {/* CTA セクション */}
-      <section className="container-custom">
-        <AnimatedSection>
-          <div className="glass-card rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
-            <div className="absolute inset-0 blob-bg"></div>
-            <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">
-                AIとWeb3で、あなたのビジネスを次のステージへ
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-                デジタル変革の第一歩は、まずは相談から。
-                あなたのビジネス課題に合わせた最適なソリューションをご提案します。
-              </p>
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button asChild size="lg" className="rounded-full">
-                  <Link href="/contact">相談してみる</Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="rounded-full">
-                  <Link href="/service-flow">サービスの流れを見る</Link>
-                </Button>
-              </div>
+      {/* FAQ セクション */}
+      <section className="py-20 bg-beige-50/50">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">よくある質問</h2>
             </div>
+          </AnimatedSection>
+
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              {faqItems.map((faq, index) => (
+                <AnimatedSection key={index} delay={index * 100}>
+                  <AccordionItem
+                    value={`item-${index}`}
+                    className="bg-white mb-4 rounded-lg shadow-sm"
+                  >
+                    <AccordionTrigger className="px-6 py-4">{faq.question}</AccordionTrigger>
+                    <AccordionContent className="px-6 pb-4">
+                      <p className="text-muted-foreground">{faq.answer}</p>
+                    </AccordionContent>
+                  </AccordionItem>
+                </AnimatedSection>
+              ))}
+            </Accordion>
           </div>
-        </AnimatedSection>
+        </div>
+      </section>
+
+      {/* 最新メディアセクション */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">最新メディア</h2>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {loading
+              ? // ローディング状態
+                Array(3)
+                  .fill(0)
+                  .map((_, index) => (
+                    <AnimatedSection key={index} delay={index * 100}>
+                      <div className="h-64 animate-pulse bg-beige-100 rounded-2xl"></div>
+                    </AnimatedSection>
+                  ))
+              : news && news.length > 0
+                ? // データ取得成功
+                  news.map((item, index) => (
+                    <AnimatedSection key={item.id} delay={index * 100}>
+                      <Link href={`/news/${item.id}`}>
+                        <div className="card-3d h-full overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+                          <div className="relative h-40">
+                            <Image
+                              src={item.image_url || "/placeholder.svg?height=200&width=400"}
+                              alt={item.title}
+                              fill
+                              className="object-cover"
+                            />
+                          </div>
+                          <div className="p-6">
+                            <p className="text-sm text-muted-foreground mb-2">
+                              {new Date(item.published_at).toLocaleDateString("ja-JP")}
+                            </p>
+                            <h3 className="font-bold mb-2 line-clamp-2">{item.title}</h3>
+                            <p className="text-sm text-muted-foreground line-clamp-3">
+                              {item.excerpt}
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+                    </AnimatedSection>
+                  ))
+                : // フォールバックデータ
+                  Array(3)
+                    .fill(0)
+                    .map((_, index) => (
+                      <AnimatedSection key={index} delay={index * 100}>
+                        <div className="card-3d h-full overflow-hidden rounded-2xl shadow-md">
+                          <div className="relative h-40">
+                            <Image
+                              src="/placeholder.svg?height=200&width=400"
+                              alt="プレースホルダー"
+                              fill
+                              className="object-cover"
+                            />
+                          </div>
+                          <div className="p-6">
+                            <p className="text-sm text-muted-foreground mb-2">
+                              2025年4月{index + 1}日
+                            </p>
+                            <h3 className="font-bold mb-2">プレスリリースタイトル {index + 1}</h3>
+                            <p className="text-sm text-muted-foreground">
+                              新しいAI技術や取り組みについてのプレスリリース内容がここに表示されます。
+                            </p>
+                          </div>
+                        </div>
+                      </AnimatedSection>
+                    ))}
+          </div>
+        </div>
       </section>
     </div>
   );

@@ -1,5 +1,7 @@
 "use client";
 
+export const runtime = "edge";
+
 import { useEffect, useState, use } from "react";
 import { supabase } from "@/lib/supabase";
 import type { Member } from "@/lib/supabase";
@@ -8,6 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
+import Image from "next/image";
 
 export default function MemberEdit({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
@@ -42,11 +45,18 @@ export default function MemberEdit({ params }: { params: Promise<{ id: string }>
         setBio(data?.bio || "");
         setExpertise(data?.expertise?.join(", ") || "");
         setCurrentImageUrl(data?.image_url || null);
-        setSocial(data?.social || { twitter: "", linkedin: "", github: "" });
+
+        // social オブジェクトを安全に初期化 - null/undefinedのケースもカバー
+        const socialData = data?.social || {};
+        setSocial({
+          twitter: typeof socialData.twitter === "string" ? socialData.twitter : "",
+          linkedin: typeof socialData.linkedin === "string" ? socialData.linkedin : "",
+          github: typeof socialData.github === "string" ? socialData.github : "",
+        });
       } catch (error) {
         console.error("Error fetching member:", error);
         toast.error("メンバー情報の取得に失敗しました");
-        router.push("/admin/contacts");
+        router.push("/admin/members");
       }
     };
 
@@ -136,7 +146,7 @@ export default function MemberEdit({ params }: { params: Promise<{ id: string }>
       }
 
       toast.success("メンバー情報を更新しました");
-      router.push("/admin/dashboard");
+      router.push("/admin/members");
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : "予期せぬエラーが発生しました";
       setError(errorMessage);
@@ -176,7 +186,13 @@ export default function MemberEdit({ params }: { params: Promise<{ id: string }>
           <label className="block text-sm font-medium mb-1">画像</label>
           {currentImageUrl && (
             <div className="mb-2">
-              <img src={currentImageUrl} alt="現在の画像" className="max-w-xs rounded-md" />
+              <Image
+                src={currentImageUrl}
+                alt="現在の画像"
+                width={320}
+                height={180}
+                className="rounded-md"
+              />
             </div>
           )}
           <Input
@@ -212,7 +228,7 @@ export default function MemberEdit({ params }: { params: Promise<{ id: string }>
           <Button type="submit" disabled={isUploading}>
             {isUploading ? "更新中..." : "更新"}
           </Button>
-          <Button type="button" variant="outline" onClick={() => router.push("/admin/contacts")}>
+          <Button type="button" variant="outline" onClick={() => router.push("/admin/members")}>
             キャンセル
           </Button>
         </div>

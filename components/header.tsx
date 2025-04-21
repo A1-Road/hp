@@ -3,34 +3,19 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { HiMenu, HiX } from "react-icons/hi";
-import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useLayout } from "../app/contexts/header-context";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
 import Image from "next/image";
 
 const navigation = [
-  { name: "ホーム", href: "/" },
-  { name: "サービス", href: "/services" },
-  { name: "実績", href: "/works" },
-  { name: "会社概要", href: "/about" },
-  { name: "メンバー", href: "/members" },
-  { name: "ニュース", href: "/news" },
-  { name: "ブログ", href: "/blog" },
-  { name: "用語集", href: "/glossary" },
-  { name: "よくある質問", href: "/faq" },
-  { name: "プライバシーポリシー", href: "/privacy-policy" },
+  { name: "About Us", href: "/about-us" },
+  { name: "Case", href: "/case" },
+  { name: "Media and Events", href: "/media-and-events" },
 ];
 
-export default function Header() {
+export default function NewHeader() {
   const { isHeaderVisible } = useLayout();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -79,9 +64,14 @@ export default function Header() {
               {item.name}
             </Link>
           ))}
-          <Button asChild>
-            <Link href="/contact">お問い合わせ</Link>
-          </Button>
+          <div className="flex space-x-2">
+            <Button asChild className="rounded-full">
+              <Link href="/contact">まずはご相談</Link>
+            </Button>
+            <Button asChild variant="outline" className="rounded-full">
+              <Link href="/request-documentation">資料請求</Link>
+            </Button>
+          </div>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -112,9 +102,14 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <Button asChild className="w-full">
+            <Button asChild className="w-full rounded-full">
               <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
-                お問い合わせ
+                まずはご相談
+              </Link>
+            </Button>
+            <Button asChild variant="outline" className="w-full rounded-full">
+              <Link href="/request-documentation" onClick={() => setIsMenuOpen(false)}>
+                資料請求
               </Link>
             </Button>
           </div>
