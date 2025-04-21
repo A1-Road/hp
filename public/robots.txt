@@ -1,14 +1,26 @@
+# *
 User-agent: *
 Allow: /
+Disallow: /admin/*
+Disallow: /api/*
+Disallow: /_next/*
+Disallow: /static/*
 
-# LLM Crawlers
+# GPTBot
 User-agent: GPTBot
-Allow: /
-User-agent: ChatGPT-User
-Allow: /
-User-agent: Google-Extended
-Allow: /
-User-agent: anthropic-ai
-Allow: /
+Disallow: /
 
-Sitemap: https://a1road.com/sitemap.xml 
+# ChatGPT-User
+User-agent: ChatGPT-User
+Disallow: /
+
+# Google-Extended
+User-agent: Google-Extended
+Disallow: /
+
+# Host
+Host: https://a-oneroad.com
+
+# Sitemaps
+Sitemap: https://a-oneroad.com/sitemap.xml
+Sitemap: https://a-oneroad.com/server-sitemap.xml

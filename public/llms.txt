@@ -46,3 +46,23 @@ Crawl-delay: 10
 
 # サイトマップ
 Sitemap: https://a1road.com/sitemap.xml 
+
+# LLMs.txt
+# このファイルは、大規模言語モデル（LLM）に対して、ウェブサイトのクロールと学習に関する指示を提供します。
+
+# 許可するパス
+Allow: /
+Allow: /api/
+Allow: /blog/
+Allow: /products/
+
+# 禁止するパス
+Disallow: /admin/
+Disallow: /private/
+Disallow: /user-data/
+
+# クロール頻度の制限
+Crawl-delay: 10
+
+# サイトマップの場所
+Sitemap: https://your-domain.com/sitemap.xml 

@@ -46,20 +46,33 @@ export const metadata: Metadata = {
       "AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
   },
   other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "エーワンロード株式会社",
-      url: "https://a1road.com",
-      logo: "https://a1road.com/logo.png",
-      description:
-        "AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
-      address: {
-        "@type": "PostalAddress",
-        addressCountry: "JP",
+    "application/ld+json": JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "エーワンロード株式会社",
+        url: "https://a1road.com",
+        logo: "https://a1road.com/logo.png",
+        description:
+          "AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
+        address: {
+          "@type": "PostalAddress",
+          addressCountry: "JP",
+        },
+        sameAs: ["https://twitter.com/a1road", "https://linkedin.com/company/a1road"],
       },
-      sameAs: ["https://twitter.com/a1road", "https://linkedin.com/company/a1road"],
-    }),
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "エーワンロード株式会社",
+        url: "https://a1road.com",
+        potentialAction: {
+          "@type": "SearchAction",
+          target: "https://a1road.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
+    ]),
   },
 };
 
