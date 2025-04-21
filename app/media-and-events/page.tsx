@@ -65,13 +65,13 @@ export default function MediaAndEventsPage() {
           fetch("/api/events"),
         ]);
 
-        if (newsResponse.ok && eventsResponse.ok) {
-          const [newsData, eventsData] = await Promise.all([
-            newsResponse.json(),
-            eventsResponse.json(),
-          ]);
-
+        if (newsResponse.ok) {
+          const newsData = await newsResponse.json();
           setNewsItems(newsData);
+        }
+
+        if (eventsResponse.ok) {
+          const eventsData = await eventsResponse.json();
           setEvents(eventsData);
         }
       } catch (error) {

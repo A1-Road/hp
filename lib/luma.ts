@@ -4,17 +4,18 @@ const LUMA_API_KEY = process.env.LUMA_API_KEY;
 const LUMA_API_BASE_URL = "https://api.lu.ma/api/v1";
 
 export async function getEvents(): Promise<LumaEvent[]> {
+  // APIキーがない場合は空の配列を返す
   if (!LUMA_API_KEY) {
-    console.warn("LUMA_API_KEY is not defined. Events will not be fetched.");
     return [];
   }
 
   try {
+    const headers = new Headers();
+    headers.append("x-luma-api-key", LUMA_API_KEY);
+    headers.append("Content-Type", "application/json");
+
     const response = await fetch(`${LUMA_API_BASE_URL}/events`, {
-      headers: {
-        "x-luma-api-key": LUMA_API_KEY,
-        "Content-Type": "application/json",
-      },
+      headers,
     });
 
     if (!response.ok) {

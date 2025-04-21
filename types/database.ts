@@ -24,7 +24,7 @@ export interface News {
 }
 
 export interface Event {
-  id: number;
+  id: string | number;
   title: string;
   date: string;
   location: string;
@@ -53,4 +53,17 @@ export interface Member {
   image_url: string;
   twitter?: string;
   linkedin?: string;
+}
+
+export interface Contact {
+  id: string;
+  name: string;
+  company: string | null;
+  email: string;
+  phone: string | null;
+  inquiry_type: string;
+  message: string;
+  privacy_agreed: boolean;
+  status: "pending" | "in_progress" | "completed";
+  created_at: string;
 }

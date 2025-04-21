@@ -16,16 +16,21 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { MdEmail, MdPhone, MdLocationOn, MdSend } from "react-icons/md";
 import { submitContactForm } from "@/actions/contact";
+import type { Contact } from "@/types/database";
+
+interface FormState extends Omit<Contact, "id" | "created_at" | "status"> {
+  company: string | null;
+}
 
 export default function Contact() {
-  const [formState, setFormState] = useState({
+  const [formState, setFormState] = useState<FormState>({
     name: "",
-    company: "",
+    company: null,
     email: "",
-    phone: "",
-    inquiry: "",
+    phone: null,
+    inquiry_type: "",
     message: "",
-    privacy: false,
+    privacy_agreed: false,
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -42,7 +47,7 @@ export default function Contact() {
   };
 
   const handleCheckboxChange = (checked: boolean) => {
-    setFormState((prev) => ({ ...prev, privacy: checked }));
+    setFormState((prev) => ({ ...prev, privacy_agreed: checked }));
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -147,7 +152,7 @@ export default function Contact() {
                       <Input
                         id="company"
                         name="company"
-                        value={formState.company}
+                        value={formState.company || ""}
                         onChange={handleChange}
                       />
                     </div>
@@ -175,18 +180,19 @@ export default function Contact() {
                       <Input
                         id="phone"
                         name="phone"
-                        value={formState.phone}
+                        type="tel"
+                        value={formState.phone || ""}
                         onChange={handleChange}
                       />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="inquiry" className="text-sm font-medium">
+                    <label htmlFor="inquiry_type" className="text-sm font-medium">
                       お問い合わせ内容 <span className="text-destructive">*</span>
                     </label>
                     <Select
-                      onValueChange={(value) => handleSelectChange("inquiry", value)}
+                      onValueChange={(value) => handleSelectChange("inquiry_type", value)}
                       required
                     >
                       <SelectTrigger>
@@ -218,21 +224,16 @@ export default function Contact() {
 
                   <div className="flex items-start space-x-2">
                     <Checkbox
-                      id="privacy"
-                      checked={formState.privacy}
+                      id="privacy_agreed"
+                      checked={formState.privacy_agreed}
                       onCheckedChange={handleCheckboxChange}
                       required
                     />
                     <label
-                      htmlFor="privacy"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      htmlFor="privacy_agreed"
+                      className="text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                     >
-                      <span>
-                        <a href="/privacy-policy" className="text-primary hover:underline">
-                          プライバシーポリシー
-                        </a>
-                        に同意します
-                      </span>
+                      プライバシーポリシーに同意します <span className="text-destructive">*</span>
                     </label>
                   </div>
 

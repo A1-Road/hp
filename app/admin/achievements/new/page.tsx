@@ -75,7 +75,7 @@ export default function AchievementCreate() {
       }
 
       toast.success("実績を作成しました");
-      router.push("/admin/dashboard");
+      router.push("/admin/achievements");
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : "予期せぬエラーが発生しました";
       setError(errorMessage);
@@ -117,7 +117,11 @@ export default function AchievementCreate() {
           <Button type="submit" disabled={isUploading}>
             {isUploading ? "アップロード中..." : "作成"}
           </Button>
-          <Button type="button" variant="outline" onClick={() => router.push("/admin/dashboard")}>
+          <Button
+            type="button"
+            variant="outline"
+            onClick={() => router.push("/admin/achievements")}
+          >
             キャンセル
           </Button>
         </div>

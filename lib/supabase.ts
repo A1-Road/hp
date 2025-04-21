@@ -1,13 +1,16 @@
 import { createClient } from "@supabase/supabase-js";
+import type { News, Work, Member } from "@/types/database";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+if (!supabaseUrl || !supabaseAnonKey) {
+  throw new Error("Missing Supabase environment variables");
+}
 
 // サーバーサイド用のSupabaseクライアント
-export const supabaseServer = createClient(
-  supabaseUrl,
-  process.env.SUPABASE_SERVICE_ROLE_KEY || supabaseAnonKey
-);
+export const supabaseServer = createClient(supabaseUrl, supabaseServiceRoleKey || supabaseAnonKey);
 
 // クライアントサイド用のSupabaseクライアント（シングルトンパターン）
 let supabaseClient: ReturnType<typeof createClient> | null = null;
@@ -21,36 +24,4 @@ export const getSupabaseClient = () => {
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-export type News = {
-  id: string;
-  title: string;
-  content: string;
-  image_url?: string;
-  created_at: string;
-  updated_at: string;
-};
-
-export type Work = {
-  id: string;
-  title: string;
-  description: string;
-  image_url: string;
-  created_at: string;
-  updated_at: string;
-};
-
-export type Member = {
-  id: string;
-  name: string;
-  role: string;
-  bio: string;
-  expertise: string[];
-  image_url: string;
-  social?: {
-    twitter?: string;
-    linkedin?: string;
-    github?: string;
-  };
-  created_at: string;
-  updated_at: string;
-};
+export type { News, Work, Member };

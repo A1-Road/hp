@@ -170,7 +170,7 @@ export default function HomePage() {
                   <Link href="/contact">まずはご相談</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="rounded-full">
-                  <Link href="/request-documentation">資料請求</Link>
+                  <Link href="/request">資料請求</Link>
                 </Button>
               </div>
             </AnimatedSection>

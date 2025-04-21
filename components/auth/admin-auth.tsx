@@ -28,7 +28,7 @@ export function AdminAuth() {
     }
 
     if (data.user) {
-      router.push("/admin/dashboard");
+      router.push("/admin/contacts");
     }
   };
 

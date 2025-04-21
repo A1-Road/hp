@@ -69,7 +69,7 @@ export default function NewHeader() {
               <Link href="/contact">まずはご相談</Link>
             </Button>
             <Button asChild variant="outline" className="rounded-full">
-              <Link href="/request-documentation">資料請求</Link>
+              <Link href="/request">資料請求</Link>
             </Button>
           </div>
         </nav>
@@ -108,7 +108,7 @@ export default function NewHeader() {
               </Link>
             </Button>
             <Button asChild variant="outline" className="w-full rounded-full">
-              <Link href="/request-documentation" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/request" onClick={() => setIsMenuOpen(false)}>
                 資料請求
               </Link>
             </Button>

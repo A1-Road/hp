@@ -104,7 +104,7 @@ export default function NewsCreate() {
       }
 
       toast.success("ニュースを作成しました");
-      router.push("/admin/dashboard");
+      router.push("/admin/media-and-events");
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : "予期せぬエラーが発生しました";
       setError(errorMessage);
@@ -170,7 +170,11 @@ export default function NewsCreate() {
           <Button type="submit" disabled={isUploading}>
             {isUploading ? "アップロード中..." : "作成"}
           </Button>
-          <Button type="button" variant="outline" onClick={() => router.push("/admin/dashboard")}>
+          <Button
+            type="button"
+            variant="outline"
+            onClick={() => router.push("/admin/media-and-events")}
+          >
             キャンセル
           </Button>
         </div>

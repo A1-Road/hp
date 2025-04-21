@@ -11,6 +11,17 @@ export default function Footer() {
 
   if (!isFooterVisible) return null;
 
+  const navigation = {
+    main: [
+      { name: "ホーム", href: "/" },
+      { name: "サービス", href: "/services" },
+      { name: "導入事例", href: "/cases" },
+      { name: "会社概要", href: "/about" },
+      { name: "資料請求", href: "/request" },
+      { name: "お問い合わせ", href: "/contact" },
+    ],
+  };
+
   return (
     <footer className="bg-beige-50 border-t">
       <div className="container mx-auto px-8 py-8">
@@ -23,7 +34,7 @@ export default function Footer() {
                 <Link href="/contact">まずはご相談</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-full">
-                <Link href="/request-documentation">資料請求</Link>
+                <Link href="/request">資料請求</Link>
               </Button>
             </div>
           </div>
@@ -74,7 +85,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/request-documentation"
+                    href="/request"
                     className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
