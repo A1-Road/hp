@@ -31,7 +31,7 @@ export default function Footer() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8">まずは一度相談してみませんか？</h2>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button asChild size="lg" className="rounded-full">
-                <Link href="/contact">まずはご相談</Link>
+                <Link href="/contact">相談する</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-full">
                 <Link href="/request">資料請求</Link>

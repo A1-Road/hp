@@ -6,7 +6,6 @@ import { supabase } from "@/lib/supabase";
 import { useLayout } from "../contexts/header-context";
 import Link from "next/link";
 import { Mail, Newspaper, Users, Trophy, LogOut } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -58,27 +57,6 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           >
             <Mail className="h-4 w-4" />
             お問い合わせ一覧
-          </Link>
-          <Link
-            href="/admin/media-and-events"
-            className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
-          >
-            <Newspaper className="h-4 w-4" />
-            メディア＆イベント管理
-          </Link>
-          <Link
-            href="/admin/members"
-            className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
-          >
-            <Users className="h-4 w-4" />
-            メンバー管理
-          </Link>
-          <Link
-            href="/admin/case"
-            className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
-          >
-            <Trophy className="h-4 w-4" />
-            事例管理
           </Link>
           <div className="mt-auto">
             <button

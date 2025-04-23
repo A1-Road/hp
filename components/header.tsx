@@ -104,7 +104,7 @@ export default function NewHeader() {
             ))}
             <Button asChild className="w-full rounded-full">
               <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
-                まずはご相談
+                相談する
               </Link>
             </Button>
             <Button asChild variant="outline" className="w-full rounded-full">

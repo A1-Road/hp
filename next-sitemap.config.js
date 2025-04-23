@@ -34,8 +34,18 @@ module.exports = {
       loc: path,
       changefreq: config.changefreq,
       priority: path === "/" ? 1.0 : config.priority,
-      lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
+      lastmod: new Date().toISOString(), // ← 常に付与しても良い
       alternateRefs: config.alternateRefs ?? [],
     };
+  },
+  additionalPaths: async (config) => {
+    return [
+      { loc: "/" },
+      { loc: "/about-us" },
+      { loc: "/case" },
+      { loc: "/media-and-events" },
+      { loc: "/contact" },
+      // 必要に応じて追加
+    ];
   },
 };

@@ -76,7 +76,7 @@ export default function Request() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="floating-card p-6">
+          {/* <div className="floating-card p-6">
             <h3 className="text-lg font-bold mb-2">資料はどのくらいで届きますか？</h3>
             <p className="text-muted-foreground">
               資料請求後、2営業日以内にメールでお送りいたします。
@@ -106,7 +106,7 @@ export default function Request() {
               はい、可能です。資料が届かない場合や、再送をご希望の場合は、
               お気軽にお問い合わせください。
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { FaCalendarAlt, FaMapMarkerAlt, FaExternalLinkAlt } from "react-icons/fa";
 import type { News, Event } from "@/types/database";
 import { formatDate } from "@/lib/utils";
+import { MediaArticle } from "@/types/media";
 
 // アイテム表示用の共通型定義
 interface NewsItem {
@@ -37,32 +38,40 @@ type DisplayItem = NewsItem | EventItem;
 // カテゴリータブ
 const tabs = [
   { id: "all", label: "すべて" },
-  { id: "news", label: "プレスリリース" },
-  { id: "blog", label: "メディア掲載" },
-  { id: "events", label: "イベント" },
+  { id: "press", label: "プレスリリース" },
+  { id: "media", label: "メディア" },
 ];
 
-// 時期フィルター
-const timeFilters = [
-  { id: "all", label: "すべての期間" },
-  { id: "upcoming", label: "今後" },
-  { id: "past", label: "過去" },
-];
+// メディア記事を取得する関数
+async function getMediaArticles(): Promise<MediaArticle[]> {
+  try {
+    const response = await fetch("/data/media.json");
+    if (!response.ok) {
+      throw new Error("Failed to fetch media articles");
+    }
+    const data = await response.json();
+    return data.articles;
+  } catch (error) {
+    console.error("Error fetching media articles:", error);
+    return [];
+  }
+}
 
 export default function MediaAndEventsPage() {
   const [newsItems, setNewsItems] = useState<News[]>([]);
   const [events, setEvents] = useState<Event[]>([]);
+  const [mediaArticles, setMediaArticles] = useState<MediaArticle[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("all");
-  const [timeFilter, setTimeFilter] = useState("all");
 
   useEffect(() => {
     async function fetchData() {
       try {
         setLoading(true);
-        const [newsResponse, eventsResponse] = await Promise.all([
+        const [newsResponse, eventsResponse, mediaResponse] = await Promise.all([
           fetch("/api/news"),
           fetch("/api/events"),
+          getMediaArticles(),
         ]);
 
         if (newsResponse.ok) {
@@ -74,6 +83,8 @@ export default function MediaAndEventsPage() {
           const eventsData = await eventsResponse.json();
           setEvents(eventsData);
         }
+
+        setMediaArticles(mediaResponse);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -86,12 +97,10 @@ export default function MediaAndEventsPage() {
 
   // 表示するアイテムをフィルタリング
   const filteredItems = (): DisplayItem[] => {
-    const now = new Date();
-
     // ニュース記事をアイテムとして変換
     const newsAsItems: NewsItem[] = newsItems.map((news) => ({
       id: `news-${news.id}`,
-      type: news.category || "news",
+      type: "press", // ニュースはプレスリリースとして扱う
       title: news.title,
       date: new Date(news.date),
       image: news.image_url || "/placeholder.svg?height=200&width=400",
@@ -110,25 +119,23 @@ export default function MediaAndEventsPage() {
       url: event.url,
     }));
 
+    // メディア記事をアイテムとして変換
+    const mediaAsItems: NewsItem[] = mediaArticles.map((article) => ({
+      id: `media-${article.id}`,
+      type: article.category, // press または media
+      title: article.title,
+      date: new Date(article.date),
+      image: "/placeholder.svg?height=200&width=400",
+      url: `/media/${article.id}`,
+      excerpt: article.excerpt,
+    }));
+
     // 全てのアイテムを結合
-    let allItems = [...newsAsItems, ...eventsAsItems];
+    let allItems = [...newsAsItems, ...eventsAsItems, ...mediaAsItems];
 
     // タブに応じてフィルタリング
     if (activeTab !== "all") {
-      if (activeTab === "news") {
-        allItems = allItems.filter((item) => item.type === "news" || item.type === "press");
-      } else if (activeTab === "blog") {
-        allItems = allItems.filter((item) => item.type === "blog" || item.type === "media");
-      } else {
-        allItems = allItems.filter((item) => item.type === activeTab);
-      }
-    }
-
-    // 時期でフィルタリング
-    if (timeFilter === "upcoming") {
-      allItems = allItems.filter((item) => item.date >= now);
-    } else if (timeFilter === "past") {
-      allItems = allItems.filter((item) => item.date < now);
+      allItems = allItems.filter((item) => item.type === activeTab);
     }
 
     // 日付順に並べ替え
@@ -145,50 +152,40 @@ export default function MediaAndEventsPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Media and Events</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            プレスリリース、メディア掲載情報、イベント情報を掲載しています
+            プレスリリース、メディア情報、イベント情報を掲載しています
           </p>
         </div>
       </section>
 
-      {/* フィルターセクション */}
-      <section className="container mx-auto px-4 mb-12">
-        <div className="bg-beige-50/80 p-6 rounded-xl shadow-sm">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div className="flex overflow-x-auto pb-2 md:pb-0 gap-2">
-              {tabs.map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`px-4 py-2 rounded-full whitespace-nowrap ${
-                    activeTab === tab.id ? "bg-primary text-white" : "bg-white hover:bg-gray-100"
-                  }`}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
+      {/* メディアセクション */}
+      <section className="container mx-auto px-4 mb-16">
+        <AnimatedSection>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Media</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              プレスリリース、メディア情報、イベント情報を掲載しています
+            </p>
+          </div>
+        </AnimatedSection>
 
-            <div className="flex overflow-x-auto gap-2">
-              {timeFilters.map((filter) => (
-                <button
-                  key={filter.id}
-                  onClick={() => setTimeFilter(filter.id)}
-                  className={`px-4 py-2 rounded-full whitespace-nowrap ${
-                    timeFilter === filter.id
-                      ? "bg-primary text-white"
-                      : "bg-white hover:bg-gray-100"
-                  }`}
-                >
-                  {filter.label}
-                </button>
-              ))}
-            </div>
+        {/* フィルターセクション */}
+        <div className="bg-beige-50/80 p-6 rounded-xl shadow-sm mb-8">
+          <div className="flex overflow-x-auto pb-2 gap-2">
+            {tabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`px-4 py-2 rounded-full whitespace-nowrap ${
+                  activeTab === tab.id ? "bg-primary text-white" : "bg-white hover:bg-gray-100"
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
           </div>
         </div>
-      </section>
 
-      {/* コンテンツセクション */}
-      <section className="container mx-auto px-4 mb-16">
+        {/* コンテンツセクション */}
         {loading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {Array(6)
@@ -210,9 +207,9 @@ export default function MediaAndEventsPage() {
                       <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm">
                         {item.type === "events"
                           ? "イベント"
-                          : item.type === "news" || item.type === "press"
+                          : item.type === "press"
                             ? "プレスリリース"
-                            : "メディア掲載"}
+                            : "メディア"}
                       </div>
                     </div>
                     <div className="p-6">
@@ -260,7 +257,7 @@ export default function MediaAndEventsPage() {
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">今後のイベント</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Events</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 弊社主催・登壇予定のイベント情報をご紹介します
               </p>

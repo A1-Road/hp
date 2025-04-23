@@ -45,6 +45,8 @@ export interface LumaEvent {
   cover_image_url: string;
 }
 
+// CEO information is now defined directly in the component
+// and not fetched from Supabase anymore
 export interface Member {
   id: number | string;
   name: string;

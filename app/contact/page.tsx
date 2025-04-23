@@ -253,7 +253,7 @@ export default function Contact() {
           <h2 className="section-title mx-auto">よくあるご質問</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="floating-card p-6">
             <h3 className="text-lg font-bold mb-2">初回相談は無料ですか？</h3>
             <p className="text-muted-foreground">
@@ -285,7 +285,7 @@ export default function Contact() {
               お客様のニーズに合わせた最適なサポート体制をご提案いたします。
             </p>
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );
