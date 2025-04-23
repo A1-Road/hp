@@ -6,61 +6,22 @@ import { AnimatedSection } from "@/components/ui/animated-section";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaCalendarAlt, FaMapMarkerAlt, FaExternalLinkAlt } from "react-icons/fa";
-import type { News, Event } from "@/types/database";
+import type { Event } from "@/lib/luma";
+import type { Article } from "@/lib/microcms";
 import { formatDate } from "@/lib/utils";
-import { MediaArticle } from "@/types/media";
-
-// アイテム表示用の共通型定義
-interface NewsItem {
-  id: string;
-  type: string;
-  title: string;
-  date: Date;
-  image: string;
-  url: string;
-  excerpt?: string;
-  location?: never;
-}
-
-interface EventItem {
-  id: string;
-  type: string;
-  title: string;
-  date: Date;
-  image: string;
-  url: string;
-  location?: string;
-  excerpt?: never;
-}
-
-type DisplayItem = NewsItem | EventItem;
+import { getEvents } from "@/actions/events";
+import { getNewsList } from "@/actions/news";
 
 // カテゴリータブ
 const tabs = [
   { id: "all", label: "すべて" },
-  { id: "press", label: "プレスリリース" },
-  { id: "media", label: "メディア" },
+  { id: "プレスリリース", label: "プレスリリース" },
+  { id: "ニュース", label: "ニュース" },
 ];
 
-// メディア記事を取得する関数
-async function getMediaArticles(): Promise<MediaArticle[]> {
-  try {
-    const response = await fetch("/data/media.json");
-    if (!response.ok) {
-      throw new Error("Failed to fetch media articles");
-    }
-    const data = await response.json();
-    return data.articles;
-  } catch (error) {
-    console.error("Error fetching media articles:", error);
-    return [];
-  }
-}
-
 export default function MediaAndEventsPage() {
-  const [newsItems, setNewsItems] = useState<News[]>([]);
+  const [newsItems, setNewsItems] = useState<Article[]>([]);
   const [events, setEvents] = useState<Event[]>([]);
-  const [mediaArticles, setMediaArticles] = useState<MediaArticle[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("all");
 
@@ -68,23 +29,10 @@ export default function MediaAndEventsPage() {
     async function fetchData() {
       try {
         setLoading(true);
-        const [newsResponse, eventsResponse, mediaResponse] = await Promise.all([
-          fetch("/api/news"),
-          fetch("/api/events"),
-          getMediaArticles(),
-        ]);
+        const [newsData, eventsData] = await Promise.all([getNewsList(), getEvents()]);
 
-        if (newsResponse.ok) {
-          const newsData = await newsResponse.json();
-          setNewsItems(newsData);
-        }
-
-        if (eventsResponse.ok) {
-          const eventsData = await eventsResponse.json();
-          setEvents(eventsData);
-        }
-
-        setMediaArticles(mediaResponse);
+        setNewsItems(newsData.contents);
+        setEvents(eventsData);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -96,54 +44,37 @@ export default function MediaAndEventsPage() {
   }, []);
 
   // 表示するアイテムをフィルタリング
-  const filteredItems = (): DisplayItem[] => {
-    // ニュース記事をアイテムとして変換
-    const newsAsItems: NewsItem[] = newsItems.map((news) => ({
+  const filteredNewsItems = () => {
+    const newsAsItems = newsItems.map((news) => ({
       id: `news-${news.id}`,
-      type: "press", // ニュースはプレスリリースとして扱う
+      type: news.category?.name || "press",
       title: news.title,
-      date: new Date(news.date),
-      image: news.image_url || "/placeholder.svg?height=200&width=400",
-      url: `/news/${news.id}`,
-      excerpt: news.excerpt,
+      date: new Date(news.createdAt),
+      image: news.thumbnail?.url || "/placeholder.svg?height=200&width=400",
+      url: `/media/${news.id}`,
+      excerpt: news.description,
     }));
 
-    // イベントをアイテムとして変換
-    const eventsAsItems: EventItem[] = events.map((event) => ({
-      id: `event-${event.id}`,
-      type: "events",
-      title: event.title,
-      date: new Date(event.date),
-      location: event.location,
-      image: "/placeholder.svg?height=200&width=400",
-      url: event.url,
-    }));
-
-    // メディア記事をアイテムとして変換
-    const mediaAsItems: NewsItem[] = mediaArticles.map((article) => ({
-      id: `media-${article.id}`,
-      type: article.category, // press または media
-      title: article.title,
-      date: new Date(article.date),
-      image: "/placeholder.svg?height=200&width=400",
-      url: `/media/${article.id}`,
-      excerpt: article.excerpt,
-    }));
-
-    // 全てのアイテムを結合
-    let allItems = [...newsAsItems, ...eventsAsItems, ...mediaAsItems];
-
-    // タブに応じてフィルタリング
     if (activeTab !== "all") {
-      allItems = allItems.filter((item) => item.type === activeTab);
+      return newsAsItems.filter((item) => item.type === activeTab);
     }
 
-    // 日付順に並べ替え
-    return allItems.sort((a, b) => b.date.getTime() - a.date.getTime());
+    return newsAsItems;
   };
 
-  // フィルタリングされたアイテム
-  const displayedItems = filteredItems();
+  // イベントをアイテムとして変換
+  const eventItems = events.map((event) => ({
+    id: `event-${event.id}`,
+    type: "events",
+    title: event.title,
+    date: new Date(event.start_time),
+    location: event.location,
+    image: event.cover_image_url || "/placeholder.svg?height=200&width=400",
+    url: `https://lu.ma/event/${event.slug}`,
+  }));
+
+  // フィルタリングされたニュースアイテム
+  const displayedNewsItems = filteredNewsItems();
 
   return (
     <div className="pt-24">
@@ -152,7 +83,7 @@ export default function MediaAndEventsPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Media and Events</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            プレスリリース、メディア情報、イベント情報を掲載しています
+            プレスリリース、ニュース、イベント情報を掲載しています
           </p>
         </div>
       </section>
@@ -163,7 +94,7 @@ export default function MediaAndEventsPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Media</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              プレスリリース、メディア情報、イベント情報を掲載しています
+              プレスリリース、ニュースを掲載しています
             </p>
           </div>
         </AnimatedSection>
@@ -196,33 +127,22 @@ export default function MediaAndEventsPage() {
                 </AnimatedSection>
               ))}
           </div>
-        ) : displayedItems.length > 0 ? (
+        ) : displayedNewsItems.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {displayedItems.map((item, index) => (
+            {displayedNewsItems.map((item, index) => (
               <AnimatedSection key={item.id} delay={index * 100}>
                 <Link href={item.url}>
                   <div className="card-3d h-full overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
                     <div className="relative h-48">
                       <Image src={item.image} alt={item.title} fill className="object-cover" />
                       <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm">
-                        {item.type === "events"
-                          ? "イベント"
-                          : item.type === "press"
-                            ? "プレスリリース"
-                            : "メディア"}
+                        {item.type}
                       </div>
                     </div>
                     <div className="p-6">
                       <div className="flex items-center text-sm text-muted-foreground mb-2">
                         <FaCalendarAlt className="mr-2 h-3 w-3" />
                         {formatDate(item.date.toISOString(), true)}
-
-                        {item.type === "events" && item.location && (
-                          <div className="flex items-center ml-4">
-                            <FaMapMarkerAlt className="mr-2 h-3 w-3" />
-                            {item.location}
-                          </div>
-                        )}
                       </div>
 
                       <h3 className="font-bold mb-3 line-clamp-2">{item.title}</h3>
@@ -231,13 +151,6 @@ export default function MediaAndEventsPage() {
                         <p className="text-sm text-muted-foreground line-clamp-3 mb-4">
                           {item.excerpt}
                         </p>
-                      )}
-
-                      {item.type === "events" && (
-                        <div className="flex items-center text-primary text-sm font-medium">
-                          <span>詳細を見る</span>
-                          <FaExternalLinkAlt className="ml-2 h-3 w-3" />
-                        </div>
                       )}
                     </div>
                   </div>
@@ -277,9 +190,9 @@ export default function MediaAndEventsPage() {
               </div>
             ) : (
               <>
-                {events.filter((event) => new Date(event.date) >= new Date()).length > 0 ? (
+                {eventItems.filter((event) => new Date(event.date) >= new Date()).length > 0 ? (
                   <div className="space-y-4">
-                    {events
+                    {eventItems
                       .filter((event) => new Date(event.date) >= new Date())
                       .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
                       .slice(0, 3)
@@ -292,7 +205,7 @@ export default function MediaAndEventsPage() {
                                 <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted-foreground">
                                   <div className="flex items-center">
                                     <FaCalendarAlt className="mr-2 h-3 w-3" />
-                                    {formatDate(event.date, true)}
+                                    {formatDate(event.date.toISOString(), true)}
                                   </div>
                                   <div className="flex items-center">
                                     <FaMapMarkerAlt className="mr-2 h-3 w-3" />

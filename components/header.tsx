@@ -65,10 +65,16 @@ export default function NewHeader() {
             </Link>
           ))}
           <div className="flex space-x-2">
-            <Button asChild className="rounded-full">
+            <Button
+              asChild
+              className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+            >
               <Link href="/contact">まずはご相談</Link>
             </Button>
-            <Button asChild variant="outline" className="rounded-full">
+            <Button
+              asChild
+              className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+            >
               <Link href="/request">資料請求</Link>
             </Button>
           </div>
@@ -102,12 +108,18 @@ export default function NewHeader() {
                 {item.name}
               </Link>
             ))}
-            <Button asChild className="w-full rounded-full">
+            <Button
+              asChild
+              className="w-full rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200"
+            >
               <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
                 相談する
               </Link>
             </Button>
-            <Button asChild variant="outline" className="w-full rounded-full">
+            <Button
+              asChild
+              className="w-full rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200"
+            >
               <Link href="/request" onClick={() => setIsMenuOpen(false)}>
                 資料請求
               </Link>

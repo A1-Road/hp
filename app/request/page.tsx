@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { MdEmail, MdLocationOn } from "react-icons/md";
+import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 
 export default function Request() {
   useEffect(() => {
@@ -33,6 +33,13 @@ export default function Request() {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
+                  <MdPhone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-bold text-sm mb-1">電話番号</h3>
+                    <p className="text-muted-foreground">080-4870-5690</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
                   <MdEmail className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-bold text-sm mb-1">メールアドレス</h3>
@@ -45,9 +52,9 @@ export default function Request() {
                   <div>
                     <h3 className="font-bold text-sm mb-1">所在地</h3>
                     <p className="text-muted-foreground">
-                      〒225-0013
+                      〒150-0002
                       <br />
-                      神奈川県横浜市青葉区荏田町1150-34
+                      東京都渋谷区渋谷3-27-1 100BANCH
                     </p>
                   </div>
                 </div>

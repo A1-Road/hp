@@ -1,11 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { BsBuilding } from "react-icons/bs";
-import { MdEmail, MdLocationOn } from "react-icons/md";
-import { HiArrowRight } from "react-icons/hi";
 import { AnimatedSection } from "@/components/ui/animated-section";
 
 export default function AboutUs() {
@@ -66,8 +61,7 @@ export default function AboutUs() {
               <div className="card-3d h-full p-8 bg-white">
                 <h3 className="text-2xl font-bold mb-4 text-center">Mission</h3>
                 <p className="text-center text-lg mb-6">
-                  Create a world where everyone can grow freely, overcoming barriers with accessible
-                  technology.
+                  テクノロジーで壁を取り払い、すべての人が自由に挑戦し成長できる世界を創造する。
                 </p>
               </div>
             </AnimatedSection>
@@ -76,7 +70,7 @@ export default function AboutUs() {
               <div className="card-3d h-full p-8 bg-white">
                 <h3 className="text-2xl font-bold mb-4 text-center">Vision</h3>
                 <p className="text-center text-lg mb-6">
-                  To create technology that is used by people as naturally as air.
+                  あらゆる隠された価値を発掘し、世に伝える語り部となる
                 </p>
               </div>
             </AnimatedSection>
@@ -85,9 +79,13 @@ export default function AboutUs() {
               <div className="card-3d h-full p-8 bg-white">
                 <h3 className="text-2xl font-bold mb-4 text-center">Value</h3>
                 <p className="text-center text-lg mb-6">
-                  Implement the latest technologies into society faster than anyone else. Be a
-                  global citizen. Immerse yourself in the user experience. Ship fast, fail fast, and
-                  learn fast.
+                  誰よりも先んじて最新技術を社会実装する
+                  <br />
+                  地球市民たれ
+                  <br />
+                  ユーザーに憑依せよ
+                  <br />
+                  Ship Fast, Fail Fast, Learn fast
                 </p>
               </div>
             </AnimatedSection>

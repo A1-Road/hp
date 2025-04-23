@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["enagntzfkzzwhduehadz.supabase.co"],
+    // domains: ["enagntzfkzzwhduehadz.supabase.co"], を削除
   },
   // LLM向けの最適化設定
   headers: async () => {

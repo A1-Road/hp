@@ -1,7 +1,7 @@
 "use server";
 
 import { getEvents as getLumaEvents } from "@/lib/luma";
-import type { Event } from "@/types/database";
+import type { Event } from "@/lib/luma";
 
 export async function getEvents(): Promise<Event[]> {
   try {
@@ -9,9 +9,13 @@ export async function getEvents(): Promise<Event[]> {
     return lumaEvents.map((event) => ({
       id: event.id,
       title: event.title,
-      date: event.start_time,
+      description: event.description,
+      start_time: event.start_time,
+      cover_image_url: event.cover_image_url,
+      end_time: event.end_time,
       location: event.location,
-      url: event.url,
+      slug: event.slug,
+      status: event.status,
       created_at: new Date().toISOString(),
       updated_at: new Date().toISOString(),
     }));

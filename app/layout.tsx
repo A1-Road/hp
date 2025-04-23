@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { LayoutProvider } from "./contexts/header-context";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const notoSansJP = Noto_Sans_JP({
@@ -23,12 +24,13 @@ export const metadata: Metadata = {
   title: "エーワンロード株式会社 | AIとWeb3で社会の屋台骨をアップデート",
   description:
     "AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
-  keywords: "AI, Web3, ブロックチェーン, デジタル変革, DAO, ウォレットレス認証",
+  keywords: "AI, Web3, ブロックチェーン, デジタル変革, DAO, ウォレットレス認証, エーワンロード",
   authors: [{ name: "エーワンロード株式会社" }],
-  robots: "index, follow",
+  robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   generator: "Next.js",
   icons: {
     icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     type: "website",
@@ -38,12 +40,22 @@ export const metadata: Metadata = {
     description:
       "AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
     siteName: "エーワンロード株式会社",
+    images: [
+      {
+        url: "https://a1road.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "エーワンロード株式会社",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "エーワンロード株式会社 | AIとWeb3で社会の屋台骨をアップデート",
     description:
       "AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
+    images: ["https://a1road.com/twitter-image.jpg"],
+    creator: "@a1road",
   },
   other: {
     "application/ld+json": JSON.stringify([
@@ -59,7 +71,18 @@ export const metadata: Metadata = {
           "@type": "PostalAddress",
           addressCountry: "JP",
         },
-        sameAs: ["https://twitter.com/a1road", "https://linkedin.com/company/a1road"],
+        sameAs: [
+          "https://twitter.com/a1road",
+          "https://linkedin.com/company/a1road",
+          "https://github.com/a1road",
+        ],
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+81-3-1234-5678",
+          contactType: "customer service",
+          areaServed: "JP",
+          availableLanguage: ["Japanese"],
+        },
       },
       {
         "@context": "https://schema.org",
@@ -80,6 +103,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ja" suppressHydrationWarning>
       <body className={`${inter.variable} ${notoSansJP.variable} font-sans bg-beige-50`}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-SBXZP4QP82"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SBXZP4QP82');
+          `}
+        </Script>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -110,5 +145,3 @@ function BackgroundShapes() {
     </div>
   );
 }
-
-import "./globals.css";

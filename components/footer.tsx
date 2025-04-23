@@ -23,34 +23,44 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-beige-50 border-t">
+    <footer className="bg-gray-900 text-gray-100 border-t">
       <div className="container mx-auto px-8 py-8">
         {/* Consultation and Documentation Request Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">まずは一度相談してみませんか？</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">
+              まずは一度相談してみませんか？
+            </h2>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button asChild size="lg" className="rounded-full">
+              <Button
+                asChild
+                size="lg"
+                className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+              >
                 <Link href="/contact">相談する</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="rounded-full">
+              <Button
+                asChild
+                size="lg"
+                className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+              >
                 <Link href="/request">資料請求</Link>
               </Button>
             </div>
           </div>
         </div>
 
-        <div className="border-t pt-8"></div>
+        <div className="border-t border-gray-700 pt-8"></div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-6">
             <div>
-              <h4 className="font-bold text-lg mb-4">サイトマップ</h4>
+              <h4 className="font-bold text-lg mb-4 text-white">サイトマップ</h4>
               <ul className="space-y-3">
                 <li>
                   <Link
                     href="/about-us"
-                    className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                    className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
                     About Us
@@ -59,7 +69,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/case"
-                    className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                    className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
                     Case
@@ -68,7 +78,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/media-and-events"
-                    className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                    className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
                     Media and Events
@@ -77,7 +87,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/contact"
-                    className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                    className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
                     お問い合わせ
@@ -86,7 +96,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/request"
-                    className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                    className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
                     資料請求
@@ -95,7 +105,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/privacy-policy"
-                    className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                    className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
                     プライバシーポリシー
@@ -106,12 +116,12 @@ export default function Footer() {
           </div>
 
           <div className="space-y-6">
-            <h4 className="font-bold text-lg mb-4">About Us</h4>
+            <h4 className="font-bold text-lg mb-4 text-white">About Us</h4>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/about-us#philosophy"
-                  className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                  className="text-gray-300 hover:text-white transition-colors flex items-center"
                 >
                   <HiArrowRight className="mr-2 h-3 w-3" />
                   創業理念
@@ -120,7 +130,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about-us#mvv"
-                  className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                  className="text-gray-300 hover:text-white transition-colors flex items-center"
                 >
                   <HiArrowRight className="mr-2 h-3 w-3" />
                   MVV
@@ -129,7 +139,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about-us#members"
-                  className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                  className="text-gray-300 hover:text-white transition-colors flex items-center"
                 >
                   <HiArrowRight className="mr-2 h-3 w-3" />
                   メンバー
@@ -138,7 +148,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about-us#company"
-                  className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                  className="text-gray-300 hover:text-white transition-colors flex items-center"
                 >
                   <HiArrowRight className="mr-2 h-3 w-3" />
                   会社概要
@@ -148,12 +158,12 @@ export default function Footer() {
           </div>
 
           <div className="space-y-6">
-            <h4 className="font-bold text-lg mb-4">Case</h4>
+            <h4 className="font-bold text-lg mb-4 text-white">Case</h4>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/case#rag"
-                  className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                  className="text-gray-300 hover:text-white transition-colors flex items-center"
                 >
                   <HiArrowRight className="mr-2 h-3 w-3" />
                   RAG実装
@@ -162,7 +172,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/case#walletless"
-                  className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                  className="text-gray-300 hover:text-white transition-colors flex items-center"
                 >
                   <HiArrowRight className="mr-2 h-3 w-3" />
                   ウォレットレス
@@ -171,7 +181,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/case#daoathon"
-                  className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                  className="text-gray-300 hover:text-white transition-colors flex items-center"
                 >
                   <HiArrowRight className="mr-2 h-3 w-3" />
                   DAOATHON
@@ -180,7 +190,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/case#fa1rness"
-                  className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
+                  className="text-gray-300 hover:text-white transition-colors flex items-center"
                 >
                   <HiArrowRight className="mr-2 h-3 w-3" />
                   FA1RNESS
@@ -190,8 +200,8 @@ export default function Footer() {
           </div>
 
           <div className="space-y-6">
-            <h4 className="font-bold text-lg mb-4">エーワンロード株式会社</h4>
-            <p className="text-muted-foreground leading-relaxed">
+            <h4 className="font-bold text-lg mb-4 text-white">エーワンロード株式会社</h4>
+            <p className="text-gray-300 leading-relaxed">
               AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。
             </p>
           </div>
@@ -204,7 +214,7 @@ export default function Footer() {
             height={67}
             className="w-auto h-12"
           />
-          <p className="text-muted-foreground text-sm">
+          <p className="text-gray-300 text-sm">
             © {new Date().getFullYear()} エーワンロード株式会社. All rights reserved.
           </p>
         </div>

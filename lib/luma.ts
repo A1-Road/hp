@@ -1,9 +1,20 @@
-import { LumaEvent } from "@/types/database";
+// Luma APIのレスポンス形式に合わせた型定義
+export interface Event {
+  id: string;
+  title: string;
+  description: string;
+  start_time: string;
+  end_time: string;
+  location: string;
+  slug: string;
+  status: string;
+  cover_image_url: string;
+}
 
 const LUMA_API_KEY = process.env.LUMA_API_KEY;
 const LUMA_API_BASE_URL = "https://api.lu.ma/api/v1";
 
-export async function getEvents(): Promise<LumaEvent[]> {
+export async function getEvents(): Promise<Event[]> {
   // APIキーがない場合は空の配列を返す
   if (!LUMA_API_KEY) {
     return [];
@@ -23,17 +34,7 @@ export async function getEvents(): Promise<LumaEvent[]> {
     }
 
     const data = await response.json();
-    return data.events.map((event: any) => ({
-      id: event.id,
-      title: event.title,
-      description: event.description,
-      start_time: event.start_time,
-      end_time: event.end_time,
-      location: event.location,
-      url: `https://lu.ma/${event.slug}`,
-      status: event.status,
-      cover_image_url: event.cover_image_url,
-    }));
+    return data.events;
   } catch (error) {
     console.error("Error fetching Luma events:", error);
     return [];

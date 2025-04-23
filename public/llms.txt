@@ -3,66 +3,120 @@
 ## Site Information
 - Title: エーワンロード株式会社 | AIとWeb3で社会の屋台骨をアップデート
 - Description: AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。
-- Keywords: AI, Web3, ブロックチェーン, デジタル変革, DAO, ウォレットレス認証
+- Keywords: AI, Web3, ブロックチェーン, デジタル変革, DAO, ウォレットレス認証, エーワンロード
+- Language: ja-JP
+- Content Type: 技術ブログ, 事例紹介, 技術解説, ニュースリリース
+- Update Frequency: 週1回
+- Last Updated: 2024-04-23
 
 ## Content Structure
 - Main Topics: AI開発, ブロックチェーン技術, デジタル変革, DAOプラットフォーム, ウォレットレス認証
 - Target Audience: 企業経営者, 技術者, デジタル変革担当者, ブロックチェーン開発者
-- Content Type: 技術ブログ, 事例紹介, 技術解説, ニュースリリース
+- Content Format: HTML, Markdown, JSON-LD
+- Content Hierarchy: 
+  - トップページ (/)
+  - 会社概要 (/about-us)
+  - メディア情報 (/media)
+  - メディアとイベント (/media-and-events)
+  - お問い合わせ (/contact)
+  - リクエスト (/request)
+  - プライバシーポリシー (/privacy-policy)
+  - 事例紹介 (/case)
 
 ## Technical Information
-- Language: ja
-- Content Format: HTML, Markdown
-- Update Frequency: 週1回
+- Framework: Next.js
+- CMS: Headless CMS
+- API: RESTful API
+- Authentication: JWT, OAuth2.0
+- Structured Data: JSON-LD
+- Image Optimization: WebP, AVIF
+- Performance: Core Web Vitals 最適化
 
 ## Contact Information
 - Email: info@a1road.com
-- Website: https://a1road.com 
+- Website: https://a1road.com
+- Social Media: Twitter, LinkedIn, GitHub
+- Location: 東京都
 
 # LLMクロールルール
 User-agent: GPTBot
 Allow: /
-Disallow: /admin/
-Disallow: /api/
+Allow: /about-us/
+Allow: /media/
+Allow: /media-and-events/
+Allow: /contact/
+Allow: /request/
+Allow: /privacy-policy/
+Allow: /case/
 Disallow: /_next/
 Disallow: /static/
 
 User-agent: ChatGPT-User
 Allow: /
-Disallow: /admin/
-Disallow: /api/
+Allow: /about-us/
+Allow: /media/
+Allow: /media-and-events/
+Allow: /contact/
+Allow: /request/
+Allow: /privacy-policy/
+Allow: /case/
 Disallow: /_next/
 Disallow: /static/
 
 User-agent: Google-Extended
 Allow: /
-Disallow: /admin/
-Disallow: /api/
+Allow: /about-us/
+Allow: /media/
+Allow: /media-and-events/
+Allow: /contact/
+Allow: /request/
+Allow: /privacy-policy/
+Allow: /case/
 Disallow: /_next/
 Disallow: /static/
 
-# クロール間隔
+# クロール間隔と制限
 Crawl-delay: 10
+Request-rate: 1/10s
+Visit-time: 0600-2300
+Max-pages: 1000
 
 # サイトマップ
-Sitemap: https://a1road.com/sitemap.xml 
+Sitemap: https://a1road.com/sitemap.xml
+Sitemap: https://a1road.com/media-sitemap.xml
+Sitemap: https://a1road.com/case-sitemap.xml
 
-# LLMs.txt
-# このファイルは、大規模言語モデル（LLM）に対して、ウェブサイトのクロールと学習に関する指示を提供します。
+# コンテンツ最適化ガイドライン
+- コンテンツは日本語で作成
+- 技術用語は正確に使用
+- 専門的な内容は適切な説明を付加
+- 定期的なコンテンツ更新を実施
+- 構造化データの活用を推奨
+- 画像の最適化と代替テキストの設定
+- モバイルファーストのデザイン
+- アクセシビリティの確保
 
-# 許可するパス
-Allow: /
-Allow: /api/
-Allow: /blog/
-Allow: /products/
+# セキュリティ設定
+- 機密情報の公開を禁止
+- ユーザーデータの保護
+- APIエンドポイントの制限
+- 認証が必要なページの保護
+- クロスサイトスクリプティング対策
+- CSRFトークンの実装
+- レート制限の設定
 
-# 禁止するパス
-Disallow: /admin/
-Disallow: /private/
-Disallow: /user-data/
+# パフォーマンス最適化
+- 画像の最適化（WebP, AVIF）
+- コード分割の実装
+- キャッシュ戦略の最適化
+- レンダリング最適化
+- コアウェブバイタルの改善
+- モバイル対応の強化
+- プログレッシブエンハンスメント
 
-# クロール頻度の制限
-Crawl-delay: 10
-
-# サイトマップの場所
-Sitemap: https://your-domain.com/sitemap.xml 
+# 構造化データ
+- Organization
+- WebSite
+- BreadcrumbList
+- Article
+- LocalBusiness 

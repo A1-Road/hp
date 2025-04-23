@@ -1,37 +1,4 @@
-import { Metadata } from "next";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-
-export const runtime = "edge";
-
-export const metadata: Metadata = {
-  title: "プライバシーポリシー | エーワンロード株式会社",
-  description: "エーワンロード株式会社のプライバシーポリシーについて説明しています。",
-  other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      name: "プライバシーポリシー",
-      description: "エーワンロード株式会社のプライバシーポリシー",
-      publisher: {
-        "@type": "Organization",
-        name: "エーワンロード株式会社",
-        url: "https://a1road.com",
-        logo: {
-          "@type": "ImageObject",
-          url: "https://a1road.com/logo.png",
-        },
-      },
-      mainEntity: {
-        "@type": "WebContent",
-        name: "プライバシーポリシー",
-        description: "エーワンロード株式会社のプライバシーポリシー",
-        dateCreated: "2024-04-16",
-        dateModified: "2025-04-21",
-      },
-    }),
-  },
-};
+"use client";
 
 export default function PrivacyPolicy() {
   return (
@@ -97,7 +64,6 @@ export default function PrivacyPolicy() {
                 国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合
               </li>
               <li>合併、会社分割、事業譲渡その他の事由による事業の承継に伴う場合</li>
-              <li>個人情報保護法第27条第5項各号に該当する場合</li>
             </ul>
 
             <h2 className="text-2xl font-bold mb-4 mt-8">6. 個人情報の委託</h2>
@@ -131,22 +97,12 @@ export default function PrivacyPolicy() {
               当社が保有する個人情報について、ご本人様から開示、訂正、追加、削除、利用停止または第三者への提供の停止等の請求があった場合、法令に従い、適切に対応します。これらの請求を行いたい場合は、下記お問い合わせ先までご連絡ください。
             </p>
 
-            <h2 className="text-2xl font-bold mb-4 mt-8">11. 未成年者の個人情報</h2>
-            <p>
-              当社のサービスは成人を対象としています。16歳未満の方が個人情報を提供する場合は、保護者の同意を得てください。当社が意図せず16歳未満の方の個人情報を収集したことが判明した場合、速やかに当該情報を削除します。
-            </p>
-
-            <h2 className="text-2xl font-bold mb-4 mt-8">12. 国際データ移転</h2>
-            <p>
-              当社は、収集した個人情報を日本国内で管理・保管します。ただし、クラウドサービスプロバイダー等の利用により、個人情報が国外に保存される場合があります。その場合、個人情報保護法に基づき、適切な措置を講じます。
-            </p>
-
-            <h2 className="text-2xl font-bold mb-4 mt-8">13. プライバシーポリシーの変更</h2>
+            <h2 className="text-2xl font-bold mb-4 mt-8">11. プライバシーポリシーの変更</h2>
             <p>
               当社は、必要に応じて本プライバシーポリシーを変更することがあります。変更後のプライバシーポリシーは、当社ウェブサイトに掲載した時点で効力を生じるものとします。重要な変更がある場合は、ウェブサイト上で通知します。
             </p>
 
-            <h2 className="text-2xl font-bold mb-4 mt-8">14. お問い合わせ</h2>
+            <h2 className="text-2xl font-bold mb-4 mt-8">12. お問い合わせ</h2>
             <p>本プライバシーポリシーに関するお問い合わせは、以下の連絡先までお願いいたします。</p>
             <p className="mt-4">
               エーワンロード株式会社
@@ -156,8 +112,8 @@ export default function PrivacyPolicy() {
               メールアドレス：admin@a1-road.com
             </p>
 
-            <p className="mt-8 text-sm text-muted-foreground">制定日：2024年4月16日</p>
-            <p className="text-sm text-muted-foreground">最終更新日：2025年4月21日</p>
+            <p className="mt-8 text-sm text-muted-foreground">制定日：2025年4月24日</p>
+            <p className="text-sm text-muted-foreground">最終更新日：2025年4月24日</p>
           </div>
         </div>
       </section>

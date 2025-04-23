@@ -11,9 +11,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { getEvents } from "@/actions/events"; // Import getEvents
-import type { Event as LumaEvent } from "@/types/database"; // Import LumaEvent type
-import { Factory, Building2, Plane, Cpu, Database, Network, Cloud, Shield } from "lucide-react";
+import { getEvents } from "@/actions/events";
+import { getNewsList } from "@/actions/news";
+import type { Event } from "@/lib/luma";
+import type { Article } from "@/lib/microcms";
+import { formatDate } from "@/lib/utils";
+import { Factory, Building2, Plane } from "lucide-react";
 
 // FAQ アイテム
 const faqItems: { question: string; answer: string }[] = [
@@ -94,23 +97,21 @@ const businessCards = [
   },
 ];
 
-// Removed old NewsItem and EventItem interfaces
-
 export default function HomePage() {
-  const [events, setEvents] = useState<LumaEvent[]>([]); // Use LumaEvent
+  const [events, setEvents] = useState<Event[]>([]);
+  const [news, setNews] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchData() {
-      setLoading(true); // Set loading true at the start
+      setLoading(true);
       try {
-        // Fetch directly using actions
-        const eventsData = await getEvents(); // Fetch events
+        const [eventsData, newsData] = await Promise.all([getEvents(), getNewsList()]);
 
         setEvents(eventsData);
+        setNews(newsData.contents);
       } catch (error) {
         console.error("データ取得エラー:", error);
-        // Optionally set an error state here
       } finally {
         setLoading(false);
       }
@@ -143,10 +144,18 @@ export default function HomePage() {
                   <span className="text-gradient">経営の新時代へ。</span>
                 </h1>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button asChild size="lg" className="rounded-full">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+                  >
                     <Link href="/contact">まずはご相談</Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg" className="rounded-full">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+                  >
                     <Link href="/request">資料請求</Link>
                   </Button>
                 </div>
@@ -204,6 +213,11 @@ export default function HomePage() {
               </div>
             </AnimatedSection>
           </div>
+          <div className="text-center mt-8">
+            <Button asChild variant="outline" className="rounded-full">
+              <Link href="/about-us">エーワンロード株式会社について</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -260,6 +274,11 @@ export default function HomePage() {
               </AnimatedSection>
             ))}
           </div>
+          <div className="text-center mt-8">
+            <Button asChild variant="outline" className="rounded-full">
+              <Link href="/case">具体的な事例を見る</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -268,7 +287,9 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">相談までの流れ</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                あなたのお悩みを一気通貫でサポート、解決します
+              </h2>
             </div>
           </AnimatedSection>
 
@@ -276,7 +297,7 @@ export default function HomePage() {
             <div className="max-w-4xl mx-auto">
               <Image
                 src="/workflow.png"
-                alt="相談までの流れ"
+                alt="あなたのお悩みを一気通貫でサポート、解決します"
                 width={1200}
                 height={600}
                 className="w-full h-auto rounded-2xl shadow-lg"
@@ -291,7 +312,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">協業実績</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">実績（一部）</h2>
             </div>
           </AnimatedSection>
 
@@ -312,6 +333,61 @@ export default function HomePage() {
                 </div>
               </AnimatedSection>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* メディアセクション */}
+      <section className="py-20 bg-beige-50/50">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">最新ニュース</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                最新のニュース・プレスリリースをご紹介します
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="max-w-4xl mx-auto">
+            {loading ? (
+              <div className="space-y-4">
+                {Array(3)
+                  .fill(0)
+                  .map((_, index) => (
+                    <AnimatedSection key={index} delay={index * 100}>
+                      <div className="h-16 animate-pulse bg-white rounded-xl"></div>
+                    </AnimatedSection>
+                  ))}
+              </div>
+            ) : news.length > 0 ? (
+              <div className="space-y-4">
+                {news
+                  .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+                  .slice(0, 3)
+                  .map((item, index) => (
+                    <AnimatedSection key={item.id} delay={index * 100}>
+                      <Link href={`/media/${item.id}`}>
+                        <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                          <span className="text-sm text-muted-foreground whitespace-nowrap">
+                            {formatDate(item.createdAt, true)}
+                          </span>
+                          <span className="text-gray-900">{item.title}</span>
+                        </div>
+                      </Link>
+                    </AnimatedSection>
+                  ))}
+              </div>
+            ) : (
+              <div className="text-center py-12">
+                <p className="text-muted-foreground">現在ニュースはありません。</p>
+              </div>
+            )}
+          </div>
+          <div className="text-center mt-8">
+            <Button asChild variant="outline" className="rounded-full">
+              <Link href="/media-and-events">すべてのニュースを見る</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -339,11 +415,13 @@ export default function HomePage() {
                     </AnimatedSection>
                   ))}
               </div>
-            ) : events && events.length > 0 ? (
+            ) : events.length > 0 ? (
               <div className="space-y-4">
                 {events
-                  .filter((event) => new Date(event.date) >= new Date())
-                  .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+                  .filter((event) => new Date(event.start_time) >= new Date())
+                  .sort(
+                    (a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime()
+                  )
                   .slice(0, 3)
                   .map((event, index) => (
                     <AnimatedSection key={event.id} delay={index * 100}>
@@ -365,6 +443,7 @@ export default function HomePage() {
                                     clipRule="evenodd"
                                   />
                                 </svg>
+                                {formatDate(event.start_time, true)}
                               </div>
                               <div className="flex items-center">
                                 <svg
@@ -384,7 +463,11 @@ export default function HomePage() {
                             </div>
                           </div>
                           <Button asChild size="sm" className="whitespace-nowrap rounded-full">
-                            <Link href={event.url} target="_blank" rel="noopener noreferrer">
+                            <Link
+                              href={`https://lu.ma/event/${event.slug}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               詳細・申し込み
                             </Link>
                           </Button>
@@ -402,7 +485,7 @@ export default function HomePage() {
 
           <div className="text-center mt-8">
             <Button asChild variant="outline" className="rounded-full">
-              <Link href="/media-and-events?tab=events">すべてのイベントを見る</Link>
+              <Link href="/media-and-events">すべてのイベントを見る</Link>
             </Button>
           </div>
         </div>
