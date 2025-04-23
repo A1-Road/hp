@@ -12,6 +12,8 @@ import { formatDate } from "@/lib/utils";
 import { getEvents } from "@/actions/events";
 import { getNewsList } from "@/actions/news";
 
+export const runtime = "edge";
+
 // カテゴリータブ
 const tabs = [
   { id: "all", label: "すべて" },
