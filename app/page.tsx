@@ -18,6 +18,8 @@ import type { Article } from "@/lib/microcms";
 import { formatDate } from "@/lib/utils";
 import { Factory, Building2, Plane } from "lucide-react";
 
+export const runtime = "edge";
+
 // FAQ アイテム
 const faqItems: { question: string; answer: string }[] = [
   // {
