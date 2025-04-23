@@ -3,7 +3,7 @@
 ![A1Road](public/a1road-logo.png)
 
 このプロジェクトは、エーワンロード株式会社のコーポレートサイトを構築するためのリポジトリです。
-Next.js、TypeScript、Tailwind CSS、shadcn/ui、Framer Motion、Supabase、Resendを使用して構築されています。
+Next.js、TypeScript、Tailwind CSS、shadcn/ui、Framer Motion、MicroCMSを使用して構築されています。
 
 ## 📋 目次
 
@@ -33,15 +33,14 @@ Next.js、TypeScript、Tailwind CSS、shadcn/ui、Framer Motion、Supabase、Res
 - **バックエンド**
 
   - Next.js サーバーコンポーネント / Server Actions
-  - Supabase (PostgreSQL + Auth)
-  - Resend (メール送信)
-  - Luma API (イベント情報)
+  - MicroCMS (コンテンツ管理)
 
-- **その他のツール**
+- **開発ツール**
+  - Storybook (コンポーネント開発)
   - ESLint/Prettier (コード品質)
-  - React Hook Form (フォーム管理)
-  - Zod (バリデーション)
-  - React Markdown (マークダウンレンダリング)
+  - next-sitemap (サイトマップ生成)
+  - TypeScript 5
+  - PostCSS
 
 ## 📁 プロジェクト構成
 
@@ -51,24 +50,18 @@ Next.js、TypeScript、Tailwind CSS、shadcn/ui、Framer Motion、Supabase、Res
 ├── app/                 # Next.js アプリケーションルーター
 │   ├── api/             # API エンドポイント
 │   ├── admin/           # 管理者画面
-│   │   ├── contacts/    # お問い合わせ管理
-│   │   ├── achievements/# 実績管理
-│   │   ├── members/     # メンバー管理
-│   │   └── ...
 │   ├── about-us/        # 会社情報ページ
 │   ├── case/            # 事例ページ
 │   ├── contact/         # お問い合わせページ
-│   ├── media-and-events/# メディア・イベントページ
 │   └── ...
 ├── components/          # 共通コンポーネント
-│   ├── auth/            # 認証関連コンポーネント
-│   ├── preview/         # プレビュー用コンポーネント
-│   └── ui/              # UIコンポーネント
+│   ├── ui/              # UIコンポーネント
+│   └── ...
 ├── hooks/               # カスタムフック
 ├── lib/                 # ユーティリティ関数
 ├── public/              # 静的ファイル
-├── styles/              # グローバルスタイル
-└── types/               # 型定義
+├── .storybook/          # Storybook設定
+└── .vscode/             # VSCode設定
 ```
 
 ## 🚀 環境構築
@@ -141,6 +134,7 @@ npm run lint
 ```bash
 # 手動デプロイの場合
 npm run build
+npm run sitemap
 vercel --prod
 ```
 
@@ -150,6 +144,7 @@ vercel --prod
 
 ```bash
 npm run build
+npm run sitemap
 ```
 
 2. `next start`コマンドを使用してアプリケーションを実行、または静的エクスポートを使用
@@ -186,30 +181,10 @@ hotfix/緊急修正内容-#issue番号
 プロジェクトには以下の環境変数が必要です。`.env.local`ファイルに設定してください。
 
 ```
-# Supabase
-NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
-SUPABASE_SERVICE_ROLE_KEY=your-supabase-service-role-key
-
-# Email (Resend)
-RESEND_API_KEY=your-resend-api-key
-
-# Luma API (イベント取得用)
-LUMA_API_KEY=your-luma-api-key
+# MicroCMS
+NEXT_PUBLIC_MICROCMS_SERVICE_DOMAIN=your-microcms-service-domain
+NEXT_PUBLIC_MICROCMS_API_KEY=your-microcms-api-key
 ```
-
-## 📊 DB設計
-
-Supabaseには以下のテーブルが必要です：
-
-| テーブル名 | 説明                         |
-| ---------- | ---------------------------- |
-| news       | ニュース・プレスリリース情報 |
-| works      | 事例・実績情報               |
-| members    | チームメンバー情報           |
-| contacts   | お問い合わせ情報             |
-
-各テーブルの詳細なスキーマについては、`types/database.ts`を参照してください。
 
 ## 🤝 貢献ガイドライン
 
@@ -219,23 +194,26 @@ Supabaseには以下のテーブルが必要です：
 - コンポーネントは機能ごとに分割し、適切にディレクトリに配置
 - 型定義は明示的に行い、`any`の使用を避ける
 - コメントは日本語で記述し、複雑なロジックには説明を追加
+- Storybookを使用してコンポーネントの開発とテストを行う
+- コンポーネントの再利用性を考慮した設計を行う
 
 ### Pull Request プロセス
 
 1. 適切なブランチから開発ブランチを作成（[ブランチ戦略](#ブランチ戦略)参照）
 2. 変更を加え、適切なコミットメッセージでコミット
 3. テストが全て通ることを確認
-4. Pull Requestを作成し、変更内容を詳細に説明
-5. コードレビューを受け、必要な修正を行う
-6. 承認されたらマージ
+4. Storybookでコンポーネントの動作を確認
+5. Pull Requestを作成し、変更内容を詳細に説明
+6. コードレビューを受け、必要な修正を行う
+7. 承認されたらマージ
 
 ## 🔄 CI/CD
 
-- GitHub Actionsを使用した自動テスト
-- Vercelとの連携による自動デプロイ
+- GitHub Actionsを使用した自動テスト(準備中)
+- Cloudflare Pagesとの連携による自動デプロイ
   - `main`ブランチへのマージで本番環境に自動デプロイ
-  - `staging`ブランチへのマージでステージング環境に自動デプロイ
-  - 各PRではプレビュー環境が自動的に作成
+  - 各PRではプレビュー環境が自動的に作成(準備中)
+- デプロイ時に自動的にサイトマップを生成(準備中)
 
 ## 📝 ライセンス
 

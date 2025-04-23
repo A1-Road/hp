@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next-sitemap && next build",
     "sitemap": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
@@ -62,7 +62,6 @@
     "react-icons": "latest",
     "react-resizable-panels": "^2.1.7",
     "recharts": "2.15.0",
-    "resend": "^4.3.0",
     "sonner": "^1.7.1",
     "storybook": "latest",
     "tailwind-merge": "^2.5.5",
