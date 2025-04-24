@@ -1,7 +1,7 @@
 # LLM Optimization Metadata
 
 ## Site Information
-- Title: エーワンロード株式会社 | AIとWeb3で社会の屋台骨をアップデート
+- Title: エーワンロード株式会社 | AIとWeb3で産業をアップデート
 - Description: AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。
 - Keywords: AI, Web3, ブロックチェーン, DX, DAO, ウォレットレス認証, エーワンロード
 - Language: ja-JP
