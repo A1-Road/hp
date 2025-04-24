@@ -95,9 +95,6 @@ export default function MediaAndEventsPage() {
         <AnimatedSection>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Media</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              プレスリリース、ニュースを掲載しています
-            </p>
           </div>
         </AnimatedSection>
 
@@ -173,9 +170,6 @@ export default function MediaAndEventsPage() {
           <AnimatedSection>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Events</h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                弊社主催・登壇予定のイベント情報をご紹介します
-              </p>
             </div>
           </AnimatedSection>
 

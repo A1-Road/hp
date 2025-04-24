@@ -2,16 +2,16 @@
 
 ## Site Information
 - Title: エーワンロード株式会社 | AIとWeb3で社会の屋台骨をアップデート
-- Description: AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。
-- Keywords: AI, Web3, ブロックチェーン, デジタル変革, DAO, ウォレットレス認証, エーワンロード
+- Description: AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。
+- Keywords: AI, Web3, ブロックチェーン, DX, DAO, ウォレットレス認証, エーワンロード
 - Language: ja-JP
 - Content Type: 技術ブログ, 事例紹介, 技術解説, ニュースリリース
 - Update Frequency: 週1回
 - Last Updated: 2024-04-23
 
 ## Content Structure
-- Main Topics: AI開発, ブロックチェーン技術, デジタル変革, DAOプラットフォーム, ウォレットレス認証
-- Target Audience: 企業経営者, 技術者, デジタル変革担当者, ブロックチェーン開発者
+- Main Topics: AI開発, ブロックチェーン技術, DX, DAOプラットフォーム, ウォレットレス認証
+- Target Audience: 企業経営者, 技術者, DX担当者, ブロックチェーン開発者
 - Content Format: HTML, Markdown, JSON-LD
 - Content Hierarchy: 
   - トップページ (/)

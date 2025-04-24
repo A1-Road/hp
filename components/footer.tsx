@@ -202,7 +202,7 @@ export default function Footer() {
           <div className="space-y-6">
             <h4 className="font-bold text-lg mb-4 text-white">エーワンロード株式会社</h4>
             <p className="text-gray-300 leading-relaxed">
-              AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。
+              AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。
             </p>
           </div>
         </div>

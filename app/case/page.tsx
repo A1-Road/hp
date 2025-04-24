@@ -2,6 +2,15 @@
 
 import { AnimatedSection } from "@/components/ui/animated-section";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { useState } from "react";
 
 // ケース
 const caseStudies = [
@@ -29,7 +38,7 @@ SNSや外部連携施策を活用し、PDCAサイクルを回しながら継続�
       "地元新聞など3社以上のメディアで取り上げられました",
       "事前登録者が20%増加し、より多くの方に参加いただけるようになりました",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/rag.png",
     imagePosition: "right",
   },
   {
@@ -58,7 +67,7 @@ Web3/ブロックチェーンという用語を一切使用せず、シームレ
       "難しい専門用語を使わず、誰でも簡単に使えるようになりました",
       "セキュリティを保ちながら、より安全に使えるようになりました",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/walletless.png",
     imagePosition: "left",
   },
   {
@@ -87,7 +96,7 @@ Web3/ブロックチェーンという用語を一切使用せず、シームレ
       "主要メディア3社に取り上げられ、認知度が向上",
       "DAO導入を検討する企業が20%以上増加し、具体的な導入が進みました",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/fa1rness.png",
     imagePosition: "right",
   },
   {
@@ -106,7 +115,7 @@ Web3/ブロックチェーンという用語を一切使用せず、シームレ
     ],
     description: `2023年4月1日から9日にかけて、東京でアジア初となるDAO-A-THONが開催されました。1週間かけてDAOの概念のアイデア創出から、ツールを用いたDAOのデプロイまでを一気通貫で行う本イベントでは、累計50名が集結しました。
 
-キックオフセッションでは、Yosui/Monobundle、Uwaizumi.eth/Unyte、Alex Poon/CharmVerse、Balu/DAOLens、Whiplus/IVS Cryptoなどの豪華審査員を招き、日本・世界におけるDAOの可能性と実現可能性を多方面から探りました。大企業とDAOの関係、法整備、市場選定などDAOという新領域を日本でどのように広めていくかを模索するセッションが行われました。
+キックオフセッションでは、Yosui/Monobundle、Uwaizumi.eth/Unyte、Alex Poon/CharmVerse、Balu/DAOLens、Whiplus/IVS Crypto（敬称略）などの豪華審査員を招き、日本・世界におけるDAOの可能性と実現可能性を多方面から探りました。大企業とDAOの関係、法整備、市場選定などDAOという新領域を日本でどのように広めていくかを模索するセッションが行われました。
 
 4月9日の最終日には日本橋に累計50名が集い、地方創生・音楽・労働環境といったあらゆる領域に対してDAOというアプローチが適切かどうかのピッチが行われました。プログラミングの知識がなくても参加可能で、専用の"DAOキャンバス"を使用して必要な要素を洗い出し、実際にWeb3上にDAOをデプロイする体験を提供しました。`,
     results: [
@@ -114,7 +123,7 @@ Web3/ブロックチェーンという用語を一切使用せず、シームレ
       "地方創生・音楽・労働環境など多様な分野でのDAO活用提案",
       "国内外の専門家による審査とメンタリングで質の高い学びを提供",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/daoathon.png",
     imagePosition: "left",
   },
 ];
@@ -127,29 +136,31 @@ export default function CasePage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Case</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            AIとWeb3技術を活用した具体的な課題解決事例をご紹介します
+            弊社が過去に実施した具体的な課題解決の事例をご紹介します
           </p>
         </div>
       </section>
 
-      {/* ケース研究 */}
+      {/* ケース */}
       {caseStudies.map((caseStudy, index) => (
         <section
           key={caseStudy.id}
           id={caseStudy.id}
           className={`py-16 ${index % 2 === 0 ? "bg-beige-50/50" : ""}`}
         >
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 md:px-8 lg:px-16">
             <AnimatedSection>
               <div
-                className={`grid md:grid-cols-2 gap-12 items-center ${
+                className={`grid md:grid-cols-3 gap-12 items-center ${
                   caseStudy.imagePosition === "right"
                     ? "md:grid-flow-row"
                     : "md:grid-flow-row-dense"
                 }`}
               >
                 {/* コンテンツ部分 */}
-                <div className={caseStudy.imagePosition === "right" ? "md:order-1" : "md:order-2"}>
+                <div
+                  className={`${caseStudy.imagePosition === "right" ? "md:order-1 md:col-span-2" : "md:order-2 md:col-span-2"}`}
+                >
                   <div className="space-y-6">
                     <div>
                       <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
@@ -183,15 +194,6 @@ export default function CasePage() {
                     </div>
 
                     <div>
-                      <h3 className="text-lg font-semibold mb-2">詳細</h3>
-                      <div className="text-muted-foreground space-y-4">
-                        {caseStudy.description.split("\n\n").map((paragraph, idx) => (
-                          <p key={idx}>{paragraph}</p>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div>
                       <h3 className="text-lg font-semibold mb-2">成果</h3>
                       <ul className="space-y-2">
                         {caseStudy.results.map((result, idx) => (
@@ -202,17 +204,41 @@ export default function CasePage() {
                         ))}
                       </ul>
                     </div>
+
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button
+                          variant="outline"
+                          className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+                        >
+                          詳細を見る
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-3xl">
+                        <DialogHeader>
+                          <DialogTitle>{caseStudy.title}</DialogTitle>
+                        </DialogHeader>
+                        <div className="space-y-4 text-muted-foreground">
+                          {caseStudy.description.split("\n\n").map((paragraph, idx) => (
+                            <p key={idx}>{paragraph}</p>
+                          ))}
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
 
                 {/* 画像部分 */}
-                <div className={caseStudy.imagePosition === "right" ? "md:order-2" : "md:order-1"}>
-                  <div className="relative aspect-video">
+                <div
+                  className={`${caseStudy.imagePosition === "right" ? "md:order-2" : "md:order-1"}`}
+                >
+                  <div className="relative w-full h-[400px]">
                     <Image
                       src={caseStudy.image}
                       alt={caseStudy.title}
-                      fill
-                      className="object-cover rounded-lg"
+                      width={600}
+                      height={400}
+                      className="object-contain rounded-xl"
                     />
                   </div>
                 </div>

@@ -9,7 +9,8 @@ export default function PrivacyPolicy() {
 
           <div className="prose prose-lg">
             <p className="text-muted-foreground mb-8">
-              エーワンロード株式会社（以下「当社」）は、お客様の個人情報の保護を重要な責務と考え、以下のプライバシーポリシーに基づき、個人情報保護法およびその他の関連法令を遵守し、適切な保護と管理に努めます。
+              エーワンロード株式会社（以下「当社」
+              ）は、お客様の個人情報の保護を重要な責務と考え、以下のプライバシーポリシーに基づき、個人情報保護法およびその他の関連法令を遵守し、適切な保護と管理に努めます。
             </p>
 
             <h2 className="text-2xl font-bold mb-4">1. 個人情報の定義</h2>

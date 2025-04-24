@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "お問い合わせ | エーワンロード株式会社",
   description:
-    "エーワンロード株式会社へのお問い合わせフォーム。AIとWeb3を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術についてのご相談を承っています。",
+    "エーワンロード株式会社へのお問い合わせフォーム。AIとWeb3を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術についてのご相談を承っています。",
   openGraph: {
     title: "お問い合わせ | エーワンロード株式会社",
     description:
-      "エーワンロード株式会社へのお問い合わせフォーム。AIとWeb3を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術についてのご相談を承っています。",
+      "エーワンロード株式会社へのお問い合わせフォーム。AIとWeb3を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術についてのご相談を承っています。",
     images: [
       {
         url: "https://a1road.com/og-image-contact.jpg",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "お問い合わせ | エーワンロード株式会社",
     description:
-      "エーワンロード株式会社へのお問い合わせフォーム。AIとWeb3を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術についてのご相談を承っています。",
+      "エーワンロード株式会社へのお問い合わせフォーム。AIとWeb3を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術についてのご相談を承っています。",
     images: ["https://a1road.com/twitter-image-contact.jpg"],
   },
   other: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "@type": "ContactPage",
       name: "お問い合わせ | エーワンロード株式会社",
       description:
-        "エーワンロード株式会社へのお問い合わせフォーム。AIとWeb3を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術についてのご相談を承っています。",
+        "エーワンロード株式会社へのお問い合わせフォーム。AIとWeb3を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術についてのご相談を承っています。",
       publisher: {
         "@type": "Organization",
         name: "エーワンロード株式会社",

@@ -89,7 +89,11 @@ export default function MediaDetailPage() {
         </div>
 
         <div className="mt-16 pt-8 border-t mb-16">
-          <Button asChild variant="outline">
+          <Button
+            asChild
+            size="lg"
+            className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+          >
             <Link href="/media-and-events">メディア一覧に戻る</Link>
           </Button>
         </div>

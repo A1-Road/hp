@@ -1,21 +1,45 @@
 "use client";
 
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
+
+declare global {
+  interface Window {
+    hbspt?: {
+      forms: {
+        create: (options: {
+          portalId: string;
+          formId: string;
+          region?: string;
+          target?: string;
+        }) => void;
+      };
+    };
+  }
+}
 
 export default function Contact() {
   useEffect(() => {
-    // HubSpotフォームのスクリプトを動的に読み込む
     const script = document.createElement("script");
-    script.src = "https://js.hsforms.net/forms/embed/48340751.js";
-    script.defer = true;
+    script.src = "//js.hsforms.net/forms/embed/v2.js";
+    script.async = true;
+    script.onload = () => {
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          portalId: "48340751",
+          formId: "0e8b7633-a75c-4661-9647-3e05b982aff4",
+          region: "na1",
+          target: "#hubspot-form", // ←ここにフォームを埋め込む
+        });
+      }
+    };
     document.body.appendChild(script);
 
     return () => {
       document.body.removeChild(script);
     };
   }, []);
+
   return (
     <div className="pt-24">
       <section className="container-custom">
@@ -30,7 +54,6 @@ export default function Contact() {
           <div className="md:col-span-1">
             <div className="floating-card p-6">
               <h2 className="text-xl font-bold mb-6">お問い合わせ先</h2>
-
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <MdPhone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
@@ -46,7 +69,6 @@ export default function Contact() {
                     <p className="text-muted-foreground">admin@a1-road.com</p>
                   </div>
                 </div>
-
                 <div className="flex items-start gap-4">
                   <MdLocationOn className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                   <div>
@@ -65,12 +87,7 @@ export default function Contact() {
           <div className="md:col-span-2">
             <div className="floating-card p-8">
               <h2 className="text-xl font-bold mb-6">お問い合わせフォーム</h2>
-              <div
-                className="hs-form-frame"
-                data-region="na1"
-                data-form-id="3af46497-6570-4cbd-8be0-87765d51ef36"
-                data-portal-id="48340751"
-              />
+              <div id="hubspot-form" /> {/* ← ここにHubSpotフォームが挿入されます */}
             </div>
           </div>
         </div>

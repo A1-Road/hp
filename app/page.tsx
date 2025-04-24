@@ -44,35 +44,6 @@ const faqItems: { question: string; answer: string }[] = [
   // },
 ];
 
-// 実績データ
-const achievements = [
-  {
-    id: 1,
-    title: "Road to DEVCON SOUTHEAST ASIA",
-    image: "/road-to-devcon.png",
-  },
-  {
-    id: 2,
-    title: "Joba",
-    image: "/joba.png",
-  },
-  {
-    id: 3,
-    title: "Unyte",
-    image: "/unyte.png",
-  },
-  {
-    id: 4,
-    title: "Showtime",
-    image: "/showtime.png",
-  },
-  {
-    id: 5,
-    title: "やいまSDGsシンポジウム",
-    image: "/yaima.png",
-  },
-];
-
 // 事業内容カード
 const businessCards = [
   {
@@ -80,14 +51,14 @@ const businessCards = [
     title: "DAOアドバイザリー",
     description:
       "DAO（分散型自律組織）の設計・構築・運営をトータルサポート。組織の透明性と効率性を高め、新しい形の事業の進め方を実現します。",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/dao-advisory.png",
   },
   {
     id: 2,
     title: "AIエージェント開発",
     description:
-      "製造業、建設業、観光業向けにカスタマイズされたAIソリューションを提供。業務効率化と新たな価値創造を支援します。",
-    image: "/placeholder.svg?height=300&width=400",
+      "企業の特性や課題に合わせたAIエージェントを提供。AIと人間の協働による新たな価値創造と、業界のパラダイムシフトを推進します。",
+    image: "/ai-agent.png",
   },
   {
     id: 3,
@@ -125,55 +96,52 @@ export default function HomePage() {
   return (
     <div className="pt-20">
       {/* ヒーローセクション */}
-      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden blob-bg">
-        <div className="absolute inset-0 bg-gradient-to-r from-beige-500/20 to-transparent"></div>
-        {/* <div className="absolute inset-0">
-          <Image
-            src="/placeholder.jpg"
-            alt="Hero Background"
-            fill
-            className="object-cover z-0 opacity-20"
-            priority
-          />
-        </div> */}
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] items-center gap-8 max-w-6xl mx-auto">
-            <div className="md:pl-12 lg:pl-24">
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute right-0 top-0 bottom-0 w-full">
+            <Image
+              src="/top-back.jpg"
+              alt="Hero Background"
+              width={1200}
+              height={800}
+              className="w-full h-full object-cover"
+              priority
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/30 to-transparent z-10"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-20">
+          <div className="grid grid-cols-[4fr_18fr_5fr_4fr] items-center gap-4 mx-auto">
+            <div className="col-start-2 max-w-2xl">
               <AnimatedSection>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-                  <span className="text-gradient">AIで会社を動かす、</span>
-                  <br />
-                  <span className="text-gradient">経営の新時代へ。</span>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
+                  <span className="text-black [text-shadow:_-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white]">
+                    AIで会社を動かす、
+                  </span>
+                  <div className="h-8" />
+                  <span className="text-black [text-shadow:_-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white]">
+                    経営の新時代へ。
+                  </span>
                 </h1>
-                <div className="flex flex-col sm:flex-row gap-4">
+              </AnimatedSection>
+            </div>
+            <div className="col-start-3">
+              <AnimatedSection delay={100}>
+                <div className="flex flex-col gap-4">
                   <Button
                     asChild
                     size="lg"
-                    className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+                    className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600 text-lg"
                   >
                     <Link href="/contact">まずはご相談</Link>
                   </Button>
                   <Button
                     asChild
                     size="lg"
-                    className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+                    className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600 text-lg"
                   >
                     <Link href="/request">資料請求</Link>
                   </Button>
-                </div>
-              </AnimatedSection>
-            </div>
-            <div className="flex items-center">
-              <AnimatedSection>
-                <div className="relative w-full flex justify-center md:justify-start md:pt-12">
-                  <Image
-                    src="/a1road-logo.png"
-                    alt="A1 Road Logo"
-                    width={400}
-                    height={400}
-                    className="w-[200px] md:w-[280px] h-auto"
-                    priority
-                  />
                 </div>
               </AnimatedSection>
             </div>
@@ -216,7 +184,11 @@ export default function HomePage() {
             </AnimatedSection>
           </div>
           <div className="text-center mt-8">
-            <Button asChild variant="outline" className="rounded-full">
+            <Button
+              asChild
+              variant="outline"
+              className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+            >
               <Link href="/about-us">エーワンロード株式会社について</Link>
             </Button>
           </div>
@@ -259,11 +231,13 @@ export default function HomePage() {
                       </Link>
                     ) : (
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-32 h-32 bg-white/50 rounded-full flex items-center justify-center">
-                          {index === 0 && <Factory className="w-16 h-16 text-beige-600" />}
-                          {index === 1 && <Building2 className="w-16 h-16 text-beige-600" />}
-                          {index === 2 && <Plane className="w-16 h-16 text-beige-600" />}
-                        </div>
+                        <Image
+                          src={business.image}
+                          alt={business.title}
+                          width={200}
+                          height={200}
+                          className="object-contain hover:scale-105 transition-transform duration-300"
+                        />
                       </div>
                     )}
                     <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-white to-transparent"></div>
@@ -277,7 +251,11 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Button asChild variant="outline" className="rounded-full">
+            <Button
+              asChild
+              variant="outline"
+              className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+            >
               <Link href="/case">具体的な事例を見る</Link>
             </Button>
           </div>
@@ -302,7 +280,7 @@ export default function HomePage() {
                 alt="あなたのお悩みを一気通貫でサポート、解決します"
                 width={1200}
                 height={600}
-                className="w-full h-auto rounded-2xl shadow-lg"
+                className="w-full h-auto"
               />
             </div>
           </AnimatedSection>
@@ -318,23 +296,12 @@ export default function HomePage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-            {achievements.map((achievement, index) => (
-              <AnimatedSection key={achievement.id} delay={index * 100}>
-                <div className="text-center">
-                  <div className="relative h-36 w-full mx-auto mb-4 overflow-hidden">
-                    <Image
-                      src={achievement.image}
-                      alt={achievement.title}
-                      width={200}
-                      height={200}
-                      className="object-contain w-full h-full"
-                    />
-                  </div>
-                  <h3 className="font-bold mb-2">{achievement.title}</h3>
-                </div>
-              </AnimatedSection>
-            ))}
+          <div className="flex justify-center">
+            <AnimatedSection>
+              <div className="relative w-[60vw] h-[15vw]">
+                <Image src="/collaborate.png" alt="実績" fill className="object-contain" />
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
@@ -387,7 +354,11 @@ export default function HomePage() {
             )}
           </div>
           <div className="text-center mt-8">
-            <Button asChild variant="outline" className="rounded-full">
+            <Button
+              asChild
+              variant="outline"
+              className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+            >
               <Link href="/media-and-events">すべてのニュースを見る</Link>
             </Button>
           </div>
@@ -464,7 +435,11 @@ export default function HomePage() {
                               </div>
                             </div>
                           </div>
-                          <Button asChild size="sm" className="whitespace-nowrap rounded-full">
+                          <Button
+                            asChild
+                            size="sm"
+                            className="whitespace-nowrap rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+                          >
                             <Link
                               href={`https://lu.ma/event/${event.slug}`}
                               target="_blank"
@@ -486,7 +461,11 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-8">
-            <Button asChild variant="outline" className="rounded-full">
+            <Button
+              asChild
+              variant="outline"
+              className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+            >
               <Link href="/media-and-events">すべてのイベントを見る</Link>
             </Button>
           </div>

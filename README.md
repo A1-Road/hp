@@ -124,30 +124,19 @@ npm run lint
 
 ## 📦 デプロイ手順
 
-### Vercelへのデプロイ
-
-1. GitHubリポジトリをVercelに連携
-2. 必要な環境変数を設定
-3. デプロイ設定を確認
-4. デプロイを実行
-
-```bash
-# 手動デプロイの場合
-npm run build
-npm run sitemap
-vercel --prod
-```
-
-### その他のプラットフォームへのデプロイ
+### Cloudflare Pagesへのデプロイ
 
 1. 本番用ビルドを作成
 
 ```bash
 npm run build
-npm run sitemap
 ```
 
-2. `next start`コマンドを使用してアプリケーションを実行、または静的エクスポートを使用
+2. `npm start`コマンドを使用してアプリケーションを実行、または静的エクスポートを使用
+
+3. 1,2で問題が無ければ、プルリクエストを作成し、`main`ブランチにマージ
+
+4. Cloudflareでのデプロイに問題が無いか確認
 
 ## 🌿 ブランチ戦略
 
@@ -215,6 +204,12 @@ NEXT_PUBLIC_MICROCMS_API_KEY=your-microcms-api-key
   - 各PRではプレビュー環境が自動的に作成(準備中)
 - デプロイ時に自動的にサイトマップを生成(準備中)
 
-## 📝 ライセンス
+## 開発の注意点
 
-このプロジェクトは[プロジェクトのライセンス]のもとで公開されています。
+- Cloudflareを利用している都合上、server actionsを呼び出しているページには
+
+```typesctipt
+export const runtime = "edge";
+```
+
+の記述が必要です。

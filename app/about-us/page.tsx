@@ -3,6 +3,33 @@
 import Image from "next/image";
 import { AnimatedSection } from "@/components/ui/animated-section";
 
+interface Member {
+  id: string;
+  name: string;
+  role: string;
+  description: string;
+  imageUrl: string;
+}
+
+const members: Member[] = [
+  {
+    id: "masuda",
+    name: "増田 健",
+    role: "事業顧問",
+    description:
+      "証券業界での10年以上のキャリアを経て、アマゾンジャパンで金融データ分析を担当。慶應義塾大学MBA、フランスESSECビジネススクールでスタートアップビジネスモデルを研究後、フィンテック協会や多くの企業で経営戦略や事業開発に携わり、デジタルアセット事業やRWA（現物償還型NFT）などの革新的プロジェクトを推進。",
+    imageUrl: "/mas.png",
+  },
+  {
+    id: "mizuki",
+    name: "楠本 水樹",
+    role: "エンジニア",
+    description:
+      "物理シミュレーション、フルスタックエンジニアリングの分野において幅広なスキルと経験を持つ。東京大学工学部に在学中で、Webアプリ開発や高性能計算（有限要素法、GPU、Fortran、C++）に精通。研究活動を通じて、計算コストに対するパフォーマンスの最大化を追求。",
+    imageUrl: "/miz.jpg",
+  },
+];
+
 export default function AboutUs() {
   return (
     <div className="pt-24">
@@ -22,22 +49,26 @@ export default function AboutUs() {
           <AnimatedSection>
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">創業理念</h2>
-              <div className="glass-card p-8 rounded-xl space-y-8">
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold text-center">
-                    あらゆる隠された価値を発掘し、世に伝える語り部となる
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="card-3d h-full p-8 bg-white shadow-lg rounded-xl">
+                  <h3 className="text-2xl font-bold mb-4 text-center">
+                    あらゆる隠された価値を発掘し、
+                    <br />
+                    世に伝える語り部となる
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    私たちは、これまで語られなかった価値を次世代に残す使命を担っています。多くの素晴らしい技術や知識が埋もれ、正当に評価されずに過ぎ去っています。私たちはこれらの価値をデジタル技術（AI・ブロックチェーン）を活用して、効率的に可視化し、伝えることを目指します。これにより、業界全体のデジタルトランスフォーメーション（DX）を推進し、日本の強みが未来の社会で、そして世界で強力な競争力を発揮する基盤を作ります。技術の力で、これまでの障壁を突破し、過去の遺産を今の時代に活かす仕組みを作り上げます。
+                    私たちは、埋もれた技術や知識をAIとブロックチェーンで可視化し、業界のDXを推進します。これにより、日本の強みを世界で発揮する基盤を作ります。
                   </p>
                 </div>
 
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold text-center">
-                    すべての人が自由に挑戦し成長できる世界を創造する
+                <div className="card-3d h-full p-8 bg-white shadow-lg rounded-xl">
+                  <h3 className="text-2xl font-bold mb-4 text-center">
+                    すべての人が自由に挑戦し
+                    <br />
+                    成長できる世界を創造する
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    私たちは、最先端のAIとブロックチェーン技術を駆使し、すべての人々が平等に挑戦できる環境を提供します。技術の力で、これまでアクセスできなかったリソースや情報を誰もが活用できるようにし、挑戦することが当たり前の社会を実現します。技術と知識の革新を継続的に生み出し、次世代の製造業を支えるためのプラットフォームを築きます。革新性と持続可能な成長を実現するため、常に最前線を走り続けます。
+                    最先端技術を駆使し、誰もが平等に挑戦できる環境を提供します。技術革新を続け、次世代の製造業を支えるプラットフォームを築きます。
                   </p>
                 </div>
               </div>
@@ -51,14 +82,11 @@ export default function AboutUs() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">MVV</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Mission・Vision・Valueを通じて、私たちの目指す方向性をご紹介します
-            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <AnimatedSection>
-              <div className="card-3d h-full p-8 bg-white">
+              <div className="card-3d h-full p-8 bg-white shadow-lg rounded-xl">
                 <h3 className="text-2xl font-bold mb-4 text-center">Mission</h3>
                 <p className="text-center text-lg mb-6">
                   テクノロジーで壁を取り払い、すべての人が自由に挑戦し成長できる世界を創造する。
@@ -67,7 +95,7 @@ export default function AboutUs() {
             </AnimatedSection>
 
             <AnimatedSection delay={100}>
-              <div className="card-3d h-full p-8 bg-white">
+              <div className="card-3d h-full p-8 bg-white shadow-lg rounded-xl">
                 <h3 className="text-2xl font-bold mb-4 text-center">Vision</h3>
                 <p className="text-center text-lg mb-6">
                   あらゆる隠された価値を発掘し、世に伝える語り部となる
@@ -76,7 +104,7 @@ export default function AboutUs() {
             </AnimatedSection>
 
             <AnimatedSection delay={200}>
-              <div className="card-3d h-full p-8 bg-white">
+              <div className="card-3d h-full p-8 bg-white shadow-lg rounded-xl">
                 <h3 className="text-2xl font-bold mb-4 text-center">Value</h3>
                 <p className="text-center text-lg mb-6">
                   誰よりも先んじて最新技術を社会実装する
@@ -135,7 +163,7 @@ export default function AboutUs() {
                   </p>
 
                   <p>
-                    私たちが進めるデジタル変革とは、単なる効率化を超えて競争力を強化し、グローバルで勝てる技術を次世代に受け継いでいくことです。
+                    私たちが進めるDXとは、単なる効率化を超えて競争力を強化し、グローバルで勝てる技術を次世代に受け継いでいくことです。
                     <br />
                     これにより「Japan as
                     No.1」を取り戻し、世界中で競争力のある製品やサービスが生まれる土台を作ります。
@@ -160,7 +188,7 @@ export default function AboutUs() {
 
           <div className="max-w-3xl mx-auto">
             <AnimatedSection>
-              <div className="card-3d overflow-hidden rounded-2xl bg-white">
+              <div className="card-3d overflow-hidden rounded-2xl bg-white shadow-lg">
                 <div className="flex flex-col md:flex-row">
                   <div className="md:w-1/2 flex items-center justify-center p-4">
                     <div className="relative w-48 h-48 md:w-56 md:h-56">
@@ -180,12 +208,45 @@ export default function AboutUs() {
                       Web3、DAO、マーケティング領域において多面的な経験と成果を蓄積。大学在学中の起業により国内外アクセラレーター、ピッチコンテストで実績を重ねる。日本・アジア・世界のWeb3普及に向けてコミュニティ活動を展開し、アジア初のDAOハッカソン「THE
                       DAO-A-THON」を主催し、Bankless
                       Japanでのリサーチやコンテンツ制作を展開。Pacific
-                      Meta時代について、スクウェア・エニックス、Chainlinkなどに対するGo-to-market戦略やトークノミクス設計によりインド・ベトナム地域でユーザー獲得数95%増を達成。
+                      Meta時代について、スクウェア・エニックス、Chainlinkなどに対するGo-to-market戦略やトークノミクス設計によりインド・ベトナム地域でユーザー獲得数85%増を達成。
                     </p>
                   </div>
                 </div>
               </div>
             </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* メンバーセクション */}
+      <section id="members" className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">メンバー</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {members.map((member, index) => (
+              <AnimatedSection key={member.id} delay={index * 100} className="h-full">
+                <div className="card-3d bg-white shadow-lg rounded-xl p-6 h-full">
+                  <div className="flex flex-col items-center h-full">
+                    <div className="relative w-32 h-32 shrink-0 mb-4">
+                      <Image
+                        src={member.imageUrl}
+                        alt={member.name}
+                        fill
+                        className="object-cover object-center rounded-full"
+                      />
+                    </div>
+                    <div className="flex flex-col items-center flex-grow">
+                      <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
+                      <p className="text-lg text-muted-foreground mb-2">{member.role}</p>
+                      <p className="text-center text-muted-foreground">{member.description}</p>
+                    </div>
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </section>
@@ -198,7 +259,7 @@ export default function AboutUs() {
           </div>
 
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-sm p-8">
+            <div className="bg-white rounded-2xl shadow-lg p-8">
               <dl className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
                   <dt className="font-semibold text-gray-700">会社名</dt>

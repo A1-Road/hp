@@ -23,8 +23,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "エーワンロード株式会社 | AIとWeb3で社会の屋台骨をアップデート",
   description:
-    "AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
-  keywords: "AI, Web3, ブロックチェーン, デジタル変革, DAO, ウォレットレス認証, エーワンロード",
+    "AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
+  keywords: "AI, Web3, ブロックチェーン, DX, DAO, ウォレットレス認証, エーワンロード",
   authors: [{ name: "エーワンロード株式会社" }],
   robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   generator: "Next.js",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     url: "https://a1road.com",
     title: "エーワンロード株式会社 | AIとWeb3で社会の屋台骨をアップデート",
     description:
-      "AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
+      "AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
     siteName: "エーワンロード株式会社",
     images: [
       {
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "エーワンロード株式会社 | AIとWeb3で社会の屋台骨をアップデート",
     description:
-      "AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
+      "AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
     images: ["https://a1road.com/twitter-image.jpg"],
     creator: "@a1road",
   },
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
         url: "https://a1road.com",
         logo: "https://a1road.com/logo.png",
         description:
-          "AIおよびブロックチェーン（Web3）を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
+          "AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
         address: {
           "@type": "PostalAddress",
           addressCountry: "JP",

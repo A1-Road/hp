@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "メディアとイベント | エーワンロード株式会社",
   description:
-    "エーワンロード株式会社のプレスリリース、ニュース、イベント情報。AIとWeb3を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術に関する最新情報をご紹介します。",
+    "エーワンロード株式会社のプレスリリース、ニュース、イベント情報。AIとWeb3を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術に関する最新情報をご紹介します。",
   openGraph: {
     title: "メディアとイベント | エーワンロード株式会社",
     description:
-      "エーワンロード株式会社のプレスリリース、ニュース、イベント情報。AIとWeb3を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術に関する最新情報をご紹介します。",
+      "エーワンロード株式会社のプレスリリース、ニュース、イベント情報。AIとWeb3を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術に関する最新情報をご紹介します。",
     images: [
       {
         url: "https://a1road.com/og-image-media.jpg",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "メディアとイベント | エーワンロード株式会社",
     description:
-      "エーワンロード株式会社のプレスリリース、ニュース、イベント情報。AIとWeb3を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術に関する最新情報をご紹介します。",
+      "エーワンロード株式会社のプレスリリース、ニュース、イベント情報。AIとWeb3を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術に関する最新情報をご紹介します。",
     images: ["https://a1road.com/twitter-image-media.jpg"],
   },
   other: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "@type": "CollectionPage",
       name: "メディアとイベント | エーワンロード株式会社",
       description:
-        "エーワンロード株式会社のプレスリリース、ニュース、イベント情報。AIとWeb3を活用したデジタル変革支援、DAOプラットフォーム構築、ウォレットレス認証技術に関する最新情報をご紹介します。",
+        "エーワンロード株式会社のプレスリリース、ニュース、イベント情報。AIとWeb3を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術に関する最新情報をご紹介します。",
       publisher: {
         "@type": "Organization",
         name: "エーワンロード株式会社",
