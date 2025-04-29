@@ -1,5 +1,6 @@
 "use client";
 
+import FAQ from "@/components/faq";
 import React, { useEffect } from "react";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 
@@ -94,11 +95,7 @@ export default function Contact() {
       </section>
 
       {/* FAQ セクション */}
-      <section className="container-custom">
-        <div className="text-center mb-12">
-          <h2 className="section-title mx-auto">よくあるご質問</h2>
-        </div>
-      </section>
+      <FAQ />
     </div>
   );
 }

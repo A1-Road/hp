@@ -102,7 +102,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja" suppressHydrationWarning>
-      <body className={`${inter.variable} ${notoSansJP.variable} font-sans bg-beige-50`}>
+      <body className={`${inter.variable} ${notoSansJP.variable} font-sans`}>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SBXZP4QP82"
           strategy="afterInteractive"
@@ -138,10 +138,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 function BackgroundShapes() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-      <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-beige-200/30 blur-3xl" />
-      <div className="absolute top-40 right-20 w-72 h-72 rounded-full bg-beige-300/20 blur-3xl" />
-      <div className="absolute bottom-20 left-1/3 w-80 h-80 rounded-full bg-beige-100/30 blur-3xl" />
-      <div className="absolute -bottom-20 right-1/4 w-96 h-96 rounded-full bg-beige-200/20 blur-3xl" />
+      <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-[#f8efd0]/30 blur-3xl" />
+      <div className="absolute top-40 right-20 w-72 h-72 rounded-full bg-[#f5e9c5]/20 blur-3xl" />
+      <div className="absolute bottom-20 left-1/3 w-80 h-80 rounded-full bg-[#faf3dc]/30 blur-3xl" />
+      <div className="absolute -bottom-20 right-1/4 w-96 h-96 rounded-full bg-[#f8efd0]/20 blur-3xl" />
     </div>
   );
 }

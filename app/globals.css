@@ -3,18 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --background: 36 33% 97%;
-  --foreground: 20 14.3% 4.1%;
   --card: 0 0% 100%;
   --card-foreground: 20 14.3% 4.1%;
   --popover: 0 0% 100%;
   --popover-foreground: 20 14.3% 4.1%;
-  --primary: 24 9.8% 10%;
+  --primary: 0 100% 67%; /* Changed to #ff5757 (red) */
   --primary-foreground: 60 9.1% 97.8%;
   --secondary: 60 4.8% 95.9%;
   --secondary-foreground: 24 9.8% 10%;
   --muted: 60 4.8% 95.9%;
-  --muted-foreground: 25 5.3% 44.7%;
+  --muted-foreground: 0 0% 33.3%; /* Changed to #555555 */
   --accent: 60 4.8% 95.9%;
   --accent-foreground: 24 9.8% 10%;
   --destructive: 0 84.2% 60.2%;
@@ -32,12 +30,12 @@
   --card-foreground: 60 9.1% 97.8%;
   --popover: 20 14.3% 4.1%;
   --popover-foreground: 60 9.1% 97.8%;
-  --primary: 60 9.1% 97.8%;
-  --primary-foreground: 24 9.8% 10%;
+  --primary: 0 100% 67%; /* Changed to #ff5757 (red) */
+  --primary-foreground: 60 9.1% 97.8%;
   --secondary: 12 6.5% 15.1%;
   --secondary-foreground: 60 9.1% 97.8%;
   --muted: 12 6.5% 15.1%;
-  --muted-foreground: 24 5.4% 63.9%;
+  --muted-foreground: 0 0% 33.3%; /* Changed to #555555 */
   --accent: 12 6.5% 15.1%;
   --accent-foreground: 60 9.1% 97.8%;
   --destructive: 0 62.8% 30.6%;
@@ -52,7 +50,17 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[#fffaeb] text-[#555555];
+  }
+
+  /* Ensure all muted text is consistently the right color */
+  .text-muted-foreground {
+    @apply text-[#555555] !important;
+  }
+
+  /* Make all paragraph text bold for better visibility */
+  p {
+    @apply font-semibold;
   }
 }
 

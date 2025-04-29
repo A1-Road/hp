@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -13,36 +12,16 @@ import {
 } from "@/components/ui/accordion";
 import { getEvents } from "@/actions/events";
 import { getNewsList } from "@/actions/news";
+import { getYoutubeVideos } from "@/actions/youtube";
 import type { Event } from "@/lib/luma";
 import type { Article } from "@/lib/microcms";
+import type { YouTubeVideo } from "@/actions/youtube";
+import { useEffect, useState } from "react";
 import { formatDate } from "@/lib/utils";
 import { Factory, Building2, Plane } from "lucide-react";
+import FAQ from "@/components/faq";
 
 export const runtime = "edge";
-
-// FAQ アイテム
-const faqItems: { question: string; answer: string }[] = [
-  // {
-  //   question: "AIとWeb3の組み合わせにはどのようなメリットがありますか？",
-  //   answer:
-  //     "AIとWeb3の組み合わせにより、データの透明性と信頼性が向上し、より公平で効率的な意思決定が可能になります。また、AIの分析能力とWeb3の分散型特性を活かすことで、新しいビジネスモデルの創出が期待できます。",
-  // },
-  // {
-  //   question: "DAOプラットフォームの導入にはどのくらいの期間がかかりますか？",
-  //   answer:
-  //     "プロジェクトの規模や要件によって異なりますが、基本的なプラットフォームの構築には3-6ヶ月程度かかります。その後、組織の特性に合わせたカスタマイズや、メンバーのトレーニング期間も考慮する必要があります。",
-  // },
-  // {
-  //   question: "ウォレットレス認証はどのように安全性を確保していますか？",
-  //   answer:
-  //     "ウォレットレス認証は、生体認証やデバイス固有の識別子を活用し、従来のパスワード認証よりも高いセキュリティを実現しています。また、ブロックチェーン技術を活用することで、認証情報の改ざんを防ぎ、より安全な認証プロセスを提供しています。",
-  // },
-  // {
-  //   question: "AI導入の際のデータプライバシー対策はどのように行っていますか？",
-  //   answer:
-  //     "データの匿名化や暗号化、アクセス制御など、多層的なセキュリティ対策を実施しています。また、GDPRや個人情報保護法などの規制に準拠したデータ管理を行い、プライバシー保護に配慮しています。",
-  // },
-];
 
 // 事業内容カード
 const businessCards = [
@@ -74,6 +53,14 @@ export default function HomePage() {
   const [events, setEvents] = useState<Event[]>([]);
   const [news, setNews] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
+  const [videos, setVideos] = useState<YouTubeVideo[]>([]);
+
+  useEffect(() => {
+    const fetchVideos = async () => {
+      setVideos(await getYoutubeVideos());
+    };
+    fetchVideos();
+  }, []);
 
   useEffect(() => {
     async function fetchData() {
@@ -112,85 +99,42 @@ export default function HomePage() {
         </div>
         <div className="container mx-auto px-4 relative z-20">
           <div className="grid grid-cols-[4fr_18fr_5fr_4fr] items-center gap-4 mx-auto">
-            <div className="col-start-2 max-w-2xl">
+            <div className="col-start-2 max-w-3xl">
               <AnimatedSection>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
-                  <span className="text-black [text-shadow:_-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white]">
-                    AIで会社を動かす、
+                <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                  <span className="text-black [text-shadow:_-0.5px_-0.5px_0_white,_0.5px_-0.5px_0_white,_-0.5px_0.5px_0_white,_0.5px_0.5px_0_white]">
+                    日本の「屋台骨」産業に特化した
                   </span>
-                  <div className="h-8" />
-                  <span className="text-black [text-shadow:_-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white]">
-                    経営の新時代へ。
+                  <div className="h-4" />
+                  <span className="text-black [text-shadow:_-0.5px_-0.5px_0_white,_0.5px_-0.5px_0_white,_-0.5px_0.5px_0_white,_0.5px_0.5px_0_white] md:whitespace-nowrap">
+                    AI/Web3開発企業
                   </span>
-                </h1>
+                </h2>
+                <h3 className="text-2xl font-bold mb-4 text-black [text-shadow:_-0.5px_-0.5px_0_white,_0.5px_-0.5px_0_white,_-0.5px_0.5px_0_white,_0.5px_0.5px_0_white] max-w-3xl mx-auto">
+                  エーワンロードは、製造業・観光業・建設業・クリエイター業など日本の基幹産業が抱える課題に対し、AIとWeb3（ブロックチェーン・DAO等）技術を活用したワンストップ開発・コンサルティングでデジタル化・DXを推進し、グローバルな競争力強化を支援します。
+                </h3>
               </AnimatedSection>
             </div>
             <div className="col-start-3">
               <AnimatedSection delay={100}>
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 mx-auto items-center">
                   <Button
                     asChild
                     size="lg"
-                    className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600 text-lg"
+                    className="rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200 text-2xl font-bold w-full max-w-xs"
                   >
                     <Link href="/contact">まずはご相談</Link>
                   </Button>
                   <Button
                     asChild
                     size="lg"
-                    className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600 text-lg"
+                    className="rounded-full bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-200 border-2 border-primary text-2xl font-bold w-full max-w-xs"
                   >
                     <Link href="/request">資料請求</Link>
                   </Button>
                 </div>
               </AnimatedSection>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 渋沢栄一セクション */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-12 items-center max-w-6xl mx-auto">
-            <AnimatedSection>
-              <div className="text-center">
-                <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto">
-                  <Image
-                    src="/shibusawa.png"
-                    alt="渋沢栄一"
-                    fill
-                    className="object-cover rounded-2xl"
-                    priority
-                  />
-                </div>
-                <div className="mt-4 text-center">
-                  <p className="font-bold text-xl">渋沢栄一</p>
-                  <p className="text-muted-foreground">日本近代資本主義の父</p>
-                </div>
-              </div>
-            </AnimatedSection>
-            <AnimatedSection delay={100}>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">すべての人々をつなぐ架け橋へ</h2>
-              <div className="space-y-6 text-lg">
-                <p>
-                  世界にある見えない資産をつなげ、その力を引き出します。ブロックチェーン技術をはじめとする最新テクノロジーの力で、我々の生きる社会のあらゆる問題を解決します。
-                </p>
-                <p>私たちのミッションは、すべての人々をつなげることです。</p>
-                <p>
-                  近代日本資本主義の礎を築いた渋沢栄一の精神を繋ぎ、社会に広めることで、皆様と未来をつくりあげてゆきます。
-                </p>
-              </div>
-            </AnimatedSection>
-          </div>
-          <div className="text-center mt-8">
-            <Button
-              asChild
-              variant="outline"
-              className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
-            >
-              <Link href="/about-us">エーワンロード株式会社について</Link>
-            </Button>
           </div>
         </div>
       </section>
@@ -254,7 +198,7 @@ export default function HomePage() {
             <Button
               asChild
               variant="outline"
-              className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+              className="rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200 text-lg"
             >
               <Link href="/case">具体的な事例を見る</Link>
             </Button>
@@ -296,13 +240,58 @@ export default function HomePage() {
             </div>
           </AnimatedSection>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-16">
             <AnimatedSection>
               <div className="relative w-[60vw] h-[15vw]">
                 <Image src="/collaborate.png" alt="実績" fill className="object-contain" />
               </div>
             </AnimatedSection>
           </div>
+
+          <AnimatedSection>
+            <div className="max-w-6xl mx-auto mt-16">
+              <div className="flex justify-between items-center mb-8">
+                <h3 className="text-2xl md:text-3xl font-bold">弊社セミナー・過去動画一覧</h3>
+                <Button
+                  asChild
+                  className="rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200"
+                >
+                  <Link
+                    href="https://www.youtube.com/playlist?list=PLTf_ID6qmwYIwa4KLmc_wfptX_Pzkc49H"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    弊社YouTubeはこちら →
+                  </Link>
+                </Button>
+              </div>
+
+              <div className="flex justify-center">
+                <div className="grid grid-cols-5 gap-6 max-w-[1200px]">
+                  {videos.slice(0, 5).map((video) => {
+                    const videoId = video.snippet.resourceId.videoId;
+                    return (
+                      <div key={videoId} className="flex flex-col">
+                        <div className="aspect-video rounded-lg shadow-md overflow-hidden h-[120px]">
+                          <iframe
+                            className="w-full h-full"
+                            src={`https://www.youtube.com/embed/${videoId}`}
+                            title={video.snippet.title}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                        <p className="text-xs mt-2 line-clamp-2 text-center">
+                          {video.snippet.title}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -357,7 +346,7 @@ export default function HomePage() {
             <Button
               asChild
               variant="outline"
-              className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+              className="rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200 text-lg"
             >
               <Link href="/media-and-events">すべてのニュースを見る</Link>
             </Button>
@@ -438,7 +427,7 @@ export default function HomePage() {
                           <Button
                             asChild
                             size="sm"
-                            className="whitespace-nowrap rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+                            className="whitespace-nowrap rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200 text-lg"
                           >
                             <Link
                               href={`https://lu.ma/event/${event.slug}`}
@@ -464,7 +453,7 @@ export default function HomePage() {
             <Button
               asChild
               variant="outline"
-              className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+              className="rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200 text-lg"
             >
               <Link href="/media-and-events">すべてのイベントを見る</Link>
             </Button>
@@ -473,33 +462,7 @@ export default function HomePage() {
       </section>
 
       {/* FAQ セクション */}
-      <section className="py-20 bg-beige-50/50">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">よくあるご質問</h2>
-            </div>
-          </AnimatedSection>
-
-          <div className="max-w-3xl mx-auto">
-            <Accordion type="single" collapsible className="w-full">
-              {faqItems.map((faq, index) => (
-                <AnimatedSection key={index} delay={index * 100}>
-                  <AccordionItem
-                    value={`item-${index}`}
-                    className="bg-white mb-4 rounded-lg shadow-sm"
-                  >
-                    <AccordionTrigger className="px-6 py-4">{faq.question}</AccordionTrigger>
-                    <AccordionContent className="px-6 pb-4">
-                      <p className="text-muted-foreground">{faq.answer}</p>
-                    </AccordionContent>
-                  </AccordionItem>
-                </AnimatedSection>
-              ))}
-            </Accordion>
-          </div>
-        </div>
-      </section>
+      <FAQ />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import FAQ from "@/components/faq";
 import { useEffect } from "react";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 
@@ -77,45 +78,7 @@ export default function Request() {
       </section>
 
       {/* FAQ セクション */}
-      <section className="container-custom">
-        <div className="text-center mb-12">
-          <h2 className="section-title mx-auto">よくあるご質問</h2>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* <div className="floating-card p-6">
-            <h3 className="text-lg font-bold mb-2">資料はどのくらいで届きますか？</h3>
-            <p className="text-muted-foreground">
-              資料請求後、2営業日以内にメールでお送りいたします。
-              ご不明な点がございましたら、お気軽にお問い合わせください。
-            </p>
-          </div>
-
-          <div className="floating-card p-6">
-            <h3 className="text-lg font-bold mb-2">資料請求後の営業連絡はありますか？</h3>
-            <p className="text-muted-foreground">
-              資料請求後、必要に応じて担当者よりご連絡させていただく場合がございます。
-              ご希望でない場合は、その旨をお知らせください。
-            </p>
-          </div>
-
-          <div className="floating-card p-6">
-            <h3 className="text-lg font-bold mb-2">資料の内容はどのようなものですか？</h3>
-            <p className="text-muted-foreground">
-              当社のサービス概要、導入事例、料金プランなどの詳細情報を掲載しております。
-              具体的な内容については、資料をご確認ください。
-            </p>
-          </div>
-
-          <div className="floating-card p-6">
-            <h3 className="text-lg font-bold mb-2">資料の再送は可能ですか？</h3>
-            <p className="text-muted-foreground">
-              はい、可能です。資料が届かない場合や、再送をご希望の場合は、
-              お気軽にお問い合わせください。
-            </p>
-          </div> */}
-        </div>
-      </section>
+      <FAQ />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import { AnimatedSection } from "@/components/ui/animated-section";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -96,7 +97,7 @@ Web3/ブロックチェーンという用語を一切使用せず、シームレ
       "主要メディア3社に取り上げられ、認知度が向上",
       "DAO導入を検討する企業が20%以上増加し、具体的な導入が進みました",
     ],
-    image: "/fa1rness.png",
+    image: "/fa1rness.jpg",
     imagePosition: "right",
   },
   {
@@ -122,8 +123,9 @@ Web3/ブロックチェーンという用語を一切使用せず、シームレ
       "累計50名の参加者が集結し、アジア初の大規模DAOイベントを実現",
       "地方創生・音楽・労働環境など多様な分野でのDAO活用提案",
       "国内外の専門家による審査とメンタリングで質の高い学びを提供",
+      "https://dao-a-thon.studio.site/",
     ],
-    image: "/daoathon.png",
+    image: "/daoathon.jpg",
     imagePosition: "left",
   },
 ];
@@ -151,7 +153,7 @@ export default function CasePage() {
           <div className="container mx-auto px-4 md:px-8 lg:px-16">
             <AnimatedSection>
               <div
-                className={`grid md:grid-cols-3 gap-12 items-center ${
+                className={`grid md:grid-cols-5 gap-12 items-center ${
                   caseStudy.imagePosition === "right"
                     ? "md:grid-flow-row"
                     : "md:grid-flow-row-dense"
@@ -159,7 +161,7 @@ export default function CasePage() {
               >
                 {/* コンテンツ部分 */}
                 <div
-                  className={`${caseStudy.imagePosition === "right" ? "md:order-1 md:col-span-2" : "md:order-2 md:col-span-2"}`}
+                  className={`${caseStudy.imagePosition === "right" ? "md:order-1 md:col-span-3" : "md:order-2 md:col-span-3"}`}
                 >
                   <div className="space-y-6">
                     <div>
@@ -198,8 +200,21 @@ export default function CasePage() {
                       <ul className="space-y-2">
                         {caseStudy.results.map((result, idx) => (
                           <li key={idx} className="flex items-start gap-2">
-                            <span className="text-primary">•</span>
-                            <span className="text-muted-foreground">{result}</span>
+                            <span className="text-primary font-bold">•</span>
+                            {result.startsWith("http") ? (
+                              <p>
+                                <Link
+                                  href={result}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-primary hover:underline"
+                                >
+                                  イベントサイトはこちら
+                                </Link>
+                              </p>
+                            ) : (
+                              <p>{result}</p>
+                            )}
                           </li>
                         ))}
                       </ul>
@@ -230,14 +245,14 @@ export default function CasePage() {
 
                 {/* 画像部分 */}
                 <div
-                  className={`${caseStudy.imagePosition === "right" ? "md:order-2" : "md:order-1"}`}
+                  className={`${caseStudy.imagePosition === "right" ? "md:order-2 md:col-span-2" : "md:order-1 md:col-span-2"}`}
                 >
                   <div className="relative w-full h-[400px]">
                     <Image
                       src={caseStudy.image}
                       alt={caseStudy.title}
-                      width={600}
-                      height={400}
+                      width={800}
+                      height={500}
                       className="object-contain rounded-xl"
                     />
                   </div>

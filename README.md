@@ -1,6 +1,6 @@
 # エーワンロード株式会社 コーポレートサイト
 
-![A1Road](public/a1road-logo.png)
+![A1Road](public/a-one-road-logo.png)
 
 このプロジェクトは、エーワンロード株式会社のコーポレートサイトを構築するためのリポジトリです。
 Next.js、TypeScript、Tailwind CSS、shadcn/ui、Framer Motion、MicroCMSを使用して構築されています。
