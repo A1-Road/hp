@@ -229,11 +229,11 @@ export default function CasePage() {
                           詳細を見る
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-w-3xl">
+                      <DialogContent className="max-w-3xl text-white border-white">
                         <DialogHeader>
-                          <DialogTitle>{caseStudy.title}</DialogTitle>
+                          <DialogTitle className="text-white">{caseStudy.title}</DialogTitle>
                         </DialogHeader>
-                        <div className="space-y-4 text-muted-foreground">
+                        <div className="space-y-4 text-white">
                           {caseStudy.description.split("\n\n").map((paragraph, idx) => (
                             <p key={idx}>{paragraph}</p>
                           ))}
