@@ -11,7 +11,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { useState } from "react";
+import EventCarousel from "@/components/event-carousel";
 
 // ケース
 const caseStudies = [
@@ -262,6 +262,9 @@ export default function CasePage() {
           </div>
         </section>
       ))}
+
+      {/* セミナー・イベント実績セクション */}
+      <EventCarousel />
     </div>
   );
 }

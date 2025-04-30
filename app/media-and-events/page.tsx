@@ -8,9 +8,11 @@ import { useEffect, useState } from "react";
 import { FaCalendarAlt, FaMapMarkerAlt, FaExternalLinkAlt } from "react-icons/fa";
 import type { Event } from "@/lib/luma";
 import type { Article } from "@/lib/microcms";
+import type { YouTubeVideo } from "@/actions/youtube";
 import { formatDate } from "@/lib/utils";
 import { getEvents } from "@/actions/events";
 import { getNewsList } from "@/actions/news";
+import { getYoutubeVideos } from "@/actions/youtube";
 
 export const runtime = "edge";
 
@@ -24,8 +26,22 @@ const tabs = [
 export default function MediaAndEventsPage() {
   const [newsItems, setNewsItems] = useState<Article[]>([]);
   const [events, setEvents] = useState<Event[]>([]);
+  const [videos, setVideos] = useState<YouTubeVideo[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("all");
+
+  // YouTube動画を取得
+  useEffect(() => {
+    const fetchVideos = async () => {
+      try {
+        const videoData = await getYoutubeVideos();
+        setVideos(videoData);
+      } catch (error) {
+        console.error("Error fetching videos:", error);
+      }
+    };
+    fetchVideos();
+  }, []);
 
   useEffect(() => {
     async function fetchData() {
@@ -162,6 +178,102 @@ export default function MediaAndEventsPage() {
             <p className="text-muted-foreground">選択した条件に一致するコンテンツがありません。</p>
           </div>
         )}
+      </section>
+
+      {/* 動画セクション */}
+      <section className="container mx-auto px-4 mb-16">
+        <AnimatedSection>
+          <div className="text-center mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold">Videos</h2>
+          </div>
+        </AnimatedSection>
+
+        <div className="max-w-6xl mx-auto text-right mb-8">
+          <Button
+            asChild
+            className="rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200"
+          >
+            <Link
+              href="https://www.youtube.com/@daoathon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              チャンネルはこちら →
+            </Link>
+          </Button>
+        </div>
+
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            {/* 強調する動画1 */}
+            <AnimatedSection delay={100}>
+              <div className="flex flex-col">
+                <div className="aspect-video rounded-lg shadow-md overflow-hidden">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/ajQZWOjOH20"
+                    title="DAOathon動画"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <p className="text-sm mt-3 font-medium">
+                  DAOathon : Japan&apos;s first Decentralized Autonomous Organization Hackathon
+                </p>
+              </div>
+            </AnimatedSection>
+
+            {/* 強調する動画2 */}
+            <AnimatedSection delay={200}>
+              <div className="flex flex-col">
+                <div className="aspect-video rounded-lg shadow-md overflow-hidden">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/IBQWBi5ww7w"
+                    title="DAOathon動画"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <p className="text-sm mt-3 font-medium">
+                  DAO Hackathon : Exploring the Future of Web3 Organizations
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
+
+          {/* プレイリスト動画一覧 */}
+          <AnimatedSection delay={300}>
+            <div className="mt-12">
+              <div className="flex justify-center">
+                <div className="grid grid-cols-5 gap-6 max-w-[1200px]">
+                  {videos.slice(0, 5).map((video) => {
+                    const videoId = video.snippet.resourceId.videoId;
+                    return (
+                      <div key={videoId} className="flex flex-col">
+                        <div className="aspect-video rounded-lg shadow-md overflow-hidden h-[120px]">
+                          <iframe
+                            className="w-full h-full"
+                            src={`https://www.youtube.com/embed/${videoId}`}
+                            title={video.snippet.title}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                        <p className="text-xs mt-2 line-clamp-2 text-center">
+                          {video.snippet.title}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
       </section>
 
       {/* 今後のイベントセクション */}

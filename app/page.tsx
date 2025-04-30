@@ -184,7 +184,7 @@ export default function HomePage() {
                         />
                       </div>
                     )}
-                    <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-white to-transparent"></div>
+                    <div className="absolute md:absolute bottom-0 md:bottom-0 md:right-0 left-0 right-0 md:left-auto h-1/3 md:h-full md:w-1/4 bg-gradient-to-t md:bg-gradient-to-l from-white to-transparent"></div>
                   </div>
                   <div className="p-8">
                     <h3 className="text-2xl font-bold mb-4">{business.title}</h3>
@@ -228,6 +228,100 @@ export default function HomePage() {
               />
             </div>
           </AnimatedSection>
+        </div>
+      </section>
+
+      {/* 選ばれる理由セクション */}
+      <section className="py-20 bg-beige-50/50">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Us</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">選ばれる理由</p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
+            <AnimatedSection delay={100}>
+              <div className="card-3d h-full overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 bg-white">
+                <div className="relative flex flex-col md:flex-row">
+                  {/* 画像セクション */}
+                  <div className="relative w-full md:w-1/3 p-4 flex items-center justify-center">
+                    <Image
+                      src="/tech.png"
+                      alt="技術に強い"
+                      width={300}
+                      height={300}
+                      className="object-contain transition-transform duration-300 hover:scale-105"
+                    />
+                  </div>
+                  {/* テキストセクション */}
+                  <div className="p-8 md:w-2/3 relative z-20">
+                    <h3 className="text-xl font-bold mb-4">
+                      <strong>技術に強い</strong>
+                    </h3>
+                    <p className="text-muted-foreground">
+                      エーワンロードは、東京大学出身のフルスタックエンジニアやAI・Web3の専門家によって構成。最先端の技術を現場レベルに落とし込んでいます。DAOメディア3年の実績や高性能計算、Webアプリ開発（Python,
+                      FastAPI,
+                      React等）などの幅広いスキルを活かし、製造業・観光業・建設業など日本の基幹産業に対して、リアルな現場課題に根ざした価値を提供します。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={200}>
+              <div className="card-3d h-full overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 bg-white">
+                <div className="relative flex flex-col md:flex-row">
+                  {/* 画像セクション */}
+                  <div className="relative w-full md:w-1/3 p-4 flex items-center justify-center">
+                    <Image
+                      src="/design.png"
+                      alt="デザインに強い"
+                      width={300}
+                      height={300}
+                      className="object-contain transition-transform duration-300 hover:scale-105"
+                    />
+                  </div>
+                  {/* テキストセクション */}
+                  <div className="p-8 md:w-2/3 relative z-20">
+                    <h3 className="text-xl font-bold mb-4">
+                      <strong>デザインに強い</strong>
+                    </h3>
+                    <p className="text-muted-foreground">
+                      単に機能を実装するだけでなくUI/UXやナラティブ設計、ビジュアル設計を通じて「使われるサービス」に仕上げます。高齢者や低リテラシーユーザーに対しても使いやすさを意識した導線設計やプロダクトの世界観づくりによって多層的なユーザーに刺さる設計を実現。メディア掲載・エンゲージメント向上など具体的成果も上げています。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={300}>
+              <div className="card-3d h-full overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 bg-white">
+                <div className="relative flex flex-col md:flex-row">
+                  {/* 画像セクション */}
+                  <div className="relative w-full md:w-1/3 p-4 flex items-center justify-center">
+                    <Image
+                      src="/speed.png"
+                      alt="スピードに強い"
+                      width={300}
+                      height={300}
+                      className="object-contain transition-transform duration-300 hover:scale-105"
+                    />
+                  </div>
+                  {/* テキストセクション */}
+                  <div className="p-8 md:w-2/3 relative z-20">
+                    <h3 className="text-xl font-bold mb-4">
+                      <strong>スピードに強い</strong>
+                    </h3>
+                    <p className="text-muted-foreground">
+                      スタートアップならではの機動力と即応性を武器に、企画から実装・改善提案までをワンストップかつ短期間で完了させます。例えば、従来7ステップかかっていたログインフローをわずか2ステップに簡略化するなど、現場のDXを加速するプロトタイピングに強みを持ちます。初期実装は最短1週間〜可能な体制。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 

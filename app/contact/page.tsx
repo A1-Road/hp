@@ -2,6 +2,7 @@
 
 import FAQ from "@/components/faq";
 import React, { useEffect } from "react";
+import Image from "next/image";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 
 declare global {
@@ -45,47 +46,83 @@ export default function Contact() {
     <div className="pt-24">
       <section className="container-custom">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">お問い合わせ</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">お気軽にご相談ください！</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            AIやWeb3技術の活用についてのご質問や課題のご相談をお待ちしています
+            課題抽出から実装・運用支援までワンストップで対応します。
+            <br />
+            お客様と並走しながら、現場に寄り添った迅速かつ的確なDX推進を実現します。
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
-          <div className="md:col-span-1">
-            <div className="floating-card p-6">
-              <h2 className="text-xl font-bold mb-6">お問い合わせ先</h2>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <MdPhone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-bold text-sm mb-1">電話番号</h3>
-                    <p className="text-muted-foreground">080-4870-5690</p>
-                  </div>
+        <div className="grid md:grid-cols-5 gap-8 lg:gap-12">
+          <div className="md:col-span-2 flex flex-col items-center">
+            <h2 className="text-xl font-bold mb-6 text-center">ご支援の流れ</h2>
+            <div className="flex flex-row gap-4 mb-8 w-full max-w-4xl">
+              <div className="text-center w-1/4">
+                <div
+                  style={{ border: "2px solid #FF0000" }}
+                  className="rounded-lg p-3 flex flex-col items-center justify-center h-full"
+                >
+                  <Image src="/hat.png" alt="ヒアリング" width={48} height={48} className="mb-2" />
+                  <p style={{ color: "#FF0000" }} className="font-bold text-sm">
+                    ヒアリング
+                    <br />
+                    現場訪問
+                  </p>
                 </div>
-                <div className="flex items-start gap-4">
-                  <MdEmail className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-bold text-sm mb-1">メールアドレス</h3>
-                    <p className="text-muted-foreground">admin@a1-road.com</p>
-                  </div>
+              </div>
+              <div className="text-center w-1/4">
+                <div
+                  style={{ border: "2px solid #FF0000" }}
+                  className="rounded-lg p-3 flex flex-col items-center justify-center h-full"
+                >
+                  <Image src="/light.png" alt="解決策" width={48} height={48} className="mb-2" />
+                  <p style={{ color: "#FF0000" }} className="font-bold text-sm">
+                    解決策の
+                    <br />
+                    ご提案
+                  </p>
                 </div>
-                <div className="flex items-start gap-4">
-                  <MdLocationOn className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-bold text-sm mb-1">所在地</h3>
-                    <p className="text-muted-foreground">
-                      〒150-0002
-                      <br />
-                      東京都渋谷区渋谷3-27-1 100BANCH
-                    </p>
-                  </div>
+              </div>
+              <div className="text-center w-1/4">
+                <div
+                  style={{ border: "2px solid #FF0000" }}
+                  className="rounded-lg p-3 flex flex-col items-center justify-center h-full"
+                >
+                  <Image src="/tool.png" alt="試作" width={48} height={48} className="mb-2" />
+                  <p style={{ color: "#FF0000" }} className="font-bold text-sm">
+                    試作・導入
+                  </p>
+                </div>
+              </div>
+              <div className="text-center w-1/4">
+                <div
+                  style={{ border: "2px solid #FF0000" }}
+                  className="rounded-lg p-3 flex flex-col items-center justify-center h-full"
+                >
+                  <Image src="/man.png" alt="本格実装" width={48} height={48} className="mb-2" />
+                  <p style={{ color: "#FF0000" }} className="font-bold text-sm">
+                    本格実装
+                    <br />
+                    運用支援
+                  </p>
                 </div>
               </div>
             </div>
+
+            <h2 className="text-xl font-bold my-6 text-center">過去支援実績</h2>
+            <div className="flex justify-center">
+              <Image
+                src="/jisseki.png"
+                alt="過去支援実績"
+                width={600}
+                height={400}
+                className="w-full rounded-lg"
+              />
+            </div>
           </div>
 
-          <div className="md:col-span-2">
+          <div className="md:col-span-3">
             <div className="floating-card p-8">
               <h2 className="text-xl font-bold mb-6">お問い合わせフォーム</h2>
               <div id="hubspot-form" /> {/* ← ここにHubSpotフォームが挿入されます */}

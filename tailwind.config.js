@@ -83,16 +83,26 @@ module.exports = {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
         },
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
         pulse: {
           "0%, 100%": { opacity: 1 },
           "50%": { opacity: 0.5 },
+        },
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         float: "float 6s ease-in-out infinite",
+        marquee: "marquee 40s linear infinite",
         pulse: "pulse 3s ease-in-out infinite",
+        scroll: "scroll 30s linear infinite",
       },
     },
   },
