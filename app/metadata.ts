@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "エーワンロード株式会社 | AIとWeb3で日本の産業を世界一に",
+  title: "エーワンロード株式会社 | 日本の「屋台骨」産業に特化したAI/Web3開発企業",
   description:
     "AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
   openGraph: {
-    title: "エーワンロード株式会社 | AIとWeb3で日本の産業を世界一に",
+    title: "エーワンロード株式会社 | 日本の「屋台骨」産業に特化したAI/Web3開発企業",
     description:
       "AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "エーワンロード株式会社 | AIとWeb3で日本の産業を世界一に",
+    title: "エーワンロード株式会社 | 日本の「屋台骨」産業に特化したAI/Web3開発企業",
     description:
       "AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
     images: ["https://a1road.com/twitter-image.jpg"],
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: "エーワンロード株式会社 | AIとWeb3で日本の産業を世界一に",
+      name: "エーワンロード株式会社 | 日本の「屋台骨」産業に特化したAI/Web3開発企業",
       description:
         "AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
       publisher: {

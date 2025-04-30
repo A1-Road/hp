@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { getEventImages } from "@/actions/event-images";
 
+export const runtime = "edge";
+
 export default function EventCarousel() {
   const [eventImages, setEventImages] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
