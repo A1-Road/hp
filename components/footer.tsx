@@ -72,181 +72,183 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-[#111827] container mx-auto px-8 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          <div className="space-y-6">
-            <div>
-              <h4 className="font-bold text-lg mb-4 text-white">サイトマップ</h4>
+      <div className="bg-[#111827] w-full">
+        <div className="container mx-auto px-8 py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div className="space-y-6">
+              <div>
+                <h4 className="font-bold text-lg mb-4 text-white">サイトマップ</h4>
+                <ul className="space-y-3">
+                  <li>
+                    <Link
+                      href="/about-us"
+                      className="text-gray-300 hover:text-white transition-colors flex items-center"
+                    >
+                      <HiArrowRight className="mr-2 h-3 w-3" />
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/case"
+                      className="text-gray-300 hover:text-white transition-colors flex items-center"
+                    >
+                      <HiArrowRight className="mr-2 h-3 w-3" />
+                      Case
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/media-and-events"
+                      className="text-gray-300 hover:text-white transition-colors flex items-center"
+                    >
+                      <HiArrowRight className="mr-2 h-3 w-3" />
+                      Media and Events
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="text-gray-300 hover:text-white transition-colors flex items-center"
+                    >
+                      <HiArrowRight className="mr-2 h-3 w-3" />
+                      お問い合わせ
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/request"
+                      className="text-gray-300 hover:text-white transition-colors flex items-center"
+                    >
+                      <HiArrowRight className="mr-2 h-3 w-3" />
+                      資料請求
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/privacy-policy"
+                      className="text-gray-300 hover:text-white transition-colors flex items-center"
+                    >
+                      <HiArrowRight className="mr-2 h-3 w-3" />
+                      プライバシーポリシー
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <h4 className="font-bold text-lg mb-4 text-white">About Us</h4>
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="/about-us"
+                    href="/about-us#philosophy"
                     className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
-                    About Us
+                    創業理念
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/case"
+                    href="/about-us#mvv"
                     className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
-                    Case
+                    MVV
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/media-and-events"
+                    href="/about-us#ceo"
                     className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
-                    Media and Events
+                    CEOメッセージ
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/contact"
+                    href="/about-us#members"
                     className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
-                    お問い合わせ
+                    メンバー
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/request"
+                    href="/about-us#company"
                     className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
-                    資料請求
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/privacy-policy"
-                    className="text-gray-300 hover:text-white transition-colors flex items-center"
-                  >
-                    <HiArrowRight className="mr-2 h-3 w-3" />
-                    プライバシーポリシー
+                    会社概要
                   </Link>
                 </li>
               </ul>
             </div>
-          </div>
 
-          <div className="space-y-6">
-            <h4 className="font-bold text-lg mb-4 text-white">About Us</h4>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/about-us#philosophy"
-                  className="text-gray-300 hover:text-white transition-colors flex items-center"
-                >
-                  <HiArrowRight className="mr-2 h-3 w-3" />
-                  創業理念
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about-us#mvv"
-                  className="text-gray-300 hover:text-white transition-colors flex items-center"
-                >
-                  <HiArrowRight className="mr-2 h-3 w-3" />
-                  MVV
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about-us#ceo"
-                  className="text-gray-300 hover:text-white transition-colors flex items-center"
-                >
-                  <HiArrowRight className="mr-2 h-3 w-3" />
-                  CEOメッセージ
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about-us#members"
-                  className="text-gray-300 hover:text-white transition-colors flex items-center"
-                >
-                  <HiArrowRight className="mr-2 h-3 w-3" />
-                  メンバー
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about-us#company"
-                  className="text-gray-300 hover:text-white transition-colors flex items-center"
-                >
-                  <HiArrowRight className="mr-2 h-3 w-3" />
-                  会社概要
-                </Link>
-              </li>
-            </ul>
-          </div>
+            <div className="space-y-6">
+              <h4 className="font-bold text-lg mb-4 text-white">Case</h4>
+              <ul className="space-y-3">
+                <li>
+                  <Link
+                    href="/case#rag"
+                    className="text-gray-300 hover:text-white transition-colors flex items-center"
+                  >
+                    <HiArrowRight className="mr-2 h-3 w-3" />
+                    RAG実装
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/case#walletless"
+                    className="text-gray-300 hover:text-white transition-colors flex items-center"
+                  >
+                    <HiArrowRight className="mr-2 h-3 w-3" />
+                    ウォレットレス
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/case#fa1rness"
+                    className="text-gray-300 hover:text-white transition-colors flex items-center"
+                  >
+                    <HiArrowRight className="mr-2 h-3 w-3" />
+                    FA1RNESS
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/case#daoathon"
+                    className="text-gray-300 hover:text-white transition-colors flex items-center"
+                  >
+                    <HiArrowRight className="mr-2 h-3 w-3" />
+                    DAOATHON
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-          <div className="space-y-6">
-            <h4 className="font-bold text-lg mb-4 text-white">Case</h4>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/case#rag"
-                  className="text-gray-300 hover:text-white transition-colors flex items-center"
-                >
-                  <HiArrowRight className="mr-2 h-3 w-3" />
-                  RAG実装
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/case#walletless"
-                  className="text-gray-300 hover:text-white transition-colors flex items-center"
-                >
-                  <HiArrowRight className="mr-2 h-3 w-3" />
-                  ウォレットレス
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/case#fa1rness"
-                  className="text-gray-300 hover:text-white transition-colors flex items-center"
-                >
-                  <HiArrowRight className="mr-2 h-3 w-3" />
-                  FA1RNESS
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/case#daoathon"
-                  className="text-gray-300 hover:text-white transition-colors flex items-center"
-                >
-                  <HiArrowRight className="mr-2 h-3 w-3" />
-                  DAOATHON
-                </Link>
-              </li>
-            </ul>
+            <div className="space-y-6">
+              <h4 className="font-bold text-lg mb-4 text-white">エーワンロード株式会社</h4>
+              <p className="text-gray-300 leading-relaxed">
+                AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。
+              </p>
+            </div>
           </div>
-
-          <div className="space-y-6">
-            <h4 className="font-bold text-lg mb-4 text-white">エーワンロード株式会社</h4>
-            <p className="text-gray-300 leading-relaxed">
-              AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。
+          <div className="mt-12 pt-8 border-t flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <Image
+              src="/a-one-road-logo.png"
+              alt="エーワンロード株式会社"
+              width={200}
+              height={67}
+              className="w-auto h-12"
+            />
+            <p className="text-gray-300 text-sm">
+              © {new Date().getFullYear()} エーワンロード株式会社. All rights reserved.
             </p>
           </div>
-        </div>
-        <div className="mt-12 pt-8 border-t flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <Image
-            src="/a-one-road-logo.png"
-            alt="エーワンロード株式会社"
-            width={200}
-            height={67}
-            className="w-auto h-12"
-          />
-          <p className="text-gray-300 text-sm">
-            © {new Date().getFullYear()} エーワンロード株式会社. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
