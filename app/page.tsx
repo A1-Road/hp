@@ -102,15 +102,15 @@ export default function HomePage() {
             <div className="col-start-2 max-w-3xl">
               <AnimatedSection>
                 <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  <span className="text-black [text-shadow:_-0.5px_-0.5px_0_white,_0.5px_-0.5px_0_white,_-0.5px_0.5px_0_white,_0.5px_0.5px_0_white]">
+                  <span className="text-black">
                     日本の「屋台骨」産業に特化した
                   </span>
                   <div className="h-4" />
-                  <span className="text-black [text-shadow:_-0.5px_-0.5px_0_white,_0.5px_-0.5px_0_white,_-0.5px_0.5px_0_white,_0.5px_0.5px_0_white] md:whitespace-nowrap">
+                  <span className="text-black md:whitespace-nowrap">
                     AI/Web3開発企業
                   </span>
                 </h2>
-                <h3 className="text-2xl font-bold mb-4 text-black [text-shadow:_-0.5px_-0.5px_0_white,_0.5px_-0.5px_0_white,_-0.5px_0.5px_0_white,_0.5px_0.5px_0_white] max-w-3xl mx-auto">
+                <h3 className="text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
                   エーワンロードは、製造業・観光業・建設業・クリエイター業など日本の基幹産業が抱える課題に対し、AIとWeb3（ブロックチェーン・DAO等）技術を活用したワンストップ開発・コンサルティングでデジタル化・DXを推進し、グローバルな競争力強化を支援します。
                 </h3>
               </AnimatedSection>
