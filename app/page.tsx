@@ -95,27 +95,24 @@ export default function HomePage() {
               priority
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/30 to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/30 to-transparent z-10" />
         </div>
         <div className="container mx-auto px-4 relative z-20">
-          <div className="grid grid-cols-[4fr_18fr_5fr_4fr] items-center gap-4 mx-auto">
-            <div className="col-start-2 max-w-3xl">
+          <div className="grid grid-cols-12 items-center gap-4 mx-auto">
+            <div className="hidden lg:block lg:col-span-1" />
+            <div className="col-span-12 max-w-3xl lg:col-span-7">
               <AnimatedSection>
-                <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  <span className="text-black">
-                    日本の「屋台骨」産業に特化した
-                  </span>
-                  <div className="h-4" />
-                  <span className="text-black md:whitespace-nowrap">
-                    AI/Web3開発企業
-                  </span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                  <span className="text-black">日本の「屋台骨」産業に特化した</span>
+                  <div className="h-1 md:h-4" />
+                  <span className="text-black md:whitespace-nowrap">AI/Web3開発企業</span>
                 </h2>
-                <h3 className="text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
+                <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
                   エーワンロードは、製造業・観光業・建設業・クリエイター業など日本の基幹産業が抱える課題に対し、AIとWeb3（ブロックチェーン・DAO等）技術を活用したワンストップ開発・コンサルティングでデジタル化・DXを推進し、グローバルな競争力強化を支援します。
                 </h3>
               </AnimatedSection>
             </div>
-            <div className="col-start-3">
+            <div className="col-span-12 lg:col-span-3">
               <AnimatedSection delay={100}>
                 <div className="flex flex-col gap-4 mx-auto items-center">
                   <Button
@@ -135,6 +132,7 @@ export default function HomePage() {
                 </div>
               </AnimatedSection>
             </div>
+            <div className="hidden lg:block lg:col-span-1" />
           </div>
         </div>
       </section>
@@ -184,7 +182,7 @@ export default function HomePage() {
                         />
                       </div>
                     )}
-                    <div className="absolute md:absolute bottom-0 md:bottom-0 md:right-0 left-0 right-0 md:left-auto h-1/3 md:h-full md:w-1/4 bg-gradient-to-t md:bg-gradient-to-l from-white to-transparent"></div>
+                    <div className="absolute md:absolute bottom-0 md:bottom-0 md:right-0 left-0 right-0 md:left-auto h-1/3 md:h-full md:w-1/4 bg-gradient-to-t md:bg-gradient-to-l from-white to-transparent" />
                   </div>
                   <div className="p-8">
                     <h3 className="text-2xl font-bold mb-4">{business.title}</h3>
@@ -374,7 +372,7 @@ export default function HomePage() {
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
-                          ></iframe>
+                          />
                         </div>
                         <p className="text-xs mt-2 line-clamp-2 text-center">
                           {video.snippet.title}
@@ -408,7 +406,7 @@ export default function HomePage() {
                   .fill(0)
                   .map((_, index) => (
                     <AnimatedSection key={index} delay={index * 100}>
-                      <div className="h-16 animate-pulse bg-white rounded-xl"></div>
+                      <div className="h-16 animate-pulse bg-white rounded-xl" />
                     </AnimatedSection>
                   ))}
               </div>
@@ -467,7 +465,7 @@ export default function HomePage() {
                   .fill(0)
                   .map((_, index) => (
                     <AnimatedSection key={index} delay={index * 100}>
-                      <div className="h-32 animate-pulse bg-white rounded-2xl"></div>
+                      <div className="h-32 animate-pulse bg-white rounded-2xl" />
                     </AnimatedSection>
                   ))}
               </div>
