@@ -87,7 +87,7 @@ export default function HomePage() {
         <div className="absolute inset-0">
           <div className="absolute right-0 top-0 bottom-0 w-full">
             <Image
-              src="/top-back.jpg"
+              src="/hptop.png"
               alt="Hero Background"
               width={1200}
               height={800}
