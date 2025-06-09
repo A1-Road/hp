@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "エーワンロード株式会社 | 日本の「屋台骨」産業に特化したAI/Web3開発企業",
+  title: "エーワンロード株式会社 | AIで縁の下の走りを支える",
   description:
-    "AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
+    "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
   openGraph: {
-    title: "エーワンロード株式会社 | 日本の「屋台骨」産業に特化したAI/Web3開発企業",
+    title: "エーワンロード株式会社 | AIで縁の下の走りを支える",
     description:
-      "AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
+      "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
     images: [
       {
         url: "https://a1road.com/og-image.jpg",
@@ -19,18 +19,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "エーワンロード株式会社 | 日本の「屋台骨」産業に特化したAI/Web3開発企業",
+    title: "エーワンロード株式会社 | AIで縁の下の走りを支える",
     description:
-      "AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
+      "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
     images: ["https://a1road.com/twitter-image.jpg"],
   },
   other: {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: "エーワンロード株式会社 | 日本の「屋台骨」産業に特化したAI/Web3開発企業",
+      name: "エーワンロード株式会社 | AIで縁の下の走りを支える",
       description:
-        "AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。",
+        "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
       publisher: {
         "@type": "Organization",
         name: "エーワンロード株式会社",
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
             position: 1,
             item: {
               "@type": "Service",
-              name: "DAOアドバイザリー",
+              name: "法規認証対応AI",
               description:
-                "DAO（分散型自律組織）の設計・構築・運営をトータルサポート。組織の透明性と効率性を高め、新しい形の事業の進め方を実現します。",
+                "認証業務AIの設計・構築・運用をトータルサポート。車両や製品の法規認証プロセスを自動化・効率化し、開発スピードとコンプライアンス精度を飛躍的に向上させます。",
             },
           },
           {
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
               "@type": "Service",
               name: "AIエージェント開発",
               description:
-                "製造業、建設業、観光業向けにカスタマイズされたAIソリューションを提供。業務効率化と新たな価値創造を支援します。",
+                "製造業向けにカスタマイズされたAIソリューションを提供。業務効率化と新たな価値創造を支援します。",
             },
           },
           {

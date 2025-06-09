@@ -27,9 +27,9 @@ export const runtime = "edge";
 const businessCards = [
   {
     id: 1,
-    title: "DAOアドバイザリー",
+    title: "法規認証対応AI",
     description:
-      "DAO（分散型自律組織）の設計・構築・運営をトータルサポート。組織の透明性と効率性を高め、新しい形の事業の進め方を実現します。",
+      "認証業務AIの設計・構築・運用をトータルサポート。車両や製品の法規認証プロセスを自動化・効率化し、開発スピードとコンプライアンス精度を飛躍的に向上させます。",
     image: "/dao-advisory.png",
   },
   {
@@ -87,7 +87,7 @@ export default function HomePage() {
         <div className="absolute inset-0">
           <div className="absolute right-0 top-0 bottom-0 w-full">
             <Image
-              src="/top-back.jpg"
+              src="/hptop.png"
               alt="Hero Background"
               width={1200}
               height={800}
@@ -103,12 +103,12 @@ export default function HomePage() {
             <div className="col-span-12 max-w-3xl lg:col-span-7">
               <AnimatedSection>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  <span className="text-black">日本の「屋台骨」産業に特化した</span>
+                  <span className="text-black">データとAIで経営の”走り”を支える</span>
                   <div className="h-1 md:h-4" />
-                  <span className="text-black md:whitespace-nowrap">AI/Web3開発企業</span>
+                  <span className="text-black md:whitespace-nowrap">少数精鋭の総合開発企業</span>
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
-                  エーワンロードは、製造業・観光業・建設業・クリエイター業など日本の基幹産業が抱える課題に対し、AIとWeb3（ブロックチェーン・DAO等）技術を活用したワンストップ開発・コンサルティングでデジタル化・DXを推進し、グローバルな競争力強化を支援します。
+                  自動車産業・製造業などに特化。AI開発による経営効率改善を実施。
                 </h3>
               </AnimatedSection>
             </div>
@@ -144,7 +144,7 @@ export default function HomePage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">WHAT WE DO</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
-                エーワンロードは、製造業・観光業・建設業を中心にAI技術や分散化技術でデジタル化を提供するソフトウェア開発企業です。
+                エーワンロードは製造業など日本の基幹産業が抱える課題に対し、AI技術を活用したワンストップ開発・コンサルティングでデジタル化・DXを推進し、グローバルな競争力強化を支援します。
               </p>
             </div>
           </AnimatedSection>
@@ -259,9 +259,9 @@ export default function HomePage() {
                       <strong>技術に強い</strong>
                     </h3>
                     <p className="text-muted-foreground">
-                      エーワンロードは、東京大学出身のフルスタックエンジニアやAI・Web3の専門家によって構成。最先端の技術を現場レベルに落とし込んでいます。DAOメディア3年の実績や高性能計算、Webアプリ開発（Python,
+                      東京大学出身のフルスタックエンジニアやAIの専門家によって構成。最先端の技術を現場レベルに落とし込んでいます。DAOメディア3年の実績や高性能計算、Webアプリ開発（Python,
                       FastAPI,
-                      React等）などの幅広いスキルを活かし、製造業・観光業・建設業など日本の基幹産業に対して、リアルな現場課題に根ざした価値を提供します。
+                      React等）などの幅広いスキルを活かし、基幹産業に対して、リアルな現場課題に根ざした価値を提供します。
                     </p>
                   </div>
                 </div>
@@ -313,7 +313,7 @@ export default function HomePage() {
                       <strong>スピードに強い</strong>
                     </h3>
                     <p className="text-muted-foreground">
-                      スタートアップならではの機動力と即応性を武器に、企画から実装・改善提案までをワンストップかつ短期間で完了させます。例えば、従来7ステップかかっていたログインフローをわずか2ステップに簡略化するなど、現場のDXを加速するプロトタイピングに強みを持ちます。初期実装は最短1週間〜可能な体制。
+                      スタートアップならではの機動力と即応性を武器に、企画から実装・改善提案までをワンストップかつ短期間で完了させます。初期実装は最短1週間〜可能な体制。
                     </p>
                   </div>
                 </div>

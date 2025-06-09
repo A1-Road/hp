@@ -37,7 +37,7 @@ export default function Footer() {
           {/* Heading centered over both backgrounds */}
           <div className="w-full text-center py-10">
             <h2 className="text-3xl md:text-4xl font-bold text-white inline-block px-8">
-              あなたもAIやDAOを導入してみませんか？
+              ご連絡・お問い合わせはこちらから
             </h2>
           </div>
 
@@ -233,7 +233,7 @@ export default function Footer() {
             <div className="space-y-6">
               <h4 className="font-bold text-lg mb-4 text-white">エーワンロード株式会社</h4>
               <p className="text-gray-300 leading-relaxed">
-                AIおよびブロックチェーン（Web3）を活用したDX支援、DAOプラットフォーム構築、ウォレットレス認証技術の研究開発を行っています。
+                モビリティ・製造業を中心に、AIを活用した開発経営支援や法規認証技術の研究開発を行っています。
               </p>
             </div>
           </div>
