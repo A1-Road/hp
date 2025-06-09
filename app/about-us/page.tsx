@@ -43,7 +43,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* 渋沢栄一セクション */}
+      {/*  topセクション */}
       <section id="vision" className="py-16 bg-beige-50/50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-12 items-center max-w-6xl mx-auto">
@@ -51,28 +51,26 @@ export default function AboutUs() {
               <div className="text-center">
                 <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto">
                   <Image
-                    src="/shibusawa.png"
-                    alt="渋沢栄一"
+                    src="/HP2copy.png"
+                    alt="Kazma"
                     fill
                     className="object-cover rounded-2xl"
                     priority
                   />
                 </div>
-                <div className="mt-4 text-center">
-                  <p className="font-bold text-xl">渋沢栄一</p>
-                  <p className="text-muted-foreground">日本近代資本主義の父</p>
-                </div>
               </div>
             </AnimatedSection>
             <AnimatedSection delay={100}>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">すべての人々をつなぐ架け橋へ</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">あらゆる隠された価値を発掘し</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">世に伝える語り部となる</h2>
               <div className="space-y-6 text-lg">
                 <p>
-                  世界にある見えない資産をつなげ、その力を引き出します。ブロックチェーン技術をはじめとする最新テクノロジーの力で、我々の生きる社会のあらゆる問題を解決します。
+                多くの素晴らしい技術や知識が埋もれ、正当に評価されずに過ぎ去っています。
+            
                 </p>
-                <p>私たちのミッションは、すべての人々をつなげることです。</p>
+                <p>私たちのミッションは、これらを次の世代そして世界へとつなげることです。</p>
                 <p>
-                  近代日本資本主義の礎を築いた渋沢栄一の精神を繋ぎ、社会に広めることで、皆様と未来をつくりあげてゆきます。
+                だからこそAIなどの最先端技術を通じ、基幹産業のすべてが世界で強力な競争力を取り戻す基盤を作るべく、みなさまと二人三脚で歩んでまいります。
                 </p>
               </div>
             </AnimatedSection>
@@ -80,39 +78,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* 創業理念セクション */}
-      <section id="philosophy" className="py-16 bg-beige-50/50">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">創業理念</h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="card-3d h-full p-8 bg-white shadow-lg rounded-xl">
-                  <h3 className="text-2xl font-bold mb-4 text-center">
-                    あらゆる隠された価値を発掘し、
-                    <br />
-                    世に伝える語り部となる
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    私たちは、埋もれた技術や知識をAIとブロックチェーンで可視化し、業界のDXを推進します。これにより、日本の強みを世界で発揮する基盤を作ります。
-                  </p>
-                </div>
 
-                <div className="card-3d h-full p-8 bg-white shadow-lg rounded-xl">
-                  <h3 className="text-2xl font-bold mb-4 text-center">
-                    すべての人が自由に挑戦し
-                    <br />
-                    成長できる世界を創造する
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    最先端技術を駆使し、誰もが平等に挑戦できる環境を提供します。技術革新を続け、次世代の製造業を支えるプラットフォームを築きます。
-                  </p>
-                </div>
-              </div>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
 
       {/* MVVセクション */}
       <section id="mvv" className="py-16">

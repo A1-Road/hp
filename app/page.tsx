@@ -103,12 +103,12 @@ export default function HomePage() {
             <div className="col-span-12 max-w-3xl lg:col-span-7">
               <AnimatedSection>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  <span className="text-black">AIで縁の下の走りを支える</span>
+                  <span className="text-black">データとAIで経営の”走り”を支える</span>
                   <div className="h-1 md:h-4" />
-                  <span className="text-black md:whitespace-nowrap">AI/Web3開発企業</span>
+                  <span className="text-black md:whitespace-nowrap">少数精鋭の総合開発企業</span>
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
-                  エーワンロードは製造業など日本の基幹産業が抱える課題に対し、AI技術を活用したワンストップ開発・コンサルティングでデジタル化・DXを推進し、グローバルな競争力強化を支援します。
+                  自動車産業・製造業などに特化。AI開発による経営効率改善を実施。
                 </h3>
               </AnimatedSection>
             </div>
