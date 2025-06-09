@@ -30,7 +30,7 @@ const businessCards = [
     title: "法規認証対応AI",
     description:
       "認証業務AIの設計・構築・運用をトータルサポート。車両や製品の法規認証プロセスを自動化・効率化し、開発スピードとコンプライアンス精度を飛躍的に向上させます。",
-    image: "/dao-advisory.png",
+    image: "/legalai.png",
   },
   {
     id: 2,
