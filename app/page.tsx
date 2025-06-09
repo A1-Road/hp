@@ -108,7 +108,7 @@ export default function HomePage() {
                   <span className="text-black md:whitespace-nowrap">少数精鋭の総合開発企業</span>
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
-                  自動車産業・製造業などに特化。AI開発による経営効率改善を実施。
+                  AIによる経営効率改善で隠された価値を解き放つ。
                 </h3>
               </AnimatedSection>
             </div>
