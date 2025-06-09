@@ -111,7 +111,7 @@ export default function HomePage() {
                   AIで経営の”隠されたパフォーマンス”を解き放つ
                 </h3>
                  <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
-                タイムロスや無駄を削ぎ落とし業務を最速化するコ・ドライバー
+                  タイムロスや無駄を削ぎ落とし業務を最速化するコ・ドライバー
                 </h3>
               </AnimatedSection>
             </div>
