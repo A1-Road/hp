@@ -105,7 +105,7 @@ export default function HomePage() {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
                   <span className="text-black">データとAIで経営の”走り”を支える</span>
                   <div className="h-1 md:h-4" />
-                  <span className="text-black md:whitespace-nowrap">少数精鋭の総合開発ベンチャー</span>
+                  <span className="text-black md:whitespace-nowrap">現場起点の少数精鋭AI開発ベンチャー</span>
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
                   AIで経営の”隠されたパフォーマンス”を解き放つ
