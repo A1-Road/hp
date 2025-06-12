@@ -30,7 +30,7 @@ const businessCards = [
     title: "法規認証対応AI",
     description:
       "認証業務AIの設計・構築・運用をトータルサポート。車両や製品の法規認証プロセスを自動化・効率化し、開発スピードとコンプライアンス精度を飛躍的に向上させます。",
-    image: "/dao-advisory.png",
+    image: "/legalai.png",
   },
   {
     id: 2,
@@ -105,13 +105,10 @@ export default function HomePage() {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
                   <span className="text-black">データとAIで経営の”走り”を支える</span>
                   <div className="h-1 md:h-4" />
-                  <span className="text-black md:whitespace-nowrap">少数精鋭の総合開発企業</span>
+                  <span className="text-black md:whitespace-nowrap">現場起点の少数精鋭AI開発ベンチャー</span>
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
-                  自動車産業・製造業などに特化。AI開発による経営効率改善を実施。
-                </h3>                
-                <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
-                タイムロスや無駄を削ぎ落とし経営すべてを最速化するコ・ドライバー
+                  AIで経営の”隠されたパフォーマンス”を解き放つ
                 </h3>
                 </AnimatedSection>
             </div>
