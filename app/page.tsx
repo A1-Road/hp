@@ -109,8 +109,11 @@ export default function HomePage() {
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
                   自動車産業・製造業などに特化。AI開発による経営効率改善を実施。
+                </h3>                
+                <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
+                タイムロスや無駄を削ぎ落とし経営すべてを最速化するコ・ドライバー
                 </h3>
-              </AnimatedSection>
+                </AnimatedSection>
             </div>
             <div className="col-span-12 lg:col-span-3">
               <AnimatedSection delay={100}>
