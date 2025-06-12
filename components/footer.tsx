@@ -133,6 +133,15 @@ export default function Footer() {
                       プライバシーポリシー
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="https://daoasia.notion.site/2101d37ba2ae8046a9bedee9661fe144?source=copy_link"
+                      className="text-gray-300 hover:text-white transition-colors flex items-center"
+                    >
+                      <HiArrowRight className="mr-2 h-3 w-3" />
+                      特定商取引法に基づく表記
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
