@@ -110,7 +110,7 @@ export default function HomePage() {
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
                   AIで経営の”隠されたパフォーマンス”を解き放つ
                 </h3>
-              </AnimatedSection>
+                </AnimatedSection>
             </div>
             <div className="col-span-12 lg:col-span-3">
               <AnimatedSection delay={100}>

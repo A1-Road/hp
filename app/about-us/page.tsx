@@ -266,12 +266,12 @@ export default function AboutUs() {
               <dl className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
                   <dt className="font-semibold text-gray-700">会社名</dt>
-                  <dd>エーワンロード株式会社（設立準備中）</dd>
+                  <dd>エーワンロード株式会社</dd>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
                   <dt className="font-semibold text-gray-700">設立日</dt>
-                  <dd>2025年5月10日（予定）</dd>
+                  <dd>2021年3月22日</dd>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
@@ -293,8 +293,18 @@ export default function AboutUs() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
+                  <dt className="font-semibold text-gray-700">所在地</dt>
+                  <dd>東京都渋谷区渋谷3-27-1 100BANCH</dd>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
                   <dt className="font-semibold text-gray-700">主要取引銀行</dt>
-                  <dd>住信SBIネット銀行</dd>
+                  <dd>Paypay銀行</dd>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
+                  <dt className="font-semibold text-gray-700">法人番号</dt>
+                  <dd>9020001140520</dd>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
@@ -305,11 +315,16 @@ export default function AboutUs() {
                     AI/Web3等の研修・導入支援・コンサルティング
                   </dd>
                 </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
-                  <dt className="font-semibold text-gray-700">東京本社</dt>
-                  <dd>〒150-0002 東京都渋谷区渋谷3-27-1 100BANCH</dd>
-                </div>
+          {/* 旧法人情報 */}
+          <div className="border-t pt-6 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
+            <dt className="font-semibold text-gray-700">旧法人名</dt>
+            <dd>株式会社Cuniform（キュニフォーム）</dd>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
+            <dt className="font-semibold text-gray-700">旧所在地</dt>
+            <dd>神奈川県横浜市青葉区荏田町1150-34</dd>
+          </div>
+          {/* 旧法人情報ここまで */}
               </dl>
             </div>
           </div>
