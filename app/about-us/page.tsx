@@ -271,7 +271,7 @@ export default function AboutUs() {
 
                 <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
                   <dt className="font-semibold text-gray-700">設立日</dt>
-                  <dd>2021年3月22日</dd>
+                  <dd>2025年6月</dd>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
