@@ -41,11 +41,11 @@ const businessCards = [
   },
   {
     id: 3,
-    title: "Bankless Japan",
+    title: "営業支援エージェント「営業ルマン」",
     description:
-      "グローバルで認知されたWeb3メディア「Bankless」の日本版。AI、クリプト、DeFi、Web3の基本から最新トレンドまで、わかりやすく解説。",
-    image: "/bankless-logo.png",
-    link: "https://banklessjp.substack.com/",
+      "フォームやメール、FAXに対応した営業支援エージェント。アポ獲得からメッセージ作成まで、柔軟に対応します。",
+    image: "/eigyolemans.png",
+    link: "https://salesstone.studio.site/",
   },
 ];
 
