@@ -43,7 +43,7 @@ const caseStudies = [
       "PoC導入後1週間で新規引き合い14件を獲得",
     ],
     image: "/Salesstone.ai.png",
-    link: "https://salesstone.studio.site/",
+    imagelink: "https://salesstone.studio.site/",
     imagePosition: "left",
   },
 
