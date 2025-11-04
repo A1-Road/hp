@@ -27,21 +27,14 @@ export const runtime = "edge";
 const businessCards = [
   {
     id: 1,
-    title: "法規認証対応AI",
-    description:
-      "認証業務AIの設計・構築・運用をトータルサポート。車両や製品の法規認証プロセスを自動化・効率化し、開発スピードとコンプライアンス精度を飛躍的に向上させます。",
-    image: "/legalai.png",
-  },
-  {
-    id: 2,
     title: "AIエージェント開発",
     description:
       "企業の特性や課題に合わせたAIエージェントを提供。AIと人間の協働による新たな価値創造と、業界のパラダイムシフトを推進します。",
     image: "/ai-agent.png",
   },
   {
-    id: 3,
-    title: "営業支援エージェント「営業ルマン」",
+    id: 2,
+    title: "営業支援エージェント「セールスストン」",
     description:
       "フォームやメール、FAXに対応した営業支援エージェント。アポ獲得からメッセージ作成まで、柔軟に対応します。",
     image: "/eigyolemans.png",
@@ -149,7 +142,7 @@ export default function HomePage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {businessCards.map((business, index) => (
               <AnimatedSection key={business.id} delay={index * 100}>
                 <div className="card-3d h-full overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 bg-white">
