@@ -97,12 +97,12 @@ export default function HomePage() {
             <div className="col-span-12 max-w-3xl lg:col-span-7">
               <AnimatedSection>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  <span className="text-black">AIで経営の”走り”を支える</span>
+                  <span className="text-black">プロダクトで経営の”走り”を支える</span>
                   <div className="h-1 md:h-4" />
                   <span className="text-black md:whitespace-nowrap">AI開発・ブランド支援ベンチャー</span>
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
-                  AIで経営の”隠された価値”を解き放つ
+                  ソフトウェアで企業の”隠された価値”を解放する
                 </h3>
                 </AnimatedSection>
             </div>
