@@ -17,7 +17,7 @@ import EventCarousel from "@/components/event-carousel";
 const caseStudies = [
   {
     id: "rag",
-    title: "セールスストン：法人営業向けパーソナライズドメール・フォーム営業自動化AI",
+    title: "セールスストン：法人営業向けパーソナライズドメール・フォーム営業自動化AI【アルファ版募集中、利用申込はこちら】”,
     industry: "AI",
     challenge: [
       "属人営業：受注がベテラン依存で若手が案件を獲得できない",
@@ -41,8 +41,11 @@ const caseStudies = [
       "PoC導入後1週間で新規引き合い14件を獲得",
     ],
     image: "/Salesstone.ai.png",
+    link: "https://salesstone.studio.site/",
     imagePosition: "left",
   },
+  
+  
   {
     id: "rag",
     title: "デジタル化：地域コミュニティ構築における対話型LLM実装ならびにエンゲージメント向上",
