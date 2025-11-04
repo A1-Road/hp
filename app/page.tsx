@@ -29,15 +29,16 @@ const businessCards = [
     id: 1,
     title: "AIエージェント開発",
     description:
-      "企業の特性や課題に合わせたAIエージェントを提供。AIと人間の協働による新たな価値創造と、業界のパラダイムシフトを推進します。",
+      "貴社の特性や課題に合わせたAIエージェントを提供。お問合せ・リーチ増加など効率化とブランディングを推進します。",
     image: "/ai-agent.png",
+    link: "https://a-oneroad.com/contact"
   },
   {
     id: 2,
     title: "営業支援エージェント「セールスストン」",
     description:
       "フォームやメール、FAXに対応した営業支援エージェント。アポ獲得からメッセージ作成まで、柔軟に対応します。",
-    image: "/eigyolemans.png",
+    image: "/Salesstone.ai.png",
     link: "https://salesstone.studio.site/",
   },
 ];
