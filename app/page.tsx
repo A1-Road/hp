@@ -138,7 +138,7 @@ export default function HomePage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">WHAT WE DO</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
-                エーワンロードは、ニッポンの中小企業経営をAI開発とブランディング支援の総合コンサルティングで支援しています。
+                ニッポンの中小企業経営をAI開発とブランディング強化の総合コンサルティングで支援しています。
               </p>
             </div>
           </AnimatedSection>
