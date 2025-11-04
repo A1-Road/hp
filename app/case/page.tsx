@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatedSection } from "@/components/ui/animated-section";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -17,7 +18,8 @@ import EventCarousel from "@/components/event-carousel";
 const caseStudies = [
   {
     id: "rag",
-    title: "セールスストン：法人営業向けパーソナライズドメール・フォーム営業自動化AI【アルファ版募集中、利用申込はこちら】”,
+    title:
+      "セールスストン：法人営業向けパーソナライズドメール・フォーム営業自動化AI【アルファ版募集中、利用申込はこちら】",
     industry: "AI",
     challenge: [
       "属人営業：受注がベテラン依存で若手が案件を獲得できない",
@@ -44,10 +46,9 @@ const caseStudies = [
     link: "https://salesstone.studio.site/",
     imagePosition: "left",
   },
-  
-  
+
   {
-    id: "rag",
+    id: "rag-community",
     title: "デジタル化：地域コミュニティ構築における対話型LLM実装ならびにエンゲージメント向上",
     industry: "AI・コミュニティ構築",
     challenge: [
@@ -102,36 +103,37 @@ Web3/ブロックチェーンという用語を一切使用せず、シームレ
     image: "/walletless.png",
     imagePosition: "left",
   },
-{
-  id: "fa1rness",
-  title: "教育事業：業界団体イベント「FA1RNESS 2024」を開催",
-  industry: "コミュニティ構築・教育",
-  challenge: [
-    "知識の不足：コミュニティ構築の具体的な使い方や運営方法が分からない",
-    "法律の課題：日本でのコミュニティ構築導入に関する法律やルールが不明確",
-    "運営の難しさ：コミュニティの運営方法やルール作りが分からない",
-  ],
-  solution: [
-    "専門家による説明：国内外の専門家が分かりやすくコミュニティ構築について説明",
-    "法律の解説：コミュニティ構築に関する法律やルールを具体的に解説",
-    "実践的な学習：実際にコミュニティ構築を体験しながら学べるワークショップを開催",
-  ],
-  description: `DAOを活用したビジネスモデルの具体的な導入事例や運営ノウハウを共有するためのイベントです。専門家による国際的な知見を活用し、法的・実務的な課題の克服を図り、日本企業がWeb3技術を効果的にビジネスに組み込めるよう支援することを目的としています。
+  {
+    id: "fa1rness",
+    title: "教育事業：業界団体イベント「FA1RNESS 2024」を開催",
+    industry: "コミュニティ構築・教育",
+    challenge: [
+      "知識の不足：コミュニティ構築の具体的な使い方や運営方法が分からない",
+      "法律の課題：日本でのコミュニティ構築導入に関する法律やルールが不明確",
+      "運営の難しさ：コミュニティの運営方法やルール作りが分からない",
+    ],
+    solution: [
+      "専門家による説明：国内外の専門家が分かりやすくコミュニティ構築について説明",
+      "法律の解説：コミュニティ構築に関する法律やルールを具体的に解説",
+      "実践的な学習：実際にコミュニティ構築を体験しながら学べるワークショップを開催",
+    ],
+    description: `DAOを活用したビジネスモデルの具体的な導入事例や運営ノウハウを共有するためのイベントです。専門家による国際的な知見を活用し、法的・実務的な課題の克服を図り、日本企業がWeb3技術を効果的にビジネスに組み込めるよう支援することを目的としています。
 
 イベント参加者からは、「起業家育成プログラムで開発中のサービスにブロックチェーンを組み込もうと考えており、貢献度に応じた報酬制度が選択肢として増えました。コミュニティ構築実証や法律面の考察も非常に有益で、学んだことを自社のユーザーヒアリングにも活かしています」といった声が寄せられています。
 
 また、コミュニティ構築創業者からは「外から見ていたコミュニティ構築が、実際に動かされている方の話を聞くことができて、グッと身近に感じられるようになりました。イメージがより具体的になりました」という感想も得られました。
 
 企業様・法人様のDX化においてコミュニティ運用の知識が不足している課題や、コミュニティ構築（自立分散型組織）へのノウハウが断片的で実装方法がわからないという課題に対して、専門家とのマッチング・対話形式のワークショップで初心者・上級者にとっての限定コンテンツを提供しています。`,
-  results: [
-    "250名以上の新規参加者を獲得し、コミュニティが拡大",
-    "主要メディア3社に取り上げられ、認知度が向上",
-    "コミュニティ構築導入を検討する企業が20%以上増加し、具体的な導入が進みました",
-  ],
-  image: "/fa1rness.jpg",
-  imagePosition: "right",
-  link: "https://m.youtube.com/watch?v=ajQZWOjOH20&pp=ygUIZmExcm5lc3M%3D",
-},
+    results: [
+      "250名以上の新規参加者を獲得し、コミュニティが拡大",
+      "主要メディア3社に取り上げられ、認知度が向上",
+      "コミュニティ構築導入を検討する企業が20%以上増加し、具体的な導入が進みました",
+      "https://m.youtube.com/watch?v=ajQZWOjOH20&pp=ygUIZmExcm5lc3M%3D",
+    ],
+    image: "/fa1rness.jpg",
+    imagePosition: "right",
+    link: "https://m.youtube.com/watch?v=ajQZWOjOH20&pp=ygUIZmExcm5lc3M%3D",
+  },
 
   {
     id: "DAOathon",
@@ -164,6 +166,8 @@ Web3/ブロックチェーンという用語を一切使用せず、シームレ
 ];
 
 export default function CasePage() {
+  const router = useRouter();
+
   return (
     <div className="pt-24">
       {/* ヘッダーセクション */}
@@ -190,11 +194,23 @@ export default function CasePage() {
                   caseStudy.imagePosition === "right"
                     ? "md:grid-flow-row"
                     : "md:grid-flow-row-dense"
-                }`}
+                } ${caseStudy.link ? "cursor-pointer" : ""}`}
+                role={caseStudy.link ? "link" : undefined}
+                tabIndex={caseStudy.link ? 0 : -1}
+                onClick={() => caseStudy.link && router.push(caseStudy.link)}
+                onKeyDown={(e) => {
+                  if (!caseStudy.link) return;
+                  if (e.key === "Enter" || e.key === " ") router.push(caseStudy.link);
+                }}
+                aria-label={caseStudy.link ? caseStudy.title : undefined}
               >
                 {/* コンテンツ部分 */}
                 <div
-                  className={`${caseStudy.imagePosition === "right" ? "md:order-1 md:col-span-3" : "md:order-2 md:col-span-3"}`}
+                  className={`${
+                    caseStudy.imagePosition === "right"
+                      ? "md:order-1 md:col-span-3"
+                      : "md:order-2 md:col-span-3"
+                  }`}
                 >
                   <div className="space-y-6">
                     <div>
@@ -241,6 +257,7 @@ export default function CasePage() {
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className="text-primary hover:underline"
+                                  onClick={(e) => e.stopPropagation()}
                                 >
                                   イベントサイトはこちら
                                 </Link>
@@ -258,13 +275,19 @@ export default function CasePage() {
                         <Button
                           variant="outline"
                           className="rounded-full bg-white text-gray-900 hover:bg-blue-100 hover:scale-105 transition-all duration-200 border border-gray-600"
+                          onClick={(e) => e.stopPropagation()}
                         >
                           詳細を見る
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-w-3xl text-white border-white">
+                      <DialogContent
+                        className="max-w-3xl text-white border-white"
+                        onClick={(e) => e.stopPropagation()}
+                      >
                         <DialogHeader>
-                          <DialogTitle className="text-white">{caseStudy.title}</DialogTitle>
+                          <DialogTitle className="text-white">
+                            {caseStudy.title}
+                          </DialogTitle>
                         </DialogHeader>
                         <div className="space-y-4 text-white">
                           {caseStudy.description.split("\n\n").map((paragraph, idx) => (
@@ -278,7 +301,11 @@ export default function CasePage() {
 
                 {/* 画像部分 */}
                 <div
-                  className={`${caseStudy.imagePosition === "right" ? "md:order-2 md:col-span-2" : "md:order-1 md:col-span-2"}`}
+                  className={`${
+                    caseStudy.imagePosition === "right"
+                      ? "md:order-2 md:col-span-2"
+                      : "md:order-1 md:col-span-2"
+                  }`}
                 >
                   <div className="relative w-full h-[400px]">
                     <Image
@@ -287,6 +314,7 @@ export default function CasePage() {
                       width={800}
                       height={500}
                       className="object-contain rounded-xl"
+                      onClick={(e) => e.stopPropagation()}
                     />
                   </div>
                 </div>
