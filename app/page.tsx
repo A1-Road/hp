@@ -97,9 +97,9 @@ export default function HomePage() {
             <div className="col-span-12 max-w-3xl lg:col-span-7">
               <AnimatedSection>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  <span className="text-black">データとAIで経営の”走り”を支える</span>
+                  <span className="text-black">ブランディングとAIで経営の”走り”を支える</span>
                   <div className="h-1 md:h-4" />
-                  <span className="text-black md:whitespace-nowrap">現場起点の少数精鋭AI開発ベンチャー</span>
+                  <span className="text-black md:whitespace-nowrap">AI開発・ブランディングベンチャー</span>
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
                   AIで経営の”隠されたパフォーマンス”を解き放つ
