@@ -39,37 +39,27 @@ export const metadata: Metadata = {
           url: "https://a1road.com/logo.png",
         },
       },
-      mainEntity: {
-        "@type": "ItemList",
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            item: {
-              "@type": "Service",
-              name: "法規認証対応AI",
-              description:
-                "認証業務AIの設計・構築・運用をトータルサポート。車両や製品の法規認証プロセスを自動化・効率化し、開発スピードとコンプライアンス精度を飛躍的に向上させます。",
-            },
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
-            item: {
-              "@type": "Service",
-              name: "AIエージェント開発",
-              description:
-                "製造業向けにカスタマイズされたAIソリューションを提供。業務効率化と新たな価値創造を支援します。",
-            },
-          },
-          {
-            "@type": "ListItem",
-            position: 3,
-            item: {
-              "@type": "Service",
-              name: "Bankless Japan",
-              description:
-                "グローバルで認知されたWeb3メディア「Bankless」の日本版。AI、クリプト、DeFi、Web3の基本から最新トレンドまで、わかりやすく解説。",
+mainEntity: {
+  "@type": "ItemList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Service",
+        name: "AIエージェント開発",
+        description:
+          "貴社の特性や課題に合わせたAIエージェントを提供。お問合せ・リーチ増加など効率化とブランディングを推進します。",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Service",
+        name: "営業支援エージェント「セールスストン」",
+        description:
+          "フォームやメール、FAXに対応した営業支援エージェント。アポ獲得からメッセージ作成まで、柔軟に対応します。",
             },
           },
         ],
