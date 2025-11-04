@@ -40,7 +40,7 @@ const caseStudies = [
       "営業リスト作成にかかる時間を92％削減",
       "PoC導入後1週間で新規引き合い14件を獲得",
     ],
-    image: "Salesstone.ai.png",
+    image: "/Salesstone.ai.png",
     imagePosition: "left",
   },
   {
