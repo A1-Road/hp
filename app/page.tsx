@@ -107,7 +107,7 @@ export default function HomePage() {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
                   <span className="text-black">AIで経営の速度と精度を上げる</span>
                   <div className="h-1 md:h-4" />
-                  <span className="text-black md:whitespace-nowrap">生成AI・自動化・ChatGPT検索対策で売上に直結する仕組みを実装</span>
+                  <span className="text-black md:whitespace-nowrap">問い合わせ/営業の省人化/ChatGPT検索対策</span>
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
                   現場資料・メール・FAQなどの暗黙知を新たな顧客接点に翻訳します
