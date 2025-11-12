@@ -27,7 +27,7 @@ export const runtime = "edge";
 const businessCards = [
   {
     id: 1,
-    title: "LLMO（AI検索）対策サービス",
+    title: "LLMO（AI検索）対策で、新規流入を増やす",
     description:
       "ChatGPTやGeminiなどにヒットするように、自社サイトを最適化。お客様がAI検索で御社を“見つけられる”状態をつくり、問い合わせ・資料請求の流入を増やします。",
     image: "/ai-agent.png",
@@ -35,14 +35,14 @@ const businessCards = [
   },
     {
     id: 2,
-    title: "お問い合わせ対応AI「サポートストン」",
+    title: "お問い合わせ対応AI「サポートストン」で一次応答を逃さない",
     description:
       "HPやLINEの問い合わせにAIが24時間自動対応。既存フォームを活かした導入で、返信遅延をゼロにし、商談・予約の取りこぼしを防ぎます。",
   },
 ];
   {
     id: 3,
-    title: "営業支援エージェント「セールスストン」",
+    title: "営業支援エージェント「セールスストン」で、休眠客にも継続的に売る",
     description:
       "フォームやメール、FAXに対応した営業支援エージェント。アポ獲得からメッセージ作成まで、柔軟に対応します。",
     image: "/Salesstone.ai.png",
