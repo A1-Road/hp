@@ -103,12 +103,12 @@ export default function HomePage() {
             <div className="col-span-12 max-w-3xl lg:col-span-7">
               <AnimatedSection>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  <span className="text-black">生成AI・自動化・LLMOで売上に直結する仕組みをつくる”</span>
+                  <span className="text-black">生成AI・自動化・LLMOで売上に直結する仕組みをつくる</span>
                   <div className="h-1 md:h-4" />
-                  <span className="text-black md:whitespace-nowrap">AIプロダクトで経営の速度と精度を上げる東大ｘ大手エンタメベンチャー</span>
+                  <span className="text-black md:whitespace-nowrap">AIで経営の速度と精度を上げる東大ｘ大手エンタメベンチャー</span>
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
-                  現場データ・メール・FAQなどの「暗黙知」から、新たな顧客接点を創出する
+                  現場資料・メール・FAQなどの「暗黙知」から、新たな顧客接点を創出する
                 </h3>
                 </AnimatedSection>
             </div>
