@@ -38,6 +38,8 @@ const businessCards = [
     title: "お問い合わせ対応AI「サポートストン」で一次応答を逃さない",
     description:
       "HPやLINEの問い合わせにAIが24時間自動対応。既存フォームを活かした導入で、返信遅延をゼロにし、商談・予約の取りこぼしを防ぎます。",
+    image: "/supportstone.png",   
+    link: "https://a-oneroad.com/contact"
   },
   {
     id: 3,
