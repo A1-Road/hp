@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   title: "エーワンロード株式会社 | AIで縁の下の走りを支える",
   description:
     "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
-  keywords: "AI, モビリティ, DX, モータースポーツ, BPO, 自動車, 検査業務, エーワンロード",
+  keywords: "AI, モビリティ, DX, BPO, 自動車, エーワンロード,営業支援,LLMO,製造業,お問い合わせ",
   authors: [{ name: "エーワンロード株式会社" }],
   robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   generator: "Next.js",
