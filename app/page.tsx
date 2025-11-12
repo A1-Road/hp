@@ -27,14 +27,21 @@ export const runtime = "edge";
 const businessCards = [
   {
     id: 1,
-    title: "AIエージェント開発",
+    title: "LLMO（AI検索）対策サービス",
     description:
-      "貴社の特性や課題に合わせたAIエージェントを提供。お問合せ・リーチ増加など効率化とブランディングを推進します。",
+      "ChatGPTやGeminiなどにヒットするように、自社サイトを最適化。お客様がAI検索で御社を“見つけられる”状態をつくり、問い合わせ・資料請求の流入を増やします。",
     image: "/ai-agent.png",
     link: "https://a-oneroad.com/contact"
   },
-  {
+    {
     id: 2,
+    title: "お問い合わせ対応AI「サポートストン」",
+    description:
+      "HPやLINEの問い合わせにAIが24時間自動対応。既存フォームを活かした導入で、返信遅延をゼロにし、商談・予約の取りこぼしを防ぎます。",
+  },
+];
+  {
+    id: 3,
     title: "営業支援エージェント「セールスストン」",
     description:
       "フォームやメール、FAXに対応した営業支援エージェント。アポ獲得からメッセージ作成まで、柔軟に対応します。",
