@@ -110,7 +110,7 @@ export default function HomePage() {
                   <span className="text-black md:whitespace-nowrap">生成AI・自動化・ChatGPT検索対策で売上に直結する仕組みを実装</span>
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
-                  現場資料・メール・FAQなどの「暗黙知」から、新たな顧客接点を創出する
+                  現場資料・メール・FAQなどの暗黙知を新たな顧客接点に翻訳します
                 </h3>
                 </AnimatedSection>
             </div>
