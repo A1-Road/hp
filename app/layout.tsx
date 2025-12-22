@@ -102,7 +102,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja" suppressHydrationWarning>
-      <body className={`${inter.variable} ${notoSansJP.variable} font-sans`}>
+      <body
+        className={`${inter.variable} ${notoSansJP.variable} font-sans`}
+        suppressHydrationWarning
+      >
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SBXZP4QP82"
           strategy="afterInteractive"

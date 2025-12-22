@@ -53,9 +53,9 @@ export default function Request() {
                   <div>
                     <h3 className="font-bold text-sm mb-1">所在地</h3>
                     <p className="text-muted-foreground">
-                      〒150-0002
+                      〒220-0072
                       <br />
-                      東京都渋谷区渋谷3-27-1 100BANCH
+                      神奈川県横浜市西区浅間町1丁目4－3ウィザードビル402
                     </p>
                   </div>
                 </div>

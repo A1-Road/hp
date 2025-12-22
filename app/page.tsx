@@ -21,31 +21,29 @@ import { formatDate } from "@/lib/utils";
 import { Factory, Building2, Plane } from "lucide-react";
 import FAQ from "@/components/faq";
 
-export const runtime = "edge";
-
 // 事業内容カード
 const businessCards = [
   {
     id: 1,
-    title: "LLMO（AI検索）対策で、新規流入を増やす",
+    title: "会社・仕事・人を整理し、「伝わる形」に再構成する",
     description:
-      "ChatGPTやGeminiなどにヒットするように、自社サイトを最適化。お客様がAI検索で御社を“見つけられる”状態をつくり、問い合わせ・資料請求の流入を増やします。",
+      "事業内容、仕事内容、現場の実態、代表の考え方をヒアリングし、外部が知りたい情報に整理・言語化します。",
     image: "/ai-agent.png",
-    link: "https://a-oneroad.com/contact"
+    link: "https://a-oneroad.com/contact",
   },
-    {
+  {
     id: 2,
-    title: "お問い合わせ対応AI「サポートストン」で一次応答を逃さない",
+    title: "採用ページと会社サイトを一体で再設計",
     description:
-      "HPやLINEの問い合わせにAIが24時間自動対応。既存フォームを活かした導入で、返信遅延をゼロにし、商談・予約の取りこぼしを防ぎます。",
+      "会社サイト全体を「新規に効く構成」に組み替えます。Wantedlyの導入支援を通じて、見た人が迷わず応募・問い合わせに進む導線を設計します。",
     image: "/supportstone.png",
     link: "https://a-oneroad.com/contact"
   },
   {
     id: 3,
-    title: "営業支援エージェント「セールスストン」で、休眠客にも継続的に売る",
+    title: "応募・問い合わせが回り続ける構造を作る",
     description:
-      "フォームやメール、FAXに対応した営業支援エージェント。アポ獲得からメッセージ作成まで、柔軟に対応します。",
+      "応募・問い合わせが来た際に迷わないよう、ページ構成と導線を整理します。",
     image: "/Salesstone.ai.png",
     link: "https://salesstone.studio.site/",
   },
@@ -105,12 +103,12 @@ export default function HomePage() {
             <div className="col-span-12 max-w-3xl lg:col-span-7">
               <AnimatedSection>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  <span className="text-black">AIで経営の速度と精度を上げる</span>
-                  <div className="h-1 md:h-4" />
-                  <span className="text-black md:whitespace-nowrap">問い合わせ省人化/ChatGPT検索対策</span>
+                  <span className="text-black">ムダな採用・広報コストをカット</span>
+                  <div className="h-1 md:h-4"/>
+                  <span className="text-black md:whitespace-nowrap">応募と問い合わせが生まれる入口へ</span>
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
-                  現場資料・メール・FAQなどの暗黙知を新たな顧客接点に翻訳します
+                  採用ページと会社サイトを一体で再設計し、「説明しなくても伝わる状態」を作ります<br />
                 </h3>
                 </AnimatedSection>
             </div>
@@ -144,9 +142,9 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">WHAT WE DO</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">こんな状態の会社が増えています</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
-                ニッポンの中小企業経営をAI開発とブランディング強化の総合コンサルティングで支援しています。
+                    採用広告を出しても応募が来ない。会社サイトが採用に使われていない。毎回、同じ説明を社長がしている。
               </p>
             </div>
           </AnimatedSection>
@@ -194,6 +192,7 @@ export default function HomePage() {
               </AnimatedSection>
             ))}
           </div>
+          {/*
           <div className="text-center mt-8">
             <Button
               asChild
@@ -203,6 +202,7 @@ export default function HomePage() {
               <Link href="/case">具体的な事例を見る</Link>
             </Button>
           </div>
+          */}
         </div>
       </section>
 
@@ -261,9 +261,7 @@ export default function HomePage() {
                       <strong>技術に強い</strong>
                     </h3>
                     <p className="text-muted-foreground">
-                      東京大学出身のフルスタックエンジニアやAIの専門家によって構成。最先端の技術を現場レベルに落とし込んでいます。DAOメディア3年の実績や高性能計算、Webアプリ開発（Python,
-                      FastAPI,
-                      React等）などの幅広いスキルを活かし、基幹産業に対して、リアルな現場課題に根ざした価値を提供します。
+                      東京大学出身や、大手エンタメプロジェクトに従事経験のある専門家集団が、最先端の技術を現場レベルに落とし込んでいます。
                     </p>
                   </div>
                 </div>
@@ -289,7 +287,7 @@ export default function HomePage() {
                       <strong>デザインに強い</strong>
                     </h3>
                     <p className="text-muted-foreground">
-                      単に機能を実装するだけでなくUI/UXやナラティブ設計、ビジュアル設計を通じて「使われるサービス」に仕上げます。高齢者や低リテラシーユーザーに対しても使いやすさを意識した導線設計やプロダクトの世界観づくりによって多層的なユーザーに刺さる設計を実現。メディア掲載・エンゲージメント向上など具体的成果も上げています。
+                      UI/UXやナラティブ設計、ビジュアル設計を通じて「見られる企業」に仕上げます。あらゆる世代に使いやすさを意識した導線設計や世界観づくりを実現。メディア掲載・エンゲージメント向上など具体的成果も上げています。
                     </p>
                   </div>
                 </div>

@@ -14,8 +14,6 @@ import { getEvents } from "@/actions/events";
 import { getNewsList } from "@/actions/news";
 import { getYoutubeVideos } from "@/actions/youtube";
 
-export const runtime = "edge";
-
 // カテゴリータブ
 const tabs = [
   { id: "all", label: "すべて" },

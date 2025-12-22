@@ -294,7 +294,7 @@ export default function AboutUs() {
 
                 <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
                   <dt className="font-semibold text-gray-700">所在地</dt>
-                  <dd>東京都渋谷区渋谷3-27-1 100BANCH</dd>
+                  <dd>神奈川県横浜市西区浅間町1丁目4－3ウィザードビル402</dd>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">

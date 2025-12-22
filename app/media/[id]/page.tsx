@@ -9,8 +9,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import type { Article } from "@/lib/microcms";
 
-export const runtime = "edge";
-
 export default function MediaDetailPage() {
   const { id } = useParams();
   const [news, setNews] = useState<Article | null>(null);

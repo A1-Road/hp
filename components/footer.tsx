@@ -90,11 +90,13 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href="/case"
+                      href="https://salesstone.studio.site/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-300 hover:text-white transition-colors flex items-center"
                     >
                       <HiArrowRight className="mr-2 h-3 w-3" />
-                      Case
+                      Salesstone
                     </Link>
                   </li>
                   <li>
@@ -198,42 +200,17 @@ export default function Footer() {
             </div>
 
             <div className="space-y-6">
-              <h4 className="font-bold text-lg mb-4 text-white">Case</h4>
+              <h4 className="font-bold text-lg mb-4 text-white">Salesstone</h4>
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="/case#rag"
+                    href="https://salesstone.studio.site/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
-                    RAG実装
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/case#walletless"
-                    className="text-gray-300 hover:text-white transition-colors flex items-center"
-                  >
-                    <HiArrowRight className="mr-2 h-3 w-3" />
-                    ウォレットレス
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/case#fa1rness"
-                    className="text-gray-300 hover:text-white transition-colors flex items-center"
-                  >
-                    <HiArrowRight className="mr-2 h-3 w-3" />
-                    FA1RNESS
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/case#daoathon"
-                    className="text-gray-300 hover:text-white transition-colors flex items-center"
-                  >
-                    <HiArrowRight className="mr-2 h-3 w-3" />
-                    DAOATHON
+                    サイトを見る
                   </Link>
                 </li>
               </ul>
@@ -242,7 +219,7 @@ export default function Footer() {
             <div className="space-y-6">
               <h4 className="font-bold text-lg mb-4 text-white">エーワンロード株式会社</h4>
               <p className="text-gray-300 leading-relaxed">
-                モビリティ・製造業を中心に、AIを活用した開発経営支援や法規認証技術の研究開発を行っています。
+                中小企業を中心に、経営改革ソリューションを提供しています。Wantedly採用ページ・HP改修を一気通貫でご提供。
               </p>
             </div>
           </div>

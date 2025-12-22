@@ -11,7 +11,12 @@ import Image from "next/image";
 
 const navigation = [
   { name: "About Us", href: "/about-us" },
-  { name: "Case", href: "/case" },
+  {
+    name: "Salesstone",
+    href: "https://salesstone.studio.site/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
   { name: "Media and Events", href: "/media-and-events" },
 ];
 
@@ -57,6 +62,8 @@ export default function NewHeader() {
               <Link
                 key={item.href}
                 href={item.href}
+                target={item.target}
+                rel={item.rel}
                 className={cn(
                   "text-base font-medium transition-colors hover:text-primary",
                   pathname === item.href ? "text-primary" : "text-muted-foreground"
@@ -102,6 +109,8 @@ export default function NewHeader() {
               <Link
                 key={item.href}
                 href={item.href}
+                target={item.target}
+                rel={item.rel}
                 className={cn(
                   "text-base font-medium transition-colors hover:text-primary text-center",
                   pathname === item.href ? "text-primary" : "text-muted-foreground"
