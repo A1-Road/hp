@@ -25,7 +25,7 @@ import FAQ from "@/components/faq";
 const businessCards = [
   {
     id: 1,
-    title: "会社・仕事・人を整理し、「伝わる形」に再構成する",
+    title: "会社の説明が伝わらない問題を整理する",
     description:
       "事業内容、仕事内容、現場の実態、代表の考え方をヒアリングし、外部が知りたい情報に整理・言語化します。",
     image: "/ai-agent.png",
@@ -33,7 +33,7 @@ const businessCards = [
   },
   {
     id: 2,
-    title: "採用ページと会社サイトを一体で再設計",
+    title: "見られても動かれないサイトを作り替える",
     description:
       "会社サイト全体を「新規に効く構成」に組み替えます。Wantedlyの導入支援を通じて、見た人が迷わず応募・問い合わせに進む導線を設計します。",
     image: "/supportstone.png",
@@ -41,7 +41,7 @@ const businessCards = [
   },
   {
     id: 3,
-    title: "応募・問い合わせが回り続ける構造を作る",
+    title: "応募・問い合わせで迷わせない入口を作る",
     description:
       "応募・問い合わせが来た際に迷わないよう、ページ構成と導線を整理します。",
     image: "/Salesstone.ai.png",
@@ -103,12 +103,13 @@ export default function HomePage() {
             <div className="col-span-12 max-w-3xl lg:col-span-7">
               <AnimatedSection>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  <span className="text-black">ムダな採用・広報コストをカット</span>
+                  <span className="text-black">ムダな採用・広報コストの削減</span>
                   <div className="h-1 md:h-4"/>
-                  <span className="text-black md:whitespace-nowrap">応募と問い合わせが生まれる入口へ</span>
+                  <span className="text-black md:whitespace-nowrap">応募と問い合わせが生まれる入口</span>
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
-                  採用ページと会社サイトを一体で再設計し、「説明しなくても伝わる状態」を作ります<br />
+                  採用ページと会社サイトの一体再設計、「説明しなくても伝わる状態」
+                  <br />
                 </h3>
                 </AnimatedSection>
             </div>
@@ -143,9 +144,11 @@ export default function HomePage() {
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">こんな状態の会社が増えています</h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
-                    採用広告を出しても応募が来ない。会社サイトが採用に使われていない。毎回、同じ説明を社長がしている。
-              </p>
+              <ul className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 list-disc list-inside text-left">
+                <li>採用広告を出しても応募が来ない</li>
+                <li>会社サイトが採用に使われていない</li>
+                <li>社長が毎回、同じ説明をしている</li>
+              </ul>
             </div>
           </AnimatedSection>
 
@@ -185,7 +188,13 @@ export default function HomePage() {
                     <div className="absolute md:absolute bottom-0 md:bottom-0 md:right-0 left-0 right-0 md:left-auto h-1/3 md:h-full md:w-1/4 bg-gradient-to-t md:bg-gradient-to-l from-white to-transparent" />
                   </div>
                   <div className="p-8">
-                    <h3 className="text-2xl font-bold mb-4">{business.title}</h3>
+                    <h3 className="text-2xl font-bold mb-4">
+                      {business.title.split("：").map((part, idx) => (
+                        <span key={idx} className="block">
+                          {part}
+                        </span>
+                      ))}
+                    </h3>
                     <p className="text-muted-foreground">{business.description}</p>
                   </div>
                 </div>
@@ -212,8 +221,11 @@ export default function HomePage() {
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                あなたのお悩みを一気通貫でサポート、解決します
+                あなたのお悩みをサポート、解決します
               </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Wantedly＋コーポレートサイトリブランディングを一気通貫でご提供し、採用と広報をまとめて強化いたします。
+              </p>
             </div>
           </AnimatedSection>
 
@@ -258,7 +270,7 @@ export default function HomePage() {
                   {/* テキストセクション */}
                   <div className="p-8 md:w-2/3 relative z-20">
                     <h3 className="text-xl font-bold mb-4">
-                      <strong>技術に強い</strong>
+                      <strong>採用・広報を“構造”で止める設計力</strong>
                     </h3>
                     <p className="text-muted-foreground">
                       東京大学出身や、大手エンタメプロジェクトに従事経験のある専門家集団が、最先端の技術を現場レベルに落とし込んでいます。
