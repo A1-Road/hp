@@ -20,14 +20,6 @@ const members: Member[] = [
       "証券業界での10年以上のキャリアを経て、アマゾンジャパンで金融データ分析を担当。慶應義塾大学MBA、フランスESSECビジネススクールでスタートアップビジネスモデルを研究後、フィンテック協会や多くの企業で経営戦略や事業開発に携わり、デジタルアセット事業やRWA（現物償還型NFT）などの革新的プロジェクトを推進。",
     imageUrl: "/mas.png",
   },
-  {
-    id: "mizuki",
-    name: "楠本 水樹",
-    role: "エンジニア",
-    description:
-      "物理シミュレーション、フルスタックエンジニアリングの分野において幅広なスキルと経験を持つ。東京大学工学部に在学中で、Webアプリ開発や高性能計算（有限要素法、GPU、Fortran、C++）に精通。研究活動を通じて、計算コストに対するパフォーマンスの最大化を追求。",
-    imageUrl: "/miz.jpg",
-  },
 ];
 
 export default function AboutUs() {
@@ -228,7 +220,7 @@ export default function AboutUs() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">メンバー</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
             {members.map((member, index) => (
               <AnimatedSection key={member.id} delay={index * 100} className="h-full">
                 <div className="card-3d bg-white shadow-lg rounded-xl p-6 h-full">
