@@ -21,6 +21,8 @@ import { formatDate } from "@/lib/utils";
 import { Factory, Building2, Plane } from "lucide-react";
 import FAQ from "@/components/faq";
 
+export const runtime = "edge";
+
 // 事業内容カード
 const businessCards = [
   {
