@@ -4,8 +4,6 @@ import { getContentItem, getContentItems } from "@/lib/site-content";
 
 export default async function ContactPage() {
   const hero = await getContentItem("contact", "hero");
-  const methodsHeader = await getContentItem("contact", "methodsHeader");
-  const methods = await getContentItems("contact", "methods");
   const formHeader = await getContentItem("contact", "formHeader");
   const infoHeader = await getContentItem("contact", "infoHeader");
   const info = await getContentItems("contact", "info");
@@ -20,28 +18,6 @@ export default async function ContactPage() {
             <h1 className="section-title mt-4">{hero.title}</h1>
             <p className="section-copy mt-5 text-white/72">{hero.copy}</p>
           </AnimatedSection>
-        </div>
-      </section>
-
-      <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
-        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
-          <AnimatedSection>
-            <div className="max-w-xl">
-              <p className="section-label">{methodsHeader.eyebrow}</p>
-              <h2 className="section-title mt-4">{methodsHeader.title}</h2>
-            </div>
-          </AnimatedSection>
-
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
-            {methods.map((method, index) => (
-              <AnimatedSection key={method.title} delay={index * 70}>
-                <div className="border border-black/12 px-5 py-8">
-                  <h3 className="text-2xl font-semibold">{method.title}</h3>
-                  <p className="mt-3 text-sm text-black/72">{method.line}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
         </div>
       </section>
 

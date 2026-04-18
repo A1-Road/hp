@@ -48,7 +48,7 @@ export default async function ServicePage() {
                     <div className="relative aspect-[4/5] overflow-hidden">
                       <Image
                         src={service.image}
-                        alt={service.name}
+                        alt={service.title}
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                       />
