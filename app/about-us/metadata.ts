@@ -1,44 +1,27 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "会社概要 | エーワンロード株式会社",
+  title: "ABOUT | エーワンロード株式会社",
   description:
-    "エーワンロード株式会社は、中小企業向けの営業/DX支援会社です。『セールスストン（Salesstone.ai）』『サポートストン（Supportstone）』を通じて、営業と顧客対応を一体化した省力型DXを実現します。",
+    "ミッション、ビジョン、事業定義、法人情報を掲載しています。人物紹介は載せず、会社の定義だけを整理しています。",
   openGraph: {
-    title: "会社概要 | エーワンロード株式会社",
+    title: "ABOUT | エーワンロード株式会社",
     description:
-      "エーワンロード株式会社は、中小企業向けの営業/DX支援会社です。『セールスストン（Salesstone.ai）』『サポートストン（Supportstone）』を通じて、営業と顧客対応を一体化した省力型DXを実現します。",
+      "全ての人の正当な価値を取り戻す。自動車を通じて日本の価値を世界に問い続ける会社。",
     images: [
       {
-        url: "https://a1road.com/og-image-about.jpg",
+        url: "https://a-oneroad.com/og-image-about.jpg",
         width: 1200,
         height: 630,
-        alt: "エーワンロード株式会社 会社概要",
+        alt: "ABOUT | エーワンロード株式会社",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "会社概要 | エーワンロード株式会社",
+    title: "ABOUT | エーワンロード株式会社",
     description:
-      "エーワンロード株式会社は、中小企業向けの営業/DX支援会社です。『セールスストン（Salesstone.ai）』『サポートストン（Supportstone）』を通じて、営業と顧客対応を一体化した省力型DXを実現します。",
-    images: ["https://a1road.com/twitter-image-about.jpg"],
-  },
-  other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "AboutPage",
-      name: "会社概要 | エーワンロード株式会社",
-      description:
-        "エーワンロード株式会社は、中小企業向けの営業/DX支援会社です。『セールスストン（Salesstone.ai）』『サポートストン（Supportstone）』を通じて、営業と顧客対応を一体化した省力型DXを実現します。",
-      publisher: {
-        "@type": "Organization",
-        name: "エーワンロード株式会社",
-        logo: {
-          "@type": "ImageObject",
-          url: "https://a1road.com/logo.png",
-        },
-      },
-    }),
+      "Japanese Commercial Vehicles for Global Buyers.",
+    images: ["https://a-oneroad.com/twitter-image-about.jpg"],
   },
 };

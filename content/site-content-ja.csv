@@ -1,0 +1,223 @@
+page,section,item,field,value
+global,navigation,1,label,TOP
+global,navigation,1,href,/
+global,navigation,2,label,ABOUT
+global,navigation,2,href,/about-us
+global,navigation,3,label,SERVICE
+global,navigation,3,href,/service
+global,navigation,4,label,CONTACT
+global,navigation,4,href,/contact
+global,footer,main,tagline,日本の商用車を世界の買い手へ届けるための調達支援。
+global,footer,main,privacyLabel,プライバシーポリシー
+global,footer,main,copyright,© 2026 A-One Road
+global,contactInfo,1,label,Email
+global,contactInfo,1,value,admin@a1-road.com
+global,contactInfo,2,label,Phone
+global,contactInfo,2,value,080-4870-5690
+global,contactInfo,3,label,Base
+global,contactInfo,3,value,Yokohama Japan
+global,socials,1,label,X
+global,socials,1,href,https://twitter.com/a1road
+global,socials,2,label,LinkedIn
+global,socials,2,href,https://linkedin.com/company/a1road
+global,socials,3,label,GitHub
+global,socials,3,href,https://github.com/a1road
+top,hero,main,eyebrow,A-One Road
+top,hero,main,title,Japanese Commercial Vehicles for Global Buyers
+top,hero,main,copy,日本から確かな調達を求めるディーラー フリート 法人バイヤー向け。
+top,hero,main,primaryLabel,サービスを見る
+top,hero,main,primaryHref,/service
+top,hero,main,secondaryLabel,お問い合わせ
+top,hero,main,secondaryHref,/contact
+top,hero,main,image,/top-back.jpg
+top,hero,main,scroll,SCROLL
+top,identity,main,eyebrow,IDENTITY
+top,identity,main,title,全ての人の正当な価値を取り戻す
+top,identity,main,copy,自動車を通じて日本の価値を世界に問い続ける会社。
+top,servicePreviewHeader,main,eyebrow,SERVICE
+top,servicePreviewHeader,main,title,Business Sourcing / Bulk Orders / Export Support
+top,servicePreviewHeader,main,linkLabel,一覧を見る
+top,servicePreviewHeader,main,linkHref,/service
+top,servicePreview,1,title,Business Sourcing
+top,servicePreview,1,copy,Buyer briefに沿って候補車両を絞り込み 調達判断を前に進めます。
+top,servicePreview,1,image,/top-back.jpg
+top,servicePreview,1,href,/service#business-sourcing
+top,servicePreview,2,title,Bulk Orders
+top,servicePreview,2,copy,複数台前提の調達整理と条件すり合わせを支援します。
+top,servicePreview,2,image,/hptop.png
+top,servicePreview,2,href,/service#bulk-orders
+top,servicePreview,3,title,Export Support
+top,servicePreview,3,copy,輸出に向けた進行管理と受け渡しの摩擦を減らします。
+top,servicePreview,3,image,/workflow.png
+top,servicePreview,3,href,/service#export-support
+top,visualHeader,main,eyebrow,VISUAL
+top,visualHeader,main,title,空気で伝える。
+top,visualProof,1,image,/top-back.jpg
+top,visualProof,1,alt,Japanese vehicle sourcing visual
+top,visualProof,2,image,/HP2copy.png
+top,visualProof,2,alt,Vehicle and road visual
+top,visualProof,3,image,/hptop.png
+top,visualProof,3,alt,Commercial vehicle export visual
+top,visualProof,4,image,/workflow.png
+top,visualProof,4,alt,Export support visual
+top,aboutPreview,main,eyebrow,ABOUT
+top,aboutPreview,main,title,この会社が存在する理由。
+top,aboutPreview,main,copy,日本の商用中古車輸出を通じて 我が国と世界の自動車文化をアップデートし 再定義するための会社です。
+top,aboutPreview,main,linkLabel,会社情報へ
+top,aboutPreview,main,linkHref,/about-us
+top,aboutPreview,main,image,/HP2copy.png
+top,signalHeader,main,eyebrow,PROCESS
+top,signalHeader,main,title,確認済み車両情報
+top,signalSteps,1,number,01
+top,signalSteps,1,title,相談
+top,signalSteps,1,copy,用途 数量 仕向け先を整理します。
+top,signalSteps,2,number,02
+top,signalSteps,2,title,選定
+top,signalSteps,2,copy,候補車両と条件を擦り合わせます。
+top,signalSteps,3,number,03
+top,signalSteps,3,title,輸出
+top,signalSteps,3,copy,受け渡しまでの進行を一本化します。
+top,contactCta,main,eyebrow,CONTACT
+top,contactCta,main,title,まずはご相談ください。
+top,contactCta,main,copy,通常問い合わせ 法人調達相談 資料請求を一つの窓口で受けます。
+top,contactCta,main,buttonLabel,お問い合わせへ
+top,contactCta,main,buttonHref,/contact
+about,hero,main,eyebrow,ABOUT
+about,hero,main,title,エーワンロードとは何か。
+about,hero,main,copy,存在理由 姿勢 事業定義だけを置くページです。
+about,hero,main,image,/hptop.png
+about,statement,main,eyebrow,STATEMENT
+about,statement,main,title,全ての人の正当な価値を取り戻す
+about,statement,main,copy,自動車を通じて日本の価値を世界に問い続ける。
+about,philosophyHeader,main,eyebrow,PHILOSOPHY
+about,philosophyHeader,main,title,三つの軸。
+about,philosophy,1,title,Mission
+about,philosophy,1,copy,価値が埋もれる構造を減らし 正しく届く取引を増やす。
+about,philosophy,2,title,Vision
+about,philosophy,2,copy,日本の車両と現場知見を 世界の実需と接続し続ける。
+about,philosophy,3,title,Definition
+about,philosophy,3,copy,日本の商用中古車輸出を通じた 我が国と世界の自動車文化のアップデートと再定義。
+about,story,main,eyebrow,BACKGROUND
+about,story,main,title,量より先に文脈を整える。
+about,story,main,copy,量を追う前に 調達の文脈と車両情報の解像度を上げる。そこから信頼ある輸出を組み立てます。
+about,story,main,image,/HP2copy.png
+about,differentiatorHeader,main,eyebrow,DIFFERENCE
+about,differentiatorHeader,main,title,三つの違い。
+about,differentiator,1,title,用途定義
+about,differentiator,1,copy,どの用途で使う車かを先に定義します。
+about,differentiator,2,title,情報確認
+about,differentiator,2,copy,判断に必要な情報の粒度を揃えます。
+about,differentiator,3,title,実行支援
+about,differentiator,3,copy,調達から輸出進行までを切らさず扱います。
+about,closing,main,eyebrow,NEXT
+about,closing,main,title,サービスを見る。
+about,closing,main,buttonLabel,サービスへ
+about,closing,main,buttonHref,/service
+service,hero,main,eyebrow,SERVICE
+service,hero,main,title,提供内容。
+service,hero,main,copy,Japanese commercial vehicle sourcing for dealers fleets and commercial buyers.
+service,indexHeader,main,eyebrow,INDEX
+service,indexHeader,main,title,四つのサービス。
+service,index,1,id,business-sourcing
+service,index,1,title,Business Sourcing
+service,index,1,line,条件整理から候補抽出までを扱います。
+service,index,1,image,/top-back.jpg
+service,index,2,id,bulk-orders
+service,index,2,title,Bulk Orders
+service,index,2,line,複数台前提の調達を組み立てます。
+service,index,2,image,/hptop.png
+service,index,3,id,export-support
+service,index,3,title,Export Support
+service,index,3,line,輸出実行の進行を支えます。
+service,index,3,image,/workflow.png
+service,index,4,id,verified-vehicle-information
+service,index,4,title,Verified Vehicle Information
+service,index,4,line,判断に必要な情報の精度を揃えます。
+service,index,4,image,/HP2copy.png
+service,detail,1,id,business-sourcing
+service,detail,1,title,Business Sourcing
+service,detail,1,what,用途 数量 仕向け先に沿って候補車両を整理します。
+service,detail,1,value,初期調査の無駄打ちを減らします。
+service,detail,1,flow,Brief alignment and vehicle shortlist.
+service,detail,1,output,候補一覧と判断材料。
+service,detail,2,id,bulk-orders
+service,detail,2,title,Bulk Orders
+service,detail,2,what,複数台調達に必要な条件整理と優先順位づけを行います。
+service,detail,2,value,台数が増えても意思決定の軸を崩しません。
+service,detail,2,flow,Volume planning and lot coordination.
+service,detail,2,output,発注前の条件整理。
+service,detail,3,id,export-support
+service,detail,3,title,Export Support
+service,detail,3,what,輸出までの進行を一本化して連携を整理します。
+service,detail,3,value,受け渡し前後の摩擦を減らします。
+service,detail,3,flow,Progress tracking and export coordination.
+service,detail,3,output,輸出進行の見える化。
+service,detail,4,id,verified-vehicle-information
+service,detail,4,title,Verified Vehicle Information
+service,detail,4,what,判断に必要な車両情報を揃えます。
+service,detail,4,value,買い手の不確実性を下げます。
+service,detail,4,flow,Condition review and information packaging.
+service,detail,4,output,比較可能な情報セット。
+service,processHeader,main,eyebrow,PROCESS
+service,processHeader,main,title,四つの流れ。
+service,process,1,number,01
+service,process,1,title,要件整理
+service,process,1,copy,要件を揃える。
+service,process,2,number,02
+service,process,2,title,候補抽出
+service,process,2,copy,候補を絞る。
+service,process,3,number,03
+service,process,3,title,確認
+service,process,3,copy,情報を確認する。
+service,process,4,number,04
+service,process,4,title,実行
+service,process,4,copy,輸出を進める。
+service,faqHeader,main,eyebrow,FAQ
+service,faqHeader,main,title,よくある質問。
+service,faq,1,question,誰向けのサービスですか
+service,faq,1,answer,日本からの調達を求めるディーラー フリート 法人バイヤー向けです。
+service,faq,2,question,どの車種に対応していますか
+service,faq,2,answer,商用車を中心に 調達目的に合わせて範囲を整理します。
+service,faq,3,question,複数台の相談は可能ですか
+service,faq,3,answer,はい 複数台前提の相談に対応します。
+service,faq,4,question,仕様が固まる前でも相談できますか
+service,faq,4,answer,はい 用途と条件の整理段階から受けます。
+service,contactCta,main,eyebrow,CONTACT
+service,contactCta,main,title,要件をお聞かせください。
+service,contactCta,main,buttonLabel,お問い合わせ
+service,contactCta,main,buttonHref,/contact
+contact,hero,main,eyebrow,CONTACT
+contact,hero,main,title,お問い合わせ窓口。
+contact,hero,main,copy,通常問い合わせ 法人調達相談 資料請求を一つにまとめています。
+contact,methodsHeader,main,eyebrow,METHODS
+contact,methodsHeader,main,title,三つの連絡方法。
+contact,methods,1,title,フォーム
+contact,methods,1,line,優先窓口
+contact,methods,2,title,メール
+contact,methods,2,line,admin@a1-road.com
+contact,methods,3,title,LinkedIn
+contact,methods,3,line,外部チャネル
+contact,formHeader,main,eyebrow,FORM
+contact,formHeader,main,title,HubSpot フォーム。
+contact,formHeader,main,copy,初期導入時の埋め込みフォームをそのまま利用しています。
+contact,form,main,typeLabel,Inquiry Type
+contact,form,main,nameLabel,Name
+contact,form,main,emailLabel,Email
+contact,form,main,subjectLabel,Subject
+contact,form,main,messageLabel,Message
+contact,form,main,submitLabel,Send
+contact,form,main,submittingLabel,Sending
+contact,formOptions,1,value,General Inquiry
+contact,formOptions,2,value,Business Sourcing
+contact,formOptions,3,value,Document Request
+contact,infoHeader,main,eyebrow,INFO
+contact,infoHeader,main,title,補足情報。
+contact,info,1,label,営業時間
+contact,info,1,value,Weekdays 10:00 to 18:00 JST
+contact,info,2,label,返信目安
+contact,info,2,value,通常は2営業日以内に返信します。
+contact,info,3,label,拠点
+contact,info,3,value,Yokohama Japan
+contact,info,4,label,SNS
+contact,info,4,value,X / LinkedIn / GitHub
+contact,reassurance,main,text,短い相談から始めてください。

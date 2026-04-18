@@ -1,144 +1,140 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useLayout } from "../app/contexts/header-context";
-import { usePathname } from "next/navigation";
-import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
+import { SITE_LANG_COOKIE, type SiteLocale } from "@/lib/site-locale";
 
-const navigation = [
-  { name: "About Us", href: "/about-us" },
-  {
-    name: "Salesstone",
-    href: "https://salesstone.studio.site/",
-    target: "_blank",
-    rel: "noopener noreferrer",
-  },
-  { name: "Media and Events", href: "/media-and-events" },
-];
+type NavigationItem = {
+  label: string;
+  href: string;
+};
 
-export default function NewHeader() {
+type HeaderProps = {
+  navigation: NavigationItem[];
+  currentLang: SiteLocale;
+};
+
+export default function Header({ navigation, currentLang }: HeaderProps) {
   const { isHeaderVisible } = useLayout();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
+  const isHome = pathname === "/";
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 16);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  function switchLanguage(nextLang: SiteLocale) {
+    if (nextLang === currentLang) return;
+    document.cookie = `${SITE_LANG_COOKIE}=${nextLang}; path=/; max-age=31536000; samesite=lax`;
+    router.refresh();
+  }
 
   if (!isHeaderVisible) return null;
 
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled ? "bg-[#fffaeb]/80 backdrop-blur-md py-3 shadow-sm" : "bg-transparent py-5"
+        "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
+        scrolled || !isHome
+          ? "border-b border-black/10 bg-white/96 py-3 text-black backdrop-blur"
+          : "bg-black/24 py-5 text-white backdrop-blur"
       )}
     >
-      <div className="container mx-auto px-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/a-one-road-logo-lay.png"
-            alt="エーワンロード株式会社"
-            width={150}
-            height={40}
-            className="w-auto h-9"
-          />
+      <div className="mx-auto flex w-full max-w-[1280px] items-center justify-between px-5 md:px-10">
+        <Link href="/" className="flex items-center text-sm font-semibold uppercase tracking-[0.28em]">
+          A-One Road
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center justify-center flex-1">
-          <nav className="flex items-center space-x-8 mx-auto">
-            {navigation.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                target={item.target}
-                rel={item.rel}
-                className={cn(
-                  "text-base font-medium transition-colors hover:text-primary",
-                  pathname === item.href ? "text-primary" : "text-muted-foreground"
-                )}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
+        <nav className="hidden items-center gap-8 md:flex">
+          {navigation.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={cn(
+                "text-sm font-medium tracking-[0.16em] transition-opacity hover:opacity-60",
+                pathname === item.href ? "opacity-100" : "opacity-80"
+              )}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="hidden items-center gap-2 md:flex">
+          <button
+            type="button"
+            onClick={() => switchLanguage("ja")}
+            className={cn(
+              "text-xs font-semibold tracking-[0.18em] transition-opacity",
+              currentLang === "ja" ? "opacity-100" : "opacity-50 hover:opacity-80"
+            )}
+          >
+            JP
+          </button>
+          <span className="opacity-40">/</span>
+          <button
+            type="button"
+            onClick={() => switchLanguage("en")}
+            className={cn(
+              "text-xs font-semibold tracking-[0.18em] transition-opacity",
+              currentLang === "en" ? "opacity-100" : "opacity-50 hover:opacity-80"
+            )}
+          >
+            EN
+          </button>
         </div>
 
-        <div className="hidden md:flex space-x-2">
-          <Button
-            asChild
-            className="rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200 text-lg font-bold"
-          >
-            <Link href="/contact">まずはご相談</Link>
-          </Button>
-          <Button
-            asChild
-            className="rounded-full bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-200 border-2 border-primary text-lg font-bold"
-          >
-            <Link href="/request">資料請求</Link>
-          </Button>
-        </div>
-
-        {/* Mobile Menu Button */}
-        <Button
-          variant="ghost"
-          size="icon"
+        <button
+          type="button"
           className="md:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Open navigation"
+          onClick={() => setIsMenuOpen((current) => !current)}
         >
           {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </Button>
+        </button>
       </div>
 
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-[#fffaeb] border-t">
-          <div className="container mx-auto px-4 py-4 flex flex-col space-y-4 items-center">
+      {isMenuOpen ? (
+        <div className="border-t border-black/10 bg-white md:hidden">
+          <div className="mx-auto flex w-full max-w-[1280px] flex-col gap-4 px-5 py-5">
             {navigation.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                target={item.target}
-                rel={item.rel}
-                className={cn(
-                  "text-base font-medium transition-colors hover:text-primary text-center",
-                  pathname === item.href ? "text-primary" : "text-muted-foreground"
-                )}
+                className="text-base font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {item.name}
+                {item.label}
               </Link>
             ))}
-            <Button
-              asChild
-              className="w-full rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200 text-lg font-bold"
-            >
-              <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
-                相談する
-              </Link>
-            </Button>
-            <Button
-              asChild
-              className="w-full rounded-full bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-200 border-2 border-primary text-lg font-bold"
-            >
-              <Link href="/request" onClick={() => setIsMenuOpen(false)}>
-                資料請求
-              </Link>
-            </Button>
+            <div className="flex items-center gap-3 pt-2">
+              <button
+                type="button"
+                onClick={() => switchLanguage("ja")}
+                className={cn("text-sm font-medium", currentLang === "ja" ? "opacity-100" : "opacity-50")}
+              >
+                JP
+              </button>
+              <button
+                type="button"
+                onClick={() => switchLanguage("en")}
+                className={cn("text-sm font-medium", currentLang === "en" ? "opacity-100" : "opacity-50")}
+              >
+                EN
+              </button>
+            </div>
           </div>
         </div>
-      )}
+      ) : null}
     </header>
   );
 }

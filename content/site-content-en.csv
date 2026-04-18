@@ -1,0 +1,223 @@
+page,section,item,field,value
+global,navigation,1,label,Top
+global,navigation,1,href,/
+global,navigation,2,label,About
+global,navigation,2,href,/about-us
+global,navigation,3,label,Service
+global,navigation,3,href,/service
+global,navigation,4,label,Contact
+global,navigation,4,href,/contact
+global,footer,main,tagline,Japanese commercial vehicles sourced for global buyers.
+global,footer,main,privacyLabel,Privacy Policy
+global,footer,main,copyright,© 2026 A-One Road
+global,contactInfo,1,label,Email
+global,contactInfo,1,value,admin@a1-road.com
+global,contactInfo,2,label,Phone
+global,contactInfo,2,value,080-4870-5690
+global,contactInfo,3,label,Base
+global,contactInfo,3,value,Yokohama Japan
+global,socials,1,label,X
+global,socials,1,href,https://twitter.com/a1road
+global,socials,2,label,LinkedIn
+global,socials,2,href,https://linkedin.com/company/a1road
+global,socials,3,label,GitHub
+global,socials,3,href,https://github.com/a1road
+top,hero,main,eyebrow,A-One Road
+top,hero,main,title,Japanese Commercial Vehicles for Global Buyers
+top,hero,main,copy,For dealers fleets and commercial buyers seeking reliable sourcing from Japan.
+top,hero,main,primaryLabel,View Service
+top,hero,main,primaryHref,/service
+top,hero,main,secondaryLabel,Contact
+top,hero,main,secondaryHref,/contact
+top,hero,main,image,/top-back.jpg
+top,hero,main,scroll,Scroll
+top,identity,main,eyebrow,Identity
+top,identity,main,title,Restore rightful value.
+top,identity,main,copy,A company that keeps asking the world what Japanese value means through vehicles.
+top,servicePreviewHeader,main,eyebrow,Service
+top,servicePreviewHeader,main,title,Business Sourcing / Bulk Orders / Export Support
+top,servicePreviewHeader,main,linkLabel,View all
+top,servicePreviewHeader,main,linkHref,/service
+top,servicePreview,1,title,Business Sourcing
+top,servicePreview,1,copy,We narrow candidate vehicles against the buyer brief and move sourcing decisions forward.
+top,servicePreview,1,image,/top-back.jpg
+top,servicePreview,1,href,/service#business-sourcing
+top,servicePreview,2,title,Bulk Orders
+top,servicePreview,2,copy,We support multi-unit sourcing alignment and commercial coordination.
+top,servicePreview,2,image,/hptop.png
+top,servicePreview,2,href,/service#bulk-orders
+top,servicePreview,3,title,Export Support
+top,servicePreview,3,copy,We reduce friction in export coordination and handover.
+top,servicePreview,3,image,/workflow.png
+top,servicePreview,3,href,/service#export-support
+top,visualHeader,main,eyebrow,Visual
+top,visualHeader,main,title,Proof by atmosphere.
+top,visualProof,1,image,/top-back.jpg
+top,visualProof,1,alt,Japanese vehicle sourcing visual
+top,visualProof,2,image,/HP2copy.png
+top,visualProof,2,alt,Vehicle and road visual
+top,visualProof,3,image,/hptop.png
+top,visualProof,3,alt,Commercial vehicle export visual
+top,visualProof,4,image,/workflow.png
+top,visualProof,4,alt,Export support visual
+top,aboutPreview,main,eyebrow,About
+top,aboutPreview,main,title,Why this company exists.
+top,aboutPreview,main,copy,We exist to update and redefine automotive culture in Japan and abroad through commercial vehicle export.
+top,aboutPreview,main,linkLabel,About
+top,aboutPreview,main,linkHref,/about-us
+top,aboutPreview,main,image,/HP2copy.png
+top,signalHeader,main,eyebrow,Process
+top,signalHeader,main,title,Verified Vehicle Information
+top,signalSteps,1,number,01
+top,signalSteps,1,title,Inquiry
+top,signalSteps,1,copy,用途 数量 仕向け先を整理します。
+top,signalSteps,2,number,02
+top,signalSteps,2,title,Selection
+top,signalSteps,2,copy,候補車両と条件を擦り合わせます。
+top,signalSteps,3,number,03
+top,signalSteps,3,title,Export
+top,signalSteps,3,copy,受け渡しまでの進行を一本化します。
+top,contactCta,main,eyebrow,Contact
+top,contactCta,main,title,Start the conversation.
+top,contactCta,main,copy,通常問い合わせ 法人調達相談 資料請求を一つの窓口で受けます。
+top,contactCta,main,buttonLabel,Go to Contact
+top,contactCta,main,buttonHref,/contact
+about,hero,main,eyebrow,About
+about,hero,main,title,What A-One Road is.
+about,hero,main,copy,A page for reason posture and business definition only.
+about,hero,main,image,/hptop.png
+about,statement,main,eyebrow,Statement
+about,statement,main,title,全ての人の正当な価値を取り戻す
+about,statement,main,copy,自動車を通じて日本の価値を世界に問い続ける。
+about,philosophyHeader,main,eyebrow,Philosophy
+about,philosophyHeader,main,title,Three anchors.
+about,philosophy,1,title,Mission
+about,philosophy,1,copy,Reduce structures that bury value and increase transactions where value reaches the right buyer.
+about,philosophy,2,title,Vision
+about,philosophy,2,copy,Keep connecting Japanese vehicles and field knowledge with real demand worldwide.
+about,philosophy,3,title,Definition
+about,philosophy,3,copy,Updating and redefining automotive culture in Japan and abroad through used commercial vehicle export.
+about,story,main,eyebrow,Background
+about,story,main,title,Context before volume.
+about,story,main,copy,Before scaling volume we sharpen buyer context and vehicle information. Reliable export is built from there.
+about,story,main,image,/HP2copy.png
+about,differentiatorHeader,main,eyebrow,Difference
+about,differentiatorHeader,main,title,Three signals.
+about,differentiator,1,title,Buyer Context
+about,differentiator,1,copy,We define use case before discussing units.
+about,differentiator,2,title,Verified Information
+about,differentiator,2,copy,We standardize the level of information needed for decisions.
+about,differentiator,3,title,Execution
+about,differentiator,3,copy,We handle the flow from sourcing through export execution without breaks.
+about,closing,main,eyebrow,Next
+about,closing,main,title,See the service.
+about,closing,main,buttonLabel,View Service
+about,closing,main,buttonHref,/service
+service,hero,main,eyebrow,Service
+service,hero,main,title,What we provide.
+service,hero,main,copy,Japanese commercial vehicle sourcing for dealers fleets and commercial buyers.
+service,indexHeader,main,eyebrow,Index
+service,indexHeader,main,title,Four service blocks.
+service,index,1,id,business-sourcing
+service,index,1,title,Business Sourcing
+service,index,1,line,From requirement alignment to vehicle shortlist.
+service,index,1,image,/top-back.jpg
+service,index,2,id,bulk-orders
+service,index,2,title,Bulk Orders
+service,index,2,line,Structured sourcing for multiple units.
+service,index,2,image,/hptop.png
+service,index,3,id,export-support
+service,index,3,title,Export Support
+service,index,3,line,Execution support for export delivery.
+service,index,3,image,/workflow.png
+service,index,4,id,verified-vehicle-information
+service,index,4,title,Verified Vehicle Information
+service,index,4,line,Sharper information for faster decisions.
+service,index,4,image,/HP2copy.png
+service,detail,1,id,business-sourcing
+service,detail,1,title,Business Sourcing
+service,detail,1,what,We organize candidate vehicles around use case quantity and destination.
+service,detail,1,value,Reduce wasted search and early-stage misalignment.
+service,detail,1,flow,Brief alignment and vehicle shortlist.
+service,detail,1,output,Shortlist and decision material.
+service,detail,2,id,bulk-orders
+service,detail,2,title,Bulk Orders
+service,detail,2,what,We structure priorities and conditions for multi-unit sourcing.
+service,detail,2,value,Keep decision criteria stable even as unit count grows.
+service,detail,2,flow,Volume planning and lot coordination.
+service,detail,2,output,Aligned terms before ordering.
+service,detail,3,id,export-support
+service,detail,3,title,Export Support
+service,detail,3,what,We unify export coordination and execution flow.
+service,detail,3,value,Reduce friction before and after handover.
+service,detail,3,flow,Progress tracking and export coordination.
+service,detail,3,output,Visible export progress.
+service,detail,4,id,verified-vehicle-information
+service,detail,4,title,Verified Vehicle Information
+service,detail,4,what,We gather the vehicle information buyers need to decide.
+service,detail,4,value,Lower uncertainty for buyers.
+service,detail,4,flow,Condition review and information packaging.
+service,detail,4,output,Comparable information set.
+service,processHeader,main,eyebrow,Process
+service,processHeader,main,title,Four steps.
+service,process,1,number,01
+service,process,1,title,Brief
+service,process,1,copy,Align requirements.
+service,process,2,number,02
+service,process,2,title,Match
+service,process,2,copy,Shortlist candidates.
+service,process,3,number,03
+service,process,3,title,Review
+service,process,3,copy,Review information.
+service,process,4,number,04
+service,process,4,title,Move
+service,process,4,copy,Move to export.
+service,faqHeader,main,eyebrow,FAQ
+service,faqHeader,main,title,Short answers.
+service,faq,1,question,Who is this for
+service,faq,1,answer,Dealers fleets and commercial buyers seeking sourcing from Japan.
+service,faq,2,question,What vehicle types are covered
+service,faq,2,answer,Commercial vehicles are the core and the scope is aligned to the sourcing purpose.
+service,faq,3,question,Can one request include multiple units
+service,faq,3,answer,Yes. We support requests involving multiple units.
+service,faq,4,question,Can I contact you before specs are fixed
+service,faq,4,answer,Yes. We can engage from the stage of clarifying use case and conditions.
+service,contactCta,main,eyebrow,Contact
+service,contactCta,main,title,Discuss your requirement.
+service,contactCta,main,buttonLabel,Contact
+service,contactCta,main,buttonHref,/contact
+contact,hero,main,eyebrow,Contact
+contact,hero,main,title,One contact point.
+contact,hero,main,copy,General inquiries business sourcing requests and document requests are handled in one place.
+contact,methodsHeader,main,eyebrow,Methods
+contact,methodsHeader,main,title,Three options.
+contact,methods,1,title,Form
+contact,methods,1,line,Primary channel
+contact,methods,2,title,Email
+contact,methods,2,line,admin@a1-road.com
+contact,methods,3,title,LinkedIn
+contact,methods,3,line,External channel
+contact,formHeader,main,eyebrow,Form
+contact,formHeader,main,title,Keep it short.
+contact,formHeader,main,copy,The original HubSpot embedded form from the initial setup is kept in place.
+contact,form,main,typeLabel,Inquiry Type
+contact,form,main,nameLabel,Name
+contact,form,main,emailLabel,Email
+contact,form,main,subjectLabel,Subject
+contact,form,main,messageLabel,Message
+contact,form,main,submitLabel,Send
+contact,form,main,submittingLabel,Sending
+contact,formOptions,1,value,General Inquiry
+contact,formOptions,2,value,Business Sourcing
+contact,formOptions,3,value,Document Request
+contact,infoHeader,main,eyebrow,Info
+contact,infoHeader,main,title,Supplement.
+contact,info,1,label,Hours
+contact,info,1,value,Weekdays 10:00 to 18:00 JST
+contact,info,2,label,Reply
+contact,info,2,value,We usually reply within two business days.
+contact,info,3,label,Base
+contact,info,3,value,Yokohama Japan
+contact,info,4,label,SNS
+contact,info,4,value,X / LinkedIn / GitHub
+contact,reassurance,main,text,A short reply starts here.

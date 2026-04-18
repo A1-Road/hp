@@ -1,240 +1,96 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { HiArrowRight } from "react-icons/hi";
 import { useLayout } from "../app/contexts/header-context";
-import Image from "next/image";
 
-export default function Footer() {
+type LinkItem = {
+  label: string;
+  href: string;
+};
+
+type InfoItem = {
+  label: string;
+  value: string;
+};
+
+type FooterProps = {
+  navigation: LinkItem[];
+  socials: LinkItem[];
+  contactInfo: InfoItem[];
+  tagline: string;
+  privacyLabel: string;
+  copyright: string;
+};
+
+export default function Footer({
+  navigation,
+  socials,
+  contactInfo,
+  tagline,
+  privacyLabel,
+  copyright,
+}: FooterProps) {
   const { isFooterVisible } = useLayout();
 
   if (!isFooterVisible) return null;
 
-  const navigation = {
-    main: [
-      { name: "ホーム", href: "/" },
-      { name: "サービス", href: "/services" },
-      { name: "導入事例", href: "/cases" },
-      { name: "会社概要", href: "/about" },
-      { name: "資料請求", href: "/request" },
-      { name: "お問い合わせ", href: "/contact" },
-    ],
-  };
-
   return (
-    <footer className="text-gray-100 border-t">
-      {/* CTA Section with split background */}
-      <div className="relative">
-        {/* Background colors */}
-        <div className="flex flex-col md:flex-row">
-          <div className="bg-primary w-full md:w-1/2 h-[260px]"></div>
-          <div className="bg-[#111827] w-full md:w-1/2 h-[260px]"></div>
+    <footer className="bg-black text-white">
+      <div className="mx-auto grid w-full max-w-[1280px] gap-12 px-5 py-16 md:grid-cols-[1.1fr_0.9fr] md:px-10">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.28em]">A-One Road</p>
+          <p className="mt-6 max-w-md text-sm text-white/72">{tagline}</p>
         </div>
 
-        {/* Content overlay */}
-        <div className="absolute inset-0 flex flex-col">
-          {/* Heading centered over both backgrounds */}
-          <div className="w-full text-center py-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-white inline-block px-8">
-              ご連絡・お問い合わせはこちらから
-            </h2>
+        <div className="grid gap-10 sm:grid-cols-3">
+          <div>
+            <p className="section-label text-white/56">Nav</p>
+            <ul className="mt-4 space-y-3 text-sm">
+              {navigation.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="transition-opacity hover:opacity-60">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* Buttons with correct positioning */}
-          <div className="flex flex-col md:flex-row flex-grow">
-            {/* Left button */}
-            <div className="w-full md:w-1/2 px-8 pt-4 pb-12 flex items-center justify-center">
-              <div className="max-w-md w-full">
-                <Button
-                  asChild
-                  size="lg"
-                  className="rounded-full bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-200 text-2xl font-bold w-full h-20"
-                >
-                  <Link href="/contact">まずはご相談</Link>
-                </Button>
-              </div>
+          <div>
+            <p className="section-label text-white/56">Contact</p>
+            <div className="mt-4 space-y-3 text-sm text-white/72">
+              {contactInfo.map((item) => (
+                <p key={item.label}>{item.value}</p>
+              ))}
             </div>
+          </div>
 
-            {/* Right button */}
-            <div className="w-full md:w-1/2 px-8 pt-4 pb-12 flex items-center justify-center">
-              <div className="max-w-md w-full">
-                <Button
-                  asChild
-                  size="lg"
-                  className="rounded-full bg-transparent text-white hover:bg-white/10 hover:scale-105 transition-all duration-200 border-2 border-white text-2xl font-bold w-full h-20"
-                >
-                  <Link href="/request">資料請求</Link>
-                </Button>
-              </div>
-            </div>
+          <div>
+            <p className="section-label text-white/56">Social</p>
+            <ul className="mt-4 space-y-3 text-sm">
+              {socials.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-opacity hover:opacity-60"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
 
-      <div className="bg-[#111827] w-full">
-        <div className="container mx-auto px-8 py-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            <div className="space-y-6">
-              <div>
-                <h4 className="font-bold text-lg mb-4 text-white">サイトマップ</h4>
-                <ul className="space-y-3">
-                  <li>
-                    <Link
-                      href="/about-us"
-                      className="text-gray-300 hover:text-white transition-colors flex items-center"
-                    >
-                      <HiArrowRight className="mr-2 h-3 w-3" />
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://salesstone.studio.site/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-300 hover:text-white transition-colors flex items-center"
-                    >
-                      <HiArrowRight className="mr-2 h-3 w-3" />
-                      Salesstone
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/media-and-events"
-                      className="text-gray-300 hover:text-white transition-colors flex items-center"
-                    >
-                      <HiArrowRight className="mr-2 h-3 w-3" />
-                      Media and Events
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="text-gray-300 hover:text-white transition-colors flex items-center"
-                    >
-                      <HiArrowRight className="mr-2 h-3 w-3" />
-                      お問い合わせ
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/request"
-                      className="text-gray-300 hover:text-white transition-colors flex items-center"
-                    >
-                      <HiArrowRight className="mr-2 h-3 w-3" />
-                      資料請求
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/privacy-policy"
-                      className="text-gray-300 hover:text-white transition-colors flex items-center"
-                    >
-                      <HiArrowRight className="mr-2 h-3 w-3" />
-                      プライバシーポリシー
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://daoasia.notion.site/2101d37ba2ae8046a9bedee9661fe144?source=copy_link"
-                      className="text-gray-300 hover:text-white transition-colors flex items-center"
-                    >
-                      <HiArrowRight className="mr-2 h-3 w-3" />
-                      特定商取引法に基づく表記
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <h4 className="font-bold text-lg mb-4 text-white">About Us</h4>
-              <ul className="space-y-3">
-                <li>
-                  <Link
-                    href="/about-us#philosophy"
-                    className="text-gray-300 hover:text-white transition-colors flex items-center"
-                  >
-                    <HiArrowRight className="mr-2 h-3 w-3" />
-                    創業理念
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about-us#mvv"
-                    className="text-gray-300 hover:text-white transition-colors flex items-center"
-                  >
-                    <HiArrowRight className="mr-2 h-3 w-3" />
-                    MVV
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about-us#ceo"
-                    className="text-gray-300 hover:text-white transition-colors flex items-center"
-                  >
-                    <HiArrowRight className="mr-2 h-3 w-3" />
-                    CEOメッセージ
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about-us#members"
-                    className="text-gray-300 hover:text-white transition-colors flex items-center"
-                  >
-                    <HiArrowRight className="mr-2 h-3 w-3" />
-                    メンバー
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about-us#company"
-                    className="text-gray-300 hover:text-white transition-colors flex items-center"
-                  >
-                    <HiArrowRight className="mr-2 h-3 w-3" />
-                    会社概要
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-6">
-              <h4 className="font-bold text-lg mb-4 text-white">Salesstone</h4>
-              <ul className="space-y-3">
-                <li>
-                  <Link
-                    href="https://salesstone.studio.site/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-white transition-colors flex items-center"
-                  >
-                    <HiArrowRight className="mr-2 h-3 w-3" />
-                    サイトを見る
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-6">
-              <h4 className="font-bold text-lg mb-4 text-white">エーワンロード株式会社</h4>
-              <p className="text-gray-300 leading-relaxed">
-                中小企業を中心に、経営改革ソリューションを提供しています。Wantedly採用ページ・HP改修を一気通貫でご提供。
-              </p>
-            </div>
-          </div>
-          <div className="mt-12 pt-8 border-t flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <Image
-              src="/a-one-road-logo.png"
-              alt="エーワンロード株式会社"
-              width={200}
-              height={67}
-              className="w-auto h-12"
-            />
-            <p className="text-gray-300 text-sm">
-              © {new Date().getFullYear()} エーワンロード株式会社. All rights reserved.
-            </p>
-          </div>
+      <div className="border-t border-white/12">
+        <div className="mx-auto flex w-full max-w-[1280px] items-center justify-between px-5 py-5 text-xs text-white/56 md:px-10">
+          <Link href="/privacy-policy" className="transition-opacity hover:opacity-60">
+            {privacyLabel}
+          </Link>
+          <p>{copyright}</p>
         </div>
       </div>
     </footer>

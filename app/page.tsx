@@ -1,574 +1,192 @@
-"use client";
-
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { AnimatedSection } from "@/components/ui/animated-section";
 import Image from "next/image";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { getEvents } from "@/actions/events";
-import { getNewsList } from "@/actions/news";
-import { getYoutubeVideos } from "@/actions/youtube";
-import type { Event } from "@/lib/luma";
-import type { Article } from "@/lib/microcms";
-import type { YouTubeVideo } from "@/actions/youtube";
-import { useEffect, useState } from "react";
-import { formatDate } from "@/lib/utils";
-import { Factory, Building2, Plane } from "lucide-react";
-import FAQ from "@/components/faq";
+import { AnimatedSection } from "@/components/ui/animated-section";
+import { Button } from "@/components/ui/button";
+import { getContentItem, getContentItems } from "@/lib/site-content";
 
-export const runtime = "edge";
-
-// 事業内容カード
-const businessCards = [
-  {
-    id: 1,
-    title: "会社の説明が伝わらない問題を整理する",
-    description:
-      "事業内容、仕事内容、現場の実態、代表の考え方をヒアリングし、外部が知りたい情報に整理・言語化します。",
-    image: "/ai-agent.png",
-    link: "https://a-oneroad.com/contact",
-  },
-  {
-    id: 2,
-    title: "見られても動かれないサイトを作り替える",
-    description:
-      "会社サイト全体を「新規に効く構成」に組み替えます。Wantedlyの導入支援を通じて、見た人が迷わず応募・問い合わせに進む導線を設計します。",
-    image: "/supportstone.png",
-    link: "https://a-oneroad.com/contact"
-  },
-  {
-    id: 3,
-    title: "応募・問い合わせで迷わせない入口を作る",
-    description:
-      "応募・問い合わせが来た際に迷わないよう、ページ構成と導線を整理します。",
-    image: "/Salesstone.ai.png",
-    link: "https://salesstone.studio.site/",
-  },
-];
-
-export default function HomePage() {
-  const [events, setEvents] = useState<Event[]>([]);
-  const [news, setNews] = useState<Article[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [videos, setVideos] = useState<YouTubeVideo[]>([]);
-
-  useEffect(() => {
-    const fetchVideos = async () => {
-      setVideos(await getYoutubeVideos());
-    };
-    fetchVideos();
-  }, []);
-
-  useEffect(() => {
-    async function fetchData() {
-      setLoading(true);
-      try {
-        const [eventsData, newsData] = await Promise.all([getEvents(), getNewsList()]);
-
-        setEvents(eventsData);
-        setNews(newsData.contents);
-      } catch (error) {
-        console.error("データ取得エラー:", error);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchData();
-  }, []);
+export default async function HomePage() {
+  const hero = await getContentItem("top", "hero");
+  const identity = await getContentItem("top", "identity");
+  const servicePreviewHeader = await getContentItem("top", "servicePreviewHeader");
+  const services = await getContentItems("top", "servicePreview");
+  const visualHeader = await getContentItem("top", "visualHeader");
+  const visualGrid = await getContentItems("top", "visualProof");
+  const aboutPreview = await getContentItem("top", "aboutPreview");
+  const signalHeader = await getContentItem("top", "signalHeader");
+  const signalSteps = await getContentItems("top", "signalSteps");
+  const contactCta = await getContentItem("top", "contactCta");
 
   return (
-    <div className="pt-20">
-      {/* ヒーローセクション */}
-      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute right-0 top-0 bottom-0 w-full">
-            <Image
-              src="/hptop.png"
-              alt="Hero Background"
-              width={1200}
-              height={800}
-              className="w-full h-full object-cover"
-              priority
-            />
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/30 to-transparent z-10" />
+    <div>
+      <section className="relative min-h-[88vh] overflow-hidden bg-black text-white">
+        <Image src={hero.image} alt={hero.title} fill className="object-cover" priority />
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="relative mx-auto flex min-h-[88vh] w-full max-w-[1280px] items-end px-5 pb-12 pt-28 md:px-10 md:pb-16">
+          <AnimatedSection className="max-w-3xl">
+            <p className="section-label text-white/64">{hero.eyebrow}</p>
+            <h1 className="mt-4 max-w-4xl text-5xl font-bold leading-none md:text-7xl">{hero.title}</h1>
+            <p className="mt-5 max-w-xl text-sm text-white/78 md:text-base">
+              {hero.copy}
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Button
+                asChild
+                className="h-11 rounded-none bg-white px-6 text-sm font-medium text-black hover:bg-white/86"
+              >
+                <Link href={hero.primaryHref}>{hero.primaryLabel}</Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="h-11 rounded-none border-white bg-transparent px-6 text-sm font-medium text-white hover:bg-white hover:text-black"
+              >
+                <Link href={hero.secondaryHref}>{hero.secondaryLabel}</Link>
+              </Button>
+            </div>
+            <p className="mt-12 text-xs uppercase tracking-[0.3em] text-white/46">{hero.scroll}</p>
+          </AnimatedSection>
         </div>
-        <div className="container mx-auto px-4 relative z-20">
-          <div className="grid grid-cols-12 items-center gap-4 mx-auto">
-            <div className="hidden lg:block lg:col-span-1" />
-            <div className="col-span-12 max-w-3xl lg:col-span-7">
-              <AnimatedSection>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  <span className="text-black">ムダな採用・広報コストの削減</span>
-                  <div className="h-1 md:h-4"/>
-                  <span className="text-black md:whitespace-nowrap">応募と問い合わせが生まれる入口</span>
-                </h2>
-                <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
-                  採用ページと会社サイトの一体再設計、「説明しなくても伝わる状態」
-                  <br />
-                </h3>
-                </AnimatedSection>
+      </section>
+
+      <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
+        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
+          <AnimatedSection>
+            <div className="max-w-4xl">
+              <p className="section-label">{identity.eyebrow}</p>
+              <h2 className="section-title mt-4">{identity.title}</h2>
+              <p className="section-copy mt-5 text-black/72">{identity.copy}</p>
             </div>
-            <div className="col-span-12 lg:col-span-3">
-              <AnimatedSection delay={100}>
-                <div className="flex flex-col gap-4 mx-auto items-center">
-                  <Button
-                    asChild
-                    size="lg"
-                    className="rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200 text-2xl font-bold w-full max-w-xs"
-                  >
-                    <Link href="/contact">まずはご相談</Link>
-                  </Button>
-                  <Button
-                    asChild
-                    size="lg"
-                    className="rounded-full bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-200 border-2 border-primary text-2xl font-bold w-full max-w-xs"
-                  >
-                    <Link href="/request">資料請求</Link>
-                  </Button>
-                </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <section className="bg-black py-16 text-white md:py-[88px] lg:py-[120px]">
+        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
+          <AnimatedSection>
+            <div className="flex items-end justify-between gap-8">
+              <div className="max-w-xl">
+                <p className="section-label text-white/56">{servicePreviewHeader.eyebrow}</p>
+                <h2 className="section-title mt-4">{servicePreviewHeader.title}</h2>
+              </div>
+              <Link href={servicePreviewHeader.linkHref} className="hidden text-sm text-white/72 hover:opacity-60 md:block">
+                {servicePreviewHeader.linkLabel}
+              </Link>
+            </div>
+          </AnimatedSection>
+
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {services.map((service, index) => (
+              <AnimatedSection key={service.title} delay={index * 80}>
+                <Link href={service.href} className="group block">
+                  <div className="border border-white/18">
+                    <div className="relative aspect-[4/5] overflow-hidden">
+                      <Image
+                        src={service.image}
+                        alt={service.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      />
+                      <div className="absolute inset-0 bg-black/28 transition-opacity duration-300 group-hover:bg-black/40" />
+                    </div>
+                    <div className="p-5">
+                      <h3 className="text-2xl font-semibold">{service.title}</h3>
+                      <p className="mt-2 text-sm text-white/72">{service.copy}</p>
+                    </div>
+                  </div>
+                </Link>
               </AnimatedSection>
-            </div>
-            <div className="hidden lg:block lg:col-span-1" />
+            ))}
           </div>
         </div>
       </section>
 
-      {/* WHAT WE DO セクション */}
-      <section className="py-20 bg-beige-50/50">
-        <div className="container mx-auto px-4">
+      <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
+        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
           <AnimatedSection>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">こんな状態の会社が増えています</h2>
-              <ul className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 list-disc list-inside text-left">
-                <li>採用広告を出しても応募が来ない</li>
-                <li>会社サイトが採用に使われていない</li>
-                <li>社長が毎回、同じ説明をしている</li>
-              </ul>
+            <div className="max-w-xl">
+              <p className="section-label">{visualHeader.eyebrow}</p>
+              <h2 className="section-title mt-4">{visualHeader.title}</h2>
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {businessCards.map((business, index) => (
-              <AnimatedSection key={business.id} delay={index * 100}>
-                <div className="card-3d h-full overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 bg-white">
-                  <div className="relative h-48 bg-gradient-to-br from-beige-50 to-beige-100 flex items-center justify-center">
-                    {business.link ? (
-                      <Link
-                        href={business.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block w-full h-full"
-                      >
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <Image
-                            src={business.image}
-                            alt={business.title}
-                            width={200}
-                            height={200}
-                            className="object-contain hover:scale-105 transition-transform duration-300"
-                          />
-                        </div>
-                      </Link>
-                    ) : (
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <Image
-                          src={business.image}
-                          alt={business.title}
-                          width={200}
-                          height={200}
-                          className="object-contain hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                    )}
-                    <div className="absolute md:absolute bottom-0 md:bottom-0 md:right-0 left-0 right-0 md:left-auto h-1/3 md:h-full md:w-1/4 bg-gradient-to-t md:bg-gradient-to-l from-white to-transparent" />
-                  </div>
-                  <div className="p-8">
-                    <h3 className="text-2xl font-bold mb-4">
-                      {business.title.split("：").map((part, idx) => (
-                        <span key={idx} className="block">
-                          {part}
-                        </span>
-                      ))}
-                    </h3>
-                    <p className="text-muted-foreground">{business.description}</p>
-                  </div>
+          <div className="mt-10 grid gap-4 md:grid-cols-2">
+            {visualGrid.map((image, index) => (
+              <AnimatedSection key={`${image.image}-${index}`} delay={index * 70}>
+                <div className="relative aspect-[4/3] overflow-hidden border border-black/12">
+                  <Image
+                    src={image.image}
+                    alt={image.alt}
+                    fill
+                    className="object-cover transition-transform duration-500 hover:scale-[1.02]"
+                  />
                 </div>
               </AnimatedSection>
             ))}
           </div>
-          {/*
-          <div className="text-center mt-8">
-            <Button
-              asChild
-              variant="outline"
-              className="rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200 text-lg"
-            >
-              <Link href="/case">具体的な事例を見る</Link>
-            </Button>
-          </div>
-          */}
         </div>
       </section>
 
-      {/* 相談までの流れセクション */}
-      <section className="py-20 bg-beige-50/50">
-        <div className="container mx-auto px-4">
+      <section className="bg-black py-16 text-white md:py-[88px] lg:py-[120px]">
+        <div className="mx-auto grid w-full max-w-[1280px] gap-8 px-5 md:grid-cols-2 md:px-10">
           <AnimatedSection>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                あなたのお悩みをサポート、解決します
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Wantedly＋コーポレートサイトリブランディングを一気通貫でご提供し、採用と広報をまとめて強化いたします。
-              </p>
+            <div className="max-w-lg">
+              <p className="section-label text-white/56">{aboutPreview.eyebrow}</p>
+              <h2 className="section-title mt-4">{aboutPreview.title}</h2>
+              <p className="section-copy mt-5 text-white/72">{aboutPreview.copy}</p>
+              <Link href={aboutPreview.linkHref} className="mt-8 inline-block text-sm text-white hover:opacity-60">
+                {aboutPreview.linkLabel}
+              </Link>
             </div>
           </AnimatedSection>
 
           <AnimatedSection delay={100}>
-            <div className="max-w-4xl mx-auto">
-              <Image
-                src="/workflow.png"
-                alt="あなたのお悩みを一気通貫でサポート、解決します"
-                width={1200}
-                height={600}
-                className="w-full h-auto"
-              />
+            <div className="relative aspect-[4/5] overflow-hidden border border-white/18">
+              <Image src={aboutPreview.image} alt={aboutPreview.title} fill className="object-cover" />
             </div>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* 選ばれる理由セクション */}
-      <section className="py-20 bg-beige-50/50">
-        <div className="container mx-auto px-4">
+      <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
+        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
           <AnimatedSection>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Us</h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">大手エンタメ支援 × 東大発の総合力</p>
+            <div className="max-w-xl">
+              <p className="section-label">{signalHeader.eyebrow}</p>
+              <h2 className="section-title mt-4">{signalHeader.title}</h2>
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
-            <AnimatedSection delay={100}>
-              <div className="card-3d h-full overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 bg-white">
-                <div className="relative flex flex-col md:flex-row">
-                  {/* 画像セクション */}
-                  <div className="relative w-full md:w-1/3 p-4 flex items-center justify-center">
-                    <Image
-                      src="/tech.png"
-                      alt="技術に強い"
-                      width={300}
-                      height={300}
-                      className="object-contain transition-transform duration-300 hover:scale-105"
-                    />
-                  </div>
-                  {/* テキストセクション */}
-                  <div className="p-8 md:w-2/3 relative z-20">
-                    <h3 className="text-xl font-bold mb-4">
-                      <strong>採用・広報を“構造”で止める設計力</strong>
-                    </h3>
-                    <p className="text-muted-foreground">
-                      東京大学出身や、大手エンタメプロジェクトに従事経験のある専門家集団が、最先端の技術を現場レベルに落とし込んでいます。
-                    </p>
-                  </div>
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {signalSteps.map((step, index) => (
+              <AnimatedSection key={step.title} delay={index * 70}>
+                <div className="border border-black/12 px-5 py-8">
+                  <p className="text-xs uppercase tracking-[0.3em] text-black/42">{step.number}</p>
+                  <h3 className="mt-4 text-2xl font-semibold">{step.title}</h3>
+                  <p className="mt-3 text-sm text-black/72">{step.copy}</p>
                 </div>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={200}>
-              <div className="card-3d h-full overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 bg-white">
-                <div className="relative flex flex-col md:flex-row">
-                  {/* 画像セクション */}
-                  <div className="relative w-full md:w-1/3 p-4 flex items-center justify-center">
-                    <Image
-                      src="/design.png"
-                      alt="デザインに強い"
-                      width={300}
-                      height={300}
-                      className="object-contain transition-transform duration-300 hover:scale-105"
-                    />
-                  </div>
-                  {/* テキストセクション */}
-                  <div className="p-8 md:w-2/3 relative z-20">
-                    <h3 className="text-xl font-bold mb-4">
-                      <strong>デザインに強い</strong>
-                    </h3>
-                    <p className="text-muted-foreground">
-                      UI/UXやナラティブ設計、ビジュアル設計を通じて「見られる企業」に仕上げます。あらゆる世代に使いやすさを意識した導線設計や世界観づくりを実現。メディア掲載・エンゲージメント向上など具体的成果も上げています。
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={300}>
-              <div className="card-3d h-full overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 bg-white">
-                <div className="relative flex flex-col md:flex-row">
-                  {/* 画像セクション */}
-                  <div className="relative w-full md:w-1/3 p-4 flex items-center justify-center">
-                    <Image
-                      src="/speed.png"
-                      alt="スピードに強い"
-                      width={300}
-                      height={300}
-                      className="object-contain transition-transform duration-300 hover:scale-105"
-                    />
-                  </div>
-                  {/* テキストセクション */}
-                  <div className="p-8 md:w-2/3 relative z-20">
-                    <h3 className="text-xl font-bold mb-4">
-                      <strong>スピードに強い</strong>
-                    </h3>
-                    <p className="text-muted-foreground">
-                      スタートアップならではの機動力と即応性を武器に、企画から実装・改善提案までをワンストップかつ短期間で完了させます。初期実装は最短1週間〜可能な体制。
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* 実績セクション */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-black py-16 text-white md:py-[88px] lg:py-[120px]">
+        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
           <AnimatedSection>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">実績（一部）</h2>
-            </div>
-          </AnimatedSection>
-
-          <div className="flex justify-center mb-16">
-            <AnimatedSection>
-              <div className="relative w-[60vw] h-[15vw]">
-                <Image src="/collaborate.png" alt="実績" fill className="object-contain" />
-              </div>
-            </AnimatedSection>
-          </div>
-
-          <AnimatedSection>
-            <div className="max-w-6xl mx-auto mt-16">
-              <div className="flex justify-between items-center mb-8">
-                <h3 className="text-2xl md:text-3xl font-bold">弊社セミナー・過去動画一覧</h3>
-                <Button
-                  asChild
-                  className="rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200"
-                >
-                  <Link
-                    href="https://www.youtube.com/playlist?list=PLTf_ID6qmwYIwa4KLmc_wfptX_Pzkc49H"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    弊社YouTubeはこちら →
-                  </Link>
-                </Button>
-              </div>
-
-              <div className="flex justify-center">
-                <div className="grid grid-cols-5 gap-6 max-w-[1200px]">
-                  {videos.slice(0, 5).map((video) => {
-                    const videoId = video.snippet.resourceId.videoId;
-                    return (
-                      <div key={videoId} className="flex flex-col">
-                        <div className="aspect-video rounded-lg shadow-md overflow-hidden h-[120px]">
-                          <iframe
-                            className="w-full h-full"
-                            src={`https://www.youtube.com/embed/${videoId}`}
-                            title={video.snippet.title}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen
-                          />
-                        </div>
-                        <p className="text-xs mt-2 line-clamp-2 text-center">
-                          {video.snippet.title}
-                        </p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
+            <div className="max-w-3xl">
+              <p className="section-label text-white/56">{contactCta.eyebrow}</p>
+              <h2 className="section-title mt-4">{contactCta.title}</h2>
+              <p className="mt-5 max-w-xl text-sm text-white/72 md:text-base">{contactCta.copy}</p>
+              <Button
+                asChild
+                className="mt-8 h-11 rounded-none bg-white px-6 text-sm font-medium text-black hover:bg-white/86"
+              >
+                <Link href={contactCta.buttonHref}>{contactCta.buttonLabel}</Link>
+              </Button>
             </div>
           </AnimatedSection>
         </div>
       </section>
-
-      {/* メディアセクション */}
-      <section className="py-20 bg-beige-50/50">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">最新ニュース</h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                最新のニュース・プレスリリースをご紹介します
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="max-w-4xl mx-auto">
-            {loading ? (
-              <div className="space-y-4">
-                {Array(3)
-                  .fill(0)
-                  .map((_, index) => (
-                    <AnimatedSection key={index} delay={index * 100}>
-                      <div className="h-16 animate-pulse bg-white rounded-xl" />
-                    </AnimatedSection>
-                  ))}
-              </div>
-            ) : news.length > 0 ? (
-              <div className="space-y-4">
-                {news
-                  .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
-                  .slice(0, 3)
-                  .map((item, index) => (
-                    <AnimatedSection key={item.id} delay={index * 100}>
-                      <Link href={`/media/${item.id}`}>
-                        <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                          <span className="text-sm text-muted-foreground whitespace-nowrap">
-                            {formatDate(item.createdAt, true)}
-                          </span>
-                          <span className="text-gray-900">{item.title}</span>
-                        </div>
-                      </Link>
-                    </AnimatedSection>
-                  ))}
-              </div>
-            ) : (
-              <div className="text-center py-12">
-                <p className="text-muted-foreground">現在ニュースはありません。</p>
-              </div>
-            )}
-          </div>
-          <div className="text-center mt-8">
-            <Button
-              asChild
-              variant="outline"
-              className="rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200 text-lg"
-            >
-              <Link href="/media-and-events">すべてのニュースを見る</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* イベントセクション */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">今後のイベント</h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                弊社主催・登壇予定のイベント情報をご紹介します
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="max-w-4xl mx-auto">
-            {loading ? (
-              <div className="space-y-4">
-                {Array(3)
-                  .fill(0)
-                  .map((_, index) => (
-                    <AnimatedSection key={index} delay={index * 100}>
-                      <div className="h-32 animate-pulse bg-white rounded-2xl" />
-                    </AnimatedSection>
-                  ))}
-              </div>
-            ) : events.length > 0 ? (
-              <div className="space-y-4">
-                {events
-                  .filter((event) => new Date(event.start_time) >= new Date())
-                  .sort(
-                    (a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime()
-                  )
-                  .slice(0, 3)
-                  .map((event, index) => (
-                    <AnimatedSection key={event.id} delay={index * 100}>
-                      <div className="card-3d p-6 bg-white rounded-xl shadow-md">
-                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                          <div>
-                            <h3 className="font-bold text-lg mb-2">{event.title}</h3>
-                            <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted-foreground">
-                              <div className="flex items-center">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  className="h-4 w-4 mr-1"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
-                                >
-                                  <path
-                                    fillRule="evenodd"
-                                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                                    clipRule="evenodd"
-                                  />
-                                </svg>
-                                {formatDate(event.start_time, true)}
-                              </div>
-                              <div className="flex items-center">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  className="h-4 w-4 mr-1"
-                                  viewBox="0 0 20 20"
-                                  fill="currentColor"
-                                >
-                                  <path
-                                    fillRule="evenodd"
-                                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                    clipRule="evenodd"
-                                  />
-                                </svg>
-                                {event.location}
-                              </div>
-                            </div>
-                          </div>
-                          <Button
-                            asChild
-                            size="sm"
-                            className="whitespace-nowrap rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200 text-lg"
-                          >
-                            <Link
-                              href={`https://lu.ma/event/${event.slug}`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              詳細・申し込み
-                            </Link>
-                          </Button>
-                        </div>
-                      </div>
-                    </AnimatedSection>
-                  ))}
-              </div>
-            ) : (
-              <div className="text-center py-12">
-                <p className="text-muted-foreground">現在予定されているイベントはありません。</p>
-              </div>
-            )}
-          </div>
-
-          <div className="text-center mt-8">
-            <Button
-              asChild
-              variant="outline"
-              className="rounded-full bg-primary text-white hover:bg-primary/90 hover:text-white hover:scale-105 transition-all duration-200 text-lg"
-            >
-              <Link href="/media-and-events">すべてのイベントを見る</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ セクション */}
-      <FAQ />
     </div>
   );
 }

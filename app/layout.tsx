@@ -6,6 +6,8 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { LayoutProvider } from "./contexts/header-context";
 import Script from "next/script";
+import { getContentItem, getContentItems } from "@/lib/site-content";
+import { getSiteLocale } from "@/lib/locale";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const notoSansJP = Noto_Sans_JP({
@@ -21,10 +23,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "エーワンロード株式会社 | AIで縁の下の走りを支える",
+  title: "エーワンロード株式会社 | Japanese Commercial Vehicles for Global Buyers",
   description:
-    "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
-  keywords: "AI, モビリティ, DX, BPO, 自動車, エーワンロード,営業支援,LLMO,製造業,お問い合わせ",
+    "全ての人の正当な価値を取り戻すというミッションの下、日本の商用中古車輸出を通じて我が国と世界の自動車文化をアップデートし、再定義します。",
+  keywords:
+    "Japanese Commercial Vehicles for Global Buyers, Business Sourcing, Bulk Orders, Export Support, Verified Vehicle Information, 商用中古車輸出, 法人調達",
   authors: [{ name: "エーワンロード株式会社" }],
   robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   generator: "Next.js",
@@ -35,14 +38,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "ja_JP",
-    url: "https://a1road.com",
-    title: "エーワンロード株式会社 | AIで縁の下の走りを支える",
+    url: "https://a-oneroad.com",
+    title: "エーワンロード株式会社 | Japanese Commercial Vehicles for Global Buyers",
     description:
-      "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
+      "自動車を通じて日本の価値を世界に問い続ける会社。Business Sourcing / Bulk Orders / Export Support / Verified Vehicle Information。",
     siteName: "エーワンロード株式会社",
     images: [
       {
-        url: "https://a1road.com/og-image.jpg",
+        url: "https://a-oneroad.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "エーワンロード株式会社",
@@ -51,10 +54,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "エーワンロード株式会社 | AIで縁の下の走りを支える",
+    title: "エーワンロード株式会社 | Japanese Commercial Vehicles for Global Buyers",
     description:
-      "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
-    images: ["https://a1road.com/twitter-image.jpg"],
+      "For dealers, fleets, and commercial buyers seeking reliable sourcing from Japan.",
+    images: ["https://a-oneroad.com/twitter-image.jpg"],
     creator: "@a1road",
   },
   other: {
@@ -63,10 +66,10 @@ export const metadata: Metadata = {
         "@context": "https://schema.org",
         "@type": "Organization",
         name: "エーワンロード株式会社",
-        url: "https://a1road.com",
-        logo: "https://a1road.com/logo.png",
+        url: "https://a-oneroad.com",
+        logo: "https://a-oneroad.com/logo.png",
         description:
-          "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
+          "日本の商用中古車輸出を通じて、我が国と世界の自動車文化をアップデートし、再定義します。",
         address: {
           "@type": "PostalAddress",
           addressCountry: "JP",
@@ -78,30 +81,25 @@ export const metadata: Metadata = {
         ],
         contactPoint: {
           "@type": "ContactPoint",
-          telephone: "+81-3-1234-5678",
+          telephone: "+81-80-4870-5690",
           contactType: "customer service",
           areaServed: "JP",
           availableLanguage: ["Japanese"],
-        },
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        name: "エーワンロード株式会社",
-        url: "https://a1road.com",
-        potentialAction: {
-          "@type": "SearchAction",
-          target: "https://a1road.com/search?q={search_term_string}",
-          "query-input": "required name=search_term_string",
         },
       },
     ]),
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = await getSiteLocale();
+  const navigation = await getContentItems("global", "navigation");
+  const socials = await getContentItems("global", "socials");
+  const contactInfo = await getContentItems("global", "contactInfo");
+  const footer = await getContentItem("global", "footer");
+
   return (
-    <html lang="ja" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={`${inter.variable} ${notoSansJP.variable} font-sans`}
         suppressHydrationWarning
@@ -126,25 +124,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           <LayoutProvider>
             <div className="relative overflow-hidden">
-              <BackgroundShapes />
-              <Header />
+              <Header
+                navigation={navigation.map((item) => ({ label: item.label, href: item.href }))}
+                currentLang={locale}
+              />
               <main>{children}</main>
-              <Footer />
+              <Footer
+                navigation={navigation.map((item) => ({ label: item.label, href: item.href }))}
+                socials={socials.map((item) => ({ label: item.label, href: item.href }))}
+                contactInfo={contactInfo.map((item) => ({ label: item.label, value: item.value }))}
+                tagline={footer.tagline}
+                privacyLabel={footer.privacyLabel}
+                copyright={footer.copyright}
+              />
             </div>
           </LayoutProvider>
         </ThemeProvider>
       </body>
     </html>
-  );
-}
-
-function BackgroundShapes() {
-  return (
-    <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-      <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-[#f8efd0]/30 blur-3xl" />
-      <div className="absolute top-40 right-20 w-72 h-72 rounded-full bg-[#f5e9c5]/20 blur-3xl" />
-      <div className="absolute bottom-20 left-1/3 w-80 h-80 rounded-full bg-[#faf3dc]/30 blur-3xl" />
-      <div className="absolute -bottom-20 right-1/4 w-96 h-96 rounded-full bg-[#f8efd0]/20 blur-3xl" />
-    </div>
   );
 }

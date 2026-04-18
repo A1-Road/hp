@@ -3,250 +3,126 @@
 @tailwind utilities;
 
 :root {
+  --color-bg-primary: #000000;
+  --color-bg-secondary: #ffffff;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #000000;
+  --color-border-light: rgba(255, 255, 255, 0.18);
+  --color-border-dark: rgba(0, 0, 0, 0.18);
+  --color-overlay-dark: rgba(0, 0, 0, 0.36);
+  --color-overlay-heavy: rgba(0, 0, 0, 0.56);
   --card: 0 0% 100%;
-  --card-foreground: 20 14.3% 4.1%;
+  --card-foreground: 0 0% 0%;
   --popover: 0 0% 100%;
-  --popover-foreground: 20 14.3% 4.1%;
-  --primary: 0 100% 67%; /* Changed to #ff5757 (red) */
-  --primary-foreground: 60 9.1% 97.8%;
-  --secondary: 60 4.8% 95.9%;
-  --secondary-foreground: 24 9.8% 10%;
-  --muted: 60 4.8% 95.9%;
-  --muted-foreground: 0 0% 33.3%; /* Changed to #555555 */
-  --accent: 60 4.8% 95.9%;
-  --accent-foreground: 24 9.8% 10%;
+  --popover-foreground: 0 0% 0%;
+  --primary: 0 0% 0%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 100%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 30%;
+  --accent: 0 0% 96%;
+  --accent-foreground: 0 0% 0%;
   --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 60 9.1% 97.8%;
-  --border: 20 5.9% 90%;
-  --input: 20 5.9% 90%;
-  --ring: 24 9.8% 10%;
-  --radius: 0.75rem;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 85%;
+  --input: 0 0% 85%;
+  --ring: 0 0% 0%;
+  --radius: 0.125rem;
 }
 
 .dark {
-  --background: 20 14.3% 4.1%;
-  --foreground: 60 9.1% 97.8%;
-  --card: 20 14.3% 4.1%;
-  --card-foreground: 60 9.1% 97.8%;
-  --popover: 20 14.3% 4.1%;
-  --popover-foreground: 60 9.1% 97.8%;
-  --primary: 0 100% 67%; /* Changed to #ff5757 (red) */
-  --primary-foreground: 60 9.1% 97.8%;
-  --secondary: 12 6.5% 15.1%;
-  --secondary-foreground: 60 9.1% 97.8%;
-  --muted: 12 6.5% 15.1%;
-  --muted-foreground: 0 0% 33.3%; /* Changed to #555555 */
-  --accent: 12 6.5% 15.1%;
-  --accent-foreground: 60 9.1% 97.8%;
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 0%;
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 0%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 0 0% 12%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 12%;
+  --muted-foreground: 0 0% 72%;
+  --accent: 0 0% 12%;
+  --accent-foreground: 0 0% 100%;
   --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 60 9.1% 97.8%;
-  --border: 12 6.5% 15.1%;
-  --input: 12 6.5% 15.1%;
-  --ring: 24 5.7% 82.9%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 24%;
+  --input: 0 0% 24%;
+  --ring: 0 0% 100%;
 }
 
 @layer base {
   * {
     @apply border-border;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-[#fffaeb] text-[#555555];
+    @apply bg-white text-black antialiased;
   }
 
-  /* Ensure all muted text is consistently the right color */
-  .text-muted-foreground {
-    @apply text-[#555555] !important;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight;
   }
 
-  /* Make all paragraph text bold for better visibility */
   p {
-    @apply font-semibold;
+    @apply leading-relaxed;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2;
   }
 }
 
 @layer components {
   .container-custom {
-    @apply container mx-auto px-4 py-16 md:py-24;
+    @apply mx-auto w-full max-w-[1280px] px-5 py-16 md:px-10 md:py-[88px] lg:py-[120px];
+  }
+
+  .section-label {
+    @apply text-[11px] font-semibold uppercase tracking-[0.28em];
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-6 relative inline-block pb-2;
+    @apply text-3xl leading-[1.05] md:text-5xl;
   }
 
-  .section-title::after {
-    content: "";
-    @apply absolute bottom-0 left-1/2 w-16 h-1 bg-primary -translate-x-1/2;
+  .section-copy {
+    @apply max-w-xl text-sm md:text-base;
   }
 
-  .floating-card {
-    @apply bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-xl relative overflow-hidden border border-beige-200/50;
+  .bw-card {
+    @apply border border-black/15 bg-white;
   }
 
-  /* モダンな背景パターン */
-  .bg-pattern {
-    background-color: #f9f7f4;
-    background-image:
-      radial-gradient(#e2d9c8 0.5px, transparent 0.5px),
-      radial-gradient(#e2d9c8 0.5px, #f9f7f4 0.5px);
-    background-size: 20px 20px;
-    background-position:
-      0 0,
-      10px 10px;
+  .bw-card-dark {
+    @apply border border-white/20 bg-black text-white;
   }
 
-  /* グラデーション背景 */
-  .bg-gradient-soft {
-    background: linear-gradient(135deg, #f9f7f4 0%, #e8e0d5 100%);
-  }
-
-  /* 3Dカード効果 */
-  .card-3d {
-    @apply transition-all duration-300 ease-out;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-  }
-
-  .card-3d:hover {
-    transform: translateY(-5px) rotateX(2deg) rotateY(2deg);
-  }
-
-  /* モダンなブロブ背景 */
-  .blob-bg {
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-  }
-
-  .blob-bg::before {
-    content: "";
-    position: absolute;
-    width: 40%;
-    height: 40%;
-    background: rgba(226, 217, 200, 0.4);
-    border-radius: 50%;
-    filter: blur(60px);
-    z-index: -1;
-    animation: blob-move 20s infinite alternate ease-in-out;
-  }
-
-  .blob-bg::after {
-    content: "";
-    position: absolute;
-    width: 30%;
-    height: 30%;
-    background: rgba(214, 199, 173, 0.3);
-    border-radius: 50%;
-    filter: blur(60px);
-    z-index: -1;
-    top: 60%;
-    left: 60%;
-    animation: blob-move-alt 15s infinite alternate ease-in-out;
-  }
-
-  @keyframes blob-move {
-    0% {
-      top: 0%;
-      left: 0%;
-    }
-    25% {
-      top: 10%;
-      left: 60%;
-    }
-    50% {
-      top: 50%;
-      left: 30%;
-    }
-    75% {
-      top: 70%;
-      left: 60%;
-    }
-    100% {
-      top: 20%;
-      left: 20%;
-    }
-  }
-
-  @keyframes blob-move-alt {
-    0% {
-      top: 60%;
-      left: 60%;
-    }
-    25% {
-      top: 20%;
-      left: 20%;
-    }
-    50% {
-      top: 30%;
-      left: 70%;
-    }
-    75% {
-      top: 70%;
-      left: 20%;
-    }
-    100% {
-      top: 40%;
-      left: 40%;
-    }
-  }
-
-  /* スクロールアニメーション */
   .fade-in-up {
     opacity: 0;
     transform: translateY(20px);
     transition:
-      opacity 0.6s ease-out,
-      transform 0.6s ease-out;
+      opacity 0.45s ease-out,
+      transform 0.45s ease-out;
   }
 
   .fade-in-up.visible {
     opacity: 1;
     transform: translateY(0);
-  }
-
-  /* グラスモーフィズム効果 */
-  .glass-card {
-    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg;
-  }
-
-  /* モダンなグリッドパターン */
-  .grid-pattern {
-    background-image:
-      linear-gradient(rgba(226, 217, 200, 0.3) 1px, transparent 1px),
-      linear-gradient(to right, rgba(226, 217, 200, 0.3) 1px, transparent 1px);
-    background-size: 40px 40px;
-  }
-
-  /* テキストグラデーション */
-  .text-gradient {
-    @apply font-bold;
-    background: linear-gradient(135deg, #3a3a3a 0%, #6d6d6d 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  /* イベントカルーセル用の無限スクロールアニメーション */
-  .marquee-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .marquee-content {
-    display: flex;
-    animation: marquee 40s linear infinite;
-    min-width: 200%; /* これが重要！ */
-  }
-
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-
-  .marquee-item {
-    flex: 0 0 auto;
   }
 }

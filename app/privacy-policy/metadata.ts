@@ -10,7 +10,7 @@ export const metadata: Metadata = {
       "エーワンロード株式会社のプライバシーポリシー。個人情報の取り扱い、Cookieの使用、データ保護に関する方針を説明しています。",
     images: [
       {
-        url: "https://a1road.com/og-image-privacy.jpg",
+        url: "https://a-oneroad.com/og-image-privacy.jpg",
         width: 1200,
         height: 630,
         alt: "エーワンロード株式会社 プライバシーポリシー",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "プライバシーポリシー | エーワンロード株式会社",
     description:
       "エーワンロード株式会社のプライバシーポリシー。個人情報の取り扱い、Cookieの使用、データ保護に関する方針を説明しています。",
-    images: ["https://a1road.com/twitter-image-privacy.jpg"],
+    images: ["https://a-oneroad.com/twitter-image-privacy.jpg"],
   },
   other: {
     "application/ld+json": JSON.stringify({
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         name: "エーワンロード株式会社",
         logo: {
           "@type": "ImageObject",
-          url: "https://a1road.com/logo.png",
+          url: "https://a-oneroad.com/logo.png",
         },
       },
     }),
