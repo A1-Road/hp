@@ -160,7 +160,7 @@
       "main": {
         "eyebrow": "Contact",
         "title": "Start the conversation.",
-        "copy": "通常問い合わせ 法人調達相談 資料請求を一つの窓口で受けます。",
+        "copy": "One contact point for general inquiries, business sourcing discussions, and document requests.",
         "buttonLabel": "Go to Contact",
         "buttonHref": "/contact"
       }
