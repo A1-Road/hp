@@ -1,0 +1,4 @@
+"$schema" = "./node_modules/wrangler/config-schema.json"
+name = "a-one-road-website"
+compatibility_date = "2026-04-19"
+compatibility_flags = ["nodejs_compat"]
