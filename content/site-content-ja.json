@@ -31,10 +31,6 @@
         "value": "admin@a1-road.com"
       },
       "2": {
-        "label": "Phone",
-        "value": "080-4870-5690"
-      },
-      "3": {
         "label": "Base",
         "value": "Yokohama Japan"
       }
@@ -234,12 +230,41 @@
         "copy": "海外市場へ届けるまでを支援します。"
       }
     },
-    "closing": {
+    "companyInfoHeader": {
       "main": {
-        "eyebrow": "NEXT",
-        "title": "サービスを見る。",
-        "buttonLabel": "サービスへ",
-        "buttonHref": "/service"
+        "eyebrow": "COMPANY",
+        "title": "会社情報",
+        "copy": "法人情報を掲載しています。"
+      }
+    },
+    "companyInfo": {
+      "1": {
+        "label": "会社名",
+        "value": "エーワンロード株式会社"
+      },
+      "2": {
+        "label": "設立日",
+        "value": "2021年3月"
+      },
+      "3": {
+        "label": "改名日",
+        "value": "2025年11月"
+      },
+      "4": {
+        "label": "代表取締役",
+        "value": "田村 一馬"
+      },
+      "5": {
+        "label": "法人番号",
+        "value": "9020001140520"
+      },
+      "6": {
+        "label": "連絡先",
+        "value": "Email: admin@a1-road.com"
+      },
+      "7": {
+        "label": "所在地",
+        "value": "神奈川県横浜市西区浅間町1丁目4-3ウィザードビル402"
       }
     }
   },
@@ -387,7 +412,7 @@
       "main": {
         "eyebrow": "CONTACT",
         "title": "お問い合わせ",
-        "copy": "国内で軽トラックや商用車を売りたい方はお問い合わせください。車種や用途、台数、車両状態などをお知らせください。担当よりご連絡いたします。"
+        "copy": "admin@a1-road.com"
       }
     },
     "methodsHeader": {
@@ -465,7 +490,7 @@
     },
     "reassurance": {
       "main": {
-        "text": "短い相談から始めてください。"
+        "text": ""
       }
     }
   }

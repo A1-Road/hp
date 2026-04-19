@@ -11,8 +11,6 @@ export default async function HomePage() {
   const identity = await getContentItem("top", "identity");
   const servicePreviewHeader = await getContentItem("top", "servicePreviewHeader");
   const services = await getContentItems("top", "servicePreview");
-  const visualHeader = await getContentItem("top", "visualHeader");
-  const visualGrid = await getContentItems("top", "visualProof");
   const aboutPreview = await getContentItem("top", "aboutPreview");
   const signalHeader = await getContentItem("top", "signalHeader");
   const signalSteps = await getContentItems("top", "signalSteps");
@@ -96,32 +94,6 @@ export default async function HomePage() {
                     </div>
                   </div>
                 </Link>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
-        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
-          <AnimatedSection>
-            <div className="max-w-xl">
-              <p className="section-label">{visualHeader.eyebrow}</p>
-              <h2 className="section-title mt-4">{visualHeader.title}</h2>
-            </div>
-          </AnimatedSection>
-
-          <div className="mt-10 grid gap-4 md:grid-cols-2">
-            {visualGrid.map((image, index) => (
-              <AnimatedSection key={`${image.image}-${index}`} delay={index * 70}>
-                <div className="relative aspect-[4/3] overflow-hidden border border-black/12">
-                  <Image
-                    src={image.image}
-                    alt={image.alt}
-                    fill
-                    className="object-cover transition-transform duration-500 hover:scale-[1.02]"
-                  />
-                </div>
               </AnimatedSection>
             ))}
           </div>

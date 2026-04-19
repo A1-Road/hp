@@ -1,7 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
 import { AnimatedSection } from "@/components/ui/animated-section";
-import { Button } from "@/components/ui/button";
 import { getContentItem, getContentItems } from "@/lib/site-content";
 
 export const runtime = "edge";
@@ -14,7 +12,8 @@ export default async function AboutPage() {
   const story = await getContentItem("about", "story");
   const differentiatorHeader = await getContentItem("about", "differentiatorHeader");
   const differentiators = await getContentItems("about", "differentiator");
-  const closing = await getContentItem("about", "closing");
+  const companyInfoHeader = await getContentItem("about", "companyInfoHeader");
+  const companyInfo = await getContentItems("about", "companyInfo");
 
   return (
     <div className="pt-20">
@@ -107,16 +106,25 @@ export default async function AboutPage() {
       <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
         <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
           <AnimatedSection>
-            <div className="max-w-3xl">
-              <p className="section-label">{closing.eyebrow}</p>
-              <h2 className="section-title mt-4">{closing.title}</h2>
-              <Button
-                asChild
-                variant="outline"
-                className="mt-8 h-11 rounded-none border-black bg-transparent px-6 text-sm font-medium text-black hover:bg-black hover:text-white"
-              >
-                <Link href={closing.buttonHref}>{closing.buttonLabel}</Link>
-              </Button>
+            <div className="grid gap-6 md:grid-cols-[0.95fr_1.05fr]">
+              <div className="border border-black/12 px-6 py-8 md:px-8 md:py-10">
+                <p className="section-label">{companyInfoHeader.eyebrow}</p>
+                <h2 className="section-title mt-4">{companyInfoHeader.title}</h2>
+                <p className="mt-5 max-w-md text-sm text-black/72 md:text-base">{companyInfoHeader.copy}</p>
+              </div>
+
+              <div className="border border-black/12 px-6 py-8 md:px-8 md:py-10">
+                <dl className="grid gap-5 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-6">
+                  {companyInfo.map((item) => (
+                    <div key={item.label}>
+                      <dt className="text-xs font-semibold uppercase tracking-[0.18em] text-black/48">
+                        {item.label}
+                      </dt>
+                      <dd className="mt-2 text-sm leading-7 text-black md:text-base">{item.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
             </div>
           </AnimatedSection>
         </div>

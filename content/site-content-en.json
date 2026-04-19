@@ -31,10 +31,6 @@
         "value": "admin@a1-road.com"
       },
       "2": {
-        "label": "Phone",
-        "value": "080-4870-5690"
-      },
-      "3": {
         "label": "Base",
         "value": "Yokohama Japan"
       }
@@ -174,16 +170,16 @@
     "hero": {
       "main": {
         "eyebrow": "About",
-        "title": "What A-One Road is.",
-        "copy": "A page for reason posture and business definition only.",
+        "title": "Unearth hidden values.",
+        "copy": "Reason, posture, and business definition.",
         "image": "/about-hero.png"
       }
     },
     "statement": {
       "main": {
         "eyebrow": "Statement",
-        "title": "全ての人の正当な価値を取り戻す",
-        "copy": "自動車を通じて日本の価値を世界に問い続ける。"
+        "title": "Through mobility, we continue to ask the world about the value of Japan.",
+        "copy": ""
       }
     },
     "philosophyHeader": {
@@ -234,12 +230,41 @@
         "copy": "We handle the flow from sourcing through export execution without breaks."
       }
     },
-    "closing": {
+    "companyInfoHeader": {
       "main": {
-        "eyebrow": "Next",
-        "title": "See the service.",
-        "buttonLabel": "View Service",
-        "buttonHref": "/service"
+        "eyebrow": "Company",
+        "title": "Company Information",
+        "copy": "Corporate details."
+      }
+    },
+    "companyInfo": {
+      "1": {
+        "label": "Company Name",
+        "value": "A-One Road Co., Ltd."
+      },
+      "2": {
+        "label": "Established",
+        "value": "March 2021"
+      },
+      "3": {
+        "label": "Renamed",
+        "value": "November 2025"
+      },
+      "4": {
+        "label": "Representative Director",
+        "value": "Kazuma Tamura"
+      },
+      "5": {
+        "label": "Corporate Number",
+        "value": "9020001140520"
+      },
+      "6": {
+        "label": "Contact",
+        "value": "Email: admin@a1-road.com"
+      },
+      "7": {
+        "label": "Address",
+        "value": "Wizard Building 402, 1-4-3 Sengencho, Nishi-ku, Yokohama, Kanagawa, Japan"
       }
     }
   },
@@ -386,8 +411,8 @@
     "hero": {
       "main": {
         "eyebrow": "Contact",
-        "title": "For buyers and sellers",
-        "copy": "If you are looking to source Japanese commercial vehicles from overseas"
+        "title": "Contact",
+        "copy": "admin@a1-road.com"
       }
     },
     "methodsHeader": {
@@ -465,7 +490,7 @@
     },
     "reassurance": {
       "main": {
-        "text": "A short reply starts here."
+        "text": ""
       }
     }
   }

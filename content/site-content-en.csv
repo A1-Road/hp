@@ -12,10 +12,8 @@ global,footer,main,privacyLabel,Privacy Policy
 global,footer,main,copyright,© 2026 A-One Road
 global,contactInfo,1,label,Email
 global,contactInfo,1,value,admin@a1-road.com
-global,contactInfo,2,label,Phone
-global,contactInfo,2,value,080-4870-5690
-global,contactInfo,3,label,Base
-global,contactInfo,3,value,Yokohama Japan
+global,contactInfo,2,label,Base
+global,contactInfo,2,value,Yokohama Japan
 global,socials,1,label,X
 global,socials,1,href,https://twitter.com/a1road
 global,socials,2,label,LinkedIn
@@ -83,12 +81,12 @@ top,contactCta,main,copy,通常問い合わせ 法人調達相談 資料請求�
 top,contactCta,main,buttonLabel,Go to Contact
 top,contactCta,main,buttonHref,/contact
 about,hero,main,eyebrow,About
-about,hero,main,title,What A-One Road is.
-about,hero,main,copy,A page for reason posture and business definition only.
+about,hero,main,title,Unearth hidden values.
+about,hero,main,copy,Reason, posture, and business definition.
 about,hero,main,image,/about-hero.png
 about,statement,main,eyebrow,Statement
-about,statement,main,title,全ての人の正当な価値を取り戻す
-about,statement,main,copy,自動車を通じて日本の価値を世界に問い続ける。
+about,statement,main,title,Through mobility, we continue to ask the world about the value of Japan.
+about,statement,main,copy,
 about,philosophyHeader,main,eyebrow,Philosophy
 about,philosophyHeader,main,title,Three anchors.
 about,philosophy,1,title,Mission
@@ -109,10 +107,23 @@ about,differentiator,2,title,Verified Information
 about,differentiator,2,copy,We standardize the level of information needed for decisions.
 about,differentiator,3,title,Execution
 about,differentiator,3,copy,We handle the flow from sourcing through export execution without breaks.
-about,closing,main,eyebrow,Next
-about,closing,main,title,See the service.
-about,closing,main,buttonLabel,View Service
-about,closing,main,buttonHref,/service
+about,companyInfoHeader,main,eyebrow,Company
+about,companyInfoHeader,main,title,Company Information
+about,companyInfoHeader,main,copy,Corporate details.
+about,companyInfo,1,label,Company Name
+about,companyInfo,1,value,A-One Road Co., Ltd.
+about,companyInfo,2,label,Established
+about,companyInfo,2,value,March 2021
+about,companyInfo,3,label,Renamed
+about,companyInfo,3,value,November 2025
+about,companyInfo,4,label,Representative Director
+about,companyInfo,4,value,Kazuma Tamura
+about,companyInfo,5,label,Corporate Number
+about,companyInfo,5,value,9020001140520
+about,companyInfo,6,label,Contact
+about,companyInfo,6,value,Email: admin@a1-road.com
+about,companyInfo,7,label,Address
+about,companyInfo,7,value,Wizard Building 402, 1-4-3 Sengencho, Nishi-ku, Yokohama, Kanagawa, Japan
 service,hero,main,eyebrow,Service
 service,hero,main,title,What we provide.
 service,hero,main,copy,Japanese commercial vehicle sourcing for dealers fleets and commercial buyers.
@@ -189,8 +200,8 @@ service,contactCta,main,title,Discuss your requirement.
 service,contactCta,main,buttonLabel,Contact
 service,contactCta,main,buttonHref,/contact
 contact,hero,main,eyebrow,Contact
-contact,hero,main,title,For buyers and sellers
-contact,hero,main,copy,If you are looking to source Japanese commercial vehicles from overseas, please contact us. If you would like to sell kei trucks or commercial vehicles in Japan, please contact us as well.
+contact,hero,main,title,Contact
+contact,hero,main,copy,admin@a1-road.com
 contact,methodsHeader,main,eyebrow,Methods
 contact,methodsHeader,main,title,Three options.
 contact,methods,1,title,Form
@@ -222,4 +233,4 @@ contact,info,3,label,Base
 contact,info,3,value,Yokohama Japan
 contact,info,4,label,SNS
 contact,info,4,value,X / LinkedIn / GitHub
-contact,reassurance,main,text,A short reply starts here.
+contact,reassurance,main,text,

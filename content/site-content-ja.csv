@@ -12,10 +12,8 @@ global,footer,main,privacyLabel,プライバシーポリシー
 global,footer,main,copyright,© 2026 A-One Road
 global,contactInfo,1,label,Email
 global,contactInfo,1,value,admin@a1-road.com
-global,contactInfo,2,label,Phone
-global,contactInfo,2,value,080-4870-5690
-global,contactInfo,3,label,Base
-global,contactInfo,3,value,Yokohama Japan
+global,contactInfo,2,label,Base
+global,contactInfo,2,value,Yokohama Japan
 global,socials,1,label,X
 global,socials,1,href,https://twitter.com/a1road
 global,socials,2,label,LinkedIn
@@ -109,10 +107,23 @@ about,differentiator,2,title,情報整理
 about,differentiator,2,copy,車両状態や用途に応じた情報を整えます。
 about,differentiator,3,title,輸出
 about,differentiator,3,copy,海外市場へ届けるまでを支援します。
-about,closing,main,eyebrow,NEXT
-about,closing,main,title,サービスを見る。
-about,closing,main,buttonLabel,サービスへ
-about,closing,main,buttonHref,/service
+about,companyInfoHeader,main,eyebrow,COMPANY
+about,companyInfoHeader,main,title,会社情報
+about,companyInfoHeader,main,copy,法人情報を掲載しています。
+about,companyInfo,1,label,会社名
+about,companyInfo,1,value,エーワンロード株式会社
+about,companyInfo,2,label,設立日
+about,companyInfo,2,value,2021年3月
+about,companyInfo,3,label,改名日
+about,companyInfo,3,value,2025年11月
+about,companyInfo,4,label,代表取締役
+about,companyInfo,4,value,田村 一馬
+about,companyInfo,5,label,法人番号
+about,companyInfo,5,value,9020001140520
+about,companyInfo,6,label,連絡先
+about,companyInfo,6,value,Email: admin@a1-road.com
+about,companyInfo,7,label,所在地
+about,companyInfo,7,value,神奈川県横浜市西区浅間町1丁目4-3ウィザードビル402
 service,hero,main,eyebrow,SERVICE
 service,hero,main,title,日本の軽トラックおよび商用車の輸出
 service,hero,main,copy,個人および法人向けに、日本の商用中古車の調達と輸出を行っています。用途や市場に応じて、適した車両の選定を支援します。
@@ -190,7 +201,7 @@ service,contactCta,main,buttonLabel,お問い合わせ
 service,contactCta,main,buttonHref,/contact
 contact,hero,main,eyebrow,CONTACT
 contact,hero,main,title,お問い合わせ
-contact,hero,main,copy,国内で軽トラックや商用車を売りたい方はお問い合わせください。車種や用途、台数、車両状態などをお知らせください。担当よりご連絡いたします。
+contact,hero,main,copy,admin@a1-road.com
 contact,methodsHeader,main,eyebrow,METHODS
 contact,methodsHeader,main,title,三つの連絡方法。
 contact,methods,1,title,フォーム
@@ -222,4 +233,4 @@ contact,info,3,label,拠点
 contact,info,3,value,Yokohama Japan
 contact,info,4,label,SNS
 contact,info,4,value,X / LinkedIn / GitHub
-contact,reassurance,main,text,短い相談から始めてください。
+contact,reassurance,main,text,
