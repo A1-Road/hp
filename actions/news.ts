@@ -2,14 +2,23 @@
 
 import { createClient } from "microcms-js-sdk";
 
-const client = createClient({
-  serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN!,
-  apiKey: process.env.MICROCMS_API_KEY!,
-});
+function getClient() {
+  const serviceDomain = process.env.MICROCMS_SERVICE_DOMAIN;
+  const apiKey = process.env.MICROCMS_API_KEY;
+
+  if (!serviceDomain || !apiKey) {
+    throw new Error("MICROCMS_SERVICE_DOMAIN and MICROCMS_API_KEY are required");
+  }
+
+  return createClient({
+    serviceDomain,
+    apiKey,
+  });
+}
 
 export async function getNewsList() {
   try {
-    const data = await client.getList({
+    const data = await getClient().getList({
       endpoint: "news",
     });
     return data;
@@ -21,7 +30,7 @@ export async function getNewsList() {
 
 export async function getNewsDetail(id: string) {
   try {
-    const data = await client.getListDetail({
+    const data = await getClient().getListDetail({
       endpoint: "news",
       contentId: id,
     });

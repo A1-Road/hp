@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/header";
@@ -8,12 +7,6 @@ import { LayoutProvider } from "./contexts/header-context";
 import Script from "next/script";
 import { getContentItem, getContentItems } from "@/lib/site-content";
 import { getSiteLocale } from "@/lib/locale";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const notoSansJP = Noto_Sans_JP({
-  subsets: ["latin"],
-  variable: "--font-noto-sans-jp",
-});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -100,10 +93,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body
-        className={`${inter.variable} ${notoSansJP.variable} font-sans`}
-        suppressHydrationWarning
-      >
+      <body className="font-sans" suppressHydrationWarning>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SBXZP4QP82"
           strategy="afterInteractive"
