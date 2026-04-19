@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "エーワンロード株式会社 | 日本の商用車を世界の現場へ",
   description:
-    "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気に一貫して対応します。",
+    "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気通貫で対応します。",
   openGraph: {
     title: "エーワンロード株式会社 | 日本の商用車を世界の現場へ",
     description:
-      "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気に一貫して対応します。",
+      "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気通貫で対応します。",
     images: [
       {
         url: "https://a1road.com/og-image.jpg",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "エーワンロード株式会社 | 日本の商用車を世界の現場へ",
     description:
-      "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気に一貫して対応します。",
+      "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気通貫で対応します。",
     images: ["https://a1road.com/twitter-image.jpg"],
   },
   other: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "@type": "WebPage",
       name: "エーワンロード株式会社 | 日本の商用車を世界の現場へ",
       description:
-        "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気に一貫して対応します。",
+        "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気通貫で対応します。",
       publisher: {
         "@type": "Organization",
         name: "エーワンロード株式会社",
