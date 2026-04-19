@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "エーワンロード株式会社 | AI・DXで商用車流通の付加価値をつくる",
+  title: "エーワンロード株式会社 | 日本の商用車を世界の現場へ",
   description:
-    "AI・DXを活用し、日本の軽トラック・商用車の流通、輸出、EC展開を高度化。車両選定から情報整理、付加価値設計、グローバル市場への展開まで一貫して支援します。",
+    "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気に一貫して対応します。",
   openGraph: {
-    title: "エーワンロード株式会社 | AI・DXで商用車流通の付加価値をつくる",
+    title: "エーワンロード株式会社 | 日本の商用車を世界の現場へ",
     description:
-      "AI・DXを活用し、日本の軽トラック・商用車の流通、輸出、EC展開を高度化。車両選定から情報整理、付加価値設計、グローバル市場への展開まで一貫して支援します。",
+      "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気に一貫して対応します。",
     images: [
       {
         url: "https://a1road.com/og-image.jpg",
@@ -19,18 +19,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "エーワンロード株式会社 | AI・DXで商用車流通の付加価値をつくる",
+    title: "エーワンロード株式会社 | 日本の商用車を世界の現場へ",
     description:
-      "AI・DXを活用し、日本の軽トラック・商用車の流通、輸出、EC展開を高度化。車両選定から情報整理、付加価値設計、グローバル市場への展開まで一貫して支援します。",
+      "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気に一貫して対応します。",
     images: ["https://a1road.com/twitter-image.jpg"],
   },
   other: {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: "エーワンロード株式会社 | AI・DXで商用車流通の付加価値をつくる",
+      name: "エーワンロード株式会社 | 日本の商用車を世界の現場へ",
       description:
-        "AI・DXを活用し、日本の軽トラック・商用車の流通、輸出、EC展開を高度化。車両選定から情報整理、付加価値設計、グローバル市場への展開まで一貫して支援します。",
+        "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気に一貫して対応します。",
       publisher: {
         "@type": "Organization",
         name: "エーワンロード株式会社",

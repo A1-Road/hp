@@ -21,9 +21,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "エーワンロード株式会社 | AI・DXで商用車流通の付加価値をつくる",
+  title: "エーワンロード株式会社 | 日本の商用車を世界の現場へ",
   description:
-    "AI・DXを活用し、日本の軽トラック・商用車の流通、輸出、EC展開を高度化。車両選定から情報整理、付加価値設計、グローバル市場への展開まで一貫して支援します。",
+    "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気に一貫して対応します。",
   keywords:
     "AI, DX, 商用車流通, 軽トラック, 商用車, 中古車輸出, グローバル展開, 付加価値, EC, 車両選定, エーワンロード",
   authors: [{ name: "エーワンロード株式会社" }],
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     url: "https://a1road.com",
-    title: "エーワンロード株式会社 | AI・DXで商用車流通の付加価値をつくる",
+    title: "エーワンロード株式会社 | 日本の商用車を世界の現場へ",
     description:
-      "AI・DXを活用し、日本の軽トラック・商用車の流通、輸出、EC展開を高度化。車両選定から情報整理、付加価値設計、グローバル市場への展開まで一貫して支援します。",
+      "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気に一貫して対応します。",
     siteName: "エーワンロード株式会社",
     images: [
       {
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "エーワンロード株式会社 | AI・DXで商用車流通の付加価値をつくる",
+    title: "エーワンロード株式会社 | 日本の商用車を世界の現場へ",
     description:
-      "AI・DXを活用し、日本の軽トラック・商用車の流通、輸出、EC展開を高度化。車両選定から情報整理、付加価値設計、グローバル市場への展開まで一貫して支援します。",
+      "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気に一貫して対応します。",
     images: ["https://a1road.com/twitter-image.jpg"],
     creator: "@a1road",
   },
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
         url: "https://a1road.com",
         logo: "https://a1road.com/logo.png",
         description:
-          "AI・DXを活用し、日本の軽トラック・商用車の流通、輸出、EC展開を高度化。車両選定から情報整理、付加価値設計、グローバル市場への展開まで一貫して支援します。",
+          "個人法人向けに日本の軽トラックやユーティリティ車両を輸出しています。AIを活用して、流通からEC展開まで一気に一貫して対応します。",
         address: {
           "@type": "PostalAddress",
           addressCountry: "JP",
