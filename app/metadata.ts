@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "エーワンロード株式会社 | AIで縁の下の走りを支える",
+  title: "エーワンロード株式会社 | 日本の商用車を、世界の現場へ。",
   description:
-    "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
+    "個人・法人向けに、日本の軽トラックやユーティリティ車両を輸出しています。用途に応じた車両選定から輸出まで、一貫して対応します。",
   openGraph: {
-    title: "エーワンロード株式会社 | AIで縁の下の走りを支える",
+    title: "エーワンロード株式会社 | 日本の商用車を、世界の現場へ。",
     description:
-      "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
+      "個人・法人向けに、日本の軽トラックやユーティリティ車両を輸出しています。用途に応じた車両選定から輸出まで、一貫して対応します。",
     images: [
       {
         url: "https://a1road.com/og-image.jpg",
@@ -19,18 +19,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "エーワンロード株式会社 | AIで縁の下の走りを支える",
+    title: "エーワンロード株式会社 | 日本の商用車を、世界の現場へ。",
     description:
-      "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
+      "個人・法人向けに、日本の軽トラックやユーティリティ車両を輸出しています。用途に応じた車両選定から輸出まで、一貫して対応します。",
     images: ["https://a1road.com/twitter-image.jpg"],
   },
   other: {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: "エーワンロード株式会社 | AIで縁の下の走りを支える",
+      name: "エーワンロード株式会社 | 日本の商用車を、世界の現場へ。",
       description:
-        "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
+        "個人・法人向けに、日本の軽トラックやユーティリティ車両を輸出しています。用途に応じた車両選定から輸出まで、一貫して対応します。",
       publisher: {
         "@type": "Organization",
         name: "エーワンロード株式会社",
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
             position: 1,
             item: {
               "@type": "Service",
-              name: "法規認証対応AI",
+              name: "日本の軽トラックおよび商用車の輸出",
               description:
-                "認証業務AIの設計・構築・運用をトータルサポート。車両や製品の法規認証プロセスを自動化・効率化し、開発スピードとコンプライアンス精度を飛躍的に向上させます。",
+                "個人および法人向けに、日本の商用中古車の調達と輸出を行っています。用途や市場に応じて、適した車両の選定を支援します。",
             },
           },
           {
@@ -57,9 +57,9 @@ export const metadata: Metadata = {
             position: 2,
             item: {
               "@type": "Service",
-              name: "AIエージェント開発",
+              name: "法人向け車両調達",
               description:
-                "製造業向けにカスタマイズされたAIソリューションを提供。業務効率化と新たな価値創造を支援します。",
+                "日本国内の軽トラックやユーティリティ車両から、用途に応じた車両を選定し、導入判断に必要な情報を整理します。",
             },
           },
           {
@@ -67,9 +67,9 @@ export const metadata: Metadata = {
             position: 3,
             item: {
               "@type": "Service",
-              name: "Bankless Japan",
+              name: "複数台導入支援",
               description:
-                "グローバルで認知されたWeb3メディア「Bankless」の日本版。AI、クリプト、DeFi、Web3の基本から最新トレンドまで、わかりやすく解説。",
+                "複数拠点や継続仕入れに向け、台数・用途・仕向地に合わせた調達と輸出の進行を一貫して支援します。",
             },
           },
         ],

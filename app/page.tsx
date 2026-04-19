@@ -24,28 +24,33 @@ import FAQ from "@/components/faq";
 export const runtime = "edge";
 
 // 事業内容カード
-const businessCards = [
+const businessCards: {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  link?: string;
+}[] = [
   {
     id: 1,
-    title: "法規認証対応AI",
+    title: "法人向け車両調達",
     description:
-      "認証業務AIの設計・構築・運用をトータルサポート。車両や製品の法規認証プロセスを自動化・効率化し、開発スピードとコンプライアンス精度を飛躍的に向上させます。",
+      "日本国内の軽トラックやユーティリティ車両から、用途と仕向地に応じた候補を選定します。",
     image: "/legalai.png",
   },
   {
     id: 2,
-    title: "AIエージェント開発",
+    title: "複数台導入支援",
     description:
-      "企業の特性や課題に合わせたAIエージェントを提供。AIと人間の協働による新たな価値創造と、業界のパラダイムシフトを推進します。",
+      "フリート導入や継続仕入れに向けて、台数計画から進行管理まで一貫して対応します。",
     image: "/ai-agent.png",
   },
   {
     id: 3,
-    title: "営業支援エージェント「営業ルマン」",
+    title: "輸出前の情報整理",
     description:
-      "フォームやメール、FAXに対応した営業支援エージェント。アポ獲得からメッセージ作成まで、柔軟に対応します。",
+      "車両状態、用途、仕様、必要書類など、輸出判断に必要な情報をわかりやすく整理します。",
     image: "/eigyolemans.png",
-    link: "https://salesstone.studio.site/",
   },
 ];
 
@@ -103,12 +108,12 @@ export default function HomePage() {
             <div className="col-span-12 max-w-3xl lg:col-span-7">
               <AnimatedSection>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  <span className="text-black">データとAIで経営の”走り”を支える</span>
+                  <span className="text-black">日本の商用車を、世界の現場へ。</span>
                   <div className="h-1 md:h-4" />
-                  <span className="text-black md:whitespace-nowrap">現場起点の少数精鋭AI開発ベンチャー</span>
+                  <span className="text-black md:whitespace-nowrap">軽トラックとユーティリティ車両の価値を再編集する</span>
                 </h2>
                 <h3 className="text-1xl md:text-2xl font-bold mb-4 text-black max-w-3xl mx-auto">
-                  AIで経営の”隠されたパフォーマンス”を解き放つ
+                  用途に応じた車両選定から輸出まで、一貫して対応します
                 </h3>
                 </AnimatedSection>
             </div>
@@ -144,7 +149,7 @@ export default function HomePage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">WHAT WE DO</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
-                エーワンロードは製造業など日本の基幹産業が抱える課題に対し、AI技術を活用したワンストップ開発・コンサルティングでデジタル化・DXを推進し、グローバルな競争力強化を支援します。
+                すべての人の正当な価値を取り戻すというミッションの下、自動車を通じて日本の価値を世界に問い続ける。個人・法人向けに、日本の軽トラックやユーティリティ車両を輸出しています。
               </p>
             </div>
           </AnimatedSection>
@@ -259,9 +264,7 @@ export default function HomePage() {
                       <strong>技術に強い</strong>
                     </h3>
                     <p className="text-muted-foreground">
-                      東京大学出身のフルスタックエンジニアやAIの専門家によって構成。最先端の技術を現場レベルに落とし込んでいます。DAOメディア3年の実績や高性能計算、Webアプリ開発（Python,
-                      FastAPI,
-                      React等）などの幅広いスキルを活かし、基幹産業に対して、リアルな現場課題に根ざした価値を提供します。
+                      車両情報の整理、用途に応じた仕様確認、輸出前の確認項目の洗い出しまで、意思決定に必要な情報を解像度高くまとめます。車両をただ並べるのではなく、現場で使われる前提で価値を再編集します。
                     </p>
                   </div>
                 </div>

@@ -70,7 +70,7 @@ export default function AboutUs() {
                 </p>
                 <p>私たちのミッションは、これらを次の世代そして世界へとつなげることです。</p>
                 <p>
-                だからこそAIなどの最先端技術を通じ、基幹産業のすべてが世界で強力な競争力を取り戻す基盤を作るべく、みなさまと二人三脚で歩んでまいります。
+                だからこそ日本の商用車が持つ価値を再編集し、世界の現場へ届ける基盤を作るべく、みなさまと二人三脚で歩んでまいります。
                 </p>
               </div>
             </AnimatedSection>
@@ -208,10 +208,7 @@ export default function AboutUs() {
                       <h3 className="text-3xl font-bold mb-2">田村 一馬</h3>
                     </div>
                     <p className="text-muted-foreground mb-6">
-                      Web3、DAO、マーケティング領域において多面的な経験と成果を蓄積。大学在学中の起業により国内外アクセラレーター、ピッチコンテストで実績を重ねる。日本・アジア・世界のWeb3普及に向けてコミュニティ活動を展開し、アジア初のDAOハッカソン「THE
-                      DAO-A-THON」を主催し、Bankless
-                      Japanでのリサーチやコンテンツ制作を展開。Pacific
-                      Meta時代について、スクウェア・エニックス、Chainlinkなどに対するGo-to-market戦略やトークノミクス設計によりインド・ベトナム地域でユーザー獲得数85%増を達成。
+                      事業開発、マーケティング、情報発信の領域で経験を重ね、国内外の市場に向けた企画と実行を継続。用途や市場に応じて価値を伝え直す視点を強みに、日本の商用車を世界の現場へ届ける事業を推進しています。
                     </p>
                   </div>
                 </div>
@@ -310,9 +307,9 @@ export default function AboutUs() {
                 <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2">
                   <dt className="font-semibold text-gray-700">事業内容</dt>
                   <dd>
-                    事業者向けソフトウェア開発・保守・運用ならびに
+                    日本の商用車輸出支援ならびに
                     <br />
-                    AI/Web3等の研修・導入支援・コンサルティング
+                    車両調達・輸出に関する導入支援・コンサルティング
                   </dd>
                 </div>
           {/* 旧法人情報 */}

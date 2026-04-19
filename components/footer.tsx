@@ -202,38 +202,38 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="/case#rag"
+                    href="/case#kei-truck-export"
                     className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
-                    RAG実装
+                    軽トラック輸出支援
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/case#walletless"
+                    href="/case#fleet-support"
                     className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
-                    ウォレットレス
+                    複数台導入支援
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/case#fa1rness"
+                    href="/case#vehicle-sourcing"
                     className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
-                    FA1RNESS
+                    車両調達
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/case#daoathon"
+                    href="/case#export-prep"
                     className="text-gray-300 hover:text-white transition-colors flex items-center"
                   >
                     <HiArrowRight className="mr-2 h-3 w-3" />
-                    DAOATHON
+                    輸出前情報整理
                   </Link>
                 </li>
               </ul>
@@ -242,7 +242,7 @@ export default function Footer() {
             <div className="space-y-6">
               <h4 className="font-bold text-lg mb-4 text-white">エーワンロード株式会社</h4>
               <p className="text-gray-300 leading-relaxed">
-                モビリティ・製造業を中心に、AIを活用した開発経営支援や法規認証技術の研究開発を行っています。
+                個人・法人向けに、日本の軽トラックやユーティリティ車両を輸出しています。用途に応じた車両選定から輸出まで、一貫して対応します。
               </p>
             </div>
           </div>

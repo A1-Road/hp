@@ -21,10 +21,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "エーワンロード株式会社 | AIで縁の下の走りを支える",
+  title: "エーワンロード株式会社 | 日本の商用車を、世界の現場へ。",
   description:
-    "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
-  keywords: "AI, モビリティ, DX, モータースポーツ, BPO, 自動車, 検査業務, エーワンロード",
+    "個人・法人向けに、日本の軽トラックやユーティリティ車両を輸出しています。用途に応じた車両選定から輸出まで、一貫して対応します。",
+  keywords:
+    "軽トラック, 軽バン, 商用車, 中古車輸出, ユーティリティ車両, 車両調達, 法人向け輸出, エーワンロード",
   authors: [{ name: "エーワンロード株式会社" }],
   robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   generator: "Next.js",
@@ -36,9 +37,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     url: "https://a1road.com",
-    title: "エーワンロード株式会社 | AIで縁の下の走りを支える",
+    title: "エーワンロード株式会社 | 日本の商用車を、世界の現場へ。",
     description:
-      "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
+      "個人・法人向けに、日本の軽トラックやユーティリティ車両を輸出しています。用途に応じた車両選定から輸出まで、一貫して対応します。",
     siteName: "エーワンロード株式会社",
     images: [
       {
@@ -51,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "エーワンロード株式会社 | AIで縁の下の走りを支える",
+    title: "エーワンロード株式会社 | 日本の商用車を、世界の現場へ。",
     description:
-      "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
+      "個人・法人向けに、日本の軽トラックやユーティリティ車両を輸出しています。用途に応じた車両選定から輸出まで、一貫して対応します。",
     images: ["https://a1road.com/twitter-image.jpg"],
     creator: "@a1road",
   },
@@ -66,7 +67,7 @@ export const metadata: Metadata = {
         url: "https://a1road.com",
         logo: "https://a1road.com/logo.png",
         description:
-          "AIを活用したDX支援や、検査業務向けRAGの研究開発を行っています。",
+          "個人・法人向けに、日本の軽トラックやユーティリティ車両を輸出しています。用途に応じた車両選定から輸出まで、一貫して対応します。",
         address: {
           "@type": "PostalAddress",
           addressCountry: "JP",

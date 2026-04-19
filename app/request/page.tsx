@@ -23,7 +23,7 @@ export default function Request() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">資料請求</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            AI技術の活用についての詳細資料をお送りいたします
+            軽トラック・商用車輸出や車両調達支援に関する資料をお送りします
           </p>
         </div>
 
