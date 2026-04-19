@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { getNewsDetail } from "@/actions/news";
 
+export const runtime = "edge";
+
 export async function GET(_: Request, context: { params: Promise<{ id: string }> }) {
   try {
     const { id } = await context.params;

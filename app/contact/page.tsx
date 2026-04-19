@@ -2,6 +2,8 @@ import { AnimatedSection } from "@/components/ui/animated-section";
 import HubspotForm from "@/components/hubspot-form";
 import { getContentItem, getContentItems } from "@/lib/site-content";
 
+export const runtime = "edge";
+
 export default async function ContactPage() {
   const hero = await getContentItem("contact", "hero");
   const formHeader = await getContentItem("contact", "formHeader");

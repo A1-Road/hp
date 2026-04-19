@@ -1,0 +1,472 @@
+{
+  "global": {
+    "navigation": {
+      "1": {
+        "label": "Top",
+        "href": "/"
+      },
+      "2": {
+        "label": "About",
+        "href": "/about-us"
+      },
+      "3": {
+        "label": "Service",
+        "href": "/service"
+      },
+      "4": {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    },
+    "footer": {
+      "main": {
+        "tagline": "Japanese commercial vehicles sourced for global buyers.",
+        "privacyLabel": "Privacy Policy",
+        "copyright": "© 2026 A-One Road"
+      }
+    },
+    "contactInfo": {
+      "1": {
+        "label": "Email",
+        "value": "admin@a1-road.com"
+      },
+      "2": {
+        "label": "Phone",
+        "value": "080-4870-5690"
+      },
+      "3": {
+        "label": "Base",
+        "value": "Yokohama Japan"
+      }
+    },
+    "socials": {
+      "1": {
+        "label": "X",
+        "href": "https://twitter.com/a1road"
+      },
+      "2": {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com/company/a1road"
+      },
+      "3": {
+        "label": "GitHub",
+        "href": "https://github.com/a1road"
+      }
+    }
+  },
+  "top": {
+    "hero": {
+      "main": {
+        "eyebrow": "A-One Road",
+        "title": "Japanese Commercial Vehicles for Global Buyers",
+        "copy": "For dealers fleets and commercial buyers seeking reliable sourcing from Japan.",
+        "primaryLabel": "View Service",
+        "primaryHref": "/service",
+        "secondaryLabel": "Contact",
+        "secondaryHref": "/contact",
+        "image": "/business-sourcing.png",
+        "scroll": "Scroll"
+      }
+    },
+    "identity": {
+      "main": {
+        "eyebrow": "Identity",
+        "title": "Restore rightful value.",
+        "copy": "A company that keeps asking the world what Japanese value means through vehicles."
+      }
+    },
+    "servicePreviewHeader": {
+      "main": {
+        "eyebrow": "Service",
+        "title": "Business Sourcing / Bulk Orders / Export Support",
+        "linkLabel": "View all",
+        "linkHref": "/service"
+      }
+    },
+    "servicePreview": {
+      "1": {
+        "title": "Business Sourcing",
+        "copy": "We narrow candidate vehicles against the buyer brief and move sourcing decisions forward.",
+        "image": "/business-sourcing.png",
+        "href": "/service#business-sourcing"
+      },
+      "2": {
+        "title": "Bulk Orders",
+        "copy": "We support multi-unit sourcing alignment and commercial coordination.",
+        "image": "/bulk-orders.png",
+        "href": "/service#bulk-orders"
+      },
+      "3": {
+        "title": "Export Support",
+        "copy": "We reduce friction in export coordination and handover.",
+        "image": "/export-support.png",
+        "href": "/service#export-support"
+      }
+    },
+    "visualHeader": {
+      "main": {
+        "eyebrow": "Visual",
+        "title": "Proof by atmosphere."
+      }
+    },
+    "visualProof": {
+      "1": {
+        "image": "/visual-proof-2.png",
+        "alt": "Japanese vehicle sourcing visual"
+      },
+      "2": {
+        "image": "/HP2copy.png",
+        "alt": "Vehicle and road visual"
+      },
+      "3": {
+        "image": "/hptop.png",
+        "alt": "Commercial vehicle export visual"
+      },
+      "4": {
+        "image": "/workflow.png",
+        "alt": "Export support visual"
+      }
+    },
+    "aboutPreview": {
+      "main": {
+        "eyebrow": "About",
+        "title": "Why this company exists.",
+        "copy": "We recontextualize Japanese commercial vehicles and connect them with global demand.",
+        "linkLabel": "About",
+        "linkHref": "/about-us",
+        "image": "/about-preview.png"
+      }
+    },
+    "signalHeader": {
+      "main": {
+        "eyebrow": "Process",
+        "title": "Verified Vehicle Information"
+      }
+    },
+    "signalSteps": {
+      "1": {
+        "number": "01",
+        "title": "Business Sourcing",
+        "copy": "Business Sourcing"
+      },
+      "2": {
+        "number": "02",
+        "title": "Bulk Orders",
+        "copy": "Bulk Orders"
+      },
+      "3": {
+        "number": "03",
+        "title": "Export Support",
+        "copy": "Export Support"
+      }
+    },
+    "contactCta": {
+      "main": {
+        "eyebrow": "Contact",
+        "title": "Start the conversation.",
+        "copy": "通常問い合わせ 法人調達相談 資料請求を一つの窓口で受けます。",
+        "buttonLabel": "Go to Contact",
+        "buttonHref": "/contact"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "main": {
+        "eyebrow": "About",
+        "title": "What A-One Road is.",
+        "copy": "A page for reason posture and business definition only.",
+        "image": "/about-hero.png"
+      }
+    },
+    "statement": {
+      "main": {
+        "eyebrow": "Statement",
+        "title": "全ての人の正当な価値を取り戻す",
+        "copy": "自動車を通じて日本の価値を世界に問い続ける。"
+      }
+    },
+    "philosophyHeader": {
+      "main": {
+        "eyebrow": "Philosophy",
+        "title": "Three anchors."
+      }
+    },
+    "philosophy": {
+      "1": {
+        "title": "Mission",
+        "copy": "Reduce structures that bury value and increase transactions where value reaches the right buyer."
+      },
+      "2": {
+        "title": "Vision",
+        "copy": "Keep connecting Japanese vehicles and field knowledge with real demand worldwide."
+      },
+      "3": {
+        "title": "Definition",
+        "copy": "Updating and redefining automotive culture in Japan and abroad through used commercial vehicle export."
+      }
+    },
+    "story": {
+      "main": {
+        "eyebrow": "Background",
+        "title": "Context before volume.",
+        "copy": "Before scaling volume we sharpen buyer context and vehicle information. Reliable export is built from there.",
+        "image": "/about-story.png"
+      }
+    },
+    "differentiatorHeader": {
+      "main": {
+        "eyebrow": "Difference",
+        "title": "Three signals."
+      }
+    },
+    "differentiator": {
+      "1": {
+        "title": "Buyer Context",
+        "copy": "We define use case before discussing units."
+      },
+      "2": {
+        "title": "Verified Information",
+        "copy": "We standardize the level of information needed for decisions."
+      },
+      "3": {
+        "title": "Execution",
+        "copy": "We handle the flow from sourcing through export execution without breaks."
+      }
+    },
+    "closing": {
+      "main": {
+        "eyebrow": "Next",
+        "title": "See the service.",
+        "buttonLabel": "View Service",
+        "buttonHref": "/service"
+      }
+    }
+  },
+  "service": {
+    "hero": {
+      "main": {
+        "eyebrow": "Service",
+        "title": "What we provide.",
+        "copy": "Japanese commercial vehicle sourcing for dealers fleets and commercial buyers."
+      }
+    },
+    "indexHeader": {
+      "main": {
+        "eyebrow": "Index",
+        "title": "Four service blocks."
+      }
+    },
+    "index": {
+      "1": {
+        "id": "business-sourcing",
+        "title": "Business Sourcing",
+        "line": "From requirement alignment to vehicle shortlist.",
+        "image": "/business-sourcing.png"
+      },
+      "2": {
+        "id": "bulk-orders",
+        "title": "Bulk Orders",
+        "line": "Structured sourcing for multiple units.",
+        "image": "/bulk-orders.png"
+      },
+      "3": {
+        "id": "export-support",
+        "title": "Export Support",
+        "line": "Execution support for export delivery.",
+        "image": "/export-support.png"
+      },
+      "4": {
+        "id": "verified-vehicle-information",
+        "title": "Verified Vehicle Information",
+        "line": "Sharper information for faster decisions.",
+        "image": "/HP2copy.png"
+      }
+    },
+    "detail": {
+      "1": {
+        "id": "business-sourcing",
+        "title": "Business Sourcing",
+        "what": "We support sourcing Japanese commercial vehicles for individual and business buyers.",
+        "value": "Reduce wasted search and early-stage misalignment.",
+        "flow": "Brief alignment and vehicle shortlist.",
+        "output": "Shortlist and decision material."
+      },
+      "2": {
+        "id": "bulk-orders",
+        "title": "Bulk Orders",
+        "what": "We structure priorities and conditions for multi-unit sourcing.",
+        "value": "Keep decision criteria stable even as unit count grows.",
+        "flow": "Volume planning and lot coordination.",
+        "output": "Aligned terms before ordering."
+      },
+      "3": {
+        "id": "export-support",
+        "title": "Export Support",
+        "what": "We unify export coordination and execution flow.",
+        "value": "Reduce friction before and after handover.",
+        "flow": "Progress tracking and export coordination.",
+        "output": "Visible export progress."
+      },
+      "4": {
+        "id": "verified-vehicle-information",
+        "title": "Verified Vehicle Information",
+        "what": "We gather the vehicle information buyers need to decide.",
+        "value": "Lower uncertainty for buyers.",
+        "flow": "Condition review and information packaging.",
+        "output": "Comparable information set."
+      }
+    },
+    "processHeader": {
+      "main": {
+        "eyebrow": "Process",
+        "title": "Four steps."
+      }
+    },
+    "process": {
+      "1": {
+        "number": "01",
+        "title": "United States",
+        "copy": "U.S. market support"
+      },
+      "2": {
+        "number": "02",
+        "title": "Europe",
+        "copy": "European market support"
+      },
+      "3": {
+        "number": "03",
+        "title": "Other markets",
+        "copy": "Other regional support"
+      },
+      "4": {
+        "number": "04",
+        "title": "Japan",
+        "copy": "Sourced in Japan"
+      }
+    },
+    "faqHeader": {
+      "main": {
+        "eyebrow": "FAQ",
+        "title": "Short answers."
+      }
+    },
+    "faq": {
+      "1": {
+        "question": "What vehicles do you handle",
+        "answer": "We mainly source kei trucks"
+      },
+      "2": {
+        "question": "Can businesses request multiple vehicles",
+        "answer": "Yes"
+      },
+      "3": {
+        "question": "Which markets do you support",
+        "answer": "United States"
+      },
+      "4": {
+        "question": "Can vehicle condition be confirmed",
+        "answer": "Available information is organized and shared."
+      },
+      "5": {
+        "question": "Can I contact you before deciding",
+        "answer": "Yes"
+      }
+    },
+    "contactCta": {
+      "main": {
+        "eyebrow": "Contact",
+        "title": "Discuss your requirement.",
+        "buttonLabel": "Contact",
+        "buttonHref": "/contact"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "main": {
+        "eyebrow": "Contact",
+        "title": "For buyers and sellers",
+        "copy": "If you are looking to source Japanese commercial vehicles from overseas"
+      }
+    },
+    "methodsHeader": {
+      "main": {
+        "eyebrow": "Methods",
+        "title": "Three options."
+      }
+    },
+    "methods": {
+      "1": {
+        "title": "Form",
+        "line": "Primary channel"
+      },
+      "2": {
+        "title": "Email",
+        "line": "admin@a1-road.com"
+      },
+      "3": {
+        "title": "LinkedIn",
+        "line": "External channel"
+      }
+    },
+    "formHeader": {
+      "main": {
+        "eyebrow": "Form",
+        "title": "For partnerships press and general inquiries",
+        "copy": ""
+      }
+    },
+    "form": {
+      "main": {
+        "typeLabel": "Inquiry Type",
+        "nameLabel": "Name",
+        "emailLabel": "Email",
+        "subjectLabel": "Subject",
+        "messageLabel": "Message",
+        "submitLabel": "Send",
+        "submittingLabel": "Sending"
+      }
+    },
+    "formOptions": {
+      "1": {
+        "value": "General Inquiry"
+      },
+      "2": {
+        "value": "Business Sourcing"
+      },
+      "3": {
+        "value": "Document Request"
+      }
+    },
+    "infoHeader": {
+      "main": {
+        "eyebrow": "Info",
+        "title": "Supplement."
+      }
+    },
+    "info": {
+      "1": {
+        "label": "Hours",
+        "value": "Weekdays 10:00 to 18:00 JST"
+      },
+      "2": {
+        "label": "Reply",
+        "value": "We usually reply within two business days."
+      },
+      "3": {
+        "label": "Base",
+        "value": "Yokohama Japan"
+      },
+      "4": {
+        "label": "SNS",
+        "value": "X / LinkedIn / GitHub"
+      }
+    },
+    "reassurance": {
+      "main": {
+        "text": "A short reply starts here."
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { getNewsList } from "@/actions/news";
 
+export const runtime = "edge";
+
 const emptyList = {
   contents: [],
   totalCount: 0,

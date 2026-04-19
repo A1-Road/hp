@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
 import { z } from "zod";
+
+export const runtime = "edge";
 
 const contactSchema = z.object({
   inquiryType: z.string().trim().min(1, "Inquiry type is required.").max(120),
@@ -21,43 +22,12 @@ export async function POST(request: Request) {
     );
   }
 
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, CONTACT_TO_EMAIL, CONTACT_FROM_EMAIL } =
-    process.env;
-
-  if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASS || !CONTACT_TO_EMAIL) {
-    return NextResponse.json(
-      { message: "メール送信設定が未完了です。環境変数を確認してください。" },
-      { status: 500 }
-    );
-  }
-
-  const transporter = nodemailer.createTransport({
-    host: SMTP_HOST,
-    port: Number(SMTP_PORT),
-    secure: Number(SMTP_PORT) === 465,
-    auth: {
-      user: SMTP_USER,
-      pass: SMTP_PASS,
+  return NextResponse.json(
+    {
+      message:
+        "This endpoint is not used in production. Please submit the embedded HubSpot form instead.",
+      payload: parsed.data,
     },
-  });
-
-  const payload = parsed.data;
-
-  await transporter.sendMail({
-    from: CONTACT_FROM_EMAIL || SMTP_USER,
-    to: CONTACT_TO_EMAIL,
-    replyTo: payload.email,
-    subject: `[Web Contact] ${payload.subject}`,
-    text: [
-      `Inquiry Type: ${payload.inquiryType}`,
-      `Name: ${payload.name}`,
-      `Email: ${payload.email}`,
-      `Subject: ${payload.subject}`,
-      "",
-      "Message:",
-      payload.message,
-    ].join("\n"),
-  });
-
-  return NextResponse.json({ message: "ok" });
+    { status: 501 }
+  );
 }

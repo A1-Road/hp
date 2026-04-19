@@ -8,6 +8,8 @@ import Script from "next/script";
 import { getContentItem, getContentItems } from "@/lib/site-content";
 import { getSiteLocale } from "@/lib/locale";
 
+export const runtime = "edge";
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,

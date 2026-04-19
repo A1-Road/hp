@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import FAQ from "@/components/faq";
 import { getContentItem, getContentItems } from "@/lib/site-content";
 
+export const runtime = "edge";
+
 export default async function ServicePage() {
   const hero = await getContentItem("service", "hero");
   const indexHeader = await getContentItem("service", "indexHeader");

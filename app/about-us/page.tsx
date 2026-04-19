@@ -4,6 +4,8 @@ import { AnimatedSection } from "@/components/ui/animated-section";
 import { Button } from "@/components/ui/button";
 import { getContentItem, getContentItems } from "@/lib/site-content";
 
+export const runtime = "edge";
+
 export default async function AboutPage() {
   const hero = await getContentItem("about", "hero");
   const statement = await getContentItem("about", "statement");

@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { getEvents } from "@/actions/events";
 
+export const runtime = "edge";
+
 export async function GET() {
   try {
     const events = await getEvents();

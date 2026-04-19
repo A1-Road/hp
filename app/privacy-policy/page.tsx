@@ -1,5 +1,7 @@
 "use client";
 
+export const runtime = "edge";
+
 export default function PrivacyPolicy() {
   return (
     <div className="pt-24">
