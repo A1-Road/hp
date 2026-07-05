@@ -14,13 +14,17 @@
         "href": "/service"
       },
       "4": {
+        "label": "海外ベンダー向け",
+        "href": "/global-vendors"
+      },
+      "5": {
         "label": "CONTACT",
         "href": "/contact"
       }
     },
     "footer": {
       "main": {
-        "tagline": "日本の商用車を世界の買い手へ届けるための調達支援。",
+        "tagline": "海外プロダクトの日本オンボーディングと、日本の商用車輸出。価値を、正当に評価される市場へ。",
         "privacyLabel": "プライバシーポリシー",
         "copyright": "© 2026 A-One Road"
       }
@@ -46,18 +50,18 @@
       },
       "3": {
         "label": "GitHub",
-        "href": "https://github.com/a1road"
+        "href": "https://github.com/A1-Road"
       }
     }
   },
   "top": {
     "hero": {
       "main": {
-        "eyebrow": "A-One Road",
-        "title": "日本の商用車を、世界の現場へ。",
-        "copy": "すべての人の正当な価値を取り戻すというミッションの下、自動車を通じて日本の価値を世界に問い続ける。個人・法人向けに、日本の軽トラックやユーティリティ車両を輸出しています。用途に応じた車両選定から輸出まで、一貫して対応します。",
-        "primaryLabel": "サービスを見る",
-        "primaryHref": "/service",
+        "eyebrow": "OUR MISSION",
+        "title": "すべての人の正当な価値を取り戻す。",
+        "copy": "自動車を通じて、日本の価値を世界に問い続ける。エーワンロードは、海外プロダクトの日本オンボーディング、日本の商用車輸出、自動車関連イベントの三つの事業で、この理念を実践しています。",
+        "primaryLabel": "事業内容を見る",
+        "primaryHref": "#what-we-do",
         "secondaryLabel": "お問い合わせ",
         "secondaryHref": "/contact",
         "image": "/business-sourcing.png",
@@ -66,15 +70,48 @@
     },
     "identity": {
       "main": {
-        "eyebrow": "IDENTITY",
-        "title": "すべての人の正当な価値を取り戻す",
-        "copy": ""
+        "eyebrow": "OUR VISION",
+        "title": "自動車を通じて、日本の価値を世界に問い続ける。",
+        "copy": "埋もれた価値を再編集し、正当に評価される市場へ届ける。私たちはこの視点で、ソフトウェアから車両、そして自動車文化までを扱います。"
+      }
+    },
+    "whatWeDoHeader": {
+      "main": {
+        "eyebrow": "BUSINESS",
+        "title": "事業内容",
+        "copy": "一つの理念から生まれた、三つの事業。"
+      }
+    },
+    "whatWeDo": {
+      "1": {
+        "tag": "GTM PARTNER",
+        "title": "海外プロダクトの日本オンボーディング",
+        "copy": "海外のAI・セキュリティソフトウェアベンダー向けに、市場調査からアウトバウンド営業・有償PoC設計まで、日本市場参入をGTMパートナーとして支援します。",
+        "image": "/workflow.png",
+        "href": "/global-vendors",
+        "linkLabel": "詳しく見る"
+      },
+      "2": {
+        "tag": "VEHICLE EXPORT",
+        "title": "日本の商用車輸出",
+        "copy": "軽トラックやユーティリティ車両など日本の商用中古車を、個人・法人の海外バイヤーへ届けます。車両選定から輸出手続きまで一貫して対応します。",
+        "image": "/business-sourcing.png",
+        "href": "/service",
+        "linkLabel": "詳しく見る"
+      },
+      "3": {
+        "tag": "EVENTS",
+        "title": "自動車関連イベント",
+        "copy": "自動車文化をテーマにしたイベントの企画・運営。詳細は準備中です。",
+        "image": "/hptop.png",
+        "href": "",
+        "linkLabel": "COMING SOON"
       }
     },
     "servicePreviewHeader": {
       "main": {
-        "eyebrow": "SERVICE",
-        "title": "日本の商用中古車輸出・法人向けDXコンサルティング",
+        "eyebrow": "VEHICLE EXPORT",
+        "title": "商用車輸出サービス",
         "linkLabel": "一覧を見る",
         "linkHref": "/service"
       }
@@ -491,6 +528,166 @@
     "reassurance": {
       "main": {
         "text": ""
+      }
+    }
+  },
+  "globalVendors": {
+    "hero": {
+      "main": {
+        "eyebrow": "FOR GLOBAL VENDORS",
+        "title": "海外プロダクトの日本オンボーディング",
+        "copy": "海外のAI・セキュリティソフトウェアベンダー向けに、日本市場での検証・ポジショニング・販売活動をGTMパートナーとして支援します。横浜を拠点に、日英バイリンガルで運営しています。",
+        "primaryLabel": "お問い合わせ",
+        "primaryHref": "/contact"
+      }
+    },
+    "intro": {
+      "main": {
+        "eyebrow": "WHY A-ONE ROAD",
+        "title": "資料ではなく、現場で動くパートナー。",
+        "copy": "日本参入でつまずくのは、多くの場合プロダクトの品質ではなく、言語・信頼・企業の意思決定プロセスです。私たちは現地の実働パートナーとして、見込み客と日本語で対話し、英語でレポートし、関心を具体的なPoCパイプラインへつなげます。"
+      }
+    },
+    "servicesHeader": {
+      "main": {
+        "eyebrow": "WHAT WE DO",
+        "title": "日本GTM支援サービス",
+        "copy": "最初の市場シグナルの検証から、実際に動く営業体制まで。"
+      }
+    },
+    "services": {
+      "1": {
+        "title": "市場調査・検証",
+        "copy": "日本市場での需要を検証します。競合状況、規制環境、ターゲットユーザーからの率直なフィードバックを収集します。"
+      },
+      "2": {
+        "title": "ポジショニング設計",
+        "copy": "日本の買い手の評価軸に合わせて、バリュープロポジションを自然な日本語で再構築します。"
+      },
+      "3": {
+        "title": "ターゲットアカウント選定",
+        "copy": "翻訳資料の一斉送付ではなく、狙う価値のある企業リストを絞り込んで作成します。"
+      },
+      "4": {
+        "title": "営業資料のローカライズ",
+        "copy": "日本の商習慣に合わせた日本語の提案資料・ワンページャー・デモスクリプトを作成します。"
+      },
+      "5": {
+        "title": "アウトバウンド営業",
+        "copy": "貴社に代わって日本語でアプローチと初回商談を実施し、すべてのやり取りを英語で報告します。"
+      },
+      "6": {
+        "title": "顧客インタビュー",
+        "copy": "見込み客・ユーザーへの構造化インタビューを実施し、翻訳・要約して日本市場の声をそのまま届けます。"
+      },
+      "7": {
+        "title": "有償PoC設計",
+        "copy": "日本企業が対価を払う実証実験（PoC）を、明確な成功基準とともに設計します。"
+      },
+      "8": {
+        "title": "代理店・リセラー開拓",
+        "copy": "候補となる代理店・リセラーを特定してアプローチし、初期交渉を支援します。"
+      }
+    },
+    "pilotHeader": {
+      "main": {
+        "eyebrow": "ENGAGEMENT",
+        "title": "Japan GTM Pilot",
+        "copy": "机上のレポートではなく、実際の商談を通じて日本市場を検証する、有償・スコープ固定のエンゲージメントです。"
+      }
+    },
+    "pilotFacts": {
+      "1": {
+        "label": "料金",
+        "value": "USD 5,000〜"
+      },
+      "2": {
+        "label": "期間",
+        "value": "30〜45日"
+      },
+      "3": {
+        "label": "スコープ",
+        "value": "開始前に活動内容と成果物を明確に合意します。"
+      }
+    },
+    "deliverablesHeader": {
+      "main": {
+        "eyebrow": "DELIVERABLES",
+        "title": "パイロットの成果物"
+      }
+    },
+    "deliverables": {
+      "1": {
+        "number": "01",
+        "title": "市場フィードバックレポート",
+        "copy": "貴社のプロダクト・価格・市場適合について、日本の見込み客が実際に語った内容をまとめます。"
+      },
+      "2": {
+        "number": "02",
+        "title": "クオリファイ済み商談",
+        "copy": "ターゲット像に合致する企業との初回商談・紹介の機会を創出します。"
+      },
+      "3": {
+        "number": "03",
+        "title": "PoCパイプライン",
+        "copy": "有償PoCに向けた次のアクションが明確な、具体的な企業リストを提示します。"
+      }
+    },
+    "termsHeader": {
+      "main": {
+        "eyebrow": "HOW WE WORK",
+        "title": "率直な前提条件"
+      }
+    },
+    "terms": {
+      "1": {
+        "title": "売上保証なし",
+        "copy": "合意した活動と成果物にコミットします。売上や契約そのものは保証しません。"
+      },
+      "2": {
+        "title": "貴社にお願いすること",
+        "copy": "パイロット期間中のデモ環境・プロダクト資料・技術サポートのご提供をお願いします。"
+      },
+      "3": {
+        "title": "当社が担うこと",
+        "copy": "日英バイリンガルでの実行。日本語での開拓・商談・インタビューと、英語でのレポーティングを担います。"
+      }
+    },
+    "companyHeader": {
+      "main": {
+        "eyebrow": "COMPANY",
+        "title": "パートナーの素性"
+      }
+    },
+    "company": {
+      "1": {
+        "label": "会社名",
+        "value": "エーワンロード株式会社（A-one road co.,ltd）"
+      },
+      "2": {
+        "label": "設立",
+        "value": "2021年3月"
+      },
+      "3": {
+        "label": "拠点",
+        "value": "神奈川県横浜市"
+      },
+      "4": {
+        "label": "代表取締役",
+        "value": "田村一馬"
+      },
+      "5": {
+        "label": "体制",
+        "value": "日英バイリンガル運営"
+      }
+    },
+    "contactCta": {
+      "main": {
+        "eyebrow": "CONTACT",
+        "title": "プロダクトについてお聞かせください。",
+        "copy": "日本市場を試す価値があるかどうか、短い対話から一緒に見極めます。",
+        "buttonLabel": "お問い合わせへ",
+        "buttonHref": "/contact"
       }
     }
   }

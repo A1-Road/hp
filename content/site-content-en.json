@@ -14,13 +14,17 @@
         "href": "/service"
       },
       "4": {
+        "label": "For Global Vendors",
+        "href": "/global-vendors"
+      },
+      "5": {
         "label": "Contact",
         "href": "/contact"
       }
     },
     "footer": {
       "main": {
-        "tagline": "Japanese commercial vehicles sourced for global buyers.",
+        "tagline": "Japan onboarding for global products and Japanese commercial vehicles for global buyers.",
         "privacyLabel": "Privacy Policy",
         "copyright": "© 2026 A-One Road"
       }
@@ -46,18 +50,18 @@
       },
       "3": {
         "label": "GitHub",
-        "href": "https://github.com/a1road"
+        "href": "https://github.com/A1-Road"
       }
     }
   },
   "top": {
     "hero": {
       "main": {
-        "eyebrow": "A-One Road",
-        "title": "Japanese Commercial Vehicles for Global Buyers",
-        "copy": "For dealers fleets and commercial buyers seeking reliable sourcing from Japan.",
-        "primaryLabel": "View Service",
-        "primaryHref": "/service",
+        "eyebrow": "Our Mission",
+        "title": "Restore rightful value.",
+        "copy": "Through vehicles — and beyond — we keep asking the world what Japanese value means. A-one road runs three businesses on this mission: Japan onboarding for global products, commercial vehicle export from Japan, and automotive culture events.",
+        "primaryLabel": "See what we do",
+        "primaryHref": "#what-we-do",
         "secondaryLabel": "Contact",
         "secondaryHref": "/contact",
         "image": "/business-sourcing.png",
@@ -66,15 +70,48 @@
     },
     "identity": {
       "main": {
-        "eyebrow": "Identity",
-        "title": "Restore rightful value.",
-        "copy": "A company that keeps asking the world what Japanese value means through vehicles."
+        "eyebrow": "Our Vision",
+        "title": "Through mobility, we continue to ask the world about the value of Japan.",
+        "copy": "We re-edit undervalued assets — software, vehicles, and automotive culture — and deliver them to markets where they are rightly valued."
+      }
+    },
+    "whatWeDoHeader": {
+      "main": {
+        "eyebrow": "Business",
+        "title": "What we do",
+        "copy": "Three businesses built on one mission."
+      }
+    },
+    "whatWeDo": {
+      "1": {
+        "tag": "GTM Partner",
+        "title": "Global Product Japan Onboarding",
+        "copy": "We help overseas AI and security software vendors enter Japan — from market research to outbound sales and paid PoC design — as your Japan GTM partner.",
+        "image": "/workflow.png",
+        "href": "/global-vendors",
+        "linkLabel": "Learn more"
+      },
+      "2": {
+        "tag": "Vehicle Export",
+        "title": "Commercial Vehicle Export",
+        "copy": "We source and export Japanese used commercial vehicles — kei trucks and utility vehicles — for individual and business buyers worldwide, from selection through export procedures.",
+        "image": "/business-sourcing.png",
+        "href": "/service",
+        "linkLabel": "Learn more"
+      },
+      "3": {
+        "tag": "Events",
+        "title": "Automotive Culture Events",
+        "copy": "Planning and running events around automotive culture. Details in preparation.",
+        "image": "/hptop.png",
+        "href": "",
+        "linkLabel": "Coming soon"
       }
     },
     "servicePreviewHeader": {
       "main": {
-        "eyebrow": "Service",
-        "title": "Business Sourcing / Bulk Orders / Export Support",
+        "eyebrow": "Vehicle Export",
+        "title": "Commercial Vehicle Export Services",
         "linkLabel": "View all",
         "linkHref": "/service"
       }
@@ -491,6 +528,166 @@
     "reassurance": {
       "main": {
         "text": ""
+      }
+    }
+  },
+  "globalVendors": {
+    "hero": {
+      "main": {
+        "eyebrow": "For Global Vendors",
+        "title": "Your Japan go-to-market partner.",
+        "copy": "A-one road helps overseas AI and security software vendors validate, position, and sell in the Japanese market. Bilingual Japanese-English operation, based in Yokohama.",
+        "primaryLabel": "Contact us",
+        "primaryHref": "/contact"
+      }
+    },
+    "intro": {
+      "main": {
+        "eyebrow": "Why A-one road",
+        "title": "A local operator, not a directory.",
+        "copy": "Japan entry rarely fails on product quality. It fails on language, trust, and enterprise decision processes. We work as your hands-on partner on the ground: we speak with your prospects in Japanese, report back in English, and turn interest into a concrete PoC pipeline."
+      }
+    },
+    "servicesHeader": {
+      "main": {
+        "eyebrow": "What we do",
+        "title": "Japan GTM services.",
+        "copy": "From the first market signal to a working sales motion."
+      }
+    },
+    "services": {
+      "1": {
+        "title": "Market Research & Validation",
+        "copy": "We assess demand for your product in Japan: competitive landscape, regulatory context, and honest feedback from target users."
+      },
+      "2": {
+        "title": "Positioning & Messaging",
+        "copy": "We adapt your value proposition to how Japanese buyers evaluate software, in natural Japanese."
+      },
+      "3": {
+        "title": "Target Account Selection",
+        "copy": "We build a focused list of accounts worth pursuing, instead of spraying a translated deck at everyone."
+      },
+      "4": {
+        "title": "Localized Sales Materials",
+        "copy": "Japanese-language decks, one-pagers, and demo scripts that match local business conventions."
+      },
+      "5": {
+        "title": "Outbound Sales",
+        "copy": "We run outreach and first meetings in Japanese on your behalf and report every conversation back in English."
+      },
+      "6": {
+        "title": "Customer Interviews",
+        "copy": "Structured interviews with prospects and users, translated and summarized so you hear the Japanese market directly."
+      },
+      "7": {
+        "title": "Paid PoC Design",
+        "copy": "We scope proof-of-concept projects that Japanese enterprises will pay for, with clear success criteria."
+      },
+      "8": {
+        "title": "Distributor & Reseller Development",
+        "copy": "We identify and approach candidate distributors and resellers, and support first negotiations."
+      }
+    },
+    "pilotHeader": {
+      "main": {
+        "eyebrow": "Engagement",
+        "title": "Japan GTM Pilot.",
+        "copy": "A paid, fixed-scope engagement that tests Japan through real conversations — not a report written from a desk."
+      }
+    },
+    "pilotFacts": {
+      "1": {
+        "label": "Pricing",
+        "value": "From USD 5,000"
+      },
+      "2": {
+        "label": "Duration",
+        "value": "30–45 days"
+      },
+      "3": {
+        "label": "Scope",
+        "value": "Clearly defined activities and deliverables agreed before kickoff."
+      }
+    },
+    "deliverablesHeader": {
+      "main": {
+        "eyebrow": "Deliverables",
+        "title": "What the pilot produces."
+      }
+    },
+    "deliverables": {
+      "1": {
+        "number": "01",
+        "title": "Market Feedback Report",
+        "copy": "What Japanese prospects actually said about your product, pricing, and market fit."
+      },
+      "2": {
+        "number": "02",
+        "title": "Qualified Meetings",
+        "copy": "Introductions and first meetings with accounts that match your target profile."
+      },
+      "3": {
+        "number": "03",
+        "title": "PoC Pipeline",
+        "copy": "A concrete list of accounts with clear next steps toward paid proof-of-concept projects."
+      }
+    },
+    "termsHeader": {
+      "main": {
+        "eyebrow": "How we work",
+        "title": "Plain terms."
+      }
+    },
+    "terms": {
+      "1": {
+        "title": "No revenue guarantees",
+        "copy": "We commit to defined activities and deliverables, not to sales outcomes."
+      },
+      "2": {
+        "title": "Your side",
+        "copy": "You provide a demo environment, product documentation, and technical support during the pilot."
+      },
+      "3": {
+        "title": "Our side",
+        "copy": "Bilingual Japanese-English execution: prospecting, meetings, and interviews in Japanese, reporting in English."
+      }
+    },
+    "companyHeader": {
+      "main": {
+        "eyebrow": "Company",
+        "title": "Who you work with."
+      }
+    },
+    "company": {
+      "1": {
+        "label": "Company",
+        "value": "A-one road co.,ltd (エーワンロード株式会社)"
+      },
+      "2": {
+        "label": "Founded",
+        "value": "March 2021"
+      },
+      "3": {
+        "label": "Base",
+        "value": "Yokohama, Japan"
+      },
+      "4": {
+        "label": "Representative Director",
+        "value": "Kazuma Tamura"
+      },
+      "5": {
+        "label": "Operation",
+        "value": "Bilingual Japanese-English"
+      }
+    },
+    "contactCta": {
+      "main": {
+        "eyebrow": "Contact",
+        "title": "Tell us about your product.",
+        "copy": "One short conversation is enough to see whether Japan is worth testing for you.",
+        "buttonLabel": "Contact us",
+        "buttonHref": "/contact"
       }
     }
   }
