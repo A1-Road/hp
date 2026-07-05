@@ -24,7 +24,7 @@ global,socials,3,label,GitHub
 global,socials,3,href,https://github.com/A1-Road
 top,hero,main,eyebrow,Our Mission
 top,hero,main,title,Restore rightful value.
-top,hero,main,copy,Through vehicles — and beyond — we keep asking the world what Japanese value means. A-one road runs three businesses on this mission: Japan onboarding for global products, commercial vehicle export from Japan, and automotive culture events.
+top,hero,main,copy,"A-one road puts one mission into practice through two businesses: Japan onboarding for global software products, and our automotive business spanning vehicle export, parts support, and event operations.", commercial vehicle export from Japan, and automotive culture events.
 top,hero,main,primaryLabel,See what we do
 top,hero,main,primaryHref,#what-we-do
 top,hero,main,secondaryLabel,Contact
@@ -36,25 +36,19 @@ top,identity,main,title,Through mobility, we continue to ask the world about the
 top,identity,main,copy,We re-edit undervalued assets — software, vehicles, and automotive culture — and deliver them to markets where they are rightly valued.
 top,whatWeDoHeader,main,eyebrow,Business
 top,whatWeDoHeader,main,title,What we do
-top,whatWeDoHeader,main,copy,Three businesses built on one mission.
+top,whatWeDoHeader,main,copy,Two businesses born from one mission.
 top,whatWeDo,1,tag,GTM Partner
 top,whatWeDo,1,title,Global Product Japan Onboarding
 top,whatWeDo,1,copy,We help overseas AI and security software vendors enter Japan — from market research to outbound sales and paid PoC design — as your Japan GTM partner.
 top,whatWeDo,1,image,/workflow.png
 top,whatWeDo,1,href,/global-vendors
 top,whatWeDo,1,linkLabel,Learn more
-top,whatWeDo,2,tag,Vehicle Export
-top,whatWeDo,2,title,Commercial Vehicle Export
-top,whatWeDo,2,copy,We source and export Japanese used commercial vehicles — kei trucks and utility vehicles — for individual and business buyers worldwide, from selection through export procedures.
+top,whatWeDo,2,tag,AUTOMOTIVE
+top,whatWeDo,2,title,Automotive Business
+top,whatWeDo,2,copy,"Vehicle export, parts support, and event operations — delivering the value of Japanese automobiles as both products and culture.", from selection through export procedures.
 top,whatWeDo,2,image,/business-sourcing.png
 top,whatWeDo,2,href,/service
 top,whatWeDo,2,linkLabel,Learn more
-top,whatWeDo,3,tag,Events
-top,whatWeDo,3,title,Automotive Culture Events
-top,whatWeDo,3,copy,Planning and running events around automotive culture. Details in preparation.
-top,whatWeDo,3,image,/hptop.png
-top,whatWeDo,3,href,
-top,whatWeDo,3,linkLabel,Coming soon
 top,servicePreviewHeader,main,eyebrow,Vehicle Export
 top,servicePreviewHeader,main,title,Commercial Vehicle Export Services
 top,servicePreviewHeader,main,linkLabel,View all

@@ -59,7 +59,7 @@
       "main": {
         "eyebrow": "Our Mission",
         "title": "Restore rightful value.",
-        "copy": "Through vehicles — and beyond — we keep asking the world what Japanese value means. A-one road runs three businesses on this mission: Japan onboarding for global products, commercial vehicle export from Japan, and automotive culture events.",
+        "copy": "\"A-one road puts one mission into practice through two businesses: Japan onboarding for global software products, and our automotive business spanning vehicle export, parts support, and event operations.\", commercial vehicle export from Japan, and automotive culture events.",
         "primaryLabel": "See what we do",
         "primaryHref": "#what-we-do",
         "secondaryLabel": "Contact",
@@ -79,7 +79,7 @@
       "main": {
         "eyebrow": "Business",
         "title": "What we do",
-        "copy": "Three businesses built on one mission."
+        "copy": "Two businesses born from one mission."
       }
     },
     "whatWeDo": {
@@ -92,20 +92,12 @@
         "linkLabel": "Learn more"
       },
       "2": {
-        "tag": "Vehicle Export",
-        "title": "Commercial Vehicle Export",
-        "copy": "We source and export Japanese used commercial vehicles — kei trucks and utility vehicles — for individual and business buyers worldwide, from selection through export procedures.",
+        "tag": "AUTOMOTIVE",
+        "title": "Automotive Business",
+        "copy": "\"Vehicle export, parts support, and event operations — delivering the value of Japanese automobiles as both products and culture.\", from selection through export procedures.",
         "image": "/business-sourcing.png",
         "href": "/service",
         "linkLabel": "Learn more"
-      },
-      "3": {
-        "tag": "Events",
-        "title": "Automotive Culture Events",
-        "copy": "Planning and running events around automotive culture. Details in preparation.",
-        "image": "/hptop.png",
-        "href": "",
-        "linkLabel": "Coming soon"
       }
     },
     "servicePreviewHeader": {

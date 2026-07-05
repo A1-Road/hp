@@ -54,7 +54,7 @@ export default async function HomePage() {
             </div>
           </AnimatedSection>
           <AnimatedSection delay={150}>
-            <div className="mt-14 grid grid-cols-1 gap-px border border-white/12 bg-white/12 sm:grid-cols-3">
+            <div className="mt-14 grid grid-cols-1 gap-px border border-white/12 bg-white/12 sm:grid-cols-2">
               {businesses.map((business) => (
                 <div key={business.tag} className="bg-[#050507] px-5 py-4">
                   <p className="text-[11px] uppercase tracking-[0.3em] text-white/44">{business.tag}</p>
@@ -88,7 +88,7 @@ export default async function HomePage() {
             </div>
           </AnimatedSection>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
+          <div className="mt-10 grid gap-4 md:grid-cols-2">
             {businesses.map((business, index) => {
               const card = (
                 <div className="flex h-full flex-col border border-white/18">
