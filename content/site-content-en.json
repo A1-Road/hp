@@ -379,15 +379,15 @@
     "faq": {
       "1": {
         "question": "What vehicles do you handle",
-        "answer": "We mainly source kei trucks"
+        "answer": "We mainly source kei trucks, vans, and compact commercial vehicles."
       },
       "2": {
         "question": "Can businesses request multiple vehicles",
-        "answer": "Yes"
+        "answer": "Yes, bulk sourcing is supported."
       },
       "3": {
         "question": "Which markets do you support",
-        "answer": "United States"
+        "answer": "United States, Europe, and other regions."
       },
       "4": {
         "question": "Can vehicle condition be confirmed",
@@ -395,7 +395,7 @@
       },
       "5": {
         "question": "Can I contact you before deciding",
-        "answer": "Yes"
+        "answer": "Yes, inquiries are welcome."
       }
     },
     "contactCta": {

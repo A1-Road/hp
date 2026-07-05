@@ -72,7 +72,7 @@ export const metadata: Metadata = {
         sameAs: [
           "https://twitter.com/a1road",
           "https://linkedin.com/company/a1road",
-          "https://github.com/a1road",
+          "https://github.com/A1-Road",
         ],
         contactPoint: {
           "@type": "ContactPoint",

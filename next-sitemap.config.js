@@ -44,6 +44,8 @@ module.exports = {
       { loc: "/about-us" },
       { loc: "/case" },
       { loc: "/media-and-events" },
+      { loc: "/service" },
+      { loc: "/global-vendors" },
       { loc: "/contact" },
       // 必要に応じて追加
     ];

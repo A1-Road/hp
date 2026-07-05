@@ -9,11 +9,11 @@ export const runtime = "edge";
 export default async function HomePage() {
   const hero = await getContentItem("top", "hero");
   const identity = await getContentItem("top", "identity");
+  const whatWeDoHeader = await getContentItem("top", "whatWeDoHeader");
+  const businesses = await getContentItems("top", "whatWeDo");
   const servicePreviewHeader = await getContentItem("top", "servicePreviewHeader");
   const services = await getContentItems("top", "servicePreview");
   const aboutPreview = await getContentItem("top", "aboutPreview");
-  const signalHeader = await getContentItem("top", "signalHeader");
-  const signalSteps = await getContentItems("top", "signalSteps");
   const contactCta = await getContentItem("top", "contactCta");
 
   return (
@@ -60,15 +60,65 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="bg-black py-16 text-white md:py-[88px] lg:py-[120px]">
+      <section id="what-we-do" className="scroll-mt-20 bg-black py-16 text-white md:py-[88px] lg:py-[120px]">
+        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
+          <AnimatedSection>
+            <div className="max-w-xl">
+              <p className="section-label text-white/56">{whatWeDoHeader.eyebrow}</p>
+              <h2 className="section-title mt-4">{whatWeDoHeader.title}</h2>
+              <p className="section-copy mt-5 text-white/72">{whatWeDoHeader.copy}</p>
+            </div>
+          </AnimatedSection>
+
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {businesses.map((business, index) => {
+              const card = (
+                <div className="flex h-full flex-col border border-white/18">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src={business.image}
+                      alt={business.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    />
+                    <div className="absolute inset-0 bg-black/28 transition-opacity duration-300 group-hover:bg-black/40" />
+                  </div>
+                  <div className="flex flex-1 flex-col p-5">
+                    <p className="text-xs uppercase tracking-[0.3em] text-white/46">{business.tag}</p>
+                    <h3 className="mt-3 text-2xl font-semibold">{business.title}</h3>
+                    <p className="mt-2 flex-1 text-sm text-white/72">{business.copy}</p>
+                    <p className={business.href ? "mt-5 text-sm text-white" : "mt-5 text-xs uppercase tracking-[0.3em] text-white/46"}>
+                      {business.linkLabel}
+                    </p>
+                  </div>
+                </div>
+              );
+
+              return (
+                <AnimatedSection key={business.title} delay={index * 80} className="h-full">
+                  {business.href ? (
+                    <Link href={business.href} className="group block h-full">
+                      {card}
+                    </Link>
+                  ) : (
+                    <div className="h-full">{card}</div>
+                  )}
+                </AnimatedSection>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
         <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
           <AnimatedSection>
             <div className="flex items-end justify-between gap-8">
               <div className="max-w-xl">
-                <p className="section-label text-white/56">{servicePreviewHeader.eyebrow}</p>
+                <p className="section-label">{servicePreviewHeader.eyebrow}</p>
                 <h2 className="section-title mt-4">{servicePreviewHeader.title}</h2>
               </div>
-              <Link href={servicePreviewHeader.linkHref} className="hidden text-sm text-white/72 hover:opacity-60 md:block">
+              <Link href={servicePreviewHeader.linkHref} className="hidden text-sm text-black/72 hover:opacity-60 md:block">
                 {servicePreviewHeader.linkLabel}
               </Link>
             </div>
@@ -78,7 +128,7 @@ export default async function HomePage() {
             {services.map((service, index) => (
               <AnimatedSection key={service.title} delay={index * 80}>
                 <Link href={service.href} className="group block">
-                  <div className="border border-white/18">
+                  <div className="border border-black/12">
                     <div className="relative aspect-[4/5] overflow-hidden">
                       <Image
                         src={service.image}
@@ -90,7 +140,7 @@ export default async function HomePage() {
                     </div>
                     <div className="p-5">
                       <h3 className="text-2xl font-semibold">{service.title}</h3>
-                      <p className="mt-2 text-sm text-white/72">{service.copy}</p>
+                      <p className="mt-2 text-sm text-black/72">{service.copy}</p>
                     </div>
                   </div>
                 </Link>
@@ -124,36 +174,13 @@ export default async function HomePage() {
       <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
         <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
           <AnimatedSection>
-            <div className="max-w-xl">
-              <p className="section-label">{signalHeader.eyebrow}</p>
-              <h2 className="section-title mt-4">{signalHeader.title}</h2>
-            </div>
-          </AnimatedSection>
-
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
-            {signalSteps.map((step, index) => (
-              <AnimatedSection key={step.title} delay={index * 70}>
-                <div className="border border-black/12 px-5 py-8">
-                  <p className="text-xs uppercase tracking-[0.3em] text-black/42">{step.number}</p>
-                  <h3 className="mt-4 text-2xl font-semibold">{step.title}</h3>
-                  <p className="mt-3 text-sm text-black/72">{step.copy}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-black py-16 text-white md:py-[88px] lg:py-[120px]">
-        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
-          <AnimatedSection>
             <div className="max-w-3xl">
-              <p className="section-label text-white/56">{contactCta.eyebrow}</p>
+              <p className="section-label">{contactCta.eyebrow}</p>
               <h2 className="section-title mt-4">{contactCta.title}</h2>
-              <p className="mt-5 max-w-xl text-sm text-white/72 md:text-base">{contactCta.copy}</p>
+              <p className="mt-5 max-w-xl text-sm text-black/72 md:text-base">{contactCta.copy}</p>
               <Button
                 asChild
-                className="mt-8 h-11 rounded-none bg-white px-6 text-sm font-medium text-black hover:bg-white/86"
+                className="mt-8 h-11 rounded-none bg-black px-6 text-sm font-medium text-white hover:bg-black/86"
               >
                 <Link href={contactCta.buttonHref}>{contactCta.buttonLabel}</Link>
               </Button>

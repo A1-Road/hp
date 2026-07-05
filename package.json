@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-sitemap",
+    "content": "node scripts/build-site-content.mjs",
+    "build": "node scripts/build-site-content.mjs && next build && next-sitemap",
     "sitemap": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
