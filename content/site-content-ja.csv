@@ -83,7 +83,7 @@ top,visualProof,4,image,/workflow.png
 top,visualProof,4,alt,Export support visual
 top,aboutPreview,main,eyebrow,ABOUT
 top,aboutPreview,main,title,理念と事業定義
-top,aboutPreview,main,copy,私たちは 日本国内で流通している商用中古車の価値を再編集し 海外市場へ届けることで 新たな評価軸を生み出します。
+top,aboutPreview,main,copy,埋もれた価値を再編集し、正当に評価される市場へ届ける。ソフトウェアから車両、自動車文化まで、私たちの理念と事業の全体像をご覧ください。
 top,aboutPreview,main,linkLabel,会社情報へ
 top,aboutPreview,main,linkHref,/about-us
 top,aboutPreview,main,image,/about-preview.png
@@ -100,7 +100,7 @@ top,signalSteps,3,title,輸出手続き支援
 top,signalSteps,3,copy,輸出手続き支援
 top,contactCta,main,eyebrow,CONTACT
 top,contactCta,main,title,まずはご相談ください。
-top,contactCta,main,copy,商用車の導入や調達についてご相談ください。個人利用、事業利用いずれにも対応しています。
+top,contactCta,main,copy,海外プロダクトの日本展開のご相談から、商用車の調達・輸出まで。事業に関するご相談を受け付けています。
 top,contactCta,main,buttonLabel,お問い合わせへ
 top,contactCta,main,buttonHref,/contact
 about,hero,main,eyebrow,ABOUT
