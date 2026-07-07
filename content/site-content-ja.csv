@@ -22,7 +22,7 @@ global,socials,3,label,GitHub
 global,socials,3,href,https://github.com/A1-Road
 top,hero,main,eyebrow,OUR MISSION
 top,hero,main,title,すべての人の正当な価値を取り戻す。
-top,hero,main,copy,自動車を通じて、日本の価値を世界に問い続ける。エーワンロードは、世界の最適なテクノロジーの導入支援と、自動車関連事業（車両輸出・部品対応・イベント運営）の二つの事業でこの理念を実践しています。
+top,hero,main,copy,世の中の隠された価値の語り部となる。エーワンロードは、世界の最適なテクノロジーの導入支援と、自動車関連事業（車両輸出・部品対応・イベント運営）の二つの事業でこの理念を実践しています。
 top,hero,main,primaryLabel,事業内容を見る
 top,hero,main,primaryHref,#what-we-do
 top,hero,main,secondaryLabel,お問い合わせ
@@ -30,7 +30,7 @@ top,hero,main,secondaryHref,/contact
 top,hero,main,image,/hero-track.png
 top,hero,main,scroll,SCROLL
 top,identity,main,eyebrow,OUR VISION
-top,identity,main,title,自動車を通じて、日本の価値を世界に問い続ける。
+top,identity,main,title,世の中の隠された価値の語り部となる。
 top,identity,main,copy,埋もれた価値を再編集し、正当に評価される市場へ届ける。私たちはこの視点で、ソフトウェアから車両、そして自動車文化までを扱います。
 top,whatWeDoHeader,main,eyebrow,BUSINESS
 top,whatWeDoHeader,main,title,事業内容
@@ -97,31 +97,29 @@ top,contactCta,main,buttonLabel,お問い合わせへ
 top,contactCta,main,buttonHref,/contact
 about,hero,main,eyebrow,ABOUT
 about,hero,main,title,すべての人の正当な価値を取り戻す。
-about,hero,main,copy,自動車を通じて、日本の価値を世界に問い続ける。
+about,hero,main,copy,世界の技術と、日本の現場。埋もれた価値を、正当に評価される市場へ届けます。
 about,hero,main,image,/about-hero.png
 about,statement,main,eyebrow,STATEMENT
-about,statement,main,title,自動車を通じて、日本の価値を世界に問い続ける。
-about,statement,main,copy,
+about,statement,main,title,世の中の隠された価値の語り部となる。
+about,statement,main,copy,優れているのに知られていない。価値があるのに届いていない。その差を埋めるのが、私たちの仕事です。
 about,philosophyHeader,main,eyebrow,PHILOSOPHY
 about,philosophyHeader,main,title,三つの軸。
 about,philosophy,1,title,Mission
 about,philosophy,1,copy,すべての人の正当な価値を取り戻す。
 about,philosophy,2,title,Vision
-about,philosophy,2,copy,自動車を通じて、日本の価値を世界に問い続ける。
+about,philosophy,2,copy,世の中の隠された価値の語り部となる。
 about,philosophy,3,title,Definition
-about,philosophy,3,copy,私たちは、日本国内で流通している商用中古車の価値を再編集し、海外市場へ届けることで、新たな評価軸を生み出します。
-about,story,main,eyebrow,BACKGROUND
-about,story,main,title,日本の商用中古車輸出
-about,story,main,copy,軽トラックやユーティリティ車両は コンパクトで耐久性があり 用途の自由度が高いという特性を持ちます。日本国内では当たり前に使われてきたこれらの車両は 海外では新しい選択肢となります。私たちは 車両の調達 情報整理 輸出を通じて 日本と世界の自動車文化の接続を試みています。
+about,philosophy,3,copy,世界の技術と日本の価値を再編集し、それぞれが正当に評価される市場へ接続する会社です。
+about,story,main,eyebrow,APPROACH
+about,story,main,title,二つの事業で、価値をつなぐ。
+about,story,main,copy,私たちは二つの事業を営みます。ひとつは、世界の先端プロダクトを日本企業の課題に合わせて選び、導入まで支援するグローバルGTMパートナー事業。もうひとつは、日本の車両の価値を発信し、調達・輸出するモビリティ事業。領域は違っても、やっていることは同じ——隠れた価値を見つけ、正しく届けることです。
 about,story,main,image,/about-story.png
 about,differentiatorHeader,main,eyebrow,DIFFERENCE
-about,differentiatorHeader,main,title,事業の輪郭
-about,differentiator,1,title,調達
-about,differentiator,1,copy,日本国内の車両を選定します。
-about,differentiator,2,title,情報整理
-about,differentiator,2,copy,車両状態や用途に応じた情報を整えます。
-about,differentiator,3,title,輸出
-about,differentiator,3,copy,海外市場へ届けるまでを支援します。
+about,differentiatorHeader,main,title,二つの事業
+about,differentiator,1,title,グローバルGTMパートナー
+about,differentiator,1,copy,世界の先端プロダクトを、日本企業の課題に合わせて選び・つなぎ・導入する。
+about,differentiator,2,title,モビリティ
+about,differentiator,2,copy,日本の車両の価値を発信し、調達・輸出する。
 about,companyInfoHeader,main,eyebrow,COMPANY
 about,companyInfoHeader,main,title,会社情報
 about,companyInfoHeader,main,copy,法人情報を掲載しています。
@@ -144,46 +142,26 @@ service,hero,main,title,モビリティ関連事業
 service,hero,main,copy,日本の軽トラックや軽バン、小型商用車や特装車まで、幅広い車両の調達と輸出を行います。用途と市場に合わせた車両選定から、部品対応・車両情報の整理・輸出実務まで支援します。
 service,indexHeader,main,eyebrow,INDEX
 service,indexHeader,main,title,提供内容
-service,index,1,id,business-sourcing
-service,index,1,title,Business Sourcing
-service,index,1,line,法人向け車両調達
-service,index,1,image,/business-sourcing.png
-service,index,2,id,bulk-orders
-service,index,2,title,Bulk Orders
-service,index,2,line,複数台導入支援
-service,index,2,image,/bulk-orders.png
-service,index,3,id,export-support
-service,index,3,title,Export Support
-service,index,3,line,輸出手続き支援
-service,index,3,image,/export-support.png
-service,index,4,id,verified-vehicle-information
-service,index,4,title,Verified Vehicle Information
-service,index,4,line,車両状態情報の整理
-service,index,4,image,/HP2copy.png
-service,detail,1,id,business-sourcing
-service,detail,1,title,Business Sourcing
-service,detail,1,what,個人および法人向けに 日本の商用中古車の調達を行います。
-service,detail,1,value,用途や市場に応じた選定を支援します。
-service,detail,1,flow,要件に応じた候補抽出。
-service,detail,1,output,法人向け車両調達。
-service,detail,2,id,bulk-orders
-service,detail,2,title,Bulk Orders
-service,detail,2,what,複数台導入時の条件整理を支援します。
-service,detail,2,value,継続調達にも対応します。
-service,detail,2,flow,複数台導入の前提整理。
-service,detail,2,output,複数台導入支援。
-service,detail,3,id,export-support
-service,detail,3,title,Export Support
-service,detail,3,what,輸出手続きと進行を支援します。
-service,detail,3,value,海外市場への展開を前提に対応します。
-service,detail,3,flow,輸出対応の実務整理。
-service,detail,3,output,輸出手続き支援。
-service,detail,4,id,verified-vehicle-information
-service,detail,4,title,Verified Vehicle Information
-service,detail,4,what,車両状態情報を整理して共有します。
-service,detail,4,value,情報非対称を減らします。
-service,detail,4,flow,確認可能な情報の整理。
-service,detail,4,output,車両状態情報の整理。
+service,index,1,id,pr-marketing-events
+service,index,1,title,自動車関連PR・マーケティング・イベント運営
+service,index,1,line,PR・マーケティング・イベント運営
+service,index,1,image,/DAONIGHT2024.png
+service,index,2,id,vehicle-sourcing
+service,index,2,title,車両調達
+service,index,2,line,車両の調達・輸出
+service,index,2,image,/business-sourcing.png
+service,detail,1,id,pr-marketing-events
+service,detail,1,title,自動車関連PR・マーケティング・イベント運営
+service,detail,1,what,自動車関連のPR・マーケティング・イベントの企画から運営までを担います。
+service,detail,1,value,車両の価値を、製品と文化の両面で発信します。
+service,detail,1,flow,企画・集客・当日運営まで一貫対応。
+service,detail,1,output,PR・マーケティング・イベント運営。
+service,detail,2,id,vehicle-sourcing
+service,detail,2,title,車両調達
+service,detail,2,what,個人・法人向けに、日本の商用車・軽自動車・特装車などを調達・輸出します。
+service,detail,2,value,用途と市場に応じた選定と、輸出手続きを支援します。
+service,detail,2,flow,要件整理・候補抽出から輸出まで。
+service,detail,2,output,車両調達・輸出。
 service,processHeader,main,eyebrow,PROCESS
 service,processHeader,main,title,対応市場
 service,process,1,number,01

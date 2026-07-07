@@ -55,7 +55,7 @@
       "main": {
         "eyebrow": "Our Mission",
         "title": "Restore rightful value.",
-        "copy": "\"Through automotive, we keep putting Japan's value to the world. A-one road lives this out through two businesses: bringing the world's best technology into Japan, and automotive (vehicle export, parts, and events).\", commercial vehicle export from Japan, and automotive culture events.",
+        "copy": "\"We become the storyteller of the world's hidden value. A-one road lives this out through two businesses: bringing the world's best technology into Japan, and automotive (vehicle export, parts, and events).\", commercial vehicle export from Japan, and automotive culture events.",
         "primaryLabel": "See what we do",
         "primaryHref": "#what-we-do",
         "secondaryLabel": "Contact",
@@ -67,7 +67,7 @@
     "identity": {
       "main": {
         "eyebrow": "Our Vision",
-        "title": "Through mobility, we continue to ask the world about the value of Japan.",
+        "title": "We become the storyteller of the world's hidden value.",
         "copy": "We re-edit undervalued assets — software, vehicles, and automotive culture — and deliver them to markets where they are rightly valued."
       }
     },
@@ -196,15 +196,15 @@
       "main": {
         "eyebrow": "About",
         "title": "Unearth hidden values.",
-        "copy": "Reason, posture, and business definition.",
+        "copy": "The world's technology and Japan's field - we deliver overlooked value to markets where it is rightly valued., posture, and business definition.",
         "image": "/about-hero.png"
       }
     },
     "statement": {
       "main": {
         "eyebrow": "Statement",
-        "title": "Through mobility, we continue to ask the world about the value of Japan.",
-        "copy": ""
+        "title": "We become the storyteller of the world's hidden value.",
+        "copy": "Excellent yet unknown. Valuable yet undelivered. Closing that gap is our work."
       }
     },
     "philosophyHeader": {
@@ -224,35 +224,31 @@
       },
       "3": {
         "title": "Definition",
-        "copy": "Updating and redefining automotive culture in Japan and abroad through used commercial vehicle export."
+        "copy": "\"A company that re-edits the world's technology and Japan's value, connecting each to markets where it is rightly valued.\""
       }
     },
     "story": {
       "main": {
-        "eyebrow": "Background",
-        "title": "Context before volume.",
-        "copy": "Before scaling volume we sharpen buyer context and vehicle information. Reliable export is built from there.",
+        "eyebrow": "APPROACH",
+        "title": "\"Two businesses, one purpose.\"",
+        "copy": "\"We run two businesses. One is a global GTM partner that selects and adopts the world's leading products for Japanese companies' challenges. The other is mobility - conveying the value of Japanese vehicles, and handling sourcing and export. Different domains, same work: finding hidden value and delivering it right.\"",
         "image": "/about-story.png"
       }
     },
     "differentiatorHeader": {
       "main": {
         "eyebrow": "Difference",
-        "title": "Three signals."
+        "title": "Two businesses"
       }
     },
     "differentiator": {
       "1": {
-        "title": "Buyer Context",
-        "copy": "We define use case before discussing units."
+        "title": "Global GTM Partner",
+        "copy": "\"Select, connect and adopt the world's leading products for Japanese companies' challenges.\""
       },
       "2": {
-        "title": "Verified Information",
-        "copy": "We standardize the level of information needed for decisions."
-      },
-      "3": {
-        "title": "Execution",
-        "copy": "We handle the flow from sourcing through export execution without breaks."
+        "title": "Mobility",
+        "copy": "\"Convey the value of Japanese vehicles, and handle sourcing and export.\""
       }
     },
     "companyInfoHeader": {
@@ -309,62 +305,34 @@
     },
     "index": {
       "1": {
-        "id": "business-sourcing",
-        "title": "Business Sourcing",
-        "line": "From requirement alignment to vehicle shortlist.",
-        "image": "/business-sourcing.png"
+        "id": "pr-marketing-events",
+        "title": "\"Automotive PR, Marketing & Events\"",
+        "line": "\"PR, marketing & events\"",
+        "image": "/DAONIGHT2024.png"
       },
       "2": {
-        "id": "bulk-orders",
-        "title": "Bulk Orders",
-        "line": "Structured sourcing for multiple units.",
-        "image": "/bulk-orders.png"
-      },
-      "3": {
-        "id": "export-support",
-        "title": "Export Support",
-        "line": "Execution support for export delivery.",
-        "image": "/export-support.png"
-      },
-      "4": {
-        "id": "verified-vehicle-information",
-        "title": "Verified Vehicle Information",
-        "line": "Sharper information for faster decisions.",
-        "image": "/HP2copy.png"
+        "id": "vehicle-sourcing",
+        "title": "Vehicle Sourcing",
+        "line": "Sourcing & export",
+        "image": "/business-sourcing.png"
       }
     },
     "detail": {
       "1": {
-        "id": "business-sourcing",
-        "title": "Business Sourcing",
-        "what": "We support sourcing Japanese commercial vehicles for individual and business buyers.",
-        "value": "Reduce wasted search and early-stage misalignment.",
-        "flow": "Brief alignment and vehicle shortlist.",
-        "output": "Shortlist and decision material."
+        "id": "pr-marketing-events",
+        "title": "\"Automotive PR, Marketing & Events\"",
+        "what": "\"We plan and run automotive PR, marketing and events end to end.\"",
+        "value": "We convey a vehicle's value through both product and culture.",
+        "flow": "From concept and outreach to on-site operation.",
+        "output": "\"PR, marketing & event operations.\""
       },
       "2": {
-        "id": "bulk-orders",
-        "title": "Bulk Orders",
-        "what": "We structure priorities and conditions for multi-unit sourcing.",
-        "value": "Keep decision criteria stable even as unit count grows.",
-        "flow": "Volume planning and lot coordination.",
-        "output": "Aligned terms before ordering."
-      },
-      "3": {
-        "id": "export-support",
-        "title": "Export Support",
-        "what": "We unify export coordination and execution flow.",
-        "value": "Reduce friction before and after handover.",
-        "flow": "Progress tracking and export coordination.",
-        "output": "Visible export progress."
-      },
-      "4": {
-        "id": "verified-vehicle-information",
-        "title": "Verified Vehicle Information",
-        "what": "We gather the vehicle information buyers need to decide.",
-        "value": "Lower uncertainty for buyers.",
-        "flow": "Condition review and information packaging.",
-        "output": "Comparable information set."
+        "id": "vehicle-sourcing",
+        "title": "Vehicle Sourcing",
+        "what": "\"We source and export Japanese commercial, light and specialty vehicles for individuals and businesses.\"",
+        "value": "\"We support selection by use and market, and export procedures.\"",
+        "flow": "From requirements to candidates to export.",
+        "output": "Vehicle sourcing & export."
       }
     },
     "processHeader": {

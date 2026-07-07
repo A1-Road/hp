@@ -25,6 +25,8 @@ export default function Header({ navigation, currentLang }: HeaderProps) {
   const pathname = usePathname();
   const router = useRouter();
   const isHome = pathname === "/";
+  // ダーク背景のページ（ホーム・サービスハブ）は透明＋白文字ヘッダー
+  const isDarkPage = isHome || pathname === "/service";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 16);
@@ -44,7 +46,7 @@ export default function Header({ navigation, currentLang }: HeaderProps) {
     <header
       className={cn(
         "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
-        scrolled || !isHome
+        scrolled || !isDarkPage
           ? "border-b border-black/10 bg-white/96 py-3 text-black backdrop-blur"
           : "bg-black/24 py-5 text-white backdrop-blur"
       )}

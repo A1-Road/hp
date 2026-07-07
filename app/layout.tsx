@@ -18,11 +18,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "エーワンロード株式会社 | Japanese Commercial Vehicles for Global Buyers",
+  title: "エーワンロード株式会社 | グローバルGTMパートナー & モビリティ",
   description:
-    "全ての人の正当な価値を取り戻すというミッションの下、日本の商用中古車輸出を通じて我が国と世界の自動車文化をアップデートし、再定義します。",
+    "世の中の隠された価値の語り部となる。エーワンロード（A-one road）は、世界の先端プロダクト（AI・SaaS）を日本企業の課題に合わせて選定・導入するグローバルGTMパートナー事業と、日本の車両を発信・調達・輸出するモビリティ事業を通じて、すべての人の正当な価値を取り戻します。",
   keywords:
-    "Japanese Commercial Vehicles for Global Buyers, Business Sourcing, Bulk Orders, Export Support, Verified Vehicle Information, 商用中古車輸出, 法人調達",
+    "グローバルGTMパートナー, 海外SaaS 日本導入, 海外AIプロダクト 日本市場参入, テクノロジー導入支援, ディストリビューター, ローカライズ, PoC, 車両輸出, モビリティ, エーワンロード, A-one road",
   authors: [{ name: "エーワンロード株式会社" }],
   robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   generator: "Next.js",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     url: "https://a-oneroad.com",
-    title: "エーワンロード株式会社 | Japanese Commercial Vehicles for Global Buyers",
+    title: "エーワンロード株式会社 | グローバルGTMパートナー & モビリティ",
     description:
-      "自動車を通じて日本の価値を世界に問い続ける会社。Business Sourcing / Bulk Orders / Export Support / Verified Vehicle Information。",
+      "世界の先端プロダクトを、日本企業の課題に合わせて選び・つなぎ・導入するグローバルGTMパートナー。日本の車両を扱うモビリティ事業も。",
     siteName: "エーワンロード株式会社",
     images: [
       {
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "エーワンロード株式会社 | Japanese Commercial Vehicles for Global Buyers",
+    title: "エーワンロード株式会社 | グローバルGTMパートナー & モビリティ",
     description:
-      "For dealers, fleets, and commercial buyers seeking reliable sourcing from Japan.",
+      "A global GTM partner bringing the world leading AI and SaaS to Japan, plus a mobility business.",
     images: ["https://a-oneroad.com/twitter-image.jpg"],
     creator: "@a1road",
   },
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
         url: "https://a-oneroad.com",
         logo: "https://a-oneroad.com/logo.png",
         description:
-          "日本の商用中古車輸出を通じて、我が国と世界の自動車文化をアップデートし、再定義します。",
+          "世界の先端プロダクト（AI・SaaS）を日本企業の課題に合わせて選定・導入するグローバルGTMパートナー事業と、日本の車両の発信・調達・輸出を行うモビリティ事業。",
         address: {
           "@type": "PostalAddress",
           addressCountry: "JP",

@@ -22,7 +22,7 @@ global,socials,3,label,GitHub
 global,socials,3,href,https://github.com/A1-Road
 top,hero,main,eyebrow,Our Mission
 top,hero,main,title,Restore rightful value.
-top,hero,main,copy,"Through automotive, we keep putting Japan's value to the world. A-one road lives this out through two businesses: bringing the world's best technology into Japan, and automotive (vehicle export, parts, and events).", commercial vehicle export from Japan, and automotive culture events.
+top,hero,main,copy,"We become the storyteller of the world's hidden value. A-one road lives this out through two businesses: bringing the world's best technology into Japan, and automotive (vehicle export, parts, and events).", commercial vehicle export from Japan, and automotive culture events.
 top,hero,main,primaryLabel,See what we do
 top,hero,main,primaryHref,#what-we-do
 top,hero,main,secondaryLabel,Contact
@@ -30,7 +30,7 @@ top,hero,main,secondaryHref,/contact
 top,hero,main,image,/hero-track.png
 top,hero,main,scroll,Scroll
 top,identity,main,eyebrow,Our Vision
-top,identity,main,title,Through mobility, we continue to ask the world about the value of Japan.
+top,identity,main,title,We become the storyteller of the world's hidden value.
 top,identity,main,copy,We re-edit undervalued assets — software, vehicles, and automotive culture — and deliver them to markets where they are rightly valued.
 top,whatWeDoHeader,main,eyebrow,Business
 top,whatWeDoHeader,main,title,What we do
@@ -97,11 +97,11 @@ top,contactCta,main,buttonLabel,Go to Contact
 top,contactCta,main,buttonHref,/contact
 about,hero,main,eyebrow,About
 about,hero,main,title,Unearth hidden values.
-about,hero,main,copy,Reason, posture, and business definition.
+about,hero,main,copy,The world's technology and Japan's field - we deliver overlooked value to markets where it is rightly valued., posture, and business definition.
 about,hero,main,image,/about-hero.png
 about,statement,main,eyebrow,Statement
-about,statement,main,title,Through mobility, we continue to ask the world about the value of Japan.
-about,statement,main,copy,
+about,statement,main,title,We become the storyteller of the world's hidden value.
+about,statement,main,copy,Excellent yet unknown. Valuable yet undelivered. Closing that gap is our work.
 about,philosophyHeader,main,eyebrow,Philosophy
 about,philosophyHeader,main,title,Three anchors.
 about,philosophy,1,title,Mission
@@ -109,19 +109,17 @@ about,philosophy,1,copy,Reduce structures that bury value and increase transacti
 about,philosophy,2,title,Vision
 about,philosophy,2,copy,Keep connecting Japanese vehicles and field knowledge with real demand worldwide.
 about,philosophy,3,title,Definition
-about,philosophy,3,copy,Updating and redefining automotive culture in Japan and abroad through used commercial vehicle export.
-about,story,main,eyebrow,Background
-about,story,main,title,Context before volume.
-about,story,main,copy,Before scaling volume we sharpen buyer context and vehicle information. Reliable export is built from there.
+about,philosophy,3,copy,"A company that re-edits the world's technology and Japan's value, connecting each to markets where it is rightly valued."
+about,story,main,eyebrow,APPROACH
+about,story,main,title,"Two businesses, one purpose."
+about,story,main,copy,"We run two businesses. One is a global GTM partner that selects and adopts the world's leading products for Japanese companies' challenges. The other is mobility - conveying the value of Japanese vehicles, and handling sourcing and export. Different domains, same work: finding hidden value and delivering it right."
 about,story,main,image,/about-story.png
 about,differentiatorHeader,main,eyebrow,Difference
-about,differentiatorHeader,main,title,Three signals.
-about,differentiator,1,title,Buyer Context
-about,differentiator,1,copy,We define use case before discussing units.
-about,differentiator,2,title,Verified Information
-about,differentiator,2,copy,We standardize the level of information needed for decisions.
-about,differentiator,3,title,Execution
-about,differentiator,3,copy,We handle the flow from sourcing through export execution without breaks.
+about,differentiatorHeader,main,title,Two businesses
+about,differentiator,1,title,Global GTM Partner
+about,differentiator,1,copy,"Select, connect and adopt the world's leading products for Japanese companies' challenges."
+about,differentiator,2,title,Mobility
+about,differentiator,2,copy,"Convey the value of Japanese vehicles, and handle sourcing and export."
 about,companyInfoHeader,main,eyebrow,Company
 about,companyInfoHeader,main,title,Company Information
 about,companyInfoHeader,main,copy,Corporate details.
@@ -144,46 +142,26 @@ service,hero,main,title,Mobility
 service,hero,main,copy,"From Japanese kei trucks, kei vans and light commercial vehicles to specialty vehicles, we source and export a wide range — with support across selection, parts, vehicle information and export operations."
 service,indexHeader,main,eyebrow,Index
 service,indexHeader,main,title,Four service blocks.
-service,index,1,id,business-sourcing
-service,index,1,title,Business Sourcing
-service,index,1,line,From requirement alignment to vehicle shortlist.
-service,index,1,image,/business-sourcing.png
-service,index,2,id,bulk-orders
-service,index,2,title,Bulk Orders
-service,index,2,line,Structured sourcing for multiple units.
-service,index,2,image,/bulk-orders.png
-service,index,3,id,export-support
-service,index,3,title,Export Support
-service,index,3,line,Execution support for export delivery.
-service,index,3,image,/export-support.png
-service,index,4,id,verified-vehicle-information
-service,index,4,title,Verified Vehicle Information
-service,index,4,line,Sharper information for faster decisions.
-service,index,4,image,/HP2copy.png
-service,detail,1,id,business-sourcing
-service,detail,1,title,Business Sourcing
-service,detail,1,what,We support sourcing Japanese commercial vehicles for individual and business buyers.
-service,detail,1,value,Reduce wasted search and early-stage misalignment.
-service,detail,1,flow,Brief alignment and vehicle shortlist.
-service,detail,1,output,Shortlist and decision material.
-service,detail,2,id,bulk-orders
-service,detail,2,title,Bulk Orders
-service,detail,2,what,We structure priorities and conditions for multi-unit sourcing.
-service,detail,2,value,Keep decision criteria stable even as unit count grows.
-service,detail,2,flow,Volume planning and lot coordination.
-service,detail,2,output,Aligned terms before ordering.
-service,detail,3,id,export-support
-service,detail,3,title,Export Support
-service,detail,3,what,We unify export coordination and execution flow.
-service,detail,3,value,Reduce friction before and after handover.
-service,detail,3,flow,Progress tracking and export coordination.
-service,detail,3,output,Visible export progress.
-service,detail,4,id,verified-vehicle-information
-service,detail,4,title,Verified Vehicle Information
-service,detail,4,what,We gather the vehicle information buyers need to decide.
-service,detail,4,value,Lower uncertainty for buyers.
-service,detail,4,flow,Condition review and information packaging.
-service,detail,4,output,Comparable information set.
+service,index,1,id,pr-marketing-events
+service,index,1,title,"Automotive PR, Marketing & Events"
+service,index,1,line,"PR, marketing & events"
+service,index,1,image,/DAONIGHT2024.png
+service,index,2,id,vehicle-sourcing
+service,index,2,title,Vehicle Sourcing
+service,index,2,line,Sourcing & export
+service,index,2,image,/business-sourcing.png
+service,detail,1,id,pr-marketing-events
+service,detail,1,title,"Automotive PR, Marketing & Events"
+service,detail,1,what,"We plan and run automotive PR, marketing and events end to end."
+service,detail,1,value,We convey a vehicle's value through both product and culture.
+service,detail,1,flow,From concept and outreach to on-site operation.
+service,detail,1,output,"PR, marketing & event operations."
+service,detail,2,id,vehicle-sourcing
+service,detail,2,title,Vehicle Sourcing
+service,detail,2,what,"We source and export Japanese commercial, light and specialty vehicles for individuals and businesses."
+service,detail,2,value,"We support selection by use and market, and export procedures."
+service,detail,2,flow,From requirements to candidates to export.
+service,detail,2,output,Vehicle sourcing & export.
 service,processHeader,main,eyebrow,Process
 service,processHeader,main,title,Four steps.
 service,process,1,number,01

@@ -14,18 +14,25 @@ module.exports = {
         allow: "/",
         disallow: ["/admin/*", "/api/*", "/_next/*", "/static/*"],
       },
-      {
-        userAgent: "GPTBot",
-        disallow: ["/"],
-      },
-      {
-        userAgent: "ChatGPT-User",
-        disallow: ["/"],
-      },
-      {
-        userAgent: "Google-Extended",
-        disallow: ["/"],
-      },
+      // AIクローラー明示Allow（LLMO/GEO対応）
+      ...[
+        "GPTBot",
+        "ChatGPT-User",
+        "OAI-SearchBot",
+        "ClaudeBot",
+        "Claude-Web",
+        "anthropic-ai",
+        "PerplexityBot",
+        "Perplexity-User",
+        "Google-Extended",
+        "Applebot-Extended",
+        "cohere-ai",
+        "meta-externalagent",
+      ].map((userAgent) => ({
+        userAgent,
+        allow: "/",
+        disallow: ["/admin/*", "/api/*"],
+      })),
     ],
     additionalSitemaps: ["https://a-oneroad.com/server-sitemap.xml"],
   },
@@ -45,6 +52,7 @@ module.exports = {
       { loc: "/case" },
       { loc: "/media-and-events" },
       { loc: "/service" },
+      { loc: "/service/automotive" },
       { loc: "/global-vendors" },
       { loc: "/contact" },
       // 必要に応じて追加
