@@ -43,10 +43,10 @@ export default async function GlobalVendorsPage() {
       <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
         <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
           <AnimatedSection>
-            <div className="max-w-4xl">
+            <div className="max-w-3xl">
               <p className="section-label">{intro.eyebrow}</p>
               <h2 className="section-title mt-4">{intro.title}</h2>
-              <p className="section-copy mt-5 text-black/72">{intro.copy}</p>
+              <p className="mt-6 max-w-2xl text-base text-black/72 md:text-lg">{intro.lead}</p>
             </div>
           </AnimatedSection>
         </div>

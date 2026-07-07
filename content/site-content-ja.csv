@@ -5,8 +5,6 @@ global,navigation,2,label,ABOUT
 global,navigation,2,href,/about-us
 global,navigation,3,label,SERVICE
 global,navigation,3,href,/service
-global,navigation,4,label,海外ベンダー向け
-global,navigation,4,href,/global-vendors
 global,navigation,5,label,CONTACT
 global,navigation,5,href,/contact
 global,footer,main,tagline,海外プロダクトの日本オンボーディングと、日本の商用車輸出。価値を、正当に評価される市場へ。
@@ -24,12 +22,12 @@ global,socials,3,label,GitHub
 global,socials,3,href,https://github.com/A1-Road
 top,hero,main,eyebrow,OUR MISSION
 top,hero,main,title,すべての人の正当な価値を取り戻す。
-top,hero,main,copy,自動車を通じて、日本の価値を世界に問い続ける。エーワンロードは、海外プロダクトの日本オンボーディングと、自動車関連事業（車両輸出・部品対応・イベント運営）の二つの事業でこの理念を実践しています。
+top,hero,main,copy,自動車を通じて、日本の価値を世界に問い続ける。エーワンロードは、世界の最適なテクノロジーの導入支援と、自動車関連事業（車両輸出・部品対応・イベント運営）の二つの事業でこの理念を実践しています。
 top,hero,main,primaryLabel,事業内容を見る
 top,hero,main,primaryHref,#what-we-do
 top,hero,main,secondaryLabel,お問い合わせ
 top,hero,main,secondaryHref,/contact
-top,hero,main,image,/business-sourcing.png
+top,hero,main,image,/hero-track.png
 top,hero,main,scroll,SCROLL
 top,identity,main,eyebrow,OUR VISION
 top,identity,main,title,自動車を通じて、日本の価値を世界に問い続ける。
@@ -37,17 +35,17 @@ top,identity,main,copy,埋もれた価値を再編集し、正当に評価され
 top,whatWeDoHeader,main,eyebrow,BUSINESS
 top,whatWeDoHeader,main,title,事業内容
 top,whatWeDoHeader,main,copy,一つの理念から生まれた、二つの事業。
-top,whatWeDo,1,tag,GTM PARTNER
-top,whatWeDo,1,title,海外プロダクトの日本オンボーディング
-top,whatWeDo,1,copy,海外のAI・セキュリティソフトウェアベンダー向けに、市場調査からアウトバウンド営業・有償PoC設計まで、日本市場参入をGTMパートナーとして支援します。
+top,whatWeDo,1,tag,GLOBAL GTM PARTNER
+top,whatWeDo,1,title,世界のテクノロジーで、課題を解く。
+top,whatWeDo,1,copy,業務・ITの課題に合わせて、世界中の先端プロダクトから最適なものを選び、構成し、導入まで支援します。
 top,whatWeDo,1,image,/workflow.png
 top,whatWeDo,1,href,/global-vendors
 top,whatWeDo,1,linkLabel,詳しく見る
-top,whatWeDo,2,tag,AUTOMOTIVE
-top,whatWeDo,2,title,自動車関連事業
+top,whatWeDo,2,tag,MOBILITY
+top,whatWeDo,2,title,モビリティ関連事業
 top,whatWeDo,2,copy,車両輸出・部品対応・イベント運営。日本の自動車の価値を、製品と文化の両面で世界へ届けます。
 top,whatWeDo,2,image,/business-sourcing.png
-top,whatWeDo,2,href,/service
+top,whatWeDo,2,href,/service/automotive
 top,whatWeDo,2,linkLabel,詳しく見る
 top,servicePreviewHeader,main,eyebrow,VEHICLE EXPORT
 top,servicePreviewHeader,main,title,商用車輸出サービス
@@ -142,8 +140,8 @@ about,companyInfo,6,value,Email: admin@a1-road.com
 about,companyInfo,7,label,所在地
 about,companyInfo,7,value,神奈川県横浜市西区浅間町1丁目4-3ウィザードビル402
 service,hero,main,eyebrow,SERVICE
-service,hero,main,title,日本の軽トラックおよび商用車の輸出
-service,hero,main,copy,個人および法人向けに、日本の商用中古車の調達と輸出を行っています。用途や市場に応じて、適した車両の選定を支援します。
+service,hero,main,title,モビリティ関連事業
+service,hero,main,copy,日本の軽トラックや軽バン、小型商用車や特装車まで、幅広い車両の調達と輸出を行います。用途と市場に合わせた車両選定から、部品対応・車両情報の整理・輸出実務まで支援します。
 service,indexHeader,main,eyebrow,INDEX
 service,indexHeader,main,title,提供内容
 service,index,1,id,business-sourcing
@@ -205,7 +203,7 @@ service,faqHeader,main,title,よくある質問。
 service,faq,1,question,誰向けのサービスですか
 service,faq,1,answer,日本からの調達を求めるディーラー フリート 法人バイヤー向けです。
 service,faq,2,question,どの車種に対応していますか
-service,faq,2,answer,軽トラック 軽バン 小型商用車などを扱っています。
+service,faq,2,answer,軽トラック・軽バン・小型商用車を中心に、特装車や各種商用車まで幅広く扱っています。
 service,faq,3,question,輸出先はどの地域ですか
 service,faq,3,answer,主に米国 欧州 その他地域に対応しています。
 service,faq,4,question,車両状態は確認できますか
@@ -251,63 +249,55 @@ contact,info,3,value,Yokohama Japan
 contact,info,4,label,SNS
 contact,info,4,value,X / LinkedIn / GitHub
 contact,reassurance,main,text,
-globalVendors,hero,main,eyebrow,FOR GLOBAL VENDORS
-globalVendors,hero,main,title,海外プロダクトの日本オンボーディング
-globalVendors,hero,main,copy,海外のAI・セキュリティソフトウェアベンダー向けに、日本市場での検証・ポジショニング・販売活動をGTMパートナーとして支援します。横浜を拠点に、日英バイリンガルで運営しています。
+globalVendors,hero,main,eyebrow,GLOBAL GTM PARTNER
+globalVendors,hero,main,title,世界の最適なテクノロジーを、あなたの課題に。
+globalVendors,hero,main,copy,業務やITの課題をお聞かせください。世界中の先端プロダクトから最適なものを選び、構成し、導入まで伴走します。
 globalVendors,hero,main,primaryLabel,お問い合わせ
 globalVendors,hero,main,primaryHref,/contact
-globalVendors,intro,main,eyebrow,WHY A-ONE ROAD
-globalVendors,intro,main,title,資料ではなく、現場で動くパートナー。
-globalVendors,intro,main,copy,日本参入でつまずくのは、多くの場合プロダクトの品質ではなく、言語・信頼・企業の意思決定プロセスです。私たちは現地の実働パートナーとして、見込み客と日本語で対話し、英語でレポートし、関心を具体的なPoCパイプラインへつなげます。
+globalVendors,intro,main,eyebrow,HOW WE HELP
+globalVendors,intro,main,title,課題起点で、最適な一手を。
+globalVendors,intro,main,copy,言語・信頼・意思決定の進み方を、私たちが日本語と英語でつなぎます。
 globalVendors,servicesHeader,main,eyebrow,WHAT WE DO
-globalVendors,servicesHeader,main,title,日本GTM支援サービス
-globalVendors,servicesHeader,main,copy,最初の市場シグナルの検証から、実際に動く営業体制まで。
-globalVendors,services,1,title,市場調査・検証
-globalVendors,services,1,copy,日本市場での需要を検証します。競合状況、規制環境、ターゲットユーザーからの率直なフィードバックを収集します。
-globalVendors,services,2,title,ポジショニング設計
-globalVendors,services,2,copy,日本の買い手の評価軸に合わせて、バリュープロポジションを自然な日本語で再構築します。
-globalVendors,services,3,title,ターゲットアカウント選定
-globalVendors,services,3,copy,翻訳資料の一斉送付ではなく、狙う価値のある企業リストを絞り込んで作成します。
-globalVendors,services,4,title,営業資料のローカライズ
-globalVendors,services,4,copy,日本の商習慣に合わせた日本語の提案資料・ワンページャー・デモスクリプトを作成します。
-globalVendors,services,5,title,アウトバウンド営業
-globalVendors,services,5,copy,貴社に代わって日本語でアプローチと初回商談を実施し、すべてのやり取りを英語で報告します。
-globalVendors,services,6,title,顧客インタビュー
-globalVendors,services,6,copy,見込み客・ユーザーへの構造化インタビューを実施し、翻訳・要約して日本市場の声をそのまま届けます。
-globalVendors,services,7,title,有償PoC設計
-globalVendors,services,7,copy,日本企業が対価を払う実証実験（PoC）を、明確な成功基準とともに設計します。
-globalVendors,services,8,title,代理店・リセラー開拓
-globalVendors,services,8,copy,候補となる代理店・リセラーを特定してアプローチし、初期交渉を支援します。
+globalVendors,servicesHeader,main,title,提供すること
+globalVendors,servicesHeader,main,copy,課題の整理から、導入後の定着まで。
+globalVendors,services,1,title,課題ヒアリング
+globalVendors,services,1,copy,業務・ITの課題を整理し、解くべき論点を定めます。
+globalVendors,services,2,title,プロダクト選定
+globalVendors,services,2,copy,世界中の候補から、課題に最も合う製品を選びます。
+globalVendors,services,4,title,構成・PoC設計
+globalVendors,services,4,copy,複数の製品を組み合わせ、成果を検証できる形に設計します。
+globalVendors,services,5,title,導入・定着支援
+globalVendors,services,5,copy,契約・導入から運用の定着まで伴走します。
+globalVendors,services,7,title,継続サポート
+globalVendors,services,7,copy,導入後の改善と拡張を、継続的に支援します。
 globalVendors,pilotHeader,main,eyebrow,ENGAGEMENT
-globalVendors,pilotHeader,main,title,Japan GTM Pilot
-globalVendors,pilotHeader,main,copy,机上のレポートではなく、実際の商談を通じて日本市場を検証する、有償・スコープ固定のエンゲージメントです。
-globalVendors,pilotFacts,1,label,料金
-globalVendors,pilotFacts,1,value,USD 5,000〜
-globalVendors,pilotFacts,2,label,期間
+globalVendors,pilotHeader,main,title,まず、小さく試す。
+globalVendors,pilotHeader,main,copy,課題に合う製品を、期間を区切って検証します。手応えがあれば、本格導入へ進みます。
+globalVendors,pilotFacts,2,label,期間の目安
 globalVendors,pilotFacts,2,value,30〜45日
-globalVendors,pilotFacts,3,label,スコープ
-globalVendors,pilotFacts,3,value,開始前に活動内容と成果物を明確に合意します。
+globalVendors,pilotFacts,3,label,進め方
+globalVendors,pilotFacts,3,value,開始前に、活動内容と成果物を合意します。
 globalVendors,deliverablesHeader,main,eyebrow,DELIVERABLES
 globalVendors,deliverablesHeader,main,title,パイロットの成果物
 globalVendors,deliverables,1,number,01
-globalVendors,deliverables,1,title,市場フィードバックレポート
-globalVendors,deliverables,1,copy,貴社のプロダクト・価格・市場適合について、日本の見込み客が実際に語った内容をまとめます。
+globalVendors,deliverables,1,title,課題と要件の整理
+globalVendors,deliverables,1,copy,解くべき課題と、満たすべき条件を明文化します。
 globalVendors,deliverables,2,number,02
-globalVendors,deliverables,2,title,クオリファイ済み商談
-globalVendors,deliverables,2,copy,ターゲット像に合致する企業との初回商談・紹介の機会を創出します。
+globalVendors,deliverables,2,title,最適プロダクトの提案
+globalVendors,deliverables,2,copy,課題に合う製品と、その組み合わせを具体的に示します。
 globalVendors,deliverables,3,number,03
-globalVendors,deliverables,3,title,PoCパイプライン
-globalVendors,deliverables,3,copy,有償PoCに向けた次のアクションが明確な、具体的な企業リストを提示します。
+globalVendors,deliverables,3,title,検証計画（PoC）
+globalVendors,deliverables,3,copy,成果を確かめるための、次の実証ステップを設計します。
 globalVendors,termsHeader,main,eyebrow,HOW WE WORK
-globalVendors,termsHeader,main,title,率直な前提条件
-globalVendors,terms,1,title,売上保証なし
-globalVendors,terms,1,copy,合意した活動と成果物にコミットします。売上や契約そのものは保証しません。
-globalVendors,terms,2,title,貴社にお願いすること
-globalVendors,terms,2,copy,パイロット期間中のデモ環境・プロダクト資料・技術サポートのご提供をお願いします。
+globalVendors,termsHeader,main,title,進め方とお約束
+globalVendors,terms,1,title,コミットの範囲
+globalVendors,terms,1,copy,合意した活動と成果物に責任を持ちます。
+globalVendors,terms,2,title,ご用意いただくもの
+globalVendors,terms,2,copy,現状の課題や環境の共有と、検証へのご協力をお願いします。
 globalVendors,terms,3,title,当社が担うこと
-globalVendors,terms,3,copy,日英バイリンガルでの実行。日本語での開拓・商談・インタビューと、英語でのレポーティングを担います。
+globalVendors,terms,3,copy,製品の選定・構成・導入・定着までを一貫して担います。
 globalVendors,companyHeader,main,eyebrow,COMPANY
-globalVendors,companyHeader,main,title,パートナーの素性
+globalVendors,companyHeader,main,title,運営会社
 globalVendors,company,1,label,会社名
 globalVendors,company,1,value,エーワンロード株式会社（A-one road co.,ltd）
 globalVendors,company,2,label,設立
@@ -319,7 +309,22 @@ globalVendors,company,4,value,田村一馬
 globalVendors,company,5,label,体制
 globalVendors,company,5,value,日英バイリンガル運営
 globalVendors,contactCta,main,eyebrow,CONTACT
-globalVendors,contactCta,main,title,プロダクトについてお聞かせください。
-globalVendors,contactCta,main,copy,日本市場を試す価値があるかどうか、短い対話から一緒に見極めます。
+globalVendors,contactCta,main,title,課題をお聞かせください。
+globalVendors,contactCta,main,copy,解きたい課題から、最適な選択肢を一緒に見極めます。
 globalVendors,contactCta,main,buttonLabel,お問い合わせへ
 globalVendors,contactCta,main,buttonHref,/contact
+globalVendors,intro,main,lead,解決したい業務・ITの課題から出発し、世界の選択肢の中から最適なプロダクトと構成を提案します。
+serviceHub,hero,main,eyebrow,OUR BUSINESS
+serviceHub,hero,main,message,弊社は、2つの形を通じて、すべての人の正当な価値を取り戻すよう尽力してまいります。
+serviceHub,left,main,tag,GLOBAL GTM PARTNER
+serviceHub,left,main,label,GTMパートナー事業
+serviceHub,left,main,sub,世界のテクノロジーを、最適な市場へ。共創で、未来を加速する。
+serviceHub,left,main,href,/global-vendors
+serviceHub,left,main,image,/hub-gtm.png
+serviceHub,left,main,cta,詳しく見る
+serviceHub,right,main,tag,MOBILITY BUSINESS
+serviceHub,right,main,label,モビリティ関連事業
+serviceHub,right,main,sub,移動の可能性を拡げ、心地よい未来のモビリティをつくる。
+serviceHub,right,main,href,/service/automotive
+serviceHub,right,main,image,/hub-mobility.png
+serviceHub,right,main,cta,詳しく見る

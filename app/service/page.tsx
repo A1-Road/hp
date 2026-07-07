@@ -1,152 +1,112 @@
 import Link from "next/link";
 import Image from "next/image";
 import { AnimatedSection } from "@/components/ui/animated-section";
-import { Button } from "@/components/ui/button";
-import FAQ from "@/components/faq";
-import { getContentItem, getContentItems } from "@/lib/site-content";
+import { getContentItem } from "@/lib/site-content";
 
 export const runtime = "edge";
 
-export default async function ServicePage() {
-  const hero = await getContentItem("service", "hero");
-  const indexHeader = await getContentItem("service", "indexHeader");
-  const services = await getContentItems("service", "index");
-  const detailItems = await getContentItems("service", "detail");
-  const processHeader = await getContentItem("service", "processHeader");
-  const steps = await getContentItems("service", "process");
-  const faqHeader = await getContentItem("service", "faqHeader");
-  const faqItems = (await getContentItems("service", "faq")).map((item) => ({
-    question: item.question,
-    answer: item.answer,
-  }));
-  const contactCta = await getContentItem("service", "contactCta");
+function Panel({
+  href,
+  image,
+  tag,
+  label,
+  sub,
+  cta,
+  align,
+}: {
+  href: string;
+  image: string;
+  tag: string;
+  label: string;
+  sub: string;
+  cta: string;
+  align: "left" | "right";
+}) {
+  return (
+    <Link
+      href={href}
+      className="group relative block flex-1 overflow-hidden rounded-2xl border border-white/12 transition-colors hover:border-amber-500/50"
+    >
+      <div className="relative min-h-[62vh] w-full md:min-h-[78vh]">
+        <Image
+          src={image}
+          alt={label}
+          fill
+          priority
+          className="object-cover opacity-70 transition-transform duration-700 group-hover:scale-[1.04]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/20" />
+        <div className="absolute inset-0 flex flex-col justify-between p-7 md:p-10">
+          <div>
+            <h2 className="text-3xl font-bold leading-tight tracking-tight text-white md:text-[2.6rem]">
+              {label}
+            </h2>
+            <p className="mt-3 text-xs uppercase tracking-[0.35em] text-white/55">{tag}</p>
+          </div>
+          <div>
+            <p className="max-w-sm text-sm leading-relaxed text-white/78 md:text-base">{sub}</p>
+            <span className="mt-7 inline-flex items-center gap-3 text-sm text-white/85">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full border border-amber-500/70 text-amber-400 transition-colors group-hover:bg-amber-500 group-hover:text-black">
+                →
+              </span>
+              {cta}
+            </span>
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+export default async function ServiceHubPage() {
+  const hub = await getContentItem("serviceHub", "hero");
+  const left = await getContentItem("serviceHub", "left");
+  const right = await getContentItem("serviceHub", "right");
 
   return (
-    <div className="pt-20">
-      <section className="bg-black py-20 text-white md:py-[120px]">
-        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
-          <AnimatedSection>
-            <p className="section-label text-white/56">{hero.eyebrow}</p>
-            <h1 className="section-title mt-4">{hero.title}</h1>
-            <p className="section-copy mt-5 text-white/72">{hero.copy}</p>
-          </AnimatedSection>
-        </div>
-      </section>
+    <section className="relative min-h-screen bg-[#08080a] pt-24 pb-14 md:pt-28">
+      <div className="mx-auto w-full max-w-[1400px] px-4 md:px-8">
+        <AnimatedSection>
+          <p className="text-center text-[11px] uppercase tracking-[0.4em] text-white/40">{hub.eyebrow}</p>
+          <p className="mx-auto mt-4 max-w-3xl text-center text-sm leading-relaxed text-white/60 md:text-base">
+            {hub.message}
+          </p>
+        </AnimatedSection>
 
-      <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
-        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
-          <AnimatedSection>
-            <div className="max-w-xl">
-              <p className="section-label">{indexHeader.eyebrow}</p>
-              <h2 className="section-title mt-4">{indexHeader.title}</h2>
-            </div>
+        <div className="relative mt-8 flex flex-col gap-4 md:mt-10 md:flex-row md:gap-6">
+          <AnimatedSection className="flex flex-1">
+            <Panel
+              href={left.href}
+              image={left.image}
+              tag={left.tag}
+              label={left.label}
+              sub={left.sub}
+              cta={left.cta}
+              align="left"
+            />
           </AnimatedSection>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {services.map((service, index) => (
-              <AnimatedSection key={service.id} delay={index * 70}>
-                <Link href={`#${service.id}`} className="group block">
-                  <div className="border border-black/12">
-                    <div className="relative aspect-[4/5] overflow-hidden">
-                      <Image
-                        src={service.image}
-                        alt={service.title}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      />
-                    </div>
-                    <div className="p-5">
-                      <h3 className="text-2xl font-semibold">{service.title}</h3>
-                      <p className="mt-2 text-sm text-black/72">{service.line}</p>
-                    </div>
-                  </div>
-                </Link>
-              </AnimatedSection>
-            ))}
+          {/* 中央ディバイダー */}
+          <div className="pointer-events-none absolute inset-y-6 left-1/2 hidden -translate-x-1/2 flex-col items-center justify-center md:flex">
+            <span className="[writing-mode:vertical-rl] text-[10px] uppercase tracking-[0.5em] text-white/30">
+              A-ONE ROAD
+            </span>
+            <span className="mt-4 h-2 w-2 rotate-45 bg-amber-500/80" />
           </div>
-        </div>
-      </section>
 
-      {detailItems.map((service, serviceIndex) => (
-        <section
-          key={service.id}
-          id={service.id}
-          className={serviceIndex % 2 === 0 ? "bg-black py-16 text-white md:py-[88px] lg:py-[120px]" : "bg-white py-16 md:py-[88px] lg:py-[120px]"}
-        >
-          <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
-            <AnimatedSection>
-              <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-                <div>
-                  <p className={serviceIndex % 2 === 0 ? "section-label text-white/56" : "section-label"}>
-                    Detail
-                  </p>
-                  <h2 className="section-title mt-4">{service.title}</h2>
-                </div>
-                <div className="grid gap-4 sm:grid-cols-2">
-                  {[
-                    { title: "What", copy: service.what },
-                    { title: "Value", copy: service.value },
-                    { title: "Flow", copy: service.flow },
-                    { title: "Output", copy: service.output },
-                  ].map((group) => (
-                    <div
-                      key={`${service.id}-${group.title}`}
-                      className={serviceIndex % 2 === 0 ? "border border-white/18 px-5 py-8" : "border border-black/12 px-5 py-8"}
-                    >
-                      <h3 className="text-2xl font-semibold">{group.title}</h3>
-                      <p className={serviceIndex % 2 === 0 ? "mt-3 text-sm text-white/72" : "mt-3 text-sm text-black/72"}>
-                        {group.copy}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-        </section>
-      ))}
-
-      <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
-        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
-          <AnimatedSection>
-            <div className="max-w-xl">
-              <p className="section-label">{processHeader.eyebrow}</p>
-              <h2 className="section-title mt-4">{processHeader.title}</h2>
-            </div>
-          </AnimatedSection>
-
-          <div className="mt-10 grid gap-4 md:grid-cols-4">
-            {steps.map((step, index) => (
-              <AnimatedSection key={step.title} delay={index * 70}>
-                <div className="border border-black/12 px-5 py-8">
-                  <p className="text-xs uppercase tracking-[0.3em] text-black/42">{step.number}</p>
-                  <h3 className="mt-4 text-2xl font-semibold">{step.title}</h3>
-                  <p className="mt-3 text-sm text-black/72">{step.copy}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <FAQ eyebrow={faqHeader.eyebrow} title={faqHeader.title} items={faqItems} />
-
-      <section className="bg-black py-16 text-white md:py-[88px] lg:py-[120px]">
-        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
-          <AnimatedSection>
-            <div className="max-w-3xl">
-              <p className="section-label text-white/56">{contactCta.eyebrow}</p>
-              <h2 className="section-title mt-4">{contactCta.title}</h2>
-              <Button
-                asChild
-                className="mt-8 h-11 rounded-none bg-white px-6 text-sm font-medium text-black hover:bg-white/86"
-              >
-                <Link href={contactCta.buttonHref}>{contactCta.buttonLabel}</Link>
-              </Button>
-            </div>
+          <AnimatedSection delay={120} className="flex flex-1">
+            <Panel
+              href={right.href}
+              image={right.image}
+              tag={right.tag}
+              label={right.label}
+              sub={right.sub}
+              cta={right.cta}
+              align="right"
+            />
           </AnimatedSection>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

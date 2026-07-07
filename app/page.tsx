@@ -18,17 +18,9 @@ export default async function HomePage() {
     <div>
       <section className="relative min-h-[92vh] overflow-hidden bg-[#050507] text-white">
         <div className="absolute inset-0" aria-hidden>
-          <div className="absolute -top-48 left-1/2 h-[620px] w-[980px] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(99,102,241,0.30),transparent)] blur-3xl" />
-          <div className="absolute bottom-[-220px] right-[-180px] h-[560px] w-[560px] rounded-full bg-[radial-gradient(closest-side,rgba(56,189,248,0.18),transparent)] blur-3xl" />
-          <div
-            className="absolute inset-0 opacity-30"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)",
-              backgroundSize: "72px 72px",
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#050507]" />
+          <Image src={hero.image} alt="" fill className="object-cover" priority />
+          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-transparent to-[#050507]" />
         </div>
         <div className="relative mx-auto flex min-h-[92vh] w-full max-w-[1280px] flex-col justify-end px-5 pb-10 pt-28 md:px-10 md:pb-14">
           <AnimatedSection className="max-w-4xl">
