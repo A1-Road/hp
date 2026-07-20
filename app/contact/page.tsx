@@ -35,7 +35,11 @@ export default async function ContactPage() {
 
           <AnimatedSection delay={100}>
             <div className="mt-10 border border-white/18 p-6 md:p-8">
-              <HubspotForm portalId="48340751" formId="0e8b7633-a75c-4661-9647-3e05b982aff4" />
+              <HubspotForm
+                portalId="246807977"
+                formId="adc556cb-cfc8-4a4f-8350-fdadc91c052a"
+                region="na2"
+              />
             </div>
           </AnimatedSection>
         </div>
