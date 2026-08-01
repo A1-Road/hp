@@ -8,7 +8,6 @@ export const runtime = "edge";
 
 export default async function HomePage() {
   const hero = await getContentItem("top", "hero");
-  const identity = await getContentItem("top", "identity");
   const whatWeDoHeader = await getContentItem("top", "whatWeDoHeader");
   const businesses = await getContentItems("top", "whatWeDo");
   const aboutPreview = await getContentItem("top", "aboutPreview");
@@ -58,18 +57,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
-        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
-          <AnimatedSection>
-            <div className="max-w-4xl">
-              <p className="section-label">{identity.eyebrow}</p>
-              <h2 className="section-title mt-4">{identity.title}</h2>
-              <p className="section-copy mt-5 text-black/72">{identity.copy}</p>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
       <section id="what-we-do" className="scroll-mt-20 bg-black py-16 text-white md:py-[88px] lg:py-[120px]">
         <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
           <AnimatedSection>
@@ -94,8 +81,8 @@ export default async function HomePage() {
                     <div className="absolute inset-0 bg-black/28 transition-opacity duration-300 group-hover:bg-black/40" />
                   </div>
                   <div className="flex flex-1 flex-col p-5">
-                    <p className="text-xs uppercase tracking-[0.3em] text-white/46">{business.tag}</p>
-                    <h3 className="mt-3 text-2xl font-semibold">{business.title}</h3>
+                    <p className="text-xs uppercase tracking-[0.3em] text-white/46">{business.title}</p>
+                    <h3 className="mt-3 text-2xl font-semibold">{business.tag}</h3>
                     <p className="mt-2 flex-1 text-sm text-white/72">{business.copy}</p>
                     <p className={business.href ? "mt-5 text-sm text-white" : "mt-5 text-xs uppercase tracking-[0.3em] text-white/46"}>
                       {business.linkLabel}

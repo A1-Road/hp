@@ -18,11 +18,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "エーワンロード株式会社 | グローバルGTMパートナー & 大型積層造形（LFAM）",
+  title: "エーワンロード株式会社 | 金型・治具の保管問題を解決します",
   description:
-    "世の中の隠された価値の語り部となる。エーワンロード（A-one road）は、世界の先端プロダクト（AI・SaaS）を日本企業の課題に合わせて選定・導入するグローバルGTMパートナー事業と、欧州の大型積層造形（WAAM/LFAM）を日本の製造現場へ橋渡しする事業を通じて、すべての人の正当な価値を取り戻します。",
+    "大型金型・治具の長納期と高コスト、廃番部品の再生産、少量多品種の採算。エーワンロード株式会社は、これらの課題に取り組んでいる横浜のスタートアップです。保管コストと稼働状況を可視化し、保管し続けるより安く早い選択肢をご提案します。",
   keywords:
-    "グローバルGTMパートナー, 海外SaaS 日本導入, 海外AIプロダクト 日本市場参入, テクノロジー導入支援, ディストリビューター, ローカライズ, PoC, 大型積層造形, WAAM, LFAM, 金型保管, 製造業DX, エーワンロード, A-one road",
+    "金型保管, 治具保管, 廃番部品, 少量多品種生産, 製造業DX, 大型積層造形, WAAM, LFAM, 海外SaaS 日本導入, テクノロジー導入支援, エーワンロード, A-one road",
   authors: [{ name: "エーワンロード株式会社" }],
   robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   generator: "Next.js",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     url: "https://a-oneroad.com",
-    title: "エーワンロード株式会社 | グローバルGTMパートナー & 大型積層造形（LFAM）",
+    title: "エーワンロード株式会社 | 金型・治具の保管問題を解決します",
     description:
-      "世界の先端プロダクトを、日本企業の課題に合わせて選び・つなぎ・導入するグローバルGTMパートナー。欧州の大型積層造形（WAAM/LFAM）を日本の製造現場へ橋渡しする事業も。",
+      "大型金型・治具の長納期と高コスト、廃番部品の再生産、少量多品種の採算。保管コストと稼働状況を可視化し、保管し続けるより安く早い選択肢をご提案します。",
     siteName: "エーワンロード株式会社",
     images: [
       {
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "エーワンロード株式会社 | グローバルGTMパートナー & 大型積層造形（LFAM）",
+    title: "A-One Road Co., Ltd. | Solving the Mold & Die Storage Problem",
     description:
-      "A global GTM partner bringing the world's leading AI and SaaS to Japan, plus a bridge for European large-format additive manufacturing (WAAM/LFAM) into Japan's factories.",
+      "Long lead times and high costs for large molds and jigs, reproducing discontinued parts, low-volume profitability. We visualize your storage cost and utilization, then propose a cheaper, faster alternative to storage.",
     images: ["https://a-oneroad.com/twitter-image.jpg"],
     creator: "@a1road",
   },
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
         url: "https://a-oneroad.com",
         logo: "https://a-oneroad.com/logo.png",
         description:
-          "世界の先端プロダクト（AI・SaaS）を日本企業の課題に合わせて選定・導入するグローバルGTMパートナー事業と、欧州の大型積層造形（WAAM/LFAM）を日本の製造現場へ橋渡しする事業。",
+          "大型金型・治具の長納期と高コスト、廃番部品の再生産、少量多品種の採算といった製造現場の課題に取り組む横浜のスタートアップ。",
         address: {
           "@type": "PostalAddress",
           addressCountry: "JP",

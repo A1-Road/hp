@@ -53,54 +53,46 @@
   "top": {
     "hero": {
       "main": {
-        "eyebrow": "Our Mission",
-        "title": "Restore rightful value.",
-        "copy": "We become the storyteller of the world's hidden value. A-one road lives this out through three businesses: bringing the world's best technology into Japan, automotive (vehicle export, parts, and events), and bridging large-format additive manufacturing (WAAM/LFAM) to Japan's factory floor.",
-        "primaryLabel": "See what we do",
-        "primaryHref": "#what-we-do",
-        "secondaryLabel": "Contact",
-        "secondaryHref": "/contact",
+        "eyebrow": "Business Efficiency & Mold-Axis Solutions",
+        "title": "Cut fixed costs. Stop the lost opportunities.",
+        "copy": "Is the growing volume of inquiries and follow-ups straining your team's core work? Are mold and jig storage or reproducing discontinued parts becoming a fixed cost and a risk? A-One Road maps out the fix -- from on-site hearing to ROI modeling to identifying which existing budget it replaces -- through a paid diagnostic.",
+        "primaryLabel": "Pick a 30-min meeting time",
+        "primaryHref": "https://calendar.app.google/jNvg49b28NDbeg1M9",
+        "secondaryLabel": "About us",
+        "secondaryHref": "/about-us",
         "image": "/hero-track.png",
         "scroll": "Scroll"
       }
     },
     "identity": {
       "main": {
-        "eyebrow": "Our Vision",
-        "title": "We become the storyteller of the world's hidden value.",
-        "copy": "We re-edit undervalued assets — software, vehicles, and automotive culture — and deliver them to markets where they are rightly valued."
+        "eyebrow": "Our Position",
+        "title": "We don't build. We combine.",
+        "copy": "We combine technology that already exists worldwide with manufacturing capacity that already exists in Japan, designing the shortest path to ROI. We stay neutral across manufacturers, proposing only what fits you best."
       }
     },
     "whatWeDoHeader": {
       "main": {
-        "eyebrow": "Business",
-        "title": "What we do",
-        "copy": "Three businesses born from one mission."
+        "eyebrow": "THE PROBLEM",
+        "title": "Unseen burdens are eating into profit and time.",
+        "copy": "Slow inquiry response. The cost of storing molds. These burdens on operations and profit are easy to miss."
       }
     },
     "whatWeDo": {
       "1": {
-        "tag": "GLOBAL GTM PARTNER",
-        "title": "Solve your challenge with the world's technology.",
-        "copy": "\"For your business or IT challenge, we select the right product from anywhere in the world, configure it, and support adoption.\"",
+        "tag": "BUSINESS EFFICIENCY ROI DIAGNOSTIC",
+        "title": "Slow inquiry and quote response is straining your core work.",
+        "copy": "We combine proven overseas SaaS and AI with your existing operations, diagnosing everything from on-site hearing to ROI modeling to identifying which budget it replaces. The result: faster response, higher conversion.",
         "image": "/workflow.png",
         "href": "/global-vendors",
         "linkLabel": "Learn more"
       },
       "2": {
-        "tag": "MOBILITY",
-        "title": "Mobility",
-        "copy": "Vehicle export, parts support, and event operations — delivering the value of Japanese automobiles as both products and culture.",
-        "image": "/business-sourcing.png",
-        "href": "/service/automotive",
-        "linkLabel": "Learn more"
-      },
-      "3": {
-        "tag": "LARGE-FORMAT AM",
-        "title": "Large-Format Additive Manufacturing",
-        "copy": "Solving what's too large to make -- bringing Europe's large-format additive manufacturing to Japan's factory floor.",
+        "tag": "MOLD-AXIS SOLUTIONS",
+        "title": "Taking on the mold storage problem, directly.",
+        "copy": "Long lead times and high costs for large molds and jigs, reproducing discontinued parts, low-volume profitability. We visualize the cost and risk of the molds you hold, and map a path to lower fixed costs and stable supply.",
         "image": "/hub-manufacturing.jpg",
-        "href": "/service/manufacturing",
+        "href": "/mold-storage",
         "linkLabel": "Learn more"
       }
     },
@@ -193,7 +185,7 @@
       "main": {
         "eyebrow": "Contact",
         "title": "Start the conversation.",
-        "copy": "From bringing global software products to Japan, to sourcing and exporting Japanese commercial vehicles — tell us what you need.",
+        "copy": "If slow inquiry response or the cost of storing molds and jigs is on your mind, tell us about it first -- 30 minutes. We map the fix, from on-site hearing to ROI modeling, through a paid diagnostic.",
         "buttonLabel": "Go to Contact",
         "buttonHref": "/contact"
       }
@@ -217,8 +209,8 @@
     },
     "philosophyHeader": {
       "main": {
-        "eyebrow": "Philosophy",
-        "title": "Three anchors."
+        "eyebrow": "ABOUT",
+        "title": "What we care about."
       }
     },
     "philosophy": {
@@ -231,15 +223,48 @@
         "copy": "Keep connecting Japanese vehicles and field knowledge with real demand worldwide."
       },
       "3": {
-        "title": "Definition",
-        "copy": "\"A company that re-edits the world's technology and Japan's value, connecting each to markets where it is rightly valued.\""
+        "title": "Value",
+        "copy": "Board Spaceship Earth. Dive into the customer's shoes. Our behavior is guided by the five credos below."
+      }
+    },
+    "credoHeader": {
+      "main": {
+        "eyebrow": "CREDO",
+        "title": "Five credos."
+      }
+    },
+    "credo": {
+      "1": {
+        "number": "01",
+        "title": "Board Spaceship Earth.",
+        "copy": "地球市民たれ。"
+      },
+      "2": {
+        "number": "02",
+        "title": "Dive into the customer's shoes.",
+        "copy": "ユーザーに肩まで浸かれ。"
+      },
+      "3": {
+        "number": "03",
+        "title": "Be Resourceful.",
+        "copy": "最小の資源で最大の成果を出せ。"
+      },
+      "4": {
+        "number": "04",
+        "title": "Run Fastest Lap.",
+        "copy": "誰よりも先に、最新技術を社会実装せよ。"
+      },
+      "5": {
+        "number": "05",
+        "title": "Go far, Go together.",
+        "copy": "n人、n+1脚で遠くへ行け。"
       }
     },
     "story": {
       "main": {
         "eyebrow": "APPROACH",
-        "title": "\"Two businesses, one purpose.\"",
-        "copy": "\"We run two businesses. One is a global GTM partner that selects and adopts the world's leading products for Japanese companies' challenges. The other is mobility - conveying the value of Japanese vehicles, and handling sourcing and export. Different domains, same work: finding hidden value and delivering it right.\"",
+        "title": "Two businesses, one purpose.",
+        "copy": "We run two businesses. One is business efficiency and ROI diagnostics -- closing the gap in slow inquiry and quote response with overseas SaaS and AI. The other takes on the mold storage problem and reproducing discontinued parts, directly, offering a way to remake molds on demand with European large-format additive manufacturing. Different domains, same work: making the burden on the ground visible, and turning it into lower fixed costs and fewer lost opportunities.",
         "image": "/about-story.png"
       }
     },
@@ -251,12 +276,12 @@
     },
     "differentiator": {
       "1": {
-        "title": "Global GTM Partner",
-        "copy": "\"Select, connect and adopt the world's leading products for Japanese companies' challenges.\""
+        "title": "Business Efficiency & ROI Diagnostic",
+        "copy": "We combine overseas SaaS and AI with your existing operations to close the gap in slow inquiry and quote response."
       },
       "2": {
-        "title": "Mobility",
-        "copy": "\"Convey the value of Japanese vehicles, and handle sourcing and export.\""
+        "title": "Mold-Axis Solutions",
+        "copy": "We visualize the cost and risk of the molds you hold, and map a path to lower fixed costs and stable supply."
       }
     },
     "companyInfoHeader": {
@@ -302,7 +327,7 @@
       "main": {
         "eyebrow": "Service",
         "title": "Mobility",
-        "copy": "\"From Japanese kei trucks, kei vans and light commercial vehicles to specialty vehicles, we source and export a wide range — with support across selection, parts, vehicle information and export operations.\""
+        "copy": "From Japanese kei trucks, kei vans and light commercial vehicles to specialty vehicles, we source and export a wide range — with support across selection, parts, vehicle information and export operations."
       }
     },
     "indexHeader": {
@@ -314,8 +339,8 @@
     "index": {
       "1": {
         "id": "pr-marketing-events",
-        "title": "\"Automotive PR, Marketing & Events\"",
-        "line": "\"PR, marketing & events\"",
+        "title": "Automotive PR, Marketing & Events",
+        "line": "PR, marketing & events",
         "image": "/DAONIGHT2024.png"
       },
       "2": {
@@ -328,17 +353,17 @@
     "detail": {
       "1": {
         "id": "pr-marketing-events",
-        "title": "\"Automotive PR, Marketing & Events\"",
-        "what": "\"We plan and run automotive PR, marketing and events end to end.\"",
+        "title": "Automotive PR, Marketing & Events",
+        "what": "We plan and run automotive PR, marketing and events end to end.",
         "value": "We convey a vehicle's value through both product and culture.",
         "flow": "From concept and outreach to on-site operation.",
-        "output": "\"PR, marketing & event operations.\""
+        "output": "PR, marketing & event operations."
       },
       "2": {
         "id": "vehicle-sourcing",
         "title": "Vehicle Sourcing",
-        "what": "\"We source and export Japanese commercial, light and specialty vehicles for individuals and businesses.\"",
-        "value": "\"We support selection by use and market, and export procedures.\"",
+        "what": "We source and export Japanese commercial, light and specialty vehicles for individuals and businesses.",
+        "value": "We support selection by use and market, and export procedures.",
         "flow": "From requirements to candidates to export.",
         "output": "Vehicle sourcing & export."
       }
@@ -498,9 +523,9 @@
   "globalVendors": {
     "hero": {
       "main": {
-        "eyebrow": "GLOBAL GTM PARTNER",
-        "title": "\"The world's best technology, matched to your challenge.\"",
-        "copy": "Tell us your business or IT challenge. We select the right product from anywhere in the world, configure it, and see it through to adoption.",
+        "eyebrow": "BUSINESS EFFICIENCY & ROI DIAGNOSTIC",
+        "title": "Slow inquiry and quote response is straining your core work.",
+        "copy": "For low-volume high-mix operations, the real bottleneck usually isn't generating new leads -- it's the first response to the inquiries and quote requests already coming in. We combine overseas SaaS and AI with your existing operations, diagnosing everything from on-site hearing to ROI modeling to identifying which budget it replaces.",
         "primaryLabel": "Contact us",
         "primaryHref": "/contact"
       }
@@ -508,38 +533,38 @@
     "intro": {
       "main": {
         "eyebrow": "HOW WE HELP",
-        "title": "Start from the challenge, find the right move.",
+        "title": "First, an on-site hearing.",
         "copy": "We bridge language, trust, and how decisions get made — in Japanese and in English.",
-        "lead": "\"Starting from the business or IT challenge you want solved, we propose the optimal product and configuration from the world's options.\""
+        "lead": "What we deliver first is the on-site data and analysis needed to judge the shortest path to ROI. We stay neutral across manufacturers, so the conclusion can be \"don't adopt anything right now.\""
       }
     },
     "servicesHeader": {
       "main": {
-        "eyebrow": "What we do",
-        "title": "What we provide",
-        "copy": "From framing the challenge to lasting adoption."
+        "eyebrow": "How We Diagnose",
+        "title": "From on-site hearing to reallocating your budget.",
+        "copy": "We turn burdens people describe by feel into numbers."
       }
     },
     "services": {
       "1": {
-        "title": "Discovery",
-        "copy": "We frame your business and IT challenge and define what to solve., regulatory context, and honest feedback from target users."
+        "title": "On-site hearing",
+        "copy": "We ask who spends how much time on inquiry response and follow-up, by department and by person."
       },
       "2": {
-        "title": "Product selection",
-        "copy": "We choose the best-fitting product from candidates worldwide., in natural Japanese."
+        "title": "Workload analysis",
+        "copy": "We break down the workflow into person-months, cost, and lost revenue -- turning felt burden into numbers."
       },
       "4": {
-        "title": "Design & PoC",
-        "copy": "We combine products into a form that proves the outcome., one-pagers, and demo scripts that match local business conventions."
+        "title": "ROI modeling",
+        "copy": "We calculate person-months saved, annual impact, and payback period across conservative, standard, and optimistic scenarios."
       },
       "5": {
-        "title": "Rollout & adoption",
-        "copy": "From contract and rollout to lasting day-to-day use."
+        "title": "Budget replacement mapping",
+        "copy": "We identify existing budget -- overtime, temp staffing, outsourcing -- that could fund the replacement, without assuming new budget."
       },
       "7": {
-        "title": "Ongoing support",
-        "copy": "We keep improving and extending after go-live., with clear success criteria."
+        "title": "Product selection & rollout",
+        "copy": "Based on the diagnostic, we select the best-fitting product from candidates worldwide and see it through to adoption."
       }
     },
     "solutionsHeader": {
@@ -567,8 +592,8 @@
       "main": {
         "eyebrow": "TRACK RECORD",
         "title": "Measured results",
-        "copy": "Not a portfolio of finished case studies -- we show execution through measured numbers: volume sent and response rate.",
-        "note": "Response rate is weighted by engagement."
+        "copy": "We show execution through a measured number: volume sent.",
+        "note": ""
       }
     },
     "trackRecord": {
@@ -579,14 +604,6 @@
       "2": {
         "label": "Total sent",
         "value": "4219"
-      },
-      "3": {
-        "label": "Response rate",
-        "value": "~11%"
-      },
-      "4": {
-        "label": "Meeting rate",
-        "value": "0.8-1.0%"
       }
     },
     "pilotHeader": {
@@ -621,7 +638,7 @@
       "2": {
         "number": "02",
         "title": "Recommended product",
-        "copy": "\"We show the fitting product and how to combine it, concretely.\""
+        "copy": "We show the fitting product and how to combine it, concretely."
       },
       "3": {
         "number": "03",
@@ -685,7 +702,7 @@
       "main": {
         "eyebrow": "Contact",
         "title": "Tell us your challenge.",
-        "copy": "\"Starting from what you want to solve, we find the best options together.\"",
+        "copy": "Starting from what you want to solve, we find the best options together.",
         "buttonLabel": "Contact us",
         "buttonHref": "/contact"
       }
@@ -695,35 +712,25 @@
     "hero": {
       "main": {
         "eyebrow": "OUR BUSINESS",
-        "message": "\"Through two forms, we work to restore the fair value everyone deserves.\""
+        "message": "Slow inquiry response. The cost of storing molds and jigs. We map the fix, from on-site hearing to ROI modeling, through a paid diagnostic."
       }
     },
     "left": {
       "main": {
-        "tag": "GLOBAL GTM PARTNER",
-        "label": "Global GTM Partner",
-        "sub": "\"The world's technology, to the right market — accelerating the future through co-creation.\"",
+        "tag": "BUSINESS EFFICIENCY & ROI DIAGNOSTIC",
+        "label": "Fixing slow inquiry and quote response.",
+        "sub": "We combine overseas SaaS and AI with your existing operations to raise response speed and conversion.",
         "href": "/global-vendors",
         "image": "/hub-gtm.png",
         "cta": "Explore"
       }
     },
-    "right": {
-      "main": {
-        "tag": "MOBILITY BUSINESS",
-        "label": "Mobility",
-        "sub": "\"Expanding what movement can be, building a comfortable future in mobility.\"",
-        "href": "/service/automotive",
-        "image": "/hub-mobility.png",
-        "cta": "Explore"
-      }
-    },
     "third": {
       "main": {
-        "tag": "LARGE-FORMAT AM",
-        "label": "Large-Format Additive Manufacturing",
-        "sub": "Solving what's too large to make — bringing Europe's large-format additive manufacturing to Japan's factory floor.",
-        "href": "/service/manufacturing",
+        "tag": "MOLD-AXIS SOLUTIONS",
+        "label": "Taking on the mold storage problem, directly.",
+        "sub": "We visualize the cost and risk of the molds you hold, and map a path to lower fixed costs and stable supply.",
+        "href": "/mold-storage",
         "image": "/hub-manufacturing.jpg",
         "cta": "Explore"
       }

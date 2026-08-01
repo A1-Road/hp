@@ -12,10 +12,6 @@ export default async function GlobalVendorsPage() {
   const intro = await getContentItem("globalVendors", "intro");
   const servicesHeader = await getContentItem("globalVendors", "servicesHeader");
   const services = await getContentItems("globalVendors", "services");
-  const solutionsHeader = await getContentItem("globalVendors", "solutionsHeader");
-  const solutions = await getContentItems("globalVendors", "solutions");
-  const trackRecordHeader = await getContentItem("globalVendors", "trackRecordHeader");
-  const trackRecord = await getContentItems("globalVendors", "trackRecord");
   const pilotHeader = await getContentItem("globalVendors", "pilotHeader");
   const pilotFacts = await getContentItems("globalVendors", "pilotFacts");
   const deliverablesHeader = await getContentItem("globalVendors", "deliverablesHeader");
@@ -76,59 +72,6 @@ export default async function GlobalVendorsPage() {
               </AnimatedSection>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
-        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
-          <AnimatedSection>
-            <div className="max-w-xl">
-              <p className="section-label">{solutionsHeader.eyebrow}</p>
-              <h2 className="section-title mt-4">{solutionsHeader.title}</h2>
-            </div>
-          </AnimatedSection>
-
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
-            {solutions.map((item, index) => (
-              <AnimatedSection key={item.title} delay={index * 70} className="h-full">
-                <div className="h-full border border-black/12 px-5 py-8">
-                  <h3 className="text-xl font-semibold">{item.title}</h3>
-                  <p className="mt-3 text-sm text-black/72">{item.copy}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-
-          <AnimatedSection delay={220}>
-            <p className="mt-8 max-w-2xl text-sm text-black/56">{solutionsHeader.note}</p>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      <section className="bg-black py-16 text-white md:py-[88px] lg:py-[120px]">
-        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
-          <AnimatedSection>
-            <div className="max-w-xl">
-              <p className="section-label text-white/56">{trackRecordHeader.eyebrow}</p>
-              <h2 className="section-title mt-4">{trackRecordHeader.title}</h2>
-              <p className="section-copy mt-5 text-white/72">{trackRecordHeader.copy}</p>
-            </div>
-          </AnimatedSection>
-
-          <div className="mt-10 grid gap-4 md:grid-cols-4">
-            {trackRecord.map((fact, index) => (
-              <AnimatedSection key={fact.label} delay={index * 70} className="h-full">
-                <div className="h-full border border-white/18 px-5 py-8">
-                  <p className="text-xs uppercase tracking-[0.3em] text-white/46">{fact.label}</p>
-                  <p className="mt-4 text-2xl font-semibold">{fact.value}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-
-          <AnimatedSection delay={280}>
-            <p className="mt-6 max-w-2xl text-xs text-white/40">{trackRecordHeader.note}</p>
-          </AnimatedSection>
         </div>
       </section>
 

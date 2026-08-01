@@ -36,10 +36,10 @@ function Panel({
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/20" />
         <div className="absolute inset-0 flex flex-col justify-between p-7 md:p-8">
           <div>
-            <h2 className="text-2xl font-bold leading-tight tracking-tight text-white md:text-[2rem]">
-              {label}
+            <h2 className="text-2xl font-bold leading-tight tracking-tight text-amber-400 md:text-[2rem]">
+              {tag}
             </h2>
-            <p className="mt-3 text-xs uppercase tracking-[0.35em] text-white/55">{tag}</p>
+            <p className="mt-3 text-xs uppercase tracking-[0.35em] text-white/55">{label}</p>
           </div>
           <div>
             <p className="max-w-sm text-sm leading-relaxed text-white/78">{sub}</p>

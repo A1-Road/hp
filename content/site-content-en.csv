@@ -20,39 +20,33 @@ global,socials,2,label,LinkedIn
 global,socials,2,href,https://linkedin.com/company/a1road
 global,socials,3,label,GitHub
 global,socials,3,href,https://github.com/A1-Road
-top,hero,main,eyebrow,Our Mission
-top,hero,main,title,Restore rightful value.
-top,hero,main,copy,We become the storyteller of the world's hidden value. A-one road lives this out through three businesses: bringing the world's best technology into Japan, automotive (vehicle export, parts, and events), and bridging large-format additive manufacturing (WAAM/LFAM) to Japan's factory floor.
-top,hero,main,primaryLabel,See what we do
-top,hero,main,primaryHref,#what-we-do
-top,hero,main,secondaryLabel,Contact
-top,hero,main,secondaryHref,/contact
+top,hero,main,eyebrow,Business Efficiency & Mold-Axis Solutions
+top,hero,main,title,Cut fixed costs. Stop the lost opportunities.
+top,hero,main,copy,Is the growing volume of inquiries and follow-ups straining your team's core work? Are mold and jig storage or reproducing discontinued parts becoming a fixed cost and a risk? A-One Road maps out the fix -- from on-site hearing to ROI modeling to identifying which existing budget it replaces -- through a paid diagnostic.
+top,hero,main,primaryLabel,Pick a 30-min meeting time
+top,hero,main,primaryHref,https://calendar.app.google/jNvg49b28NDbeg1M9
+top,hero,main,secondaryLabel,About us
+top,hero,main,secondaryHref,/about-us
 top,hero,main,image,/hero-track.png
 top,hero,main,scroll,Scroll
-top,identity,main,eyebrow,Our Vision
-top,identity,main,title,We become the storyteller of the world's hidden value.
-top,identity,main,copy,We re-edit undervalued assets — software, vehicles, and automotive culture — and deliver them to markets where they are rightly valued.
-top,whatWeDoHeader,main,eyebrow,Business
-top,whatWeDoHeader,main,title,What we do
-top,whatWeDoHeader,main,copy,Three businesses born from one mission.
-top,whatWeDo,1,tag,GLOBAL GTM PARTNER
-top,whatWeDo,1,title,Solve your challenge with the world's technology.
-top,whatWeDo,1,copy,"For your business or IT challenge, we select the right product from anywhere in the world, configure it, and support adoption."
+top,identity,main,eyebrow,Our Position
+top,identity,main,title,We don't build. We combine.
+top,identity,main,copy,We combine technology that already exists worldwide with manufacturing capacity that already exists in Japan, designing the shortest path to ROI. We stay neutral across manufacturers, proposing only what fits you best.
+top,whatWeDoHeader,main,eyebrow,THE PROBLEM
+top,whatWeDoHeader,main,title,Unseen burdens are eating into profit and time.
+top,whatWeDoHeader,main,copy,Slow inquiry response. The cost of storing molds. These burdens on operations and profit are easy to miss.
+top,whatWeDo,1,tag,BUSINESS EFFICIENCY ROI DIAGNOSTIC
+top,whatWeDo,1,title,Slow inquiry and quote response is straining your core work.
+top,whatWeDo,1,copy,We combine proven overseas SaaS and AI with your existing operations, diagnosing everything from on-site hearing to ROI modeling to identifying which budget it replaces. The result: faster response, higher conversion.
 top,whatWeDo,1,image,/workflow.png
 top,whatWeDo,1,href,/global-vendors
 top,whatWeDo,1,linkLabel,Learn more
-top,whatWeDo,2,tag,MOBILITY
-top,whatWeDo,2,title,Mobility
-top,whatWeDo,2,copy,Vehicle export, parts support, and event operations — delivering the value of Japanese automobiles as both products and culture.
-top,whatWeDo,2,image,/business-sourcing.png
-top,whatWeDo,2,href,/service/automotive
+top,whatWeDo,2,tag,MOLD-AXIS SOLUTIONS
+top,whatWeDo,2,title,Taking on the mold storage problem, directly.
+top,whatWeDo,2,copy,Long lead times and high costs for large molds and jigs, reproducing discontinued parts, low-volume profitability. We visualize the cost and risk of the molds you hold, and map a path to lower fixed costs and stable supply.
+top,whatWeDo,2,image,/hub-manufacturing.jpg
+top,whatWeDo,2,href,/mold-storage
 top,whatWeDo,2,linkLabel,Learn more
-top,whatWeDo,3,tag,LARGE-FORMAT AM
-top,whatWeDo,3,title,Large-Format Additive Manufacturing
-top,whatWeDo,3,copy,Solving what's too large to make -- bringing Europe's large-format additive manufacturing to Japan's factory floor.
-top,whatWeDo,3,image,/hub-manufacturing.jpg
-top,whatWeDo,3,href,/service/manufacturing
-top,whatWeDo,3,linkLabel,Learn more
 top,servicePreviewHeader,main,eyebrow,Vehicle Export
 top,servicePreviewHeader,main,title,Commercial Vehicle Export Services
 top,servicePreviewHeader,main,linkLabel,View all
@@ -98,7 +92,7 @@ top,signalSteps,3,title,Export Support
 top,signalSteps,3,copy,Export Support
 top,contactCta,main,eyebrow,Contact
 top,contactCta,main,title,Start the conversation.
-top,contactCta,main,copy,From bringing global software products to Japan, to sourcing and exporting Japanese commercial vehicles — tell us what you need.
+top,contactCta,main,copy,If slow inquiry response or the cost of storing molds and jigs is on your mind, tell us about it first -- 30 minutes. We map the fix, from on-site hearing to ROI modeling, through a paid diagnostic.
 top,contactCta,main,buttonLabel,Go to Contact
 top,contactCta,main,buttonHref,/contact
 about,hero,main,eyebrow,About
@@ -108,24 +102,41 @@ about,hero,main,image,/about-hero.png
 about,statement,main,eyebrow,Statement
 about,statement,main,title,We become the storyteller of the world's hidden value.
 about,statement,main,copy,Excellent yet unknown. Valuable yet undelivered. Closing that gap is our work.
-about,philosophyHeader,main,eyebrow,Philosophy
-about,philosophyHeader,main,title,Three anchors.
+about,philosophyHeader,main,eyebrow,ABOUT
+about,philosophyHeader,main,title,What we care about.
 about,philosophy,1,title,Mission
 about,philosophy,1,copy,Reduce structures that bury value and increase transactions where value reaches the right buyer.
 about,philosophy,2,title,Vision
 about,philosophy,2,copy,Keep connecting Japanese vehicles and field knowledge with real demand worldwide.
-about,philosophy,3,title,Definition
-about,philosophy,3,copy,"A company that re-edits the world's technology and Japan's value, connecting each to markets where it is rightly valued."
+about,philosophy,3,title,Value
+about,philosophy,3,copy,Board Spaceship Earth. Dive into the customer's shoes. Our behavior is guided by the five credos below.
+about,credoHeader,main,eyebrow,CREDO
+about,credoHeader,main,title,Five credos.
+about,credo,1,number,01
+about,credo,1,title,Board Spaceship Earth.
+about,credo,1,copy,地球市民たれ。
+about,credo,2,number,02
+about,credo,2,title,Dive into the customer's shoes.
+about,credo,2,copy,ユーザーに肩まで浸かれ。
+about,credo,3,number,03
+about,credo,3,title,Be Resourceful.
+about,credo,3,copy,最小の資源で最大の成果を出せ。
+about,credo,4,number,04
+about,credo,4,title,Run Fastest Lap.
+about,credo,4,copy,誰よりも先に、最新技術を社会実装せよ。
+about,credo,5,number,05
+about,credo,5,title,Go far, Go together.
+about,credo,5,copy,n人、n+1脚で遠くへ行け。
 about,story,main,eyebrow,APPROACH
-about,story,main,title,"Two businesses, one purpose."
-about,story,main,copy,"We run two businesses. One is a global GTM partner that selects and adopts the world's leading products for Japanese companies' challenges. The other is mobility - conveying the value of Japanese vehicles, and handling sourcing and export. Different domains, same work: finding hidden value and delivering it right."
+about,story,main,title,Two businesses, one purpose.
+about,story,main,copy,We run two businesses. One is business efficiency and ROI diagnostics -- closing the gap in slow inquiry and quote response with overseas SaaS and AI. The other takes on the mold storage problem and reproducing discontinued parts, directly, offering a way to remake molds on demand with European large-format additive manufacturing. Different domains, same work: making the burden on the ground visible, and turning it into lower fixed costs and fewer lost opportunities.
 about,story,main,image,/about-story.png
 about,differentiatorHeader,main,eyebrow,Difference
 about,differentiatorHeader,main,title,Two businesses
-about,differentiator,1,title,Global GTM Partner
-about,differentiator,1,copy,"Select, connect and adopt the world's leading products for Japanese companies' challenges."
-about,differentiator,2,title,Mobility
-about,differentiator,2,copy,"Convey the value of Japanese vehicles, and handle sourcing and export."
+about,differentiator,1,title,Business Efficiency & ROI Diagnostic
+about,differentiator,1,copy,We combine overseas SaaS and AI with your existing operations to close the gap in slow inquiry and quote response.
+about,differentiator,2,title,Mold-Axis Solutions
+about,differentiator,2,copy,We visualize the cost and risk of the molds you hold, and map a path to lower fixed costs and stable supply.
 about,companyInfoHeader,main,eyebrow,Company
 about,companyInfoHeader,main,title,Company Information
 about,companyInfoHeader,main,copy,Corporate details.
@@ -145,27 +156,27 @@ about,companyInfo,7,label,Address
 about,companyInfo,7,value,Wizard Building 402, 1-4-3 Sengencho, Nishi-ku, Yokohama, Kanagawa, Japan
 service,hero,main,eyebrow,Service
 service,hero,main,title,Mobility
-service,hero,main,copy,"From Japanese kei trucks, kei vans and light commercial vehicles to specialty vehicles, we source and export a wide range — with support across selection, parts, vehicle information and export operations."
+service,hero,main,copy,From Japanese kei trucks, kei vans and light commercial vehicles to specialty vehicles, we source and export a wide range — with support across selection, parts, vehicle information and export operations.
 service,indexHeader,main,eyebrow,Index
 service,indexHeader,main,title,Four service blocks.
 service,index,1,id,pr-marketing-events
-service,index,1,title,"Automotive PR, Marketing & Events"
-service,index,1,line,"PR, marketing & events"
+service,index,1,title,Automotive PR, Marketing & Events
+service,index,1,line,PR, marketing & events
 service,index,1,image,/DAONIGHT2024.png
 service,index,2,id,vehicle-sourcing
 service,index,2,title,Vehicle Sourcing
 service,index,2,line,Sourcing & export
 service,index,2,image,/business-sourcing.png
 service,detail,1,id,pr-marketing-events
-service,detail,1,title,"Automotive PR, Marketing & Events"
-service,detail,1,what,"We plan and run automotive PR, marketing and events end to end."
+service,detail,1,title,Automotive PR, Marketing & Events
+service,detail,1,what,We plan and run automotive PR, marketing and events end to end.
 service,detail,1,value,We convey a vehicle's value through both product and culture.
 service,detail,1,flow,From concept and outreach to on-site operation.
-service,detail,1,output,"PR, marketing & event operations."
+service,detail,1,output,PR, marketing & event operations.
 service,detail,2,id,vehicle-sourcing
 service,detail,2,title,Vehicle Sourcing
-service,detail,2,what,"We source and export Japanese commercial, light and specialty vehicles for individuals and businesses."
-service,detail,2,value,"We support selection by use and market, and export procedures."
+service,detail,2,what,We source and export Japanese commercial, light and specialty vehicles for individuals and businesses.
+service,detail,2,value,We support selection by use and market, and export procedures.
 service,detail,2,flow,From requirements to candidates to export.
 service,detail,2,output,Vehicle sourcing & export.
 service,processHeader,main,eyebrow,Process
@@ -233,27 +244,27 @@ contact,info,3,value,Yokohama Japan
 contact,info,4,label,SNS
 contact,info,4,value,X / LinkedIn / GitHub
 contact,reassurance,main,text,
-globalVendors,hero,main,eyebrow,GLOBAL GTM PARTNER
-globalVendors,hero,main,title,"The world's best technology, matched to your challenge."
-globalVendors,hero,main,copy,Tell us your business or IT challenge. We select the right product from anywhere in the world, configure it, and see it through to adoption.
+globalVendors,hero,main,eyebrow,BUSINESS EFFICIENCY & ROI DIAGNOSTIC
+globalVendors,hero,main,title,Slow inquiry and quote response is straining your core work.
+globalVendors,hero,main,copy,For low-volume high-mix operations, the real bottleneck usually isn't generating new leads -- it's the first response to the inquiries and quote requests already coming in. We combine overseas SaaS and AI with your existing operations, diagnosing everything from on-site hearing to ROI modeling to identifying which budget it replaces.
 globalVendors,hero,main,primaryLabel,Contact us
 globalVendors,hero,main,primaryHref,/contact
 globalVendors,intro,main,eyebrow,HOW WE HELP
-globalVendors,intro,main,title,Start from the challenge, find the right move.
+globalVendors,intro,main,title,First, an on-site hearing.
 globalVendors,intro,main,copy,We bridge language, trust, and how decisions get made — in Japanese and in English.
-globalVendors,servicesHeader,main,eyebrow,What we do
-globalVendors,servicesHeader,main,title,What we provide
-globalVendors,servicesHeader,main,copy,From framing the challenge to lasting adoption.
-globalVendors,services,1,title,Discovery
-globalVendors,services,1,copy,We frame your business and IT challenge and define what to solve., regulatory context, and honest feedback from target users.
-globalVendors,services,2,title,Product selection
-globalVendors,services,2,copy,We choose the best-fitting product from candidates worldwide., in natural Japanese.
-globalVendors,services,4,title,Design & PoC
-globalVendors,services,4,copy,We combine products into a form that proves the outcome., one-pagers, and demo scripts that match local business conventions.
-globalVendors,services,5,title,Rollout & adoption
-globalVendors,services,5,copy,From contract and rollout to lasting day-to-day use.
-globalVendors,services,7,title,Ongoing support
-globalVendors,services,7,copy,We keep improving and extending after go-live., with clear success criteria.
+globalVendors,servicesHeader,main,eyebrow,How We Diagnose
+globalVendors,servicesHeader,main,title,From on-site hearing to reallocating your budget.
+globalVendors,servicesHeader,main,copy,We turn burdens people describe by feel into numbers.
+globalVendors,services,1,title,On-site hearing
+globalVendors,services,1,copy,We ask who spends how much time on inquiry response and follow-up, by department and by person.
+globalVendors,services,2,title,Workload analysis
+globalVendors,services,2,copy,We break down the workflow into person-months, cost, and lost revenue -- turning felt burden into numbers.
+globalVendors,services,4,title,ROI modeling
+globalVendors,services,4,copy,We calculate person-months saved, annual impact, and payback period across conservative, standard, and optimistic scenarios.
+globalVendors,services,5,title,Budget replacement mapping
+globalVendors,services,5,copy,We identify existing budget -- overtime, temp staffing, outsourcing -- that could fund the replacement, without assuming new budget.
+globalVendors,services,7,title,Product selection & rollout
+globalVendors,services,7,copy,Based on the diagnostic, we select the best-fitting product from candidates worldwide and see it through to adoption.
 globalVendors,solutionsHeader,main,eyebrow,OUR SOLUTIONS
 globalVendors,solutionsHeader,main,title,What we offer
 globalVendors,solutionsHeader,main,note,Your existing CRM and spreadsheets stay as-is. This is a BPR-style approach -- a thin layer of automation on top of what you already run.
@@ -265,16 +276,12 @@ globalVendors,solutions,3,title,Creative Validation (Acquisition -- ads)
 globalVendors,solutions,3,copy,Overseas AI generation tools multiply ad-creative output. Small-spend testing measures real CPA concentrating budget only on what works.
 globalVendors,trackRecordHeader,main,eyebrow,TRACK RECORD
 globalVendors,trackRecordHeader,main,title,Measured results
-globalVendors,trackRecordHeader,main,copy,Not a portfolio of finished case studies -- we show execution through measured numbers: volume sent and response rate.
-globalVendors,trackRecordHeader,main,note,Response rate is weighted by engagement.
+globalVendors,trackRecordHeader,main,copy,We show execution through a measured number: volume sent.
+globalVendors,trackRecordHeader,main,note,
 globalVendors,trackRecord,1,label,Engagements (manufacturing PoC)
 globalVendors,trackRecord,1,value,4
 globalVendors,trackRecord,2,label,Total sent
 globalVendors,trackRecord,2,value,4219
-globalVendors,trackRecord,3,label,Response rate
-globalVendors,trackRecord,3,value,~11%
-globalVendors,trackRecord,4,label,Meeting rate
-globalVendors,trackRecord,4,value,0.8-1.0%
 globalVendors,pilotHeader,main,eyebrow,Engagement
 globalVendors,pilotHeader,main,title,Start small.
 globalVendors,pilotHeader,main,copy,We validate a fitting product within a fixed window. If it lands, we move to full rollout.
@@ -289,7 +296,7 @@ globalVendors,deliverables,1,title,Challenge & requirements
 globalVendors,deliverables,1,copy,We put the challenge and the conditions to meet into writing., pricing, and market fit.
 globalVendors,deliverables,2,number,02
 globalVendors,deliverables,2,title,Recommended product
-globalVendors,deliverables,2,copy,"We show the fitting product and how to combine it, concretely."
+globalVendors,deliverables,2,copy,We show the fitting product and how to combine it, concretely.
 globalVendors,deliverables,3,number,03
 globalVendors,deliverables,3,title,Validation plan (PoC)
 globalVendors,deliverables,3,copy,We design the next proof step to confirm the outcome.
@@ -317,28 +324,22 @@ globalVendors,company,5,label,Operation
 globalVendors,company,5,value,Bilingual Japanese-English
 globalVendors,contactCta,main,eyebrow,Contact
 globalVendors,contactCta,main,title,Tell us your challenge.
-globalVendors,contactCta,main,copy,"Starting from what you want to solve, we find the best options together."
+globalVendors,contactCta,main,copy,Starting from what you want to solve, we find the best options together.
 globalVendors,contactCta,main,buttonLabel,Contact us
 globalVendors,contactCta,main,buttonHref,/contact
-globalVendors,intro,main,lead,"Starting from the business or IT challenge you want solved, we propose the optimal product and configuration from the world's options."
+globalVendors,intro,main,lead,What we deliver first is the on-site data and analysis needed to judge the shortest path to ROI. We stay neutral across manufacturers, so the conclusion can be "don't adopt anything right now."
 serviceHub,hero,main,eyebrow,OUR BUSINESS
-serviceHub,hero,main,message,"Through two forms, we work to restore the fair value everyone deserves."
-serviceHub,left,main,tag,GLOBAL GTM PARTNER
-serviceHub,left,main,label,Global GTM Partner
-serviceHub,left,main,sub,"The world's technology, to the right market — accelerating the future through co-creation."
+serviceHub,hero,main,message,Slow inquiry response. The cost of storing molds and jigs. We map the fix, from on-site hearing to ROI modeling, through a paid diagnostic.
+serviceHub,left,main,tag,BUSINESS EFFICIENCY & ROI DIAGNOSTIC
+serviceHub,left,main,label,Fixing slow inquiry and quote response.
+serviceHub,left,main,sub,We combine overseas SaaS and AI with your existing operations to raise response speed and conversion.
 serviceHub,left,main,href,/global-vendors
 serviceHub,left,main,image,/hub-gtm.png
 serviceHub,left,main,cta,Explore
-serviceHub,right,main,tag,MOBILITY BUSINESS
-serviceHub,right,main,label,Mobility
-serviceHub,right,main,sub,"Expanding what movement can be, building a comfortable future in mobility."
-serviceHub,right,main,href,/service/automotive
-serviceHub,right,main,image,/hub-mobility.png
-serviceHub,right,main,cta,Explore
-serviceHub,third,main,tag,LARGE-FORMAT AM
-serviceHub,third,main,label,Large-Format Additive Manufacturing
-serviceHub,third,main,sub,Solving what's too large to make — bringing Europe's large-format additive manufacturing to Japan's factory floor.
-serviceHub,third,main,href,/service/manufacturing
+serviceHub,third,main,tag,MOLD-AXIS SOLUTIONS
+serviceHub,third,main,label,Taking on the mold storage problem, directly.
+serviceHub,third,main,sub,We visualize the cost and risk of the molds you hold, and map a path to lower fixed costs and stable supply.
+serviceHub,third,main,href,/mold-storage
 serviceHub,third,main,image,/hub-manufacturing.jpg
 serviceHub,third,main,cta,Explore
 manufacturing,hero,main,eyebrow,LARGE-FORMAT ADDITIVE MANUFACTURING

@@ -6,10 +6,11 @@ export const runtime = "edge";
 
 const CAL_URL = "https://calendar.app.google/jNvg49b28NDbeg1M9";
 
-function Label({ en, ja }: { en: string; ja: string }) {
+function Label({ en, ja, light = false }: { en: string; ja: string; light?: boolean }) {
   return (
-    <p className="text-xs font-medium uppercase tracking-[0.3em] text-amber-500/80">
-      {en} <span className="text-white/40">/</span> <span className="normal-case tracking-normal text-white/50">{ja}</span>
+    <p className={`text-xs font-medium uppercase tracking-[0.3em] ${light ? "text-amber-600" : "text-amber-500/80"}`}>
+      {en} <span className={light ? "text-black/30" : "text-white/40"}>/</span>{" "}
+      <span className={`normal-case tracking-normal ${light ? "text-black/50" : "text-white/50"}`}>{ja}</span>
     </p>
   );
 }
@@ -18,21 +19,21 @@ export default function MoldStoragePage() {
   return (
     <div className="bg-black text-white">
       {/* ===== HERO ===== */}
-      <section className="border-b border-white/10 px-6 py-28 md:py-36">
+      <section className="border-b border-black/10 bg-white px-6 py-28 text-black md:py-36">
         <div className="mx-auto max-w-4xl">
-          <Label en="Mold & Die Storage" ja="金型・治具・廃番部品" />
+          <Label en="Mold & Die Storage" ja="金型・治具・廃番部品" light />
           <h1 className="mt-5 text-3xl font-bold leading-tight tracking-tight md:text-5xl">
             金型の保管という課題に、
             <br />
             正面から取り組んでいます。
           </h1>
-          <p className="mt-8 max-w-2xl text-base leading-relaxed text-white/70">
+          <p className="mt-8 max-w-2xl text-base leading-relaxed text-black/70">
             大型金型・治具の長納期と高コスト。廃番部品の再生産。少量多品種の採算。熟練工への依存。
             エーワンロード株式会社は、これらの課題に取り組んでいる横浜のスタートアップです。
           </p>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/70">
-            初回の商談で装置は売りません。まず、御社がいまどうやって作り、どこに何を保管し、
-            年間どれだけの負担を抱えているのかを伺うところから始めます。
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-black/70">
+            まず、御社がいまどうやって作り、どこに何を保管し、年間どれだけの負担を抱えているのかを
+            数字にして可視化します。そのうえで、保管し続けるより安く早い選択肢をご提案します。
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <a
@@ -43,15 +44,13 @@ export default function MoldStoragePage() {
             </a>
             <a
               href="#how"
-              className="inline-flex items-center rounded-full border border-white/25 px-7 py-3 text-sm font-semibold text-white transition-colors hover:border-white/50"
+              className="inline-flex items-center rounded-full border border-black/25 px-7 py-3 text-sm font-semibold text-black transition-colors hover:border-black/50"
             >
               進め方を見る
             </a>
           </div>
-          <p className="mt-6 max-w-xl text-xs leading-relaxed text-white/45">
-            <b className="text-white/65">この30分でやること：</b>現状のヒアリングと、課題の可視化。
-            <br />
-            <b className="text-white/65">やらないこと：</b>装置・ソフトウェアの売り込み、その場での見積提示。
+          <p className="mt-6 max-w-xl text-xs leading-relaxed text-black/45">
+            <b className="text-black/65">この30分でやること：</b>現状のヒアリングと、保管コスト・稼働状況の可視化。
           </p>
         </div>
       </section>
@@ -119,15 +118,15 @@ export default function MoldStoragePage() {
         </div>
       </section>
 
-      {/* ===== BAND: 装置は売らない ===== */}
+      {/* ===== BAND: 投資回収の最短経路 ===== */}
       <section className="border-b border-white/10 bg-white/[0.03] px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <Label en="Our First Meeting" ja="初回商談の方針" />
-          <p className="mt-5 text-xl font-bold md:text-2xl">初回の商談で、装置は売りません。</p>
+          <p className="mt-5 text-xl font-bold md:text-2xl">まず、投資回収の最短経路を一緒に見つけます。</p>
           <p className="mt-5 max-w-2xl text-sm leading-relaxed text-white/60">
-            確認するのは、現在の製造方法・年間の損失額・外注先・品質条件です。そのうえで、
+            現在の製造方法・年間の損失額・外注先・品質条件を確認したうえで、
             <b className="text-amber-500/90">調査 → 試作 → 受託製造 → 設備選定 → 補助金</b>{" "}
-            の順に案件を育てます。装置の話が出てくるとすれば、この順番の一番最後です。
+            の順に、リスクの小さい手段から案件を育てます。
           </p>
         </div>
       </section>
@@ -138,10 +137,9 @@ export default function MoldStoragePage() {
           <Label en="Our Position" ja="私たちの立場" />
           <h2 className="mt-5 text-2xl font-bold leading-snug md:text-3xl">作らない。組み合わせる。</h2>
           <p className="mt-6 max-w-2xl text-sm leading-relaxed text-white/60">
-            エーワンロードは自社で製品を開発せず、工場も持たず、在庫も持ちません。
             世界中にすでにある技術と、国内にすでにある加工能力を組み合わせて、
             御社にとって投資回収が最短になる経路を設計します。
-            売りたい装置が先にあって、そこから逆算した提案はしません。
+            特定メーカーに偏らない中立的な立場で、御社に一番合う選択肢だけをご提案します。
           </p>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -196,9 +194,8 @@ export default function MoldStoragePage() {
           <Label en="How We Work" ja="進め方" />
           <h2 className="mt-5 text-2xl font-bold leading-snug md:text-3xl">有料診断から始めます。</h2>
           <p className="mt-6 max-w-2xl text-sm leading-relaxed text-white/60">
-            私たちが最初にお売りするのは、装置でもソフトウェアでもありません。
-            「投資回収の最短経路」を判断するための現場データと、その分析です。
-            特定の商材を持ち込まないので、結論が「いまは何も買わないほうがよい」になることもあります。
+            最初にお届けするのは、「投資回収の最短経路」を判断するための現場データと、その分析です。
+            特定メーカーに偏らない中立の立場で診断するので、結論が「いまは何も買わないほうがよい」になることもあります。
           </p>
 
           <div className="mt-12 space-y-8">
@@ -206,7 +203,7 @@ export default function MoldStoragePage() {
               {
                 no: "STEP 00",
                 title: "30分の面談（費用はいただきません）",
-                body: "現状のヒアリングと、課題の可視化。この時点で提案書もROI試算もお出ししません。診断に進むかどうかは、この後に判断していただきます。",
+                body: "現状のヒアリングと、課題の可視化を行います。診断に進むかどうかは、この後にご判断いただけます。",
               },
               {
                 no: "STEP 01",
@@ -221,12 +218,12 @@ export default function MoldStoragePage() {
               {
                 no: "STEP 03",
                 title: "ROI試算",
-                body: "削減人月・年間効果・回収期間を3シナリオで算定します。楽観値だけを出すことはしません。",
+                body: "削減人月・年間効果・回収期間を、保守的・標準・楽観の3シナリオで算定し、根拠とあわせてお渡しします。",
               },
               {
                 no: "STEP 04",
                 title: "予算リプレイス先の特定",
-                body: "残業代・派遣費・外注費・保守費など、置き換え原資になりうる既存予算を特定します。新規予算があることを前提にしません。",
+                body: "残業代・派遣費・外注費・保守費など、置き換え原資になりうる既存予算を特定します。",
               },
               {
                 no: "STEP 05",
@@ -259,34 +256,33 @@ export default function MoldStoragePage() {
       {/* ===== HONESTY ===== */}
       <section className="border-b border-white/10 bg-white/[0.03] px-6 py-24">
         <div className="mx-auto max-w-4xl">
-          <Label en="Before You Reply" ja="前もってお伝えすること" />
-          <h2 className="mt-5 text-2xl font-bold leading-snug md:text-3xl">できないことを、先に書いておきます。</h2>
+          <Label en="What We Promise" ja="私たちがお約束すること" />
+          <h2 className="mt-5 text-2xl font-bold leading-snug md:text-3xl">私たちが最初にお約束すること。</h2>
           <p className="mt-6 max-w-2xl text-sm leading-relaxed text-white/60">
-            メールを受け取ってこのページに来られた方がいちばん知りたいのは、
-            「この会社は何ができて、何ができないのか」だと思います。順番を逆にせず、先に書きます。
+            メールを受け取ってこのページに来られた方に、最初にお約束することをまとめました。
           </p>
 
           <ul className="mt-10 space-y-6">
             {[
               {
-                head: "金型保管の領域で、現時点で公開できる導入事例はありません。",
-                sub: "この事業は始まったばかりで、いま各社に現場の実態を伺っている段階です。事例が無いことを、事例があるように書くことはしません。",
+                head: "各社の状況に合わせて、一から設計します。",
+                sub: "この事業は始まったばかりで、いま各社の現場の実態を伺っている段階です。テンプレートの提案ではなく、御社の状況に合わせて一から組み立てます。",
               },
               {
-                head: "自社開発は行いません。受託開発も、24時間365日の技術サポート窓口も提供しません。",
-                sub: "私たちの役割は、選定・導入・統合・伴走です。技術の深い部分はメーカー・加工会社の窓口につなぎます。",
+                head: "選定・導入・統合・伴走を、一気通貫で担います。",
+                sub: "技術の深い部分はメーカー・加工会社の専門窓口に直接つなぎ、御社の窓口は私たちひとつに集約します。",
               },
               {
-                head: "在庫を持ちません。売りたい装置が先にある提案はしません。",
-                sub: "特定メーカーの販売ノルマから逆算した提案が出てこない構造にしています。",
+                head: "特定メーカーに偏らない、中立的な選定をします。",
+                sub: "在庫や販売ノルマを持たない立場だからこそ、世界中の選択肢から御社に一番合うものだけを選べます。",
               },
               {
-                head: "その場で答えられない技術的な質問に、推測でお答えすることはしません。",
-                sub: "持ち帰ったうえで、48時間以内に書面でお返しします。",
+                head: "技術的な質問には、48時間以内に書面で正式回答します。",
+                sub: "その場の推測でお答えするより、持ち帰って正確な情報をお渡しすることを優先します。",
               },
               {
-                head: "初回30分で、ROI試算や具体的な改善策をお見せすることはできません。",
-                sub: "それは現場のデータを頂いた後の仕事です。30分でできるのは、現状を正確に伺うことだけです。",
+                head: "初回30分で、現状を正確に整理します。",
+                sub: "ROI試算や具体的な改善策は、現場データを伺った後の有償診断でお出しします。30分では、まず正確な現状把握から始めます。",
               },
             ].map((item, i) => (
               <li key={i} className="border-t border-white/10 pt-5">
@@ -470,11 +466,9 @@ export default function MoldStoragePage() {
               <tr className="border-b border-white/10">
                 <th className="w-32 py-3 pr-4 text-left align-top font-medium text-white/45">事業内容</th>
                 <td className="py-3 leading-relaxed text-white/75">
-                  グローバルGTMパートナー事業（世界の最適なテクノロジーの導入支援）
+                  業務効率化・ROI診断事業（海外SaaS・AIの導入支援）
                   <br />
-                  モビリティ事業（車両輸出・部品対応・イベント運営）
-                  <br />
-                  製造業向けの業務効率・投資診断および導入支援
+                  金型保管問題ソリューション事業（廃番部品の再生産・固定費削減）
                 </td>
               </tr>
               <tr>

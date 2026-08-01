@@ -9,6 +9,7 @@ export default async function AboutPage() {
   const statement = await getContentItem("about", "statement");
   const philosophyHeader = await getContentItem("about", "philosophyHeader");
   const philosophy = await getContentItems("about", "philosophy");
+  const credo = await getContentItems("about", "credo");
   const story = await getContentItem("about", "story");
   const differentiatorHeader = await getContentItem("about", "differentiatorHeader");
   const differentiators = await getContentItems("about", "differentiator");
@@ -41,25 +42,34 @@ export default async function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-black py-16 text-white md:py-[88px] lg:py-[120px]">
+      <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
         <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
           <AnimatedSection>
-            <div className="max-w-xl">
-              <p className="section-label text-white/56">{philosophyHeader.eyebrow}</p>
-              <h2 className="section-title mt-4">{philosophyHeader.title}</h2>
+            <div className="max-w-2xl">
+              <h2 className="section-title">{philosophyHeader.title}</h2>
+              <ul className="mt-8 space-y-4 text-base leading-relaxed text-black/80 md:text-lg">
+                <li>
+                  <span className="font-semibold">{philosophy[0]?.title}：</span>
+                  {philosophy[0]?.copy}
+                </li>
+                <li>
+                  <span className="font-semibold">{philosophy[1]?.title}：</span>
+                  {philosophy[1]?.copy}
+                </li>
+                <li>
+                  <span className="font-semibold">{philosophy[2]?.title}：</span>
+                  <ul className="mt-3 ml-6 list-disc space-y-2 text-sm text-black/72 md:text-base">
+                    {credo.map((item) => (
+                      <li key={item.title}>
+                        {item.copy}
+                        <span className="ml-2 text-black/40">({item.title})</span>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              </ul>
             </div>
           </AnimatedSection>
-
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
-            {philosophy.map((item, index) => (
-              <AnimatedSection key={item.title} delay={index * 70}>
-                <div className="border border-white/18 px-5 py-8">
-                  <h3 className="text-2xl font-semibold">{item.title}</h3>
-                  <p className="mt-3 text-sm text-white/72">{item.copy}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
         </div>
       </section>
 
