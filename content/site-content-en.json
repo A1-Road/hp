@@ -55,7 +55,7 @@
       "main": {
         "eyebrow": "Our Mission",
         "title": "Restore rightful value.",
-        "copy": "\"We become the storyteller of the world's hidden value. A-one road lives this out through two businesses: bringing the world's best technology into Japan, and automotive (vehicle export, parts, and events).\", commercial vehicle export from Japan, and automotive culture events.",
+        "copy": "We become the storyteller of the world's hidden value. A-one road lives this out through three businesses: bringing the world's best technology into Japan, automotive (vehicle export, parts, and events), and bridging large-format additive manufacturing (WAAM/LFAM) to Japan's factory floor.",
         "primaryLabel": "See what we do",
         "primaryHref": "#what-we-do",
         "secondaryLabel": "Contact",
@@ -75,7 +75,7 @@
       "main": {
         "eyebrow": "Business",
         "title": "What we do",
-        "copy": "Two businesses born from one mission."
+        "copy": "Three businesses born from one mission."
       }
     },
     "whatWeDo": {
@@ -90,9 +90,17 @@
       "2": {
         "tag": "MOBILITY",
         "title": "Mobility",
-        "copy": "\"Vehicle export, parts support, and event operations — delivering the value of Japanese automobiles as both products and culture.\", from selection through export procedures.",
+        "copy": "Vehicle export, parts support, and event operations — delivering the value of Japanese automobiles as both products and culture.",
         "image": "/business-sourcing.png",
         "href": "/service/automotive",
+        "linkLabel": "Learn more"
+      },
+      "3": {
+        "tag": "LARGE-FORMAT AM",
+        "title": "Large-Format Additive Manufacturing",
+        "copy": "Solving what's too large to make -- bringing Europe's large-format additive manufacturing to Japan's factory floor.",
+        "image": "/hub-manufacturing.jpg",
+        "href": "/service/manufacturing",
         "linkLabel": "Learn more"
       }
     },
@@ -185,7 +193,7 @@
       "main": {
         "eyebrow": "Contact",
         "title": "Start the conversation.",
-        "copy": "\"From bringing global software products to Japan, to sourcing and exporting Japanese commercial vehicles — tell us what you need.\", business sourcing discussions, and document requests.",
+        "copy": "From bringing global software products to Japan, to sourcing and exporting Japanese commercial vehicles — tell us what you need.",
         "buttonLabel": "Go to Contact",
         "buttonHref": "/contact"
       }
@@ -376,7 +384,7 @@
       },
       "2": {
         "question": "Can businesses request multiple vehicles",
-        "answer": "\"We handle kei trucks, kei vans and light commercial vehicles, as well as specialty and other commercial vehicles.\", bulk sourcing is supported."
+        "answer": "We handle kei trucks, kei vans and light commercial vehicles, as well as specialty and other commercial vehicles."
       },
       "3": {
         "question": "Which markets do you support",
@@ -431,7 +439,7 @@
     "formHeader": {
       "main": {
         "eyebrow": "Form",
-        "title": "For partnerships press and general inquiries",
+        "title": "For business inquiries and general contact",
         "copy": ""
       }
     },
@@ -492,7 +500,7 @@
       "main": {
         "eyebrow": "GLOBAL GTM PARTNER",
         "title": "\"The world's best technology, matched to your challenge.\"",
-        "copy": "\"Tell us your business or IT challenge. We select the right product from anywhere in the world, configure it, and see it through to adoption.\", position, and sell in the Japanese market. Bilingual Japanese-English operation, based in Yokohama.",
+        "copy": "Tell us your business or IT challenge. We select the right product from anywhere in the world, configure it, and see it through to adoption.",
         "primaryLabel": "Contact us",
         "primaryHref": "/contact"
       }
@@ -500,8 +508,8 @@
     "intro": {
       "main": {
         "eyebrow": "HOW WE HELP",
-        "title": "\"Start from the challenge, find the right move.\", not a directory.",
-        "copy": "\"We bridge language, trust, and how decisions get made — in Japanese and in English.\", trust, and enterprise decision processes. We work as your hands-on partner on the ground: we speak with your prospects in Japanese, report back in English, and turn interest into a concrete PoC pipeline.",
+        "title": "Start from the challenge, find the right move.",
+        "copy": "We bridge language, trust, and how decisions get made — in Japanese and in English.",
         "lead": "\"Starting from the business or IT challenge you want solved, we propose the optimal product and configuration from the world's options.\""
       }
     },
@@ -534,11 +542,58 @@
         "copy": "We keep improving and extending after go-live., with clear success criteria."
       }
     },
+    "solutionsHeader": {
+      "main": {
+        "eyebrow": "OUR SOLUTIONS",
+        "title": "What we offer",
+        "note": "Your existing CRM and spreadsheets stay as-is. This is a BPR-style approach -- a thin layer of automation on top of what you already run."
+      }
+    },
+    "solutions": {
+      "1": {
+        "title": "Sales Stone (Offense -- new business)",
+        "copy": "Outbound sales AI that unifies lead discovery through booked meetings. Discovers and compounds a winning pattern every month across email and form outreach."
+      },
+      "2": {
+        "title": "Support Stone (Defense -- customer support)",
+        "copy": "Customer support AI that handles first-line response. Turns veteran know-how into a database and answers automatically."
+      },
+      "3": {
+        "title": "Creative Validation (Acquisition -- ads)",
+        "copy": "Overseas AI generation tools multiply ad-creative output. Small-spend testing measures real CPA concentrating budget only on what works."
+      }
+    },
+    "trackRecordHeader": {
+      "main": {
+        "eyebrow": "TRACK RECORD",
+        "title": "Measured results",
+        "copy": "Not a portfolio of finished case studies -- we show execution through measured numbers: volume sent and response rate.",
+        "note": "Response rate is weighted by engagement."
+      }
+    },
+    "trackRecord": {
+      "1": {
+        "label": "Engagements (manufacturing PoC)",
+        "value": "4"
+      },
+      "2": {
+        "label": "Total sent",
+        "value": "4219"
+      },
+      "3": {
+        "label": "Response rate",
+        "value": "~11%"
+      },
+      "4": {
+        "label": "Meeting rate",
+        "value": "0.8-1.0%"
+      }
+    },
     "pilotHeader": {
       "main": {
         "eyebrow": "Engagement",
         "title": "Start small.",
-        "copy": "\"We validate a fitting product within a fixed window. If it lands, we move to full rollout.\", fixed-scope engagement that tests Japan through real conversations — not a report written from a desk."
+        "copy": "We validate a fitting product within a fixed window. If it lands, we move to full rollout."
       }
     },
     "pilotFacts": {
@@ -583,15 +638,19 @@
     "terms": {
       "1": {
         "title": "Scope of commitment",
-        "copy": "We commit to the agreed activities and deliverables., not to sales outcomes."
+        "copy": "We commit to the agreed activities and deliverables."
       },
       "2": {
         "title": "What we ask of you",
-        "copy": "\"Share your current challenge and environment, and join the validation.\", product documentation, and technical support during the pilot."
+        "copy": "Share your current challenge and environment, and join the validation."
       },
       "3": {
         "title": "What we handle",
-        "copy": "\"Selection, configuration, rollout and adoption — end to end.\", meetings, and interviews in Japanese, reporting in English."
+        "copy": "Selection, configuration, rollout and adoption — end to end."
+      },
+      "4": {
+        "title": "Data handling",
+        "copy": "Your data is processed within your own environment and never used to train external AI models."
       }
     },
     "companyHeader": {
@@ -657,6 +716,88 @@
         "href": "/service/automotive",
         "image": "/hub-mobility.png",
         "cta": "Explore"
+      }
+    },
+    "third": {
+      "main": {
+        "tag": "LARGE-FORMAT AM",
+        "label": "Large-Format Additive Manufacturing",
+        "sub": "Solving what's too large to make — bringing Europe's large-format additive manufacturing to Japan's factory floor.",
+        "href": "/service/manufacturing",
+        "image": "/hub-manufacturing.jpg",
+        "cta": "Explore"
+      }
+    }
+  },
+  "manufacturing": {
+    "hero": {
+      "main": {
+        "eyebrow": "LARGE-FORMAT ADDITIVE MANUFACTURING",
+        "title": "Solving \"too large to make\" through large-format printing.",
+        "copy": "Large-format additive manufacturing (WAAM/LFAM) is going commercial in Europe. We connect large-scale metal and polymer 3D printing to real problems on Japan's factory floor."
+      }
+    },
+    "technology": {
+      "main": {
+        "eyebrow": "TECHNOLOGY",
+        "title": "Large-format metal and polymer printing",
+        "copy": "Turnkey systems with build volumes from 2x1m to 3x2m are now commercially available replacing work once written off as \"too small a lot to tool up for\" or \"too large to machine.\" No tooling means the economics work from a single unit."
+      }
+    },
+    "applicationsHeader": {
+      "main": {
+        "eyebrow": "APPLICATIONS",
+        "title": "Where it is already ahead overseas",
+        "note": "Overseas cases are based on manufacturer-published materials and do not represent our own track record."
+      }
+    },
+    "applications": {
+      "1": {
+        "title": "Marine",
+        "copy": "Large tools and structural components"
+      },
+      "2": {
+        "title": "Industrial molds and jigs",
+        "copy": "One-off large molds and jigs"
+      },
+      "3": {
+        "title": "Construction components",
+        "copy": "Large structural parts for construction"
+      }
+    },
+    "applicationsFooter": {
+      "main": {
+        "copy": "The common thread -- one-off large high-mix -- is exactly what conventional processes handle worst."
+      }
+    },
+    "realityCheck": {
+      "main": {
+        "eyebrow": "REALITY CHECK",
+        "title": "All the numbers up front",
+        "copy": "Entry-level turnkey systems run roughly EUR400000-450000 with a standard lead time of 18-24 weeks after firm order (manufacturer-provided figures). Japan's labor-saving investment subsidy catalog has included 3D printers since October 2025 adding tailwind to the investment case. At this scale of investment careful screening before ordering has real value."
+      }
+    },
+    "screening": {
+      "main": {
+        "eyebrow": "SCREENING",
+        "title": "We judge fit before you commit",
+        "copy": "We screen against four conditions -- part size lot volume material and current process cost/lead time -- to judge whether large-format printing will actually help. Telling you it is not a fit when it is not is part of the job."
+      }
+    },
+    "position": {
+      "main": {
+        "eyebrow": "POSITION",
+        "title": "Your guide not a seller",
+        "copy": "We are not an exclusive agent for any single manufacturer. We work non-exclusively case by case to bridge you to European manufacturers -- building a project brief from your requirements and connecting you directly with the manufacturer's team designed alongside Japan's existing machining grinding heat-treatment and inspection network."
+      }
+    },
+    "contactCta": {
+      "main": {
+        "eyebrow": "CONTACT",
+        "title": "Tell us about your process -- 30 minutes no charge",
+        "copy": "A free 30-minute hearing on your target process. If there is potential a paid on-site diagnosis (quoted individually) delivers candidate processes rough impact estimates and a manufacturer-ready brief.",
+        "buttonLabel": "Contact us",
+        "buttonHref": "/contact?topic=lfam"
       }
     }
   }

@@ -1,10 +1,23 @@
 import { AnimatedSection } from "@/components/ui/animated-section";
-import HubspotForm from "@/components/hubspot-form";
 import { getContentItem, getContentItems } from "@/lib/site-content";
 
 export const runtime = "edge";
 
-export default async function ContactPage() {
+const TOPIC_LABELS: Record<string, string> = {
+  inquiry: "問い合わせ・引き合い対応の改善",
+  diagnosis: "業務課題の相談（診断）",
+  lfam: "大型積層造形（WAAM/LFAM）",
+};
+
+type ContactPageProps = {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
+
+export default async function ContactPage({ searchParams }: ContactPageProps) {
+  const params = await searchParams;
+  const topicParam = Array.isArray(params.topic) ? params.topic[0] : params.topic;
+  const topicLabel = topicParam ? TOPIC_LABELS[topicParam] : undefined;
+
   const hero = await getContentItem("contact", "hero");
   const formHeader = await getContentItem("contact", "formHeader");
   const infoHeader = await getContentItem("contact", "infoHeader");
@@ -35,10 +48,17 @@ export default async function ContactPage() {
 
           <AnimatedSection delay={100}>
             <div className="mt-10 border border-white/18 p-6 md:p-8">
-              <HubspotForm
-                portalId="246807977"
-                formId="adc556cb-cfc8-4a4f-8350-fdadc91c052a"
-                region="na2"
+              {topicLabel ? (
+                <p className="mb-6 text-sm text-white/72">
+                  ご相談内容: <span className="text-white">{topicLabel}</span>
+                </p>
+              ) : null}
+              <script src="https://js-na2.hsforms.net/forms/embed/246807977.js" defer />
+              <div
+                className="hs-form-frame"
+                data-region="na2"
+                data-form-id="adc556cb-cfc8-4a4f-8350-fdadc91c052a"
+                data-portal-id="246807977"
               />
             </div>
           </AnimatedSection>

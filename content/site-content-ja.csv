@@ -22,7 +22,7 @@ global,socials,3,label,GitHub
 global,socials,3,href,https://github.com/A1-Road
 top,hero,main,eyebrow,OUR MISSION
 top,hero,main,title,すべての人の正当な価値を取り戻す。
-top,hero,main,copy,世の中の隠された価値の語り部となる。エーワンロードは、世界の最適なテクノロジーの導入支援と、自動車関連事業（車両輸出・部品対応・イベント運営）の二つの事業でこの理念を実践しています。
+top,hero,main,copy,世の中の隠された価値の語り部となる。エーワンロードは、世界の最適なテクノロジーの導入支援と、大型積層造形（WAAM/LFAM）の橋渡しという二つの事業でこの理念を実践しています。
 top,hero,main,primaryLabel,事業内容を見る
 top,hero,main,primaryHref,#what-we-do
 top,hero,main,secondaryLabel,お問い合わせ
@@ -31,7 +31,7 @@ top,hero,main,image,/hero-track.png
 top,hero,main,scroll,SCROLL
 top,identity,main,eyebrow,OUR VISION
 top,identity,main,title,世の中の隠された価値の語り部となる。
-top,identity,main,copy,埋もれた価値を再編集し、正当に評価される市場へ届ける。私たちはこの視点で、ソフトウェアから車両、そして自動車文化までを扱います。
+top,identity,main,copy,埋もれた価値を再編集し、正当に評価される市場へ届ける。私たちはこの視点で、ソフトウェアから製造現場までを扱います。
 top,whatWeDoHeader,main,eyebrow,BUSINESS
 top,whatWeDoHeader,main,title,事業内容
 top,whatWeDoHeader,main,copy,一つの理念から生まれた、二つの事業。
@@ -41,12 +41,12 @@ top,whatWeDo,1,copy,業務・ITの課題に合わせて、世界中の先端プ�
 top,whatWeDo,1,image,/workflow.png
 top,whatWeDo,1,href,/global-vendors
 top,whatWeDo,1,linkLabel,詳しく見る
-top,whatWeDo,2,tag,MOBILITY
-top,whatWeDo,2,title,モビリティ関連事業
-top,whatWeDo,2,copy,車両輸出・部品対応・イベント運営。日本の自動車の価値を、製品と文化の両面で世界へ届けます。
-top,whatWeDo,2,image,/business-sourcing.png
-top,whatWeDo,2,href,/service/automotive
-top,whatWeDo,2,linkLabel,詳しく見る
+top,whatWeDo,3,tag,LARGE-FORMAT AM
+top,whatWeDo,3,title,大型積層造形（WAAM/LFAM）
+top,whatWeDo,3,copy,「大きすぎて作れない」を、造形で解決する。欧州の大型積層造形を日本の製造現場へ。
+top,whatWeDo,3,image,/hub-manufacturing.jpg
+top,whatWeDo,3,href,/service/manufacturing
+top,whatWeDo,3,linkLabel,詳しく見る
 top,servicePreviewHeader,main,eyebrow,VEHICLE EXPORT
 top,servicePreviewHeader,main,title,商用車輸出サービス
 top,servicePreviewHeader,main,linkLabel,一覧を見る
@@ -75,7 +75,7 @@ top,visualProof,4,image,/workflow.png
 top,visualProof,4,alt,Export support visual
 top,aboutPreview,main,eyebrow,ABOUT
 top,aboutPreview,main,title,理念と事業定義
-top,aboutPreview,main,copy,埋もれた価値を再編集し、正当に評価される市場へ届ける。ソフトウェアから車両、自動車文化まで、私たちの理念と事業の全体像をご覧ください。
+top,aboutPreview,main,copy,埋もれた価値を再編集し、正当に評価される市場へ届ける。ソフトウェアから製造現場まで、私たちの理念と事業の全体像をご覧ください。
 top,aboutPreview,main,linkLabel,会社情報へ
 top,aboutPreview,main,linkHref,/about-us
 top,aboutPreview,main,image,/about-preview.png
@@ -112,14 +112,14 @@ about,philosophy,3,title,Definition
 about,philosophy,3,copy,世界の技術と日本の価値を再編集し、それぞれが正当に評価される市場へ接続する会社です。
 about,story,main,eyebrow,APPROACH
 about,story,main,title,二つの事業で、価値をつなぐ。
-about,story,main,copy,私たちは二つの事業を営みます。ひとつは、世界の先端プロダクトを日本企業の課題に合わせて選び、導入まで支援するグローバルGTMパートナー事業。もうひとつは、日本の車両の価値を発信し、調達・輸出するモビリティ事業。領域は違っても、やっていることは同じ——隠れた価値を見つけ、正しく届けることです。
+about,story,main,copy,私たちは二つの事業を営みます。ひとつは、世界の先端プロダクトを日本企業の課題に合わせて選び、導入まで支援するグローバルGTMパートナー事業。もうひとつは、欧州の大型積層造形（WAAM/LFAM）を日本の製造現場へ橋渡しする事業。領域は違っても、やっていることは同じ——隠れた価値を見つけ、正しく届けることです。
 about,story,main,image,/about-story.png
 about,differentiatorHeader,main,eyebrow,DIFFERENCE
 about,differentiatorHeader,main,title,二つの事業
 about,differentiator,1,title,グローバルGTMパートナー
 about,differentiator,1,copy,世界の先端プロダクトを、日本企業の課題に合わせて選び・つなぎ・導入する。
-about,differentiator,2,title,モビリティ
-about,differentiator,2,copy,日本の車両の価値を発信し、調達・輸出する。
+about,differentiator,2,title,大型積層造形（LFAM）
+about,differentiator,2,copy,欧州の大型積層造形（WAAM/LFAM）を、日本の製造現場へつなぐ。
 about,companyInfoHeader,main,eyebrow,COMPANY
 about,companyInfoHeader,main,title,会社情報
 about,companyInfoHeader,main,copy,法人情報を掲載しています。
@@ -204,7 +204,7 @@ contact,methods,2,line,admin@a1-road.com
 contact,methods,3,title,LinkedIn
 contact,methods,3,line,外部チャネル
 contact,formHeader,main,eyebrow,FORM
-contact,formHeader,main,title,協業・取材・お問い合わせはこちら
+contact,formHeader,main,title,事業のご相談・お問い合わせはこちら
 contact,formHeader,main,copy,
 contact,form,main,typeLabel,Inquiry Type
 contact,form,main,nameLabel,Name
@@ -248,6 +248,27 @@ globalVendors,services,5,title,導入・定着支援
 globalVendors,services,5,copy,契約・導入から運用の定着まで伴走します。
 globalVendors,services,7,title,継続サポート
 globalVendors,services,7,copy,導入後の改善と拡張を、継続的に支援します。
+globalVendors,solutionsHeader,main,eyebrow,OUR SOLUTIONS
+globalVendors,solutionsHeader,main,title,提供ソリューション
+globalVendors,solutionsHeader,main,note,既存のCRM・Excelはそのまま。軽量な基盤と自動化の接続層を薄く被せるBPR型のアプローチです。
+globalVendors,solutions,1,title,セールスストン（攻め─新規開拓）
+globalVendors,solutions,1,copy,リード探索からアポ獲得までを一元化するアウトバウンド営業支援AI。メール・フォーム営業で「勝ちパターン」を毎月発見・蓄積します。
+globalVendors,solutions,2,title,サポートストン（守り─顧客対応）
+globalVendors,solutions,2,copy,お客様の一次対応を代行するカスタマーサポート支援AI。ベテランの知見をデータベース化して自動応答します。
+globalVendors,solutions,3,title,クリエイティブ検証（集客─広告）
+globalVendors,solutions,3,copy,海外AI生成ツールで広告制作本数を大幅増。少額配信でCPAを実測し、当たり施策だけに予算を集中させます。
+globalVendors,trackRecordHeader,main,eyebrow,TRACK RECORD
+globalVendors,trackRecordHeader,main,title,実測データ
+globalVendors,trackRecordHeader,main,copy,完了事例の「実績紹介」ではなく、送信数・応答率という実測値で実行力をお示しします。
+globalVendors,trackRecordHeader,main,note,※応答率は案件別加重で算出。
+globalVendors,trackRecord,1,label,案件（製造業PoC）
+globalVendors,trackRecord,1,value,4
+globalVendors,trackRecord,2,label,累計送信数
+globalVendors,trackRecord,2,value,4219件
+globalVendors,trackRecord,3,label,応答率
+globalVendors,trackRecord,3,value,約11%
+globalVendors,trackRecord,4,label,アポ率
+globalVendors,trackRecord,4,value,0.8〜1.0%
 globalVendors,pilotHeader,main,eyebrow,ENGAGEMENT
 globalVendors,pilotHeader,main,title,まず、小さく試す。
 globalVendors,pilotHeader,main,copy,課題に合う製品を、期間を区切って検証します。手応えがあれば、本格導入へ進みます。
@@ -274,6 +295,8 @@ globalVendors,terms,2,title,ご用意いただくもの
 globalVendors,terms,2,copy,現状の課題や環境の共有と、検証へのご協力をお願いします。
 globalVendors,terms,3,title,当社が担うこと
 globalVendors,terms,3,copy,製品の選定・構成・導入・定着までを一貫して担います。
+globalVendors,terms,4,title,データの取り扱い
+globalVendors,terms,4,copy,お客様のデータは御社環境内で処理し、外部のAI学習には使用しません。
 globalVendors,companyHeader,main,eyebrow,COMPANY
 globalVendors,companyHeader,main,title,運営会社
 globalVendors,company,1,label,会社名
@@ -300,9 +323,39 @@ serviceHub,left,main,sub,世界のテクノロジーを、最適な市場へ。�
 serviceHub,left,main,href,/global-vendors
 serviceHub,left,main,image,/hub-gtm.png
 serviceHub,left,main,cta,詳しく見る
-serviceHub,right,main,tag,MOBILITY BUSINESS
-serviceHub,right,main,label,モビリティ関連事業
-serviceHub,right,main,sub,移動の可能性を拡げ、心地よい未来のモビリティをつくる。
-serviceHub,right,main,href,/service/automotive
-serviceHub,right,main,image,/hub-mobility.png
-serviceHub,right,main,cta,詳しく見る
+serviceHub,third,main,tag,LARGE-FORMAT AM
+serviceHub,third,main,label,大型積層造形（WAAM/LFAM）
+serviceHub,third,main,sub,「大きすぎて作れない」を、造形で解決する。欧州の大型積層造形を日本の製造現場へ。
+serviceHub,third,main,href,/service/manufacturing
+serviceHub,third,main,image,/hub-manufacturing.jpg
+serviceHub,third,main,cta,詳しく見る
+manufacturing,hero,main,eyebrow,LARGE-FORMAT ADDITIVE MANUFACTURING
+manufacturing,hero,main,title,「大きすぎて作れない」を、造形で解決する。
+manufacturing,hero,main,copy,欧州で実用化が進む大型積層造形（WAAM/LFAM）。金属・樹脂の大型3D造形を、日本の製造現場の課題に接続します。
+manufacturing,technology,main,eyebrow,TECHNOLOGY
+manufacturing,technology,main,title,金属・樹脂の「大型」積層造形
+manufacturing,technology,main,copy,ビルドボリューム2×1m〜3×2mクラスのターンキー構成が商用化されており、「型を起こすほどのロットがない」「大きすぎて加工できない」と諦められていた領域を置き換えつつあります。型が不要なため、ロット1個から経済性が成立します。
+manufacturing,applicationsHeader,main,eyebrow,APPLICATIONS
+manufacturing,applicationsHeader,main,title,海外で先行する適用分野
+manufacturing,applicationsHeader,main,note,※海外事例はメーカー公開資料に基づきます。当社の導入実績を示すものではありません。
+manufacturing,applications,1,title,海事系
+manufacturing,applications,1,copy,工具・構造物などの大型部材製造
+manufacturing,applications,2,title,自動車・産業用モールド・治具
+manufacturing,applications,2,copy,自動車部品を含む、大型の型・治具の一点物製造
+manufacturing,applications,3,title,建築・建設部材
+manufacturing,applications,3,copy,建築・建設向けの大型構造部材
+manufacturing,applicationsFooter,main,copy,共通点は「一点物・大型・高ミックス」——従来工法が最も苦手とする条件です。
+manufacturing,realityCheck,main,eyebrow,REALITY CHECK
+manufacturing,realityCheck,main,title,判断材料を、先にすべてお渡しします
+manufacturing,realityCheck,main,copy,ターンキー構成の入口価格帯は€400000〜450000、標準リードタイムは確定発注後18〜24週が目安です（メーカー提示情報）。2025年10月より省力化投資補助金のカタログに3Dプリンタが追加されており、投資判断の追い風となっています。この規模の投資だからこそ、発注前の案件精査に価値があります。
+manufacturing,screening,main,eyebrow,SCREENING
+manufacturing,screening,main,title,御社の工程が「向いているか」を先に判定します
+manufacturing,screening,main,copy,対象部品のサイズ／ロット数／材質／現行工法のコストと納期の4条件から、大型造形で効果が出る工程かを判定します。向いていなければ「向いていない」とお伝えするところまでが当社の仕事です。
+manufacturing,position,main,eyebrow,POSITION
+manufacturing,position,main,title,売り手ではなく、御社側の水先案内人として
+manufacturing,position,main,copy,当社は特定メーカーの専属代理店ではなく、非独占・案件先行の立場で欧州メーカーとの橋渡しを行います。御社の要件を整理したプロジェクトブリーフを作成し、メーカーの担当窓口へ直接接続します。国内の切削・研削・熱処理・検査など既存加工網との役割分担を含めた座組で設計します。
+manufacturing,contactCta,main,eyebrow,CONTACT
+manufacturing,contactCta,main,title,まずは30分、御社の製造課題をお聞かせください
+manufacturing,contactCta,main,copy,30分ヒアリング（無料）で対象工程を伺い、可能性があれば有償の現場診断（個別お見積り）で置換候補工程の特定・概算効果・メーカー打診用ブリーフまで納品します。
+manufacturing,contactCta,main,buttonLabel,お問い合わせへ
+manufacturing,contactCta,main,buttonHref,/contact?topic=lfam

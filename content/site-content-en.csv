@@ -22,7 +22,7 @@ global,socials,3,label,GitHub
 global,socials,3,href,https://github.com/A1-Road
 top,hero,main,eyebrow,Our Mission
 top,hero,main,title,Restore rightful value.
-top,hero,main,copy,"We become the storyteller of the world's hidden value. A-one road lives this out through two businesses: bringing the world's best technology into Japan, and automotive (vehicle export, parts, and events).", commercial vehicle export from Japan, and automotive culture events.
+top,hero,main,copy,We become the storyteller of the world's hidden value. A-one road lives this out through three businesses: bringing the world's best technology into Japan, automotive (vehicle export, parts, and events), and bridging large-format additive manufacturing (WAAM/LFAM) to Japan's factory floor.
 top,hero,main,primaryLabel,See what we do
 top,hero,main,primaryHref,#what-we-do
 top,hero,main,secondaryLabel,Contact
@@ -34,7 +34,7 @@ top,identity,main,title,We become the storyteller of the world's hidden value.
 top,identity,main,copy,We re-edit undervalued assets — software, vehicles, and automotive culture — and deliver them to markets where they are rightly valued.
 top,whatWeDoHeader,main,eyebrow,Business
 top,whatWeDoHeader,main,title,What we do
-top,whatWeDoHeader,main,copy,Two businesses born from one mission.
+top,whatWeDoHeader,main,copy,Three businesses born from one mission.
 top,whatWeDo,1,tag,GLOBAL GTM PARTNER
 top,whatWeDo,1,title,Solve your challenge with the world's technology.
 top,whatWeDo,1,copy,"For your business or IT challenge, we select the right product from anywhere in the world, configure it, and support adoption."
@@ -43,10 +43,16 @@ top,whatWeDo,1,href,/global-vendors
 top,whatWeDo,1,linkLabel,Learn more
 top,whatWeDo,2,tag,MOBILITY
 top,whatWeDo,2,title,Mobility
-top,whatWeDo,2,copy,"Vehicle export, parts support, and event operations — delivering the value of Japanese automobiles as both products and culture.", from selection through export procedures.
+top,whatWeDo,2,copy,Vehicle export, parts support, and event operations — delivering the value of Japanese automobiles as both products and culture.
 top,whatWeDo,2,image,/business-sourcing.png
 top,whatWeDo,2,href,/service/automotive
 top,whatWeDo,2,linkLabel,Learn more
+top,whatWeDo,3,tag,LARGE-FORMAT AM
+top,whatWeDo,3,title,Large-Format Additive Manufacturing
+top,whatWeDo,3,copy,Solving what's too large to make -- bringing Europe's large-format additive manufacturing to Japan's factory floor.
+top,whatWeDo,3,image,/hub-manufacturing.jpg
+top,whatWeDo,3,href,/service/manufacturing
+top,whatWeDo,3,linkLabel,Learn more
 top,servicePreviewHeader,main,eyebrow,Vehicle Export
 top,servicePreviewHeader,main,title,Commercial Vehicle Export Services
 top,servicePreviewHeader,main,linkLabel,View all
@@ -92,7 +98,7 @@ top,signalSteps,3,title,Export Support
 top,signalSteps,3,copy,Export Support
 top,contactCta,main,eyebrow,Contact
 top,contactCta,main,title,Start the conversation.
-top,contactCta,main,copy,"From bringing global software products to Japan, to sourcing and exporting Japanese commercial vehicles — tell us what you need.", business sourcing discussions, and document requests.
+top,contactCta,main,copy,From bringing global software products to Japan, to sourcing and exporting Japanese commercial vehicles — tell us what you need.
 top,contactCta,main,buttonLabel,Go to Contact
 top,contactCta,main,buttonHref,/contact
 about,hero,main,eyebrow,About
@@ -181,7 +187,7 @@ service,faqHeader,main,title,Short answers.
 service,faq,1,question,What vehicles do you handle
 service,faq,1,answer,We mainly source kei trucks, vans, and compact commercial vehicles.
 service,faq,2,question,Can businesses request multiple vehicles
-service,faq,2,answer,"We handle kei trucks, kei vans and light commercial vehicles, as well as specialty and other commercial vehicles.", bulk sourcing is supported.
+service,faq,2,answer,We handle kei trucks, kei vans and light commercial vehicles, as well as specialty and other commercial vehicles.
 service,faq,3,question,Which markets do you support
 service,faq,3,answer,United States, Europe, and other regions.
 service,faq,4,question,Can vehicle condition be confirmed
@@ -204,7 +210,7 @@ contact,methods,2,line,admin@a1-road.com
 contact,methods,3,title,LinkedIn
 contact,methods,3,line,External channel
 contact,formHeader,main,eyebrow,Form
-contact,formHeader,main,title,For partnerships press and general inquiries
+contact,formHeader,main,title,For business inquiries and general contact
 contact,formHeader,main,copy,
 contact,form,main,typeLabel,Inquiry Type
 contact,form,main,nameLabel,Name
@@ -229,12 +235,12 @@ contact,info,4,value,X / LinkedIn / GitHub
 contact,reassurance,main,text,
 globalVendors,hero,main,eyebrow,GLOBAL GTM PARTNER
 globalVendors,hero,main,title,"The world's best technology, matched to your challenge."
-globalVendors,hero,main,copy,"Tell us your business or IT challenge. We select the right product from anywhere in the world, configure it, and see it through to adoption.", position, and sell in the Japanese market. Bilingual Japanese-English operation, based in Yokohama.
+globalVendors,hero,main,copy,Tell us your business or IT challenge. We select the right product from anywhere in the world, configure it, and see it through to adoption.
 globalVendors,hero,main,primaryLabel,Contact us
 globalVendors,hero,main,primaryHref,/contact
 globalVendors,intro,main,eyebrow,HOW WE HELP
-globalVendors,intro,main,title,"Start from the challenge, find the right move.", not a directory.
-globalVendors,intro,main,copy,"We bridge language, trust, and how decisions get made — in Japanese and in English.", trust, and enterprise decision processes. We work as your hands-on partner on the ground: we speak with your prospects in Japanese, report back in English, and turn interest into a concrete PoC pipeline.
+globalVendors,intro,main,title,Start from the challenge, find the right move.
+globalVendors,intro,main,copy,We bridge language, trust, and how decisions get made — in Japanese and in English.
 globalVendors,servicesHeader,main,eyebrow,What we do
 globalVendors,servicesHeader,main,title,What we provide
 globalVendors,servicesHeader,main,copy,From framing the challenge to lasting adoption.
@@ -248,9 +254,30 @@ globalVendors,services,5,title,Rollout & adoption
 globalVendors,services,5,copy,From contract and rollout to lasting day-to-day use.
 globalVendors,services,7,title,Ongoing support
 globalVendors,services,7,copy,We keep improving and extending after go-live., with clear success criteria.
+globalVendors,solutionsHeader,main,eyebrow,OUR SOLUTIONS
+globalVendors,solutionsHeader,main,title,What we offer
+globalVendors,solutionsHeader,main,note,Your existing CRM and spreadsheets stay as-is. This is a BPR-style approach -- a thin layer of automation on top of what you already run.
+globalVendors,solutions,1,title,Sales Stone (Offense -- new business)
+globalVendors,solutions,1,copy,Outbound sales AI that unifies lead discovery through booked meetings. Discovers and compounds a winning pattern every month across email and form outreach.
+globalVendors,solutions,2,title,Support Stone (Defense -- customer support)
+globalVendors,solutions,2,copy,Customer support AI that handles first-line response. Turns veteran know-how into a database and answers automatically.
+globalVendors,solutions,3,title,Creative Validation (Acquisition -- ads)
+globalVendors,solutions,3,copy,Overseas AI generation tools multiply ad-creative output. Small-spend testing measures real CPA concentrating budget only on what works.
+globalVendors,trackRecordHeader,main,eyebrow,TRACK RECORD
+globalVendors,trackRecordHeader,main,title,Measured results
+globalVendors,trackRecordHeader,main,copy,Not a portfolio of finished case studies -- we show execution through measured numbers: volume sent and response rate.
+globalVendors,trackRecordHeader,main,note,Response rate is weighted by engagement.
+globalVendors,trackRecord,1,label,Engagements (manufacturing PoC)
+globalVendors,trackRecord,1,value,4
+globalVendors,trackRecord,2,label,Total sent
+globalVendors,trackRecord,2,value,4219
+globalVendors,trackRecord,3,label,Response rate
+globalVendors,trackRecord,3,value,~11%
+globalVendors,trackRecord,4,label,Meeting rate
+globalVendors,trackRecord,4,value,0.8-1.0%
 globalVendors,pilotHeader,main,eyebrow,Engagement
 globalVendors,pilotHeader,main,title,Start small.
-globalVendors,pilotHeader,main,copy,"We validate a fitting product within a fixed window. If it lands, we move to full rollout.", fixed-scope engagement that tests Japan through real conversations — not a report written from a desk.
+globalVendors,pilotHeader,main,copy,We validate a fitting product within a fixed window. If it lands, we move to full rollout.
 globalVendors,pilotFacts,2,label,Duration
 globalVendors,pilotFacts,2,value,30–45 days
 globalVendors,pilotFacts,3,label,How it runs
@@ -269,11 +296,13 @@ globalVendors,deliverables,3,copy,We design the next proof step to confirm the o
 globalVendors,termsHeader,main,eyebrow,How we work
 globalVendors,termsHeader,main,title,How we work
 globalVendors,terms,1,title,Scope of commitment
-globalVendors,terms,1,copy,We commit to the agreed activities and deliverables., not to sales outcomes.
+globalVendors,terms,1,copy,We commit to the agreed activities and deliverables.
 globalVendors,terms,2,title,What we ask of you
-globalVendors,terms,2,copy,"Share your current challenge and environment, and join the validation.", product documentation, and technical support during the pilot.
+globalVendors,terms,2,copy,Share your current challenge and environment, and join the validation.
 globalVendors,terms,3,title,What we handle
-globalVendors,terms,3,copy,"Selection, configuration, rollout and adoption — end to end.", meetings, and interviews in Japanese, reporting in English.
+globalVendors,terms,3,copy,Selection, configuration, rollout and adoption — end to end.
+globalVendors,terms,4,title,Data handling
+globalVendors,terms,4,copy,Your data is processed within your own environment and never used to train external AI models.
 globalVendors,companyHeader,main,eyebrow,Company
 globalVendors,companyHeader,main,title,Who runs it
 globalVendors,company,1,label,Company
@@ -306,3 +335,39 @@ serviceHub,right,main,sub,"Expanding what movement can be, building a comfortabl
 serviceHub,right,main,href,/service/automotive
 serviceHub,right,main,image,/hub-mobility.png
 serviceHub,right,main,cta,Explore
+serviceHub,third,main,tag,LARGE-FORMAT AM
+serviceHub,third,main,label,Large-Format Additive Manufacturing
+serviceHub,third,main,sub,Solving what's too large to make — bringing Europe's large-format additive manufacturing to Japan's factory floor.
+serviceHub,third,main,href,/service/manufacturing
+serviceHub,third,main,image,/hub-manufacturing.jpg
+serviceHub,third,main,cta,Explore
+manufacturing,hero,main,eyebrow,LARGE-FORMAT ADDITIVE MANUFACTURING
+manufacturing,hero,main,title,Solving "too large to make" through large-format printing.
+manufacturing,hero,main,copy,Large-format additive manufacturing (WAAM/LFAM) is going commercial in Europe. We connect large-scale metal and polymer 3D printing to real problems on Japan's factory floor.
+manufacturing,technology,main,eyebrow,TECHNOLOGY
+manufacturing,technology,main,title,Large-format metal and polymer printing
+manufacturing,technology,main,copy,Turnkey systems with build volumes from 2x1m to 3x2m are now commercially available replacing work once written off as "too small a lot to tool up for" or "too large to machine." No tooling means the economics work from a single unit.
+manufacturing,applicationsHeader,main,eyebrow,APPLICATIONS
+manufacturing,applicationsHeader,main,title,Where it is already ahead overseas
+manufacturing,applicationsHeader,main,note,Overseas cases are based on manufacturer-published materials and do not represent our own track record.
+manufacturing,applications,1,title,Marine
+manufacturing,applications,1,copy,Large tools and structural components
+manufacturing,applications,2,title,Industrial molds and jigs
+manufacturing,applications,2,copy,One-off large molds and jigs
+manufacturing,applications,3,title,Construction components
+manufacturing,applications,3,copy,Large structural parts for construction
+manufacturing,applicationsFooter,main,copy,The common thread -- one-off large high-mix -- is exactly what conventional processes handle worst.
+manufacturing,realityCheck,main,eyebrow,REALITY CHECK
+manufacturing,realityCheck,main,title,All the numbers up front
+manufacturing,realityCheck,main,copy,Entry-level turnkey systems run roughly EUR400000-450000 with a standard lead time of 18-24 weeks after firm order (manufacturer-provided figures). Japan's labor-saving investment subsidy catalog has included 3D printers since October 2025 adding tailwind to the investment case. At this scale of investment careful screening before ordering has real value.
+manufacturing,screening,main,eyebrow,SCREENING
+manufacturing,screening,main,title,We judge fit before you commit
+manufacturing,screening,main,copy,We screen against four conditions -- part size lot volume material and current process cost/lead time -- to judge whether large-format printing will actually help. Telling you it is not a fit when it is not is part of the job.
+manufacturing,position,main,eyebrow,POSITION
+manufacturing,position,main,title,Your guide not a seller
+manufacturing,position,main,copy,We are not an exclusive agent for any single manufacturer. We work non-exclusively case by case to bridge you to European manufacturers -- building a project brief from your requirements and connecting you directly with the manufacturer's team designed alongside Japan's existing machining grinding heat-treatment and inspection network.
+manufacturing,contactCta,main,eyebrow,CONTACT
+manufacturing,contactCta,main,title,Tell us about your process -- 30 minutes no charge
+manufacturing,contactCta,main,copy,A free 30-minute hearing on your target process. If there is potential a paid on-site diagnosis (quoted individually) delivers candidate processes rough impact estimates and a manufacturer-ready brief.
+manufacturing,contactCta,main,buttonLabel,Contact us
+manufacturing,contactCta,main,buttonHref,/contact?topic=lfam

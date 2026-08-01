@@ -49,13 +49,14 @@ module.exports = {
     return [
       { loc: "/" },
       { loc: "/about-us" },
-      { loc: "/case" },
-      { loc: "/media-and-events" },
       { loc: "/service" },
       { loc: "/service/automotive" },
+      { loc: "/service/manufacturing" },
+      { loc: "/mold-storage" },
       { loc: "/global-vendors" },
       { loc: "/contact" },
       // 必要に応じて追加
+      // /case, /media-and-events は301リダイレクト化(next.config.mjs)のためsitemapから除外
     ];
   },
 };

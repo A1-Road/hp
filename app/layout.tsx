@@ -18,11 +18,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "エーワンロード株式会社 | グローバルGTMパートナー & モビリティ",
+  title: "エーワンロード株式会社 | グローバルGTMパートナー & 大型積層造形（LFAM）",
   description:
-    "世の中の隠された価値の語り部となる。エーワンロード（A-one road）は、世界の先端プロダクト（AI・SaaS）を日本企業の課題に合わせて選定・導入するグローバルGTMパートナー事業と、日本の車両を発信・調達・輸出するモビリティ事業を通じて、すべての人の正当な価値を取り戻します。",
+    "世の中の隠された価値の語り部となる。エーワンロード（A-one road）は、世界の先端プロダクト（AI・SaaS）を日本企業の課題に合わせて選定・導入するグローバルGTMパートナー事業と、欧州の大型積層造形（WAAM/LFAM）を日本の製造現場へ橋渡しする事業を通じて、すべての人の正当な価値を取り戻します。",
   keywords:
-    "グローバルGTMパートナー, 海外SaaS 日本導入, 海外AIプロダクト 日本市場参入, テクノロジー導入支援, ディストリビューター, ローカライズ, PoC, 車両輸出, モビリティ, エーワンロード, A-one road",
+    "グローバルGTMパートナー, 海外SaaS 日本導入, 海外AIプロダクト 日本市場参入, テクノロジー導入支援, ディストリビューター, ローカライズ, PoC, 大型積層造形, WAAM, LFAM, 金型保管, 製造業DX, エーワンロード, A-one road",
   authors: [{ name: "エーワンロード株式会社" }],
   robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   generator: "Next.js",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     url: "https://a-oneroad.com",
-    title: "エーワンロード株式会社 | グローバルGTMパートナー & モビリティ",
+    title: "エーワンロード株式会社 | グローバルGTMパートナー & 大型積層造形（LFAM）",
     description:
-      "世界の先端プロダクトを、日本企業の課題に合わせて選び・つなぎ・導入するグローバルGTMパートナー。日本の車両を扱うモビリティ事業も。",
+      "世界の先端プロダクトを、日本企業の課題に合わせて選び・つなぎ・導入するグローバルGTMパートナー。欧州の大型積層造形（WAAM/LFAM）を日本の製造現場へ橋渡しする事業も。",
     siteName: "エーワンロード株式会社",
     images: [
       {
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "エーワンロード株式会社 | グローバルGTMパートナー & モビリティ",
+    title: "エーワンロード株式会社 | グローバルGTMパートナー & 大型積層造形（LFAM）",
     description:
-      "A global GTM partner bringing the world leading AI and SaaS to Japan, plus a mobility business.",
+      "A global GTM partner bringing the world's leading AI and SaaS to Japan, plus a bridge for European large-format additive manufacturing (WAAM/LFAM) into Japan's factories.",
     images: ["https://a-oneroad.com/twitter-image.jpg"],
     creator: "@a1road",
   },
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
         url: "https://a-oneroad.com",
         logo: "https://a-oneroad.com/logo.png",
         description:
-          "世界の先端プロダクト（AI・SaaS）を日本企業の課題に合わせて選定・導入するグローバルGTMパートナー事業と、日本の車両の発信・調達・輸出を行うモビリティ事業。",
+          "世界の先端プロダクト（AI・SaaS）を日本企業の課題に合わせて選定・導入するグローバルGTMパートナー事業と、欧州の大型積層造形（WAAM/LFAM）を日本の製造現場へ橋渡しする事業。",
         address: {
           "@type": "PostalAddress",
           addressCountry: "JP",
