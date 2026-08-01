@@ -341,7 +341,7 @@ manufacturing,applicationsHeader,main,note,※海外事例はメーカー公開�
 manufacturing,applications,1,title,海事系
 manufacturing,applications,1,copy,工具・構造物などの大型部材製造
 manufacturing,applications,2,title,自動車・産業用モールド・治具
-manufacturing,applications,2,copy,自動車部品を含む、大型の型・治具の一点物製造
+manufacturing,applications,2,copy,自動車部品を含む、大型の型・治具の一点物製造。使う頻度の低い型を保管し続ける代わりに、必要な時に大型積層造形でオンデマンド再生産する選択肢を提示します。
 manufacturing,applications,3,title,建築・建設部材
 manufacturing,applications,3,copy,建築・建設向けの大型構造部材
 manufacturing,applicationsFooter,main,copy,共通点は「一点物・大型・高ミックス」——従来工法が最も苦手とする条件です。

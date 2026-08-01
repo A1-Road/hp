@@ -177,6 +177,16 @@ export default function MoldStoragePage() {
               実物と実データで判断できます。
             </p>
           </div>
+
+          <div className="mt-8 rounded-2xl border border-amber-500/30 bg-amber-500/[0.04] p-6">
+            <p className="text-sm leading-relaxed text-white/70">
+              <b className="text-white">「保管する」のではなく、「必要な時に作り直す」という選択肢。</b>
+              <br />
+              使う頻度の低い大型金型・治具を、場所と費用をかけて保管し続けるのではなく、
+              欧州の大型積層造形（WAAM/LFAM）で出番が来たときにオンデマンド再生産する——
+              これが私たちの提案する、金型保管問題への具体的な解決手段のひとつです。
+            </p>
+          </div>
         </div>
       </section>
 
