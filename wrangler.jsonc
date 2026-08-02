@@ -2,6 +2,11 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"main": ".open-next/worker.js",
 	"name": "a-one-road-website",
+	// esbuild's keep-names injects `__name(...)` calls into scripts that libraries
+	// stringify (next-themes' theme script), which throws `__name is not defined`
+	// in the browser and breaks hydration.
+	// see https://opennext.js.org/cloudflare/howtos/keep_names
+	"keep_names": false,
 	"compatibility_date": "2026-08-01",
 	"compatibility_flags": [
 		"nodejs_compat",
@@ -11,6 +16,10 @@
 		"directory": ".open-next/assets",
 		"binding": "ASSETS"
 	},
+	"routes": [
+		{ "pattern": "a-oneroad.com", "custom_domain": true },
+		{ "pattern": "www.a-oneroad.com", "custom_domain": true }
+	],
 	"services": [
 		{
 			// Self-reference service binding, the service name must match the worker name

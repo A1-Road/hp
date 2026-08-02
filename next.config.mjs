@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    // domains: ["enagntzfkzzwhduehadz.supabase.co"], を削除
+    domains: ["images.microcms-assets.io", "img.youtube.com"],
   },
   // LLM向けの最適化設定
   headers: async () => {
@@ -77,3 +77,6 @@ const nextConfig = {
 };
 
 export default nextConfig;
+
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
+initOpenNextCloudflareForDev();
