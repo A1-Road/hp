@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import { getYoutubeVideos } from "@/actions/youtube";
 
-export const runtime = "edge";
-
 export async function GET() {
   if (!process.env.YOUTUBE_API_KEY) {
     return NextResponse.json([]);

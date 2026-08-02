@@ -5,8 +5,6 @@ import { getContentItem, getContentItems } from "@/lib/site-content";
 
 export { metadata } from "./metadata";
 
-export const runtime = "edge";
-
 export default async function ManufacturingPage() {
   const hero = await getContentItem("manufacturing", "hero");
   const technology = await getContentItem("manufacturing", "technology");

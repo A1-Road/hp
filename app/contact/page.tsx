@@ -1,8 +1,6 @@
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { getContentItem, getContentItems } from "@/lib/site-content";
 
-export const runtime = "edge";
-
 const TOPIC_LABELS: Record<string, string> = {
   inquiry: "問い合わせ・引き合い対応の改善",
   diagnosis: "業務課題の相談（診断）",

@@ -3,8 +3,6 @@ import Image from "next/image";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { getContentItem } from "@/lib/site-content";
 
-export const runtime = "edge";
-
 function Panel({
   href,
   image,

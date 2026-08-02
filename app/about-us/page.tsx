@@ -2,8 +2,6 @@ import Image from "next/image";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { getContentItem, getContentItems } from "@/lib/site-content";
 
-export const runtime = "edge";
-
 export default async function AboutPage() {
   const hero = await getContentItem("about", "hero");
   const statement = await getContentItem("about", "statement");

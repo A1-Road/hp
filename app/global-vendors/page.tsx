@@ -5,8 +5,6 @@ import { getContentItem, getContentItems } from "@/lib/site-content";
 
 export { metadata } from "./metadata";
 
-export const runtime = "edge";
-
 export default async function GlobalVendorsPage() {
   const hero = await getContentItem("globalVendors", "hero");
   const intro = await getContentItem("globalVendors", "intro");

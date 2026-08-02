@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 
-export const runtime = "edge";
-
 const contactSchema = z.object({
   inquiryType: z.string().trim().min(1, "Inquiry type is required.").max(120),
   name: z.string().trim().min(1, "Name is required.").max(120),

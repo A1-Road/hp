@@ -2,8 +2,6 @@ import Image from "next/image";
 
 export { metadata } from "./metadata";
 
-export const runtime = "edge";
-
 const CAL_URL = "https://calendar.app.google/jNvg49b28NDbeg1M9";
 
 function Label({ en, ja, light = false }: { en: string; ja: string; light?: boolean }) {
