@@ -20,7 +20,7 @@
     },
     "footer": {
       "main": {
-        "tagline": "海外プロダクトの日本オンボーディングと、日本の商用車輸出。価値を、正当に評価される市場へ。",
+        "tagline": "海外の優れた技術を、日本の現場へ。隠された価値を、正当に評価される市場へ。",
         "privacyLabel": "プライバシーポリシー",
         "copyright": "© 2026 A-One Road"
       }
@@ -53,139 +53,93 @@
   "top": {
     "hero": {
       "main": {
-        "eyebrow": "業務効率化・金型軸ソリューション",
-        "title": "固定費を減らし、機会損失をなくす。",
-        "copy": "問い合わせ対応や追客作業の増大が、現場の専門業務を圧迫していませんか。金型・治具の保管や廃番部品の再手配が、固定費とリスクになっていませんか。エーワンロード株式会社は、現場ヒアリングからROI試算・予算のリプレイス先特定まで、有料診断で解決の道筋を示します。",
-        "primaryLabel": "30分の面談日程を選ぶ",
-        "primaryHref": "https://calendar.app.google/jNvg49b28NDbeg1M9",
+        "eyebrow": "MISSION",
+        "title": "すべての正当な価値を取り戻す。",
+        "titleSub": "Make Matter Matter.",
+        "visionLabel": "VISION",
+        "visionEn": "Unearth All Hidden Value.",
+        "visionJa": "あらゆる隠された価値を発掘し、世に伝える語り部となる。",
+        "image": "/hero-mvv.png",
+        "primaryLabel": "事業を見る",
+        "primaryHref": "/service",
         "secondaryLabel": "会社概要を見る",
         "secondaryHref": "/about-us",
-        "image": "/hero-track.png",
         "scroll": "SCROLL"
       }
     },
-    "identity": {
+    "valueHeader": {
       "main": {
-        "eyebrow": "OUR POSITION",
-        "title": "作らない。組み合わせる。",
-        "copy": "世界中にすでにある技術と、国内にすでにある加工能力を組み合わせて、投資回収が最短になる経路を設計します。特定メーカーに偏らない中立的な立場で、御社に一番合う選択肢だけをご提案します。"
+        "eyebrow": "VALUE",
+        "title": "5つのクレド"
+      }
+    },
+    "value": {
+      "1": {
+        "number": "01",
+        "title": "Board Spaceship Earth.",
+        "copy": "地球市民たれ。"
+      },
+      "2": {
+        "number": "02",
+        "title": "Dive into the customer's shoes.",
+        "copy": "ユーザーに肩まで浸かれ。"
+      },
+      "3": {
+        "number": "03",
+        "title": "Be Resourceful.",
+        "copy": "最小の資源で最大の成果を出せ。"
+      },
+      "4": {
+        "number": "04",
+        "title": "Run the Fastest Lap.",
+        "copy": "誰よりも先に、最新技術を社会実装せよ。"
+      },
+      "5": {
+        "number": "05",
+        "title": "Go far, Go together.",
+        "copy": "n人、n+1脚で遠くへ行け。"
       }
     },
     "whatWeDoHeader": {
       "main": {
-        "eyebrow": "THE PROBLEM",
-        "title": "見えない負担が、利益と時間を削っている。",
-        "copy": "問い合わせ対応の遅れ、金型の保管コスト。気づかれにくいところに、稼働と利益を圧迫する負担があります。"
+        "eyebrow": "WHAT WE DO",
+        "title": "海外の技術を仕入れ、日本の現場で動かす。",
+        "copy": "仕入れて終わりにしない。日本企業の課題に合わせて選定し、導入・実装・運用まで担います。"
       }
     },
     "whatWeDo": {
       "1": {
-        "tag": "業務効率化ROI診断",
-        "title": "問い合わせ・見積対応の遅れが、専門業務を圧迫している。",
-        "copy": "海外SaaS・AIと既存の運用を組み合わせ、現場ヒアリングからROI試算・予算のリプレイス先特定まで診断します。対応速度を上げ、案件化率を高めます。",
+        "tag": "製造業・工場向け",
+        "title": "Factory",
+        "copy": "人手依存・属人化・既存設備やソフトウェアの分断。海外の産業機械・ロボティクス・AI・製造SaaSを選定し、日本の製造現場に導入・実装・運用します。",
+        "image": "/hub-manufacturing.jpg",
+        "href": "/service/manufacturing",
+        "linkLabel": "詳しく見る"
+      },
+      "2": {
+        "tag": "営業・バックオフィス向け",
+        "title": "BPO",
+        "copy": "営業・顧客開拓・採用・バックオフィス。海外のAI・SaaSを業務設計に組み込み、必要な人的オペレーションと組み合わせて、業務そのものを改善・実行します。",
         "image": "/workflow.png",
         "href": "/global-vendors",
         "linkLabel": "詳しく見る"
-      },
-      "2": {
-        "tag": "金型軸ソリューション",
-        "title": "金型保管という課題に、正面から。",
-        "copy": "大型金型・治具の長納期と高コスト、廃番部品の再生産、少量多品種の採算。保有金型の管理コストとリスクを可視化し、固定費削減と安定供給への道筋を示します。",
-        "image": "/hub-manufacturing.jpg",
-        "href": "/mold-storage",
-        "linkLabel": "詳しく見る"
-      }
-    },
-    "servicePreviewHeader": {
-      "main": {
-        "eyebrow": "VEHICLE EXPORT",
-        "title": "商用車輸出サービス",
-        "linkLabel": "一覧を見る",
-        "linkHref": "/service"
-      }
-    },
-    "servicePreview": {
-      "1": {
-        "title": "法人向け車両調達",
-        "copy": "法人向け車両調達",
-        "image": "/business-sourcing.png",
-        "href": "/service#business-sourcing"
-      },
-      "2": {
-        "title": "複数台導入支援",
-        "copy": "複数台導入支援",
-        "image": "/bulk-orders.png",
-        "href": "/service#bulk-orders"
-      },
-      "3": {
-        "title": "輸出手続き支援",
-        "copy": "輸出手続き支援",
-        "image": "/export-support.png",
-        "href": "/service#export-support"
-      }
-    },
-    "visualHeader": {
-      "main": {
-        "eyebrow": "VISUAL",
-        "title": "提供価値の背景"
-      }
-    },
-    "visualProof": {
-      "1": {
-        "image": "/visual-proof-2.png",
-        "alt": "Japanese vehicle sourcing visual"
-      },
-      "2": {
-        "image": "/HP2copy.png",
-        "alt": "Vehicle and road visual"
-      },
-      "3": {
-        "image": "/hptop.png",
-        "alt": "Commercial vehicle export visual"
-      },
-      "4": {
-        "image": "/workflow.png",
-        "alt": "Export support visual"
       }
     },
     "aboutPreview": {
       "main": {
         "eyebrow": "ABOUT",
         "title": "理念と事業定義",
-        "copy": "埋もれた価値を再編集し、正当に評価される市場へ届ける。ソフトウェアから製造現場まで、私たちの理念と事業の全体像をご覧ください。",
+        "copy": "すべての人の正当な価値を取り戻す。世の中の隠された価値の語り部となる。私たちの理念と事業の全体像をご覧ください。",
         "linkLabel": "会社情報へ",
         "linkHref": "/about-us",
         "image": "/about-preview.png"
-      }
-    },
-    "signalHeader": {
-      "main": {
-        "eyebrow": "PROCESS",
-        "title": "提供内容"
-      }
-    },
-    "signalSteps": {
-      "1": {
-        "number": "01",
-        "title": "法人向け車両調達",
-        "copy": "法人向け車両調達"
-      },
-      "2": {
-        "number": "02",
-        "title": "複数台導入支援",
-        "copy": "複数台導入支援"
-      },
-      "3": {
-        "number": "03",
-        "title": "輸出手続き支援",
-        "copy": "輸出手続き支援"
       }
     },
     "contactCta": {
       "main": {
         "eyebrow": "CONTACT",
         "title": "まずはご相談ください。",
-        "copy": "問い合わせ対応の遅れや、金型・治具の保管コストでお困りの方は、まずは30分お話をお聞かせください。現場ヒアリングからROI試算まで、有料診断で解決の道筋を示します。",
+        "copy": "製造現場の非効率や、営業・バックオフィスの反復業務でお困りの方は、まずは30分お話をお聞かせください。海外の技術から御社に合う選択肢を見極め、導入までを一緒に進めます。",
         "buttonLabel": "お問い合わせへ",
         "buttonHref": "/contact"
       }
@@ -194,17 +148,77 @@
   "about": {
     "hero": {
       "main": {
-        "eyebrow": "ABOUT",
-        "title": "すべての人の正当な価値を取り戻す。",
-        "copy": "世界の技術と、日本の現場。埋もれた価値を、正当に評価される市場へ届けます。",
-        "image": "/about-hero.png"
+        "eyebrow": "OUR STORY"
       }
     },
-    "statement": {
+    "chapter": {
+      "1": {
+        "eyebrow": "2021",
+        "title": "すべては、ひとつの怒りから始まった。",
+        "copy": "2021年、日本の起業家たちを見て、我々はある言葉を残した。世界で戦える人がいる。優れた技術がある。それでも、その価値は世界に届いていない。",
+        "quoteLabel": "原文 — 2021",
+        "quoteBefore": "...this club's stance of make themselves notable around the globe is astonishingly weak.",
+        "quoteHighlight": "This is my fury.",
+        "quoteAfter": " Why the most of Japanese elites doesn't have the ambition to rule the world?"
+      },
+      "2": {
+        "eyebrow": "2022–23 — GLOBAL",
+        "title": "世界へ出て、壁を知った。",
+        "copy": "サンフランシスコ、デンバー、バンコク。参加者としてではなく、作る側として。壁の正体——言語、国境、情報、ネットワーク——を体で知った。",
+        "imgLg": "/story/2022-ethsf.png",
+        "imgLgAlt": "ETH San Franciscoの会場を見下ろした風景",
+        "imgLgCaption": "ETH San Francisco — 会場",
+        "imgSm1": "/story/2022-ethdenver.jpg",
+        "imgSm1Alt": "ETH Denverの会場入口",
+        "imgSm1Caption": "ETH Denver",
+        "imgSm2": "/story/2022-idemoed.jpg",
+        "imgSm2Alt": "ETHGlobal BangkokのI DEMOEDの壁の前での集合写真",
+        "imgSm2Caption": "I DEMOED — Bangkok"
+      },
+      "3": {
+        "eyebrow": "2023–24 — JAPAN",
+        "title": "場を作り、日本を歩いた。",
+        "copy": "石垣島のシンポジウムでは地方紙に載り、香川の蔵では土地の記憶に触れた。価値は足りないのではなく、見つけられず、語られず、出会えていない。",
+        "imgLg": "/story/2025-workshop.jpg",
+        "imgLgAlt": "ETHTokyoのDAOパネルに登壇する田村一馬",
+        "imgLgCaption": "ETHTokyo — Panel: DAOs 登壇",
+        "imgSm1": "/story/2023-kura.jpg",
+        "imgSm1Alt": "香川の醸造蔵でタンクに囲まれて語る様子",
+        "imgSm1Caption": "醸造蔵 — 香川",
+        "imgSm2": "/story/2023-yaeyama.jpg",
+        "imgSm2Alt": "八重山日報に掲載されたweb3.0シンポジウム登壇記事",
+        "imgSm2Caption": "八重山日報 紙面"
+      },
+      "4": {
+        "eyebrow": "2024 — FA1RNESS",
+        "title": "出会う場所を、我々で作った。",
+        "copy": "自社主催の国際カンファレンス。Google for Startups Campus Tokyoに、海外のビルダーと日本の企業を同じ部屋に集めた。",
+        "imgLg": "/story/2024-fa1rness.png",
+        "imgLgAlt": "FA1RNESS 2024の会場全景と登壇者・参加者の集合写真",
+        "imgLgCaption": "FA1RNESS 2024 — 全員のサムズアップ"
+      },
+      "5": {
+        "eyebrow": "2025 — MANUFACTURING",
+        "title": "デジタルで探していたものを、町工場で見つけた。",
+        "copy": "大田区の町工場には「仲間回し」があった。DAOで追い続けた分散協働が、日本のものづくりでは何十年も前から現実に動いていた。A-one Roadが進む道が、ここで一本につながった。",
+        "imgLg": "/story/2025-otaku-factory.png",
+        "imgLgAlt": "大田区の町工場で職人の作業を見学する様子",
+        "imgLgCaption": "大田区 — 仲間回しの現場",
+        "imgSm": "/story/2025-otaku.jpg",
+        "imgSmAlt": "ホワイトボードに書き込みが並ぶ作業場",
+        "imgSmCaption": "作業場のホワイトボード"
+      }
+    },
+    "today": {
       "main": {
-        "eyebrow": "STATEMENT",
-        "title": "世の中の隠された価値の語り部となる。",
-        "copy": "優れているのに知られていない。価値があるのに届いていない。その差を埋めるのが、私たちの仕事です。"
+        "eyebrow": "TODAY — FACTORY & BPO",
+        "title": "あらゆる隠された価値を、世の中へ。",
+        "copy": "工場に蓄積された技術。世界にはあるが、日本には届いていないサービス。企業の中で埋もれている知識や時間。国境、言語、業界、組織。その間にある壁を取り払い、価値が必要とされる場所まで届ける。",
+        "vision": "あらゆる隠された価値を発掘し、世に伝える語り部となる。",
+        "buttonBusinessLabel": "事業を見る",
+        "buttonBusinessHref": "/service",
+        "buttonContactLabel": "お問い合わせ",
+        "buttonContactHref": "/contact"
       }
     },
     "philosophyHeader": {
@@ -251,21 +265,13 @@
       },
       "4": {
         "number": "04",
-        "title": "Run Fastest Lap.",
+        "title": "Run the Fastest Lap.",
         "copy": "誰よりも先に、最新技術を社会実装せよ。"
       },
       "5": {
         "number": "05",
         "title": "Go far, Go together.",
         "copy": "n人、n+1脚で遠くへ行け。"
-      }
-    },
-    "story": {
-      "main": {
-        "eyebrow": "APPROACH",
-        "title": "二つの事業で、価値をつなぐ。",
-        "copy": "私たちは二つの事業を営みます。ひとつは、問い合わせ・見積対応の遅れを、海外SaaS・AIの導入で解消する業務効率化・ROI診断事業。もうひとつは、金型保管問題や廃番部品の再生産という課題に正面から取り組む事業。私たちは金型を保管しません——欧州の大型積層造形で必要な時に作り直す選択肢を提案します。領域は違っても、やっていることは同じ——現場の負担を可視化し、固定費削減と機会損失の解消につなげることです。",
-        "image": "/about-story.png"
       }
     },
     "differentiatorHeader": {
@@ -276,12 +282,26 @@
     },
     "differentiator": {
       "1": {
-        "title": "業務効率化・ROI診断",
-        "copy": "海外SaaS・AIと既存の運用を組み合わせ、問い合わせ・見積対応の遅れを解消する。"
+        "title": "Factory",
+        "copy": "海外の産業機械・ロボティクス・AI・製造SaaSを選定し、日本の製造現場に導入・実装・運用する。"
       },
       "2": {
-        "title": "金型軸ソリューション",
-        "copy": "保有金型の管理コストとリスクを可視化し、固定費削減と安定供給への道筋を示す。"
+        "title": "BPO",
+        "copy": "営業・顧客開拓・採用・バックオフィス。海外のAI・SaaSを業務設計に組み込み、業務そのものを改善・実行する。"
+      }
+    },
+    "founderHeader": {
+      "main": {
+        "eyebrow": "FOUNDER",
+        "title": "代表者"
+      }
+    },
+    "founder": {
+      "main": {
+        "name": "田村 一馬",
+        "role": "代表取締役",
+        "bio": "A-one Road創業者。Bankless Japan立ち上げ、Pacific Metaでのグローバル事業開発、CADDiでのプロダクトマーケティングなどを経験。海外企業の市場参入・事業開発を専門とする。",
+        "image": "/founder-tamura.png"
       }
     },
     "companyInfoHeader": {
@@ -319,117 +339,6 @@
       "7": {
         "label": "所在地",
         "value": "神奈川県横浜市西区浅間町1丁目4-3ウィザードビル402"
-      }
-    }
-  },
-  "service": {
-    "hero": {
-      "main": {
-        "eyebrow": "SERVICE",
-        "title": "モビリティ関連事業",
-        "copy": "日本の軽トラックや軽バン、小型商用車や特装車まで、幅広い車両の調達と輸出を行います。用途と市場に合わせた車両選定から、部品対応・車両情報の整理・輸出実務まで支援します。"
-      }
-    },
-    "indexHeader": {
-      "main": {
-        "eyebrow": "INDEX",
-        "title": "提供内容"
-      }
-    },
-    "index": {
-      "1": {
-        "id": "pr-marketing-events",
-        "title": "自動車関連PR・マーケティング・イベント運営",
-        "line": "PR・マーケティング・イベント運営",
-        "image": "/DAONIGHT2024.png"
-      },
-      "2": {
-        "id": "vehicle-sourcing",
-        "title": "車両調達",
-        "line": "車両の調達・輸出",
-        "image": "/business-sourcing.png"
-      }
-    },
-    "detail": {
-      "1": {
-        "id": "pr-marketing-events",
-        "title": "自動車関連PR・マーケティング・イベント運営",
-        "what": "自動車関連のPR・マーケティング・イベントの企画から運営までを担います。",
-        "value": "車両の価値を、製品と文化の両面で発信します。",
-        "flow": "企画・集客・当日運営まで一貫対応。",
-        "output": "PR・マーケティング・イベント運営。"
-      },
-      "2": {
-        "id": "vehicle-sourcing",
-        "title": "車両調達",
-        "what": "個人・法人向けに、日本の商用車・軽自動車・特装車などを調達・輸出します。",
-        "value": "用途と市場に応じた選定と、輸出手続きを支援します。",
-        "flow": "要件整理・候補抽出から輸出まで。",
-        "output": "車両調達・輸出。"
-      }
-    },
-    "processHeader": {
-      "main": {
-        "eyebrow": "PROCESS",
-        "title": "対応市場"
-      }
-    },
-    "process": {
-      "1": {
-        "number": "01",
-        "title": "U.S.",
-        "copy": "米国向け対応"
-      },
-      "2": {
-        "number": "02",
-        "title": "Europe",
-        "copy": "欧州向け対応"
-      },
-      "3": {
-        "number": "03",
-        "title": "Other markets",
-        "copy": "その他地域にも対応"
-      },
-      "4": {
-        "number": "04",
-        "title": "Japan",
-        "copy": "日本国内から調達"
-      }
-    },
-    "faqHeader": {
-      "main": {
-        "eyebrow": "FAQ",
-        "title": "よくある質問。"
-      }
-    },
-    "faq": {
-      "1": {
-        "question": "誰向けのサービスですか",
-        "answer": "日本からの調達を求めるディーラー フリート 法人バイヤー向けです。"
-      },
-      "2": {
-        "question": "どの車種に対応していますか",
-        "answer": "軽トラック・軽バン・小型商用車を中心に、特装車や各種商用車まで幅広く扱っています。"
-      },
-      "3": {
-        "question": "輸出先はどの地域ですか",
-        "answer": "主に米国 欧州 その他地域に対応しています。"
-      },
-      "4": {
-        "question": "車両状態は確認できますか",
-        "answer": "確認可能な情報を整理して共有します。"
-      },
-      "5": {
-        "question": "まず相談だけでも可能ですか",
-        "answer": "可能です。お気軽にお問い合わせください。"
-      }
-    },
-    "contactCta": {
-      "main": {
-        "eyebrow": "CONTACT",
-        "title": "要件をお聞かせください。",
-        "buttonLabel": "お問い合わせ",
-        "buttonHref": "/contact"
       }
     }
   },
@@ -712,26 +621,26 @@
     "hero": {
       "main": {
         "eyebrow": "OUR BUSINESS",
-        "message": "問い合わせ対応の遅れも、金型・治具の保管コストも。現場ヒアリングからROI試算まで、有料診断で解決の道筋を示します。"
+        "message": "海外の優れた機械・AI・SaaSを、日本企業の課題に合わせて選定し、導入・実装・運用まで担います。"
       }
     },
     "left": {
       "main": {
-        "tag": "業務効率化・ROI診断",
-        "label": "問い合わせ・見積対応の遅れを、なくす。",
-        "sub": "海外SaaS・AIと既存の運用を組み合わせ、対応速度と案件化率を高めます。",
-        "href": "/global-vendors",
-        "image": "/hub-gtm.png",
+        "tag": "Factory",
+        "label": "製造業・工場の現場を、海外技術で強くする。",
+        "sub": "海外の産業機械・ロボティクス・AI・製造SaaSを選定し、日本の製造現場に導入・実装・運用します。",
+        "href": "/service/manufacturing",
+        "image": "/hub-manufacturing.jpg",
         "cta": "詳しく見る"
       }
     },
     "third": {
       "main": {
-        "tag": "金型軸ソリューション",
-        "label": "金型保管という課題に、正面から。",
-        "sub": "保有金型の管理コストとリスクを可視化し、固定費削減と安定供給への道筋を示します。",
-        "href": "/mold-storage",
-        "image": "/hub-manufacturing.jpg",
+        "tag": "BPO",
+        "label": "営業・バックオフィスの反復業務を、動かす。",
+        "sub": "海外のAI・SaaSを業務設計に組み込み、人的オペレーションと組み合わせて、業務そのものを改善・実行します。",
+        "href": "/global-vendors",
+        "image": "/hub-gtm.png",
         "cta": "詳しく見る"
       }
     }
@@ -739,63 +648,63 @@
   "manufacturing": {
     "hero": {
       "main": {
-        "eyebrow": "LARGE-FORMAT ADDITIVE MANUFACTURING",
-        "title": "「大きすぎて作れない」を、造形で解決する。",
-        "copy": "欧州で実用化が進む大型積層造形（WAAM/LFAM）。金属・樹脂の大型3D造形を、日本の製造現場の課題に接続します。"
+        "eyebrow": "FACTORY",
+        "title": "工場の課題に、海外の技術で応える。",
+        "copy": "人手依存・属人化・ダウンタイム・生産ラインの分断。見積もり対応の遅れからDX、設備導入まで、海外の実績ある機械・AI・SaaSを選定し、日本の製造現場に導入・実装・運用します。"
       }
     },
     "technology": {
       "main": {
-        "eyebrow": "TECHNOLOGY",
-        "title": "金属・樹脂の「大型」積層造形",
-        "copy": "ビルドボリューム2×1m〜3×2mクラスのターンキー構成が商用化されており、「型を起こすほどのロットがない」「大きすぎて加工できない」と諦められていた領域を置き換えつつあります。型が不要なため、ロット1個から経済性が成立します。"
+        "eyebrow": "HOW WE WORK",
+        "title": "特定の技術に、絞りません。",
+        "copy": "積層造形、DXツール、生産管理システム、検査自動化など、御社の課題に合う技術を世界中から探します。特定メーカー・特定技術に偏らない中立的な立場で選定します。"
       }
     },
     "applicationsHeader": {
       "main": {
         "eyebrow": "APPLICATIONS",
-        "title": "海外で先行する適用分野",
-        "note": "※海外事例はメーカー公開資料に基づきます。当社の導入実績を示すものではありません。"
+        "title": "対応する課題の例",
+        "note": "実際の課題は御社ごとに異なります。まずは現状をお聞かせください。"
       }
     },
     "applications": {
       "1": {
-        "title": "海事系",
-        "copy": "工具・構造物などの大型部材製造"
+        "title": "見積もり・受発注のDX",
+        "copy": "属人化した見積もり対応や受発注業務を、海外SaaS・AIで効率化します。"
       },
       "2": {
-        "title": "自動車・産業用モールド・治具",
-        "copy": "自動車部品を含む、大型の型・治具の一点物製造。使う頻度の低い型を保管し続ける代わりに、必要な時に大型積層造形でオンデマンド再生産する選択肢を提示します。"
+        "title": "ダウンタイム改善・生産ライン修正",
+        "copy": "稼働率を落としている工程・設備を特定し、改善に必要な技術・機材を導入します。"
       },
       "3": {
-        "title": "建築・建設部材",
-        "copy": "建築・建設向けの大型構造部材"
+        "title": "大型積層造形（LFAM/WAAM）",
+        "copy": "大型金型・治具を保管し続ける代わりに、必要な時に造形するという選択肢も提供します。"
       }
     },
     "applicationsFooter": {
       "main": {
-        "copy": "共通点は「一点物・大型・高ミックス」——従来工法が最も苦手とする条件です。"
+        "copy": "共通点は、現場の負担を可視化し、固定費削減と機会損失の解消につなげることです。"
       }
     },
     "realityCheck": {
       "main": {
         "eyebrow": "REALITY CHECK",
         "title": "判断材料を、先にすべてお渡しします",
-        "copy": "ターンキー構成の入口価格帯は€400000〜450000、標準リードタイムは確定発注後18〜24週が目安です（メーカー提示情報）。2025年10月より省力化投資補助金のカタログに3Dプリンタが追加されており、投資判断の追い風となっています。この規模の投資だからこそ、発注前の案件精査に価値があります。"
+        "copy": "御社の工程・設備・予算感をヒアリングした上で、投資対効果と導入までのステップを先に共有します。効果が見込めない場合は、その旨を率直にお伝えします。"
       }
     },
     "screening": {
       "main": {
         "eyebrow": "SCREENING",
         "title": "御社の工程が「向いているか」を先に判定します",
-        "copy": "対象部品のサイズ／ロット数／材質／現行工法のコストと納期の4条件から、大型造形で効果が出る工程かを判定します。向いていなければ「向いていない」とお伝えするところまでが当社の仕事です。"
+        "copy": "対象工程の内容／ロット数／現行コストと納期の条件から、海外技術の導入で効果が出る工程かを判定します。向いていなければ「向いていない」とお伝えするところまでが当社の仕事です。"
       }
     },
     "position": {
       "main": {
         "eyebrow": "POSITION",
         "title": "御社側の水先案内人として",
-        "copy": "当社は非独占・案件先行の立場で、欧州メーカーとの橋渡しを行います。御社の要件を整理したプロジェクトブリーフを作成し、メーカーの担当窓口へ直接接続します。国内の切削・研削・熱処理・検査など既存加工網との役割分担を含めた座組で設計します。"
+        "copy": "当社は非独占・案件先行の立場で、海外メーカーとの橋渡しを行います。御社の要件を整理したプロジェクトブリーフを作成し、メーカーの担当窓口へ直接接続します。国内の既存加工網との役割分担を含めた座組で設計します。"
       }
     },
     "contactCta": {
@@ -804,7 +713,7 @@
         "title": "まずは30分、御社の製造課題をお聞かせください",
         "copy": "30分ヒアリング（無料）で対象工程を伺い、可能性があれば有償の現場診断（個別お見積り）で置換候補工程の特定・概算効果・メーカー打診用ブリーフまで納品します。",
         "buttonLabel": "お問い合わせへ",
-        "buttonHref": "/contact?topic=lfam"
+        "buttonHref": "/contact?topic=factory"
       }
     }
   }

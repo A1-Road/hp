@@ -16,11 +16,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "エーワンロード株式会社 | 金型・治具の保管問題を解決します",
+  title: "エーワンロード株式会社 | 海外の技術で、日本の現場を強くする",
   description:
-    "大型金型・治具の長納期と高コスト、廃番部品の再生産、少量多品種の採算。エーワンロード株式会社は、これらの課題に取り組んでいる横浜のスタートアップです。保管コストと稼働状況を可視化し、保管し続けるより安く早い選択肢をご提案します。",
+    "海外の優れた機械・AI・SaaSを、日本企業の課題に合わせて選定し、導入・実装・運用まで担う。製造業向けのFactory事業と、営業・バックオフィス向けのBPO事業を展開する横浜のスタートアップです。",
   keywords:
-    "金型保管, 治具保管, 廃番部品, 少量多品種生産, 製造業DX, 大型積層造形, WAAM, LFAM, 海外SaaS 日本導入, テクノロジー導入支援, エーワンロード, A-one road",
+    "製造業DX, 大型積層造形, WAAM, LFAM, 海外SaaS 日本導入, テクノロジー導入支援, BPO, AI SDR, 営業自動化, エーワンロード, A-one road",
   authors: [{ name: "エーワンロード株式会社" }],
   robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   generator: "Next.js",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     url: "https://a-oneroad.com",
-    title: "エーワンロード株式会社 | 金型・治具の保管問題を解決します",
+    title: "エーワンロード株式会社 | 海外の技術で、日本の現場を強くする",
     description:
-      "大型金型・治具の長納期と高コスト、廃番部品の再生産、少量多品種の採算。保管コストと稼働状況を可視化し、保管し続けるより安く早い選択肢をご提案します。",
+      "海外の優れた機械・AI・SaaSを、日本企業の課題に合わせて選定し、導入・実装・運用まで担う。Factory事業とBPO事業を展開しています。",
     siteName: "エーワンロード株式会社",
     images: [
       {
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "A-One Road Co., Ltd. | Solving the Mold & Die Storage Problem",
+    title: "A-One Road Co., Ltd. | Country Manager as a Service, for Japan",
     description:
-      "Long lead times and high costs for large molds and jigs, reproducing discontinued parts, low-volume profitability. We visualize your storage cost and utilization, then propose a cheaper, faster alternative to storage.",
+      "We source proven machines, AI, and SaaS from overseas and take them through selection, deployment, and operation for Japanese businesses. Focus areas: Factory and BPO.",
     images: ["https://a-oneroad.com/twitter-image.jpg"],
     creator: "@a1road",
   },
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
         url: "https://a-oneroad.com",
         logo: "https://a-oneroad.com/logo.png",
         description:
-          "大型金型・治具の長納期と高コスト、廃番部品の再生産、少量多品種の採算といった製造現場の課題に取り組む横浜のスタートアップ。",
+          "海外の優れた機械・AI・SaaSを日本企業の課題に合わせて導入・実装・運用する、Factory事業とBPO事業を展開する横浜のスタートアップ。",
         address: {
           "@type": "PostalAddress",
           addressCountry: "JP",

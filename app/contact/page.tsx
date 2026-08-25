@@ -1,3 +1,4 @@
+import HubspotForm from "@/components/hubspot-form";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { getContentItem, getContentItems } from "@/lib/site-content";
 
@@ -51,12 +52,10 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
                   ご相談内容: <span className="text-white">{topicLabel}</span>
                 </p>
               ) : null}
-              <script src="https://js-na2.hsforms.net/forms/embed/246807977.js" defer />
-              <div
-                className="hs-form-frame"
-                data-region="na2"
-                data-form-id="adc556cb-cfc8-4a4f-8350-fdadc91c052a"
-                data-portal-id="246807977"
+              <HubspotForm
+                portalId="246807977"
+                formId="adc556cb-cfc8-4a4f-8350-fdadc91c052a"
+                region="na2"
               />
             </div>
           </AnimatedSection>

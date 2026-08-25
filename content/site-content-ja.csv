@@ -7,7 +7,7 @@ global,navigation,3,label,SERVICE
 global,navigation,3,href,/service
 global,navigation,5,label,CONTACT
 global,navigation,5,href,/contact
-global,footer,main,tagline,海外プロダクトの日本オンボーディングと、日本の商用車輸出。価値を、正当に評価される市場へ。
+global,footer,main,tagline,海外の優れた技術を、日本の現場へ。隠された価値を、正当に評価される市場へ。
 global,footer,main,privacyLabel,プライバシーポリシー
 global,footer,main,copyright,© 2026 A-One Road
 global,contactInfo,1,label,Email
@@ -20,88 +20,116 @@ global,socials,2,label,LinkedIn
 global,socials,2,href,https://linkedin.com/company/a1road
 global,socials,3,label,GitHub
 global,socials,3,href,https://github.com/A1-Road
-top,hero,main,eyebrow,業務効率化・金型軸ソリューション
-top,hero,main,title,固定費を減らし、機会損失をなくす。
-top,hero,main,copy,問い合わせ対応や追客作業の増大が、現場の専門業務を圧迫していませんか。金型・治具の保管や廃番部品の再手配が、固定費とリスクになっていませんか。エーワンロード株式会社は、現場ヒアリングからROI試算・予算のリプレイス先特定まで、有料診断で解決の道筋を示します。
-top,hero,main,primaryLabel,30分の面談日程を選ぶ
-top,hero,main,primaryHref,https://calendar.app.google/jNvg49b28NDbeg1M9
+top,hero,main,eyebrow,MISSION
+top,hero,main,title,すべての正当な価値を取り戻す。
+top,hero,main,titleSub,Make Matter Matter.
+top,hero,main,visionLabel,VISION
+top,hero,main,visionEn,Unearth All Hidden Value.
+top,hero,main,visionJa,あらゆる隠された価値を発掘し、世に伝える語り部となる。
+top,hero,main,image,/hero-mvv.png
+top,hero,main,primaryLabel,事業を見る
+top,hero,main,primaryHref,/service
 top,hero,main,secondaryLabel,会社概要を見る
 top,hero,main,secondaryHref,/about-us
-top,hero,main,image,/hero-track.png
 top,hero,main,scroll,SCROLL
-top,identity,main,eyebrow,OUR POSITION
-top,identity,main,title,作らない。組み合わせる。
-top,identity,main,copy,世界中にすでにある技術と、国内にすでにある加工能力を組み合わせて、投資回収が最短になる経路を設計します。特定メーカーに偏らない中立的な立場で、御社に一番合う選択肢だけをご提案します。
-top,whatWeDoHeader,main,eyebrow,THE PROBLEM
-top,whatWeDoHeader,main,title,見えない負担が、利益と時間を削っている。
-top,whatWeDoHeader,main,copy,問い合わせ対応の遅れ、金型の保管コスト。気づかれにくいところに、稼働と利益を圧迫する負担があります。
-top,whatWeDo,1,tag,業務効率化ROI診断
-top,whatWeDo,1,title,問い合わせ・見積対応の遅れが、専門業務を圧迫している。
-top,whatWeDo,1,copy,海外SaaS・AIと既存の運用を組み合わせ、現場ヒアリングからROI試算・予算のリプレイス先特定まで診断します。対応速度を上げ、案件化率を高めます。
-top,whatWeDo,1,image,/workflow.png
-top,whatWeDo,1,href,/global-vendors
+top,valueHeader,main,eyebrow,VALUE
+top,valueHeader,main,title,5つのクレド
+top,value,1,number,01
+top,value,1,title,Board Spaceship Earth.
+top,value,1,copy,地球市民たれ。
+top,value,2,number,02
+top,value,2,title,Dive into the customer's shoes.
+top,value,2,copy,ユーザーに肩まで浸かれ。
+top,value,3,number,03
+top,value,3,title,Be Resourceful.
+top,value,3,copy,最小の資源で最大の成果を出せ。
+top,value,4,number,04
+top,value,4,title,Run the Fastest Lap.
+top,value,4,copy,誰よりも先に、最新技術を社会実装せよ。
+top,value,5,number,05
+top,value,5,title,Go far, Go together.
+top,value,5,copy,n人、n+1脚で遠くへ行け。
+top,whatWeDoHeader,main,eyebrow,WHAT WE DO
+top,whatWeDoHeader,main,title,海外の技術を仕入れ、日本の現場で動かす。
+top,whatWeDoHeader,main,copy,仕入れて終わりにしない。日本企業の課題に合わせて選定し、導入・実装・運用まで担います。
+top,whatWeDo,1,tag,製造業・工場向け
+top,whatWeDo,1,title,Factory
+top,whatWeDo,1,copy,人手依存・属人化・既存設備やソフトウェアの分断。海外の産業機械・ロボティクス・AI・製造SaaSを選定し、日本の製造現場に導入・実装・運用します。
+top,whatWeDo,1,image,/hub-manufacturing.jpg
+top,whatWeDo,1,href,/service/manufacturing
 top,whatWeDo,1,linkLabel,詳しく見る
-top,whatWeDo,2,tag,金型軸ソリューション
-top,whatWeDo,2,title,金型保管という課題に、正面から。
-top,whatWeDo,2,copy,大型金型・治具の長納期と高コスト、廃番部品の再生産、少量多品種の採算。保有金型の管理コストとリスクを可視化し、固定費削減と安定供給への道筋を示します。
-top,whatWeDo,2,image,/hub-manufacturing.jpg
-top,whatWeDo,2,href,/mold-storage
+top,whatWeDo,2,tag,営業・バックオフィス向け
+top,whatWeDo,2,title,BPO
+top,whatWeDo,2,copy,営業・顧客開拓・採用・バックオフィス。海外のAI・SaaSを業務設計に組み込み、必要な人的オペレーションと組み合わせて、業務そのものを改善・実行します。
+top,whatWeDo,2,image,/workflow.png
+top,whatWeDo,2,href,/global-vendors
 top,whatWeDo,2,linkLabel,詳しく見る
-top,servicePreviewHeader,main,eyebrow,VEHICLE EXPORT
-top,servicePreviewHeader,main,title,商用車輸出サービス
-top,servicePreviewHeader,main,linkLabel,一覧を見る
-top,servicePreviewHeader,main,linkHref,/service
-top,servicePreview,1,title,法人向け車両調達
-top,servicePreview,1,copy,法人向け車両調達
-top,servicePreview,1,image,/business-sourcing.png
-top,servicePreview,1,href,/service#business-sourcing
-top,servicePreview,2,title,複数台導入支援
-top,servicePreview,2,copy,複数台導入支援
-top,servicePreview,2,image,/bulk-orders.png
-top,servicePreview,2,href,/service#bulk-orders
-top,servicePreview,3,title,輸出手続き支援
-top,servicePreview,3,copy,輸出手続き支援
-top,servicePreview,3,image,/export-support.png
-top,servicePreview,3,href,/service#export-support
-top,visualHeader,main,eyebrow,VISUAL
-top,visualHeader,main,title,提供価値の背景
-top,visualProof,1,image,/visual-proof-2.png
-top,visualProof,1,alt,Japanese vehicle sourcing visual
-top,visualProof,2,image,/HP2copy.png
-top,visualProof,2,alt,Vehicle and road visual
-top,visualProof,3,image,/hptop.png
-top,visualProof,3,alt,Commercial vehicle export visual
-top,visualProof,4,image,/workflow.png
-top,visualProof,4,alt,Export support visual
 top,aboutPreview,main,eyebrow,ABOUT
 top,aboutPreview,main,title,理念と事業定義
-top,aboutPreview,main,copy,埋もれた価値を再編集し、正当に評価される市場へ届ける。ソフトウェアから製造現場まで、私たちの理念と事業の全体像をご覧ください。
+top,aboutPreview,main,copy,すべての人の正当な価値を取り戻す。世の中の隠された価値の語り部となる。私たちの理念と事業の全体像をご覧ください。
 top,aboutPreview,main,linkLabel,会社情報へ
 top,aboutPreview,main,linkHref,/about-us
 top,aboutPreview,main,image,/about-preview.png
-top,signalHeader,main,eyebrow,PROCESS
-top,signalHeader,main,title,提供内容
-top,signalSteps,1,number,01
-top,signalSteps,1,title,法人向け車両調達
-top,signalSteps,1,copy,法人向け車両調達
-top,signalSteps,2,number,02
-top,signalSteps,2,title,複数台導入支援
-top,signalSteps,2,copy,複数台導入支援
-top,signalSteps,3,number,03
-top,signalSteps,3,title,輸出手続き支援
-top,signalSteps,3,copy,輸出手続き支援
 top,contactCta,main,eyebrow,CONTACT
 top,contactCta,main,title,まずはご相談ください。
-top,contactCta,main,copy,問い合わせ対応の遅れや、金型・治具の保管コストでお困りの方は、まずは30分お話をお聞かせください。現場ヒアリングからROI試算まで、有料診断で解決の道筋を示します。
+top,contactCta,main,copy,製造現場の非効率や、営業・バックオフィスの反復業務でお困りの方は、まずは30分お話をお聞かせください。海外の技術から御社に合う選択肢を見極め、導入までを一緒に進めます。
 top,contactCta,main,buttonLabel,お問い合わせへ
 top,contactCta,main,buttonHref,/contact
-about,hero,main,eyebrow,ABOUT
-about,hero,main,title,すべての人の正当な価値を取り戻す。
-about,hero,main,copy,世界の技術と、日本の現場。埋もれた価値を、正当に評価される市場へ届けます。
-about,hero,main,image,/about-hero.png
-about,statement,main,eyebrow,STATEMENT
-about,statement,main,title,世の中の隠された価値の語り部となる。
-about,statement,main,copy,優れているのに知られていない。価値があるのに届いていない。その差を埋めるのが、私たちの仕事です。
+about,hero,main,eyebrow,OUR STORY
+about,chapter,1,eyebrow,2021
+about,chapter,1,title,すべては、ひとつの怒りから始まった。
+about,chapter,1,copy,2021年、日本の起業家たちを見て、我々はある言葉を残した。世界で戦える人がいる。優れた技術がある。それでも、その価値は世界に届いていない。
+about,chapter,1,quoteLabel,原文 — 2021
+about,chapter,1,quoteBefore,...this club's stance of make themselves notable around the globe is astonishingly weak.
+about,chapter,1,quoteHighlight,This is my fury.
+about,chapter,1,quoteAfter, Why the most of Japanese elites doesn't have the ambition to rule the world?
+about,chapter,2,eyebrow,2022–23 — GLOBAL
+about,chapter,2,title,世界へ出て、壁を知った。
+about,chapter,2,copy,サンフランシスコ、デンバー、バンコク。参加者としてではなく、作る側として。壁の正体——言語、国境、情報、ネットワーク——を体で知った。
+about,chapter,2,imgLg,/story/2022-ethsf.png
+about,chapter,2,imgLgAlt,ETH San Franciscoの会場を見下ろした風景
+about,chapter,2,imgLgCaption,ETH San Francisco — 会場
+about,chapter,2,imgSm1,/story/2022-ethdenver.jpg
+about,chapter,2,imgSm1Alt,ETH Denverの会場入口
+about,chapter,2,imgSm1Caption,ETH Denver
+about,chapter,2,imgSm2,/story/2022-idemoed.jpg
+about,chapter,2,imgSm2Alt,ETHGlobal BangkokのI DEMOEDの壁の前での集合写真
+about,chapter,2,imgSm2Caption,I DEMOED — Bangkok
+about,chapter,3,eyebrow,2023–24 — JAPAN
+about,chapter,3,title,場を作り、日本を歩いた。
+about,chapter,3,copy,石垣島のシンポジウムでは地方紙に載り、香川の蔵では土地の記憶に触れた。価値は足りないのではなく、見つけられず、語られず、出会えていない。
+about,chapter,3,imgLg,/story/2025-workshop.jpg
+about,chapter,3,imgLgAlt,ETHTokyoのDAOパネルに登壇する田村一馬
+about,chapter,3,imgLgCaption,ETHTokyo — Panel: DAOs 登壇
+about,chapter,3,imgSm1,/story/2023-kura.jpg
+about,chapter,3,imgSm1Alt,香川の醸造蔵でタンクに囲まれて語る様子
+about,chapter,3,imgSm1Caption,醸造蔵 — 香川
+about,chapter,3,imgSm2,/story/2023-yaeyama.jpg
+about,chapter,3,imgSm2Alt,八重山日報に掲載されたweb3.0シンポジウム登壇記事
+about,chapter,3,imgSm2Caption,八重山日報 紙面
+about,chapter,4,eyebrow,2024 — FA1RNESS
+about,chapter,4,title,出会う場所を、我々で作った。
+about,chapter,4,copy,自社主催の国際カンファレンス。Google for Startups Campus Tokyoに、海外のビルダーと日本の企業を同じ部屋に集めた。
+about,chapter,4,imgLg,/story/2024-fa1rness.png
+about,chapter,4,imgLgAlt,FA1RNESS 2024の会場全景と登壇者・参加者の集合写真
+about,chapter,4,imgLgCaption,FA1RNESS 2024 — 全員のサムズアップ
+about,chapter,5,eyebrow,2025 — MANUFACTURING
+about,chapter,5,title,デジタルで探していたものを、町工場で見つけた。
+about,chapter,5,copy,大田区の町工場には「仲間回し」があった。DAOで追い続けた分散協働が、日本のものづくりでは何十年も前から現実に動いていた。A-one Roadが進む道が、ここで一本につながった。
+about,chapter,5,imgLg,/story/2025-otaku-factory.png
+about,chapter,5,imgLgAlt,大田区の町工場で職人の作業を見学する様子
+about,chapter,5,imgLgCaption,大田区 — 仲間回しの現場
+about,chapter,5,imgSm,/story/2025-otaku.jpg
+about,chapter,5,imgSmAlt,ホワイトボードに書き込みが並ぶ作業場
+about,chapter,5,imgSmCaption,作業場のホワイトボード
+about,today,main,eyebrow,TODAY — FACTORY & BPO
+about,today,main,title,あらゆる隠された価値を、世の中へ。
+about,today,main,copy,工場に蓄積された技術。世界にはあるが、日本には届いていないサービス。企業の中で埋もれている知識や時間。国境、言語、業界、組織。その間にある壁を取り払い、価値が必要とされる場所まで届ける。
+about,today,main,vision,あらゆる隠された価値を発掘し、世に伝える語り部となる。
+about,today,main,buttonBusinessLabel,事業を見る
+about,today,main,buttonBusinessHref,/service
+about,today,main,buttonContactLabel,お問い合わせ
+about,today,main,buttonContactHref,/contact
 about,philosophyHeader,main,eyebrow,ABOUT
 about,philosophyHeader,main,title,私たちが大切にしていること。
 about,philosophy,1,title,理念
@@ -122,21 +150,23 @@ about,credo,3,number,03
 about,credo,3,title,Be Resourceful.
 about,credo,3,copy,最小の資源で最大の成果を出せ。
 about,credo,4,number,04
-about,credo,4,title,Run Fastest Lap.
+about,credo,4,title,Run the Fastest Lap.
 about,credo,4,copy,誰よりも先に、最新技術を社会実装せよ。
 about,credo,5,number,05
 about,credo,5,title,Go far, Go together.
 about,credo,5,copy,n人、n+1脚で遠くへ行け。
-about,story,main,eyebrow,APPROACH
-about,story,main,title,二つの事業で、価値をつなぐ。
-about,story,main,copy,私たちは二つの事業を営みます。ひとつは、問い合わせ・見積対応の遅れを、海外SaaS・AIの導入で解消する業務効率化・ROI診断事業。もうひとつは、金型保管問題や廃番部品の再生産という課題に正面から取り組む事業。私たちは金型を保管しません——欧州の大型積層造形で必要な時に作り直す選択肢を提案します。領域は違っても、やっていることは同じ——現場の負担を可視化し、固定費削減と機会損失の解消につなげることです。
-about,story,main,image,/about-story.png
 about,differentiatorHeader,main,eyebrow,DIFFERENCE
 about,differentiatorHeader,main,title,二つの事業
-about,differentiator,1,title,業務効率化・ROI診断
-about,differentiator,1,copy,海外SaaS・AIと既存の運用を組み合わせ、問い合わせ・見積対応の遅れを解消する。
-about,differentiator,2,title,金型軸ソリューション
-about,differentiator,2,copy,保有金型の管理コストとリスクを可視化し、固定費削減と安定供給への道筋を示す。
+about,differentiator,1,title,Factory
+about,differentiator,1,copy,海外の産業機械・ロボティクス・AI・製造SaaSを選定し、日本の製造現場に導入・実装・運用する。
+about,differentiator,2,title,BPO
+about,differentiator,2,copy,営業・顧客開拓・採用・バックオフィス。海外のAI・SaaSを業務設計に組み込み、業務そのものを改善・実行する。
+about,founderHeader,main,eyebrow,FOUNDER
+about,founderHeader,main,title,代表者
+about,founder,main,name,田村 一馬
+about,founder,main,role,代表取締役
+about,founder,main,bio,A-one Road創業者。Bankless Japan立ち上げ、Pacific Metaでのグローバル事業開発、CADDiでのプロダクトマーケティングなどを経験。海外企業の市場参入・事業開発を専門とする。
+about,founder,main,image,/founder-tamura.png
 about,companyInfoHeader,main,eyebrow,COMPANY
 about,companyInfoHeader,main,title,会社情報
 about,companyInfoHeader,main,copy,法人情報を掲載しています。
@@ -154,61 +184,6 @@ about,companyInfo,6,label,連絡先
 about,companyInfo,6,value,Email: admin@a1-road.com
 about,companyInfo,7,label,所在地
 about,companyInfo,7,value,神奈川県横浜市西区浅間町1丁目4-3ウィザードビル402
-service,hero,main,eyebrow,SERVICE
-service,hero,main,title,モビリティ関連事業
-service,hero,main,copy,日本の軽トラックや軽バン、小型商用車や特装車まで、幅広い車両の調達と輸出を行います。用途と市場に合わせた車両選定から、部品対応・車両情報の整理・輸出実務まで支援します。
-service,indexHeader,main,eyebrow,INDEX
-service,indexHeader,main,title,提供内容
-service,index,1,id,pr-marketing-events
-service,index,1,title,自動車関連PR・マーケティング・イベント運営
-service,index,1,line,PR・マーケティング・イベント運営
-service,index,1,image,/DAONIGHT2024.png
-service,index,2,id,vehicle-sourcing
-service,index,2,title,車両調達
-service,index,2,line,車両の調達・輸出
-service,index,2,image,/business-sourcing.png
-service,detail,1,id,pr-marketing-events
-service,detail,1,title,自動車関連PR・マーケティング・イベント運営
-service,detail,1,what,自動車関連のPR・マーケティング・イベントの企画から運営までを担います。
-service,detail,1,value,車両の価値を、製品と文化の両面で発信します。
-service,detail,1,flow,企画・集客・当日運営まで一貫対応。
-service,detail,1,output,PR・マーケティング・イベント運営。
-service,detail,2,id,vehicle-sourcing
-service,detail,2,title,車両調達
-service,detail,2,what,個人・法人向けに、日本の商用車・軽自動車・特装車などを調達・輸出します。
-service,detail,2,value,用途と市場に応じた選定と、輸出手続きを支援します。
-service,detail,2,flow,要件整理・候補抽出から輸出まで。
-service,detail,2,output,車両調達・輸出。
-service,processHeader,main,eyebrow,PROCESS
-service,processHeader,main,title,対応市場
-service,process,1,number,01
-service,process,1,title,U.S.
-service,process,1,copy,米国向け対応
-service,process,2,number,02
-service,process,2,title,Europe
-service,process,2,copy,欧州向け対応
-service,process,3,number,03
-service,process,3,title,Other markets
-service,process,3,copy,その他地域にも対応
-service,process,4,number,04
-service,process,4,title,Japan
-service,process,4,copy,日本国内から調達
-service,faqHeader,main,eyebrow,FAQ
-service,faqHeader,main,title,よくある質問。
-service,faq,1,question,誰向けのサービスですか
-service,faq,1,answer,日本からの調達を求めるディーラー フリート 法人バイヤー向けです。
-service,faq,2,question,どの車種に対応していますか
-service,faq,2,answer,軽トラック・軽バン・小型商用車を中心に、特装車や各種商用車まで幅広く扱っています。
-service,faq,3,question,輸出先はどの地域ですか
-service,faq,3,answer,主に米国 欧州 その他地域に対応しています。
-service,faq,4,question,車両状態は確認できますか
-service,faq,4,answer,確認可能な情報を整理して共有します。
-service,faq,5,question,まず相談だけでも可能ですか
-service,faq,5,answer,可能です。お気軽にお問い合わせください。
-service,contactCta,main,eyebrow,CONTACT
-service,contactCta,main,title,要件をお聞かせください。
-service,contactCta,main,buttonLabel,お問い合わせ
-service,contactCta,main,buttonHref,/contact
 contact,hero,main,eyebrow,CONTACT
 contact,hero,main,title,お問い合わせ
 contact,hero,main,copy,admin@a1-road.com
@@ -329,46 +304,46 @@ globalVendors,contactCta,main,buttonLabel,お問い合わせへ
 globalVendors,contactCta,main,buttonHref,/contact
 globalVendors,intro,main,lead,最初にお届けするのは、「投資回収の最短経路」を判断するための現場データと、その分析です。特定メーカーに偏らない中立の立場で診断するので、結論が「いまは何も導入しないほうがよい」になることもあります。
 serviceHub,hero,main,eyebrow,OUR BUSINESS
-serviceHub,hero,main,message,問い合わせ対応の遅れも、金型・治具の保管コストも。現場ヒアリングからROI試算まで、有料診断で解決の道筋を示します。
-serviceHub,left,main,tag,業務効率化・ROI診断
-serviceHub,left,main,label,問い合わせ・見積対応の遅れを、なくす。
-serviceHub,left,main,sub,海外SaaS・AIと既存の運用を組み合わせ、対応速度と案件化率を高めます。
-serviceHub,left,main,href,/global-vendors
-serviceHub,left,main,image,/hub-gtm.png
+serviceHub,hero,main,message,海外の優れた機械・AI・SaaSを、日本企業の課題に合わせて選定し、導入・実装・運用まで担います。
+serviceHub,left,main,tag,Factory
+serviceHub,left,main,label,製造業・工場の現場を、海外技術で強くする。
+serviceHub,left,main,sub,海外の産業機械・ロボティクス・AI・製造SaaSを選定し、日本の製造現場に導入・実装・運用します。
+serviceHub,left,main,href,/service/manufacturing
+serviceHub,left,main,image,/hub-manufacturing.jpg
 serviceHub,left,main,cta,詳しく見る
-serviceHub,third,main,tag,金型軸ソリューション
-serviceHub,third,main,label,金型保管という課題に、正面から。
-serviceHub,third,main,sub,保有金型の管理コストとリスクを可視化し、固定費削減と安定供給への道筋を示します。
-serviceHub,third,main,href,/mold-storage
-serviceHub,third,main,image,/hub-manufacturing.jpg
+serviceHub,third,main,tag,BPO
+serviceHub,third,main,label,営業・バックオフィスの反復業務を、動かす。
+serviceHub,third,main,sub,海外のAI・SaaSを業務設計に組み込み、人的オペレーションと組み合わせて、業務そのものを改善・実行します。
+serviceHub,third,main,href,/global-vendors
+serviceHub,third,main,image,/hub-gtm.png
 serviceHub,third,main,cta,詳しく見る
-manufacturing,hero,main,eyebrow,LARGE-FORMAT ADDITIVE MANUFACTURING
-manufacturing,hero,main,title,「大きすぎて作れない」を、造形で解決する。
-manufacturing,hero,main,copy,欧州で実用化が進む大型積層造形（WAAM/LFAM）。金属・樹脂の大型3D造形を、日本の製造現場の課題に接続します。
-manufacturing,technology,main,eyebrow,TECHNOLOGY
-manufacturing,technology,main,title,金属・樹脂の「大型」積層造形
-manufacturing,technology,main,copy,ビルドボリューム2×1m〜3×2mクラスのターンキー構成が商用化されており、「型を起こすほどのロットがない」「大きすぎて加工できない」と諦められていた領域を置き換えつつあります。型が不要なため、ロット1個から経済性が成立します。
+manufacturing,hero,main,eyebrow,FACTORY
+manufacturing,hero,main,title,工場の課題に、海外の技術で応える。
+manufacturing,hero,main,copy,人手依存・属人化・ダウンタイム・生産ラインの分断。見積もり対応の遅れからDX、設備導入まで、海外の実績ある機械・AI・SaaSを選定し、日本の製造現場に導入・実装・運用します。
+manufacturing,technology,main,eyebrow,HOW WE WORK
+manufacturing,technology,main,title,特定の技術に、絞りません。
+manufacturing,technology,main,copy,積層造形、DXツール、生産管理システム、検査自動化など、御社の課題に合う技術を世界中から探します。特定メーカー・特定技術に偏らない中立的な立場で選定します。
 manufacturing,applicationsHeader,main,eyebrow,APPLICATIONS
-manufacturing,applicationsHeader,main,title,海外で先行する適用分野
-manufacturing,applicationsHeader,main,note,※海外事例はメーカー公開資料に基づきます。当社の導入実績を示すものではありません。
-manufacturing,applications,1,title,海事系
-manufacturing,applications,1,copy,工具・構造物などの大型部材製造
-manufacturing,applications,2,title,自動車・産業用モールド・治具
-manufacturing,applications,2,copy,自動車部品を含む、大型の型・治具の一点物製造。使う頻度の低い型を保管し続ける代わりに、必要な時に大型積層造形でオンデマンド再生産する選択肢を提示します。
-manufacturing,applications,3,title,建築・建設部材
-manufacturing,applications,3,copy,建築・建設向けの大型構造部材
-manufacturing,applicationsFooter,main,copy,共通点は「一点物・大型・高ミックス」——従来工法が最も苦手とする条件です。
+manufacturing,applicationsHeader,main,title,対応する課題の例
+manufacturing,applicationsHeader,main,note,実際の課題は御社ごとに異なります。まずは現状をお聞かせください。
+manufacturing,applications,1,title,見積もり・受発注のDX
+manufacturing,applications,1,copy,属人化した見積もり対応や受発注業務を、海外SaaS・AIで効率化します。
+manufacturing,applications,2,title,ダウンタイム改善・生産ライン修正
+manufacturing,applications,2,copy,稼働率を落としている工程・設備を特定し、改善に必要な技術・機材を導入します。
+manufacturing,applications,3,title,大型積層造形（LFAM/WAAM）
+manufacturing,applications,3,copy,大型金型・治具を保管し続ける代わりに、必要な時に造形するという選択肢も提供します。
+manufacturing,applicationsFooter,main,copy,共通点は、現場の負担を可視化し、固定費削減と機会損失の解消につなげることです。
 manufacturing,realityCheck,main,eyebrow,REALITY CHECK
 manufacturing,realityCheck,main,title,判断材料を、先にすべてお渡しします
-manufacturing,realityCheck,main,copy,ターンキー構成の入口価格帯は€400000〜450000、標準リードタイムは確定発注後18〜24週が目安です（メーカー提示情報）。2025年10月より省力化投資補助金のカタログに3Dプリンタが追加されており、投資判断の追い風となっています。この規模の投資だからこそ、発注前の案件精査に価値があります。
+manufacturing,realityCheck,main,copy,御社の工程・設備・予算感をヒアリングした上で、投資対効果と導入までのステップを先に共有します。効果が見込めない場合は、その旨を率直にお伝えします。
 manufacturing,screening,main,eyebrow,SCREENING
 manufacturing,screening,main,title,御社の工程が「向いているか」を先に判定します
-manufacturing,screening,main,copy,対象部品のサイズ／ロット数／材質／現行工法のコストと納期の4条件から、大型造形で効果が出る工程かを判定します。向いていなければ「向いていない」とお伝えするところまでが当社の仕事です。
+manufacturing,screening,main,copy,対象工程の内容／ロット数／現行コストと納期の条件から、海外技術の導入で効果が出る工程かを判定します。向いていなければ「向いていない」とお伝えするところまでが当社の仕事です。
 manufacturing,position,main,eyebrow,POSITION
 manufacturing,position,main,title,御社側の水先案内人として
-manufacturing,position,main,copy,当社は非独占・案件先行の立場で、欧州メーカーとの橋渡しを行います。御社の要件を整理したプロジェクトブリーフを作成し、メーカーの担当窓口へ直接接続します。国内の切削・研削・熱処理・検査など既存加工網との役割分担を含めた座組で設計します。
+manufacturing,position,main,copy,当社は非独占・案件先行の立場で、海外メーカーとの橋渡しを行います。御社の要件を整理したプロジェクトブリーフを作成し、メーカーの担当窓口へ直接接続します。国内の既存加工網との役割分担を含めた座組で設計します。
 manufacturing,contactCta,main,eyebrow,CONTACT
 manufacturing,contactCta,main,title,まずは30分、御社の製造課題をお聞かせください
 manufacturing,contactCta,main,copy,30分ヒアリング（無料）で対象工程を伺い、可能性があれば有償の現場診断（個別お見積り）で置換候補工程の特定・概算効果・メーカー打診用ブリーフまで納品します。
 manufacturing,contactCta,main,buttonLabel,お問い合わせへ
-manufacturing,contactCta,main,buttonHref,/contact?topic=lfam
+manufacturing,contactCta,main,buttonHref,/contact?topic=factory

@@ -64,28 +64,6 @@ export default async function ManufacturingPage() {
             <p className="mt-8 max-w-2xl text-sm text-white/56">{applicationsFooter.copy}</p>
             <p className="mt-3 max-w-2xl text-xs text-white/40">{applicationsHeader.note}</p>
           </AnimatedSection>
-
-          <AnimatedSection delay={280}>
-            <Link
-              href="/mold-storage"
-              className="group mt-10 flex flex-col items-start justify-between gap-4 rounded-2xl border border-amber-500/30 bg-amber-500/[0.04] px-6 py-6 transition-colors hover:border-amber-500/60 sm:flex-row sm:items-center"
-            >
-              <div>
-                <p className="text-xs font-medium uppercase tracking-[0.2em] text-amber-500/80">
-                  Mold &amp; Die Storage
-                </p>
-                <p className="mt-2 text-base font-semibold text-white">
-                  金型・治具の保管でお困りですか？
-                </p>
-                <p className="mt-1 text-sm text-white/56">
-                  大型金型・治具の長納期と高コスト、廃番部品の再生産という課題に、正面から取り組んでいます。
-                </p>
-              </div>
-              <span className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-amber-500/90 group-hover:text-amber-400">
-                金型保管の課題ページを見る →
-              </span>
-            </Link>
-          </AnimatedSection>
         </div>
       </section>
 

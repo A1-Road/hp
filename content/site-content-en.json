@@ -20,7 +20,7 @@
     },
     "footer": {
       "main": {
-        "tagline": "Japan onboarding for global products and Japanese commercial vehicles for global buyers.",
+        "tagline": "Bringing the world's best technology into Japan's factories and back offices. Country Manager as a Service, for Japan.",
         "privacyLabel": "Privacy Policy",
         "copyright": "© 2026 A-One Road"
       }
@@ -53,139 +53,93 @@
   "top": {
     "hero": {
       "main": {
-        "eyebrow": "Business Efficiency & Mold-Axis Solutions",
-        "title": "Cut fixed costs. Stop the lost opportunities.",
-        "copy": "Is the growing volume of inquiries and follow-ups straining your team's core work? Are mold and jig storage or reproducing discontinued parts becoming a fixed cost and a risk? A-One Road maps out the fix -- from on-site hearing to ROI modeling to identifying which existing budget it replaces -- through a paid diagnostic.",
-        "primaryLabel": "Pick a 30-min meeting time",
-        "primaryHref": "https://calendar.app.google/jNvg49b28NDbeg1M9",
+        "eyebrow": "MISSION",
+        "title": "Make Matter Matter.",
+        "titleSub": "Take back everyone's rightful value.",
+        "visionLabel": "VISION",
+        "visionEn": "Unearth All Hidden Value.",
+        "visionJa": "We uncover every hidden value and become the storyteller who carries it to the world.",
+        "image": "/hero-mvv.png",
+        "primaryLabel": "See our business",
+        "primaryHref": "/service",
         "secondaryLabel": "About us",
         "secondaryHref": "/about-us",
-        "image": "/hero-track.png",
         "scroll": "Scroll"
       }
     },
-    "identity": {
+    "valueHeader": {
       "main": {
-        "eyebrow": "Our Position",
-        "title": "We don't build. We combine.",
-        "copy": "We combine technology that already exists worldwide with manufacturing capacity that already exists in Japan, designing the shortest path to ROI. We stay neutral across manufacturers, proposing only what fits you best."
+        "eyebrow": "VALUE",
+        "title": "Five Credos"
+      }
+    },
+    "value": {
+      "1": {
+        "number": "01",
+        "title": "Board Spaceship Earth.",
+        "copy": "Be a citizen of the planet."
+      },
+      "2": {
+        "number": "02",
+        "title": "Dive into the customer's shoes.",
+        "copy": "Go in up to your shoulders for the user."
+      },
+      "3": {
+        "number": "03",
+        "title": "Be Resourceful.",
+        "copy": "Get the maximum result from the minimum resources."
+      },
+      "4": {
+        "number": "04",
+        "title": "Run the Fastest Lap.",
+        "copy": "Put the newest technology into the world before anyone else."
+      },
+      "5": {
+        "number": "05",
+        "title": "Go far, Go together.",
+        "copy": "Go far with n people, n+1 legs."
       }
     },
     "whatWeDoHeader": {
       "main": {
-        "eyebrow": "THE PROBLEM",
-        "title": "Unseen burdens are eating into profit and time.",
-        "copy": "Slow inquiry response. The cost of storing molds. These burdens on operations and profit are easy to miss."
+        "eyebrow": "CMAAS — COUNTRY MANAGER AS A SERVICE",
+        "title": "We run your Japan market operations, end to end.",
+        "copy": "Instead of hiring one Country Manager in Japan, you get the functions you need -- from market validation to sales, deployment, and local operations. Two focus areas below."
       }
     },
     "whatWeDo": {
       "1": {
-        "tag": "BUSINESS EFFICIENCY ROI DIAGNOSTIC",
-        "title": "Slow inquiry and quote response is straining your core work.",
-        "copy": "We combine proven overseas SaaS and AI with your existing operations, diagnosing everything from on-site hearing to ROI modeling to identifying which budget it replaces. The result: faster response, higher conversion.",
+        "tag": "FOCUS AREA — FACTORY",
+        "title": "Factory",
+        "copy": "We bring overseas industrial machines, robotics, AI, and manufacturing SaaS into Japanese factories -- selection through deployment and operation.",
+        "image": "/hub-manufacturing.jpg",
+        "href": "/service/manufacturing",
+        "linkLabel": "Learn more"
+      },
+      "2": {
+        "tag": "FOCUS AREA — BPO",
+        "title": "BPO",
+        "copy": "We bring overseas AI and SaaS for sales, hiring, and back-office work into Japanese companies, combined with the operations needed to actually run it.",
         "image": "/workflow.png",
         "href": "/global-vendors",
         "linkLabel": "Learn more"
-      },
-      "2": {
-        "tag": "MOLD-AXIS SOLUTIONS",
-        "title": "Taking on the mold storage problem, directly.",
-        "copy": "Long lead times and high costs for large molds and jigs, reproducing discontinued parts, low-volume profitability. We visualize the cost and risk of the molds you hold, and map a path to lower fixed costs and stable supply.",
-        "image": "/hub-manufacturing.jpg",
-        "href": "/mold-storage",
-        "linkLabel": "Learn more"
-      }
-    },
-    "servicePreviewHeader": {
-      "main": {
-        "eyebrow": "Vehicle Export",
-        "title": "Commercial Vehicle Export Services",
-        "linkLabel": "View all",
-        "linkHref": "/service"
-      }
-    },
-    "servicePreview": {
-      "1": {
-        "title": "Business Sourcing",
-        "copy": "We narrow candidate vehicles against the buyer brief and move sourcing decisions forward.",
-        "image": "/business-sourcing.png",
-        "href": "/service#business-sourcing"
-      },
-      "2": {
-        "title": "Bulk Orders",
-        "copy": "We support multi-unit sourcing alignment and commercial coordination.",
-        "image": "/bulk-orders.png",
-        "href": "/service#bulk-orders"
-      },
-      "3": {
-        "title": "Export Support",
-        "copy": "We reduce friction in export coordination and handover.",
-        "image": "/export-support.png",
-        "href": "/service#export-support"
-      }
-    },
-    "visualHeader": {
-      "main": {
-        "eyebrow": "Visual",
-        "title": "Proof by atmosphere."
-      }
-    },
-    "visualProof": {
-      "1": {
-        "image": "/visual-proof-2.png",
-        "alt": "Japanese vehicle sourcing visual"
-      },
-      "2": {
-        "image": "/HP2copy.png",
-        "alt": "Vehicle and road visual"
-      },
-      "3": {
-        "image": "/hptop.png",
-        "alt": "Commercial vehicle export visual"
-      },
-      "4": {
-        "image": "/workflow.png",
-        "alt": "Export support visual"
       }
     },
     "aboutPreview": {
       "main": {
         "eyebrow": "About",
         "title": "Why this company exists.",
-        "copy": "We re-edit overlooked value and deliver it to markets where it is properly appreciated — from software to vehicles to automotive culture.",
+        "copy": "Take back everyone's rightful value. Become the storyteller of the world's hidden value. See our full mission and business.",
         "linkLabel": "About",
         "linkHref": "/about-us",
         "image": "/about-preview.png"
-      }
-    },
-    "signalHeader": {
-      "main": {
-        "eyebrow": "Process",
-        "title": "Verified Vehicle Information"
-      }
-    },
-    "signalSteps": {
-      "1": {
-        "number": "01",
-        "title": "Business Sourcing",
-        "copy": "Business Sourcing"
-      },
-      "2": {
-        "number": "02",
-        "title": "Bulk Orders",
-        "copy": "Bulk Orders"
-      },
-      "3": {
-        "number": "03",
-        "title": "Export Support",
-        "copy": "Export Support"
       }
     },
     "contactCta": {
       "main": {
         "eyebrow": "Contact",
         "title": "Start the conversation.",
-        "copy": "If slow inquiry response or the cost of storing molds and jigs is on your mind, tell us about it first -- 30 minutes. We map the fix, from on-site hearing to ROI modeling, through a paid diagnostic.",
+        "copy": "Struggling with inefficiency on the factory floor, or repetitive sales and back-office work? Tell us about it first -- 30 minutes. We help you find the right overseas technology and take it through to deployment.",
         "buttonLabel": "Go to Contact",
         "buttonHref": "/contact"
       }
@@ -194,17 +148,77 @@
   "about": {
     "hero": {
       "main": {
-        "eyebrow": "About",
-        "title": "Unearth hidden values.",
-        "copy": "The world's technology and Japan's field - we deliver overlooked value to markets where it is rightly valued., posture, and business definition.",
-        "image": "/about-hero.png"
+        "eyebrow": "OUR STORY"
       }
     },
-    "statement": {
+    "chapter": {
+      "1": {
+        "eyebrow": "2021",
+        "title": "It started with one act of fury.",
+        "copy": "In 2021, watching Japanese entrepreneurs, we wrote something down. There are people who can compete globally. There is excellent technology. And still, that value never reaches the world.",
+        "quoteLabel": "Original text — 2021",
+        "quoteBefore": "...this club's stance of make themselves notable around the globe is astonishingly weak.",
+        "quoteHighlight": "This is my fury.",
+        "quoteAfter": " Why the most of Japanese elites doesn't have the ambition to rule the world?"
+      },
+      "2": {
+        "eyebrow": "2022–23 — GLOBAL",
+        "title": "We went out into the world and learned what stood in the way.",
+        "copy": "San Francisco, Denver, Bangkok. Not as attendees, but as builders. We learned firsthand what the walls were made of: language, borders, information, networks.",
+        "imgLg": "/story/2022-ethsf.png",
+        "imgLgAlt": "A view over the ETH San Francisco venue",
+        "imgLgCaption": "ETH San Francisco — Venue",
+        "imgSm1": "/story/2022-ethdenver.jpg",
+        "imgSm1Alt": "The entrance to the ETH Denver venue",
+        "imgSm1Caption": "ETH Denver",
+        "imgSm2": "/story/2022-idemoed.jpg",
+        "imgSm2Alt": "Group photo in front of the I DEMOED wall at ETHGlobal Bangkok",
+        "imgSm2Caption": "I DEMOED — Bangkok"
+      },
+      "3": {
+        "eyebrow": "2023–24 — JAPAN",
+        "title": "We built spaces and walked across Japan.",
+        "copy": "A symposium in Ishigaki made the local paper; a sake brewery in Kagawa let us touch the memory held in the land. Value isn't scarce -- it just isn't found, told, or met.",
+        "imgLg": "/story/2025-workshop.jpg",
+        "imgLgAlt": "Kazuma Tamura speaking on a DAO panel at ETHTokyo",
+        "imgLgCaption": "ETHTokyo — Panel: DAOs",
+        "imgSm1": "/story/2023-kura.jpg",
+        "imgSm1Alt": "Speaking surrounded by tanks at a sake brewery in Kagawa",
+        "imgSm1Caption": "Sake brewery — Kagawa",
+        "imgSm2": "/story/2023-yaeyama.jpg",
+        "imgSm2Alt": "Newspaper coverage of a web3.0 symposium in the Yaeyama Nippo",
+        "imgSm2Caption": "Yaeyama Nippo — Print coverage"
+      },
+      "4": {
+        "eyebrow": "2024 — FA1RNESS",
+        "title": "We built the place to meet.",
+        "copy": "Our own international conference. At Google for Startups Campus Tokyo, we put builders from abroad and Japanese companies in the same room.",
+        "imgLg": "/story/2024-fa1rness.png",
+        "imgLgAlt": "The full venue and group photo of speakers and attendees at FA1RNESS 2024",
+        "imgLgCaption": "FA1RNESS 2024 — Group thumbs-up"
+      },
+      "5": {
+        "eyebrow": "2025 — MANUFACTURING",
+        "title": "What we'd been searching for in the digital world, we found in a small factory.",
+        "copy": "Ota Ward's small factories had \"nakama-mawashi\" -- the distributed collaboration we'd chased across the DAO world had been running as a real industry in Japanese manufacturing for decades. That's where A-one Road's path came together into one line.",
+        "imgLg": "/story/2025-otaku-factory.png",
+        "imgLgAlt": "Visiting a craftsman at work in a small factory in Ota Ward",
+        "imgLgCaption": "Ota Ward — Where nakama-mawashi happens",
+        "imgSm": "/story/2025-otaku.jpg",
+        "imgSmAlt": "A workshop covered in whiteboard notes",
+        "imgSmCaption": "The workshop"
+      }
+    },
+    "today": {
       "main": {
-        "eyebrow": "Statement",
-        "title": "We become the storyteller of the world's hidden value.",
-        "copy": "Excellent yet unknown. Valuable yet undelivered. Closing that gap is our work."
+        "eyebrow": "TODAY — FACTORY & BPO",
+        "title": "Every hidden value, out into the world.",
+        "copy": "Technology accumulated in factories. Services that exist abroad but haven't reached Japan. Knowledge and time buried inside companies. Borders, language, industry, organization -- we remove the walls between them and deliver value to where it's needed.",
+        "vision": "Uncover every hidden value, and become the storyteller who carries it to the world.",
+        "buttonBusinessLabel": "View Our Business",
+        "buttonBusinessHref": "/service",
+        "buttonContactLabel": "Contact Us",
+        "buttonContactHref": "/contact"
       }
     },
     "philosophyHeader": {
@@ -251,21 +265,13 @@
       },
       "4": {
         "number": "04",
-        "title": "Run Fastest Lap.",
+        "title": "Run the Fastest Lap.",
         "copy": "誰よりも先に、最新技術を社会実装せよ。"
       },
       "5": {
         "number": "05",
         "title": "Go far, Go together.",
         "copy": "n人、n+1脚で遠くへ行け。"
-      }
-    },
-    "story": {
-      "main": {
-        "eyebrow": "APPROACH",
-        "title": "Two businesses, one purpose.",
-        "copy": "We run two businesses. One is business efficiency and ROI diagnostics -- closing the gap in slow inquiry and quote response with overseas SaaS and AI. The other takes on the mold storage problem and reproducing discontinued parts, directly, offering a way to remake molds on demand with European large-format additive manufacturing. Different domains, same work: making the burden on the ground visible, and turning it into lower fixed costs and fewer lost opportunities.",
-        "image": "/about-story.png"
       }
     },
     "differentiatorHeader": {
@@ -276,12 +282,26 @@
     },
     "differentiator": {
       "1": {
-        "title": "Business Efficiency & ROI Diagnostic",
-        "copy": "We combine overseas SaaS and AI with your existing operations to close the gap in slow inquiry and quote response."
+        "title": "Factory",
+        "copy": "We bring overseas industrial machines, robotics, AI, and manufacturing SaaS into Japanese factories -- selection through deployment and operation."
       },
       "2": {
-        "title": "Mold-Axis Solutions",
-        "copy": "We visualize the cost and risk of the molds you hold, and map a path to lower fixed costs and stable supply."
+        "title": "BPO",
+        "copy": "Sales, hiring, back-office. We bring overseas AI and SaaS into your operations and run the work itself."
+      }
+    },
+    "founderHeader": {
+      "main": {
+        "eyebrow": "FOUNDER",
+        "title": "Representative"
+      }
+    },
+    "founder": {
+      "main": {
+        "name": "Kazuma Tamura",
+        "role": "Representative Director",
+        "bio": "Founder of A-one Road. Launched Bankless Japan, led global business development at Pacific Meta, and worked in product marketing at CADDi. Specializes in market entry and business development for overseas companies.",
+        "image": "/founder-tamura.png"
       }
     },
     "companyInfoHeader": {
@@ -319,117 +339,6 @@
       "7": {
         "label": "Address",
         "value": "Wizard Building 402, 1-4-3 Sengencho, Nishi-ku, Yokohama, Kanagawa, Japan"
-      }
-    }
-  },
-  "service": {
-    "hero": {
-      "main": {
-        "eyebrow": "Service",
-        "title": "Mobility",
-        "copy": "From Japanese kei trucks, kei vans and light commercial vehicles to specialty vehicles, we source and export a wide range — with support across selection, parts, vehicle information and export operations."
-      }
-    },
-    "indexHeader": {
-      "main": {
-        "eyebrow": "Index",
-        "title": "Four service blocks."
-      }
-    },
-    "index": {
-      "1": {
-        "id": "pr-marketing-events",
-        "title": "Automotive PR, Marketing & Events",
-        "line": "PR, marketing & events",
-        "image": "/DAONIGHT2024.png"
-      },
-      "2": {
-        "id": "vehicle-sourcing",
-        "title": "Vehicle Sourcing",
-        "line": "Sourcing & export",
-        "image": "/business-sourcing.png"
-      }
-    },
-    "detail": {
-      "1": {
-        "id": "pr-marketing-events",
-        "title": "Automotive PR, Marketing & Events",
-        "what": "We plan and run automotive PR, marketing and events end to end.",
-        "value": "We convey a vehicle's value through both product and culture.",
-        "flow": "From concept and outreach to on-site operation.",
-        "output": "PR, marketing & event operations."
-      },
-      "2": {
-        "id": "vehicle-sourcing",
-        "title": "Vehicle Sourcing",
-        "what": "We source and export Japanese commercial, light and specialty vehicles for individuals and businesses.",
-        "value": "We support selection by use and market, and export procedures.",
-        "flow": "From requirements to candidates to export.",
-        "output": "Vehicle sourcing & export."
-      }
-    },
-    "processHeader": {
-      "main": {
-        "eyebrow": "Process",
-        "title": "Four steps."
-      }
-    },
-    "process": {
-      "1": {
-        "number": "01",
-        "title": "United States",
-        "copy": "U.S. market support"
-      },
-      "2": {
-        "number": "02",
-        "title": "Europe",
-        "copy": "European market support"
-      },
-      "3": {
-        "number": "03",
-        "title": "Other markets",
-        "copy": "Other regional support"
-      },
-      "4": {
-        "number": "04",
-        "title": "Japan",
-        "copy": "Sourced in Japan"
-      }
-    },
-    "faqHeader": {
-      "main": {
-        "eyebrow": "FAQ",
-        "title": "Short answers."
-      }
-    },
-    "faq": {
-      "1": {
-        "question": "What vehicles do you handle",
-        "answer": "We mainly source kei trucks, vans, and compact commercial vehicles."
-      },
-      "2": {
-        "question": "Can businesses request multiple vehicles",
-        "answer": "We handle kei trucks, kei vans and light commercial vehicles, as well as specialty and other commercial vehicles."
-      },
-      "3": {
-        "question": "Which markets do you support",
-        "answer": "United States, Europe, and other regions."
-      },
-      "4": {
-        "question": "Can vehicle condition be confirmed",
-        "answer": "Available information is organized and shared."
-      },
-      "5": {
-        "question": "Can I contact you before deciding",
-        "answer": "Yes, inquiries are welcome."
-      }
-    },
-    "contactCta": {
-      "main": {
-        "eyebrow": "Contact",
-        "title": "Discuss your requirement.",
-        "buttonLabel": "Contact",
-        "buttonHref": "/contact"
       }
     }
   },
@@ -709,29 +618,80 @@
     }
   },
   "serviceHub": {
+    "cmaasHeader": {
+      "main": {
+        "eyebrow": "WHAT IS CMAAS",
+        "title": "Country Manager as a Service",
+        "copy": "Instead of hiring one Country Manager in Japan, you get the functions you need -- from validating the market to running local operations -- as a service."
+      }
+    },
+    "cmaasStep": {
+      "1": {
+        "number": "01",
+        "title": "Japan Market Validation"
+      },
+      "2": {
+        "number": "02",
+        "title": "Positioning"
+      },
+      "3": {
+        "number": "03",
+        "title": "Target Account Definition"
+      },
+      "4": {
+        "number": "04",
+        "title": "Customer Development"
+      },
+      "5": {
+        "number": "05",
+        "title": "Sales & Meetings"
+      },
+      "6": {
+        "number": "06",
+        "title": "PoC"
+      },
+      "7": {
+        "number": "07",
+        "title": "Initial Deployment"
+      },
+      "8": {
+        "number": "08",
+        "title": "Local Operations"
+      },
+      "9": {
+        "number": "09",
+        "title": "Partnership / Channel Development"
+      }
+    },
+    "focusHeader": {
+      "main": {
+        "eyebrow": "FOCUS AREAS",
+        "title": "Two areas we run this for."
+      }
+    },
     "hero": {
       "main": {
-        "eyebrow": "OUR BUSINESS",
-        "message": "Slow inquiry response. The cost of storing molds and jigs. We map the fix, from on-site hearing to ROI modeling, through a paid diagnostic."
+        "eyebrow": "CMAAS — FOCUS AREAS",
+        "message": "Country Manager as a Service for Japan. We source proven overseas machines, AI, and SaaS and take them through selection, deployment, and operation for Japanese businesses."
       }
     },
     "left": {
       "main": {
-        "tag": "BUSINESS EFFICIENCY & ROI DIAGNOSTIC",
-        "label": "Fixing slow inquiry and quote response.",
-        "sub": "We combine overseas SaaS and AI with your existing operations to raise response speed and conversion.",
-        "href": "/global-vendors",
-        "image": "/hub-gtm.png",
+        "tag": "Factory",
+        "label": "Strengthening Japanese factories with overseas technology.",
+        "sub": "We bring overseas industrial machines, robotics, AI, and manufacturing SaaS into Japanese factories -- selection through deployment and operation.",
+        "href": "/service/manufacturing",
+        "image": "/hub-manufacturing.jpg",
         "cta": "Explore"
       }
     },
     "third": {
       "main": {
-        "tag": "MOLD-AXIS SOLUTIONS",
-        "label": "Taking on the mold storage problem, directly.",
-        "sub": "We visualize the cost and risk of the molds you hold, and map a path to lower fixed costs and stable supply.",
-        "href": "/mold-storage",
-        "image": "/hub-manufacturing.jpg",
+        "tag": "BPO",
+        "label": "Running sales and back-office work, end to end.",
+        "sub": "We bring overseas AI and SaaS for sales, hiring, and back-office work into Japanese companies, combined with the operations needed to actually run it.",
+        "href": "/global-vendors",
+        "image": "/hub-gtm.png",
         "cta": "Explore"
       }
     }
@@ -739,63 +699,63 @@
   "manufacturing": {
     "hero": {
       "main": {
-        "eyebrow": "LARGE-FORMAT ADDITIVE MANUFACTURING",
-        "title": "Solving \"too large to make\" through large-format printing.",
-        "copy": "Large-format additive manufacturing (WAAM/LFAM) is going commercial in Europe. We connect large-scale metal and polymer 3D printing to real problems on Japan's factory floor."
+        "eyebrow": "FACTORY",
+        "title": "We meet factory floor problems with overseas technology.",
+        "copy": "Manual dependence, tribal knowledge, downtime, disconnected production lines. From slow quoting to DX to new equipment, we source proven overseas machines, AI, and SaaS and take them through selection, deployment, and operation on Japan's factory floor."
       }
     },
     "technology": {
       "main": {
-        "eyebrow": "TECHNOLOGY",
-        "title": "Large-format metal and polymer printing",
-        "copy": "Turnkey systems with build volumes from 2x1m to 3x2m are now commercially available replacing work once written off as \"too small a lot to tool up for\" or \"too large to machine.\" No tooling means the economics work from a single unit."
+        "eyebrow": "HOW WE WORK",
+        "title": "We don't limit ourselves to one technology.",
+        "copy": "Additive manufacturing, DX tools, production management systems, automated inspection -- we search worldwide for whatever fits your problem. We stay neutral across manufacturers and technologies."
       }
     },
     "applicationsHeader": {
       "main": {
         "eyebrow": "APPLICATIONS",
-        "title": "Where it is already ahead overseas",
-        "note": "Overseas cases are based on manufacturer-published materials and do not represent our own track record."
+        "title": "Examples of what we take on",
+        "note": "Every company's actual problem is different. Tell us where you stand first."
       }
     },
     "applications": {
       "1": {
-        "title": "Marine",
-        "copy": "Large tools and structural components"
+        "title": "Quoting & order DX",
+        "copy": "We use overseas SaaS and AI to streamline quoting and order handling that has stayed tribal knowledge."
       },
       "2": {
-        "title": "Industrial molds and jigs",
-        "copy": "One-off large molds and jigs"
+        "title": "Downtime reduction & line fixes",
+        "copy": "We identify the processes and equipment dragging down utilization and bring in the technology to fix them."
       },
       "3": {
-        "title": "Construction components",
-        "copy": "Large structural parts for construction"
+        "title": "Large-format additive manufacturing (LFAM/WAAM)",
+        "copy": "Instead of storing large molds and jigs, we offer the option to print them on demand when needed."
       }
     },
     "applicationsFooter": {
       "main": {
-        "copy": "The common thread -- one-off large high-mix -- is exactly what conventional processes handle worst."
+        "copy": "The common thread: making the burden on the ground visible, and turning it into lower fixed costs and fewer lost opportunities."
       }
     },
     "realityCheck": {
       "main": {
         "eyebrow": "REALITY CHECK",
         "title": "All the numbers up front",
-        "copy": "Entry-level turnkey systems run roughly EUR400000-450000 with a standard lead time of 18-24 weeks after firm order (manufacturer-provided figures). Japan's labor-saving investment subsidy catalog has included 3D printers since October 2025 adding tailwind to the investment case. At this scale of investment careful screening before ordering has real value."
+        "copy": "After hearing your process, equipment, and budget, we share the expected return and the steps to deployment up front. If we don't expect it to work, we say so directly."
       }
     },
     "screening": {
       "main": {
         "eyebrow": "SCREENING",
         "title": "We judge fit before you commit",
-        "copy": "We screen against four conditions -- part size lot volume material and current process cost/lead time -- to judge whether large-format printing will actually help. Telling you it is not a fit when it is not is part of the job."
+        "copy": "We screen against the process content, lot volume, and current cost/lead time to judge whether an overseas technology will actually help. Telling you it is not a fit when it is not is part of the job."
       }
     },
     "position": {
       "main": {
         "eyebrow": "POSITION",
-        "title": "Your guide not a seller",
-        "copy": "We are not an exclusive agent for any single manufacturer. We work non-exclusively case by case to bridge you to European manufacturers -- building a project brief from your requirements and connecting you directly with the manufacturer's team designed alongside Japan's existing machining grinding heat-treatment and inspection network."
+        "title": "Your guide, not a seller",
+        "copy": "We are not an exclusive agent for any single manufacturer. We work non-exclusively, case by case, to bridge you to overseas manufacturers -- building a project brief from your requirements and connecting you directly with the manufacturer's team, designed alongside Japan's existing machining network."
       }
     },
     "contactCta": {
@@ -804,7 +764,7 @@
         "title": "Tell us about your process -- 30 minutes no charge",
         "copy": "A free 30-minute hearing on your target process. If there is potential a paid on-site diagnosis (quoted individually) delivers candidate processes rough impact estimates and a manufacturer-ready brief.",
         "buttonLabel": "Contact us",
-        "buttonHref": "/contact?topic=lfam"
+        "buttonHref": "/contact?topic=factory"
       }
     }
   }

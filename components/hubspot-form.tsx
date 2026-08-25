@@ -2,77 +2,38 @@
 
 import { useEffect } from "react";
 
-declare global {
-  interface Window {
-    hbspt?: {
-      forms: {
-        create: (options: {
-          portalId: string;
-          formId: string;
-          region?: string;
-          target?: string;
-        }) => void;
-      };
-    };
-  }
-}
-
 type HubspotFormProps = {
   portalId: string;
   formId: string;
   region?: string;
-  targetId?: string;
 };
 
-export default function HubspotForm({
-  portalId,
-  formId,
-  region = "na1",
-  targetId = "hubspot-form",
-}: HubspotFormProps) {
+export default function HubspotForm({ portalId, formId, region = "na2" }: HubspotFormProps) {
+  const src = `https://js-${region}.hsforms.net/forms/embed/${portalId}.js`;
+
   useEffect(() => {
-    const mount = () => {
-      const target = document.getElementById(targetId);
-      if (!target || !window.hbspt) return;
+    // The embed has to load after hydration. A plain <script defer> in the markup
+    // runs at DOMContentLoaded, which can beat React to the container - React then
+    // finds an <iframe> the server never rendered, treats the tree as mismatched
+    // and regenerates it, throwing the form away and leaving an empty box.
+    if (document.querySelector(`script[src="${src}"]`)) return;
 
-      target.innerHTML = "";
-      window.hbspt.forms.create({
-        portalId,
-        formId,
-        region,
-        target: `#${targetId}`,
-      });
-    };
+    const script = document.createElement("script");
+    script.src = src;
+    script.defer = true;
+    document.body.appendChild(script);
 
-    const existing = document.querySelector(`script[data-hubspot="${targetId}"]`) as
-      | HTMLScriptElement
-      | null;
+    // Deliberately not removed on unmount: the embed keeps global state and warns
+    // when included twice. It watches the DOM, so a remounted container still gets
+    // picked up.
+  }, [src]);
 
-    if (window.hbspt) {
-      mount();
-      return;
-    }
-
-    const script = existing ?? document.createElement("script");
-    script.src = "//js.hsforms.net/forms/embed/v2.js";
-    script.async = true;
-    script.dataset.hubspot = targetId;
-    script.onload = mount;
-
-    if (!existing) {
-      document.body.appendChild(script);
-    }
-
-    return () => {
-      const target = document.getElementById(targetId);
-      if (target) {
-        target.innerHTML = "";
-      }
-      if (!existing && script.parentNode) {
-        script.parentNode.removeChild(script);
-      }
-    };
-  }, [formId, portalId, region, targetId]);
-
-  return <div id={targetId} />;
+  return (
+    <div
+      className="hs-form-frame"
+      data-region={region}
+      data-form-id={formId}
+      data-portal-id={portalId}
+    />
+  );
 }
