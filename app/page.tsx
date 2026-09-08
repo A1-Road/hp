@@ -85,6 +85,58 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <section
+        aria-labelledby="selected-programs-title"
+        className="border-t border-white/12 bg-black pb-16 text-white md:pb-[88px] lg:pb-[120px]"
+      >
+        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
+          <AnimatedSection>
+            <div className="border-t border-white/12 pt-10 md:pt-14">
+              <p className="section-label text-white/56">SELECTED PROGRAMS</p>
+              <h2 id="selected-programs-title" className="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
+                Selected by:
+              </h2>
+            </div>
+          </AnimatedSection>
+
+          <div className="mt-10 grid border-y border-white/12 md:grid-cols-2 md:divide-x md:divide-white/12">
+            <AnimatedSection className="h-full">
+              <div className="flex h-full min-h-[300px] flex-col items-center justify-center px-6 py-12 text-center md:px-10">
+                <div className="flex h-28 w-full max-w-[380px] items-center justify-center bg-white px-5 md:h-32 md:px-8">
+                  <Image
+                    src="/tokyo-restarter.png"
+                    alt="東京都リスタート・アントレプレナー支援事業 Re:STARTER"
+                    width={990}
+                    height={387}
+                    className="h-auto w-full"
+                  />
+                </div>
+                <p className="mt-7 text-[11px] font-semibold uppercase tracking-[0.3em] text-white/72">
+                  Tokyo Re:Starter 2026
+                </p>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={100} className="h-full border-t border-white/12 md:border-t-0">
+              <div className="flex h-full min-h-[300px] flex-col items-center justify-center px-6 py-12 text-center md:px-10">
+                <div className="relative h-40 w-40 overflow-hidden bg-white md:h-44 md:w-44">
+                  <Image
+                    src="/makers-university-logo.png"
+                    alt="MAKERS UNIVERSITY"
+                    fill
+                    sizes="176px"
+                    className="object-cover"
+                  />
+                </div>
+                <p className="mt-7 text-[11px] font-semibold uppercase tracking-[0.3em] text-white/72">
+                  Makers University Cohort 11
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
       <section id="what-we-do" className="scroll-mt-20 border-t border-white/12 bg-black py-16 text-white md:py-[88px] lg:py-[120px]">
         <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
           <AnimatedSection>
