@@ -1,95 +1,27 @@
+import Link from "next/link";
 import HubspotForm from "@/components/hubspot-form";
-import { AnimatedSection } from "@/components/ui/animated-section";
-import { getContentItem, getContentItems } from "@/lib/site-content";
-
-const TOPIC_LABELS: Record<string, string> = {
-  inquiry: "問い合わせ・引き合い対応の改善",
-  diagnosis: "業務課題の相談（診断）",
-  lfam: "大型積層造形（WAAM/LFAM）",
-};
-
-type ContactPageProps = {
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
-};
-
-export default async function ContactPage({ searchParams }: ContactPageProps) {
-  const params = await searchParams;
-  const topicParam = Array.isArray(params.topic) ? params.topic[0] : params.topic;
-  const topicLabel = topicParam ? TOPIC_LABELS[topicParam] : undefined;
-
-  const hero = await getContentItem("contact", "hero");
-  const formHeader = await getContentItem("contact", "formHeader");
-  const infoHeader = await getContentItem("contact", "infoHeader");
-  const info = await getContentItems("contact", "info");
-  const reassurance = await getContentItem("contact", "reassurance");
-
-  return (
-    <div className="pt-20">
-      <section className="bg-black py-20 text-white md:py-[120px]">
-        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
-          <AnimatedSection>
-            <p className="section-label text-white/56">{hero.eyebrow}</p>
-            <h1 className="section-title mt-4">{hero.title}</h1>
-            <p className="section-copy mt-5 text-white/72">{hero.copy}</p>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      <section className="bg-black py-16 text-white md:py-[88px] lg:py-[120px]">
-        <div className="mx-auto w-full max-w-[880px] px-5 md:px-10">
-          <AnimatedSection>
-            <div className="max-w-xl">
-              <p className="section-label text-white/56">{formHeader.eyebrow}</p>
-              <h2 className="section-title mt-4">{formHeader.title}</h2>
-              <p className="section-copy mt-5 text-white/72">{formHeader.copy}</p>
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection delay={100}>
-            <div className="mt-10 border border-white/18 p-6 md:p-8">
-              {topicLabel ? (
-                <p className="mb-6 text-sm text-white/72">
-                  ご相談内容: <span className="text-white">{topicLabel}</span>
-                </p>
-              ) : null}
-              <HubspotForm
-                portalId="246807977"
-                formId="adc556cb-cfc8-4a4f-8350-fdadc91c052a"
-                region="na2"
-              />
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      <section className="bg-white py-16 md:py-[88px] lg:py-[120px]">
-        <div className="mx-auto grid w-full max-w-[1280px] gap-8 px-5 md:grid-cols-2 md:px-10">
-          <AnimatedSection>
-            <div className="max-w-sm">
-              <p className="section-label">{infoHeader.eyebrow}</p>
-              <h2 className="section-title mt-4">{infoHeader.title}</h2>
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection delay={100}>
-            <div className="space-y-3 text-sm text-black/72">
-              {info.map((item) => (
-                <p key={item.label}>
-                  {item.label}: {item.value}
-                </p>
-              ))}
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      <section className="bg-black py-16 text-white md:py-[88px] lg:py-[120px]">
-        <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10">
-          <AnimatedSection>
-            <p className="text-sm text-white/72">{reassurance.text}</p>
-          </AnimatedSection>
-        </div>
-      </section>
-    </div>
-  );
+import { Hero, Section } from "@/components/vad-sections";
+import { getContentItem } from "@/lib/site-content";
+import { getSiteLocale } from "@/lib/locale";
+import { localeHref } from "@/lib/site-locale";
+import { pageMetadata } from "@/lib/site-metadata";
+export const generateMetadata = () => pageMetadata("/contact");
+const topics = {oem:["海外OEM：日本展開・販売提携","Global OEM: Japan-market distribution"],buyer:["日本企業：設備・材料調達","Japanese buyer: manufacturing procurement"],partnership:["戦略的技術提携","Strategic technology partnership"]};
+type ContactPageProps={searchParams:Promise<Record<string,string|string[]|undefined>>};
+export default async function ContactPage({searchParams}:ContactPageProps){
+ const [params,locale,hero,form] = await Promise.all([searchParams,getSiteLocale(),getContentItem("contact","hero"),getContentItem("contact","formHeader")]);
+ const value=Array.isArray(params.topic)?params.topic[0]:params.topic;
+ const key=value && value in topics?value as keyof typeof topics:undefined;
+ const label=key?topics[key][locale==="en"?1:0]:locale==="en"?"General inquiry":"一般のお問い合わせ";
+ const subject=`[${label}] A-one road`;
+ return <><Hero content={{...hero,primaryLabel:locale==="en"?"Open inquiry form":"フォームへ進む",primaryHref:'#inquiry'}}/>
+ <Section id="inquiry" label={form.eyebrow} title={form.title} copy={form.copy}>
+ <nav className="vad-contact-options" aria-label={locale==="en"?"Inquiry type":"お問い合わせ種別"}>{Object.entries(topics).map(([k,v])=><Link key={k} href={localeHref(locale,`/contact?topic=${k}#inquiry`)} aria-current={key===k?"true":undefined} data-analytics={`contact_type_${k}`}>{v[locale==="en"?1:0]}</Link>)}</nav>
+ <div className="vad-form"><p className="mb-6 text-base"><strong>{locale==="en"?"Inquiry type: ":"ご相談内容："}</strong>{label}</p>
+ <HubspotForm portalId="246807977" formId="adc556cb-cfc8-4a4f-8350-fdadc91c052a" region="na2" topic={key || "general"}/></div>
+ <p className="vad-note">{locale==="en"?"Please include the inquiry type in your message. If the form does not load, use the email link below.":"本文にご相談の種別をご記入ください。フォームが表示されない場合は、下記メール窓口をご利用ください。"}</p>
+ <Link className="vad-text-link vad-email" href={`mailto:admin@a1-road.com?subject=${encodeURIComponent(subject)}`} data-analytics="email_inquiry">admin@a1-road.com ↗</Link>
+ </Section><Section label="COMPANY" title={locale==="en"?"A-one road Co., Ltd.":"エーワンロード株式会社"}>
+ <p className="vad-copy">{locale==="en"?"Based in Yokohama, Japan. Japanese and English inquiries welcome.":"横浜を拠点に、日本語・英語でお問い合わせを受け付けています。"}</p><Link className="vad-text-link" href={localeHref(locale,"/about-us")}>{locale==="en"?"Company information":"会社概要・所在地"} ↗</Link>
+ </Section></>;
 }

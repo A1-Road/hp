@@ -2,27 +2,31 @@
   "global": {
     "navigation": {
       "1": {
-        "label": "TOP",
-        "href": "/"
+        "label": "OEMs",
+        "href": "/global-vendors"
       },
       "2": {
-        "label": "ABOUT",
-        "href": "/about-us"
+        "label": "調達・導入",
+        "href": "/service/manufacturing"
       },
       "3": {
-        "label": "SERVICE",
-        "href": "/service"
+        "label": "技術領域",
+        "href": "/technologies"
+      },
+      "4": {
+        "label": "会社情報",
+        "href": "/about-us"
       },
       "5": {
-        "label": "CONTACT",
+        "label": "お問い合わせ",
         "href": "/contact"
       }
     },
     "footer": {
       "main": {
-        "tagline": "海外の優れた技術を、日本の現場へ。隠された価値を、正当に評価される市場へ。",
+        "tagline": "世界の製造技術を、日本の「作れる力」へ。海外メーカーの日本展開と、日本企業の技術調達をつなぎます。",
         "privacyLabel": "プライバシーポリシー",
-        "copyright": "© 2026 A-One Road"
+        "copyright": "© 2026 A-one road"
       }
     },
     "contactInfo": {
@@ -53,95 +57,42 @@
   "top": {
     "hero": {
       "main": {
-        "eyebrow": "MISSION",
-        "title": "すべての正当な価値を取り戻す。",
-        "titleSub": "Make Matter Matter.",
-        "visionLabel": "VISION",
-        "visionEn": "Unearth All Hidden Value.",
-        "visionJa": "あらゆる隠された価値を発掘し、世に伝える語り部となる。",
-        "image": "/hero-mvv.png",
-        "primaryLabel": "事業を見る",
-        "primaryHref": "/service",
-        "secondaryLabel": "会社概要を見る",
-        "secondaryHref": "/about-us",
-        "scroll": "SCROLL"
-      }
-    },
-    "valueHeader": {
-      "main": {
-        "eyebrow": "VALUE",
-        "title": "5つのクレド"
-      }
-    },
-    "value": {
-      "1": {
-        "number": "01",
-        "title": "Board Spaceship Earth.",
-        "copy": "地球市民たれ。"
-      },
-      "2": {
-        "number": "02",
-        "title": "Dive into the customer's shoes.",
-        "copy": "ユーザーに肩まで浸かれ。"
-      },
-      "3": {
-        "number": "03",
-        "title": "Be Resourceful.",
-        "copy": "最小の資源で最大の成果を出せ。"
-      },
-      "4": {
-        "number": "04",
-        "title": "Run the Fastest Lap.",
-        "copy": "誰よりも先に、最新技術を社会実装せよ。"
-      },
-      "5": {
-        "number": "05",
-        "title": "Go far, Go together.",
-        "copy": "n人、n+1脚で遠くへ行け。"
-      }
-    },
-    "whatWeDoHeader": {
-      "main": {
-        "eyebrow": "WHAT WE DO",
-        "title": "海外の技術を仕入れ、日本の現場で動かす。",
-        "copy": "仕入れて終わりにしない。日本企業の課題に合わせて選定し、導入・実装・運用まで担います。"
-      }
-    },
-    "whatWeDo": {
-      "1": {
-        "tag": "製造業・工場向け",
-        "title": "Factory",
-        "copy": "人手依存・属人化・既存設備やソフトウェアの分断。海外の産業機械・ロボティクス・AI・製造SaaSを選定し、日本の製造現場に導入・実装・運用します。",
+        "eyebrow": "VALUE-ADDED DISTRIBUTOR",
+        "title": "世界の製造技術を、\n日本の「作れる力」へ。",
+        "copy": "海外の装置・材料・製造技術を、日本の現場へ。A-one roadは、製品の日本語化、販路整備、問い合わせ対応、販売を担うValue-Added Distributorです。",
+        "primaryLabel": "For Global OEMs",
+        "primaryCopy": "日本市場で製品を販売したいメーカー",
+        "primaryHref": "/en/global-vendors",
+        "secondaryLabel": "For Japanese Buyers",
+        "secondaryCopy": "海外の製造技術を調達したい企業",
+        "secondaryHref": "/service/manufacturing",
         "image": "/hub-manufacturing.jpg",
-        "href": "/service/manufacturing",
-        "linkLabel": "詳しく見る"
-      },
-      "2": {
-        "tag": "営業・バックオフィス向け",
-        "title": "BPO",
-        "copy": "営業・顧客開拓・採用・バックオフィス。海外のAI・SaaSを業務設計に組み込み、必要な人的オペレーションと組み合わせて、業務そのものを改善・実行します。",
-        "image": "/workflow.png",
-        "href": "/global-vendors",
-        "linkLabel": "詳しく見る"
+        "imageAlt": "製造装置を表現した既存のイメージビジュアル"
       }
     },
-    "aboutPreview": {
+    "why": {
       "main": {
-        "eyebrow": "ABOUT",
-        "title": "理念と事業定義",
-        "copy": "すべての人の正当な価値を取り戻す。世の中の隠された価値の語り部となる。私たちの理念と事業の全体像をご覧ください。",
-        "linkLabel": "会社情報へ",
-        "linkHref": "/about-us",
-        "image": "/about-preview.png"
+        "eyebrow": "WHY JAPAN",
+        "title": "少量多品種のものづくりに、\n世界の技術という選択肢を。",
+        "copy": "新しい設備、加工方法、材料を取り入れるには、仕様の理解、国内窓口、輸入・導入の調整が必要です。海外メーカーと日本企業の間に立ち、技術を検討・購入できる状態へ整えます。"
       }
     },
-    "contactCta": {
+    "vision": {
       "main": {
-        "eyebrow": "CONTACT",
-        "title": "まずはご相談ください。",
-        "copy": "製造現場の非効率や、営業・バックオフィスの反復業務でお困りの方は、まずは30分お話をお聞かせください。海外の技術から御社に合う選択肢を見極め、導入までを一緒に進めます。",
-        "buttonLabel": "お問い合わせへ",
-        "buttonHref": "/contact"
+        "eyebrow": "OUR VISION",
+        "title": "販売から、技術を蓄積する。",
+        "copy": "VADの取引を起点に、装置・製造技術の知識と導入ノウハウを蓄積。将来は、自社での技術活用、Factory・受託開発、自社製品へとつなげる構想です。",
+        "linkLabel": "長期戦略を見る",
+        "linkHref": "/strategy"
+      }
+    },
+    "mission": {
+      "main": {
+        "eyebrow": "MISSION / VISION",
+        "title": "すべての正当な価値を取り戻す。",
+        "copy": "Unearth All Hidden Values.",
+        "linkLabel": "理念と創業背景",
+        "linkHref": "/about-us"
       }
     }
   },
@@ -200,7 +151,7 @@
       "5": {
         "eyebrow": "2025 — MANUFACTURING",
         "title": "デジタルで探していたものを、町工場で見つけた。",
-        "copy": "大田区の町工場には「仲間回し」があった。DAOで追い続けた分散協働が、日本のものづくりでは何十年も前から現実に動いていた。A-one Roadが進む道が、ここで一本につながった。",
+        "copy": "大田区の町工場には「仲間回し」があった。DAOで追い続けた分散協働が、日本のものづくりでは何十年も前から現実に動いていた。A-one roadが進む道が、ここで一本につながった。",
         "imgLg": "/story/2025-otaku-factory.png",
         "imgLgAlt": "大田区の町工場で職人の作業を見学する様子",
         "imgLgCaption": "大田区 — 仲間回しの現場",
@@ -211,9 +162,9 @@
     },
     "today": {
       "main": {
-        "eyebrow": "TODAY — FACTORY & BPO",
-        "title": "あらゆる隠された価値を、世の中へ。",
-        "copy": "工場に蓄積された技術。世界にはあるが、日本には届いていないサービス。企業の中で埋もれている知識や時間。国境、言語、業界、組織。その間にある壁を取り払い、価値が必要とされる場所まで届ける。",
+        "eyebrow": "TODAY — VALUE-ADDED DISTRIBUTOR",
+        "title": "世界の製造技術を、日本へ。",
+        "copy": "海外の装置・材料・製造技術と、日本のものづくりをつなぐ。製品を理解し、問い合わせ、調達できる状態へ整え、その過程で製造知識と導入ノウハウを積み上げる。A-one roadはVADを基盤に、この道を進みます。",
         "vision": "あらゆる隠された価値を発掘し、世に伝える語り部となる。",
         "buttonBusinessLabel": "事業を見る",
         "buttonBusinessHref": "/service",
@@ -277,17 +228,21 @@
     "differentiatorHeader": {
       "main": {
         "eyebrow": "DIFFERENCE",
-        "title": "二つの事業"
+        "title": "製造技術を、日本へ届ける。"
       }
     },
     "differentiator": {
       "1": {
-        "title": "Factory",
-        "copy": "海外の産業機械・ロボティクス・AI・製造SaaSを選定し、日本の製造現場に導入・実装・運用する。"
+        "title": "Value-Added Distributor",
+        "copy": "海外OEMの製品情報、日本語化、販路整備、一次対応、販売を合意した範囲で担う。"
       },
       "2": {
-        "title": "BPO",
-        "copy": "営業・顧客開拓・採用・バックオフィス。海外のAI・SaaSを業務設計に組み込み、業務そのものを改善・実行する。"
+        "title": "技術知識の蓄積",
+        "copy": "汎用装置、高度・希少な製法、継続消費材料の3領域を重点に、装置・製造技術と実装の知識を蓄積する。"
+      },
+      "3": {
+        "title": "案件ごとの実行体制",
+        "copy": "物流、技術評価、据付・実装に必要な役割と責任を、案件ごとのSOWで定める。"
       }
     },
     "founderHeader": {
@@ -300,7 +255,7 @@
       "main": {
         "name": "田村 一馬",
         "role": "代表取締役",
-        "bio": "A-one Road創業者。Bankless Japan立ち上げ、Pacific Metaでのグローバル事業開発、CADDiでのプロダクトマーケティングなどを経験。海外企業の市場参入・事業開発を専門とする。",
+        "bio": "A-one road創業者。Bankless Japan立ち上げ、Pacific Metaでのグローバル事業開発、CADDiでのプロダクトマーケティングなどを経験。海外企業の市場参入・事業開発を専門とする。",
         "image": "/founder-tamura.png"
       }
     },
@@ -346,8 +301,8 @@
     "hero": {
       "main": {
         "eyebrow": "CONTACT",
-        "title": "お問い合わせ",
-        "copy": "admin@a1-road.com"
+        "title": "目的から、ご相談ください。",
+        "copy": "海外メーカーの日本展開、日本企業の設備・材料調達、戦略的な技術提携を受け付けています。"
       }
     },
     "methodsHeader": {
@@ -372,9 +327,9 @@
     },
     "formHeader": {
       "main": {
-        "eyebrow": "FORM",
-        "title": "事業のご相談・お問い合わせはこちら",
-        "copy": ""
+        "eyebrow": "INQUIRY",
+        "title": "お問い合わせフォーム",
+        "copy": "会社名、対象製品・用途、ご相談内容をご記入ください。秘密情報の共有はMNDA締結後に進めます。"
       }
     },
     "form": {
@@ -425,295 +380,331 @@
     },
     "reassurance": {
       "main": {
-        "text": ""
+        "text": "いただいた情報を確認し、担当窓口から返信します。フォームが表示されない場合は、admin@a1-road.comへご連絡ください。"
       }
     }
   },
   "globalVendors": {
     "hero": {
       "main": {
-        "eyebrow": "業務効率化・ROI診断",
-        "title": "問い合わせ・見積対応の遅れが、専門業務を圧迫している。",
-        "copy": "多品種少量の現場ほど、本当のボトルネックは新規のリード獲得ではなく、流入した問い合わせ・見積依頼の一次対応にあります。海外SaaS・AIと既存の運用を組み合わせ、現場ヒアリングからROI試算・予算のリプレイス先特定まで診断します。",
-        "primaryLabel": "お問い合わせ",
-        "primaryHref": "/contact"
+        "eyebrow": "FOR GLOBAL OEMs",
+        "title": "あなたの製造技術を、\n日本市場へ。",
+        "copy": "日本のお客様が製品を理解し、問い合わせ、購入できる状態をつくる。A-one roadがValue-Added Distributorとして、ローカライズから販売窓口までを担います。",
+        "primaryLabel": "日本展開を相談する",
+        "primaryHref": "/contact?topic=oem",
+        "secondaryLabel": "サービス範囲を見る",
+        "secondaryHref": "#scope"
       }
     },
-    "intro": {
+    "scopeHeader": {
       "main": {
-        "eyebrow": "HOW WE HELP",
-        "title": "まずは、現場ヒアリングから。",
-        "copy": "最初にお届けするのは、「投資回収の最短経路」を判断するための現場データと、その分析です。特定メーカーに偏らない中立の立場で診断するので、結論が「いまは何も導入しないほうがよい」になることもあります。",
-        "lead": "最初にお届けするのは、「投資回収の最短経路」を判断するための現場データと、その分析です。特定メーカーに偏らない中立の立場で診断するので、結論が「いまは何も導入しないほうがよい」になることもあります。"
+        "eyebrow": "VAD SERVICE SCOPE",
+        "title": "日本向けの販売基盤を、\nひとつずつ整える。",
+        "copy": "標準VADの提供範囲と、追加で設計する活動を分けて見積・契約します。"
       }
     },
-    "servicesHeader": {
-      "main": {
-        "eyebrow": "HOW WE DIAGNOSE",
-        "title": "現場ヒアリングから、予算の組み替えまで。",
-        "copy": "感覚で語られている負担を、数字に置き換えます。"
-      }
-    },
-    "services": {
+    "scope": {
       "1": {
-        "title": "現場ヒアリング",
-        "copy": "問い合わせ対応や追客作業に、誰が・どれだけの時間をかけているのかを部署・担当者単位で伺います。"
+        "tag": "01 / LOCALIZATION",
+        "title": "日本語の製品情報",
+        "copy": "メーカー資料に基づく翻訳・編集。仕様、用途、必要資料を日本向けに整理。"
       },
       "2": {
-        "title": "人月分析",
-        "copy": "業務フローを人月・原価・損失額に分解します。感覚で語られている負担を、数字に置き換えます。"
+        "tag": "02 / PRODUCT VISIBILITY",
+        "title": "掲載・販路整備",
+        "copy": "日本の既存製品検索・掲載媒体への展開を設計し、合意したコンテンツを制作・管理。"
+      },
+      "3": {
+        "tag": "03 / INQUIRY HANDLING",
+        "title": "一次対応・商談連携",
+        "copy": "日本語の問い合わせを受け付け、要件を整理。見積や技術確認をメーカーへ接続。"
       },
       "4": {
-        "title": "ROI試算",
-        "copy": "削減人月・年間効果・回収期間を、保守的・標準・楽観の3シナリオで算定します。"
+        "tag": "04 / DISTRIBUTION",
+        "title": "見積・販売調整",
+        "copy": "合意した販売権と商流に基づき、見積、注文、供給条件を調整。"
+      }
+    },
+    "engagementHeader": {
+      "main": {
+        "eyebrow": "ENGAGEMENT MODELS",
+        "title": "活動と責任を、\n契約に合わせて設計。"
+      }
+    },
+    "engagement": {
+      "1": {
+        "title": "標準VAD",
+        "copy": "製品情報の整備、掲載、維持、一次対応をSOWで定義。料金と契約期間は個別提案でお伝えします。"
+      },
+      "2": {
+        "title": "個別有償SOW",
+        "copy": "積極営業、技術評価、PoC、据付、実装などは、成果物と担当を定めて追加設計。"
+      },
+      "3": {
+        "title": "戦略的技術提携",
+        "copy": "重点領域では自社利用や技術蓄積を含む長期協業を検討。目標と役割を個別に合意。"
+      }
+    },
+    "faqHeader": {
+      "main": {
+        "eyebrow": "OEM FAQ",
+        "title": "提携前に確認したいこと。"
+      }
+    },
+    "faq": {
+      "1": {
+        "question": "独占契約が必要ですか？",
+        "answer": "標準の協力モデルは非独占を想定しています。販売地域、取扱権、既存商流との役割分担をMSA・SOWで明確にします。"
+      },
+      "2": {
+        "question": "どの製品が対象ですか？",
+        "answer": "装置・材料と、製造を支える技術が対象です。重点3領域と周辺技術のいずれも、用途・供給体制・日本での適合性を確認します。"
+      },
+      "3": {
+        "question": "費用と開始時期は？",
+        "answer": "製品点数、資料、掲載先、活動範囲に応じて提案します。契約、初期入金、資料受領、メーカー確認を経て掲載を開始します。"
+      },
+      "4": {
+        "question": "据付・保証・技術支援は誰が担いますか？",
+        "answer": "メーカー、A-one road、必要な物流・技術担当の責任分担を案件ごとに定めます。追加技術業務は個別SOWで見積・合意します。"
       },
       "5": {
-        "title": "予算のリプレイス先特定",
-        "copy": "残業代・派遣費・外注費など、置き換え原資になりうる既存予算を特定します。新規予算を前提にしません。"
-      },
-      "7": {
-        "title": "プロダクト選定・導入伴走",
-        "copy": "診断結果をもとに、世界中の候補から課題に最も合う製品を選び、導入まで伴走します。"
-      }
-    },
-    "solutionsHeader": {
-      "main": {
-        "eyebrow": "OUR SOLUTIONS",
-        "title": "提供ソリューション",
-        "note": "既存のCRM・Excelはそのまま。軽量な基盤と自動化の接続層を薄く被せるBPR型のアプローチです。"
-      }
-    },
-    "solutions": {
-      "1": {
-        "title": "セールスストン（攻め─新規開拓）",
-        "copy": "リード探索からアポ獲得までを一元化するアウトバウンド営業支援AI。メール・フォーム営業で「勝ちパターン」を毎月発見・蓄積します。"
-      },
-      "2": {
-        "title": "サポートストン（守り─顧客対応）",
-        "copy": "お客様の一次対応を代行するカスタマーサポート支援AI。ベテランの知見をデータベース化して自動応答します。"
-      },
-      "3": {
-        "title": "クリエイティブ検証（集客─広告）",
-        "copy": "海外AI生成ツールで広告制作本数を大幅増。少額配信でCPAを実測し、当たり施策だけに予算を集中させます。"
-      }
-    },
-    "trackRecordHeader": {
-      "main": {
-        "eyebrow": "TRACK RECORD",
-        "title": "実測データ",
-        "copy": "送信数という実測値で、実行力をお示しします。",
-        "note": ""
-      }
-    },
-    "trackRecord": {
-      "1": {
-        "label": "案件（製造業PoC）",
-        "value": "4"
-      },
-      "2": {
-        "label": "累計送信数",
-        "value": "4219件"
-      }
-    },
-    "pilotHeader": {
-      "main": {
-        "eyebrow": "ENGAGEMENT",
-        "title": "まず、小さく試す。",
-        "copy": "課題に合う製品を、期間を区切って検証します。手応えがあれば、本格導入へ進みます。"
-      }
-    },
-    "pilotFacts": {
-      "2": {
-        "label": "期間の目安",
-        "value": "30〜45日"
-      },
-      "3": {
-        "label": "進め方",
-        "value": "開始前に、活動内容と成果物を合意します。"
-      }
-    },
-    "deliverablesHeader": {
-      "main": {
-        "eyebrow": "DELIVERABLES",
-        "title": "パイロットの成果物"
-      }
-    },
-    "deliverables": {
-      "1": {
-        "number": "01",
-        "title": "課題と要件の整理",
-        "copy": "解くべき課題と、満たすべき条件を明文化します。"
-      },
-      "2": {
-        "number": "02",
-        "title": "最適プロダクトの提案",
-        "copy": "課題に合う製品と、その組み合わせを具体的に示します。"
-      },
-      "3": {
-        "number": "03",
-        "title": "検証計画（PoC）",
-        "copy": "成果を確かめるための、次の実証ステップを設計します。"
-      }
-    },
-    "termsHeader": {
-      "main": {
-        "eyebrow": "HOW WE WORK",
-        "title": "進め方とお約束"
-      }
-    },
-    "terms": {
-      "1": {
-        "title": "コミットの範囲",
-        "copy": "合意した活動と成果物に責任を持ちます。"
-      },
-      "2": {
-        "title": "ご用意いただくもの",
-        "copy": "現状の課題や環境の共有と、検証へのご協力をお願いします。"
-      },
-      "3": {
-        "title": "当社が担うこと",
-        "copy": "製品の選定・構成・導入・定着までを一貫して担います。"
-      },
-      "4": {
-        "title": "データの取り扱い",
-        "copy": "お客様のデータは御社環境内で処理し、外部のAI学習には使用しません。"
-      }
-    },
-    "companyHeader": {
-      "main": {
-        "eyebrow": "COMPANY",
-        "title": "運営会社"
-      }
-    },
-    "company": {
-      "1": {
-        "label": "会社名",
-        "value": "エーワンロード株式会社（A-one road co.,ltd）"
-      },
-      "2": {
-        "label": "設立",
-        "value": "2021年3月"
-      },
-      "3": {
-        "label": "拠点",
-        "value": "神奈川県横浜市"
-      },
-      "4": {
-        "label": "代表取締役",
-        "value": "田村一馬"
-      },
-      "5": {
-        "label": "体制",
-        "value": "日英バイリンガル運営"
-      }
-    },
-    "contactCta": {
-      "main": {
-        "eyebrow": "CONTACT",
-        "title": "課題をお聞かせください。",
-        "copy": "解きたい課題から、最適な選択肢を一緒に見極めます。",
-        "buttonLabel": "お問い合わせへ",
-        "buttonHref": "/contact"
-      }
-    }
-  },
-  "serviceHub": {
-    "hero": {
-      "main": {
-        "eyebrow": "OUR BUSINESS",
-        "message": "海外の優れた機械・AI・SaaSを、日本企業の課題に合わせて選定し、導入・実装・運用まで担います。"
-      }
-    },
-    "left": {
-      "main": {
-        "tag": "Factory",
-        "label": "製造業・工場の現場を、海外技術で強くする。",
-        "sub": "海外の産業機械・ロボティクス・AI・製造SaaSを選定し、日本の製造現場に導入・実装・運用します。",
-        "href": "/service/manufacturing",
-        "image": "/hub-manufacturing.jpg",
-        "cta": "詳しく見る"
-      }
-    },
-    "third": {
-      "main": {
-        "tag": "BPO",
-        "label": "営業・バックオフィスの反復業務を、動かす。",
-        "sub": "海外のAI・SaaSを業務設計に組み込み、人的オペレーションと組み合わせて、業務そのものを改善・実行します。",
-        "href": "/global-vendors",
-        "image": "/hub-gtm.png",
-        "cta": "詳しく見る"
+        "question": "何を用意すればよいですか？",
+        "answer": "製品仕様、用途、写真・カタログ、認証情報、供給条件、技術窓口をご用意ください。公開する情報はメーカー確認を経て扱います。"
       }
     }
   },
   "manufacturing": {
     "hero": {
       "main": {
-        "eyebrow": "FACTORY",
-        "title": "工場の課題に、海外の技術で応える。",
-        "copy": "人手依存・属人化・ダウンタイム・生産ラインの分断。見積もり対応の遅れからDX、設備導入まで、海外の実績ある機械・AI・SaaSを選定し、日本の製造現場に導入・実装・運用します。"
+        "eyebrow": "FOR JAPANESE BUYERS",
+        "title": "作りたいものから、\n世界の技術を選ぶ。",
+        "copy": "加工する材料、部品形状、数量、品質、導入環境を出発点に、海外の設備・材料・製造技術の調達を支援します。",
+        "primaryLabel": "設備・材料の調達を相談",
+        "primaryHref": "/contact?topic=buyer",
+        "secondaryLabel": "対象技術を見る",
+        "secondaryHref": "/technologies"
       }
     },
-    "technology": {
+    "stepsHeader": {
       "main": {
-        "eyebrow": "HOW WE WORK",
-        "title": "特定の技術に、絞りません。",
-        "copy": "積層造形、DXツール、生産管理システム、検査自動化など、御社の課題に合う技術を世界中から探します。特定メーカー・特定技術に偏らない中立的な立場で選定します。"
+        "eyebrow": "PROCUREMENT PROCESS",
+        "title": "要件整理から、\n見積・導入計画へ。"
       }
     },
-    "applicationsHeader": {
-      "main": {
-        "eyebrow": "APPLICATIONS",
-        "title": "対応する課題の例",
-        "note": "実際の課題は御社ごとに異なります。まずは現状をお聞かせください。"
-      }
-    },
-    "applications": {
+    "steps": {
       "1": {
-        "title": "見積もり・受発注のDX",
-        "copy": "属人化した見積もり対応や受発注業務を、海外SaaS・AIで効率化します。"
+        "title": "用途・要件の共有",
+        "copy": "材料、寸法、精度、数量、予算、希望納期、既存設備を確認。"
       },
       "2": {
-        "title": "ダウンタイム改善・生産ライン修正",
-        "copy": "稼働率を落としている工程・設備を特定し、改善に必要な技術・機材を導入します。"
+        "title": "製品・技術の評価",
+        "copy": "メーカーと仕様・適合性を確認。必要に応じてサンプルや技術検証を個別設計。"
       },
       "3": {
-        "title": "大型積層造形（LFAM/WAAM）",
-        "copy": "大型金型・治具を保管し続ける代わりに、必要な時に造形するという選択肢も提供します。"
+        "title": "見積・条件の確認",
+        "copy": "価格、納期、輸入、輸送、保証、据付・検収の条件を整理。"
+      },
+      "4": {
+        "title": "発注・供給の調整",
+        "copy": "合意した条件に基づき発注。物流・技術業務を必要な担当へ接続。"
       }
     },
-    "applicationsFooter": {
+    "faqHeader": {
       "main": {
-        "copy": "共通点は、現場の負担を可視化し、固定費削減と機会損失の解消につなげることです。"
+        "eyebrow": "BUYER FAQ",
+        "title": "調達時の確認事項。"
       }
     },
-    "realityCheck": {
+    "faq": {
+      "1": {
+        "question": "まだ機種が決まっていなくても相談できますか？",
+        "answer": "可能です。作りたい部品、材料、現状の工程、求める品質からお聞かせください。候補製品の供給可否と適合性を確認します。"
+      },
+      "2": {
+        "question": "カタログにない製品も相談できますか？",
+        "answer": "対象分野は技術選定の目安です。具体的なメーカー・製品について、取扱権、供給条件、国内対応を個別に確認します。"
+      },
+      "3": {
+        "question": "据付や保守も含まれますか？",
+        "answer": "必要な作業と責任主体を見積・契約で明示します。技術評価、据付、工程実装、保守は内容に応じて個別に設計します。"
+      }
+    }
+  },
+  "vad": {
+    "ribbonHeader": {
       "main": {
-        "eyebrow": "REALITY CHECK",
-        "title": "判断材料を、先にすべてお渡しします",
-        "copy": "御社の工程・設備・予算感をヒアリングした上で、投資対効果と導入までのステップを先に共有します。効果が見込めない場合は、その旨を率直にお伝えします。"
+        "eyebrow": "HOW WE WORK",
+        "title": "海外メーカーと日本企業を、\nひとつの窓口でつなぐ。",
+        "copy": "A-one roadが日本展開と製品調達の窓口を担い、案件に必要な物流・技術業務を組み合わせます。"
       }
     },
-    "screening": {
-      "main": {
-        "eyebrow": "SCREENING",
-        "title": "御社の工程が「向いているか」を先に判定します",
-        "copy": "対象工程の内容／ロット数／現行コストと納期の条件から、海外技術の導入で効果が出る工程かを判定します。向いていなければ「向いていない」とお伝えするところまでが当社の仕事です。"
+    "actors": {
+      "1": {
+        "title": "海外OEM",
+        "role": "装置・材料・技術の供給",
+        "copy": "仕様、供給条件、技術資料を共有。製品品質・保証の条件を定めます。"
+      },
+      "2": {
+        "title": "A-one road",
+        "role": "Value-Added Distributor",
+        "copy": "日本語化、掲載・販路整備、一次対応、見積・販売の調整。合意した取扱権と契約範囲に基づき進めます。"
+      },
+      "3": {
+        "title": "日本の製造企業",
+        "role": "製品の評価・調達・活用",
+        "copy": "用途・要件を共有し、製品を評価。仕様、納期、価格、検収条件を確認して発注します。"
       }
     },
-    "position": {
+    "flows": {
       "main": {
-        "eyebrow": "POSITION",
-        "title": "御社側の水先案内人として",
-        "copy": "当社は非独占・案件先行の立場で、海外メーカーとの橋渡しを行います。御社の要件を整理したプロジェクトブリーフを作成し、メーカーの担当窓口へ直接接続します。国内の既存加工網との役割分担を含めた座組で設計します。"
+        "forward": "製品情報・見積・販売 →",
+        "reverse": "← 要件・問い合わせ・発注",
+        "note": "装置代金は日本の購入顧客からA-one roadへ、製品代金はA-one roadから海外メーカーへ。支払時期、輸入者、輸送・検収・保証の責任は案件ごとの契約で定めます。"
       }
     },
-    "contactCta": {
+    "network": {
+      "1": {
+        "title": "3PL / Logistics",
+        "copy": "国際輸送・通関・国内配送。案件に応じて物流事業者を選定・調整。"
+      },
+      "2": {
+        "title": "SIer / Application Engineer",
+        "copy": "技術評価、据付、工程への適合、実装支援。必要な専門家・技術担当と個別SOWを設計。"
+      }
+    },
+    "portfolioHeader": {
       "main": {
-        "eyebrow": "CONTACT",
-        "title": "まずは30分、御社の製造課題をお聞かせください",
-        "copy": "30分ヒアリング（無料）で対象工程を伺い、可能性があれば有償の現場診断（個別お見積り）で置換候補工程の特定・概算効果・メーカー打診用ブリーフまで納品します。",
-        "buttonLabel": "お問い合わせへ",
-        "buttonHref": "/contact?topic=factory"
+        "eyebrow": "STRATEGIC TECHNOLOGY PORTFOLIO",
+        "title": "VADを基盤に、\n3つの製造能力を蓄積。",
+        "copy": "幅広い装置を扱う力、高度で希少な加工の知識、継続的に使われる材料。販売・導入を通じて、ものづくりの選択肢を増やしていきます。"
+      }
+    },
+    "portfolio": {
+      "1": {
+        "number": "01",
+        "tag": "BREADTH",
+        "title": "General Purpose",
+        "subtitle": "汎用製造能力",
+        "copy": "NC旋盤・CNCマシニングセンタなど。Al・Mg・Cuを含む材料の加工と、多様な部品を作る基盤。",
+        "examples": "技術例：切削・旋削・多軸加工"
+      },
+      "2": {
+        "number": "02",
+        "tag": "SCARCITY",
+        "title": "Scarce Advanced",
+        "subtitle": "高度・希少な製造能力",
+        "copy": "LFAM・WAAM・CFRP・CNT・特殊合金など。大型部品や複雑形状、新しい材料・製法への選択肢。",
+        "examples": "技術例：大型積層造形・複合材加工"
+      },
+      "3": {
+        "number": "03",
+        "tag": "RECURRENCE",
+        "title": "Feedstock & Materials",
+        "subtitle": "継続消費される製造材料",
+        "copy": "金属粉末・ワイヤ・樹脂・複合材原料など。設備の稼働と品質を支える材料と、その使用知識。",
+        "examples": "技術例：粉末・ワイヤ・樹脂原料"
+      }
+    },
+    "broader": {
+      "main": {
+        "eyebrow": "BROADER GLOBAL TECHNOLOGY PARTNERS",
+        "title": "製造を支える周辺技術にも、\n日本展開の入口を。",
+        "copy": "画像検査、溶接自動化、産業ソフトウェアなど、重点3領域を支える技術にもVADの参加経路を用意します。製品、顧客、提供範囲の適合性を商談で確認します。",
+        "note": "掲載している技術分野は選定方針と対象例です。取扱製品・販売権・供給可否は個別に確認します。"
+      }
+    },
+    "processHeader": {
+      "main": {
+        "eyebrow": "ENGAGEMENT PROCESS",
+        "title": "提供範囲をそろえて、\n日本展開を始める。",
+        "copy": "契約書類で取扱権、業務範囲、成果物、費用、責任を明確にします。"
+      }
+    },
+    "process": {
+      "1": {
+        "title": "初回商談",
+        "copy": "製品、用途、日本市場への期待を確認。"
+      },
+      "2": {
+        "title": "MNDA",
+        "copy": "相互秘密保持契約を締結し、必要資料を共有。"
+      },
+      "3": {
+        "title": "MSA",
+        "copy": "基本契約で販売協力・取扱権と責任を整理。"
+      },
+      "4": {
+        "title": "SOW",
+        "copy": "対象製品、成果物、日程、料金を具体化。"
+      },
+      "5": {
+        "title": "初期入金・制作",
+        "copy": "初期入金後、資料受領と日本語コンテンツ制作。"
+      },
+      "6": {
+        "title": "確認・掲載開始",
+        "copy": "メーカー確認を経て掲載・一次対応を開始。"
+      }
+    },
+    "cta": {
+      "main": {
+        "eyebrow": "LET’S TALK",
+        "title": "技術を届ける、\n次の一歩を。",
+        "copy": "海外メーカーの日本展開、日本企業の設備・材料調達。それぞれの目的からご相談ください。",
+        "oemLabel": "海外OEM：提携相談",
+        "buyerLabel": "日本企業：調達相談"
+      }
+    }
+  },
+  "technologies": {
+    "hero": {
+      "main": {
+        "eyebrow": "TECHNOLOGY AREAS",
+        "title": "ものづくりの選択肢を、\n工程と材料から広げる。",
+        "copy": "汎用装置、高度・希少な製法、継続消費される材料を重点領域とし、検査・自動化・データ活用を組み合わせて検討します。",
+        "primaryLabel": "製品・用途を相談する",
+        "primaryHref": "/contact?topic=buyer",
+        "secondaryLabel": "海外メーカー向け",
+        "secondaryHref": "/global-vendors"
+      }
+    }
+  },
+  "strategy": {
+    "hero": {
+      "main": {
+        "eyebrow": "LONG-TERM DIRECTION",
+        "title": "技術を販売する経験を、\n自ら作る力へ。",
+        "copy": "海外メーカーの日本展開を支えるVADを基盤に、製造技術の知識、導入ノウハウ、協業関係を積み上げる。A-one roadの長期構想です。",
+        "primaryLabel": "技術提携を相談する",
+        "primaryHref": "/contact?topic=partnership",
+        "secondaryLabel": "会社情報を見る",
+        "secondaryHref": "/about-us"
+      }
+    },
+    "stagesHeader": {
+      "main": {
+        "eyebrow": "OUR VISION",
+        "title": "取引・知識・実装を、\n次の製造能力につなぐ。",
+        "copy": "以下は目指す発展段階です。実行する活動と提供できるサービスは、契約・案件ごとに明確にします。"
+      }
+    },
+    "stages": {
+      "1": {
+        "title": "VAD",
+        "copy": "製品の日本展開、国内窓口、販売を通じて商業基盤をつくる。"
+      },
+      "2": {
+        "title": "Technical Knowledge",
+        "copy": "装置・製造技術の知識、適用条件、導入・実装ノウハウを蓄積する。"
+      },
+      "3": {
+        "title": "Factory / Contract Development",
+        "copy": "将来の自社利用、試作、工程開発、受託開発へつなげる。"
+      },
+      "4": {
+        "title": "Own Products",
+        "copy": "蓄積した製造能力を、自社の製品開発に還元する。"
       }
     }
   }

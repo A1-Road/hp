@@ -1,44 +1,43 @@
-# エーワンロード株式会社 (A-one road co.,ltd)
+# A-one road / エーワンロード株式会社
 
-> 世の中の隠された価値の語り部となる。
-> エーワンロードは、世界の先端プロダクト（AI・SaaS）を日本企業の課題に合わせて選定・導入するグローバルGTMパートナー事業と、日本の車両を発信・調達・輸出するモビリティ関連事業を行う会社です。
+> Global Manufacturing Technology. Delivered to Japan.
+> A Japan-based Value-Added Distributor for manufacturing equipment, materials and technology.
 
-## Site Information
-- Title: エーワンロード株式会社 | グローバルGTMパートナー & モビリティ
-- Description: 世界の先端プロダクト（AI・SaaS）を日本企業の課題に合わせて選定・導入するグローバルGTMパートナー事業と、日本の車両を発信・調達・輸出するモビリティ関連事業。
-- Keywords: グローバルGTMパートナー, 海外SaaS 日本導入, 海外AIプロダクト 日本市場参入, テクノロジー導入支援, ローカライズ, PoC, 車両調達, 自動車PR・イベント運営, モビリティ, エーワンロード, A-one road
-- Language: ja-JP (English available)
-- Website: https://a-oneroad.com
+## Current business
+A-one road supports product localization, Japanese product listings and visibility, first-line inquiry handling and distribution under agreed scope and rights. Active sales, technical evaluation, PoCs, installation and integration are individually scoped in an SOW.
 
-## Businesses
-1. グローバルGTMパートナー事業 (/global-vendors)
-   - 世界の先端プロダクト（AI・SaaS）を、日本企業の課題に合わせて選定・導入支援
-   - 海外テクノロジー企業の日本市場参入をGTMパートナーとして支援
-2. モビリティ関連事業 (/service/automotive)
-   - 自動車関連のPR・マーケティング・イベント運営
-   - 車両調達
+## Strategic technology areas
+- General Purpose: versatile production equipment, including CNC machining centers and NC lathes.
+- Scarce Advanced: LFAM, WAAM, composites and advanced manufacturing processes.
+- Feedstock & Materials: metal powders, wire, polymers and manufacturing inputs.
+- Complementary industrial technologies, such as inspection, automation and industrial software, may also participate in the VAD model.
+These are selection priorities and examples. Specific product availability and distribution rights are confirmed individually.
 
-## Content Structure
-- トップページ (/)
-- サービス（2事業ハブ） (/service)
-  - グローバルGTMパートナー事業 (/global-vendors)
-  - モビリティ関連事業 (/service/automotive)
-- 会社概要 (/about-us)
-- メディア情報 (/media)
-- メディアとイベント (/media-and-events)
-- 事例紹介 (/case)
-- お問い合わせ (/contact)
-- プライバシーポリシー (/privacy-policy)
+## Pages
+- [Home](https://a-oneroad.com/)
+- [English home](https://a-oneroad.com/en)
+- [For global OEMs](https://a-oneroad.com/en/global-vendors)
+- [For Japanese buyers](https://a-oneroad.com/service/manufacturing)
+- [Technology areas](https://a-oneroad.com/technologies)
+- [Long-term strategy](https://a-oneroad.com/strategy)
+- [Company and founder](https://a-oneroad.com/about-us)
+- [Contact](https://a-oneroad.com/contact)
+- [Privacy policy in Japanese](https://a-oneroad.com/privacy-policy)
 
-## Contact Information
-- Email: admin@a1-road.com
-- Website: https://a-oneroad.com
-- Location: 東京都
+## Engagement
+Initial discussion → MNDA → MSA → SOW → initial payment and content preparation → OEM approval and launch. Fees and duration are provided through a proposal.
+
+## Company
+- Legal entity: エーワンロード株式会社
+- Brand: A-one road
+- Established: March 2021
+- Founder and representative director: Kazuma Tamura
+- Base: Yokohama, Japan
+- Contact: admin@a1-road.com
+- Languages: Japanese and English
+- Mission: すべての正当な価値を取り戻す。
+- Vision: Unearth All Hidden Values.
+- Slogan: Make Matter Matter.
 
 ## Sitemap
-- https://a-oneroad.com/sitemap.xml
-
-## Notes for AI Crawlers
-- AIクローラーによるクロール・引用を歓迎します（GPTBot / ClaudeBot / PerplexityBot / Google-Extended 等 Allow）
-- コンテンツは日本語・英語で提供
-- 構造化データ（JSON-LD: Organization）を実装
+https://a-oneroad.com/sitemap.xml

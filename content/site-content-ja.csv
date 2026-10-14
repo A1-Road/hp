@@ -1,15 +1,17 @@
 page,section,item,field,value
-global,navigation,1,label,TOP
-global,navigation,1,href,/
-global,navigation,2,label,ABOUT
-global,navigation,2,href,/about-us
-global,navigation,3,label,SERVICE
-global,navigation,3,href,/service
-global,navigation,5,label,CONTACT
+global,navigation,1,label,OEMs
+global,navigation,1,href,/global-vendors
+global,navigation,2,label,調達・導入
+global,navigation,2,href,/service/manufacturing
+global,navigation,3,label,技術領域
+global,navigation,3,href,/technologies
+global,navigation,4,label,会社情報
+global,navigation,4,href,/about-us
+global,navigation,5,label,お問い合わせ
 global,navigation,5,href,/contact
-global,footer,main,tagline,海外の優れた技術を、日本の現場へ。隠された価値を、正当に評価される市場へ。
+global,footer,main,tagline,世界の製造技術を、日本の「作れる力」へ。海外メーカーの日本展開と、日本企業の技術調達をつなぎます。
 global,footer,main,privacyLabel,プライバシーポリシー
-global,footer,main,copyright,© 2026 A-One Road
+global,footer,main,copyright,© 2026 A-one road
 global,contactInfo,1,label,Email
 global,contactInfo,1,value,admin@a1-road.com
 global,contactInfo,2,label,Base
@@ -20,61 +22,30 @@ global,socials,2,label,LinkedIn
 global,socials,2,href,https://linkedin.com/company/a1road
 global,socials,3,label,GitHub
 global,socials,3,href,https://github.com/A1-Road
-top,hero,main,eyebrow,MISSION
-top,hero,main,title,すべての正当な価値を取り戻す。
-top,hero,main,titleSub,Make Matter Matter.
-top,hero,main,visionLabel,VISION
-top,hero,main,visionEn,Unearth All Hidden Value.
-top,hero,main,visionJa,あらゆる隠された価値を発掘し、世に伝える語り部となる。
-top,hero,main,image,/hero-mvv.png
-top,hero,main,primaryLabel,事業を見る
-top,hero,main,primaryHref,/service
-top,hero,main,secondaryLabel,会社概要を見る
-top,hero,main,secondaryHref,/about-us
-top,hero,main,scroll,SCROLL
-top,valueHeader,main,eyebrow,VALUE
-top,valueHeader,main,title,5つのクレド
-top,value,1,number,01
-top,value,1,title,Board Spaceship Earth.
-top,value,1,copy,地球市民たれ。
-top,value,2,number,02
-top,value,2,title,Dive into the customer's shoes.
-top,value,2,copy,ユーザーに肩まで浸かれ。
-top,value,3,number,03
-top,value,3,title,Be Resourceful.
-top,value,3,copy,最小の資源で最大の成果を出せ。
-top,value,4,number,04
-top,value,4,title,Run the Fastest Lap.
-top,value,4,copy,誰よりも先に、最新技術を社会実装せよ。
-top,value,5,number,05
-top,value,5,title,Go far, Go together.
-top,value,5,copy,n人、n+1脚で遠くへ行け。
-top,whatWeDoHeader,main,eyebrow,WHAT WE DO
-top,whatWeDoHeader,main,title,海外の技術を仕入れ、日本の現場で動かす。
-top,whatWeDoHeader,main,copy,仕入れて終わりにしない。日本企業の課題に合わせて選定し、導入・実装・運用まで担います。
-top,whatWeDo,1,tag,製造業・工場向け
-top,whatWeDo,1,title,Factory
-top,whatWeDo,1,copy,人手依存・属人化・既存設備やソフトウェアの分断。海外の産業機械・ロボティクス・AI・製造SaaSを選定し、日本の製造現場に導入・実装・運用します。
-top,whatWeDo,1,image,/hub-manufacturing.jpg
-top,whatWeDo,1,href,/service/manufacturing
-top,whatWeDo,1,linkLabel,詳しく見る
-top,whatWeDo,2,tag,営業・バックオフィス向け
-top,whatWeDo,2,title,BPO
-top,whatWeDo,2,copy,営業・顧客開拓・採用・バックオフィス。海外のAI・SaaSを業務設計に組み込み、必要な人的オペレーションと組み合わせて、業務そのものを改善・実行します。
-top,whatWeDo,2,image,/workflow.png
-top,whatWeDo,2,href,/global-vendors
-top,whatWeDo,2,linkLabel,詳しく見る
-top,aboutPreview,main,eyebrow,ABOUT
-top,aboutPreview,main,title,理念と事業定義
-top,aboutPreview,main,copy,すべての人の正当な価値を取り戻す。世の中の隠された価値の語り部となる。私たちの理念と事業の全体像をご覧ください。
-top,aboutPreview,main,linkLabel,会社情報へ
-top,aboutPreview,main,linkHref,/about-us
-top,aboutPreview,main,image,/about-preview.png
-top,contactCta,main,eyebrow,CONTACT
-top,contactCta,main,title,まずはご相談ください。
-top,contactCta,main,copy,製造現場の非効率や、営業・バックオフィスの反復業務でお困りの方は、まずは30分お話をお聞かせください。海外の技術から御社に合う選択肢を見極め、導入までを一緒に進めます。
-top,contactCta,main,buttonLabel,お問い合わせへ
-top,contactCta,main,buttonHref,/contact
+top,hero,main,eyebrow,VALUE-ADDED DISTRIBUTOR
+top,hero,main,title,世界の製造技術を、\n日本の「作れる力」へ。
+top,hero,main,copy,海外の装置・材料・製造技術を、日本の現場へ。A-one roadは、製品の日本語化、販路整備、問い合わせ対応、販売を担うValue-Added Distributorです。
+top,hero,main,primaryLabel,For Global OEMs
+top,hero,main,primaryCopy,日本市場で製品を販売したいメーカー
+top,hero,main,primaryHref,/en/global-vendors
+top,hero,main,secondaryLabel,For Japanese Buyers
+top,hero,main,secondaryCopy,海外の製造技術を調達したい企業
+top,hero,main,secondaryHref,/service/manufacturing
+top,hero,main,image,/hub-manufacturing.jpg
+top,hero,main,imageAlt,製造装置を表現した既存のイメージビジュアル
+top,why,main,eyebrow,WHY JAPAN
+top,why,main,title,少量多品種のものづくりに、\n世界の技術という選択肢を。
+top,why,main,copy,新しい設備、加工方法、材料を取り入れるには、仕様の理解、国内窓口、輸入・導入の調整が必要です。海外メーカーと日本企業の間に立ち、技術を検討・購入できる状態へ整えます。
+top,vision,main,eyebrow,OUR VISION
+top,vision,main,title,販売から、技術を蓄積する。
+top,vision,main,copy,VADの取引を起点に、装置・製造技術の知識と導入ノウハウを蓄積。将来は、自社での技術活用、Factory・受託開発、自社製品へとつなげる構想です。
+top,vision,main,linkLabel,長期戦略を見る
+top,vision,main,linkHref,/strategy
+top,mission,main,eyebrow,MISSION / VISION
+top,mission,main,title,すべての正当な価値を取り戻す。
+top,mission,main,copy,Unearth All Hidden Values.
+top,mission,main,linkLabel,理念と創業背景
+top,mission,main,linkHref,/about-us
 about,hero,main,eyebrow,OUR STORY
 about,chapter,1,eyebrow,2021
 about,chapter,1,title,すべては、ひとつの怒りから始まった。
@@ -115,16 +86,16 @@ about,chapter,4,imgLgAlt,FA1RNESS 2024の会場全景と登壇者・参加者の
 about,chapter,4,imgLgCaption,FA1RNESS 2024 — 全員のサムズアップ
 about,chapter,5,eyebrow,2025 — MANUFACTURING
 about,chapter,5,title,デジタルで探していたものを、町工場で見つけた。
-about,chapter,5,copy,大田区の町工場には「仲間回し」があった。DAOで追い続けた分散協働が、日本のものづくりでは何十年も前から現実に動いていた。A-one Roadが進む道が、ここで一本につながった。
+about,chapter,5,copy,大田区の町工場には「仲間回し」があった。DAOで追い続けた分散協働が、日本のものづくりでは何十年も前から現実に動いていた。A-one roadが進む道が、ここで一本につながった。
 about,chapter,5,imgLg,/story/2025-otaku-factory.png
 about,chapter,5,imgLgAlt,大田区の町工場で職人の作業を見学する様子
 about,chapter,5,imgLgCaption,大田区 — 仲間回しの現場
 about,chapter,5,imgSm,/story/2025-otaku.jpg
 about,chapter,5,imgSmAlt,ホワイトボードに書き込みが並ぶ作業場
 about,chapter,5,imgSmCaption,作業場のホワイトボード
-about,today,main,eyebrow,TODAY — FACTORY & BPO
-about,today,main,title,あらゆる隠された価値を、世の中へ。
-about,today,main,copy,工場に蓄積された技術。世界にはあるが、日本には届いていないサービス。企業の中で埋もれている知識や時間。国境、言語、業界、組織。その間にある壁を取り払い、価値が必要とされる場所まで届ける。
+about,today,main,eyebrow,TODAY — VALUE-ADDED DISTRIBUTOR
+about,today,main,title,世界の製造技術を、日本へ。
+about,today,main,copy,海外の装置・材料・製造技術と、日本のものづくりをつなぐ。製品を理解し、問い合わせ、調達できる状態へ整え、その過程で製造知識と導入ノウハウを積み上げる。A-one roadはVADを基盤に、この道を進みます。
 about,today,main,vision,あらゆる隠された価値を発掘し、世に伝える語り部となる。
 about,today,main,buttonBusinessLabel,事業を見る
 about,today,main,buttonBusinessHref,/service
@@ -156,16 +127,18 @@ about,credo,5,number,05
 about,credo,5,title,Go far, Go together.
 about,credo,5,copy,n人、n+1脚で遠くへ行け。
 about,differentiatorHeader,main,eyebrow,DIFFERENCE
-about,differentiatorHeader,main,title,二つの事業
-about,differentiator,1,title,Factory
-about,differentiator,1,copy,海外の産業機械・ロボティクス・AI・製造SaaSを選定し、日本の製造現場に導入・実装・運用する。
-about,differentiator,2,title,BPO
-about,differentiator,2,copy,営業・顧客開拓・採用・バックオフィス。海外のAI・SaaSを業務設計に組み込み、業務そのものを改善・実行する。
+about,differentiatorHeader,main,title,製造技術を、日本へ届ける。
+about,differentiator,1,title,Value-Added Distributor
+about,differentiator,1,copy,海外OEMの製品情報、日本語化、販路整備、一次対応、販売を合意した範囲で担う。
+about,differentiator,2,title,技術知識の蓄積
+about,differentiator,2,copy,汎用装置、高度・希少な製法、継続消費材料の3領域を重点に、装置・製造技術と実装の知識を蓄積する。
+about,differentiator,3,title,案件ごとの実行体制
+about,differentiator,3,copy,物流、技術評価、据付・実装に必要な役割と責任を、案件ごとのSOWで定める。
 about,founderHeader,main,eyebrow,FOUNDER
 about,founderHeader,main,title,代表者
 about,founder,main,name,田村 一馬
 about,founder,main,role,代表取締役
-about,founder,main,bio,A-one Road創業者。Bankless Japan立ち上げ、Pacific Metaでのグローバル事業開発、CADDiでのプロダクトマーケティングなどを経験。海外企業の市場参入・事業開発を専門とする。
+about,founder,main,bio,A-one road創業者。Bankless Japan立ち上げ、Pacific Metaでのグローバル事業開発、CADDiでのプロダクトマーケティングなどを経験。海外企業の市場参入・事業開発を専門とする。
 about,founder,main,image,/founder-tamura.png
 about,companyInfoHeader,main,eyebrow,COMPANY
 about,companyInfoHeader,main,title,会社情報
@@ -185,8 +158,8 @@ about,companyInfo,6,value,Email: admin@a1-road.com
 about,companyInfo,7,label,所在地
 about,companyInfo,7,value,神奈川県横浜市西区浅間町1丁目4-3ウィザードビル402
 contact,hero,main,eyebrow,CONTACT
-contact,hero,main,title,お問い合わせ
-contact,hero,main,copy,admin@a1-road.com
+contact,hero,main,title,目的から、ご相談ください。
+contact,hero,main,copy,海外メーカーの日本展開、日本企業の設備・材料調達、戦略的な技術提携を受け付けています。
 contact,methodsHeader,main,eyebrow,METHODS
 contact,methodsHeader,main,title,三つの連絡方法。
 contact,methods,1,title,フォーム
@@ -195,9 +168,9 @@ contact,methods,2,title,メール
 contact,methods,2,line,admin@a1-road.com
 contact,methods,3,title,LinkedIn
 contact,methods,3,line,外部チャネル
-contact,formHeader,main,eyebrow,FORM
-contact,formHeader,main,title,事業のご相談・お問い合わせはこちら
-contact,formHeader,main,copy,
+contact,formHeader,main,eyebrow,INQUIRY
+contact,formHeader,main,title,お問い合わせフォーム
+contact,formHeader,main,copy,会社名、対象製品・用途、ご相談内容をご記入ください。秘密情報の共有はMNDA締結後に進めます。
 contact,form,main,typeLabel,Inquiry Type
 contact,form,main,nameLabel,Name
 contact,form,main,emailLabel,Email
@@ -218,132 +191,160 @@ contact,info,3,label,拠点
 contact,info,3,value,Yokohama Japan
 contact,info,4,label,SNS
 contact,info,4,value,X / LinkedIn / GitHub
-contact,reassurance,main,text,
-globalVendors,hero,main,eyebrow,業務効率化・ROI診断
-globalVendors,hero,main,title,問い合わせ・見積対応の遅れが、専門業務を圧迫している。
-globalVendors,hero,main,copy,多品種少量の現場ほど、本当のボトルネックは新規のリード獲得ではなく、流入した問い合わせ・見積依頼の一次対応にあります。海外SaaS・AIと既存の運用を組み合わせ、現場ヒアリングからROI試算・予算のリプレイス先特定まで診断します。
-globalVendors,hero,main,primaryLabel,お問い合わせ
-globalVendors,hero,main,primaryHref,/contact
-globalVendors,intro,main,eyebrow,HOW WE HELP
-globalVendors,intro,main,title,まずは、現場ヒアリングから。
-globalVendors,intro,main,copy,最初にお届けするのは、「投資回収の最短経路」を判断するための現場データと、その分析です。特定メーカーに偏らない中立の立場で診断するので、結論が「いまは何も導入しないほうがよい」になることもあります。
-globalVendors,servicesHeader,main,eyebrow,HOW WE DIAGNOSE
-globalVendors,servicesHeader,main,title,現場ヒアリングから、予算の組み替えまで。
-globalVendors,servicesHeader,main,copy,感覚で語られている負担を、数字に置き換えます。
-globalVendors,services,1,title,現場ヒアリング
-globalVendors,services,1,copy,問い合わせ対応や追客作業に、誰が・どれだけの時間をかけているのかを部署・担当者単位で伺います。
-globalVendors,services,2,title,人月分析
-globalVendors,services,2,copy,業務フローを人月・原価・損失額に分解します。感覚で語られている負担を、数字に置き換えます。
-globalVendors,services,4,title,ROI試算
-globalVendors,services,4,copy,削減人月・年間効果・回収期間を、保守的・標準・楽観の3シナリオで算定します。
-globalVendors,services,5,title,予算のリプレイス先特定
-globalVendors,services,5,copy,残業代・派遣費・外注費など、置き換え原資になりうる既存予算を特定します。新規予算を前提にしません。
-globalVendors,services,7,title,プロダクト選定・導入伴走
-globalVendors,services,7,copy,診断結果をもとに、世界中の候補から課題に最も合う製品を選び、導入まで伴走します。
-globalVendors,solutionsHeader,main,eyebrow,OUR SOLUTIONS
-globalVendors,solutionsHeader,main,title,提供ソリューション
-globalVendors,solutionsHeader,main,note,既存のCRM・Excelはそのまま。軽量な基盤と自動化の接続層を薄く被せるBPR型のアプローチです。
-globalVendors,solutions,1,title,セールスストン（攻め─新規開拓）
-globalVendors,solutions,1,copy,リード探索からアポ獲得までを一元化するアウトバウンド営業支援AI。メール・フォーム営業で「勝ちパターン」を毎月発見・蓄積します。
-globalVendors,solutions,2,title,サポートストン（守り─顧客対応）
-globalVendors,solutions,2,copy,お客様の一次対応を代行するカスタマーサポート支援AI。ベテランの知見をデータベース化して自動応答します。
-globalVendors,solutions,3,title,クリエイティブ検証（集客─広告）
-globalVendors,solutions,3,copy,海外AI生成ツールで広告制作本数を大幅増。少額配信でCPAを実測し、当たり施策だけに予算を集中させます。
-globalVendors,trackRecordHeader,main,eyebrow,TRACK RECORD
-globalVendors,trackRecordHeader,main,title,実測データ
-globalVendors,trackRecordHeader,main,copy,送信数という実測値で、実行力をお示しします。
-globalVendors,trackRecordHeader,main,note,
-globalVendors,trackRecord,1,label,案件（製造業PoC）
-globalVendors,trackRecord,1,value,4
-globalVendors,trackRecord,2,label,累計送信数
-globalVendors,trackRecord,2,value,4219件
-globalVendors,pilotHeader,main,eyebrow,ENGAGEMENT
-globalVendors,pilotHeader,main,title,まず、小さく試す。
-globalVendors,pilotHeader,main,copy,課題に合う製品を、期間を区切って検証します。手応えがあれば、本格導入へ進みます。
-globalVendors,pilotFacts,2,label,期間の目安
-globalVendors,pilotFacts,2,value,30〜45日
-globalVendors,pilotFacts,3,label,進め方
-globalVendors,pilotFacts,3,value,開始前に、活動内容と成果物を合意します。
-globalVendors,deliverablesHeader,main,eyebrow,DELIVERABLES
-globalVendors,deliverablesHeader,main,title,パイロットの成果物
-globalVendors,deliverables,1,number,01
-globalVendors,deliverables,1,title,課題と要件の整理
-globalVendors,deliverables,1,copy,解くべき課題と、満たすべき条件を明文化します。
-globalVendors,deliverables,2,number,02
-globalVendors,deliverables,2,title,最適プロダクトの提案
-globalVendors,deliverables,2,copy,課題に合う製品と、その組み合わせを具体的に示します。
-globalVendors,deliverables,3,number,03
-globalVendors,deliverables,3,title,検証計画（PoC）
-globalVendors,deliverables,3,copy,成果を確かめるための、次の実証ステップを設計します。
-globalVendors,termsHeader,main,eyebrow,HOW WE WORK
-globalVendors,termsHeader,main,title,進め方とお約束
-globalVendors,terms,1,title,コミットの範囲
-globalVendors,terms,1,copy,合意した活動と成果物に責任を持ちます。
-globalVendors,terms,2,title,ご用意いただくもの
-globalVendors,terms,2,copy,現状の課題や環境の共有と、検証へのご協力をお願いします。
-globalVendors,terms,3,title,当社が担うこと
-globalVendors,terms,3,copy,製品の選定・構成・導入・定着までを一貫して担います。
-globalVendors,terms,4,title,データの取り扱い
-globalVendors,terms,4,copy,お客様のデータは御社環境内で処理し、外部のAI学習には使用しません。
-globalVendors,companyHeader,main,eyebrow,COMPANY
-globalVendors,companyHeader,main,title,運営会社
-globalVendors,company,1,label,会社名
-globalVendors,company,1,value,エーワンロード株式会社（A-one road co.,ltd）
-globalVendors,company,2,label,設立
-globalVendors,company,2,value,2021年3月
-globalVendors,company,3,label,拠点
-globalVendors,company,3,value,神奈川県横浜市
-globalVendors,company,4,label,代表取締役
-globalVendors,company,4,value,田村一馬
-globalVendors,company,5,label,体制
-globalVendors,company,5,value,日英バイリンガル運営
-globalVendors,contactCta,main,eyebrow,CONTACT
-globalVendors,contactCta,main,title,課題をお聞かせください。
-globalVendors,contactCta,main,copy,解きたい課題から、最適な選択肢を一緒に見極めます。
-globalVendors,contactCta,main,buttonLabel,お問い合わせへ
-globalVendors,contactCta,main,buttonHref,/contact
-globalVendors,intro,main,lead,最初にお届けするのは、「投資回収の最短経路」を判断するための現場データと、その分析です。特定メーカーに偏らない中立の立場で診断するので、結論が「いまは何も導入しないほうがよい」になることもあります。
-serviceHub,hero,main,eyebrow,OUR BUSINESS
-serviceHub,hero,main,message,海外の優れた機械・AI・SaaSを、日本企業の課題に合わせて選定し、導入・実装・運用まで担います。
-serviceHub,left,main,tag,Factory
-serviceHub,left,main,label,製造業・工場の現場を、海外技術で強くする。
-serviceHub,left,main,sub,海外の産業機械・ロボティクス・AI・製造SaaSを選定し、日本の製造現場に導入・実装・運用します。
-serviceHub,left,main,href,/service/manufacturing
-serviceHub,left,main,image,/hub-manufacturing.jpg
-serviceHub,left,main,cta,詳しく見る
-serviceHub,third,main,tag,BPO
-serviceHub,third,main,label,営業・バックオフィスの反復業務を、動かす。
-serviceHub,third,main,sub,海外のAI・SaaSを業務設計に組み込み、人的オペレーションと組み合わせて、業務そのものを改善・実行します。
-serviceHub,third,main,href,/global-vendors
-serviceHub,third,main,image,/hub-gtm.png
-serviceHub,third,main,cta,詳しく見る
-manufacturing,hero,main,eyebrow,FACTORY
-manufacturing,hero,main,title,工場の課題に、海外の技術で応える。
-manufacturing,hero,main,copy,人手依存・属人化・ダウンタイム・生産ラインの分断。見積もり対応の遅れからDX、設備導入まで、海外の実績ある機械・AI・SaaSを選定し、日本の製造現場に導入・実装・運用します。
-manufacturing,technology,main,eyebrow,HOW WE WORK
-manufacturing,technology,main,title,特定の技術に、絞りません。
-manufacturing,technology,main,copy,積層造形、DXツール、生産管理システム、検査自動化など、御社の課題に合う技術を世界中から探します。特定メーカー・特定技術に偏らない中立的な立場で選定します。
-manufacturing,applicationsHeader,main,eyebrow,APPLICATIONS
-manufacturing,applicationsHeader,main,title,対応する課題の例
-manufacturing,applicationsHeader,main,note,実際の課題は御社ごとに異なります。まずは現状をお聞かせください。
-manufacturing,applications,1,title,見積もり・受発注のDX
-manufacturing,applications,1,copy,属人化した見積もり対応や受発注業務を、海外SaaS・AIで効率化します。
-manufacturing,applications,2,title,ダウンタイム改善・生産ライン修正
-manufacturing,applications,2,copy,稼働率を落としている工程・設備を特定し、改善に必要な技術・機材を導入します。
-manufacturing,applications,3,title,大型積層造形（LFAM/WAAM）
-manufacturing,applications,3,copy,大型金型・治具を保管し続ける代わりに、必要な時に造形するという選択肢も提供します。
-manufacturing,applicationsFooter,main,copy,共通点は、現場の負担を可視化し、固定費削減と機会損失の解消につなげることです。
-manufacturing,realityCheck,main,eyebrow,REALITY CHECK
-manufacturing,realityCheck,main,title,判断材料を、先にすべてお渡しします
-manufacturing,realityCheck,main,copy,御社の工程・設備・予算感をヒアリングした上で、投資対効果と導入までのステップを先に共有します。効果が見込めない場合は、その旨を率直にお伝えします。
-manufacturing,screening,main,eyebrow,SCREENING
-manufacturing,screening,main,title,御社の工程が「向いているか」を先に判定します
-manufacturing,screening,main,copy,対象工程の内容／ロット数／現行コストと納期の条件から、海外技術の導入で効果が出る工程かを判定します。向いていなければ「向いていない」とお伝えするところまでが当社の仕事です。
-manufacturing,position,main,eyebrow,POSITION
-manufacturing,position,main,title,御社側の水先案内人として
-manufacturing,position,main,copy,当社は非独占・案件先行の立場で、海外メーカーとの橋渡しを行います。御社の要件を整理したプロジェクトブリーフを作成し、メーカーの担当窓口へ直接接続します。国内の既存加工網との役割分担を含めた座組で設計します。
-manufacturing,contactCta,main,eyebrow,CONTACT
-manufacturing,contactCta,main,title,まずは30分、御社の製造課題をお聞かせください
-manufacturing,contactCta,main,copy,30分ヒアリング（無料）で対象工程を伺い、可能性があれば有償の現場診断（個別お見積り）で置換候補工程の特定・概算効果・メーカー打診用ブリーフまで納品します。
-manufacturing,contactCta,main,buttonLabel,お問い合わせへ
-manufacturing,contactCta,main,buttonHref,/contact?topic=factory
+contact,reassurance,main,text,いただいた情報を確認し、担当窓口から返信します。フォームが表示されない場合は、admin@a1-road.comへご連絡ください。
+globalVendors,hero,main,eyebrow,FOR GLOBAL OEMs
+globalVendors,hero,main,title,あなたの製造技術を、\n日本市場へ。
+globalVendors,hero,main,copy,日本のお客様が製品を理解し、問い合わせ、購入できる状態をつくる。A-one roadがValue-Added Distributorとして、ローカライズから販売窓口までを担います。
+globalVendors,hero,main,primaryLabel,日本展開を相談する
+globalVendors,hero,main,primaryHref,/contact?topic=oem
+globalVendors,hero,main,secondaryLabel,サービス範囲を見る
+globalVendors,hero,main,secondaryHref,#scope
+globalVendors,scopeHeader,main,eyebrow,VAD SERVICE SCOPE
+globalVendors,scopeHeader,main,title,日本向けの販売基盤を、\nひとつずつ整える。
+globalVendors,scopeHeader,main,copy,標準VADの提供範囲と、追加で設計する活動を分けて見積・契約します。
+globalVendors,scope,1,tag,01 / LOCALIZATION
+globalVendors,scope,1,title,日本語の製品情報
+globalVendors,scope,1,copy,メーカー資料に基づく翻訳・編集。仕様、用途、必要資料を日本向けに整理。
+globalVendors,scope,2,tag,02 / PRODUCT VISIBILITY
+globalVendors,scope,2,title,掲載・販路整備
+globalVendors,scope,2,copy,日本の既存製品検索・掲載媒体への展開を設計し、合意したコンテンツを制作・管理。
+globalVendors,scope,3,tag,03 / INQUIRY HANDLING
+globalVendors,scope,3,title,一次対応・商談連携
+globalVendors,scope,3,copy,日本語の問い合わせを受け付け、要件を整理。見積や技術確認をメーカーへ接続。
+globalVendors,scope,4,tag,04 / DISTRIBUTION
+globalVendors,scope,4,title,見積・販売調整
+globalVendors,scope,4,copy,合意した販売権と商流に基づき、見積、注文、供給条件を調整。
+globalVendors,engagementHeader,main,eyebrow,ENGAGEMENT MODELS
+globalVendors,engagementHeader,main,title,活動と責任を、\n契約に合わせて設計。
+globalVendors,engagement,1,title,標準VAD
+globalVendors,engagement,1,copy,製品情報の整備、掲載、維持、一次対応をSOWで定義。料金と契約期間は個別提案でお伝えします。
+globalVendors,engagement,2,title,個別有償SOW
+globalVendors,engagement,2,copy,積極営業、技術評価、PoC、据付、実装などは、成果物と担当を定めて追加設計。
+globalVendors,engagement,3,title,戦略的技術提携
+globalVendors,engagement,3,copy,重点領域では自社利用や技術蓄積を含む長期協業を検討。目標と役割を個別に合意。
+globalVendors,faqHeader,main,eyebrow,OEM FAQ
+globalVendors,faqHeader,main,title,提携前に確認したいこと。
+globalVendors,faq,1,question,独占契約が必要ですか？
+globalVendors,faq,1,answer,標準の協力モデルは非独占を想定しています。販売地域、取扱権、既存商流との役割分担をMSA・SOWで明確にします。
+globalVendors,faq,2,question,どの製品が対象ですか？
+globalVendors,faq,2,answer,装置・材料と、製造を支える技術が対象です。重点3領域と周辺技術のいずれも、用途・供給体制・日本での適合性を確認します。
+globalVendors,faq,3,question,費用と開始時期は？
+globalVendors,faq,3,answer,製品点数、資料、掲載先、活動範囲に応じて提案します。契約、初期入金、資料受領、メーカー確認を経て掲載を開始します。
+globalVendors,faq,4,question,据付・保証・技術支援は誰が担いますか？
+globalVendors,faq,4,answer,メーカー、A-one road、必要な物流・技術担当の責任分担を案件ごとに定めます。追加技術業務は個別SOWで見積・合意します。
+globalVendors,faq,5,question,何を用意すればよいですか？
+globalVendors,faq,5,answer,製品仕様、用途、写真・カタログ、認証情報、供給条件、技術窓口をご用意ください。公開する情報はメーカー確認を経て扱います。
+manufacturing,hero,main,eyebrow,FOR JAPANESE BUYERS
+manufacturing,hero,main,title,作りたいものから、\n世界の技術を選ぶ。
+manufacturing,hero,main,copy,加工する材料、部品形状、数量、品質、導入環境を出発点に、海外の設備・材料・製造技術の調達を支援します。
+manufacturing,hero,main,primaryLabel,設備・材料の調達を相談
+manufacturing,hero,main,primaryHref,/contact?topic=buyer
+manufacturing,hero,main,secondaryLabel,対象技術を見る
+manufacturing,hero,main,secondaryHref,/technologies
+manufacturing,stepsHeader,main,eyebrow,PROCUREMENT PROCESS
+manufacturing,stepsHeader,main,title,要件整理から、\n見積・導入計画へ。
+manufacturing,steps,1,title,用途・要件の共有
+manufacturing,steps,1,copy,材料、寸法、精度、数量、予算、希望納期、既存設備を確認。
+manufacturing,steps,2,title,製品・技術の評価
+manufacturing,steps,2,copy,メーカーと仕様・適合性を確認。必要に応じてサンプルや技術検証を個別設計。
+manufacturing,steps,3,title,見積・条件の確認
+manufacturing,steps,3,copy,価格、納期、輸入、輸送、保証、据付・検収の条件を整理。
+manufacturing,steps,4,title,発注・供給の調整
+manufacturing,steps,4,copy,合意した条件に基づき発注。物流・技術業務を必要な担当へ接続。
+manufacturing,faqHeader,main,eyebrow,BUYER FAQ
+manufacturing,faqHeader,main,title,調達時の確認事項。
+manufacturing,faq,1,question,まだ機種が決まっていなくても相談できますか？
+manufacturing,faq,1,answer,可能です。作りたい部品、材料、現状の工程、求める品質からお聞かせください。候補製品の供給可否と適合性を確認します。
+manufacturing,faq,2,question,カタログにない製品も相談できますか？
+manufacturing,faq,2,answer,対象分野は技術選定の目安です。具体的なメーカー・製品について、取扱権、供給条件、国内対応を個別に確認します。
+manufacturing,faq,3,question,据付や保守も含まれますか？
+manufacturing,faq,3,answer,必要な作業と責任主体を見積・契約で明示します。技術評価、据付、工程実装、保守は内容に応じて個別に設計します。
+vad,ribbonHeader,main,eyebrow,HOW WE WORK
+vad,ribbonHeader,main,title,海外メーカーと日本企業を、\nひとつの窓口でつなぐ。
+vad,ribbonHeader,main,copy,A-one roadが日本展開と製品調達の窓口を担い、案件に必要な物流・技術業務を組み合わせます。
+vad,actors,1,title,海外OEM
+vad,actors,1,role,装置・材料・技術の供給
+vad,actors,1,copy,仕様、供給条件、技術資料を共有。製品品質・保証の条件を定めます。
+vad,actors,2,title,A-one road
+vad,actors,2,role,Value-Added Distributor
+vad,actors,2,copy,日本語化、掲載・販路整備、一次対応、見積・販売の調整。合意した取扱権と契約範囲に基づき進めます。
+vad,actors,3,title,日本の製造企業
+vad,actors,3,role,製品の評価・調達・活用
+vad,actors,3,copy,用途・要件を共有し、製品を評価。仕様、納期、価格、検収条件を確認して発注します。
+vad,flows,main,forward,製品情報・見積・販売 →
+vad,flows,main,reverse,← 要件・問い合わせ・発注
+vad,flows,main,note,装置代金は日本の購入顧客からA-one roadへ、製品代金はA-one roadから海外メーカーへ。支払時期、輸入者、輸送・検収・保証の責任は案件ごとの契約で定めます。
+vad,network,1,title,3PL / Logistics
+vad,network,1,copy,国際輸送・通関・国内配送。案件に応じて物流事業者を選定・調整。
+vad,network,2,title,SIer / Application Engineer
+vad,network,2,copy,技術評価、据付、工程への適合、実装支援。必要な専門家・技術担当と個別SOWを設計。
+vad,portfolioHeader,main,eyebrow,STRATEGIC TECHNOLOGY PORTFOLIO
+vad,portfolioHeader,main,title,VADを基盤に、\n3つの製造能力を蓄積。
+vad,portfolioHeader,main,copy,幅広い装置を扱う力、高度で希少な加工の知識、継続的に使われる材料。販売・導入を通じて、ものづくりの選択肢を増やしていきます。
+vad,portfolio,1,number,01
+vad,portfolio,1,tag,BREADTH
+vad,portfolio,1,title,General Purpose
+vad,portfolio,1,subtitle,汎用製造能力
+vad,portfolio,1,copy,NC旋盤・CNCマシニングセンタなど。Al・Mg・Cuを含む材料の加工と、多様な部品を作る基盤。
+vad,portfolio,1,examples,技術例：切削・旋削・多軸加工
+vad,portfolio,2,number,02
+vad,portfolio,2,tag,SCARCITY
+vad,portfolio,2,title,Scarce Advanced
+vad,portfolio,2,subtitle,高度・希少な製造能力
+vad,portfolio,2,copy,LFAM・WAAM・CFRP・CNT・特殊合金など。大型部品や複雑形状、新しい材料・製法への選択肢。
+vad,portfolio,2,examples,技術例：大型積層造形・複合材加工
+vad,portfolio,3,number,03
+vad,portfolio,3,tag,RECURRENCE
+vad,portfolio,3,title,Feedstock & Materials
+vad,portfolio,3,subtitle,継続消費される製造材料
+vad,portfolio,3,copy,金属粉末・ワイヤ・樹脂・複合材原料など。設備の稼働と品質を支える材料と、その使用知識。
+vad,portfolio,3,examples,技術例：粉末・ワイヤ・樹脂原料
+vad,broader,main,eyebrow,BROADER GLOBAL TECHNOLOGY PARTNERS
+vad,broader,main,title,製造を支える周辺技術にも、\n日本展開の入口を。
+vad,broader,main,copy,画像検査、溶接自動化、産業ソフトウェアなど、重点3領域を支える技術にもVADの参加経路を用意します。製品、顧客、提供範囲の適合性を商談で確認します。
+vad,broader,main,note,掲載している技術分野は選定方針と対象例です。取扱製品・販売権・供給可否は個別に確認します。
+vad,processHeader,main,eyebrow,ENGAGEMENT PROCESS
+vad,processHeader,main,title,提供範囲をそろえて、\n日本展開を始める。
+vad,processHeader,main,copy,契約書類で取扱権、業務範囲、成果物、費用、責任を明確にします。
+vad,process,1,title,初回商談
+vad,process,1,copy,製品、用途、日本市場への期待を確認。
+vad,process,2,title,MNDA
+vad,process,2,copy,相互秘密保持契約を締結し、必要資料を共有。
+vad,process,3,title,MSA
+vad,process,3,copy,基本契約で販売協力・取扱権と責任を整理。
+vad,process,4,title,SOW
+vad,process,4,copy,対象製品、成果物、日程、料金を具体化。
+vad,process,5,title,初期入金・制作
+vad,process,5,copy,初期入金後、資料受領と日本語コンテンツ制作。
+vad,process,6,title,確認・掲載開始
+vad,process,6,copy,メーカー確認を経て掲載・一次対応を開始。
+vad,cta,main,eyebrow,LET’S TALK
+vad,cta,main,title,技術を届ける、\n次の一歩を。
+vad,cta,main,copy,海外メーカーの日本展開、日本企業の設備・材料調達。それぞれの目的からご相談ください。
+vad,cta,main,oemLabel,海外OEM：提携相談
+vad,cta,main,buyerLabel,日本企業：調達相談
+technologies,hero,main,eyebrow,TECHNOLOGY AREAS
+technologies,hero,main,title,ものづくりの選択肢を、\n工程と材料から広げる。
+technologies,hero,main,copy,汎用装置、高度・希少な製法、継続消費される材料を重点領域とし、検査・自動化・データ活用を組み合わせて検討します。
+technologies,hero,main,primaryLabel,製品・用途を相談する
+technologies,hero,main,primaryHref,/contact?topic=buyer
+technologies,hero,main,secondaryLabel,海外メーカー向け
+technologies,hero,main,secondaryHref,/global-vendors
+strategy,hero,main,eyebrow,LONG-TERM DIRECTION
+strategy,hero,main,title,技術を販売する経験を、\n自ら作る力へ。
+strategy,hero,main,copy,海外メーカーの日本展開を支えるVADを基盤に、製造技術の知識、導入ノウハウ、協業関係を積み上げる。A-one roadの長期構想です。
+strategy,hero,main,primaryLabel,技術提携を相談する
+strategy,hero,main,primaryHref,/contact?topic=partnership
+strategy,hero,main,secondaryLabel,会社情報を見る
+strategy,hero,main,secondaryHref,/about-us
+strategy,stagesHeader,main,eyebrow,OUR VISION
+strategy,stagesHeader,main,title,取引・知識・実装を、\n次の製造能力につなぐ。
+strategy,stagesHeader,main,copy,以下は目指す発展段階です。実行する活動と提供できるサービスは、契約・案件ごとに明確にします。
+strategy,stages,1,title,VAD
+strategy,stages,1,copy,製品の日本展開、国内窓口、販売を通じて商業基盤をつくる。
+strategy,stages,2,title,Technical Knowledge
+strategy,stages,2,copy,装置・製造技術の知識、適用条件、導入・実装ノウハウを蓄積する。
+strategy,stages,3,title,Factory / Contract Development
+strategy,stages,3,copy,将来の自社利用、試作、工程開発、受託開発へつなげる。
+strategy,stages,4,title,Own Products
+strategy,stages,4,copy,蓄積した製造能力を、自社の製品開発に還元する。

@@ -1,62 +1,8 @@
-/** @type {import('next-sitemap').IConfig} */
-module.exports = {
-  siteUrl: "https://a-oneroad.com",
-  generateRobotsTxt: true,
-  generateIndexSitemap: false,
-  changefreq: "daily",
-  priority: 0.7,
-  sitemapSize: 7000,
-  exclude: ["/server-sitemap.xml", "/admin/*", "/api/*", "/_next/*", "/static/*"],
-  robotsTxtOptions: {
-    policies: [
-      {
-        userAgent: "*",
-        allow: "/",
-        disallow: ["/admin/*", "/api/*", "/_next/*", "/static/*"],
-      },
-      // AIクローラー明示Allow（LLMO/GEO対応）
-      ...[
-        "GPTBot",
-        "ChatGPT-User",
-        "OAI-SearchBot",
-        "ClaudeBot",
-        "Claude-Web",
-        "anthropic-ai",
-        "PerplexityBot",
-        "Perplexity-User",
-        "Google-Extended",
-        "Applebot-Extended",
-        "cohere-ai",
-        "meta-externalagent",
-      ].map((userAgent) => ({
-        userAgent,
-        allow: "/",
-        disallow: ["/admin/*", "/api/*"],
-      })),
-    ],
-    additionalSitemaps: ["https://a-oneroad.com/server-sitemap.xml"],
-  },
-  transform: async (config, path) => {
-    return {
-      loc: path,
-      changefreq: config.changefreq,
-      priority: path === "/" ? 1.0 : config.priority,
-      lastmod: new Date().toISOString(), // ← 常に付与しても良い
-      alternateRefs: config.alternateRefs ?? [],
-    };
-  },
-  additionalPaths: async (config) => {
-    return [
-      { loc: "/" },
-      { loc: "/about-us" },
-      { loc: "/service" },
-      { loc: "/service/automotive" },
-      { loc: "/service/manufacturing" },
-      { loc: "/mold-storage" },
-      { loc: "/global-vendors" },
-      { loc: "/contact" },
-      // 必要に応じて追加
-      // /case, /media-and-events は301リダイレクト化(next.config.mjs)のためsitemapから除外
-    ];
-  },
+const pages=["/","/global-vendors","/service/manufacturing","/technologies","/strategy","/about-us","/contact","/service"];
+const localized=(path)=>[{href:`https://a-oneroad.com${path}`,hreflang:"ja"},{href:`https://a-oneroad.com/en${path==="/"?"":path}`,hreflang:"en"},{href:`https://a-oneroad.com${path}`,hreflang:"x-default"}];
+module.exports={siteUrl:"https://a-oneroad.com",generateRobotsTxt:true,generateIndexSitemap:false,changefreq:"monthly",priority:.7,
+ exclude:["/api/*","/admin/*","/bpo","/service/bpo","/service/automotive","/mold-storage"],
+ robotsTxtOptions:{policies:[{userAgent:"*",allow:"/",disallow:["/admin/","/api/"]}]},
+ transform:async(config,path)=>({loc:path,changefreq:config.changefreq,priority:path==="/"?1:.7,alternateRefs:pages.includes(path)?localized(path):[]}),
+ additionalPaths:async()=>pages.flatMap(path=>[{loc:path,alternateRefs:localized(path)},{loc:`/en${path==="/"?"":path}`,alternateRefs:localized(path)}])
 };

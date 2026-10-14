@@ -1,3 +1,4 @@
+import SiteAnalytics from "@/components/site-analytics";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -11,77 +12,14 @@ import { getSiteLocale } from "@/lib/locale";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
 };
 
 export const metadata: Metadata = {
-  title: "エーワンロード株式会社 | 海外の技術で、日本の現場を強くする",
-  description:
-    "海外の優れた機械・AI・SaaSを、日本企業の課題に合わせて選定し、導入・実装・運用まで担う。製造業向けのFactory事業と、営業・バックオフィス向けのBPO事業を展開する横浜のスタートアップです。",
-  keywords:
-    "製造業DX, 大型積層造形, WAAM, LFAM, 海外SaaS 日本導入, テクノロジー導入支援, BPO, AI SDR, 営業自動化, エーワンロード, A-one road",
-  authors: [{ name: "エーワンロード株式会社" }],
+  metadataBase: new URL("https://a-oneroad.com"),
+  title: "A-one road | Global Manufacturing Technology. Delivered to Japan.",
+  description: "製造技術の日本展開と調達をつなぐValue-Added Distributor。",
   robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
-  generator: "Next.js",
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
-  openGraph: {
-    type: "website",
-    locale: "ja_JP",
-    url: "https://a-oneroad.com",
-    title: "エーワンロード株式会社 | 海外の技術で、日本の現場を強くする",
-    description:
-      "海外の優れた機械・AI・SaaSを、日本企業の課題に合わせて選定し、導入・実装・運用まで担う。Factory事業とBPO事業を展開しています。",
-    siteName: "エーワンロード株式会社",
-    images: [
-      {
-        url: "https://a-oneroad.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "エーワンロード株式会社",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "A-One Road Co., Ltd. | Country Manager as a Service, for Japan",
-    description:
-      "We source proven machines, AI, and SaaS from overseas and take them through selection, deployment, and operation for Japanese businesses. Focus areas: Factory and BPO.",
-    images: ["https://a-oneroad.com/twitter-image.jpg"],
-    creator: "@a1road",
-  },
-  other: {
-    "application/ld+json": JSON.stringify([
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        name: "エーワンロード株式会社",
-        url: "https://a-oneroad.com",
-        logo: "https://a-oneroad.com/logo.png",
-        description:
-          "海外の優れた機械・AI・SaaSを日本企業の課題に合わせて導入・実装・運用する、Factory事業とBPO事業を展開する横浜のスタートアップ。",
-        address: {
-          "@type": "PostalAddress",
-          addressCountry: "JP",
-        },
-        sameAs: [
-          "https://twitter.com/a1road",
-          "https://linkedin.com/company/a1road",
-          "https://github.com/A1-Road",
-        ],
-        contactPoint: {
-          "@type": "ContactPoint",
-          telephone: "+81-80-4870-5690",
-          contactType: "customer service",
-          areaServed: "JP",
-          availableLanguage: ["Japanese"],
-        },
-      },
-    ]),
-  },
+  icons: {icon:"/favicon.ico", apple:"/apple-touch-icon.png"},
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
@@ -94,6 +32,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className="font-sans" suppressHydrationWarning>
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:bg-white focus:p-4">{locale === "en" ? "Skip to content" : "本文へ移動"}</a>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"Organization",name:"A-one road",legalName:"エーワンロード株式会社",url:"https://a-oneroad.com",logo:"https://a-oneroad.com/a-one-road-logo.png",foundingDate:"2021-03",email:"admin@a1-road.com",description:"Japan-based Value-Added Distributor for manufacturing equipment, materials and technology.",address:{"@type":"PostalAddress",streetAddress:"浅間町1丁目4-3 ウィザードビル402",addressLocality:"横浜市西区",addressRegion:"神奈川県",postalCode:"220-0072",addressCountry:"JP"},contactPoint:{"@type":"ContactPoint",contactType:"sales",email:"admin@a1-road.com",availableLanguage:["Japanese","English"]},sameAs:["https://linkedin.com/company/a1road","https://github.com/A1-Road"]})}}/>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SBXZP4QP82"
           strategy="afterInteractive"
@@ -118,7 +58,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 navigation={navigation.map((item) => ({ label: item.label, href: item.href }))}
                 currentLang={locale}
               />
-              <main>{children}</main>
+              <SiteAnalytics/>
+              <main id="main-content">{children}</main>
               <Footer
                 navigation={navigation.map((item) => ({ label: item.label, href: item.href }))}
                 socials={socials.map((item) => ({ label: item.label, href: item.href }))}

@@ -213,3 +213,24 @@ export const runtime = "edge";
 ```
 
 の記述が必要です。
+
+## Current corporate content (2026-10-14)
+
+The corporate site presents A-one road as a Value-Added Distributor for
+manufacturing technology. OEM distribution and Japanese buyer procurement have
+separate entry points. Technology areas are selection examples; authorized
+product availability and transaction terms are confirmed individually.
+
+- Japanese: `/`, `/global-vendors`, `/service/manufacturing`, `/technologies`,
+  `/strategy`, `/about-us`, `/contact`.
+- English: matching `/en` URLs, rewritten by `middleware.ts` with a request locale.
+- Editable copy: `content/site-content-ja.csv` and `content/site-content-en.csv`.
+  `npm run content` generates the JSON files; literal `\n` represents a line break.
+- Production checks: `npm run build` and `npx tsc --noEmit`.
+- Cloudflare Workers: `npm run deploy` builds with OpenNext and deploys the existing
+  `a-one-road-website` Worker and its configured custom domains. This requires
+  authenticated Cloudflare access. A successful GitHub commit or legacy Pages
+  check is separate from a verified deployment to `a-oneroad.com`.
+- Existing HubSpot form and GA4 ID are preserved. Inquiry type is supplied via
+  supported form submission metadata; no personal form data is sent to GA4.
+- Privacy policy remains Japanese. Prices are provided through proposals.

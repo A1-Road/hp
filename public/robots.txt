@@ -1,86 +1,11 @@
 # *
 User-agent: *
 Allow: /
-Disallow: /admin/*
-Disallow: /api/*
-Disallow: /_next/*
-Disallow: /static/*
-
-# GPTBot
-User-agent: GPTBot
-Allow: /
-Disallow: /admin/*
-Disallow: /api/*
-
-# ChatGPT-User
-User-agent: ChatGPT-User
-Allow: /
-Disallow: /admin/*
-Disallow: /api/*
-
-# OAI-SearchBot
-User-agent: OAI-SearchBot
-Allow: /
-Disallow: /admin/*
-Disallow: /api/*
-
-# ClaudeBot
-User-agent: ClaudeBot
-Allow: /
-Disallow: /admin/*
-Disallow: /api/*
-
-# Claude-Web
-User-agent: Claude-Web
-Allow: /
-Disallow: /admin/*
-Disallow: /api/*
-
-# anthropic-ai
-User-agent: anthropic-ai
-Allow: /
-Disallow: /admin/*
-Disallow: /api/*
-
-# PerplexityBot
-User-agent: PerplexityBot
-Allow: /
-Disallow: /admin/*
-Disallow: /api/*
-
-# Perplexity-User
-User-agent: Perplexity-User
-Allow: /
-Disallow: /admin/*
-Disallow: /api/*
-
-# Google-Extended
-User-agent: Google-Extended
-Allow: /
-Disallow: /admin/*
-Disallow: /api/*
-
-# Applebot-Extended
-User-agent: Applebot-Extended
-Allow: /
-Disallow: /admin/*
-Disallow: /api/*
-
-# cohere-ai
-User-agent: cohere-ai
-Allow: /
-Disallow: /admin/*
-Disallow: /api/*
-
-# meta-externalagent
-User-agent: meta-externalagent
-Allow: /
-Disallow: /admin/*
-Disallow: /api/*
+Disallow: /admin/
+Disallow: /api/
 
 # Host
 Host: https://a-oneroad.com
 
 # Sitemaps
 Sitemap: https://a-oneroad.com/sitemap.xml
-Sitemap: https://a-oneroad.com/server-sitemap.xml

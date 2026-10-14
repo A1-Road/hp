@@ -2,27 +2,31 @@
   "global": {
     "navigation": {
       "1": {
-        "label": "Top",
-        "href": "/"
+        "label": "OEMs",
+        "href": "/en/global-vendors"
       },
       "2": {
-        "label": "About",
-        "href": "/about-us"
+        "label": "Buyers",
+        "href": "/en/service/manufacturing"
       },
       "3": {
-        "label": "Service",
-        "href": "/service"
+        "label": "Technologies",
+        "href": "/en/technologies"
+      },
+      "4": {
+        "label": "About",
+        "href": "/en/about-us"
       },
       "5": {
         "label": "Contact",
-        "href": "/contact"
+        "href": "/en/contact"
       }
     },
     "footer": {
       "main": {
-        "tagline": "Bringing the world's best technology into Japan's factories and back offices. Country Manager as a Service, for Japan.",
-        "privacyLabel": "Privacy Policy",
-        "copyright": "© 2026 A-One Road"
+        "tagline": "Global manufacturing technology. Delivered to Japan. Connecting international manufacturers with Japanese buyers.",
+        "privacyLabel": "Privacy policy (Japanese)",
+        "copyright": "© 2026 A-one road"
       }
     },
     "contactInfo": {
@@ -53,95 +57,42 @@
   "top": {
     "hero": {
       "main": {
-        "eyebrow": "MISSION",
-        "title": "Make Matter Matter.",
-        "titleSub": "Take back everyone's rightful value.",
-        "visionLabel": "VISION",
-        "visionEn": "Unearth All Hidden Value.",
-        "visionJa": "We uncover every hidden value and become the storyteller who carries it to the world.",
-        "image": "/hero-mvv.png",
-        "primaryLabel": "See our business",
-        "primaryHref": "/service",
-        "secondaryLabel": "About us",
-        "secondaryHref": "/about-us",
-        "scroll": "Scroll"
-      }
-    },
-    "valueHeader": {
-      "main": {
-        "eyebrow": "VALUE",
-        "title": "Five Credos"
-      }
-    },
-    "value": {
-      "1": {
-        "number": "01",
-        "title": "Board Spaceship Earth.",
-        "copy": "Be a citizen of the planet."
-      },
-      "2": {
-        "number": "02",
-        "title": "Dive into the customer's shoes.",
-        "copy": "Go in up to your shoulders for the user."
-      },
-      "3": {
-        "number": "03",
-        "title": "Be Resourceful.",
-        "copy": "Get the maximum result from the minimum resources."
-      },
-      "4": {
-        "number": "04",
-        "title": "Run the Fastest Lap.",
-        "copy": "Put the newest technology into the world before anyone else."
-      },
-      "5": {
-        "number": "05",
-        "title": "Go far, Go together.",
-        "copy": "Go far with n people, n+1 legs."
-      }
-    },
-    "whatWeDoHeader": {
-      "main": {
-        "eyebrow": "CMAAS — COUNTRY MANAGER AS A SERVICE",
-        "title": "We run your Japan market operations, end to end.",
-        "copy": "Instead of hiring one Country Manager in Japan, you get the functions you need -- from market validation to sales, deployment, and local operations. Two focus areas below."
-      }
-    },
-    "whatWeDo": {
-      "1": {
-        "tag": "FOCUS AREA — FACTORY",
-        "title": "Factory",
-        "copy": "We bring overseas industrial machines, robotics, AI, and manufacturing SaaS into Japanese factories -- selection through deployment and operation.",
+        "eyebrow": "VALUE-ADDED DISTRIBUTOR",
+        "title": "Global Manufacturing Technology.\nDelivered to Japan.",
+        "copy": "A-one road is a Japan-based Value-Added Distributor. We connect your technology with Japanese manufacturers through localization, product visibility, inquiry handling and distribution.",
+        "primaryLabel": "For Global OEMs",
+        "primaryCopy": "Bring your products to the Japanese market",
+        "primaryHref": "/en/global-vendors",
+        "secondaryLabel": "For Japanese Buyers",
+        "secondaryCopy": "Source manufacturing equipment, materials and technology",
+        "secondaryHref": "/en/service/manufacturing",
         "image": "/hub-manufacturing.jpg",
-        "href": "/service/manufacturing",
-        "linkLabel": "Learn more"
-      },
-      "2": {
-        "tag": "FOCUS AREA — BPO",
-        "title": "BPO",
-        "copy": "We bring overseas AI and SaaS for sales, hiring, and back-office work into Japanese companies, combined with the operations needed to actually run it.",
-        "image": "/workflow.png",
-        "href": "/global-vendors",
-        "linkLabel": "Learn more"
+        "imageAlt": "Existing illustrative visual of manufacturing equipment"
       }
     },
-    "aboutPreview": {
+    "why": {
       "main": {
-        "eyebrow": "About",
-        "title": "Why this company exists.",
-        "copy": "Take back everyone's rightful value. Become the storyteller of the world's hidden value. See our full mission and business.",
-        "linkLabel": "About",
-        "linkHref": "/about-us",
-        "image": "/about-preview.png"
+        "eyebrow": "WHY JAPAN",
+        "title": "More options for Japan’s\nhigh-mix manufacturing.",
+        "copy": "Access to a new machine, process or material depends on clear specifications, a local point of contact and coordinated delivery. We help international manufacturers and Japanese buyers move from discovery to a defined commercial opportunity."
       }
     },
-    "contactCta": {
+    "vision": {
       "main": {
-        "eyebrow": "Contact",
-        "title": "Start the conversation.",
-        "copy": "Struggling with inefficiency on the factory floor, or repetitive sales and back-office work? Tell us about it first -- 30 minutes. We help you find the right overseas technology and take it through to deployment.",
-        "buttonLabel": "Go to Contact",
-        "buttonHref": "/contact"
+        "eyebrow": "OUR VISION",
+        "title": "Distribution that builds technical knowledge.",
+        "copy": "We aim to build equipment knowledge and implementation know-how through distribution. Our long-term direction connects this foundation to in-house technology use, a factory, contract development and our own products.",
+        "linkLabel": "Explore our strategy",
+        "linkHref": "/en/strategy"
+      }
+    },
+    "mission": {
+      "main": {
+        "eyebrow": "MISSION / VISION",
+        "title": "Make Matter Matter.",
+        "copy": "Unearth All Hidden Values.",
+        "linkLabel": "Our values and founder story",
+        "linkHref": "/en/about-us"
       }
     }
   },
@@ -200,7 +151,7 @@
       "5": {
         "eyebrow": "2025 — MANUFACTURING",
         "title": "What we'd been searching for in the digital world, we found in a small factory.",
-        "copy": "Ota Ward's small factories had \"nakama-mawashi\" -- the distributed collaboration we'd chased across the DAO world had been running as a real industry in Japanese manufacturing for decades. That's where A-one Road's path came together into one line.",
+        "copy": "Ota Ward's small factories had \"nakama-mawashi\" -- the distributed collaboration we'd chased across the DAO world had been running as a real industry in Japanese manufacturing for decades. That's where A-one road's path came together into one line.",
         "imgLg": "/story/2025-otaku-factory.png",
         "imgLgAlt": "Visiting a craftsman at work in a small factory in Ota Ward",
         "imgLgCaption": "Ota Ward — Where nakama-mawashi happens",
@@ -211,14 +162,14 @@
     },
     "today": {
       "main": {
-        "eyebrow": "TODAY — FACTORY & BPO",
-        "title": "Every hidden value, out into the world.",
-        "copy": "Technology accumulated in factories. Services that exist abroad but haven't reached Japan. Knowledge and time buried inside companies. Borders, language, industry, organization -- we remove the walls between them and deliver value to where it's needed.",
+        "eyebrow": "TODAY — VALUE-ADDED DISTRIBUTOR",
+        "title": "Global manufacturing technology. Delivered to Japan.",
+        "copy": "We connect overseas equipment, materials and manufacturing technologies with Japanese industry. Through localization, inquiry handling and distribution, we aim to build the technical knowledge and implementation know-how that support our next stage.",
         "vision": "Uncover every hidden value, and become the storyteller who carries it to the world.",
         "buttonBusinessLabel": "View Our Business",
-        "buttonBusinessHref": "/service",
+        "buttonBusinessHref": "/en/service",
         "buttonContactLabel": "Contact Us",
-        "buttonContactHref": "/contact"
+        "buttonContactHref": "/en/contact"
       }
     },
     "philosophyHeader": {
@@ -277,17 +228,21 @@
     "differentiatorHeader": {
       "main": {
         "eyebrow": "Difference",
-        "title": "Two businesses"
+        "title": "A commercial bridge for manufacturing technology."
       }
     },
     "differentiator": {
       "1": {
-        "title": "Factory",
-        "copy": "We bring overseas industrial machines, robotics, AI, and manufacturing SaaS into Japanese factories -- selection through deployment and operation."
+        "title": "Value-Added Distributor",
+        "copy": "Coordinate product content, localization, visibility, inquiries and distribution within the agreed scope."
       },
       "2": {
-        "title": "BPO",
-        "copy": "Sales, hiring, back-office. We bring overseas AI and SaaS into your operations and run the work itself."
+        "title": "Technical learning",
+        "copy": "Focus technical learning on versatile equipment, scarce advanced processes and recurring manufacturing materials."
+      },
+      "3": {
+        "title": "Project-specific delivery",
+        "copy": "Define logistics, technical evaluation, installation and integration roles in each project SOW."
       }
     },
     "founderHeader": {
@@ -300,7 +255,7 @@
       "main": {
         "name": "Kazuma Tamura",
         "role": "Representative Director",
-        "bio": "Founder of A-one Road. Launched Bankless Japan, led global business development at Pacific Meta, and worked in product marketing at CADDi. Specializes in market entry and business development for overseas companies.",
+        "bio": "Founder of A-one road. Launched Bankless Japan, led global business development at Pacific Meta, and worked in product marketing at CADDi. Specializes in market entry and business development for overseas companies.",
         "image": "/founder-tamura.png"
       }
     },
@@ -314,7 +269,7 @@
     "companyInfo": {
       "1": {
         "label": "Company Name",
-        "value": "A-One Road Co., Ltd."
+        "value": "A-one road Co., Ltd."
       },
       "2": {
         "label": "Established",
@@ -345,9 +300,9 @@
   "contact": {
     "hero": {
       "main": {
-        "eyebrow": "Contact",
-        "title": "Contact",
-        "copy": "admin@a1-road.com"
+        "eyebrow": "CONTACT",
+        "title": "Tell us what you want to build.",
+        "copy": "Contact us about Japan-market distribution, manufacturing procurement or strategic technology collaboration."
       }
     },
     "methodsHeader": {
@@ -372,9 +327,9 @@
     },
     "formHeader": {
       "main": {
-        "eyebrow": "Form",
-        "title": "For business inquiries and general contact",
-        "copy": ""
+        "eyebrow": "INQUIRY",
+        "title": "Inquiry form",
+        "copy": "Please include your company, product or application and inquiry type in the message. Confidential information can be shared after a mutual NDA."
       }
     },
     "form": {
@@ -425,346 +380,331 @@
     },
     "reassurance": {
       "main": {
-        "text": ""
+        "text": "We review your inquiry and reply through the responsible contact. If the form is unavailable, email admin@a1-road.com."
       }
     }
   },
   "globalVendors": {
     "hero": {
       "main": {
-        "eyebrow": "BUSINESS EFFICIENCY & ROI DIAGNOSTIC",
-        "title": "Slow inquiry and quote response is straining your core work.",
-        "copy": "For low-volume high-mix operations, the real bottleneck usually isn't generating new leads -- it's the first response to the inquiries and quote requests already coming in. We combine overseas SaaS and AI with your existing operations, diagnosing everything from on-site hearing to ROI modeling to identifying which budget it replaces.",
-        "primaryLabel": "Contact us",
-        "primaryHref": "/contact"
+        "eyebrow": "FOR GLOBAL OEMs",
+        "title": "Your Technology.\nA Route to Japan.",
+        "copy": "Make your products understandable, discoverable and purchasable in Japan. A-one road provides a local commercial interface, from product localization and visibility to inquiry handling and distribution.",
+        "primaryLabel": "Discuss your Japan launch",
+        "primaryHref": "/en/contact?topic=oem",
+        "secondaryLabel": "Explore the scope",
+        "secondaryHref": "#scope"
       }
     },
-    "intro": {
+    "scopeHeader": {
       "main": {
-        "eyebrow": "HOW WE HELP",
-        "title": "First, an on-site hearing.",
-        "copy": "We bridge language, trust, and how decisions get made — in Japanese and in English.",
-        "lead": "What we deliver first is the on-site data and analysis needed to judge the shortest path to ROI. We stay neutral across manufacturers, so the conclusion can be \"don't adopt anything right now.\""
+        "eyebrow": "VAD SERVICE SCOPE",
+        "title": "Build your commercial\nfoundation in Japan.",
+        "copy": "We quote and contract the standard distribution scope and any additional project activities explicitly."
       }
     },
-    "servicesHeader": {
-      "main": {
-        "eyebrow": "How We Diagnose",
-        "title": "From on-site hearing to reallocating your budget.",
-        "copy": "We turn burdens people describe by feel into numbers."
-      }
-    },
-    "services": {
+    "scope": {
       "1": {
-        "title": "On-site hearing",
-        "copy": "We ask who spends how much time on inquiry response and follow-up, by department and by person."
+        "tag": "01 / LOCALIZATION",
+        "title": "Localized product content",
+        "copy": "Translate and edit OEM-provided materials into Japanese product content, including specifications and applications."
       },
       "2": {
-        "title": "Workload analysis",
-        "copy": "We break down the workflow into person-months, cost, and lost revenue -- turning felt burden into numbers."
+        "tag": "02 / PRODUCT VISIBILITY",
+        "title": "Product listings & visibility",
+        "copy": "Prepare and manage agreed content for established Japanese product discovery and listing channels."
+      },
+      "3": {
+        "tag": "03 / INQUIRY HANDLING",
+        "title": "First-line inquiry handling",
+        "copy": "Receive Japanese inquiries, clarify requirements and coordinate quotation or technical clarification with the OEM."
       },
       "4": {
-        "title": "ROI modeling",
-        "copy": "We calculate person-months saved, annual impact, and payback period across conservative, standard, and optimistic scenarios."
+        "tag": "04 / DISTRIBUTION",
+        "title": "Commercial coordination",
+        "copy": "Coordinate quotations, orders and supply conditions under the agreed distribution rights and transaction structure."
+      }
+    },
+    "engagementHeader": {
+      "main": {
+        "eyebrow": "ENGAGEMENT MODELS",
+        "title": "Commercial scope\nmatched to the engagement."
+      }
+    },
+    "engagement": {
+      "1": {
+        "title": "Standard VAD",
+        "copy": "Product content, listings, maintenance and first-line handling are defined in the SOW. Fees and engagement duration are provided in a proposal."
+      },
+      "2": {
+        "title": "Project-based SOW",
+        "copy": "Active outreach, technical evaluation, PoCs, installation and integration are scoped separately, with deliverables and responsible parties."
+      },
+      "3": {
+        "title": "Strategic technology partnership",
+        "copy": "For strategic technologies, explore longer-term collaboration, including in-house use and technical learning, with individually agreed objectives."
+      }
+    },
+    "faqHeader": {
+      "main": {
+        "eyebrow": "OEM FAQ",
+        "title": "Before we work together."
+      }
+    },
+    "faq": {
+      "1": {
+        "question": "Is exclusivity required?",
+        "answer": "The standard cooperation model is designed around non-exclusive distribution. Territory, rights and coordination with existing channels are defined in the MSA and SOW."
+      },
+      "2": {
+        "question": "Which products can participate?",
+        "answer": "Equipment, materials and technologies supporting manufacturing are considered. We review applications, supply capability and Japan-market fit across strategic and complementary areas."
+      },
+      "3": {
+        "question": "What are the fees and timeline?",
+        "answer": "A proposal is based on products, source materials, listing channels and scope. Launch follows contract execution, initial payment, material delivery and OEM approval."
+      },
+      "4": {
+        "question": "Who handles installation, warranty and technical support?",
+        "answer": "The OEM, A-one road and any logistics or technical providers have responsibilities defined per transaction. Additional technical work is quoted and agreed through a project SOW."
       },
       "5": {
-        "title": "Budget replacement mapping",
-        "copy": "We identify existing budget -- overtime, temp staffing, outsourcing -- that could fund the replacement, without assuming new budget."
-      },
-      "7": {
-        "title": "Product selection & rollout",
-        "copy": "Based on the diagnostic, we select the best-fitting product from candidates worldwide and see it through to adoption."
-      }
-    },
-    "solutionsHeader": {
-      "main": {
-        "eyebrow": "OUR SOLUTIONS",
-        "title": "What we offer",
-        "note": "Your existing CRM and spreadsheets stay as-is. This is a BPR-style approach -- a thin layer of automation on top of what you already run."
-      }
-    },
-    "solutions": {
-      "1": {
-        "title": "Sales Stone (Offense -- new business)",
-        "copy": "Outbound sales AI that unifies lead discovery through booked meetings. Discovers and compounds a winning pattern every month across email and form outreach."
-      },
-      "2": {
-        "title": "Support Stone (Defense -- customer support)",
-        "copy": "Customer support AI that handles first-line response. Turns veteran know-how into a database and answers automatically."
-      },
-      "3": {
-        "title": "Creative Validation (Acquisition -- ads)",
-        "copy": "Overseas AI generation tools multiply ad-creative output. Small-spend testing measures real CPA concentrating budget only on what works."
-      }
-    },
-    "trackRecordHeader": {
-      "main": {
-        "eyebrow": "TRACK RECORD",
-        "title": "Measured results",
-        "copy": "We show execution through a measured number: volume sent.",
-        "note": ""
-      }
-    },
-    "trackRecord": {
-      "1": {
-        "label": "Engagements (manufacturing PoC)",
-        "value": "4"
-      },
-      "2": {
-        "label": "Total sent",
-        "value": "4219"
-      }
-    },
-    "pilotHeader": {
-      "main": {
-        "eyebrow": "Engagement",
-        "title": "Start small.",
-        "copy": "We validate a fitting product within a fixed window. If it lands, we move to full rollout."
-      }
-    },
-    "pilotFacts": {
-      "2": {
-        "label": "Duration",
-        "value": "30–45 days"
-      },
-      "3": {
-        "label": "How it runs",
-        "value": "We agree on activities and deliverables before we start."
-      }
-    },
-    "deliverablesHeader": {
-      "main": {
-        "eyebrow": "Deliverables",
-        "title": "What the pilot produces."
-      }
-    },
-    "deliverables": {
-      "1": {
-        "number": "01",
-        "title": "Challenge & requirements",
-        "copy": "We put the challenge and the conditions to meet into writing., pricing, and market fit."
-      },
-      "2": {
-        "number": "02",
-        "title": "Recommended product",
-        "copy": "We show the fitting product and how to combine it, concretely."
-      },
-      "3": {
-        "number": "03",
-        "title": "Validation plan (PoC)",
-        "copy": "We design the next proof step to confirm the outcome."
-      }
-    },
-    "termsHeader": {
-      "main": {
-        "eyebrow": "How we work",
-        "title": "How we work"
-      }
-    },
-    "terms": {
-      "1": {
-        "title": "Scope of commitment",
-        "copy": "We commit to the agreed activities and deliverables."
-      },
-      "2": {
-        "title": "What we ask of you",
-        "copy": "Share your current challenge and environment, and join the validation."
-      },
-      "3": {
-        "title": "What we handle",
-        "copy": "Selection, configuration, rollout and adoption — end to end."
-      },
-      "4": {
-        "title": "Data handling",
-        "copy": "Your data is processed within your own environment and never used to train external AI models."
-      }
-    },
-    "companyHeader": {
-      "main": {
-        "eyebrow": "Company",
-        "title": "Who runs it"
-      }
-    },
-    "company": {
-      "1": {
-        "label": "Company",
-        "value": "A-one road co.,ltd (エーワンロード株式会社)"
-      },
-      "2": {
-        "label": "Founded",
-        "value": "March 2021"
-      },
-      "3": {
-        "label": "Base",
-        "value": "Yokohama, Japan"
-      },
-      "4": {
-        "label": "Representative Director",
-        "value": "Kazuma Tamura"
-      },
-      "5": {
-        "label": "Operation",
-        "value": "Bilingual Japanese-English"
-      }
-    },
-    "contactCta": {
-      "main": {
-        "eyebrow": "Contact",
-        "title": "Tell us your challenge.",
-        "copy": "Starting from what you want to solve, we find the best options together.",
-        "buttonLabel": "Contact us",
-        "buttonHref": "/contact"
-      }
-    }
-  },
-  "serviceHub": {
-    "cmaasHeader": {
-      "main": {
-        "eyebrow": "WHAT IS CMAAS",
-        "title": "Country Manager as a Service",
-        "copy": "Instead of hiring one Country Manager in Japan, you get the functions you need -- from validating the market to running local operations -- as a service."
-      }
-    },
-    "cmaasStep": {
-      "1": {
-        "number": "01",
-        "title": "Japan Market Validation"
-      },
-      "2": {
-        "number": "02",
-        "title": "Positioning"
-      },
-      "3": {
-        "number": "03",
-        "title": "Target Account Definition"
-      },
-      "4": {
-        "number": "04",
-        "title": "Customer Development"
-      },
-      "5": {
-        "number": "05",
-        "title": "Sales & Meetings"
-      },
-      "6": {
-        "number": "06",
-        "title": "PoC"
-      },
-      "7": {
-        "number": "07",
-        "title": "Initial Deployment"
-      },
-      "8": {
-        "number": "08",
-        "title": "Local Operations"
-      },
-      "9": {
-        "number": "09",
-        "title": "Partnership / Channel Development"
-      }
-    },
-    "focusHeader": {
-      "main": {
-        "eyebrow": "FOCUS AREAS",
-        "title": "Two areas we run this for."
-      }
-    },
-    "hero": {
-      "main": {
-        "eyebrow": "CMAAS — FOCUS AREAS",
-        "message": "Country Manager as a Service for Japan. We source proven overseas machines, AI, and SaaS and take them through selection, deployment, and operation for Japanese businesses."
-      }
-    },
-    "left": {
-      "main": {
-        "tag": "Factory",
-        "label": "Strengthening Japanese factories with overseas technology.",
-        "sub": "We bring overseas industrial machines, robotics, AI, and manufacturing SaaS into Japanese factories -- selection through deployment and operation.",
-        "href": "/service/manufacturing",
-        "image": "/hub-manufacturing.jpg",
-        "cta": "Explore"
-      }
-    },
-    "third": {
-      "main": {
-        "tag": "BPO",
-        "label": "Running sales and back-office work, end to end.",
-        "sub": "We bring overseas AI and SaaS for sales, hiring, and back-office work into Japanese companies, combined with the operations needed to actually run it.",
-        "href": "/global-vendors",
-        "image": "/hub-gtm.png",
-        "cta": "Explore"
+        "question": "What materials should we prepare?",
+        "answer": "Prepare specifications, applications, product images or catalogs, certification information, supply terms and a technical contact. Public-facing content is reviewed by the OEM."
       }
     }
   },
   "manufacturing": {
     "hero": {
       "main": {
-        "eyebrow": "FACTORY",
-        "title": "We meet factory floor problems with overseas technology.",
-        "copy": "Manual dependence, tribal knowledge, downtime, disconnected production lines. From slow quoting to DX to new equipment, we source proven overseas machines, AI, and SaaS and take them through selection, deployment, and operation on Japan's factory floor."
+        "eyebrow": "FOR JAPANESE BUYERS",
+        "title": "Source the technology\nyour application needs.",
+        "copy": "Start with your material, geometry, volume, quality targets and installation environment. We coordinate sourcing and commercial discussions for overseas manufacturing technology.",
+        "primaryLabel": "Discuss a sourcing requirement",
+        "primaryHref": "/en/contact?topic=buyer",
+        "secondaryLabel": "View technology areas",
+        "secondaryHref": "/en/technologies"
       }
     },
-    "technology": {
+    "stepsHeader": {
       "main": {
-        "eyebrow": "HOW WE WORK",
-        "title": "We don't limit ourselves to one technology.",
-        "copy": "Additive manufacturing, DX tools, production management systems, automated inspection -- we search worldwide for whatever fits your problem. We stay neutral across manufacturers and technologies."
+        "eyebrow": "PROCUREMENT PROCESS",
+        "title": "From application requirements\nto a defined delivery plan."
       }
     },
-    "applicationsHeader": {
-      "main": {
-        "eyebrow": "APPLICATIONS",
-        "title": "Examples of what we take on",
-        "note": "Every company's actual problem is different. Tell us where you stand first."
-      }
-    },
-    "applications": {
+    "steps": {
       "1": {
-        "title": "Quoting & order DX",
-        "copy": "We use overseas SaaS and AI to streamline quoting and order handling that has stayed tribal knowledge."
+        "title": "Share your requirements",
+        "copy": "Discuss material, dimensions, tolerance, volume, budget, timeline and existing equipment."
       },
       "2": {
-        "title": "Downtime reduction & line fixes",
-        "copy": "We identify the processes and equipment dragging down utilization and bring in the technology to fix them."
+        "title": "Evaluate product fit",
+        "copy": "Review specifications and suitability with the OEM. Scope samples or technical validation where needed."
       },
       "3": {
-        "title": "Large-format additive manufacturing (LFAM/WAAM)",
-        "copy": "Instead of storing large molds and jigs, we offer the option to print them on demand when needed."
+        "title": "Define commercial terms",
+        "copy": "Clarify price, lead time, import, transport, warranty, installation and acceptance terms."
+      },
+      "4": {
+        "title": "Coordinate the order",
+        "copy": "Order against agreed terms and coordinate logistics or technical work with the assigned providers."
       }
     },
-    "applicationsFooter": {
+    "faqHeader": {
       "main": {
-        "copy": "The common thread: making the burden on the ground visible, and turning it into lower fixed costs and fewer lost opportunities."
+        "eyebrow": "BUYER FAQ",
+        "title": "Planning your procurement."
       }
     },
-    "realityCheck": {
+    "faq": {
+      "1": {
+        "question": "Can we inquire before selecting a machine?",
+        "answer": "Yes. Share the part, material, current process and quality goals. We can discuss candidate technologies and confirm availability and suitability."
+      },
+      "2": {
+        "question": "Can we ask about products outside the listed technology examples?",
+        "answer": "The technology areas are selection guidelines. Distribution rights, supply terms and local support for a specific product are confirmed individually."
+      },
+      "3": {
+        "question": "Are installation and maintenance included?",
+        "answer": "Required work and responsible parties are stated in the quotation and contract. Evaluation, installation, process integration and maintenance are scoped as needed."
+      }
+    }
+  },
+  "vad": {
+    "ribbonHeader": {
       "main": {
-        "eyebrow": "REALITY CHECK",
-        "title": "All the numbers up front",
-        "copy": "After hearing your process, equipment, and budget, we share the expected return and the steps to deployment up front. If we don't expect it to work, we say so directly."
+        "eyebrow": "HOW WE WORK",
+        "title": "One commercial interface.\nTwo sides of the market.",
+        "copy": "A-one road coordinates market access and procurement, with logistics and technical work scoped for each project."
       }
     },
-    "screening": {
-      "main": {
-        "eyebrow": "SCREENING",
-        "title": "We judge fit before you commit",
-        "copy": "We screen against the process content, lot volume, and current cost/lead time to judge whether an overseas technology will actually help. Telling you it is not a fit when it is not is part of the job."
+    "actors": {
+      "1": {
+        "title": "Global OEM",
+        "role": "Equipment, materials and technology",
+        "copy": "Provides specifications, technical documentation and supply terms; defines product quality and warranty obligations."
+      },
+      "2": {
+        "title": "A-one road",
+        "role": "Value-Added Distributor",
+        "copy": "Coordinates localization, product visibility, first-line inquiries and commercial transactions under agreed distribution rights and scope."
+      },
+      "3": {
+        "title": "Japanese buyer",
+        "role": "Evaluation, procurement and use",
+        "copy": "Shares application requirements, evaluates suitability and orders against defined specifications, price, lead time and acceptance terms."
       }
     },
-    "position": {
+    "flows": {
       "main": {
-        "eyebrow": "POSITION",
-        "title": "Your guide, not a seller",
-        "copy": "We are not an exclusive agent for any single manufacturer. We work non-exclusively, case by case, to bridge you to overseas manufacturers -- building a project brief from your requirements and connecting you directly with the manufacturer's team, designed alongside Japan's existing machining network."
+        "forward": "Product information, quotation and sales →",
+        "reverse": "← Requirements, inquiries and orders",
+        "note": "The Japanese buyer pays A-one road; A-one road pays the manufacturer. Payment timing, importer responsibilities, transport, acceptance and warranty obligations are defined in each transaction."
       }
     },
-    "contactCta": {
+    "network": {
+      "1": {
+        "title": "3PL / Logistics",
+        "copy": "International shipping, customs and domestic delivery, coordinated with providers selected for the project."
+      },
+      "2": {
+        "title": "SIer / Application Engineer",
+        "copy": "Technical evaluation, installation, process fit and integration, with specialist responsibilities defined in a project SOW."
+      }
+    },
+    "portfolioHeader": {
       "main": {
-        "eyebrow": "CONTACT",
-        "title": "Tell us about your process -- 30 minutes no charge",
-        "copy": "A free 30-minute hearing on your target process. If there is potential a paid on-site diagnosis (quoted individually) delivers candidate processes rough impact estimates and a manufacturer-ready brief.",
-        "buttonLabel": "Contact us",
-        "buttonHref": "/contact?topic=factory"
+        "eyebrow": "STRATEGIC TECHNOLOGY PORTFOLIO",
+        "title": "A VAD foundation.\nThree strategic technology areas.",
+        "copy": "We focus our learning on versatile production equipment, scarce advanced processes and recurring materials used in manufacturing."
+      }
+    },
+    "portfolio": {
+      "1": {
+        "number": "01",
+        "tag": "BREADTH",
+        "title": "General Purpose",
+        "subtitle": "Versatile production capability",
+        "copy": "NC lathes and CNC machining centers: a foundation for diverse parts and materials, including aluminum, magnesium and copper.",
+        "examples": "Examples: machining, turning, multi-axis processing"
+      },
+      "2": {
+        "number": "02",
+        "tag": "SCARCITY",
+        "title": "Scarce Advanced",
+        "subtitle": "Advanced and scarce capability",
+        "copy": "LFAM, WAAM, CFRP, CNT and specialty alloys: options for large parts, complex geometries, new materials and advanced processes.",
+        "examples": "Examples: large-format additive manufacturing, composites"
+      },
+      "3": {
+        "number": "03",
+        "tag": "RECURRENCE",
+        "title": "Feedstock & Materials",
+        "subtitle": "Recurring manufacturing inputs",
+        "copy": "Metal powders, wire, polymers and composite feedstocks: materials and application knowledge that support equipment operation and quality.",
+        "examples": "Examples: powders, wire, polymer feedstocks"
+      }
+    },
+    "broader": {
+      "main": {
+        "eyebrow": "BROADER GLOBAL TECHNOLOGY PARTNERS",
+        "title": "An entry point for complementary technologies.",
+        "copy": "Machine vision, welding automation and industrial software can also enter through our VAD model. We review product fit, customers and service scope in an initial discussion.",
+        "note": "Technology areas illustrate our selection priorities. Specific product availability, distribution rights and supply terms are confirmed individually."
+      }
+    },
+    "processHeader": {
+      "main": {
+        "eyebrow": "ENGAGEMENT PROCESS",
+        "title": "A defined scope.\nA clear route to launch.",
+        "copy": "Our engagement documents define distribution rights, scope, deliverables, fees and responsibilities."
+      }
+    },
+    "process": {
+      "1": {
+        "title": "Initial discussion",
+        "copy": "Discuss products, applications and Japan-market objectives."
+      },
+      "2": {
+        "title": "MNDA",
+        "copy": "Sign a mutual NDA and exchange relevant information."
+      },
+      "3": {
+        "title": "MSA",
+        "copy": "Define the master agreement, distribution rights and responsibilities."
+      },
+      "4": {
+        "title": "SOW",
+        "copy": "Specify products, deliverables, timeline and commercial terms."
+      },
+      "5": {
+        "title": "Payment & preparation",
+        "copy": "Receive the initial payment and source materials; prepare localized content."
+      },
+      "6": {
+        "title": "Approval & launch",
+        "copy": "Launch product listings and inquiry handling following OEM approval."
+      }
+    },
+    "cta": {
+      "main": {
+        "eyebrow": "LET’S TALK",
+        "title": "Start your next\ncommercial conversation.",
+        "copy": "Discuss Japan-market distribution or sourcing equipment and materials for a Japanese manufacturing application.",
+        "oemLabel": "Global OEM: partnership inquiry",
+        "buyerLabel": "Japanese buyer: sourcing inquiry"
+      }
+    }
+  },
+  "technologies": {
+    "hero": {
+      "main": {
+        "eyebrow": "TECHNOLOGY AREAS",
+        "title": "Explore capability\nby process and material.",
+        "copy": "Explore versatile equipment, advanced processes and recurring materials, alongside inspection, automation and industrial data technologies.",
+        "primaryLabel": "Discuss a product or application",
+        "primaryHref": "/en/contact?topic=buyer",
+        "secondaryLabel": "For global OEMs",
+        "secondaryHref": "/en/global-vendors"
+      }
+    }
+  },
+  "strategy": {
+    "hero": {
+      "main": {
+        "eyebrow": "LONG-TERM DIRECTION",
+        "title": "Turn commercial experience\ninto manufacturing capability.",
+        "copy": "Our long-term direction starts with VAD distribution and builds technical knowledge, implementation know-how and collaborative relationships.",
+        "primaryLabel": "Discuss a technology partnership",
+        "primaryHref": "/en/contact?topic=partnership",
+        "secondaryLabel": "Meet A-one road",
+        "secondaryHref": "/en/about-us"
+      }
+    },
+    "stagesHeader": {
+      "main": {
+        "eyebrow": "OUR VISION",
+        "title": "A foundation for\nfuture manufacturing.",
+        "copy": "These stages describe our intended development. Activities and available services are defined for each engagement."
+      }
+    },
+    "stages": {
+      "1": {
+        "title": "VAD",
+        "copy": "Build a commercial foundation through market access, local inquiries and distribution."
+      },
+      "2": {
+        "title": "Technical Knowledge",
+        "copy": "Accumulate equipment knowledge, application conditions and implementation know-how."
+      },
+      "3": {
+        "title": "Factory / Contract Development",
+        "copy": "Develop toward in-house use, prototyping, process development and contract development."
+      },
+      "4": {
+        "title": "Own Products",
+        "copy": "Apply accumulated manufacturing capability to our own product development."
       }
     }
   }

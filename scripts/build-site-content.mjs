@@ -23,7 +23,7 @@ for (const locale of ["ja", "en"]) {
     }
 
     const [page, section, item, field] = parts;
-    const value = parts.slice(4).join(",");
+    const value = parts.slice(4).join(",").replace(/\\n/g, "\n");
 
     tree[page] ??= {};
     tree[page][section] ??= {};

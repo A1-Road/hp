@@ -5,8 +5,8 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useLayout } from "../app/contexts/header-context";
-import { usePathname, useRouter } from "next/navigation";
-import { SITE_LANG_COOKIE, type SiteLocale } from "@/lib/site-locale";
+import { usePathname } from "next/navigation";
+import { localeHref, type SiteLocale } from "@/lib/site-locale";
 
 type NavigationItem = {
   label: string;
@@ -23,7 +23,7 @@ export default function Header({ navigation, currentLang }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
-  const router = useRouter();
+
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 16);
@@ -32,9 +32,8 @@ export default function Header({ navigation, currentLang }: HeaderProps) {
   }, []);
 
   function switchLanguage(nextLang: SiteLocale) {
-    if (nextLang === currentLang) return;
-    document.cookie = `${SITE_LANG_COOKIE}=${nextLang}; path=/; max-age=31536000; samesite=lax`;
-    router.refresh();
+    const base = pathname.replace(/^\/en(?=\/|$)/, "") || "/";
+    window.location.assign(localeHref(nextLang, base) + window.location.search + window.location.hash);
   }
 
   if (!isHeaderVisible) return null;
@@ -48,11 +47,11 @@ export default function Header({ navigation, currentLang }: HeaderProps) {
       style={{ backgroundColor: "#ffffff" }}
     >
       <div className="mx-auto flex w-full max-w-[1280px] items-center justify-between px-5 md:px-10">
-        <Link href="/" className="flex items-center text-sm font-semibold uppercase tracking-[0.28em]">
-          A-One Road
+        <Link href={localeHref(currentLang,"/")} className="flex items-center text-sm font-semibold tracking-[0.08em]">
+          A-one road
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav aria-label={currentLang === "en" ? "Main navigation" : "メインナビゲーション"} className="hidden items-center gap-5 lg:flex">
           {navigation.map((item) => (
             <Link
               key={item.href}
@@ -67,13 +66,13 @@ export default function Header({ navigation, currentLang }: HeaderProps) {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           <button
             type="button"
             onClick={() => switchLanguage("ja")}
             className={cn(
               "text-xs font-semibold tracking-[0.18em] transition-opacity",
-              currentLang === "ja" ? "opacity-100" : "opacity-50 hover:opacity-80"
+              currentLang === "ja" ? "opacity-100" : "opacity-75 hover:opacity-100"
             )}
           >
             JP
@@ -84,7 +83,7 @@ export default function Header({ navigation, currentLang }: HeaderProps) {
             onClick={() => switchLanguage("en")}
             className={cn(
               "text-xs font-semibold tracking-[0.18em] transition-opacity",
-              currentLang === "en" ? "opacity-100" : "opacity-50 hover:opacity-80"
+              currentLang === "en" ? "opacity-100" : "opacity-75 hover:opacity-100"
             )}
           >
             EN
@@ -93,8 +92,10 @@ export default function Header({ navigation, currentLang }: HeaderProps) {
 
         <button
           type="button"
-          className="md:hidden"
-          aria-label="Open navigation"
+          className="min-h-11 min-w-11 lg:hidden"
+          aria-label={currentLang === "en" ? "Open navigation" : "メニューを開く"}
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-navigation"
           onClick={() => setIsMenuOpen((current) => !current)}
         >
           {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -102,7 +103,7 @@ export default function Header({ navigation, currentLang }: HeaderProps) {
       </div>
 
       {isMenuOpen ? (
-        <div className="border-t border-black/10 bg-white md:hidden">
+        <div id="mobile-navigation" className="border-t border-black/10 bg-white lg:hidden">
           <div className="mx-auto flex w-full max-w-[1280px] flex-col gap-4 px-5 py-5">
             {navigation.map((item) => (
               <Link
@@ -118,14 +119,14 @@ export default function Header({ navigation, currentLang }: HeaderProps) {
               <button
                 type="button"
                 onClick={() => switchLanguage("ja")}
-                className={cn("text-sm font-medium", currentLang === "ja" ? "opacity-100" : "opacity-50")}
+                className={cn("text-sm font-medium", currentLang === "ja" ? "opacity-100" : "opacity-75")}
               >
                 JP
               </button>
               <button
                 type="button"
                 onClick={() => switchLanguage("en")}
-                className={cn("text-sm font-medium", currentLang === "en" ? "opacity-100" : "opacity-50")}
+                className={cn("text-sm font-medium", currentLang === "en" ? "opacity-100" : "opacity-75")}
               >
                 EN
               </button>

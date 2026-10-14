@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/site-metadata";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatedSection } from "@/components/ui/animated-section";
@@ -28,6 +29,8 @@ function PhotoCard({
     </div>
   );
 }
+
+export const generateMetadata = () => pageMetadata("/about-us");
 
 export default async function AboutPage() {
   const locale = await getSiteLocale();
@@ -64,9 +67,9 @@ export default async function AboutPage() {
           </div>
           <div className="absolute inset-0 flex items-center justify-center bg-[#0A0A09]/45">
             <AnimatedSection className="text-center">
-              <p className="text-3xl tracking-[0.25em] md:text-5xl">
+              <h1 className="text-3xl tracking-[0.25em] md:text-5xl">
                 <span className="text-[#EF9F27]">/</span>&nbsp;{hero.eyebrow}
-              </p>
+              </h1>
             </AnimatedSection>
           </div>
         </section>

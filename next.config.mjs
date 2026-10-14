@@ -35,6 +35,8 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      ...["/bpo", "/service/bpo", "/mold-storage", "/service/automotive"].map((source) => ({source, destination: "/service", permanent:true})),
+      ...["/en/bpo", "/en/service/bpo", "/en/mold-storage", "/en/service/automotive"].map((source) => ({source, destination: "/en/service", permanent:true})),
       {
         source: "/works",
         destination: "/case",
